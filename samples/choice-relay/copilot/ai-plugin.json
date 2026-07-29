@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "choiceRelay",
+  "name_for_human": "Interactive Choices and Next Actions",
+  "description_for_human": "Generate possible actions, show them as interactive SPFx choices, and continue with one selected next action.",
+  "description_for_model": "Use this action to render interactive SPFx components for choosing among action options and continuing from a selected option. Use ChoiceRelayShowChoices when the user asks to generate, show, compare, or choose among options. Use ChoiceRelayShowNextAction after the user selects an option or asks to revise the next action.",
+  "contact_email": "nello@dandrea.ch"
+}

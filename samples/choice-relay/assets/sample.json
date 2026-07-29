@@ -1,0 +1,88 @@
+[
+  {
+    "name": "pnp-spfx-copilot-apps-choice-relay",
+    "source": "pnp",
+    "title": "Choice Relay",
+    "shortDescription": "Follow a user choice from Copilot into SPFx, back into the conversation, and into a second interactive component.",
+    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/choice-relay",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/choice-relay",
+    "longDescription": [
+      "Choice Relay is a compact teaching sample with two SharePoint Framework Copilot Components. Copilot generates typed arguments for an interactive choice component, the user selects one option locally, and the component sends that selection back as a readable user turn.",
+      "Copilot can then select a second tool and render one grounded next action. The sample also demonstrates revisions initiated from either the SPFx component or the normal Copilot composer, with a collapsed inspector that makes tool input, host context, and outbound messages visible."
+    ],
+    "creationDateTime": "2026-07-29",
+    "updateDateTime": "2026-07-29",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SPFx-CopilotComponent"
+      },
+      {
+        "key": "CLIENT-SIDE-DEV",
+        "value": "React"
+      },
+      {
+        "key": "SPFX-VERSION",
+        "value": "1.24.0-beta.2"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ferrarirosso",
+        "pictureUrl": "https://github.com/ferrarirosso.png",
+        "name": "Nello D'Andrea"
+      }
+    ],
+    "thumbnails": [
+      {
+        "name": "preview.png",
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/choice-relay/assets/preview.png",
+        "alt": "A new fact typed in the Copilot composer, and the SPFx component re-rendered with the revised next action"
+      },
+      {
+        "name": "screenshot-1-prompt-to-component.png",
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/choice-relay/assets/screenshot-1-prompt-to-component.png",
+        "alt": "A situation prompt in Copilot, and the choice component rendered from it with four generated options"
+      },
+      {
+        "name": "screenshot-2-result.png",
+        "type": "image",
+        "order": 102,
+        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/choice-relay/assets/screenshot-2-result.png",
+        "alt": "The result component showing the selected option, the proposed next action, and the four-step trace"
+      },
+      {
+        "name": "screenshot-3-revise-in-component.png",
+        "type": "image",
+        "order": 103,
+        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/choice-relay/assets/screenshot-3-revise-in-component.png",
+        "alt": "An adjustment typed into the component's own field with Revise with Copilot active"
+      }
+    ],
+    "references": [
+      {
+        "name": "Overview of SharePoint Copilot Apps",
+        "description": "Extend Microsoft 365 Copilot with interactive experiences built with the SharePoint Framework.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
+      },
+      {
+        "name": "Build your first SharePoint Copilot App",
+        "description": "Create, test, package, and deploy a SharePoint Copilot App.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app"
+      },
+      {
+        "name": "Fluent UI React v9",
+        "description": "Build accessible React experiences with Fluent UI components and design tokens.",
+        "url": "https://react.fluentui.dev/"
+      }
+    ]
+  }
+]

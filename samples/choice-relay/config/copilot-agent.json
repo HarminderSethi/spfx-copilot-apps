@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Choice Relay"
+      },
+      "description": {
+        "default": "A compact, self-explaining SPFx Copilot App that makes intent routing, typed arguments, one local choice, and the return bridge visible."
+      },
+      "components": [
+        "4c92d7fe-8a15-4b63-9f70-31e6ad0925bb",
+        "9d51e6a3-2c48-4e17-85fb-7a0c39d84e62"
+      ]
+    }
+  ]
+}

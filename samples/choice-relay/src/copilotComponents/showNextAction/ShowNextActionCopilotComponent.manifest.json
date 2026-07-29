@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "9d51e6a3-2c48-4e17-85fb-7a0c39d84e62",
+  "alias": "ShowNextActionCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "ChoiceRelayShowNextAction",
+      "description": {
+        "default": "Show one practical next action in an interactive SPFx result component for an option the user selected. Use after a choice, or when the user asks what to do next or to revise the current next action."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/showNextAction/ShowNextActionCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

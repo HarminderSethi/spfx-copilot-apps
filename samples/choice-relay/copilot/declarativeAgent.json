@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Choice Relay",
+  "description": "Generate grounded action options, display them in an interactive SPFx component, and turn the user's selection into one next action.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Help me choose what to do",
+      "text": "I have 30 minutes before my next meeting. Our pilot starts next week. The demo passed, but the data feed is a week late and the participant briefing still isn't written. What could I start now? I'd rather pick one myself before you tell me where to begin."
+    },
+    {
+      "title": "Weigh up three options",
+      "text": "I could chase the late data feed, write the participant briefing, or rehearse the demo again. I haven't decided which one yet. Lay them out so I can choose."
+    },
+    {
+      "title": "Start from a decision",
+      "text": "I've decided to write the participant briefing. Our pilot starts next week and I have half an hour. What is one small step I could finish in that time?"
+    }
+  ],
+  "actions": [
+      {
+      "id": "choiceRelayAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}

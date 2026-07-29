@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "show-action-choices-copilot-component": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/showActionChoices/ShowActionChoicesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/showActionChoices/ShowActionChoicesCopilotComponent.manifest.json"
+        }
+      ]
+    },
+    "show-next-action-copilot-component": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/showNextAction/ShowNextActionCopilotComponent.js",
+          "manifest": "./src/copilotComponents/showNextAction/ShowNextActionCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}

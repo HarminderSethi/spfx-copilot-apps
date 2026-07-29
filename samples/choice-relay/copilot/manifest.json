@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "c1f0a4d6-9b2e-4a77-8d31-5e7c0b93af24",
+  "developer": {
+    "name": "Nello D'Andrea",
+    "websiteUrl": "https://github.com/ferrarirosso",
+    "privacyUrl": "https://github.com/ferrarirosso",
+    "termsOfUseUrl": "https://github.com/ferrarirosso"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Choice Relay",
+    "full": "Choice Relay"
+  },
+  "description": {
+    "short": "Inspect a prompt-to-SPFx-to-Copilot round trip through one user choice.",
+    "full": "A compact, self-explaining SharePoint Copilot App: Copilot generates grounded options from the user's situation, SPFx captures one local choice, the component sends it back as a readable turn, and Copilot renders a concise next action in a second component."
+  },
+  "accentColor": "#036C70",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "choiceRelayAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

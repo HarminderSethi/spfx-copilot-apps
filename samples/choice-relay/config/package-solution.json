@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "choice-relay-client-side-solution",
+    "id": "7a4e8b19-3d6c-4f52-9e08-2b1d64c7fa35",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Nello D'Andrea",
+      "websiteUrl": "https://github.com/ferrarirosso",
+      "privacyUrl": "https://github.com/ferrarirosso",
+      "termsOfUseUrl": "https://github.com/ferrarirosso",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Compact two-tool SPFx and Copilot interaction lab."
+      },
+      "longDescription": {
+        "default": "Choice Relay makes the preview interaction visible: Copilot turns a situation into grounded options, SPFx captures one local choice, the component posts it as a readable turn, and Copilot can render a concise next action in a second component."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Choice Relay",
+        "description": "Activates the Choice Relay components and declarative agent.",
+        "id": "e83b1c07-5f4a-4d99-b6e2-90a3f5182dc6",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/choice-relay.sppkg"
+  }
+}

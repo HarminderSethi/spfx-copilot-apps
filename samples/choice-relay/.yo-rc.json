@@ -1,0 +1,23 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "choice-relay",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": true,
+    "useGulp": false,
+    "componentType": "copilotComponent",
+    "template": "react",
+    "componentName": "ShowNextAction",
+    "componentDescription": "Render one selected option, one next action, and a short explanation.",
+    "plusBeta": true,
+    "isCreatingSolution": false,
+    "nodeVersion": "22.15.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "choice-relay",
+    "libraryId": "7a4e8b19-3d6c-4f52-9e08-2b1d64c7fa35",
+    "solutionShortDescription": "Inspect a two-tool SPFx and Copilot conversation round trip.",
+    "isDomainIsolated": false
+  }
+}
