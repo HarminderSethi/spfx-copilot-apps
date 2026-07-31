@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "7ea60d17-c775-459d-bc9a-b833e63ee9eb",
+  "alias": "ServiceHealthCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "M365ServiceHealthCopilotTool",
+      "description": {
+        "default": "Shows live Microsoft 365 service health, advisories, and incidents as an interactive view. Users can filter to services needing attention, search by name, select a service to see its active and recently resolved issues, and open an issue for impact details and Microsoft's latest updates. Use for every service health request. Set serviceName to the user's own wording; nicknames and abbreviations are resolved automatically. The component carries the live data and IS the answer: never restate statuses or issue details in text, never say you cannot see or determine the status, never use directional words like below or above, and never substitute admin-center directions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/serviceHealth/ServiceHealthCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

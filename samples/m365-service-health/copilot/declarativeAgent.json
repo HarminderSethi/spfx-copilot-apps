@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "M365 Service Health Agent",
+  "description": "Check whether Microsoft 365 is running normally. Shows live service health, incidents, and advisories in an interactive view you can filter, search, and drill into for impact details and Microsoft's latest updates.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Microsoft 365 health",
+      "text": "Show the current health of Microsoft 365 services"
+    },
+    {
+      "title": "Microsoft Teams health",
+      "text": "Is Microsoft Teams having any problems right now?"
+    },
+    
+    {
+      "title": "Exchange Online health",
+      "text": "Show the current service health for Exchange Online"
+    },
+    {
+      "title": "SharePoint Online health",
+      "text": "Show the current service health for SharePoint Online"
+    }
+  ],
+  "actions": [
+    {
+      "id": "serviceHealthAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}

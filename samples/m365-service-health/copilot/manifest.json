@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "08ff5d34-5d43-4ab7-a36f-91a68b65d717",
+  "developer": {
+    "name": "Harminder Singh",
+    "websiteUrl": "https://github.com/HarminderSethi",
+    "privacyUrl": "https://github.com/HarminderSethi",
+    "termsOfUseUrl": "https://github.com/HarminderSethi"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "M365 Service Health Agent",
+    "full": "M365 Service Health Agent"
+  },
+  "description": {
+    "short": "View live Microsoft 365 service health in Copilot.",
+    "full": "View current Microsoft 365 service health, active incidents, and advisories in an interactive Copilot component."
+  },
+  "accentColor": "#FFFFFF",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "serviceHealthAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

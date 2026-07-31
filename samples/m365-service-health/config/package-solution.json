@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "M365-service-health-copilot-component",
+    "id": "a457f508-3585-4416-b167-6c647b0fe3e6",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Harminder Singh",
+      "websiteUrl": "https://github.com/HarminderSethi",
+      "privacyUrl": "https://github.com/HarminderSethi/ServiceHealthCopilotComponent",
+      "termsOfUseUrl": "https://github.com/HarminderSethi/ServiceHealthCopilotComponent",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "ServiceHealth.Read.All"
+      }
+    ],
+    "metadata": {
+      "shortDescription": {
+        "default": "Live Microsoft 365 service health, incidents, and advisories inside Copilot."
+      },
+      "longDescription": {
+        "default": "A Copilot component that answers \"is Microsoft 365 working?\" without leaving the chat. It shows the current status of every Microsoft 365 service from the Microsoft Graph service health API, highlights the ones needing attention, and lets users search, filter, and drill into a service to read its active and recently resolved issues, who is affected, and Microsoft's latest updates."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "service-health-copilot-component Feature",
+        "description": "The feature that activates elements of the service-health-copilot-component solution.",
+        "id": "bdab9bef-ea10-4344-b621-3c408f1942f3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/service-health-copilot-component.sppkg"
+  }
+}
