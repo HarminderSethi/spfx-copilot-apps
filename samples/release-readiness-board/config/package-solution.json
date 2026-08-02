@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "release-readiness-board-client-side-solution",
+    "id": "38f00308-883b-47c1-bde7-1609bc13889f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Release readiness board for tracking blockers and release checks in Microsoft 365 Copilot"
+      },
+      "longDescription": {
+        "default": "A SharePoint Copilot App that renders inline and full-screen release readiness views with blockers, overdue checks, and owner accountability."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "release-readiness-board Feature",
+        "description": "The feature that activates elements of the release-readiness-board solution.",
+        "id": "0d535d8c-1dcd-452d-9db5-ef875e4e9236",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/release-readiness-board.sppkg"
+  }
+}
