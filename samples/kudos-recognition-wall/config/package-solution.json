@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "O365C - Kudos Wall",
+    "id": "8cb1a0e9-8830-4017-91bb-f61b1c28c8e6",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Contoso",
+      "websiteUrl": "https://www.contoso.com",
+      "privacyUrl": "https://www.contoso.com/privacy",
+      "termsOfUseUrl": "https://www.contoso.com/terms",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Kudos & Recognition Wall — recognise colleagues in Microsoft 365 Copilot."
+      },
+      "longDescription": {
+        "default": "An SPFx Copilot Component that lets colleagues give kudos and browse your organization's recognition wall inside the Microsoft 365 Copilot canvas."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "O365C - Kudos Wall Feature",
+        "description": "The feature that activates elements of the O365C - Kudos Wall solution.",
+        "id": "7ee09bcc-9f3f-47c5-b08f-79d83bdf0328",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/o365c-kudos-wall.sppkg"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "be58ec58-82d8-40a8-a0fe-2d9e6dbc370f",
+  "alias": "KudoswallCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "KudoswallTool",
+      "description": {
+        "default": "Give kudos to a colleague or open your organization's recognition wall. Pass 'recipient' (a colleague's name or email) and 'message' when the user names someone to thank; pass no arguments to show the wall."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/kudoswall/KudoswallCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}
