@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": false,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "zava-employee-agent",
+    "libraryId": "9bf784ac-235a-4b13-ae57-549576e960ab",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "zava-employee-agent",
+    "solutionShortDescription": "zava-employee-agent description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent",
+    "template": "none",
+    "componentName": "ExploreOrganization"
+  }
+}

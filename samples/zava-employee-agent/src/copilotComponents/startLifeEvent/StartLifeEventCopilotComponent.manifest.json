@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "0e499a63-6927-49e5-8287-c53ec11ac69e",
+  "alias": "StartLifeEventCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "StartLifeEvent",
+      "description": {
+        "default": "Start a reviewable benefits life-event workflow with event, effective date, and dependent count prefilled. Preview coverage and monthly cost impact; never submit automatically."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/startLifeEvent/StartLifeEventCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

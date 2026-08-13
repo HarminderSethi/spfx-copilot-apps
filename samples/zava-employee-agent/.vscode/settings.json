@@ -1,0 +1,28 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  // Configure glob patterns for excluding files and folders in the file explorer.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/jest-output": true,
+    "**/lib-amd": true,
+    "src/**/*.scss.ts": true
+  },
+  "typescript.tsdk": ".\\node_modules\\typescript\\lib",
+  "chat.tools.terminal.autoApprove": {
+    "/^npm run check:mock-media; heft test --clean$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^npx heft test --clean$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^npx heft package-solution --production$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

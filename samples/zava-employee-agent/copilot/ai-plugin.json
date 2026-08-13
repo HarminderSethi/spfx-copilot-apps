@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "getMyHrDashboard",
+  "name_for_human": "Zava Employee Agent",
+  "description_for_human": "Your personalized HR dashboard, priorities, profile, timeline, and milestones.",
+  "description_for_model": "Render employee-first Zava HR experiences with dedicated tools. Use GetMyHRDashboard only for broad summaries, GetProfileHealth for profile completeness, GetNextBestActions for ranked priorities, GetWorklifeSnapshot for HR metrics and timelines, and GetEmployeeMilestones for anniversaries and career moments.",
+  "contact_email": "publisher@contoso.com"
+}

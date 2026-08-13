@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "63b7d56d-08b1-4cd3-8baa-57e45db2cec1",
+  "alias": "PolicyComparisonCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "ComparePolicies",
+      "description": {
+        "default": "Compare one policy topic across two or more jurisdictions in a side-by-side matrix with highlighted differences. Use only for explicit comparisons; use AskPolicy for a single policy answer."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/policyComparison/PolicyComparisonCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "d37a8755-d839-4981-b7d2-3111887af626",
+  "alias": "LatestPayCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetLatestPay",
+      "description": {
+        "default": "Show the signed-in employee's latest pay statement with gross, deductions, net pay, and a privacy-safe composition visual. Use for the amount or statement itself; use ExplainPayChange for why it changed."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/latestPay/LatestPayCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

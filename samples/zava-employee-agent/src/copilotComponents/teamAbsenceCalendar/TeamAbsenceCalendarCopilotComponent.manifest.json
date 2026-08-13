@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "b0c11879-9934-4e06-ab0d-75aa6832103b",
+  "alias": "TeamAbsenceCalendarCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetTeamAbsenceCalendar",
+      "description": {
+        "default": "Show a manager's team absence heatmap for a date range with overlap and remaining coverage explained. Use for who is away or coverage risk; use GetApprovalInbox for pending decisions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/teamAbsenceCalendar/TeamAbsenceCalendarCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}
