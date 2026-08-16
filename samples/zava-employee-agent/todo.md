@@ -683,6 +683,10 @@ in [Zava-Employee-Agent-Component-Plan.md](Zava-Employee-Agent-Component-Plan.md
 
 ### Keynote demo
 
+- ✅ Curate a timed three-minute story that moves from purpose-built inline components to the shared
+  full-screen workspace and My HR action plan.
+- ✅ Document exact prompts, presenter wording, interaction checkpoints, trust language, optional
+  privacy/manager variants, and a live-demo recovery plan.
 - ▢ Curate a deterministic 60-second primary demo centered on My HR action plan.
 - ▢ Curate prompt-prefill demos for PTO, Benefits, Payroll, Policy, Support, Learning, Team, and
   People.

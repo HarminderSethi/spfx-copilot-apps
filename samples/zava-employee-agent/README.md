@@ -29,7 +29,8 @@ The product source brief is
 component contract is [Zava-Employee-Agent-UX-Design.md](Zava-Employee-Agent-UX-Design.md), and
 implementation must follow [agentic-creation-rules.md](agentic-creation-rules.md). For Copilot UX
 testing, use the copy/paste routing and parameter scenarios in
-[Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md).
+[Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md). For a live presentation,
+use the timed [3-minute demo story and script](Zava-Employee-Agent-3-Minute-Demo.md).
 
 ## At a Glance
 

@@ -4,6 +4,9 @@ Use this catalog to test tool selection and parameter extraction in Microsoft 36
 
 > Expected properties below are the normalized values used by the component. When a prompt omits a field, the component may apply the documented offline-demo default. Prompt values prefill or filter UX; they never submit or decide automatically.
 
+For a presentation-ready inline-to-full-screen narrative, use the timed
+[Zava Employee Agent 3-minute demo story](Zava-Employee-Agent-3-Minute-Demo.md).
+
 ## Quick routing smoke test
 
 | # | Family | Prompt to paste | Expected tool | Full-screen route | Expected inline result |
