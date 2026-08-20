@@ -687,6 +687,9 @@ in [Zava-Employee-Agent-Component-Plan.md](Zava-Employee-Agent-Component-Plan.md
   full-screen workspace and My HR action plan.
 - ✅ Document exact prompts, presenter wording, interaction checkpoints, trust language, optional
   privacy/manager variants, and a live-demo recovery plan.
+- ✅ Create a ten-video BDM/TDM social campaign focused on the art of the possible, Copilot-hosted UX,
+  secure modernization of existing experiences, human control, production direction, publishing
+  cadence, platform adaptations, localization, and business measurement.
 - ▢ Curate a deterministic 60-second primary demo centered on My HR action plan.
 - ▢ Curate prompt-prefill demos for PTO, Benefits, Payroll, Policy, Support, Learning, Team, and
   People.

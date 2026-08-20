@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "04892079-d738-4cd8-b623-06aa87ae2818",
+  "alias": "GetProjectAiSpendCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectAiSpend",
+      "description": {
+        "default": "Analyze project AI spend, usage, model mix, unit cost, budget guardrail, and forecast."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectAiSpend/GetProjectAiSpendCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

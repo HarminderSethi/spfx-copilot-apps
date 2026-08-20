@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "069f4501-a052-4136-9cc7-5a9b951c1eef",
+  "alias": "ReviewStageGateCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReviewStageGate",
+      "description": {
+        "default": "Review project stage-gate criteria, evidence, RAID, spend, value, and accountable owners."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reviewStageGate/ReviewStageGateCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

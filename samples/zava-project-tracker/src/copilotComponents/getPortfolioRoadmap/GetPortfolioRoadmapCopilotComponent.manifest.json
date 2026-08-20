@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "f912e5c4-e845-4d2c-932d-a7b2573facd8",
+  "alias": "GetPortfolioRoadmapCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetPortfolioRoadmap",
+      "description": {
+        "default": "Visualize cross-project phases, milestones, stage gates, dependencies, and collisions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getPortfolioRoadmap/GetPortfolioRoadmapCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

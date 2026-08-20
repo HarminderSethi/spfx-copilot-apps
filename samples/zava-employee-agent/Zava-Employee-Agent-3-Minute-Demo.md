@@ -11,7 +11,7 @@ Zava Employee Agent combines two models:
 
 The core message is:
 
-> **AI understands the request. The component makes it precise. The user remains in control.**
+> **AI understands the request. The UX component makes it precise. The user remains in control.**
 
 A user can speak naturally, but the experience becomes specific before anything consequential happens. Dates become date fields. Pay changes become a waterfall. Cross-family priorities become a structured action plan. Requests are never submitted, cases are never opened, and approvals are never decided directly from prompt text.
 
@@ -224,3 +224,6 @@ If full-screen mode is unavailable, complete the inline time-off workflow and us
 ## Post-demo proof points
 
 After the live story, use [Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md) to test all 20 prompt-addressable tools and their expected properties. The full-screen shell additionally contains all 50 originally planned internal HR views.
+
+To extend this story into a global business campaign about modernizing work in Copilot, use
+[When Copilot Becomes the Experience](Copilot-Apps-Social-Campaign.md).

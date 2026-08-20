@@ -1,0 +1,30 @@
+{
+  "generatedOn": "2026-08-18",
+  "environment": "Local Zava inline UX review harness",
+  "intents": 30,
+  "responsiveThemeStates": 120,
+  "widths": [340, 760],
+  "themes": ["light", "dark"],
+  "checks": {
+    "runtimeErrors": 0,
+    "horizontalOverflowFailures": 0,
+    "brokenImages": 0,
+    "unlabeledControls": 0,
+    "unlabeledCharts": 0,
+    "blankCharts": 0,
+    "invalidAccentGradients": 0,
+    "reducedMotionIntentsChecked": 30,
+    "browserZoom200PercentIntentsChecked": 30,
+    "browserZoom200PercentFailures": 0,
+    "keyboardFocusFailures": 0,
+    "screenshotsCaptured": 30
+  },
+  "automatedTests": {
+    "total": 91,
+    "informationDefaults": 19,
+    "formPrefillCases": 6,
+    "formValidationCases": 6,
+    "formLifecycleCases": 6
+  },
+  "externalPrerequisite": "Deferred by user on 2026-08-18. Online Copilot Workbench validation requires config/serve.json tenantDomain to be supplied and an authenticated tenant session."
+}

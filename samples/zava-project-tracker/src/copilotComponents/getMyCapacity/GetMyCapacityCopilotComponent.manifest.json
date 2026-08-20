@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "72f190a2-6436-4715-b3e8-e4d35cf9b09a",
+  "alias": "GetMyCapacityCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetMyCapacity",
+      "description": {
+        "default": "Analyze the signed-in user's committed and forecast capacity over a selected period."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getMyCapacity/GetMyCapacityCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

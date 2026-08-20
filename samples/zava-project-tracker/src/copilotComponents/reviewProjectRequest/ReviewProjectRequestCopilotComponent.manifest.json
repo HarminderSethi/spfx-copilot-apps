@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "66ab1d58-2d89-4c2c-9848-df0cae6efd32",
+  "alias": "ReviewProjectRequestCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReviewProjectRequest",
+      "description": {
+        "default": "Review project request strategy, value, feasibility, risk, evidence, and duplication."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reviewProjectRequest/ReviewProjectRequestCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

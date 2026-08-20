@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "09c521f9-9b1d-44d4-a2d0-0e98ad3396cf",
+  "alias": "GetPortfolioHealthCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetPortfolioHealth",
+      "description": {
+        "default": "Summarize portfolio investment, value, delivery health, and top exceptions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getPortfolioHealth/GetPortfolioHealthCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "64954f1d-2b05-49ad-ba8c-397167c30746",
+  "alias": "GetPortfolioCapacityCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetPortfolioCapacity",
+      "description": {
+        "default": "Analyze portfolio role and skill demand versus supply with safe what-if scenarios."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getPortfolioCapacity/GetPortfolioCapacityCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

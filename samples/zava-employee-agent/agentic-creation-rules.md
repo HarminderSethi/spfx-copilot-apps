@@ -153,8 +153,8 @@ review `todo.md` before greenlighting the build.
 - **G5 - Mock data first, Graph-shaped.** All data flows through an `I<Name>DataService` interface with
   a **Mock implementation** shipped. Mock objects mirror **Microsoft Graph** response shapes so a live
   service is a drop-in (§9).
-- **G6 - Fully offline.** **No external references at runtime** - bundle all imagery as base64 (§10).
-  All deep-links/actions are **no-op** until a live phase.
+- **G6 - Fully offline.** **No external references at runtime** - package media with the solution and
+  resolve it from package-hosted assets (§10). All deep-links/actions are **no-op** until a live phase.
 - **G7 - Derive UI from props.** Read host state (`theme`, `displayMode`, dimensions) from
   `hostContext`; **never mirror host state in component state**. `render()` is idempotent.
 - **G8 - Ship a committed `.sppkg`.** For mock-data samples, commit the built package so anyone can
@@ -165,6 +165,10 @@ review `todo.md` before greenlighting the build.
   Components**, the UX designs, and the README objectives are provided by the user; the **agent** adds
   the baseline React + Fluent packages on the human's "initial configuration" request (§0.1–§0.2).
   Never scaffold, rename, or restructure the user's components; build **from** their brief.
+- **G12 - Package shared code and media once.** Multiple Copilot Components in one solution MUST share
+  a bundle when they use the same runtime, UI, services, or mock media. Never embed the same base64
+  image map in every entry point. Clean before every production package and enforce the size gates in
+  §18.
 
 ---
 
@@ -222,7 +226,7 @@ scenario; some are optional):
 7. **Deferred - Dynamic data / API integration.** `I<Name>DataService` live impl (PnPjs v4 / Graph),
    real signature-feature backend, tool-input rework, provisioning. (§16)
 8. **Docs & cleanup.** README from PnP template, `assets/sample.json`, real screenshots, commit
-   `.sppkg`. (§18)
+  `.sppkg`. (§19)
 
 **Definition of done per phase:** `heft test --clean` passes with **zero lint warnings/errors**, and
 the relevant `todo.md` items are ✅.
@@ -377,16 +381,20 @@ export default zodToJsonSchema(schema);
 
 ## 10. Imagery & offline (zero external references)
 
-- **Bundle all imagery as base64 data URIs.** No `picsum.photos`, no CDN, no `userphoto` at runtime for
-  mock personas.
-- **Faces:** put source `assets/faces/*.jpeg` and generate `mockData/faces.ts` (base64 map). Provide a
-  Fluent `Avatar` **initials fallback**.
+- **Package imagery once as static client-side assets.** No `picsum.photos`, CDN, or other external
+  runtime dependency for mock personas. Resolve package-hosted URLs through one shared media module;
+  do not copy binary data or a complete base64 map into each Copilot Component bundle.
+- **Base64 is an exception, not the default.** Inline only tiny, component-specific assets when doing
+  so is measurably smaller than another request. Never base64-encode photos or shared persona images:
+  base64 adds about 33% raw size and repeated strings are not deduplicated across bundle files.
+- **Faces:** put source `assets/faces/*.jpeg`, emit each file once with the packaged client-side
+  assets, and expose stable URLs from a shared media catalog. Provide a Fluent `Avatar` **initials
+  fallback**.
 - **Thumbnails / photos:** download **royalty-free** images **once at authoring time** (e.g. Lorem
-  Picsum / Unsplash license), embed as base64 into a generated `mockData/<x>Images.ts`, and reference by
-  key. Provide a **gradient/icon fallback** on image error. Keep keys valid identifiers (dot-notation
-  lint).
-- Document the source/license in the generated file header. Accept the bundle-size cost (~a few hundred
-  KB) as the price of a demo-proof, offline sample.
+  Picsum / Unsplash license), package each file once, and reference it by a typed catalog key. Provide
+  a **gradient/icon fallback** on image error. Keep keys valid identifiers (dot-notation lint).
+- Document the source/license beside the source assets or in the media catalog. During the release
+  audit (§18.4), verify that every image hash appears only once in the package.
 
 ---
 
@@ -492,7 +500,66 @@ export default zodToJsonSchema(schema);
 
 ---
 
-## 18. Docs & sample gallery
+## 18. Optimized delivery and bundle efficiency
+
+Bundle size is a release requirement, not a cleanup task. Optimize the deployable production package,
+while using development bundles and source maps only to diagnose which modules cause growth.
+
+### 18.1 Share one runtime across Copilot Components
+
+- When a solution has multiple Copilot Components that use the same React, Fluent UI, services, or
+  experience framework, place their component entries in **one shared bundle** in
+  `config/config.json`. Do not define one independent bundle per component unless isolation is a
+  measured requirement.
+- Keep shared UI, data services, schemas, and media catalogs behind common modules. Avoid entry-point
+  imports that pull an entire feature catalog when only one feature is needed.
+- Use selective/deep imports where a package's public barrel prevents effective tree-shaking. In
+  particular, inspect `@fluentui/react-icons` when a development bundle grows unexpectedly; broad icon
+  barrels can add many megabytes before production tree-shaking.
+
+### 18.2 Keep media out of repeated JavaScript
+
+- Emit photos and other substantial media as package-hosted files and reference them by URL. A shared
+  URL string is cheap; repeating encoded binary content in every JavaScript entry is not.
+- Import only the media keys needed by an experience. Do not return a global `media` object containing
+  every asset from every mock data service response.
+- Optimize source images before packaging and choose dimensions appropriate to their rendered size.
+  Preserve a source/license record and a graceful visual fallback.
+
+### 18.3 Clean production packaging is mandatory
+
+- The release command MUST clean before compiling and packaging:
+
+  ```bash
+  heft test --clean --production && heft package-solution --production
+  ```
+
+- Prefer an npm script for that exact sequence so local and automated builds cannot drift. Running
+  only `heft package-solution --production` can package stale unminified files already present under
+  `sharepoint/solution/debug/ClientSideAssets`.
+- After packaging, staging MUST contain only the current hashed production component JavaScript and
+  its required license/static files. A plain `*-copilot-component.js` beside a hashed
+  `*-copilot-component_<hash>.js` is a release failure.
+- Do not judge production delivery size from `dist` after a development build. Inspect the `.sppkg`
+  archive and its `ClientSideAssets` entries.
+
+### 18.4 Release size gates
+
+For every final build, record the `.sppkg` size, total compressed client-side JavaScript, largest
+JavaScript entry, and duplicate media count in `todo.md` or the build log.
+
+- **No stale outputs:** zero unhashed development component bundles in the package.
+- **No duplicate media:** each substantial image binary/hash is packaged once; zero complete base64
+  image catalogs repeated across component bundles.
+- **Investigate regressions:** explain any package increase over 10% from the previous accepted build.
+- **Default investigation thresholds:** inspect any production JavaScript entry over 1 MiB raw or any
+  sample `.sppkg` over 10 MiB. A justified feature may exceed these values, but not silently.
+- Compare both raw and compressed sizes. Use source maps or a bundle analyzer to attribute growth to
+  application source, media, Fluent icons, and other dependencies before changing architecture.
+
+---
+
+## 19. Docs & sample gallery
 
 - **README** from the PnP sample template: Summary, Screenshots, Applies to, Prerequisites, **Minimal
   Path to Awesome** (with a "ready-made package" callout linking the `.sppkg`), **60-second demo
@@ -506,7 +573,7 @@ export default zodToJsonSchema(schema);
 
 ---
 
-## 19. Solution structure (mirror this)
+## 20. Solution structure (mirror this)
 
 ```text
 samples/<name>/
@@ -532,7 +599,7 @@ samples/<name>/
 
 ---
 
-## 20. Cross-sample consistency checklist (apply to every sample)
+## 21. Cross-sample consistency checklist (apply to every sample)
 
 - [ ] User-scaffolded via the Yeoman generator; component count/names set by the user; **agent-installed** baseline packages (React 17 + Fluent v9) on the "initial configuration" request.
 - [ ] Copilot Component (no web part / no property pane); Heft; React 17; Fluent v9.
@@ -540,10 +607,14 @@ samples/<name>/
 - [ ] Single stable-key theme provider; tokens only; no `background` shorthand; no inline styles.
 - [ ] `I<Name>DataService` + Mock impl; Graph-shaped mock; mapper; relative-time resolution.
 - [ ] Standard M365 demo personas; real signed-in user via page context; one connected story.
-- [ ] All imagery bundled base64; no external runtime references; graceful fallbacks.
+- [ ] All imagery available offline as package-hosted assets; each substantial image packaged once;
+  no repeated base64 catalogs; graceful fallbacks.
 - [ ] One deterministic **signature** feature with streamed reveal + personalized headline (reduced-motion safe).
 - [ ] Optional session-persisted settings that reshape the UX; visibility-driven re-flow layout.
 - [ ] Staggered entrance + reduced-motion guards; large-display scaling; positive empty states.
-- [ ] `heft test --clean` green (zero warnings); committed `.sppkg`.
+- [ ] Shared Copilot Component bundle used where runtime/UI/services overlap; selective dependency
+  imports; no avoidable shared-code duplication.
+- [ ] Clean production package passes §18 size gates; `heft test --clean` green (zero warnings);
+  committed `.sppkg`.
 - [ ] README (PnP template + 60-second demo script) + `assets/sample.json` synced to real assets.
 - [ ] `todo.md` generated first and kept current with the ▢/🔶/✅ legend.

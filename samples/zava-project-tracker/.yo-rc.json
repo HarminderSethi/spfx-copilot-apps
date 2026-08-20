@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": false,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "zava-project-tracker",
+    "libraryId": "2f61811a-8e4e-4234-8a27-811ee8199a4e",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "zava-project-tracker",
+    "solutionShortDescription": "zava-project-tracker description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent",
+    "template": "none",
+    "componentName": "ExploreAgentCapabilities"
+  }
+}

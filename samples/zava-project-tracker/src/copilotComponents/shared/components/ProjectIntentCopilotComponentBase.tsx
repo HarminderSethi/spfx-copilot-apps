@@ -1,0 +1,51 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import { BaseCopilotComponent } from '@microsoft/sp-copilot-component';
+
+import ProjectIntentApp from './ProjectIntentApp';
+import ProjectThemeProvider from './ProjectThemeProvider';
+import { getIntentDefinition } from '../mockData/intentCatalog';
+import type { IProjectIntentProperties } from '../models/projectPortfolio';
+import { resolveCurrentUser } from '../services/CurrentUserService';
+
+abstract class ProjectIntentCopilotComponentBase<TProperties extends IProjectIntentProperties>
+  extends BaseCopilotComponent<TProperties> {
+  protected abstract intentKey: string;
+
+  protected render(): void {
+    const canExpand = this.hostContext.displayMode !== 'fullscreen' &&
+      (this.hostContext.availableDisplayModes || []).indexOf('fullscreen') >= 0;
+    const currentUser = resolveCurrentUser(this.context);
+    const definition = getIntentDefinition(this.intentKey);
+    const targetDocument = this.context.domElement.ownerDocument;
+
+    ReactDOM.render(
+      React.createElement(
+        ProjectThemeProvider,
+        { theme: this.hostContext.theme, targetDocument },
+        React.createElement(ProjectIntentApp, {
+          definition,
+          properties: this.properties,
+          currentUserName: currentUser.displayName,
+          currentUserImageUrl: currentUser.photoUrl,
+          containerWidth: this.hostContext.containerDimensions?.width || this.hostContext.containerDimensions?.maxWidth,
+          displayMode: this.hostContext.displayMode,
+          onRequestFullscreen: canExpand ? this._handleRequestFullscreen : undefined
+        })
+      ),
+      this.context.domElement
+    );
+  }
+
+  protected onTeardown(reason: string | undefined): Promise<void> {
+    ReactDOM.unmountComponentAtNode(this.context.domElement);
+    return super.onTeardown(reason);
+  }
+
+  private _handleRequestFullscreen = (): void => {
+    this.requestDisplayModeAsync('fullscreen').catch(() => undefined);
+  };
+}
+
+export default ProjectIntentCopilotComponentBase;

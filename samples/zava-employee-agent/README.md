@@ -30,7 +30,8 @@ component contract is [Zava-Employee-Agent-UX-Design.md](Zava-Employee-Agent-UX-
 implementation must follow [agentic-creation-rules.md](agentic-creation-rules.md). For Copilot UX
 testing, use the copy/paste routing and parameter scenarios in
 [Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md). For a live presentation,
-use the timed [3-minute demo story and script](Zava-Employee-Agent-3-Minute-Demo.md).
+use the timed [3-minute demo story and script](Zava-Employee-Agent-3-Minute-Demo.md). For the wider
+launch, use the [ten-video global social campaign](Copilot-Apps-Social-Campaign.md).
 
 ## At a Glance
 

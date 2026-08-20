@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "58abb90d-786b-4f44-a34d-c98173a000e2",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://www.contoso.com",
+    "privacyUrl": "https://www.contoso.com/privacy",
+    "termsOfUseUrl": "https://www.contoso.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Zava AI Portfolio",
+    "full": "Zava AI Project Portfolio Agent"
+  },
+  "description": {
+    "short": "Project delivery, AI investment, capacity, and approvals.",
+    "full": "An intent-driven Copilot experience for personal work, project delivery, AI spend, portfolio governance, resource capacity, and manager approvals."
+  },
+  "accentColor": "#0B4F7C",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "projectTrackerAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

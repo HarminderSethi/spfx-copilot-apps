@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "6ecb07e4-beaa-4d51-aaef-391e121d99bc",
+  "alias": "SubmitProjectRequestCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "SubmitProjectRequest",
+      "description": {
+        "default": "Prepare a new project request with business value, sponsor, dates, cost, and AI context."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/submitProjectRequest/SubmitProjectRequestCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

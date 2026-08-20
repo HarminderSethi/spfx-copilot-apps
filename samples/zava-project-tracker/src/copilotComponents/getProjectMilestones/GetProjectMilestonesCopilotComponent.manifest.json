@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "5039d6cd-1de8-4230-b976-a8030efa55c0",
+  "alias": "GetProjectMilestonesCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectMilestones",
+      "description": {
+        "default": "Show project milestones, stage gates, confidence, status, and accountable owners."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectMilestones/GetProjectMilestonesCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "d22a2d60-c8ed-47df-9d8f-5b67feeabdaa",
+  "alias": "GetProjectRisksCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectRisks",
+      "description": {
+        "default": "Analyze project RAID exposure, movement, mitigation, due dates, and ownership."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectRisks/GetProjectRisksCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}
