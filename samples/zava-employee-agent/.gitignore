@@ -17,6 +17,8 @@ release
 solution
 temp
 .heft
+ux-review/review.js
+ux-review/review.js.map
 
 # Coverage directory used by tools like istanbul
 coverage

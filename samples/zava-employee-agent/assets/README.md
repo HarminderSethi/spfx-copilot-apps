@@ -1,9 +1,9 @@
 # Design asset catalog
 
-## Canonical Family 01 references
+## Historical Family 01 design references
 
-These files are generated from `design-sources/zava-home-dashboard.html` and are the implementation
-references for Family 01:
+These files are generated from `design-sources/zava-home-dashboard.html` and retained under
+`design-sources/home-reference/` as historical design references for Family 01:
 
 The same HTML source is now an offline interactive review prototype for the shared full-screen shell.
 Its desktop rail and mobile selector transition between Home and nine intentionally empty,
@@ -17,6 +17,14 @@ prototype does not add or simulate family business components.
 | `zava-full-home-action-plan.png` | 1600 x 1000 | Wide desktop with My HR action plan open |
 | `zava-full-home-dashboard-narrow.png` | 1024 x 1123 | Narrow desktop/tablet shell behavior |
 | `zava-full-home-dashboard-mobile.png` | 390 x 1793 | Mobile shell and stacked Home content |
+
+## Publication screenshots
+
+The 32 PNG files directly under `assets/` are captured from the real React implementation through
+`npm run start:ux-review`. They cover all 20 inline Copilot Components, all ten full-screen families,
+mobile Home, and dark People. [sample.json](sample.json) lists every publication image, and
+`npm run check:gallery` validates metadata, file integrity, dimensions, alt text, unique order, URL,
+and exact publication-root coverage.
 
 The refreshed source uses the same visual hierarchy proven by the My Day sample: a white Copilot
 canvas, employee-first greeting, one signature gradient action band, varied editorial columns, and
@@ -37,9 +45,10 @@ runtime does not request Pexels or any other image host.
 
 ## Legacy People Compass source boards
 
-The `pc-*` PNG files are retained as source material only. Their filenames do not reliably identify
-their visible content, and the boards contain People Compass branding. Do not implement from a
-legacy filename without checking the visible heading inside the image.
+The `pc-*` PNG files are retained under `design-sources/legacy-people-compass/` as source material
+only. They are intentionally outside the publication asset root. Their filenames do not reliably
+identify their visible content, and the boards contain People Compass branding. Do not implement
+from a legacy filename without checking the visible heading inside the image.
 
 | Existing filename | Visible content or issue |
 | --- | --- |

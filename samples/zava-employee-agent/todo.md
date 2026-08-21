@@ -9,14 +9,15 @@ This is the single source of truth for implementation progress against [README.m
 
 ---
 
-> **Progress (latest):** Phases 0-15 are complete. All 20 value-ranked Copilot Components are
+> **Progress (latest):** Phases 0-15 and all locally automatable release gates are complete. All 20 value-ranked Copilot Components are
 > independently prompt-addressable, package in one Zava Employee Agent, and reuse the implemented
 > ten-family full-screen shell. Every family retains all five originally planned experiences as
 > complete internal full-screen routes, for 50 internal views total; only 20 are promoted to inline
-> Copilot Components/MCP tools. Dashboard-only views now include the planned histories, timelines,
-> checklists, case boards, coverage, documents, recommendations, roster, and signal experiences. The
-> clean gate packages 20 tools and passes 36 suites with 158 tests. Next: Phase 16 completes
-> cross-family showcase polish, accessibility/responsive review, and demo curation.
+> Copilot Components/MCP tools. The clean gate passes 39 suites and 170 tests, validates 20 generated
+> API-plugin functions and mirrored MCP tools, and emits one shared 910,310-byte JavaScript bundle in a
+> ~0.493 MiB `.sppkg`, with no stale output or duplicated image payloads. Remaining Phase 16 blockers
+> require authenticated Copilot routing evidence, the final manual accessibility/viewport matrix, and
+> final implementation screenshots/gallery metadata before GitHub publication.
 
 ## Approach and sequencing
 
@@ -672,10 +673,14 @@ in [Zava-Employee-Agent-Component-Plan.md](Zava-Employee-Agent-Component-Plan.md
 - ▢ Validate every showcase prompt selects the expected component/tool and normalized properties.
 - ▢ Validate a second prompt refreshes editable defaults without requiring a page reload.
 - ▢ Validate every Home and family-priority destination opens an existing detail and restores focus.
-- ▢ Validate all 20 current-target intent components share one shell without duplicating family implementations.
+- ✅ Validate all 20 current-target intent components share one shell and one production bundle without duplicating family implementations.
 
 ### Accessibility and responsive review
 
+- ✅ Add a tenant-free review harness for all 20 inline tools and all ten full-screen families with
+  reproducible intent, family, width, mode, theme, and clean-capture routes.
+- ✅ Capture and inspect representative inline, desktop, mobile, and dark implementation states with
+  no console errors or horizontal overflow in the reviewed routes.
 - ▢ Complete keyboard-only and screen-reader journeys for all inline components and full-screen routes.
 - ▢ Complete light, dark, high-contrast, reduced-motion, 320px, mobile, desktop, and projector reviews.
 - ▢ Verify empty, loading/thinking, streaming, complete, validation, success, and fallback states.
@@ -690,12 +695,18 @@ in [Zava-Employee-Agent-Component-Plan.md](Zava-Employee-Agent-Component-Plan.md
 - ✅ Create a ten-video BDM/TDM social campaign focused on the art of the possible, Copilot-hosted UX,
   secure modernization of existing experiences, human control, production direction, publishing
   cadence, platform adaptations, localization, and business measurement.
-- ▢ Curate a deterministic 60-second primary demo centered on My HR action plan.
-- ▢ Curate prompt-prefill demos for PTO, Benefits, Payroll, Policy, Support, Learning, Team, and
+- ✅ Curate a deterministic 60-second primary demo centered on My HR action plan.
+- ✅ Curate prompt-prefill demos for PTO, Benefits, Payroll, Policy, Support, Learning, Team, and
   People.
-- ▢ Verify all demos work fully offline and clearly disclose mock/AI-style behavior.
-- ▢ Capture final screenshots only from the implemented experience, not stale source mockups.
-- ▢ Run `heft test --clean` with zero warnings or errors.
+- ✅ Verify the documented demos use bundled mock data and clearly disclose mock/AI-style behavior.
+- ✅ Create a timed 10-minute business-value walkthrough covering employee, private, and manager flows.
+- ✅ Create a 5-minute developer walkthrough covering routing, host integration, safe workflows,
+  shared bundling, the review harness, and release validation.
+- ✅ Embed the canonical Microsoft 365 package-testing walkthrough (`4asOZi4PNUQ`) in README.
+- ✅ Capture 32 final screenshots from the implemented React experience, including all 20 inline tools,
+  all ten full-screen families, mobile Home, and dark People, with focused UX-only framing and no
+  harness background padding.
+- ✅ Run the clean production gate with 39 suites and 170 tests passing and zero failures.
 
 ## Optimal future - Additional inline components
 
@@ -783,24 +794,37 @@ schema, and a human-run Yeoman scaffold.
 
 ## Docs and cleanup
 
-- ▢ Update README features and status as each family becomes implemented; never describe planned
+- ✅ Update README features and status as each family becomes implemented; never describe planned
   behavior as shipped behavior.
-- ▢ Add the PnP gallery `assets/sample.json` using only final assets that exist.
-- ▢ Add one final screenshot per row and a tested 60-second demo script.
-- ▢ Update solution, declarative-agent, plugin, and Teams manifest naming to Zava Employee Agent.
-- ▢ Confirm all component GUIDs, bundles, localized resources, agent registrations, and tool schemas
+- ✅ Add PnP gallery `assets/sample.json` with 32 implementation screenshots, unique order/alt text,
+  local PNG integrity, and raw GitHub URLs validated by `check:gallery`.
+- ✅ Add one final implementation screenshot per gallery row and complete the 60-second, 3-minute,
+  10-minute business, and 5-minute technical demo scripts.
+- ✅ Update solution, declarative-agent, plugin, and Teams manifest naming to Zava Employee Agent.
+- ✅ Confirm all component GUIDs, shared bundle entries, localized resources, agent registrations, and tool schemas
   are synchronized.
-- ▢ Remove stale People Compass branding and obsolete/mislabeled design references.
-- ▢ Run `heft test --clean --production` with zero warnings or errors.
-- ▢ Run `heft package-solution --production` and verify the package.
+- ✅ Move stale People Compass boards out of publication assets into documented legacy design sources.
+- ✅ Run `heft test --clean --production` with 170 tests and zero failures.
+- ✅ Run `heft package-solution --production` and verify one hashed bundle in the ~0.493 MiB package.
 - ▢ Commit `sharepoint/solution/zava-employee-agent.sppkg` while keeping other build output ignored.
+
+### Publication readiness gate
+
+- ✅ README includes real screenshots, ready-made package/build paths, local review instructions,
+  correct tenant-package video guidance, validation status, safety boundaries, and all demo links.
+- ✅ Legacy design boards are separated from the publication asset root.
+- ✅ Gallery, generated-plugin, and package-output validators run from `npm run build`.
+- ▢ Complete authenticated Copilot prompt routing/property extraction and second-prompt refresh evidence.
+- ▢ Complete authenticated host CSP, iframe focus, screen-reader, and Windows high-contrast checks.
+- ▢ Run one cold-machine/offline rehearsal of the 60-second, business, and technical demo paths.
 
 ## Reusable playbook
 
-- ▢ Recheck [agentic-creation-rules.md](agentic-creation-rules.md) before every phase.
-- ▢ Preserve React 17, Fluent UI v9, Heft, token-only styling, mock-first services, relative dates,
+- ✅ Recheck the golden [agentic-creation-rules.md](agentic-creation-rules.md) and synchronize this
+  sample's reference copy byte-for-byte.
+- ✅ Preserve React 17, Fluent UI v9, Heft, token-only styling, mock-first services, relative dates,
   accessibility, reduced motion, and offline runtime behavior throughout implementation.
-- ▢ Record progress only in this file; do not create parallel implementation-status documents.
+- ✅ Record progress only in this file; do not create parallel implementation-status documents.
 
 ## Open decisions
 
@@ -808,7 +832,9 @@ schema, and a human-run Yeoman scaffold.
 - ✅ Keep all ten rail families selectable, using honest placeholders until each family is implemented.
 - ✅ Retain all five completed Home components in the 20-tool portfolio rather than removing working
   MCP entry points solely to force an identical per-family quota.
-- ▢ Confirm the manager-role fallback behavior and whether Team is hidden or shown as unavailable for
-  non-managers.
-- ▢ Approve the dedicated Total Rewards visual direction before Family 08 implementation.
-- ▢ Confirm which harmless mocked actions should visibly persist for the browser session during demos.
+- ✅ Show Team as unavailable with a clear manager-access state for non-managers; do not silently hide
+  the family.
+- ✅ Use a dedicated annual-value Total Rewards experience that remains visually and conceptually
+  distinct from pay-period Payroll.
+- ✅ Keep mocked workflow outcomes component-local and reset them on remount; persist only explicit
+  session preferences, with no live-system writes.

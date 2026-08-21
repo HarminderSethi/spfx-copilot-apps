@@ -2,160 +2,103 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "get-my-hr-dashboard-copilot-component": {
+    "zava-employee-copilot-components": {
       "components": [
         {
           "entrypoint": "./lib/copilotComponents/getMyHrDashboard/GetMyHrDashboardCopilotComponent.js",
           "manifest": "./src/copilotComponents/getMyHrDashboard/GetMyHrDashboardCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "get-profile-health-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/getProfileHealth/GetProfileHealthCopilotComponent.js",
           "manifest": "./src/copilotComponents/getProfileHealth/GetProfileHealthCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "get-next-best-actions-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/getNextBestActions/GetNextBestActionsCopilotComponent.js",
           "manifest": "./src/copilotComponents/getNextBestActions/GetNextBestActionsCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "get-worklife-snapshot-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/getWorklifeSnapshot/GetWorklifeSnapshotCopilotComponent.js",
           "manifest": "./src/copilotComponents/getWorklifeSnapshot/GetWorklifeSnapshotCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "get-employee-milestones-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/getEmployeeMilestones/GetEmployeeMilestonesCopilotComponent.js",
           "manifest": "./src/copilotComponents/getEmployeeMilestones/GetEmployeeMilestonesCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "policy-answer-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/policyAnswer/PolicyAnswerCopilotComponent.js",
           "manifest": "./src/copilotComponents/policyAnswer/PolicyAnswerCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "policy-comparison-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/policyComparison/PolicyComparisonCopilotComponent.js",
           "manifest": "./src/copilotComponents/policyComparison/PolicyComparisonCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "leave-balance-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/leaveBalance/LeaveBalanceCopilotComponent.js",
           "manifest": "./src/copilotComponents/leaveBalance/LeaveBalanceCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "request-time-off-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/requestTimeOff/RequestTimeOffCopilotComponent.js",
           "manifest": "./src/copilotComponents/requestTimeOff/RequestTimeOffCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "latest-pay-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/latestPay/LatestPayCopilotComponent.js",
           "manifest": "./src/copilotComponents/latestPay/LatestPayCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "explain-pay-change-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/explainPayChange/ExplainPayChangeCopilotComponent.js",
           "manifest": "./src/copilotComponents/explainPayChange/ExplainPayChangeCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "compare-benefit-plans-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/compareBenefitPlans/CompareBenefitPlansCopilotComponent.js",
           "manifest": "./src/copilotComponents/compareBenefitPlans/CompareBenefitPlansCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "start-life-event-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/startLifeEvent/StartLifeEventCopilotComponent.js",
           "manifest": "./src/copilotComponents/startLifeEvent/StartLifeEventCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "create-hr-case-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/createHrCase/CreateHrCaseCopilotComponent.js",
           "manifest": "./src/copilotComponents/createHrCase/CreateHrCaseCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "required-learning-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/requiredLearning/RequiredLearningCopilotComponent.js",
           "manifest": "./src/copilotComponents/requiredLearning/RequiredLearningCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "total-rewards-summary-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/totalRewardsSummary/TotalRewardsSummaryCopilotComponent.js",
           "manifest": "./src/copilotComponents/totalRewardsSummary/TotalRewardsSummaryCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "approval-inbox-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/approvalInbox/ApprovalInboxCopilotComponent.js",
           "manifest": "./src/copilotComponents/approvalInbox/ApprovalInboxCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "team-absence-calendar-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/teamAbsenceCalendar/TeamAbsenceCalendarCopilotComponent.js",
           "manifest": "./src/copilotComponents/teamAbsenceCalendar/TeamAbsenceCalendarCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "find-expert-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/findExpert/FindExpertCopilotComponent.js",
           "manifest": "./src/copilotComponents/findExpert/FindExpertCopilotComponent.manifest.json"
         }
-      ]
-    },
-    "explore-organization-copilot-component": {
-      "components": [
+      ,
         {
           "entrypoint": "./lib/copilotComponents/exploreOrganization/ExploreOrganizationCopilotComponent.js",
           "manifest": "./src/copilotComponents/exploreOrganization/ExploreOrganizationCopilotComponent.manifest.json"

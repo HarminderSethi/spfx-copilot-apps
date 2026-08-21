@@ -2,6 +2,9 @@ import * as React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 import { ConfiguredFamilyDashboard, ConfiguredFamilyInline } from '../shared/experiences/ConfiguredFamilyExperience';
+import DashboardSupportingExperience from '../shared/experiences/DashboardSupportingExperience';
+import { getDashboardOnlyExperience } from '../shared/experiences/familyDashboardCatalog';
+import { embeddedImages } from '../shared/mockData/embeddedImages';
 import { MockZavaEmployeeDataService } from '../shared/services/MockZavaEmployeeDataService';
 
 describe('Team experience', () => {
@@ -23,6 +26,14 @@ describe('Team experience', () => {
     const markup = renderToStaticMarkup(<ConfiguredFamilyDashboard family="team" user={user} />);
     expect(markup).toContain('team/approvals');
     expect(markup).toContain('team/absence');
+  });
+
+  test('renders Lee and Patti portraits in the Team roster', () => {
+    const definition = getDashboardOnlyExperience('managerTeamHub');
+    expect(definition).toBeDefined();
+    const markup = renderToStaticMarkup(<DashboardSupportingExperience definition={definition!} />);
+    expect(markup).toContain(embeddedImages.leeGu);
+    expect(markup).toContain(embeddedImages.pattiFernandez);
   });
 
   test('protects manager data for a non-manager user', () => {

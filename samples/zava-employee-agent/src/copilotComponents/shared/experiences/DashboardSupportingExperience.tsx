@@ -66,6 +66,8 @@ const content: Partial<Record<FamilyExperienceKind, ISupportingContent>> = {
 };
 
 const portraitByName: { [name: string]: string } = {
+  'Lee Gu': embeddedImages.leeGu,
+  'Patti Fernandez': embeddedImages.pattiFernandez,
   'Nestor Wilke': embeddedImages.nestorWilke,
   'Pradeep Gupta': embeddedImages.pradeepGupta,
   'Diego Siciliani': embeddedImages.diegoSiciliani,

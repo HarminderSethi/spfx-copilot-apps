@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zava Employee Agent UX Review</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body, #root { min-height: 100%; }
+    body { margin: 0; color: #1f1f1f; background: #e9edf2; font-family: "Segoe UI", sans-serif; }
+    .review-bar { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-height: 58px; padding: 10px 18px; border-bottom: 1px solid #c7c7c7; background: #fff; }
+    .review-bar strong { margin-right: auto; }
+    .review-bar label { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; }
+    .review-bar select, .review-bar button { min-height: 34px; border: 1px solid #8a8886; border-radius: 4px; padding: 5px 9px; color: inherit; background: inherit; }
+    .stage { min-height: calc(100vh - 58px); display: flex; justify-content: center; align-items: flex-start; padding: 36px 18px 72px; background-image: linear-gradient(90deg, rgba(15,108,189,.04) 1px, transparent 1px), linear-gradient(rgba(15,108,189,.04) 1px, transparent 1px); background-size: 24px 24px; }
+    .host { width: min(100%, 980px); min-height: 500px; overflow: hidden; background: #fff; box-shadow: 0 16px 45px rgba(0,0,0,.14); }
+    .host.narrow { width: 340px; }
+    .host.standard { width: 760px; }
+    .host.wide { width: 980px; }
+    .host.keynote { width: 1440px; }
+    .host.fullscreen { height: 1000px; }
+    body.dark { color: #fff; background: #181818; }
+    body.dark .review-bar { border-color: #484644; background: #242424; }
+    body.dark .stage { background-color: #111; }
+    body.clean .review-bar { display: none; }
+    body.clean .stage { min-height: 0; justify-content: flex-start; padding: 0; background: transparent; }
+    body.clean .host { box-shadow: none; }
+    body.clean .host.inline { min-height: 0; }
+    body.clean .host.fullscreen { height: auto; min-height: 0; overflow: visible; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="./review.js"></script>
+</body>
+</html>

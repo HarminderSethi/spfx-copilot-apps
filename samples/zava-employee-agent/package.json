@@ -6,12 +6,16 @@
     "node": ">=22.14.0 < 23.0.0"
   },
   "scripts": {
-    "build": "heft test --clean --production && heft package-solution --production",
+    "build": "npm run check:mock-media && npm run check:gallery && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output",
+    "check:gallery": "node scripts/validate-gallery-assets.mjs",
+    "check:generated-plugin": "node scripts/validate-generated-ai-plugin.mjs",
     "check:mock-media": "node scripts/generate-embedded-images.mjs --check",
+    "check:package-output": "node scripts/validate-package-output.mjs",
     "clean": "heft clean",
     "eject-webpack": "heft eject-webpack",
     "generate:mock-media": "node scripts/generate-embedded-images.mjs",
-    "start": "heft start --clean"
+    "start": "heft start --clean",
+    "start:ux-review": "node scripts/serve-ux-review.mjs"
   },
   "dependencies": {
     "@fluentui/react-avatar": "9.11.3",
@@ -40,8 +44,10 @@
     "@types/react-dom": "17.0.17",
     "@types/webpack-env": "~1.15.2",
     "css-loader": "~7.1.2",
+    "esbuild": "0.25.9",
     "eslint": "9.37.0",
-    "typescript": "~5.8.0"
+    "typescript": "~5.8.0",
+    "unzipper": "0.12.3"
   },
   "overrides": {
     "@rushstack/heft": "1.2.17"

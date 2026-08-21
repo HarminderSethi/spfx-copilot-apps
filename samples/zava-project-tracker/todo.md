@@ -1409,6 +1409,7 @@ the explorer advertises exactly the 30 operational tools.
    concrete code for catalog routing, immutable generated identities, shared host lifecycle,
    owner-document theming, invocation versioning, session receipts, shared bundling, and post-package
    validation. Include an architecture map, code-reference index, preview caveats, and rehearsal steps.
+- [x] Embed the canonical Microsoft 365 `.sppkg` package-testing walkthrough (`4asOZi4PNUQ`) in README.
 - [ ] Publish the 31-component catalog, 30-scenario education metadata, schemas, routes, and selection rationale.
 - [ ] Publish the canonical UX contract, visual design guide, and mock-data dictionary.
 - [x] Publish `Zava-Project-Tracker-Demo-Prompts.md` with all 31 components, canonical prompts,
@@ -1423,9 +1424,20 @@ the explorer advertises exactly the 30 operational tools.
 - [x] Add `scripts/validate-gallery-assets.mjs` to the canonical build. Validate unified-gallery schema
    essentials, required metadata, exact 39-image coverage, unique names/orders, local PNG integrity and
    dimensions, descriptive alt text, and raw GitHub URLs.
+- [x] Keep the 3-minute keynote, 10-minute business demo, 5-minute technical demo, prompt catalog,
+   real screenshots, and `assets/sample.json` linked together as the public demo asset set.
 - [ ] Capture a concise worldwide-impact reel showing locale changes without losing hierarchy or chart
    meaning; keep this secondary to the primary operational story.
 - [ ] Run a cold-machine/offline rehearsal and verify every example date and receipt.
+
+### Publication readiness gate
+
+- [x] README includes real screenshots, ready-made package/build paths, correct tenant-package video
+   guidance, validation status, safety boundaries, and all demo links.
+- [x] Gallery, generated-plugin, intent, media, and package-output validators run from `npm run build`.
+- [ ] Complete authenticated Copilot routing, CSP, iframe focus, screen-reader, and Windows high-contrast
+   evidence before claiming tenant validation complete.
+- [ ] Run one cold-machine/offline rehearsal of the keynote, business, and technical demo paths.
 
 **Gate:** a presenter unfamiliar with the implementation can reliably explain and demonstrate dynamic
 inline UX resolution as the hero, then use full screen as the exact-context immersive payoff.

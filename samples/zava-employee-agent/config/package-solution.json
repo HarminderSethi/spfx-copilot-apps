@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "zava-employee-agent description"
+        "default": "Employee-first Copilot experiences for HR answers, actions, and evidence."
       },
       "longDescription": {
-        "default": "zava-employee-agent description"
+        "default": "Zava Employee Agent provides 20 intent-routed Copilot Components and one shared ten-family HR workspace using deterministic offline sample data."
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,8 +27,8 @@
     },
     "features": [
       {
-        "title": "zava-employee-agent Feature",
-        "description": "The feature that activates elements of the zava-employee-agent solution.",
+        "title": "Zava Employee Agent",
+        "description": "Activates the Zava Employee Agent Copilot Components and shared HR workspace.",
         "id": "802316f3-0a08-400f-a7da-5fae9b7298e0",
         "version": "1.0.0.0"
       }

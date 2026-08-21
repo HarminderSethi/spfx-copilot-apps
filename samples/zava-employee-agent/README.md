@@ -13,16 +13,16 @@ The core design principle is:
 
 > **Chat asks; Copilot Apps render the answer, the action, and the proof in the canvas.**
 
-The planned solution contains ten component families. Each family has compact inline experiences for
+The solution contains ten component families. Each family has compact inline experiences for
 focused answers and actions, plus a full-screen experience for deeper work. The sample uses realistic
 mocked Zava HR data so it can be deployed and demonstrated without a live line-of-business system.
 
 > [!IMPORTANT]
-> Phases 0-15 are complete. All 20 current-target Copilot Components are independently
-> prompt-addressable and reuse one ten-family full-screen shell. The original five experiences per
-> family remain implemented inside the full-screen tabs, giving the shell 50 internal views without
-> creating 50 MCP tools. Phase 16 remains for final cross-family showcase polish,
-> responsive/accessibility review, and demo curation.
+> All 20 current-target Copilot Components and all 50 internal full-screen routes are implemented.
+> The clean production gate passes 39 suites and 170 tests, validates the generated 20-function API
+> plugin, validates 32 gallery screenshots, and packages all components into one shared 0.493 MiB
+> `.sppkg`. Authenticated Copilot prompt routing and the final manual accessibility/host matrix remain
+> explicit pre-publication evidence gates in `todo.md`.
 
 The product source brief is
 [Zava-Employee-Agent-Intro-Brief.md](Zava-Employee-Agent-Intro-Brief.md). The canonical interaction and
@@ -30,8 +30,17 @@ component contract is [Zava-Employee-Agent-UX-Design.md](Zava-Employee-Agent-UX-
 implementation must follow [agentic-creation-rules.md](agentic-creation-rules.md). For Copilot UX
 testing, use the copy/paste routing and parameter scenarios in
 [Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md). For a live presentation,
-use the timed [3-minute demo story and script](Zava-Employee-Agent-3-Minute-Demo.md). For the wider
+use the [60-second primary demo](Zava-Employee-Agent-60-Second-Demo.md) or the timed
+[3-minute demo story and script](Zava-Employee-Agent-3-Minute-Demo.md). Longer sessions can use the
+[10-minute business value demo](Zava-Employee-Agent-10-Minute-Business-Demo.md) or
+[5-minute developer and architecture demo](Zava-Employee-Agent-5-Minute-Technical-Demo.md). For the wider
 launch, use the [ten-video global social campaign](Copilot-Apps-Social-Campaign.md).
+
+## Applies To
+
+- SharePoint Framework 1.24 Copilot Components
+- Microsoft 365 Copilot declarative agents
+- React 17 and Fluent UI React v9
 
 ## At a Glance
 
@@ -44,6 +53,16 @@ launch, use the [ten-video global social campaign](Copilot-Apps-Social-Campaign.
 | Hub entry point | 1 Zava Employee Agent |
 | Data source | Offline mocked HR data |
 | Current implementation | 20 of 20 components complete across all 10 implemented full-screen families |
+
+## Screenshots
+
+![Inline time off request with editable prompt-derived values](assets/inline-request-time-off.png)
+
+![Inline pay change explanation](assets/inline-explain-pay-change.png)
+
+![Full-screen employee Home dashboard](assets/fullscreen-home.png)
+
+![Full-screen Manager Team Hub](assets/fullscreen-team.png)
 
 ## Component Plan
 
@@ -165,28 +184,30 @@ Mock data should resemble likely live shapes for:
 
 Mock dates use relative offsets so demonstrations remain current. Images required at runtime are
 generated into the typed mock-data registry as base64 data URIs; the mock experience does not depend
-on image hosting, profile-photo endpoints, or external services. Run `npm run generate:mock-media`
-after changing a source image and `npm run check:mock-media` to verify the registry is current.
+on image hosting, profile-photo endpoints, or external services. All 20 component entries share one
+production bundle, so this registry is emitted once rather than repeated per tool. Run
+`npm run generate:mock-media` after changing a source image and `npm run check:mock-media` to verify
+the registry is current.
 
 ## Design Assets
 
 The canonical Family 01 implementation references are generated from one reproducible offline design
 source. See [assets/README.md](assets/README.md) for the complete catalog and legacy mapping.
 
-The source HTML is also the local transition-review prototype: open it directly and use the desktop
-rail or mobile selector to switch among all ten full-screen sections. Add `?family=time` (or another
-family ID) to open a specific title-only placeholder. This prototype mirrors the shared React shell
-without creating future Copilot Components.
+The source HTML remains a historical transition-review prototype. Final publication images are
+captured from the real React implementation through `npm run start:ux-review`; the harness can render
+all 20 inline tools and all ten full-screen families without a tenant.
 
-- [Home inline states](assets/zava-01-home-inline.png)
-- [Home wide dashboard](assets/zava-full-home-dashboard-wide.png)
-- [Home with My HR action plan](assets/zava-full-home-action-plan.png)
-- [Home narrow dashboard](assets/zava-full-home-dashboard-narrow.png)
-- [Home mobile dashboard](assets/zava-full-home-dashboard-mobile.png)
+- [Home inline design source](assets/design-sources/home-reference/zava-01-home-inline.png)
+- [Home wide design source](assets/design-sources/home-reference/zava-full-home-dashboard-wide.png)
+- [Home action-plan design source](assets/design-sources/home-reference/zava-full-home-action-plan.png)
+- [Home narrow design source](assets/design-sources/home-reference/zava-full-home-dashboard-narrow.png)
+- [Home mobile design source](assets/design-sources/home-reference/zava-full-home-dashboard-mobile.png)
 
-The remaining `pc-*` images are composite mockups from the People Compass design review that informed
-the Zava brief. Their interaction and layout concepts remain useful for Families 02-10, but they are
-legacy source material rather than canonical implementation references.
+The remaining `pc-*` images under `assets/design-sources/legacy-people-compass/` are composite mockups
+from the People Compass design review that informed the Zava brief. Their interaction and layout
+concepts remain useful for Families 02-10, but they are legacy source material rather than canonical
+implementation references or publication screenshots.
 
 ### Known Design Inconsistencies
 
@@ -200,8 +221,8 @@ legacy source material rather than canonical implementation references.
 - The remaining full-screen filenames are also shifted. For example, `pc-full-home-dashboard.png`
   shows Benefits & Life Events, `pc-full-policy-answers.png` shows Org & People Graph, and
   `pc-full-total-rewards.png` shows Time & Leave.
-- Family 01 now has canonical Zava inline, wide, panel-open, narrow, and mobile references. A distinct
-  Total Rewards full-screen design is still missing.
+- Family 01 has historical Zava inline, wide, panel-open, narrow, and mobile design references. Final
+  implementation screenshots for every family now live directly under `assets/`.
 - The original brief required a persistent **Ask the agent** input at the top-right, while the
   reviewed designs show settings. The canonical UX uses the Copilot host for conversation and an
   area priority banner for in-component guidance, avoiding a second competing prompt box.
@@ -210,8 +231,8 @@ legacy source material rather than canonical implementation references.
 - The designs imply one persistent shell while the product requires multiple callable intents. The
   canonical architecture keeps 20 value-ranked tools and reuses one shared full-screen shell.
 
-Until the assets are renamed or re-exported, identify a design by the visible title inside the image,
-not by its filename.
+Treat these boards as provenance only. Use the implementation screenshots directly under `assets/`
+for README, gallery, review, and publication.
 
 ## Zava Brand
 
@@ -255,12 +276,71 @@ heft test --clean
 For a production package:
 
 ```bash
-heft test --clean --production
-heft package-solution --production
+npm run build
 ```
+
+The final gate verifies generated mock media, runs the clean production test suite, packages the
+solution, validates all generated API-plugin functions and MCP tools, and audits the final `.sppkg`
+for stale JavaScript, duplicated media, icon-font payloads, and size regressions.
 
 The package path configured by the project is
 `sharepoint/solution/zava-employee-agent.sppkg`.
+
+## Minimal Path to Awesome
+
+1. Deploy the ready-made
+   [`sharepoint/solution/zava-employee-agent.sppkg`](sharepoint/solution/zava-employee-agent.sppkg)
+   to the tenant app catalog, or run `npm install` and `npm run build`.
+2. Add the generated Zava Employee Agent to Microsoft 365 Copilot.
+3. Start a fresh conversation and use the exact prompts in
+   [Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md).
+4. Confirm prompt values are visible and editable before completing any mocked action.
+
+### Video: test the package in Microsoft 365
+
+Use this walkthrough to deploy and test SharePoint Copilot App `.sppkg` packages in a Microsoft 365
+tenant:
+
+[![Watch the Microsoft 365 tenant package testing walkthrough](https://img.youtube.com/vi/4asOZi4PNUQ/hqdefault.jpg)](https://www.youtube.com/watch?v=4asOZi4PNUQ)
+
+[Watch on YouTube](https://www.youtube.com/watch?v=4asOZi4PNUQ)
+
+The ready-made package is intended for sample and demo tenants. Complete tenant-specific privacy,
+accessibility, localization, security, and connector validation before production adoption.
+
+## Local UX Review
+
+Run the real React surfaces without a tenant:
+
+```bash
+npm run start:ux-review
+```
+
+Open `http://127.0.0.1:4401`. The toolbar switches intent, family, width, display mode, and theme.
+Query parameters such as `?mode=fullscreen&family=team&width=wide&clean=1` make review and screenshot
+states reproducible. This harness validates local UX behavior, not authenticated tenant CSP, iframe
+focus, high contrast, or screen-reader output.
+
+## Validation Status
+
+- 39 suites and 170 tests pass with zero failures.
+- All 20 manifests, component entries, agent registrations, functions, and mirrored MCP tools validate.
+- All 32 implementation screenshots validate against [assets/sample.json](assets/sample.json).
+- The final package contains one 910,310-byte hashed JavaScript bundle and no stale JavaScript,
+  duplicate cross-bundle media, or Fluent icon-font payload.
+- Authenticated Copilot routing, iframe focus, screen-reader, and Windows high-contrast checks remain
+  explicit manual gates in [todo.md](todo.md).
+
+## Demo and Testing
+
+- [60-second primary demo](Zava-Employee-Agent-60-Second-Demo.md)
+- [3-minute dynamic UX demo](Zava-Employee-Agent-3-Minute-Demo.md)
+- [10-minute business value demo](Zava-Employee-Agent-10-Minute-Business-Demo.md)
+- [5-minute developer and architecture demo](Zava-Employee-Agent-5-Minute-Technical-Demo.md)
+- [20-component prompt catalog](Zava-Employee-Agent-Demo-Prompts.md)
+- [Unified sample gallery metadata](assets/sample.json)
+- [Experience and implementation tracker](todo.md)
+- [Reusable agentic creation rules](agentic-creation-rules.md)
 
 ## Current Solution Structure
 
@@ -274,7 +354,9 @@ samples/zava-employee-agent/
 |-- copilot/                                # declarative agent and plugin manifests
 |-- src/
 |   `-- copilotComponents/
-|       `-- getMyHrDashboard/               # currently generated component
+|       |-- getMyHrDashboard/               # Home summary component and shared shell
+|       |-- approvalInbox/                   # representative manager workflow
+|       `-- ...                              # 18 additional intent components
 |-- teams/
 `-- package.json
 ```
@@ -299,6 +381,7 @@ definition in its component manifest.
 | 1.9 | August 12, 2026 | Replanned the solution as 50 intent-specific Copilot Components sharing one ten-tab full-screen shell |
 | 2.0 | August 12, 2026 | Completed five independent Home intent components with MCP routing and shared full-screen routes |
 | 2.1 | August 13, 2026 | Value-ranked the inline portfolio to 20 current tools and moved 30 candidates to optimal future |
+| 2.2 | August 21, 2026 | Added shared production bundling, package/plugin audits, Team roster portraits, and final demo/readiness documentation |
 
 ## Disclaimer
 
