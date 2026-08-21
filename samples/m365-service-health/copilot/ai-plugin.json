@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "serviceHealth",
+  "name_for_human": "M365 Service Health Agent",
+  "description_for_human": "Display live Microsoft 365 service health, incidents, and advisories in an interactive view.",
+  "description_for_model": "Always invoke M365ServiceHealthCopilotTool for Microsoft 365 health, availability, outage, incident, advisory, or degradation requests. Pass the user's own wording as serviceName; the component resolves nicknames and abbreviations itself. Its result is an interactive UI component that carries all live data and IS the complete answer, so never restate or invent statuses, incident counts, or issue details in text, and never say you cannot determine, see, read, or directly see the status or the data returned to you — present the view confidently as the live answer (for example: Here's the live health status for SharePoint Online). Never use directional words such as below, above, left, or right; say the view is shown in the conversation. Do add two to four short friendly lines explaining what the view shows, that selecting a service reveals its issues and selecting an issue reveals impact and Microsoft's updates, and one natural follow-up the user could ask. Do not expose or summarize raw UI resources, CSS, HTML, templates, or component references, and do not substitute admin-center directions.",
+  "contact_email": "publisher@contoso.com"
+  
+}

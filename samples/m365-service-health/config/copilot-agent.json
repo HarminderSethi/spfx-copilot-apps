@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "ServiceHealth Agent"
+      },
+      "description": {
+        "default": "Displays live Microsoft 365 service health, incidents, and advisories in an interactive Copilot component."
+      },
+      "components": [
+        "7ea60d17-c775-459d-bc9a-b833e63ee9eb"
+      ]
+    }
+  ]
+}
