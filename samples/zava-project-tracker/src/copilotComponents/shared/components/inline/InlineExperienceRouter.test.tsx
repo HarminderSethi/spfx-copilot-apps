@@ -4,11 +4,13 @@ import { act } from 'react-dom/test-utils';
 
 import { PROJECT_INTENT_CATALOG } from '../../mockData/intentCatalog';
 import { getInlineOperation } from '../../models/intentOperations';
+import type { IIntentTransientState } from '../../models/intentInvocation';
 import type { IProjectIntentProperties } from '../../models/projectPortfolio';
 import { InformationErrorBoundary } from './InformationInlineExperiences';
 import InlineExperienceRouter from './InlineExperienceRouter';
 import CapabilityPreview from '../../capabilityExplorer/CapabilityPreview';
 import { CapabilityExplorerErrorBoundary } from '../../capabilityExplorer/CapabilityExplorer';
+import { getSessionActionReceipts, resetSessionActions } from '../../services/SessionActionStore';
 
 const clickButton = (container: HTMLElement, label: string): void => {
   const button = Array.from(container.querySelectorAll('button')).find((item) => item.textContent?.trim() === label);
@@ -40,7 +42,7 @@ const setInputValue = (input: HTMLInputElement | HTMLTextAreaElement | HTMLSelec
   });
 };
 
-const renderIntent = (intentKey: string, properties:IProjectIntentProperties = {}, displayMode = 'inline'): { container: HTMLDivElement; cleanup: () => void } => {
+const renderIntent = (intentKey: string, properties:IProjectIntentProperties = {}, displayMode = 'inline', onTransientStateChange?: (state: IIntentTransientState) => void): { container: HTMLDivElement; cleanup: () => void } => {
   const definition = PROJECT_INTENT_CATALOG.find((item) => item.key === intentKey);
   if (!definition) {
     throw new Error(`Unknown intent: ${intentKey}`);
@@ -55,6 +57,7 @@ const renderIntent = (intentKey: string, properties:IProjectIntentProperties = {
         containerWidth={760}
         displayMode={displayMode}
         compact={false}
+        onTransientStateChange={onTransientStateChange}
       />,
       container
     );
@@ -68,6 +71,39 @@ const renderIntent = (intentKey: string, properties:IProjectIntentProperties = {
 };
 
 describe('InlineExperienceRouter', () => {
+  beforeEach(() => resetSessionActions());
+
+  test('records a confirmed submission in the shared session receipt store', () => {
+    const rendered = renderIntent('SubmitWeeklyUpdate');
+    clickButton(rendered.container, 'Review submission');
+    clickButton(rendered.container, 'Publish weekly update');
+    expect(getSessionActionReceipts()).toEqual([
+      expect.objectContaining({ intentKey: 'SubmitWeeklyUpdate', kind: 'submission', status: 'submitted' })
+    ]);
+    rendered.cleanup();
+  });
+
+  test('emits transient snapshots for information, review, and submit interactions', () => {
+    const informationState = jest.fn<void, [IIntentTransientState]>();
+    const information = renderIntent('GetMyWorkSummary', {}, 'inline', informationState);
+    setInputValue(information.container.querySelector<HTMLSelectElement>('select[aria-label="Priority filter"]') as HTMLSelectElement, 'critical');
+    expect(informationState).toHaveBeenLastCalledWith(expect.objectContaining({ information: { filter: 'critical', selectedId: 'Evaluation review' } }));
+    information.cleanup();
+
+    const reviewState = jest.fn<void, [IIntentTransientState]>();
+    const review = renderIntent('ReviewResourceAssignment', {}, 'inline', reviewState);
+    clickButton(review.container, 'Review');
+    expect(reviewState).toHaveBeenLastCalledWith(expect.objectContaining({ review: expect.objectContaining({ selectedId: expect.any(String), statusFilter: 'all' }) }));
+    review.cleanup();
+
+    const submitState = jest.fn<void, [IIntentTransientState]>();
+    const submit = renderIntent('SubmitWeeklyUpdate', {}, 'inline', submitState);
+    setInputValue(submit.container.querySelector<HTMLTextAreaElement>('textarea') as HTMLTextAreaElement, 'Completed accessibility and package validation.');
+    clickButton(submit.container, 'Review submission');
+    expect(submitState).toHaveBeenLastCalledWith(expect.objectContaining({ submit: expect.objectContaining({ stage: 'review', values: expect.objectContaining({ accomplishments: 'Completed accessibility and package validation.' }) }) }));
+    submit.cleanup();
+  });
+
   test('renders a unique purpose-designed layout for every catalog intent', () => {
     const layouts: string[] = [];
     PROJECT_INTENT_CATALOG.forEach((definition) => {

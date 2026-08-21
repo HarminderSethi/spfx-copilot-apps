@@ -8,6 +8,7 @@ import { CheckmarkCircle20Filled, Warning20Regular } from '@fluentui/react-icons
 
 import { EMBEDDED_FACES } from '../../mockData/embeddedFaces';
 import type { IIntentDefinition, IProjectIntentProperties } from '../../models/projectPortfolio';
+import type { IIntentTransientState } from '../../models/intentInvocation';
 import { CapacityBarChart, PortfolioBubbleChart, PortfolioCapacitySankey, PortfolioTreemapChart, ProgressPieChart, TrendChart, WaterfallChart } from '../charts/InlineCharts';
 
 const useStyles = makeStyles({
@@ -85,20 +86,22 @@ export interface IInformationExperienceProps {
   definition: IIntentDefinition;
   properties: IProjectIntentProperties;
   compact: boolean;
+  transientState?: IIntentTransientState;
+  onTransientStateChange?: (state: IIntentTransientState) => void;
 }
 
 const trackWidthClass = (styles: ReturnType<typeof useStyles>, value: number): string => value === 31 ? styles.w31 : value === 35 ? styles.w35 : value === 43 ? styles.w43 : value === 57 ? styles.w57 : value === 58 ? styles.w58 : value === 74 ? styles.w74 : value === 75 ? styles.w75 : value === 76 ? styles.w76 : value === 82 ? styles.w82 : value === 88 ? styles.w88 : styles.w92;
 
-const AttentionList: React.FunctionComponent<IInformationExperienceProps> = ({ compact }) => {
+const AttentionList: React.FunctionComponent<IInformationExperienceProps> = ({ compact, transientState, onTransientStateChange }) => {
   const styles = useStyles();
-  const [focus, setFocus] = React.useState('all');
-  const [selected, setSelected] = React.useState('Evaluation review');
+  const [focus, setFocus] = React.useState(transientState?.information?.filter || 'all');
+  const [selected, setSelected] = React.useState(transientState?.information?.selectedId || 'Evaluation review');
   const items = [
     ['Evaluation review', 'Customer Service Copilot', 'Due Wed', 'Pradeep', 'critical'],
     ['Weekly status', 'Customer Service Copilot', 'Due Fri', 'Megan', 'warning'],
     ['Time entry', 'Contract Intelligence', '6.5h open', 'Megan', 'normal']
   ].filter((item) => focus === 'all' || item[4] === focus);
-  return <div className={styles.stack} data-layout="attention-stack"><div className={styles.toolbar}><select aria-label="Priority filter" className={styles.select} value={focus} onChange={(event) => setFocus(event.currentTarget.value)}><option value="all">All priorities</option><option value="critical">Critical</option><option value="warning">Due soon</option></select></div><div className={mergeClasses(styles.grid2, compact && styles.compact)}><div className={styles.list}>{items.map((item, index) => <button type="button" key={item[0]} className={styles.rowButton} onClick={() => setSelected(item[0])}><span className={mergeClasses(styles.row, selected === item[0] && styles.rowSelected)}><Avatar name={item[3]} image={{ src: peopleImages[item[3]] }} size={28} /><span><Text block weight="semibold">{index + 1}. {item[0]}</Text><Text size={200}>{item[1]} / reason grounded in delivery impact</Text></span><span className={mergeClasses(styles.badge, item[4] === 'critical' && styles.dangerBadge)}>{item[2]}</span></span></button>)}</div><div className={styles.panel}><Text weight="semibold" block>{selected}</Text><Text size={200} block className={styles.muted}>Selected evidence and the next action stay inline.</Text><TrendChart values={[42, 55, 61, 76, 92, 88]} /></div></div></div>;
+  return <div className={styles.stack} data-layout="attention-stack"><div className={styles.toolbar}><select aria-label="Priority filter" className={styles.select} value={focus} onChange={(event) => { const nextFocus=event.currentTarget.value; setFocus(nextFocus); onTransientStateChange?.({ ...transientState, information: { filter: nextFocus, selectedId: selected } }); }}><option value="all">All priorities</option><option value="critical">Critical</option><option value="warning">Due soon</option></select></div><div className={mergeClasses(styles.grid2, compact && styles.compact)}><div className={styles.list}>{items.map((item, index) => <button type="button" key={item[0]} className={styles.rowButton} onClick={() => { setSelected(item[0]); onTransientStateChange?.({ ...transientState, information: { filter: focus, selectedId: item[0] } }); }}><span className={mergeClasses(styles.row, selected === item[0] && styles.rowSelected)}><Avatar name={item[3]} image={{ src: peopleImages[item[3]] }} size={28} /><span><Text block weight="semibold">{index + 1}. {item[0]}</Text><Text size={200}>{item[1]} / reason grounded in delivery impact</Text></span><span className={mergeClasses(styles.badge, item[4] === 'critical' && styles.dangerBadge)}>{item[2]}</span></span></button>)}</div><div className={styles.panel}><Text weight="semibold" block>{selected}</Text><Text size={200} block className={styles.muted}>Selected evidence and the next action stay inline.</Text><TrendChart values={[42, 55, 61, 76, 92, 88]} /></div></div></div>;
 };
 
 const TaskBoard: React.FunctionComponent<IInformationExperienceProps> = ({ compact }) => {

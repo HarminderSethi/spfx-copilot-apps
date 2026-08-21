@@ -5,6 +5,7 @@ import { ArrowMaximize24Regular } from '@fluentui/react-icons';
 import { makeStyles, mergeClasses } from '@griffel/react';
 
 import type { IIntentDefinition, IProjectIntentProperties } from '../models/projectPortfolio';
+import type { IIntentTransientState } from '../models/intentInvocation';
 import ProjectFullscreenShell from './fullscreen/ProjectFullscreenShell';
 import InlineExperienceRouter from './inline/InlineExperienceRouter';
 
@@ -116,6 +117,9 @@ const useStyles = makeStyles({
 export interface IProjectIntentAppProps {
   definition: IIntentDefinition;
   properties: IProjectIntentProperties;
+  propertiesVersion?: number;
+  transientState?: IIntentTransientState;
+  onTransientStateChange?: (state: IIntentTransientState) => void;
   currentUserName: string;
   currentUserImageUrl?: string;
   containerWidth?: number;
@@ -133,7 +137,7 @@ const ProjectIntentApp: React.FunctionComponent<IProjectIntentAppProps> = (props
   const compact = props.containerWidth !== undefined && props.containerWidth <= 520;
 
   if (props.displayMode === 'fullscreen' && props.definition.workspace !== 'education') {
-    return <ProjectFullscreenShell initialDefinition={props.definition} initialProperties={props.properties} currentUserName={props.currentUserName} currentUserImageUrl={props.currentUserImageUrl} containerWidth={props.containerWidth}/>;
+    return <ProjectFullscreenShell initialDefinition={props.definition} initialProperties={props.properties} propertiesVersion={props.propertiesVersion} transientState={props.transientState} currentUserName={props.currentUserName} currentUserImageUrl={props.currentUserImageUrl} containerWidth={props.containerWidth}/>;
   }
 
   return (

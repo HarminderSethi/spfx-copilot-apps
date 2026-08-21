@@ -13,9 +13,10 @@ import { EMBEDDED_FACES } from '../../mockData/embeddedFaces';
 import { PROJECT_INTENT_CATALOG } from '../../mockData/intentCatalog';
 import { SCENARIOS } from '../../mockData/portfolioSeeds';
 import type { ScenarioId } from '../../models/portfolioDomain';
+import type { IIntentTransientState } from '../../models/intentInvocation';
 import type { IIntentDefinition, IProjectIntentProperties, ProjectWorkspace } from '../../models/projectPortfolio';
 import { MockProjectPortfolioDataService } from '../../services/MockProjectPortfolioDataService';
-import FullscreenWorkspaceDashboard from './FullscreenWorkspaceDashboard';
+import FullscreenWorkspaceDashboard, { ContinuedContext } from './FullscreenWorkspaceDashboard';
 
 export type OperationalWorkspace = Exclude<ProjectWorkspace, 'education'>;
 
@@ -186,6 +187,8 @@ const useStyles = makeStyles({
 export interface IProjectFullscreenShellProps {
   initialDefinition: IIntentDefinition;
   initialProperties: IProjectIntentProperties;
+  propertiesVersion?: number;
+  transientState?: IIntentTransientState;
   currentUserName: string;
   currentUserImageUrl?: string;
   containerWidth?: number;
@@ -216,7 +219,7 @@ const ProjectFullscreenShell: React.FunctionComponent<IProjectFullscreenShellPro
   React.useEffect(() => {
     setActiveWorkspace(props.initialDefinition.workspace as OperationalWorkspace);
     setActiveDefinition(props.initialDefinition);
-  }, [props.initialDefinition]);
+  }, [props.initialDefinition, props.propertiesVersion]);
 
   const selectIntent = (intentKey: string, focusHeading = true): void => {
     const nextDefinition = PROJECT_INTENT_CATALOG.find((definition) => definition.key === intentKey);
@@ -250,7 +253,7 @@ const ProjectFullscreenShell: React.FunctionComponent<IProjectFullscreenShellPro
     tabRefs.current[nextWorkspace]?.focus();
   };
 
-  return <section className={styles.root} data-layout="project-fullscreen-shell" data-workspace={activeWorkspace} data-route={activeDefinition.route}>
+  return <section className={styles.root} data-layout="project-fullscreen-shell" data-workspace={activeWorkspace} data-route={activeDefinition.route} data-properties-version={props.propertiesVersion || 0} data-has-transient-state={Object.keys(props.transientState || {}).length > 0 ? 'true' : 'false'}>
     <div className={styles.topAccent} aria-hidden="true"/>
     <header className={mergeClasses(styles.productBar, compact && styles.productBarCompact)}>
       <div className={styles.brand}><span className={styles.brandMark}>Z</span><div className={styles.brandCopy}><Text size={400} weight="semibold">{compact ? 'Zava AI Portfolio' : 'Zava AI Project Portfolio'}</Text>{!compact && <Text size={100}>Leadership decision workspace</Text>}</div></div>
@@ -264,7 +267,7 @@ const ProjectFullscreenShell: React.FunctionComponent<IProjectFullscreenShellPro
       {workspaceOrder.map((workspace) => <button ref={(element) => { tabRefs.current[workspace] = element; }} type="button" role="tab" aria-selected={activeWorkspace === workspace} tabIndex={activeWorkspace === workspace ? 0 : -1} className={mergeClasses(styles.tab, activeWorkspace === workspace && styles.tabSelected)} key={workspace} onClick={() => selectWorkspace(workspace)} onKeyDown={(event) => handleTabKeyDown(event, workspace)}>{workspaceLabels[workspace]}</button>)}
     </nav>
     <main ref={dashboardRef} tabIndex={-1} aria-label={`${workspaceLabels[activeWorkspace]} dashboard`} className={mergeClasses(styles.canvas, dense && styles.canvasDense)}>
-      <FullscreenWorkspaceDashboard key={props.initialDefinition.key} workspace={activeWorkspace} activeDefinition={props.initialDefinition} initialProperties={props.initialProperties} currentUserName={props.currentUserName} containerWidth={props.containerWidth} experience={experience} currency={currency} onSelectIntent={selectIntent}/>
+      <ContinuedContext state={props.transientState}/><FullscreenWorkspaceDashboard key={`${props.initialDefinition.key}:${props.propertiesVersion || 0}`} workspace={activeWorkspace} activeDefinition={props.initialDefinition} initialProperties={props.initialProperties} currentUserName={props.currentUserName} containerWidth={props.containerWidth} experience={experience} currency={currency} onSelectIntent={selectIntent} transientState={props.transientState}/>
     </main>
     <footer className={styles.footer}><Text size={100}>Sample data / no external writes / updated from a deterministic project portfolio model</Text><Text size={100}>As of {experience.asOf.toLocaleDateString()}</Text></footer>
     {settingsOpen && <div className={styles.settingsOverlay} role="presentation" onKeyDown={(event) => { if (event.key === 'Escape') closeSettings(); }} onMouseDown={(event) => { if (event.target === event.currentTarget) closeSettings(); }}><section className={styles.settingsPanel} role="dialog" aria-modal="true" aria-labelledby="settings-title"><div className={styles.settingsHeader}><Text ref={settingsHeadingRef} tabIndex={-1} as="h2" id="settings-title" size={600} weight="semibold">Workspace settings</Text><button className={styles.iconButton} type="button" aria-label="Close settings" onClick={closeSettings}><Dismiss20Regular aria-hidden="true"/></button></div><label className={styles.field}><Text size={200} weight="semibold">Demo scenario</Text><select className={styles.select} aria-label="Demo scenario" value={scenarioId} onChange={(event) => setScenarioId(event.currentTarget.value as ScenarioId)}>{SCENARIOS.map((scenario) => <option key={scenario.id} value={scenario.id}>{scenario.title}</option>)}</select></label><label className={styles.field}><Text size={200} weight="semibold">Currency</Text><select className={styles.select} value={currency} onChange={(event) => setCurrency(event.currentTarget.value)}><option value="USD">USD</option><option value="EUR">EUR</option><option value="JPY">JPY</option></select></label><label className={styles.checkField}><input type="checkbox" checked={dense} onChange={(event) => setDense(event.currentTarget.checked)}/><Text size={200}>Compact workspace density</Text></label><Text size={100}>Settings apply to this browser session only. Scenario controls never write to the approved baseline.</Text></section></div>}

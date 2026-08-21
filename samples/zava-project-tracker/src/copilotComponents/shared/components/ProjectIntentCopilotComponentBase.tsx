@@ -6,18 +6,33 @@ import { BaseCopilotComponent } from '@microsoft/sp-copilot-component';
 import ProjectIntentApp from './ProjectIntentApp';
 import ProjectThemeProvider from './ProjectThemeProvider';
 import { getIntentDefinition } from '../mockData/intentCatalog';
+import { resolveIntentInvocation, type IIntentTransientState } from '../models/intentInvocation';
 import type { IProjectIntentProperties } from '../models/projectPortfolio';
 import { resolveCurrentUser } from '../services/CurrentUserService';
 
 abstract class ProjectIntentCopilotComponentBase<TProperties extends IProjectIntentProperties>
   extends BaseCopilotComponent<TProperties> {
   protected abstract intentKey: string;
+  private _propertiesSignature?: string;
+  private _propertiesVersion = 0;
+  private _transientState: IIntentTransientState = {};
 
   protected render(): void {
     const canExpand = this.hostContext.displayMode !== 'fullscreen' &&
       (this.hostContext.availableDisplayModes || []).indexOf('fullscreen') >= 0;
     const currentUser = resolveCurrentUser(this.context);
     const definition = getIntentDefinition(this.intentKey);
+    const invocation = resolveIntentInvocation(
+      definition,
+      this.properties,
+      this._propertiesSignature,
+      this._propertiesVersion
+    );
+    if (invocation.signature !== this._propertiesSignature) {
+      this._propertiesSignature = invocation.signature;
+      this._propertiesVersion = invocation.version;
+      this._transientState = {};
+    }
     const targetDocument = this.context.domElement.ownerDocument;
 
     ReactDOM.render(
@@ -25,8 +40,11 @@ abstract class ProjectIntentCopilotComponentBase<TProperties extends IProjectInt
         ProjectThemeProvider,
         { theme: this.hostContext.theme, targetDocument },
         React.createElement(ProjectIntentApp, {
-          definition,
-          properties: this.properties,
+          definition: invocation.definition,
+          properties: invocation.properties,
+          propertiesVersion: invocation.version,
+          transientState: this._transientState,
+          onTransientStateChange: this._handleTransientStateChange,
           currentUserName: currentUser.displayName,
           currentUserImageUrl: currentUser.photoUrl,
           containerWidth: this.hostContext.containerDimensions?.width || this.hostContext.containerDimensions?.maxWidth,
@@ -45,6 +63,10 @@ abstract class ProjectIntentCopilotComponentBase<TProperties extends IProjectInt
 
   private _handleRequestFullscreen = (): void => {
     this.requestDisplayModeAsync('fullscreen').catch(() => undefined);
+  };
+
+  private _handleTransientStateChange = (state: IIntentTransientState): void => {
+    this._transientState = state;
   };
 }
 

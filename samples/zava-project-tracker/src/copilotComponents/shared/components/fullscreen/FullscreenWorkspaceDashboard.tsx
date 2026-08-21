@@ -9,8 +9,10 @@ import { EMBEDDED_FACES } from '../../mockData/embeddedFaces';
 import { getIntentDefinition } from '../../mockData/intentCatalog';
 import { ALL_REVIEW_DECISIONS, REVIEW_KIND_BY_INTENT, type ReviewKind } from '../../mockData/reviewDecisionCatalog';
 import type { IProjectPortfolioExperience } from '../../models/portfolioDomain';
+import type { IIntentTransientState } from '../../models/intentInvocation';
 import type { IIntentDefinition, IProjectIntentProperties } from '../../models/projectPortfolio';
 import { getAiBudgetConsumption, getBenefitCostRatio, getPersonAllocation } from '../../services/portfolioCalculations';
+import { getSessionActionReceipts, resetSessionActions, subscribeToSessionActions } from '../../services/SessionActionStore';
 import {
   CapacityBarChart,
   ProgressPieChart,
@@ -65,6 +67,7 @@ const useStyles = makeStyles({
   actionButton: { minWidth: 0, minHeight: '52px', display: 'grid', gridTemplateColumns: '22px minmax(0, 1fr)', gap: '8px', alignItems: 'center', padding: '9px 10px', textAlign: 'left', color: tokens.colorNeutralForeground1, backgroundColor: tokens.colorNeutralBackground2, border: `1px solid ${tokens.colorNeutralStroke2}`, borderRadius: tokens.borderRadiusMedium, cursor: 'pointer' },
   actionCopy: { display: 'flex', flexDirection: 'column', gap: '2px', minWidth: 0 },
   actionSuccess: { display: 'grid', gridTemplateColumns: '22px minmax(0, 1fr)', gap: '8px', marginTop: '10px', padding: '9px', color: tokens.colorPaletteGreenForeground1, backgroundColor: tokens.colorPaletteGreenBackground2, borderRadius: tokens.borderRadiusMedium },
+  resetActions: { display: 'flex', justifyContent: 'flex-end' },
   submissionOverlay: { position: 'absolute', inset: 0, zIndex: 18, minHeight: '100%', backgroundColor: 'rgba(0, 0, 0, .32)' },
   submissionPanel: { position: 'absolute', top: 0, right: 0, bottom: 0, width: 'min(720px, 100%)', boxSizing: 'border-box', overflowY: 'auto', padding: '20px', color: tokens.colorNeutralForeground1, backgroundColor: tokens.colorNeutralBackground1, boxShadow: tokens.shadow64 },
   submissionHeader: { display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px', marginBottom: '16px' },
@@ -145,7 +148,21 @@ export interface IFullscreenWorkspaceDashboardProps {
   experience: IProjectPortfolioExperience;
   currency: string;
   onSelectIntent: (intentKey: string) => void;
+  transientState?: IIntentTransientState;
 }
+
+export const ContinuedContext: React.FunctionComponent<{ state?: IIntentTransientState }> = ({ state }) => {
+  const styles = useStyles();
+  if (!state || Object.keys(state).length === 0) return null;
+  const detail = state.information
+    ? `${state.information.filter || 'All'} / ${state.information.selectedId || 'No evidence selected'}`
+    : state.review
+      ? `${state.review.statusFilter || 'All'} / ${state.review.selectedId || 'No decision selected'}`
+      : state.submit
+        ? `${state.submit.stage || 'edit'} / ${Object.keys(state.submit.values || {}).length} draft fields`
+        : 'Prompt context';
+  return <div className={styles.overviewCallout} data-layout="continued-inline-context"><CheckmarkCircle20Filled aria-hidden="true"/><span><Text weight="semibold" block>Continued from inline</Text><Text size={200}>{detail}</Text></span></div>;
+};
 
 const metricClass = (styles: ReturnType<typeof useStyles>, tone: MetricTone = 'neutral'): string => mergeClasses(
   styles.metric,
@@ -283,6 +300,13 @@ const reviewKindLabel: Readonly<Record<ReviewKind, string>> = {
   gate: 'Stage gate'
 };
 
+const getProcessedDecisions = (): Record<string, ReviewDecision> =>
+  getSessionActionReceipts().filter((receipt) => receipt.kind === 'decision')
+    .reduce<Record<string, ReviewDecision>>((result, receipt) => {
+      if (receipt.status === 'approved' || receipt.status === 'returned' || receipt.status === 'rejected') result[receipt.recordId] = receipt.status;
+      return result;
+    }, {});
+
 const DecisionsDashboard: React.FunctionComponent<IFullscreenWorkspaceDashboardProps> = (props) => {
   const styles = useStyles();
   const compact = props.containerWidth !== undefined && props.containerWidth <= 760;
@@ -291,11 +315,12 @@ const DecisionsDashboard: React.FunctionComponent<IFullscreenWorkspaceDashboardP
   const [typeFilter, setTypeFilter] = React.useState<ReviewKind | 'all'>(initialTypeFilter);
   const [readinessFilter, setReadinessFilter] = React.useState('all');
   const [statusFilter, setStatusFilter] = React.useState('all');
-  const [processed, setProcessed] = React.useState<Record<string, ReviewDecision>>({});
+  const [processed, setProcessed] = React.useState<Record<string, ReviewDecision>>(getProcessedDecisions);
   const selectedApproval = ALL_REVIEW_DECISIONS.find((approval) => approval.id === selectedApprovalId);
   const selectedDefinition = selectedApproval ? getIntentDefinition(selectedApproval.intentKey) : undefined;
   const requested = ALL_REVIEW_DECISIONS.reduce((total, approval) => total + (approval.amount || 0), 0);
   const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: props.currency, maximumFractionDigits: 0 });
+  React.useEffect(() => subscribeToSessionActions(() => setProcessed(getProcessedDecisions())), []);
   const metrics: IDashboardMetric[] = [
     { label: 'Waiting', value: String(ALL_REVIEW_DECISIONS.length), detail: 'across four decision types', tone: 'warning' },
     { label: 'Due now', value: String(ALL_REVIEW_DECISIONS.filter((approval) => /today|tomorrow|2 days/i.test(approval.due)).length), detail: 'requires near-term attention', tone: 'danger' },
@@ -317,7 +342,7 @@ const DecisionsDashboard: React.FunctionComponent<IFullscreenWorkspaceDashboardP
   };
   return <div className={styles.stack} data-layout="decisions-dashboard" data-selected-decision={selectedApprovalId || 'none'}>
     <section className={mergeClasses(styles.hero, styles.heroDecisions, compact && styles.heroCompact)}><div className={styles.heroCopy}><Text size={100}>DECISION CENTER</Text><Text as="h1" size={700} weight="semibold" className={styles.heroTitle}>Decisions that need you now</Text><Text size={200} className={styles.heroSummary}>Incoming requests prioritized by urgency, value at risk, and evidence readiness.</Text></div><span className={mergeClasses(styles.badge, styles.badgeWarning)}>2 due in 48 hours</span></section>
-    <Metrics metrics={metrics} compact={compact}/>
+    <Metrics metrics={metrics} compact={compact}/><div className={styles.resetActions}><button type="button" className={styles.requestButton} onClick={resetSessionActions}>Reset demo decisions</button></div>
     <section className={styles.inboxPanel}>
       <div className={mergeClasses(styles.decisionGrid, compact && styles.decisionGridCompact)}>
         <div className={mergeClasses(styles.inboxList, compact && styles.inboxListCompact)}><PanelHeader title="Incoming requests" subtitle={`${visibleApprovals.length} of ${ALL_REVIEW_DECISIONS.length} requests shown`}/><div className={mergeClasses(styles.inboxToolbar, compact && styles.inboxToolbarCompact)}><select aria-label="Filter decisions by type" className={styles.filterSelect} value={typeFilter} onChange={(event) => setTypeFilter(event.currentTarget.value as ReviewKind | 'all')}><option value="all">All types</option><option value="project">Project request</option><option value="budget">Budget</option><option value="resource">Resource</option><option value="gate">Stage gate</option></select><select aria-label="Filter decisions by evidence" className={styles.filterSelect} value={readinessFilter} onChange={(event) => setReadinessFilter(event.currentTarget.value)}><option value="all">All evidence</option><option value="ready">Ready (90%+)</option><option value="needs-evidence">Needs evidence</option></select><select aria-label="Filter decisions by status" className={styles.filterSelect} value={statusFilter} onChange={(event) => setStatusFilter(event.currentTarget.value)}><option value="all">All statuses</option><option value="pending">Pending</option><option value="processed">Processed</option></select></div><div className={styles.rows}>{visibleApprovals.map((approval) => { const active = selectedApprovalId === approval.id; const result = processed[approval.id]; return <div data-approval-id={approval.id} className={mergeClasses(styles.row, styles.rowThree, active && styles.requestActive)} key={approval.id}><img className={styles.avatarSmall} src={EMBEDDED_FACES[approval.imageKey]} alt=""/><span className={styles.rowCopy}><Text size={200} weight="semibold">{approval.title}</Text><Text size={100} className={styles.muted}>{reviewKindLabel[approval.kind]} / {approval.person} / {approval.due} / evidence {approval.evidence}%</Text></span>{result ? <span data-decision={result} className={mergeClasses(styles.badge, result === 'approved' ? styles.badgeSuccess : styles.badgeDanger)}>{result}</span> : <button type="button" className={styles.requestButton} aria-label={`Review ${approval.title}`} onClick={() => selectRequest(approval.id)}>Review</button>}</div>; })}{visibleApprovals.length === 0 && <div className={styles.empty}>No decision requests match these filters.</div>}</div></div>

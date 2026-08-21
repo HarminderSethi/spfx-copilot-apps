@@ -24,12 +24,12 @@ const InlineExperienceRouter: React.FunctionComponent<IInlineExperienceRouterPro
     default: {
       const operation = getInlineOperation(props.definition.key);
       if (operation === 'review') {
-        return <ReviewInlineExperiences definition={props.definition} properties={props.properties} compact={props.compact} fullscreen={props.displayMode === 'fullscreen'} />;
+        return <ReviewInlineExperiences definition={props.definition} properties={props.properties} compact={props.compact} fullscreen={props.displayMode === 'fullscreen'} transientState={props.transientState} onTransientStateChange={props.onTransientStateChange} />;
       }
       if (operation === 'submit') {
-        return <SubmissionInlineExperiences definition={props.definition} properties={props.properties} compact={props.compact} />;
+        return <SubmissionInlineExperiences definition={props.definition} properties={props.properties} compact={props.compact} transientState={props.transientState} onTransientStateChange={props.onTransientStateChange} />;
       }
-      return <InformationInlineExperiences definition={props.definition} properties={props.properties} compact={props.compact} />;
+      return <InformationInlineExperiences definition={props.definition} properties={props.properties} compact={props.compact} transientState={props.transientState} onTransientStateChange={props.onTransientStateChange} />;
     }
   }
 };

@@ -6,10 +6,12 @@
     "node": ">=22.14.0 < 23.0.0"
   },
   "scripts": {
-    "build": "npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin",
+    "build": "npm run check:intents && npm run check:mock-media && npm run check:gallery && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output",
+    "check:gallery": "node scripts/validate-gallery-assets.mjs",
     "check:generated-plugin": "node scripts/validate-generated-ai-plugin.mjs",
     "check:intents": "node scripts/validate-intent-components.mjs",
     "check:mock-media": "node scripts/generate-embedded-faces.mjs --check",
+    "check:package-output": "node scripts/validate-package-output.mjs",
     "clean": "heft clean",
     "eject-webpack": "heft eject-webpack",
     "generate:mock-media": "node scripts/generate-embedded-faces.mjs",

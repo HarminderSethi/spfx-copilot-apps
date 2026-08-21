@@ -6,6 +6,8 @@ import { tokens } from '@fluentui/react-theme';
 import { CheckmarkCircle20Filled, DismissCircle20Filled, Warning20Filled, Warning20Regular } from '@fluentui/react-icons';
 
 import type { IIntentDefinition, IProjectIntentProperties } from '../../models/projectPortfolio';
+import type { IIntentTransientState } from '../../models/intentInvocation';
+import { recordSessionAction } from '../../services/SessionActionStore';
 import { AiBudgetRequestForm } from './PilotInlineExperiences';
 import { SubmissionReceiptExperience, SubmissionReviewExperience } from './SubmissionReviewExperiences';
 
@@ -125,16 +127,16 @@ const validateSubmission = (intentKey:string, values:Record<string,string|number
     default: return '';
   }
 };
-export interface ISubmissionExperienceProps { definition:IIntentDefinition; properties:IProjectIntentProperties; compact:boolean; onComplete?:()=>void; }
+export interface ISubmissionExperienceProps { definition:IIntentDefinition; properties:IProjectIntentProperties; compact:boolean; onComplete?:()=>void; transientState?:IIntentTransientState; onTransientStateChange?:(state:IIntentTransientState)=>void; }
 
 const SubmissionInlineExperiences:React.FunctionComponent<ISubmissionExperienceProps> = (props) => {
   if(props.definition.key==='RequestAiBudget') return <AiBudgetRequestForm properties={props.properties} compact={props.compact} onComplete={props.onComplete}/>;
-  const styles=useStyles(); const [stage,setStage]=React.useState<Stage>('edit'); const [values,setValues]=React.useState<Record<string,string|number>>(()=>initialValues(props.properties)); const setValue=(name:string,value:string|number):void=>setValues((current)=>({...current,[name]:value}));
+  const styles=useStyles(); const [stage,setStage]=React.useState<Stage>(props.transientState?.submit?.stage||'edit'); const [values,setValues]=React.useState<Record<string,string|number>>(()=>props.transientState?.submit?.values||initialValues(props.properties)); const setValue=(name:string,value:string|number):void=>setValues((current)=>{const next={...current,[name]:value};props.onTransientStateChange?.({...props.transientState,submit:{stage,values:next}});return next;});
   const bodyProps={...props,values,setValue};
   const validationMessage=validateSubmission(props.definition.key,values); const valid=validationMessage.length===0;
   if(stage==='receipt') return <SubmissionReceiptExperience intentKey={props.definition.key} values={values} onReset={()=>{setValues(initialValues(props.properties));setStage('edit');}}/>;
-  if(stage==='review') return <SubmissionReviewExperience intentKey={props.definition.key} values={values} compact={props.compact} onEdit={()=>setStage('edit')} onConfirm={()=>{if(props.onComplete){props.onComplete();}else{setStage('receipt');}}}/>;
-  return <div className={styles.stack}>{props.definition.key==='SubmitWeeklyUpdate'?<WeeklyUpdateForm {...bodyProps}/>:props.definition.key==='SubmitTimesheet'?<TimesheetForm {...bodyProps}/>:props.definition.key==='SubmitProjectStatus'?<ProjectStatusForm {...bodyProps}/>:props.definition.key==='SubmitAiUsage'?<AiUsageForm {...bodyProps}/>:<ProjectRequestForm {...bodyProps}/>} {!valid&&<Text role="alert" className={styles.muted}>{validationMessage}</Text>}<button className={styles.primary} disabled={!valid} onClick={()=>setStage('review')}>Review submission</button></div>;
+  if(stage==='review') return <SubmissionReviewExperience intentKey={props.definition.key} values={values} compact={props.compact} onEdit={()=>{setStage('edit');props.onTransientStateChange?.({...props.transientState,submit:{stage:'edit',values}});}} onConfirm={()=>{recordSessionAction({intentKey:props.definition.key,recordId:`${props.definition.key}-${String(values.date||values.project||'draft')}`,kind:'submission',status:'submitted',summary:`${props.definition.title} submitted`});if(props.onComplete){props.onComplete();}else{setStage('receipt');props.onTransientStateChange?.({...props.transientState,submit:{stage:'receipt',values}});}}}/>;
+  return <div className={styles.stack}>{props.definition.key==='SubmitWeeklyUpdate'?<WeeklyUpdateForm {...bodyProps}/>:props.definition.key==='SubmitTimesheet'?<TimesheetForm {...bodyProps}/>:props.definition.key==='SubmitProjectStatus'?<ProjectStatusForm {...bodyProps}/>:props.definition.key==='SubmitAiUsage'?<AiUsageForm {...bodyProps}/>:<ProjectRequestForm {...bodyProps}/>} {!valid&&<Text role="alert" className={styles.muted}>{validationMessage}</Text>}<button className={styles.primary} disabled={!valid} onClick={()=>{setStage('review');props.onTransientStateChange?.({...props.transientState,submit:{stage:'review',values}});}}>Review submission</button></div>;
 };
 
 export default SubmissionInlineExperiences;

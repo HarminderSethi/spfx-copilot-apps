@@ -42,15 +42,16 @@ is proven.
   approved current-target intents. Supporting detail, history, and retrieval-only variants stay as
   internal full-screen routes until they earn independent conversational routing.
 4. **Generate final identities with Yeoman.** Never copy, rename, or repurpose component scaffolds.
-5. **Install once and automate immediately.** Pin the shared stack; add catalog, media, and generated-
-  plugin validators before scaling bodies. Confirm the clean generated baseline compiles.
+5. **Install once and automate immediately.** Pin the shared stack; add catalog, media, generated-
+  plugin, and final package-output validators before scaling bodies. Generate/validate bundle membership
+  from the catalog instead of maintaining component entries by hand. Confirm the clean baseline compiles.
 6. **Prove the shared boundary and three operation slices.** Build owner-document theming, current-user
   fallback, intent resolution, fresh-invocation versioning, display-mode routing, then one complete
   information, review, and submit experience.
 7. **Scale from the catalog.** Reuse host/workflow/chart mechanics while keeping domain composition and
   evidence specific. Add focused tests and visual evidence with each family or workspace.
-8. **Ship through one command.** Source audits -> clean production tests -> package-solution -> inspect
-  and validate the generated plugin inside the SharePoint-embedded agent ZIP.
+8. **Ship through one command.** Source audits -> clean production tests -> package-solution -> validate
+  the generated plugin -> audit the actual `.sppkg` JavaScript/media/icon output and size thresholds.
 
 ### 0.1 Supported scaffolding and automation
 
@@ -131,7 +132,8 @@ approved sample values, but keep the actions and gates.
 3. **Create catalog automation immediately.** Add one declarative intent catalog plus scripts that
    configure and validate manifests, adapters, schemas, bundles, localized resources, registrations,
    and tool descriptions. The validator MUST fail on duplicate GUID/tool/description, wrong counts,
-   placeholder descriptions/properties, missing registrations, or missing generated files.
+  placeholder descriptions/properties, missing registrations, missing generated files, duplicate bundle
+  membership, or a manifest absent from the approved bundle strategy.
 4. **Install and pin the shared stack once.** React 17, Fluent v9, Griffel, focused D3 modules/types,
    Jest, and only approved optional libraries. Run a clean compile before feature implementation.
 5. **Build the shared host before 30 bodies.** Implement current-user resolution, `ownerDocument`
@@ -163,8 +165,9 @@ approved sample values, but keep the actions and gates.
   the exact external prerequisite in `todo.md`; never mark CSP, iframe focus, or screen-reader host
   behavior complete from the local harness.
 15. **Package only after all executable gates pass.** Run catalog/media audits, clean tests with zero
-  warnings, production build, Teams/Copilot package generation, `.sppkg` generation, package-content
-  checks, diagnostics, and `git diff --check`. Stop temporary servers and update `todo.md` immediately.
+  warnings, production build, Teams/Copilot package generation, `.sppkg` generation, generated-plugin
+  validation, final package-output/size audit, diagnostics, and `git diff --check`. Stop temporary
+  servers and update `todo.md` immediately.
 16. **Educate users when the tool catalog is large.** If the agent has more than 10 purpose-designed
   inline tools, add the catalog-driven Agent Capability Explorer pattern (§6.4) and reserve the final
   conversation starter for “What can this agent do?”. Do not expect three generic starters to explain
@@ -176,6 +179,7 @@ approved sample values, but keep the actions and gates.
 scripts/configure-intent-components.mjs   # catalog -> adapters/schemas/manifests/registrations
 scripts/validate-intent-components.mjs    # fail-fast identity/schema/registration audit
 scripts/validate-generated-ai-plugin.mjs  # shipped ZIP -> plugin v2.4/functions/MCP/length audit
+scripts/validate-package-output.mjs        # .sppkg -> JS/media/icon/stale-output/size audit
 scripts/generate-embedded-faces.mjs       # deterministic bundled-media generator/check
 scripts/serve-ux-review.mjs               # tenant-free visual harness builder/server
 ux-review/                                # all-intent host, widths, themes, evidence controls
@@ -190,9 +194,10 @@ Recommended scripts for future samples:
   "check:intents": "node scripts/validate-intent-components.mjs",
   "check:generated-plugin": "node scripts/validate-generated-ai-plugin.mjs",
   "check:mock-media": "node scripts/generate-embedded-faces.mjs --check",
+  "check:package-output": "node scripts/validate-package-output.mjs",
   "start:ux-review": "node scripts/serve-ux-review.mjs",
   "validate": "npm run check:intents && npm run check:mock-media && heft test --clean",
-  "build": "npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin"
+  "build": "npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output"
 }
 ```
 
@@ -1115,12 +1120,13 @@ evidence, safeguards, rationale, confirmation, semantic receipt, updated queue, 
 - The future-sample `build` script MUST run this order as one command:
 
   ```bash
-  npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin
+  npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output
   ```
 
-  Keep `check:generated-plugin` last: it validates generated `ai-plugin.json` inside the SharePoint-
-  embedded agent ZIP created by `package-solution`. Do not ask operators to remember separate release
-  commands that can package an invalid catalog or skip generated output validation.
+  Keep both generated-output checks after `package-solution`: `check:generated-plugin` validates
+  generated `ai-plugin.json` inside the SharePoint-embedded agent ZIP, then `check:package-output`
+  audits the final `.sppkg`. Do not ask operators to remember separate release commands that can package
+  an invalid catalog or skip generated output validation.
 - Node.js **>=22.14.0 <23.0.0**.
 
 ### 17.2 Lint / Griffel gotchas (learned - avoid these)
@@ -1219,6 +1225,24 @@ while using development bundles and source maps only to diagnose which modules c
   one shared application graph, bundle consolidation prevents the same tree-shaken icon subset from
   being emitted once per component.
 
+The catalog/configuration script SHOULD generate this shape for a shared graph; do not hand-maintain a
+bundle object per component:
+
+```json
+{
+  "bundles": {
+    "<sample>-copilot-components": {
+      "components": [
+        { "entrypoint": "./lib/copilotComponents/<name>/<Name>CopilotComponent.js", "manifest": "./src/copilotComponents/<name>/<Name>CopilotComponent.manifest.json" }
+      ]
+    }
+  }
+}
+```
+
+The validator compares catalog count, bundle-entry count, unique manifest count, and exact source-
+manifest coverage. It validates component entries, not `Object.keys(config.bundles).length === count`.
+
 ### 18.2 Keep media out of repeated JavaScript
 
 - Emit photos and other substantial media as package-hosted files and reference them by URL. A shared
@@ -1266,6 +1290,22 @@ JavaScript entry, and duplicate media count in `todo.md` or the build log.
   file count, and the reason for any exception. Smoke every component after consolidation because one
   shared bundle must still expose each manifest/entry independently.
 
+### 18.5 Required automated package audit
+
+`scripts/validate-package-output.mjs` MUST inspect `paths.zippedPackage` from
+`config/package-solution.json` after packaging and fail on:
+
+- zero production JavaScript files or any unhashed/stale JavaScript under `ClientSideAssets/`;
+- duplicate substantial media hashes in package-hosted files;
+- the same inline base64 image payload appearing across multiple JavaScript bundles;
+- Fluent icon-font payloads when the sample uses named SVG icon imports.
+
+It MUST report package bytes, production JavaScript file count/total bytes/largest entry, packaged media
+count, inline image count, duplicate counts, icon-font presence, and configurable investigation flags.
+Use `MAX_PRODUCTION_JS_BYTES` and `MAX_SPPKG_BYTES` (defaults: 1 MiB and 10 MiB) as investigation
+thresholds, not automatic architectural verdicts. Save or capture this JSON-shaped output in the build
+log/evidence and update `todo.md` when the accepted baseline changes.
+
 ---
 
 ## 19. Docs & sample gallery
@@ -1301,6 +1341,7 @@ samples/<name>/
   todo.md                         # phased Markdown checkbox tracker
   agentic-creation-rules.md       # project-specific engineering playbook
   assets/                         # sample.json, screenshots, faces/, source images
+  scripts/                        # catalog/media/plugin/package-output validators and generators
   config/                         # Heft/SPFx + copilot-agent.json, config.json, package-solution.json
   copilot/                        # manifest.json, declarativeAgent.json, ai-plugin.json, instruction.txt
   sharepoint/solution/<name>.sppkg  # committed, ready-to-deploy
@@ -1380,6 +1421,9 @@ samples/<name>/
 - [ ] Bundle strategy is measured: shared component entries deduplicate common runtime/media/icons or
   intentional split bundles document their lazy-loading benefit; production icon output contains only
   supported named imports; package report records JS count/size and duplicate-media count.
+- [ ] `check:package-output` runs last and passes against the final `.sppkg`: hashed JS only, no duplicate
+  media/base64 payloads across bundles, no accidental Fluent icon font, and size investigation flags
+  recorded against the accepted baseline.
 - [ ] Prompt-routing matrix covers every current tool, normalized properties, inline result, exact
   full-screen destination, sibling collisions, and fresh-invocation reset behavior.
 - [ ] README (PnP template + 60-second demo script) + `assets/sample.json` synced to real assets.

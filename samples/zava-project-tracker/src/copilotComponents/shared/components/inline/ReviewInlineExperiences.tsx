@@ -9,6 +9,8 @@ import { ArrowLeft20Regular, CheckmarkCircle20Filled, DismissCircle20Filled, War
 import { EMBEDDED_FACES } from '../../mockData/embeddedFaces';
 import { REVIEW_QUEUE_BY_INTENT, type IReviewItem } from '../../mockData/reviewDecisionCatalog';
 import type { IIntentDefinition, IProjectIntentProperties } from '../../models/projectPortfolio';
+import type { IIntentTransientState } from '../../models/intentInvocation';
+import { getSessionActionReceipts, recordSessionAction, subscribeToSessionActions } from '../../services/SessionActionStore';
 
 type Stage = 'queue' | 'review' | 'confirm' | 'receipt';
 export type ReviewDecision = 'approved' | 'returned' | 'rejected';
@@ -59,6 +61,13 @@ const useStyles = makeStyles({
 
 const decisionBadgeClass = (styles: ReturnType<typeof useStyles>, decision: ReviewDecision): string => decision === 'approved' ? styles.badgeApproved : styles.badgeDeclined;
 
+const getRecordedDecisions = (intentKey: string): Record<string, ReviewDecision> =>
+  getSessionActionReceipts().filter((receipt) => receipt.kind === 'decision' && receipt.intentKey === intentKey)
+    .reduce<Record<string, ReviewDecision>>((result, receipt) => {
+      if (receipt.status === 'approved' || receipt.status === 'returned' || receipt.status === 'rejected') result[receipt.recordId] = receipt.status;
+      return result;
+    }, {});
+
 const EvidenceBody: React.FunctionComponent<{ item: IReviewItem; compact: boolean; allocation: number; setAllocation: (value: number) => void }> = ({ item, compact, allocation, setAllocation }) => {
   const styles = useStyles();
   if (item.kind === 'project') {
@@ -83,26 +92,30 @@ interface IReviewQueueProps {
   fullscreen: boolean;
   embedded?: boolean;
   onDecisionComplete?: (decision: ReviewDecision) => void;
+  transientState?: IIntentTransientState;
+  onTransientStateChange?: (state: IIntentTransientState) => void;
 }
 
-const ReviewQueue: React.FunctionComponent<IReviewQueueProps> = ({ intentKey, properties, compact, fullscreen, embedded, onDecisionComplete }) => {
+const ReviewQueue: React.FunctionComponent<IReviewQueueProps> = ({ intentKey, properties, compact, fullscreen, embedded, onDecisionComplete, transientState, onTransientStateChange }) => {
   const styles = useStyles();
   const items = REVIEW_QUEUE_BY_INTENT[intentKey];
   const requestedApprovalId = String(properties.approvalId || '');
   const initialSelection = fullscreen && intentKey !== 'GetApprovalInbox'
     ? items.find((item) => item.id === requestedApprovalId)?.id || items[0]?.id
     : undefined;
-  const [selectedId, setSelectedId] = React.useState<string | undefined>(initialSelection);
-  const [statusFilter, setStatusFilter] = React.useState('all');
-  const [decisions, setDecisions] = React.useState<Record<string, ReviewDecision>>({});
+  const [selectedId, setSelectedId] = React.useState<string | undefined>(transientState?.review?.selectedId || initialSelection);
+  const [statusFilter, setStatusFilter] = React.useState(transientState?.review?.statusFilter || 'all');
+  const [decisions, setDecisions] = React.useState<Record<string, ReviewDecision>>(() => getRecordedDecisions(intentKey));
   const selected = items.find((item) => item.id === selectedId);
   const visibleItems = items.filter((item) => statusFilter === 'all' || (statusFilter === 'pending' ? !decisions[item.id] : Boolean(decisions[item.id])));
 
+  React.useEffect(() => subscribeToSessionActions(() => setDecisions(getRecordedDecisions(intentKey))), [intentKey]);
+
   if (selected) {
-    return <ConfiguredReview item={selected} properties={properties} compact={compact} embedded={embedded} onBack={() => setSelectedId(undefined)} onDecision={(decision) => { setDecisions((current) => ({ ...current, [selected.id]: decision })); onDecisionComplete?.(decision); }}/>
+    return <ConfiguredReview item={selected} properties={properties} compact={compact} embedded={embedded} onBack={() => setSelectedId(undefined)} onDecision={(decision) => { recordSessionAction({ intentKey, recordId: selected.id, kind: 'decision', status: decision, summary: `${selected.title}: ${decision}` }); setDecisions((current) => ({ ...current, [selected.id]: decision })); onDecisionComplete?.(decision); }}/>
   }
 
-  return <div className={styles.stack} data-layout={`${intentKey}-queue`}><div className={styles.toolbar}><select aria-label="Review status" className={styles.select} value={statusFilter} onChange={(event)=>setStatusFilter(event.currentTarget.value)}><option value="all">All items</option><option value="pending">Pending</option><option value="processed">Processed</option></select><span className={styles.badge}>{items.filter((item) => !decisions[item.id]).length} pending</span></div><div className={styles.queue}>{visibleItems.map((item)=><div className={mergeClasses(styles.queueItem, compact && styles.queueItemCompact)} key={item.id}><Avatar name={item.person} image={{src:EMBEDDED_FACES[item.imageKey]}} size={40}/><span><Text block weight="semibold">{item.title}</Text><Text size={200}>{item.person} / {item.context}</Text><Text size={100} className={styles.muted}>{item.due} / evidence {item.evidence}%</Text></span>{decisions[item.id] ? <span data-decision={decisions[item.id]} data-tone={decisions[item.id]==='approved'?'success':'danger'} className={mergeClasses(styles.badge,decisionBadgeClass(styles,decisions[item.id]))}>{decisions[item.id]}</span> : <button className={mergeClasses(styles.primary, compact && styles.queueActionCompact)} onClick={()=>setSelectedId(item.id)}>Review</button>}</div>)}</div></div>;
+  return <div className={styles.stack} data-layout={`${intentKey}-queue`}><div className={styles.toolbar}><select aria-label="Review status" className={styles.select} value={statusFilter} onChange={(event)=>{const nextFilter=event.currentTarget.value;setStatusFilter(nextFilter);onTransientStateChange?.({...transientState,review:{selectedId,statusFilter:nextFilter}});}}><option value="all">All items</option><option value="pending">Pending</option><option value="processed">Processed</option></select><span className={styles.badge}>{items.filter((item) => !decisions[item.id]).length} pending</span></div><div className={styles.queue}>{visibleItems.map((item)=><div className={mergeClasses(styles.queueItem, compact && styles.queueItemCompact)} key={item.id}><Avatar name={item.person} image={{src:EMBEDDED_FACES[item.imageKey]}} size={40}/><span><Text block weight="semibold">{item.title}</Text><Text size={200}>{item.person} / {item.context}</Text><Text size={100} className={styles.muted}>{item.due} / evidence {item.evidence}%</Text></span>{decisions[item.id] ? <span data-decision={decisions[item.id]} data-tone={decisions[item.id]==='approved'?'success':'danger'} className={mergeClasses(styles.badge,decisionBadgeClass(styles,decisions[item.id]))}>{decisions[item.id]}</span> : <button className={mergeClasses(styles.primary, compact && styles.queueActionCompact)} onClick={()=>{setSelectedId(item.id);onTransientStateChange?.({...transientState,review:{selectedId:item.id,statusFilter}});}}>Review</button>}</div>)}</div></div>;
 };
 
 interface IConfiguredReviewProps {
@@ -138,10 +151,12 @@ export interface IReviewExperienceProps {
   fullscreen?: boolean;
   embedded?: boolean;
   onDecisionComplete?: (decision: ReviewDecision) => void;
+  transientState?: IIntentTransientState;
+  onTransientStateChange?: (state: IIntentTransientState) => void;
 }
 
 const ReviewInlineExperiences: React.FunctionComponent<IReviewExperienceProps> = (props) => {
-  return <ReviewQueue intentKey={props.definition.key} properties={props.properties} compact={props.compact} fullscreen={Boolean(props.fullscreen)} embedded={props.embedded} onDecisionComplete={props.onDecisionComplete}/>;
+  return <ReviewQueue intentKey={props.definition.key} properties={props.properties} compact={props.compact} fullscreen={Boolean(props.fullscreen)} embedded={props.embedded} onDecisionComplete={props.onDecisionComplete} transientState={props.transientState} onTransientStateChange={props.onTransientStateChange}/>;
 };
 
 export default ReviewInlineExperiences;

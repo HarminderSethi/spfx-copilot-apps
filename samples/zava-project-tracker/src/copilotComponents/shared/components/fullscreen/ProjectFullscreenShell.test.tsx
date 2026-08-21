@@ -3,6 +3,8 @@ import * as ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 
 import { getIntentDefinition } from '../../mockData/intentCatalog';
+import type { IIntentTransientState } from '../../models/intentInvocation';
+import { getSessionActionReceipts, resetSessionActions } from '../../services/SessionActionStore';
 import ProjectFullscreenShell from './ProjectFullscreenShell';
 
 const clickButton = (container: HTMLElement, label: string): void => {
@@ -19,13 +21,13 @@ const setSelectValue = (select: HTMLSelectElement, value: string): void => {
   });
 };
 
-const renderShell = (intentKey: string, properties = { projectId: 'PRJ-2601' } as Record<string, unknown>): { container: HTMLDivElement; rerender: (nextIntentKey: string, nextProperties?: Record<string, unknown>) => void; cleanup: () => void } => {
+const renderShell = (intentKey: string, properties = { projectId: 'PRJ-2601' } as Record<string, unknown>, transientState?: IIntentTransientState, propertiesVersion = 1): { container: HTMLDivElement; rerender: (nextIntentKey: string, nextProperties?: Record<string, unknown>, nextTransientState?: IIntentTransientState) => void; cleanup: () => void } => {
   const container = document.createElement('div');
-  let updateInvocation: ((value: { intentKey: string; properties: Record<string, unknown> }) => void) | undefined;
+  let updateInvocation: ((nextIntentKey: string, nextProperties: Record<string, unknown>, nextTransientState?: IIntentTransientState) => void) | undefined;
   const Harness: React.FunctionComponent = () => {
-    const [invocation, setInvocation] = React.useState({ intentKey, properties });
-    updateInvocation = setInvocation;
-    return <ProjectFullscreenShell initialDefinition={getIntentDefinition(invocation.intentKey)} initialProperties={invocation.properties} currentUserName="Megan Bowen" containerWidth={980}/>;
+    const [invocation, setInvocation] = React.useState({ intentKey, properties, transientState, propertiesVersion });
+    updateInvocation = (nextIntentKey, nextProperties, nextTransientState) => setInvocation((current) => ({ intentKey: nextIntentKey, properties: nextProperties, transientState: nextTransientState, propertiesVersion: current.propertiesVersion + 1 }));
+    return <ProjectFullscreenShell initialDefinition={getIntentDefinition(invocation.intentKey)} initialProperties={invocation.properties} propertiesVersion={invocation.propertiesVersion} transientState={invocation.transientState} currentUserName="Megan Bowen" containerWidth={980}/>;
   };
   document.body.appendChild(container);
   act(() => {
@@ -33,7 +35,7 @@ const renderShell = (intentKey: string, properties = { projectId: 'PRJ-2601' } a
   });
   return {
     container,
-    rerender: (nextIntentKey, nextProperties = {}) => act(() => { updateInvocation?.({ intentKey: nextIntentKey, properties: nextProperties }); }),
+    rerender: (nextIntentKey, nextProperties = {}, nextTransientState) => act(() => { updateInvocation?.(nextIntentKey, nextProperties, nextTransientState); }),
     cleanup: () => act(() => {
       ReactDOM.unmountComponentAtNode(container);
       container.remove();
@@ -51,6 +53,37 @@ const renderNarrowShell = (): { container: HTMLDivElement; cleanup: () => void }
 };
 
 describe('ProjectFullscreenShell', () => {
+  beforeEach(() => resetSessionActions());
+
+  test('restores processed decisions across shell remounts and resets demo state', () => {
+    const first = renderShell('ReviewProjectRequest');
+    clickButton(first.container, 'Review');
+    clickButton(first.container, 'Approve');
+    clickButton(first.container, 'Confirm decision');
+    expect(getSessionActionReceipts()).toEqual([
+      expect.objectContaining({ kind: 'decision', status: 'approved' })
+    ]);
+    first.cleanup();
+
+    const second = renderShell('GetApprovalInbox');
+    setSelectValue(second.container.querySelector<HTMLSelectElement>('select[aria-label="Filter decisions by status"]') as HTMLSelectElement, 'processed');
+    expect(second.container.querySelector('[data-decision="approved"]')).not.toBeNull();
+    clickButton(second.container, 'Reset demo decisions');
+    expect(getSessionActionReceipts()).toEqual([]);
+    expect(second.container.querySelector('[data-decision="approved"]')).toBeNull();
+    second.cleanup();
+  });
+
+  test('shows continued inline context and clears it for a fresh properties version', () => {
+    const rendered = renderShell('GetMyWorkSummary', {}, { information: { filter: 'critical', selectedId: 'Evaluation review' } }, 3);
+    const { container } = rendered;
+    expect(container.querySelector('[data-layout="project-fullscreen-shell"]')?.getAttribute('data-properties-version')).toBe('3');
+    expect(container.querySelector('[data-layout="continued-inline-context"]')?.textContent).toContain('critical / Evaluation review');
+    rendered.rerender('GetMyWorkSummary', { period: 'month' });
+    expect(container.querySelector('[data-layout="continued-inline-context"]')).toBeNull();
+    rendered.cleanup();
+  });
+
   test.each([
     ['GetProjectAiSpend', 'project', 'project/ai-spend', 'Project'],
     ['ReviewResourceAssignment', 'approvals', 'approvals/resource-assignment', 'Decisions']

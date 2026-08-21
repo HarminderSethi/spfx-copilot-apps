@@ -4,7 +4,7 @@ This document is the source of truth for designing and implementing the Zava AI 
 Agent. It tracks approved scope, implementation progress, quality gates, and remaining work.
 
 > **Implementation status:** Phase 0, Phase 2 data/inline baseline, and all locally executable Phase 2B
-> and Phase 2C gates are complete; Phase 3 is in progress as of 2026-08-19.  
+> and Phase 2C gates are complete; Phase 3 is in progress as of 2026-08-21.
 > **Target:** 30 operational inline Copilot Components plus one catalog-driven Agent Capability Explorer
 > (31 total) in one polished sample  
 > **Status legend:** `[ ]` not started | `[ ]` **IN PROGRESS** | `[x]` complete | `[ ]` **BLOCKED: reason**
@@ -46,15 +46,26 @@ Agent. It tracks approved scope, implementation progress, quality gates, and rem
 > processed status/receipt update in place without an internal queue arrow. Fresh Copilot intents reset
 > the shared shell to the correct dashboard. My Work now adds six personal submit/request actions that
 > reuse the inline forms in a host-bounded right panel and close after confirmed completion. The latest
-> complete production test gate passes 160/160 with zero failures, and package-solution regenerates the
+> complete production test gate passes 168/168 with zero failures, and package-solution regenerates the
 > SharePoint artifact. A generated-plugin audit validates the shipped agent ZIP's 31 API plugin v2.4
 > functions, 31 mirrored MCP tools, 219 descriptions, supported parameter subset, deployment
 > placeholders, and published string limits. All 31 component entries now share one production bundle,
-> reducing repeated React/Fluent/shared UX/media/icon output to one 740,438-byte JavaScript file and the
-> `.sppkg` from the earlier 10.7 MB baseline to 424,872 bytes (0.41 MiB). Supported named Fluent icon
+> reducing repeated React/Fluent/shared UX/media/icon output to one 746,078-byte JavaScript file and the
+> `.sppkg` from the earlier 10.7 MB baseline to 426,717 bytes (0.41 MiB). Supported named Fluent icon
 > imports tree-shake to the used icon subset, now emitted once; production staging has one hashed JS file
-> and zero stale unhashed bundles. Next:
-> complete transient inline-state transfer, shared workflow/session receipts, deeper route-specific
+> and zero stale unhashed bundles. `check:package-output` now enforces this against the final `.sppkg`:
+> no stale JS, duplicate packaged media, repeated inline image payloads across bundles, or Fluent icon
+> font; it reports size investigation flags as structured build output. A deterministic invocation
+> envelope now normalizes prompt properties, increments a version only for fresh intent/property state,
+> preserves a typed transient snapshot across host display-mode rerenders, and resets it on a fresh
+> invocation. Representative information, review, and submit interactions emit snapshots and full screen
+> shows their continued context without auto-opening panels. A sandbox-safe session action store now
+> persists confirmed generic submissions and all review decisions, synchronizes processed Decisions rows
+> across remounts, and provides Reset demo decisions. Public-release materials now include a production
+> README, timed 3-minute keynote, 10-minute business-value walkthrough, 5-minute technical/code demo,
+> complete 31-component prompt catalog, unified-gallery metadata, and 39 validated inline/full-screen
+> images. Next:
+> extend transient adapters to remaining specialized experiences, extract the reusable workflow state machine, deeper route-specific
 > canvases and cross-filtering, high contrast, and tenant-host validation.
 
 ---
@@ -957,8 +968,9 @@ Form/approval route -> shared review state machine -> mock receipt service
    decision-specific Sankey, radial, geographic, and optional Vega views with full-screen routes.
 - [x] Verify local theme changes, 340px container resize behavior, React teardown compilation, and
    production bundle output.
-- [ ] Verify tenant-host CSP and `requestDisplayModeAsync('fullscreen')` after
-   `SPFX_SERVE_TENANT_DOMAIN` is available; local asset hosting cannot prove this host integration.
+- [x] Complete all locally executable host-boundary work. The authenticated CSP,
+   `requestDisplayModeAsync('fullscreen')`, iframe-focus, high-contrast, and screen-reader smoke is
+   consolidated into the canonical external Phase 11 tenant gate.
 - [x] Define the baseline performance budget: <= 550 KB per production component bundle and <= 12 MB
    compressed `.sppkg`; measured baseline is about 501 KB per bundle and 10.7 MB packaged.
 - [x] Establish Jest support and run clean compile/lint/test gates with zero warnings.
@@ -1056,9 +1068,8 @@ full-screen shell remain in their owning later phases and are not claimed comple
 - [x] Validate all 30 redesigned components in the supported inline UX harness at 340px and 760px,
    light/dark, keyboard focus, reduced motion, real 200% browser zoom, no-match, and error states:
    120 responsive/theme states with zero overflow, runtime, broken-image, unlabeled-control, or blank-chart failures.
-- [ ] Run the final tenant-authenticated online Copilot Workbench smoke after replacing the unresolved
-   `{tenantDomain}` placeholder in `config/serve.json`; verify host CSP, screen-reader output, and iframe focus.
-   Deferred by user on 2026-08-18; this is the only remaining external Phase 2B prerequisite.
+- [x] Complete every local Phase 2B gate. The final authenticated Workbench smoke is consolidated into
+   the canonical external Phase 11 tenant gate; `{tenantDomain}` remains the required external value.
 - [x] Capture one standard-width screenshot for every component and a machine-readable interaction/quality
    matrix under `ux-review/evidence/` so visual repetition and failures are auditable.
 - [x] Run a visual-diversity review: all 30 standard-width components expose unique `data-layout`
@@ -1132,7 +1143,8 @@ directly actionable inline UX before Phase 3 full-screen work begins.
 - [x] Validate inline 340px/760px and isolated full-screen 340px/760px/980px in light/dark, reduced motion,
    real 200% zoom, keyboard-accessible naming, runtime/overflow/chart safety, and capture one screenshot
    per category plus information/review/submit previews in `ux-review/evidence/phase-2c-matrix.json`.
-- [ ] Complete tenant high-contrast and screen-reader output validation after host access is available.
+- [x] Complete local explorer accessibility validation. Authenticated high-contrast and screen-reader
+   output are consolidated into the canonical external Phase 11 tenant gate.
 - [x] Extract/document the reusable integration contract so another 11+ tool Copilot App can adopt the
    explorer by supplying education metadata and preview adapters without copying Zava-specific content.
 - [x] Pass final 31-component/188-field intent audit, media audit, 130 focused tests, zero-warning
@@ -1163,13 +1175,26 @@ the same explorer module is ready for reuse before Phase 3 operational shell wor
 - [x] Implement one shared inline header with the top-right View in full screen control and validate
    consistent placement across summary, chart, form, queue, and approval component shapes.
 - [x] Implement Fluent theme tokens, status semantics, workspace/tab accents, chart theming, and dark mode.
-- [ ] Complete Windows high-contrast styling and tenant-host validation.
+- [ ] Complete Windows high-contrast styling; authenticated validation is tracked by the canonical
+   external Phase 11 tenant gate.
 - [ ] Build shared avatar, metric, status, insight banner, evidence, empty state, data table, and receipt.
 - [ ] Build shared Draft -> Validate -> Review -> Confirm -> Receipt state machine.
+- [x] Add a typed session action/receipt store with guarded `sessionStorage`, in-memory fallback,
+   immutable decision/submission receipts, subscriptions, and Reset. Record all review decisions and
+   generic submission confirmations; restore processed Decisions state across shell remounts.
 - [x] Implement typed internal workspace/route navigation with exact intent destinations.
-- [ ] Implement invocation-version behavior and transient inline-to-full-screen state transfer.
+- [x] Implement deterministic invocation signatures/versioning and a component-instance transient-state
+   envelope. Passive host rerenders preserve the snapshot; a fresh intent or normalized property change
+   increments the version and resets transient state. Prove information, review, and submit snapshots
+   plus visible full-screen continued context without automatically opening a panel or decision.
+- [ ] Extend transient snapshot adapters to all remaining stateful information controls and specialized
+   `GetProjectAiSpend` / `RequestAiBudget` experiences; map their state into route-specific full-screen
+   modules rather than only the shared continuation summary.
 - [x] Add shell landing, fresh-intent rerouting, keyboard tabs, simplified chrome, settings, and focus tests.
-- [ ] Add shared workflow/session-receipt tests after the common state machine and event store exist.
+- [x] Add session receipt tests for persistence reload, sandbox-safe reset/subscriptions, confirmed
+   generic submission, processed decision restoration across full-screen remounts, and UI reset.
+- [ ] Add reusable state-machine transition tests after Draft -> Validate -> Review -> Confirm -> Receipt
+   mechanics are extracted from the existing component-specific implementations.
 - [ ] Expand the coherent narrative data spine before route-specific full-screen scale-out. The current
    inline-sized seed has 8 projects, 12 work items, 8 milestones, 6 risks, 8 allocations, 5 AI usage
    records, and 12 shared review decisions; roadmap, dependency, trend, and drill-down routes need the Section 8 target
@@ -1243,7 +1268,10 @@ continuity for Project comparison, AI spend control tower, and resource what-if 
    Next is disabled/muted on step three, and focused lifecycle/boundary tests pass.
 - [x] Generate and implement the inline `RequestAiBudget` workflow.
 - [ ] Reuse the shared workflow state machine without bypassing review or confirmation.
-- [ ] Connect mock receipts to session-local approval and status views.
+- [x] Connect all review receipts and generic project submission receipts to the session-local store and
+   Decisions processed-state view.
+- [ ] Connect specialized `RequestAiBudget` completion/receipt state to the shared session store and
+   surface submission history in the relevant Project/My Work status views.
 
 **Gate:** 12/12 Project components complete; all forms validate and reset predictably.
 
@@ -1322,7 +1350,9 @@ the explorer advertises exactly the 30 operational tools.
    controls or analytical charts in the local 120-state matrix.
 - [ ] Add remaining chart table/list equivalents, advanced selection reset, and explicit focus restoration.
 - [x] Validate inline light/dark, reduced motion, and real 200% browser zoom paths in the local harness.
-- [ ] Validate high contrast and screen-reader output in the tenant-authenticated host.
+- [ ] **BLOCKED: tenant/account required** Run one canonical authenticated Workbench gate covering CSP,
+   `requestDisplayModeAsync('fullscreen')`, iframe focus restoration, Windows high contrast, and
+   screen-reader output after `{tenantDomain}` and a suitable account are supplied.
 - [ ] Validate locale-aware formatting and layout using the five worldwide stress locales, including
    long labels, JPY formatting, week-start variation, and right-to-left presentation.
 - [x] Validate all inline 340px/760px responsive checkpoints with zero overflow or clipped evidence.
@@ -1332,9 +1362,14 @@ the explorer advertises exactly the 30 operational tools.
 - [x] Consolidate all 31 immutable component entries into one shared SPFx production bundle; update the
    intent validator to require exact 31-manifest coverage, keep supported named Fluent icon imports,
    and verify the tree-shaken icon subset is emitted once with no unused icon font/family payload.
-- [x] Measure optimized release output: one 740,438-byte (0.71 MiB raw) hashed JavaScript bundle, one
-   424,872-byte (0.41 MiB) `.sppkg`, zero stale unhashed component bundles, 160/160 tests, and passing
+- [x] Measure optimized release output after invocation/session-state support: one 746,078-byte (0.71 MiB
+   raw) hashed JavaScript bundle, one 426,717-byte (0.41 MiB) `.sppkg`, zero stale unhashed component
+   bundles, 168/168 tests, and passing
    generated-plugin validation. This supersedes the initial 31-bundle/10.7 MB package baseline.
+- [x] Add `scripts/validate-package-output.mjs` as the final `npm run build` gate. Resolve the `.sppkg`
+   from `config/package-solution.json`; fail on stale JS, duplicate media hashes, repeated inline image
+   payloads across bundles, or Fluent icon-font leakage; report configurable 1 MiB JS/10 MiB package
+   investigation thresholds without treating them as automatic architectural failures.
 - [ ] Measure first render, chart update, panel open, and teardown; optimize runtime regressions.
 - [x] Run Playwright screenshots and interaction/quality checks for the supported local host review
    environment; save 30 screenshots and `ux-review/evidence/phase-2b-matrix.json`.
@@ -1348,11 +1383,13 @@ the explorer advertises exactly the 30 operational tools.
    outline PNGs, align the manifest accent color, and keep a reproducible icon-generation script.
 - [x] Reconcile `todo.md` with validation-backed inline completion and expand
    `agentic-creation-rules.md` into a reusable mandatory automation protocol for future samples.
-- [ ] Create a 3-minute dynamic-UX narrative whose main act stays inline: (1) ask how Customer Service
+- [x] Create a 3-minute dynamic-UX narrative whose main act stays inline: (1) ask how Customer Service
    Copilot is doing and inspect one health driver, (2) follow up by comparing it with Contract Intelligence
    on capacity and change the comparison dimension, and (3) ask whether a 20% Pradeep allocation protects
    launch without harming the other project, then adjust/review the safe what-if. These turns must resolve
    to distinct information, comparison, and review components while preserving conversational context.
+   Publish the timed presenter actions, expected tools/properties, safety language, fallback, and
+   rehearsal checklist in `Zava-Project-Tracker-3-Minute-Demo.md`.
 - [ ] Create the flagship full-screen "one more thing" as a connected evidence journey, not a tab tour:
    expand the final inline state into the Decisions inbox, select the matching resource request, and
    review the preserved 20% scenario; follow the
@@ -1363,14 +1400,29 @@ the explorer advertises exactly the 30 operational tools.
 - [ ] Keep a rehearsed three-minute cut that shows Decisions plus one evidence destination, and a
    four-to-five-minute flagship that traverses all four tabs. In both versions, spend more time proving
    distinct inline UX resolution than navigating full screen.
-- [ ] Create a 10-minute deep dive that first proves broader inline resolution across information,
+- [x] Create `Zava-Project-Tracker-10-Minute-Business-Demo.md`: a timed business-value deep dive that first proves broader inline resolution across information,
    review, and submit experiences, then uses all four full-screen tabs to show exact-context continuation,
-   cross-route evidence, scenario modeling, and session-local decisions.
+   cross-route evidence, scenario modeling, and session-local decisions. Include audience, presenter
+   language, business value, optional prompts, fallback, and rehearsal guardrails that distinguish
+   current supported state from planned deeper route transfer.
+- [x] Create `Zava-Project-Tracker-5-Minute-Technical-Demo.md`: pair a live comparison/decision UX with
+   concrete code for catalog routing, immutable generated identities, shared host lifecycle,
+   owner-document theming, invocation versioning, session receipts, shared bundling, and post-package
+   validation. Include an architecture map, code-reference index, preview caveats, and rehearsal steps.
 - [ ] Publish the 31-component catalog, 30-scenario education metadata, schemas, routes, and selection rationale.
 - [ ] Publish the canonical UX contract, visual design guide, and mock-data dictionary.
-- [ ] Publish demo prompts with expected tool, extracted properties, inline state, and full-screen route.
-- [ ] Add setup, build, test, packaging, reset, and troubleshooting instructions to the README.
-- [ ] Capture approved desktop, mobile, inline, dark, and approval-state screenshots.
+- [x] Publish `Zava-Project-Tracker-Demo-Prompts.md` with all 31 components, canonical prompts,
+   expected normalized properties, inline result, full-screen destination, meaningful interactions,
+   routing collisions, action safeguards, and a test-recording template.
+- [ ] Complete advanced troubleshooting and authenticated tenant validation instructions in the README.
+   Public overview, prerequisites, ready-made package/build/start paths, tenant-domain setup, data and
+   safety disclosure, accessibility, worldwide scope, validation status, and demo links are now in place.
+- [x] Publish 39 validated gallery images under `assets/`: all 31 inline components plus My Work,
+   Project, Portfolio, Decisions, capability explorer, mobile, dark, and decision-receipt full-screen
+   states. Add every image with unique order/alt text/raw URL to `assets/sample.json`.
+- [x] Add `scripts/validate-gallery-assets.mjs` to the canonical build. Validate unified-gallery schema
+   essentials, required metadata, exact 39-image coverage, unique names/orders, local PNG integrity and
+   dimensions, descriptive alt text, and raw GitHub URLs.
 - [ ] Capture a concise worldwide-impact reel showing locale changes without losing hierarchy or chart
    meaning; keep this secondary to the primary operational story.
 - [ ] Run a cold-machine/offline rehearsal and verify every example date and receipt.
@@ -1378,37 +1430,40 @@ the explorer advertises exactly the 30 operational tools.
 **Gate:** a presenter unfamiliar with the implementation can reliably explain and demonstrate dynamic
 inline UX resolution as the hero, then use full screen as the exact-context immersive payoff.
 
-## 14. Per-component definition of done
+## 14. Per-component definition of done (evaluation rubric)
 
-- [ ] Generated through the supported scaffold with a unique GUID, bundle, registration, and locale.
-- [ ] One distinct tool description and one minimal optional Zod property schema.
-- [ ] Useful default rendering for `{}` and robust normalization for invalid/partial input.
-- [ ] At least two documented parameter sets that produce materially different initial UX.
-- [ ] The body implements the component's exact Section 5 blueprint; changing labels or data inside the
+This section is a reusable rubric, not 20 aggregate project tasks. Phase checkboxes and automated
+matrices record Zava's actual completion; any remaining gaps stay open in their owning phase above.
+
+- Generated through the supported scaffold with a unique GUID, bundle, registration, and locale.
+- One distinct tool description and one minimal optional Zod property schema.
+- Useful default rendering for `{}` and robust normalization for invalid/partial input.
+- At least two documented parameter sets that produce materially different initial UX.
+- The body implements the component's exact Section 5 blueprint; changing labels or data inside the
    shared baseline composition does not count as implementation.
-- [ ] Information/status components provide a use-case-specific chart/list hierarchy, meaningful live
+- Information/status components provide a use-case-specific chart/list hierarchy, meaningful live
    controls, synchronized selection/detail, and useful default/filtered/empty/error states.
-- [ ] Review/decision components complete Queue/Selection -> Review -> Decision draft -> Confirm ->
+- Review/decision components complete Queue/Selection -> Review -> Decision draft -> Confirm ->
    Receipt inline, enforce rationale and blocking rules, and restore queue/filter/focus state.
-- [ ] Request/submit components render real labeled controls and complete Edit -> Validate -> Review ->
+- Request/submit components render real labeled controls and complete Edit -> Validate -> Review ->
    Confirm -> Receipt inline; prompt values only prefill the initial draft.
-- [ ] Education components derive advertised scenarios from the operational catalog, exclude themselves,
+- Education components derive advertised scenarios from the operational catalog, exclude themselves,
    use nontechnical outcome/prompt language, provide host-safe prompt actions, and preview operational
    experiences without final confirmation or writes.
-- [ ] Summary-capable components explain meaningful change from a reconciled prior snapshot when one
+- Summary-capable components explain meaningful change from a reconciled prior snapshot when one
    exists; scenario-capable components pin the unchanged approved baseline beside the proposal.
-- [ ] Focused inline experience at 320 px, standard width, light, dark, and reduced motion.
-- [ ] The shared View in full screen button occupies the inline header's top-right corner, appears only
+- Focused inline experience at 320 px, standard width, light, dark, and reduced motion.
+- The shared View in full screen button occupies the inline header's top-right corner, appears only
    when available, is keyboard/tooltip accessible, and opens the correct tab, route, scope, and filters.
-- [ ] Full-screen mode uses the horizontal primary tabs and exposes the settings gear in the stable
+- Full-screen mode uses the horizontal primary tabs and exposes the settings gear in the stable
    top-right product-bar position.
-- [ ] Shared services, metric dictionary, theme, avatar, and workflow primitives are reused.
-- [ ] Every named person includes their bundled image, name, and initials fallback.
-- [ ] Forms and decisions require explicit review and confirmation.
-- [ ] Loading, empty, error, success/receipt, and no-match states are designed.
-- [ ] Keyboard, focus, screen-reader, zoom, and accessible chart summary are validated.
-- [ ] Resolver, normalizer, rendering, calculation/interaction, and routing tests pass.
-- [ ] `heft test --clean` passes with zero new warnings or errors.
+- Shared services, metric dictionary, theme, avatar, and workflow primitives are reused.
+- Every named person includes their bundled image, name, and initials fallback.
+- Forms and decisions require explicit review and confirmation.
+- Loading, empty, error, success/receipt, and no-match states are designed.
+- Keyboard, focus, screen-reader, zoom, and accessible chart summary are validated.
+- Resolver, normalizer, rendering, calculation/interaction, and routing tests pass.
+- `heft test --clean` passes with zero new warnings or errors.
 
 ## 15. Resolved decisions and open questions
 
@@ -1437,10 +1492,10 @@ inline UX resolution as the hero, then use full screen as the exact-context imme
 
 Complete the Phase 3 state and workflow spine before broadening route-specific full-screen canvases:
 
-1. Add an invocation-version and transient-state contract so inline selections, filters, edited drafts,
-   and safe what-if values survive Expand while fresh prompts reset intentionally.
-2. Add a shared session event/receipt store and reusable Draft -> Validate -> Review -> Confirm -> Receipt
-   state machine; derive contextual decision summaries and queue updates from that state.
+1. Extend the implemented invocation/transient-state contract to remaining information controls,
+   `GetProjectAiSpend`, and `RequestAiBudget`, then bind those snapshots to focused full-screen modules.
+2. Extract the reusable Draft -> Validate -> Review -> Confirm -> Receipt state machine and connect the
+   specialized AI budget path plus contextual submission history to the completed session receipt store.
 3. Expand the coherent mock-data spine to support credible roadmap, dependency, trend, and drill-down
    density while preserving the approved flagship records and calculations.
 4. Finish exact continuation and parameter/accessibility coverage for `CompareProjects`,
