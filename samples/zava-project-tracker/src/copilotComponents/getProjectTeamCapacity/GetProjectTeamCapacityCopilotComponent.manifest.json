@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "c54f4eac-2831-46cb-8521-47fea0a31ad6",
+  "alias": "GetProjectTeamCapacityCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectTeamCapacity",
+      "description": {
+        "default": "Analyze project team allocation, role demand, overload, and skill gaps."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectTeamCapacity/GetProjectTeamCapacityCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

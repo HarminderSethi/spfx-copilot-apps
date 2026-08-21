@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "d7e27c5d-b50d-4f5d-975d-1c9294ce3613",
+  "alias": "SubmitAiUsageCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "SubmitAiUsage",
+      "description": {
+        "default": "Prepare an AI usage record with cost and governance context for review before mock submission."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/submitAiUsage/SubmitAiUsageCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

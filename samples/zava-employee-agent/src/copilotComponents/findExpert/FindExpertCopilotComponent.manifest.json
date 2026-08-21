@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "e8c49623-76d1-4728-8e78-5a90f735e293",
+  "alias": "FindExpertCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "FindExpert",
+      "description": {
+        "default": "Find people with a requested expertise using visible role, skill, location, and collaboration evidence. Use for expert matching; use ExploreOrganization for reporting structure and organization context."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/findExpert/FindExpertCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

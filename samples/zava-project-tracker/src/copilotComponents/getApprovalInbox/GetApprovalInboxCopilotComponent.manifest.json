@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "4cdfe18d-a1c2-4b98-a725-af4ed1823870",
+  "alias": "GetApprovalInboxCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetApprovalInbox",
+      "description": {
+        "default": "Prioritize the current manager's project, budget, resource, and stage-gate approvals."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getApprovalInbox/GetApprovalInboxCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

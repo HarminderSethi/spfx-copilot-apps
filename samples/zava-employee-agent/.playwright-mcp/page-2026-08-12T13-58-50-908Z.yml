@@ -1,0 +1,279 @@
+- generic [active] [ref=e1]:
+  - heading "Index of /" [level=1] [ref=e2]
+  - table [ref=e3]:
+    - rowgroup [ref=e4]:
+      - row [ref=e5]:
+        - cell [ref=e6]
+        - cell [ref=e8]:
+          - code [ref=e9]: (drw-rw-rw-)
+        - cell "11-Aug-2026 14:22" [ref=e10]
+        - cell [ref=e11]:
+          - code
+        - cell [ref=e12]:
+          - link ".playwright-mcp/" [ref=e13] [cursor=pointer]:
+            - /url: ./.playwright-mcp/
+      - row [ref=e14]:
+        - cell [ref=e15]
+        - cell [ref=e17]:
+          - code [ref=e18]: (drw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e19]
+        - cell [ref=e20]:
+          - code
+        - cell [ref=e21]:
+          - link ".vscode/" [ref=e22] [cursor=pointer]:
+            - /url: ./.vscode/
+      - row [ref=e23]:
+        - cell [ref=e24]
+        - cell [ref=e26]:
+          - code [ref=e27]: (drw-rw-rw-)
+        - cell "11-Aug-2026 13:12" [ref=e28]
+        - cell [ref=e29]:
+          - code
+        - cell [ref=e30]:
+          - link "assets/" [ref=e31] [cursor=pointer]:
+            - /url: ./assets/
+      - row [ref=e32]:
+        - cell [ref=e33]
+        - cell [ref=e35]:
+          - code [ref=e36]: (drw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e37]
+        - cell [ref=e38]:
+          - code
+        - cell [ref=e39]:
+          - link "config/" [ref=e40] [cursor=pointer]:
+            - /url: ./config/
+      - row [ref=e41]:
+        - cell [ref=e42]
+        - cell [ref=e44]:
+          - code [ref=e45]: (drw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e46]
+        - cell [ref=e47]:
+          - code
+        - cell [ref=e48]:
+          - link "copilot/" [ref=e49] [cursor=pointer]:
+            - /url: ./copilot/
+      - row [ref=e50]:
+        - cell [ref=e51]
+        - cell [ref=e53]:
+          - code [ref=e54]: (drw-rw-rw-)
+        - cell "12-Aug-2026 16:56" [ref=e55]
+        - cell [ref=e56]:
+          - code
+        - cell [ref=e57]:
+          - link "dist/" [ref=e58] [cursor=pointer]:
+            - /url: ./dist/
+      - row [ref=e59]:
+        - cell [ref=e60]
+        - cell [ref=e62]:
+          - code [ref=e63]: (drw-rw-rw-)
+        - cell "12-Aug-2026 16:49" [ref=e64]
+        - cell [ref=e65]:
+          - code
+        - cell [ref=e66]:
+          - link "jest-output/" [ref=e67] [cursor=pointer]:
+            - /url: ./jest-output/
+      - row [ref=e68]:
+        - cell [ref=e69]
+        - cell [ref=e71]:
+          - code [ref=e72]: (drw-rw-rw-)
+        - cell "12-Aug-2026 16:56" [ref=e73]
+        - cell [ref=e74]:
+          - code
+        - cell [ref=e75]:
+          - link "lib/" [ref=e76] [cursor=pointer]:
+            - /url: ./lib/
+      - row [ref=e77]:
+        - cell [ref=e78]
+        - cell [ref=e80]:
+          - code [ref=e81]: (drw-rw-rw-)
+        - cell "12-Aug-2026 16:56" [ref=e82]
+        - cell [ref=e83]:
+          - code
+        - cell [ref=e84]:
+          - link "lib-commonjs/" [ref=e85] [cursor=pointer]:
+            - /url: ./lib-commonjs/
+      - row [ref=e86]:
+        - cell [ref=e87]
+        - cell [ref=e89]:
+          - code [ref=e90]: (drw-rw-rw-)
+        - cell "11-Aug-2026 14:17" [ref=e91]
+        - cell [ref=e92]:
+          - code
+        - cell [ref=e93]:
+          - link "node_modules/" [ref=e94] [cursor=pointer]:
+            - /url: ./node_modules/
+      - row [ref=e95]:
+        - cell [ref=e96]
+        - cell [ref=e98]:
+          - code [ref=e99]: (drw-rw-rw-)
+        - cell "12-Aug-2026 16:56" [ref=e100]
+        - cell [ref=e101]:
+          - code
+        - cell [ref=e102]:
+          - link "release/" [ref=e103] [cursor=pointer]:
+            - /url: ./release/
+      - row [ref=e104]:
+        - cell [ref=e105]
+        - cell [ref=e107]:
+          - code [ref=e108]: (drw-rw-rw-)
+        - cell "11-Aug-2026 13:15" [ref=e109]
+        - cell [ref=e110]:
+          - code
+        - cell [ref=e111]:
+          - link "scripts/" [ref=e112] [cursor=pointer]:
+            - /url: ./scripts/
+      - row [ref=e113]:
+        - cell [ref=e114]
+        - cell [ref=e116]:
+          - code [ref=e117]: (drw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e118]
+        - cell [ref=e119]:
+          - code
+        - cell [ref=e120]:
+          - link "src/" [ref=e121] [cursor=pointer]:
+            - /url: ./src/
+      - row [ref=e122]:
+        - cell [ref=e123]
+        - cell [ref=e125]:
+          - code [ref=e126]: (drw-rw-rw-)
+        - cell "11-Aug-2026 14:32" [ref=e127]
+        - cell [ref=e128]:
+          - code
+        - cell [ref=e129]:
+          - link "teams/" [ref=e130] [cursor=pointer]:
+            - /url: ./teams/
+      - row [ref=e131]:
+        - cell [ref=e132]
+        - cell [ref=e134]:
+          - code [ref=e135]: (drw-rw-rw-)
+        - cell "12-Aug-2026 16:56" [ref=e136]
+        - cell [ref=e137]:
+          - code
+        - cell [ref=e138]:
+          - link "temp/" [ref=e139] [cursor=pointer]:
+            - /url: ./temp/
+      - row [ref=e140]:
+        - cell [ref=e141]
+        - cell [ref=e143]:
+          - code [ref=e144]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e145]
+        - cell [ref=e146]:
+          - code [ref=e147]: 381B
+        - cell [ref=e148]:
+          - link ".gitignore" [ref=e149] [cursor=pointer]:
+            - /url: ./.gitignore
+      - row [ref=e150]:
+        - cell [ref=e151]
+        - cell [ref=e153]:
+          - code [ref=e154]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e155]
+        - cell [ref=e156]:
+          - code [ref=e157]: 464B
+        - cell [ref=e158]:
+          - link ".npmignore" [ref=e159] [cursor=pointer]:
+            - /url: ./.npmignore
+      - row [ref=e160]:
+        - cell [ref=e161]
+        - cell [ref=e163]:
+          - code [ref=e164]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e165]
+        - cell [ref=e166]:
+          - code [ref=e167]: 579B
+        - cell [ref=e168]:
+          - link ".yo-rc.json" [ref=e169] [cursor=pointer]:
+            - /url: ./.yo-rc.json
+      - row [ref=e170]:
+        - cell [ref=e171]
+        - cell [ref=e173]:
+          - code [ref=e174]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 11:15" [ref=e175]
+        - cell [ref=e176]:
+          - code [ref=e177]: 29.4k
+        - cell [ref=e178]:
+          - link "agentic-creation-rules.md" [ref=e179] [cursor=pointer]:
+            - /url: ./agentic-creation-rules.md
+      - row [ref=e180]:
+        - cell [ref=e181]
+        - cell [ref=e183]:
+          - code [ref=e184]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 10:50" [ref=e185]
+        - cell [ref=e186]:
+          - code [ref=e187]: 304B
+        - cell [ref=e188]:
+          - link "eslint.config.js" [ref=e189] [cursor=pointer]:
+            - /url: ./eslint.config.js
+      - row [ref=e190]:
+        - cell [ref=e191]
+        - cell [ref=e193]:
+          - code [ref=e194]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 14:17" [ref=e195]
+        - cell [ref=e196]:
+          - code [ref=e197]: 696.2k
+        - cell [ref=e198]:
+          - link "package-lock.json" [ref=e199] [cursor=pointer]:
+            - /url: ./package-lock.json
+      - row [ref=e200]:
+        - cell [ref=e201]
+        - cell [ref=e203]:
+          - code [ref=e204]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 14:17" [ref=e205]
+        - cell [ref=e206]:
+          - code [ref=e207]: 1.5k
+        - cell [ref=e208]:
+          - link "package.json" [ref=e209] [cursor=pointer]:
+            - /url: ./package.json
+      - row [ref=e210]:
+        - cell [ref=e211]
+        - cell [ref=e213]:
+          - code [ref=e214]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 15:28" [ref=e215]
+        - cell [ref=e216]:
+          - code [ref=e217]: 14.9k
+        - cell [ref=e218]:
+          - link "README.md" [ref=e219] [cursor=pointer]:
+            - /url: ./README.md
+      - row [ref=e220]:
+        - cell [ref=e221]
+        - cell [ref=e223]:
+          - code [ref=e224]: (-rw-rw-rw-)
+        - cell "12-Aug-2026 16:35" [ref=e225]
+        - cell [ref=e226]:
+          - code [ref=e227]: 27.8k
+        - cell [ref=e228]:
+          - link "todo.md" [ref=e229] [cursor=pointer]:
+            - /url: ./todo.md
+      - row [ref=e230]:
+        - cell [ref=e231]
+        - cell [ref=e233]:
+          - code [ref=e234]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 12:32" [ref=e235]
+        - cell [ref=e236]:
+          - code [ref=e237]: 546B
+        - cell [ref=e238]:
+          - link "tsconfig.json" [ref=e239] [cursor=pointer]:
+            - /url: ./tsconfig.json
+      - row [ref=e240]:
+        - cell [ref=e241]
+        - cell [ref=e243]:
+          - code [ref=e244]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 11:50" [ref=e245]
+        - cell [ref=e246]:
+          - code [ref=e247]: 10.8k
+        - cell [ref=e248]:
+          - link "Zava-Employee-Agent-Intro-Brief.md" [ref=e249] [cursor=pointer]:
+            - /url: ./Zava-Employee-Agent-Intro-Brief.md
+      - row [ref=e250]:
+        - cell [ref=e251]
+        - cell [ref=e253]:
+          - code [ref=e254]: (-rw-rw-rw-)
+        - cell "11-Aug-2026 11:49" [ref=e255]
+        - cell [ref=e256]:
+          - code [ref=e257]: 26.4k
+        - cell [ref=e258]:
+          - link "Zava-Employee-Agent-UX-Design.md" [ref=e259] [cursor=pointer]:
+            - /url: ./Zava-Employee-Agent-UX-Design.md
+  - generic [ref=e260]:
+    - text: Node.js v22.14.0/
+    - link "http-server" [ref=e261] [cursor=pointer]:
+      - /url: https://github.com/http-party/http-server
+    - text: server running @ 127.0.0.1:4174

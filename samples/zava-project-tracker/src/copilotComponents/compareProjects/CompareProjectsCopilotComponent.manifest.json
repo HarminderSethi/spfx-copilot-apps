@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "17c9a9da-8874-4e36-827e-fb9d87f1c1a3",
+  "alias": "CompareProjectsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "CompareProjects",
+      "description": {
+        "default": "Compare two or more projects across delivery, financials, value, risk, and capacity."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/compareProjects/CompareProjectsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

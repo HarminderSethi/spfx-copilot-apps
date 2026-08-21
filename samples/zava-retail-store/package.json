@@ -6,7 +6,8 @@
     "node": ">=22.14.0 < 23.0.0"
   },
   "scripts": {
-    "build": "heft test --clean --production && heft package-solution --production",
+    "build": "npm run check:dependencies && heft test --clean --production && heft package-solution --production",
+    "check:dependencies": "node scripts/validate-public-dependencies.mjs",
     "clean": "heft clean",
     "eject-webpack": "heft eject-webpack",
     "start": "heft start --clean"

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "5f1d5dfd-e5a1-431c-b143-3441eb39a9f0",
+  "alias": "RequestAiBudgetCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "RequestAiBudget",
+      "description": {
+        "default": "Prepare an AI budget change request with forecast impact and alternatives for review."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/requestAiBudget/RequestAiBudgetCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

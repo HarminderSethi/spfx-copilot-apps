@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "d6b8327f-b258-42ef-81c4-6f6a695c4e22",
+  "alias": "ExploreAgentCapabilitiesCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ExploreAgentCapabilities",
+      "description": {
+        "default": "Help users discover project and portfolio scenarios, realistic prompts, business value, and safe experience previews."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

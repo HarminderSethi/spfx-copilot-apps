@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "ec97942d-c6d7-4c7c-b4e5-fe99e92f064b",
+  "alias": "RequiredLearningCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetRequiredLearning",
+      "description": {
+        "default": "Show required employee learning due soon with compliance progress, urgency, estimated effort, and resume actions. Use for mandatory or compliance learning, not general recommendations."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/requiredLearning/RequiredLearningCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

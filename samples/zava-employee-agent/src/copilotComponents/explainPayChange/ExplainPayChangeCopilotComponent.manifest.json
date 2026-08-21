@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "f0e53524-4301-4bf7-bcbd-f24f41ac8768",
+  "alias": "ExplainPayChangeCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "ExplainPayChange",
+      "description": {
+        "default": "Explain why net pay changed between two periods with a driver waterfall for earnings and deductions. Use for comparison and variance questions; use GetLatestPay for a single statement."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/explainPayChange/ExplainPayChangeCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

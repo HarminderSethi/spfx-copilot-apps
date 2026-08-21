@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "83c59062-360f-4885-b41e-321afa8d8500",
+  "alias": "GetProjectBudgetCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectBudget",
+      "description": {
+        "default": "Analyze project budget baseline, actuals, commitments, forecast, and estimate at completion."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectBudget/GetProjectBudgetCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "306cb621-f678-4d1d-913b-f80bebd99504",
+  "alias": "ReviewResourceAssignmentCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReviewResourceAssignment",
+      "description": {
+        "default": "Review a proposed resource assignment against capacity, skills, cost, and milestones."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reviewResourceAssignment/ReviewResourceAssignmentCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

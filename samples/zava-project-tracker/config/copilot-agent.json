@@ -1,0 +1,46 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Zava AI Project Portfolio Agent"
+      },
+      "description": {
+        "default": "Intent-driven project delivery, AI spend, portfolio governance, capacity, and approvals."
+      },
+      "components": [
+        "94817c6c-0b3e-44cd-92ef-8a2ee7dbbdef",
+        "a0d6d6d2-65f3-4330-9949-8ae28b419877",
+        "72f190a2-6436-4715-b3e8-e4d35cf9b09a",
+        "57fc9f39-31c4-414c-8399-d2252337a68d",
+        "d8739a58-7ac1-42e9-afaf-73f3ad91f6a8",
+        "29a561ef-36db-4220-9881-45d15f729650",
+        "db468dbe-fc1a-480a-ac52-2c2d0c0680cb",
+        "ddc01e03-cf25-4180-99b5-3ecb5a24ca98",
+        "5039d6cd-1de8-4230-b976-a8030efa55c0",
+        "d22a2d60-c8ed-47df-9d8f-5b67feeabdaa",
+        "83c59062-360f-4885-b41e-321afa8d8500",
+        "04892079-d738-4cd8-b623-06aa87ae2818",
+        "c54f4eac-2831-46cb-8521-47fea0a31ad6",
+        "9d101a7c-6924-4407-b34f-204cfe3b154d",
+        "d7e27c5d-b50d-4f5d-975d-1c9294ce3613",
+        "6ecb07e4-beaa-4d51-aaef-391e121d99bc",
+        "5f1d5dfd-e5a1-431c-b143-3441eb39a9f0",
+        "17c9a9da-8874-4e36-827e-fb9d87f1c1a3",
+        "09c521f9-9b1d-44d4-a2d0-0e98ad3396cf",
+        "32eb69ad-51be-48c9-95da-9355d3b79e09",
+        "f912e5c4-e845-4d2c-932d-a7b2573facd8",
+        "4bfc5a08-b28b-4927-8f87-81a9bb465372",
+        "a023ecc0-3ec5-448b-92db-0321455c3f0d",
+        "64954f1d-2b05-49ad-ba8c-397167c30746",
+        "fe69f8fc-4f97-449f-9eb3-600faffe2672",
+        "4cdfe18d-a1c2-4b98-a725-af4ed1823870",
+        "66ab1d58-2d89-4c2c-9848-df0cae6efd32",
+        "a1f63dcf-b832-4f4c-b799-544cf9aab873",
+        "306cb621-f678-4d1d-913b-f80bebd99504",
+        "069f4501-a052-4136-9cc7-5a9b951c1eef",
+        "d6b8327f-b258-42ef-81c4-6f6a695c4e22"
+      ]
+    }
+  ]
+}

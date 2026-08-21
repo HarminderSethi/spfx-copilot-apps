@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "a0d6d6d2-65f3-4330-9949-8ae28b419877",
+  "alias": "GetMyTasksCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetMyTasks",
+      "description": {
+        "default": "Show the signed-in user's tasks filtered and grouped for delivery decisions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getMyTasks/GetMyTasksCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

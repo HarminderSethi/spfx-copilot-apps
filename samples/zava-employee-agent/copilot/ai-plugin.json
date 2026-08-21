@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "getMyHrDashboard",
+  "name_for_human": "Zava Employee Agent",
+  "description_for_human": "Employee-first HR answers, actions, comparisons, timelines, and manager workflows.",
+  "description_for_model": "Render employee-first Zava HR experiences with 20 dedicated tools across Home, Policy, Time, Money, Benefits, Support, Learning, Rewards, Team, and People. Select the narrowest matching tool from its generated function description. Prompt values may filter or prefill an experience but must never submit, open, approve, decline, or otherwise mutate an HR record without explicit user review and confirmation.",
+  "contact_email": "publisher@contoso.com"
+}

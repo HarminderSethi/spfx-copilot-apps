@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "94817c6c-0b3e-44cd-92ef-8a2ee7dbbdef",
+  "alias": "GetMyWorkSummaryCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetMyWorkSummary",
+      "description": {
+        "default": "Summarize the signed-in user's priority work, capacity, blockers, and time-sensitive actions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getMyWorkSummary/GetMyWorkSummaryCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -6,7 +6,8 @@
     "node": ">=22.14.0 < 23.0.0"
   },
   "scripts": {
-    "build": "heft test --clean --production && heft package-solution --production",
+    "build": "npm run check:dependencies && heft test --clean --production && heft package-solution --production",
+    "check:dependencies": "node scripts/validate-public-dependencies.mjs",
     "clean": "heft clean",
     "eject-webpack": "heft eject-webpack",
     "start": "heft start --clean"
@@ -14,6 +15,10 @@
   "dependencies": {
     "@fluentui/react-components": "9.54.0",
     "@fluentui/react-icons": "2.0.270",
+    "@fluentui/react-motion": "9.16.1",
+    "@fluentui/react-provider": "9.22.18",
+    "@fluentui/react-theme": "9.2.1",
+    "@griffel/react": "1.7.7",
     "@microsoft/sp-copilot-component": "1.24.0-beta.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",

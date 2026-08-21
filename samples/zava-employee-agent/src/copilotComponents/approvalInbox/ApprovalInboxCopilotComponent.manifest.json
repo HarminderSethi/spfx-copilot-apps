@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "4aa6f973-4fe7-48c4-9e89-11d3cb3b687f",
+  "alias": "ApprovalInboxCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetApprovalInbox",
+      "description": {
+        "default": "Show a manager's pending approval queue with requester context, urgency, and coverage impact. Use for approvals waiting on the manager; use GetTeamAbsenceCalendar for absence overlap questions."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/approvalInbox/ApprovalInboxCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

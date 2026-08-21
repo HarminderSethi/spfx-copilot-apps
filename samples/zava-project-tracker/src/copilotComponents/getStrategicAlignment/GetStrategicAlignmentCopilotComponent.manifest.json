@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "32eb69ad-51be-48c9-95da-9355d3b79e09",
+  "alias": "GetStrategicAlignmentCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetStrategicAlignment",
+      "description": {
+        "default": "Map portfolio objectives and key results to project contribution evidence."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getStrategicAlignment/GetStrategicAlignmentCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

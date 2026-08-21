@@ -1,0 +1,68 @@
+{
+  "capturedOn": "2026-08-19",
+  "scope": {
+    "components": 31,
+    "advertisedOperationalScenarios": 30,
+    "educationComponents": 1,
+    "conversationStarters": 3,
+    "categories": {
+      "my-work": 6,
+      "project": 12,
+      "portfolio": 7,
+      "approvals": 5
+    }
+  },
+  "validation": {
+    "catalogAndAgentAudit": "passed",
+    "optionalPromptFields": 188,
+    "focusedTests": 130,
+    "failures": 0,
+    "warnings": 0,
+    "shellStates": 10,
+    "shellStateFailures": 0,
+    "safePreviewSmokes": 30,
+    "safePreviewFailures": 0,
+    "runtimeErrors": 0,
+    "overflowFailures": 0,
+    "blankChartFailures": 0,
+    "nestedFrameFailures": 0,
+    "reducedMotion": "passed",
+    "browserZoom200Percent": "passed",
+    "clipboardSuccessAndFallback": "passed",
+    "searchCategoryNoMatch": "passed",
+    "featuredTourPreviousNext": "passed"
+  },
+  "shellMatrix": {
+    "inline": ["340-light", "760-light", "340-dark", "760-dark"],
+    "fullscreen": ["340-light", "760-light", "980-light", "340-dark", "760-dark", "980-dark"]
+  },
+  "screenshots": [
+    "phase-2c/category-all.png",
+    "phase-2c/category-my-work.png",
+    "phase-2c/category-project.png",
+    "phase-2c/category-portfolio.png",
+    "phase-2c/category-approvals.png",
+    "phase-2c/preview-GetProjectHealth.png",
+    "phase-2c/preview-ReviewResourceAssignment.png",
+    "phase-2c/preview-SubmitWeeklyUpdate.png"
+  ],
+  "safety": {
+    "previewNotice": "Demo preview - no action applied",
+    "finalConfirmationBlockedByPreviewBoundary": true,
+    "sessionWritesFromPreview": false,
+    "explorerAdvertisesItself": false,
+    "hostPromptSubmitApiUsed": false,
+    "fallback": "Copy prompt with visible success/error guidance"
+  },
+  "externalPrerequisite": "Tenant-authenticated Copilot Workbench validation remains deferred until config/serve.json tenantDomain and an authenticated session are supplied. Host prompt-submit API remains unverified; Copy prompt is the approved first-version action.",
+  "artifacts": {
+    "agentZip": "teams/zava-ai-project-portfolio-agent.zip",
+    "agentZipBytes": 13706,
+    "agentZipEntries": 6,
+    "agentZipHasColorIcon": true,
+    "agentZipHasOutlineIcon": true,
+    "sppkg": "sharepoint/solution/zava-project-tracker.sppkg",
+    "sppkgBytes": 11047640,
+    "productionWarnings": 0
+  }
+}

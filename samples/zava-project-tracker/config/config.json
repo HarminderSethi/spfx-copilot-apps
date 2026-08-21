@@ -1,0 +1,168 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "zava-project-copilot-components": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/getMyWorkSummary/GetMyWorkSummaryCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getMyWorkSummary/GetMyWorkSummaryCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getMyTasks/GetMyTasksCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getMyTasks/GetMyTasksCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getMyCapacity/GetMyCapacityCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getMyCapacity/GetMyCapacityCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getMyGoalContributions/GetMyGoalContributionsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getMyGoalContributions/GetMyGoalContributionsCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/submitWeeklyUpdate/SubmitWeeklyUpdateCopilotComponent.js",
+          "manifest": "./src/copilotComponents/submitWeeklyUpdate/SubmitWeeklyUpdateCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/submitTimesheet/SubmitTimesheetCopilotComponent.js",
+          "manifest": "./src/copilotComponents/submitTimesheet/SubmitTimesheetCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectHealth/GetProjectHealthCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectHealth/GetProjectHealthCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectTimeline/GetProjectTimelineCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectTimeline/GetProjectTimelineCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectMilestones/GetProjectMilestonesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectMilestones/GetProjectMilestonesCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectRisks/GetProjectRisksCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectRisks/GetProjectRisksCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectBudget/GetProjectBudgetCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectBudget/GetProjectBudgetCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectAiSpend/GetProjectAiSpendCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectAiSpend/GetProjectAiSpendCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProjectTeamCapacity/GetProjectTeamCapacityCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProjectTeamCapacity/GetProjectTeamCapacityCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/submitProjectStatus/SubmitProjectStatusCopilotComponent.js",
+          "manifest": "./src/copilotComponents/submitProjectStatus/SubmitProjectStatusCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/submitAiUsage/SubmitAiUsageCopilotComponent.js",
+          "manifest": "./src/copilotComponents/submitAiUsage/SubmitAiUsageCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/submitProjectRequest/SubmitProjectRequestCopilotComponent.js",
+          "manifest": "./src/copilotComponents/submitProjectRequest/SubmitProjectRequestCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/requestAiBudget/RequestAiBudgetCopilotComponent.js",
+          "manifest": "./src/copilotComponents/requestAiBudget/RequestAiBudgetCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/compareProjects/CompareProjectsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/compareProjects/CompareProjectsCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getPortfolioHealth/GetPortfolioHealthCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getPortfolioHealth/GetPortfolioHealthCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getStrategicAlignment/GetStrategicAlignmentCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getStrategicAlignment/GetStrategicAlignmentCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getPortfolioRoadmap/GetPortfolioRoadmapCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getPortfolioRoadmap/GetPortfolioRoadmapCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getPortfolioBudgetForecast/GetPortfolioBudgetForecastCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getPortfolioBudgetForecast/GetPortfolioBudgetForecastCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getPortfolioAiSpend/GetPortfolioAiSpendCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getPortfolioAiSpend/GetPortfolioAiSpendCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getPortfolioCapacity/GetPortfolioCapacityCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getPortfolioCapacity/GetPortfolioCapacityCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getPortfolioRiskExposure/GetPortfolioRiskExposureCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getPortfolioRiskExposure/GetPortfolioRiskExposureCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getApprovalInbox/GetApprovalInboxCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getApprovalInbox/GetApprovalInboxCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reviewProjectRequest/ReviewProjectRequestCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reviewProjectRequest/ReviewProjectRequestCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reviewProjectBudget/ReviewProjectBudgetCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reviewProjectBudget/ReviewProjectBudgetCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reviewResourceAssignment/ReviewResourceAssignmentCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reviewResourceAssignment/ReviewResourceAssignmentCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reviewStageGate/ReviewStageGateCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reviewStageGate/ReviewStageGateCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GetMyWorkSummaryCopilotComponentStrings": "lib/copilotComponents/getMyWorkSummary/loc/{locale}.js",
+    "GetMyTasksCopilotComponentStrings": "lib/copilotComponents/getMyTasks/loc/{locale}.js",
+    "GetMyCapacityCopilotComponentStrings": "lib/copilotComponents/getMyCapacity/loc/{locale}.js",
+    "GetMyGoalContributionsCopilotComponentStrings": "lib/copilotComponents/getMyGoalContributions/loc/{locale}.js",
+    "SubmitWeeklyUpdateCopilotComponentStrings": "lib/copilotComponents/submitWeeklyUpdate/loc/{locale}.js",
+    "SubmitTimesheetCopilotComponentStrings": "lib/copilotComponents/submitTimesheet/loc/{locale}.js",
+    "GetProjectHealthCopilotComponentStrings": "lib/copilotComponents/getProjectHealth/loc/{locale}.js",
+    "GetProjectTimelineCopilotComponentStrings": "lib/copilotComponents/getProjectTimeline/loc/{locale}.js",
+    "GetProjectMilestonesCopilotComponentStrings": "lib/copilotComponents/getProjectMilestones/loc/{locale}.js",
+    "GetProjectRisksCopilotComponentStrings": "lib/copilotComponents/getProjectRisks/loc/{locale}.js",
+    "GetProjectBudgetCopilotComponentStrings": "lib/copilotComponents/getProjectBudget/loc/{locale}.js",
+    "GetProjectAiSpendCopilotComponentStrings": "lib/copilotComponents/getProjectAiSpend/loc/{locale}.js",
+    "GetProjectTeamCapacityCopilotComponentStrings": "lib/copilotComponents/getProjectTeamCapacity/loc/{locale}.js",
+    "SubmitProjectStatusCopilotComponentStrings": "lib/copilotComponents/submitProjectStatus/loc/{locale}.js",
+    "SubmitAiUsageCopilotComponentStrings": "lib/copilotComponents/submitAiUsage/loc/{locale}.js",
+    "SubmitProjectRequestCopilotComponentStrings": "lib/copilotComponents/submitProjectRequest/loc/{locale}.js",
+    "RequestAiBudgetCopilotComponentStrings": "lib/copilotComponents/requestAiBudget/loc/{locale}.js",
+    "CompareProjectsCopilotComponentStrings": "lib/copilotComponents/compareProjects/loc/{locale}.js",
+    "GetPortfolioHealthCopilotComponentStrings": "lib/copilotComponents/getPortfolioHealth/loc/{locale}.js",
+    "GetStrategicAlignmentCopilotComponentStrings": "lib/copilotComponents/getStrategicAlignment/loc/{locale}.js",
+    "GetPortfolioRoadmapCopilotComponentStrings": "lib/copilotComponents/getPortfolioRoadmap/loc/{locale}.js",
+    "GetPortfolioBudgetForecastCopilotComponentStrings": "lib/copilotComponents/getPortfolioBudgetForecast/loc/{locale}.js",
+    "GetPortfolioAiSpendCopilotComponentStrings": "lib/copilotComponents/getPortfolioAiSpend/loc/{locale}.js",
+    "GetPortfolioCapacityCopilotComponentStrings": "lib/copilotComponents/getPortfolioCapacity/loc/{locale}.js",
+    "GetPortfolioRiskExposureCopilotComponentStrings": "lib/copilotComponents/getPortfolioRiskExposure/loc/{locale}.js",
+    "GetApprovalInboxCopilotComponentStrings": "lib/copilotComponents/getApprovalInbox/loc/{locale}.js",
+    "ReviewProjectRequestCopilotComponentStrings": "lib/copilotComponents/reviewProjectRequest/loc/{locale}.js",
+    "ReviewProjectBudgetCopilotComponentStrings": "lib/copilotComponents/reviewProjectBudget/loc/{locale}.js",
+    "ReviewResourceAssignmentCopilotComponentStrings": "lib/copilotComponents/reviewResourceAssignment/loc/{locale}.js",
+    "ReviewStageGateCopilotComponentStrings": "lib/copilotComponents/reviewStageGate/loc/{locale}.js",
+    "ExploreAgentCapabilitiesCopilotComponentStrings": "lib/copilotComponents/exploreAgentCapabilities/loc/{locale}.js"
+  }
+}

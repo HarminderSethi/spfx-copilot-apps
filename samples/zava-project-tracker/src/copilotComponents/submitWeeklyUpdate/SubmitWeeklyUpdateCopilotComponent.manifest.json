@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "d8739a58-7ac1-42e9-afaf-73f3ad91f6a8",
+  "alias": "SubmitWeeklyUpdateCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "SubmitWeeklyUpdate",
+      "description": {
+        "default": "Prepare an editable weekly project update for review before mock submission."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/submitWeeklyUpdate/SubmitWeeklyUpdateCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

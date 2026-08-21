@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Zava Employee Agent - Home design source</title>
+  <style>
+    :root {
+      --ink: #163642;
+      --ink-soft: #3d5963;
+      --muted: #6b7d84;
+      --line: #dfe7ea;
+      --line-soft: #edf2f4;
+      --canvas: #f7f9fa;
+      --paper: #ffffff;
+      --teal: #087782;
+      --teal-deep: #075a65;
+      --cyan: #2b91ad;
+      --sky: #dff3f7;
+      --pink: #d52b70;
+      --pink-soft: #fde8f1;
+      --green: #1b7f5a;
+      --green-soft: #e3f5ed;
+      --amber: #a66700;
+      --amber-soft: #fff1cc;
+      --red: #be3343;
+      --red-soft: #fdebed;
+      --blue: #3c66c3;
+      --blue-soft: #e9effd;
+      --shadow: 0 5px 18px rgba(22, 54, 66, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
+    html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+
+    body {
+      color: var(--ink);
+      background-color: var(--canvas);
+      font-family: Aptos, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    button, select { font: inherit; letter-spacing: 0; }
+
+    .app-shell { min-height: 100vh; background-color: var(--canvas); }
+
+    .product-bar {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 20px;
+      background-color: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .product-mark {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background-image: linear-gradient(135deg, #0a7c86 0%, #2995aa 52%, #d52b70 115%);
+      border-radius: 7px;
+      font: 800 15px/1 "Aptos Display", Aptos, sans-serif;
+      box-shadow: 0 3px 10px rgba(8, 119, 130, 0.2);
+    }
+
+    .product-title { font-size: 14px; font-weight: 700; }
+    .product-context { color: var(--muted); font-size: 11px; }
+    .product-spacer { flex: 1; }
+
+    .data-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 9px;
+      color: var(--green);
+      background-color: var(--green-soft);
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .data-dot { width: 6px; height: 6px; background-color: var(--green); border-radius: 50%; }
+
+    .icon-button {
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      color: var(--ink-soft);
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+
+    .app-body { min-height: calc(100vh - 58px); display: grid; grid-template-columns: 178px minmax(0, 1fr); }
+
+    .family-rail {
+      padding: 22px 12px 16px;
+      background-color: var(--paper);
+      border-right: 1px solid var(--line);
+    }
+
+    .rail-label {
+      padding: 0 10px 10px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .rail-list { display: grid; gap: 3px; }
+
+    .rail-item {
+      width: 100%;
+      min-height: 38px;
+      display: grid;
+      grid-template-columns: 25px minmax(0, 1fr);
+      align-items: center;
+      gap: 8px;
+      padding: 6px 9px;
+      color: #5a6e76;
+      background: transparent;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 3px solid transparent;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .rail-item:hover { background-color: var(--line-soft); }
+    .rail-item:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
+
+    .rail-item.active {
+      color: var(--item-dark, var(--teal-deep));
+      background-color: var(--item-light, #e3f5f7);
+      border-left-color: var(--item-accent, var(--teal));
+      font-weight: 800;
+    }
+
+    .rail-icon {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      color: var(--item-dark, var(--teal));
+      background-color: var(--item-light, #ecf7f8);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .rail-note {
+      margin: 26px 9px 0;
+      padding-top: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--line-soft);
+      font-size: 9px;
+      line-height: 1.45;
+    }
+
+    .mobile-family-nav {
+      display: none;
+      padding: 10px 12px;
+      background-color: var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mobile-family-nav label { display: grid; gap: 4px; color: var(--muted); font-size: 10px; }
+    .mobile-family-nav select { width: 100%; height: 44px; padding: 0 10px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; }
+
+    .workspace { min-width: 0; display: flex; }
+    .main { min-width: 0; flex: 1; }
+
+    .canvas {
+      width: 100%;
+      max-width: 1370px;
+      margin: 0 auto;
+      padding: 24px 26px 18px;
+    }
+
+    .family-placeholder {
+      --family-dark: var(--teal-deep);
+      --family-accent: var(--teal);
+      --family-light: var(--sky);
+      display: none;
+      min-height: calc(100vh - 125px);
+      flex-direction: column;
+      border-bottom: 1px solid var(--line);
+      outline: none;
+      animation: family-enter 220ms ease-out both;
+    }
+
+    .family-mode .canvas > :not(.family-placeholder) { display: none; }
+    .family-mode .family-placeholder { display: flex; }
+
+    .family-hero {
+      min-height: 154px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 26px 30px;
+      color: white;
+      background-image: linear-gradient(120deg, var(--family-dark) 0%, var(--family-accent) 58%, var(--family-light) 100%);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .family-hero-icon { width: 64px; height: 64px; display: grid; place-items: center; flex: 0 0 auto; background: rgba(255, 255, 255, 0.2); border-radius: 8px; font-size: 26px; font-weight: 800; }
+    .family-greeting { opacity: 0.86; font-size: 14px; }
+    .family-title { margin: 2px 0 4px; color: white; font: 700 34px/1.1 "Aptos Display", Aptos, sans-serif; }
+    .family-summary { margin: 0; opacity: 0.9; font-size: 14px; }
+
+    @keyframes family-enter {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .welcome {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 74px;
+    }
+
+    .person { display: flex; align-items: center; gap: 15px; min-width: 0; }
+
+    .avatar-wrap {
+      width: 62px;
+      height: 62px;
+      padding: 3px;
+      flex: 0 0 auto;
+      background-image: linear-gradient(135deg, var(--teal), var(--cyan), var(--pink));
+      border-radius: 50%;
+    }
+
+    .avatar, .person-photo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .welcome-kicker { color: var(--muted); font-size: 11px; font-weight: 600; }
+    .welcome h1 { margin: 2px 0 3px; font: 700 28px/1.1 "Aptos Display", Aptos, sans-serif; }
+    .welcome-copy { margin: 0; color: var(--ink-soft); font-size: 12px; }
+
+    .day-pulse {
+      display: grid;
+      grid-template-columns: 38px auto;
+      align-items: center;
+      gap: 10px;
+      min-width: 225px;
+      padding: 9px 12px;
+      background-color: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .pulse-icon {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      background-color: var(--blue-soft);
+      border: 1px solid #c8d8f5;
+      border-radius: 7px;
+      font-size: 18px;
+    }
+
+    .pulse-label { color: var(--muted); font-size: 9px; font-weight: 700; text-transform: uppercase; }
+    .pulse-value { margin-top: 2px; font-size: 12px; font-weight: 800; }
+
+    .plan-band {
+      position: relative;
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      overflow: hidden;
+      margin-top: 18px;
+      padding: 16px 18px;
+      color: white;
+      background-color: var(--teal-deep);
+      background-image: linear-gradient(112deg, #086a75 0%, #188ca0 62%, #bf3474 140%);
+      border-radius: 8px;
+      box-shadow: 0 7px 20px rgba(8, 106, 117, 0.18);
+    }
+
+    .plan-band::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.18;
+      background-image: repeating-linear-gradient(130deg, transparent 0 40px, rgba(255,255,255,0.32) 40px 41px);
+      pointer-events: none;
+    }
+
+    .spark {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      z-index: 1;
+      flex: 0 0 auto;
+      color: white;
+      background-color: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      font-size: 23px;
+    }
+
+    .plan-copy { z-index: 1; min-width: 210px; flex: 1; }
+    .plan-title { margin: 0; font: 700 17px/1.2 "Aptos Display", Aptos, sans-serif; }
+    .plan-subtitle { margin: 3px 0 0; color: rgba(255,255,255,0.86); font-size: 11px; }
+
+    .signal-trail { z-index: 1; display: flex; align-items: center; margin-right: 4px; }
+    .signal-avatar { width: 30px; height: 30px; margin-left: -7px; object-fit: cover; border: 2px solid white; border-radius: 50%; }
+    .signal-avatar:first-child { margin-left: 0; }
+
+    .plan-button {
+      z-index: 1;
+      padding: 9px 13px;
+      color: var(--teal-deep);
+      background-color: white;
+      border: 0;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: minmax(300px, 1.08fr) minmax(270px, 0.92fr) minmax(270px, 0.92fr);
+      gap: 16px;
+      margin-top: 16px;
+      align-items: start;
+    }
+
+    .column { min-width: 0; display: grid; gap: 16px; }
+
+    .card {
+      min-width: 0;
+      background-color: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 2px 9px rgba(22,54,66,0.04);
+      overflow: hidden;
+    }
+
+    .card-head {
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .card-heading { display: flex; align-items: center; gap: 8px; min-width: 0; }
+    .card-icon { color: var(--teal); font-size: 15px; }
+    .card-title { margin: 0; font: 700 14px/1.2 "Aptos Display", Aptos, sans-serif; }
+    .card-link { color: var(--teal); font-size: 9px; font-weight: 700; white-space: nowrap; }
+
+    .focus-list { position: relative; padding: 3px 14px 8px 24px; }
+    .focus-list::before { content: ""; position: absolute; top: 21px; bottom: 26px; left: 31px; width: 1px; background-color: #cfdadd; }
+
+    .focus-row {
+      position: relative;
+      min-height: 64px;
+      display: grid;
+      grid-template-columns: 23px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 0;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .focus-row:first-child { border-top: 0; }
+
+    .focus-glyph {
+      width: 23px;
+      height: 23px;
+      display: grid;
+      place-items: center;
+      z-index: 1;
+      color: var(--teal);
+      background-color: var(--sky);
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .focus-row.urgent .focus-glyph { color: var(--red); background-color: var(--red-soft); }
+    .focus-row.people .focus-glyph { color: var(--pink); background-color: var(--pink-soft); }
+    .row-title { font-size: 11px; font-weight: 800; }
+    .row-sub { margin-top: 2px; color: var(--muted); font-size: 9px; line-height: 1.35; }
+
+    .status {
+      padding: 4px 7px;
+      border-radius: 10px;
+      font-size: 8px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .status.red { color: var(--red); background-color: var(--red-soft); }
+    .status.amber { color: var(--amber); background-color: var(--amber-soft); }
+    .status.green { color: var(--green); background-color: var(--green-soft); }
+
+    .timeline { padding: 4px 14px 9px; }
+    .timeline-row { display: grid; grid-template-columns: 44px 1fr auto; gap: 9px; align-items: center; min-height: 48px; border-top: 1px solid var(--line-soft); }
+    .timeline-row:first-child { border-top: 0; }
+    .date-chip { color: var(--teal); font-size: 9px; font-weight: 800; }
+
+    .snapshot-body { display: grid; grid-template-columns: 106px 1fr; gap: 14px; align-items: center; padding: 16px; }
+    .leave-ring { width: 96px; height: 96px; display: grid; place-items: center; background: conic-gradient(var(--teal) 0 72%, #e5edef 72%); border-radius: 50%; }
+    .leave-ring::after { content: ""; width: 72px; height: 72px; background-color: white; border-radius: 50%; }
+    .ring-copy { position: absolute; text-align: center; }
+    .ring-value { display: block; font: 800 22px/1 "Aptos Display", Aptos, sans-serif; }
+    .ring-label { display: block; margin-top: 4px; color: var(--muted); font-size: 8px; }
+    .ring-wrap { position: relative; display: grid; place-items: center; }
+
+    .snapshot-lines { display: grid; gap: 10px; }
+    .snapshot-line { display: flex; justify-content: space-between; gap: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--line-soft); font-size: 10px; }
+    .snapshot-line:last-child { padding-bottom: 0; border-bottom: 0; }
+    .snapshot-line strong { font-size: 11px; }
+
+    .learning-body { padding: 14px; }
+    .learning-top { display: flex; justify-content: space-between; gap: 12px; }
+    .learning-percent { font: 800 25px/1 "Aptos Display", Aptos, sans-serif; }
+    .learning-copy { margin-top: 3px; color: var(--muted); font-size: 9px; }
+    .progress { height: 7px; margin-top: 12px; overflow: hidden; background-color: #e8eef0; border-radius: 5px; }
+    .progress > span { display: block; width: 86%; height: 100%; background-image: linear-gradient(90deg, var(--teal), #28a48b); }
+    .course-row { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--line-soft); }
+    .course-icon { width: 31px; height: 31px; display: grid; place-items: center; color: var(--red); background-color: var(--red-soft); border-radius: 7px; font-size: 14px; }
+    .course-copy { flex: 1; }
+
+    .people-body { padding: 15px; }
+    .people-intro { margin: 0 0 13px; color: var(--ink-soft); font-size: 10px; line-height: 1.45; }
+    .people-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .person-tile { text-align: center; }
+    .person-tile img { width: 52px; height: 52px; object-fit: cover; border-radius: 50%; border: 3px solid #eff4f5; }
+    .person-name { margin-top: 5px; font-size: 9px; font-weight: 800; }
+    .person-role { margin-top: 2px; color: var(--muted); font-size: 8px; }
+    .one-to-one { display: flex; align-items: center; gap: 9px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line-soft); }
+    .one-to-one img { width: 36px; height: 36px; object-fit: cover; border-radius: 50%; }
+    .one-to-one-copy { flex: 1; }
+
+    .moment-card {
+      position: relative;
+      min-height: 168px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 168px;
+      overflow: hidden;
+      background-color: #fff6fa;
+      background-image: linear-gradient(135deg, #fff8fb 0%, #fdeaf2 100%);
+      border-color: #f4d8e5;
+    }
+
+    .moment-copy { z-index: 1; padding: 16px 8px 16px 16px; }
+    .moment-kicker { color: var(--pink); font-size: 9px; font-weight: 800; text-transform: uppercase; }
+    .moment-title { margin: 5px 0 4px; font: 700 17px/1.15 "Aptos Display", Aptos, sans-serif; }
+    .moment-text { margin: 0; color: var(--ink-soft); font-size: 9px; line-height: 1.45; }
+    .moment-action { display: inline-block; margin-top: 12px; color: var(--pink); font-size: 9px; font-weight: 800; }
+    .moment-photo { width: 168px; height: 168px; align-self: end; object-fit: cover; object-position: center center; filter: saturate(0.9); }
+
+    .footer { display: flex; justify-content: center; gap: 8px; margin-top: 15px; color: var(--muted); font-size: 8px; }
+
+    .right-panel {
+      width: 408px;
+      min-width: 408px;
+      min-height: calc(100vh - 58px);
+      display: none;
+      flex-direction: column;
+      background-color: var(--paper);
+      border-left: 1px solid var(--line);
+      box-shadow: -10px 0 28px rgba(22,54,66,0.11);
+    }
+
+    body.panel-open .right-panel { display: flex; }
+
+    .panel-accent { height: 5px; background-image: linear-gradient(90deg, var(--teal), var(--cyan), var(--pink)); }
+    .panel-head { display: flex; align-items: center; gap: 11px; padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }
+    .panel-mark { width: 38px; height: 38px; display: grid; place-items: center; color: white; background-image: linear-gradient(135deg, var(--teal), var(--pink)); border-radius: 8px; font-size: 18px; }
+    .panel-heading { flex: 1; }
+    .panel-kicker { color: var(--teal); font-size: 8px; font-weight: 800; text-transform: uppercase; }
+    .panel-title { margin: 3px 0 0; font: 700 20px/1.15 "Aptos Display", Aptos, sans-serif; }
+    .panel-close { color: var(--muted); background: transparent; border: 0; font-size: 20px; }
+    .panel-body { flex: 1; padding: 16px 18px; overflow: auto; }
+
+    .assistant-note { display: grid; grid-template-columns: 34px 1fr; gap: 9px; margin-bottom: 9px; }
+    .assistant-logo { width: 32px; height: 32px; display: grid; place-items: center; color: white; background-color: var(--teal); border-radius: 7px; font-weight: 800; }
+    .assistant-copy { padding: 10px 11px; color: var(--ink-soft); background-color: #f0f7f8; border-radius: 4px 8px 8px 8px; font-size: 11px; line-height: 1.45; }
+
+    .plan-item { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 10px; padding: 13px 0; border-top: 1px solid var(--line); }
+    .plan-item-icon { width: 34px; height: 34px; display: grid; place-items: center; color: var(--teal); background-color: var(--sky); border-radius: 8px; font-size: 13px; font-weight: 800; }
+    .plan-item:nth-child(3) .plan-item-icon { color: var(--pink); background-color: var(--pink-soft); }
+    .plan-item:nth-child(4) .plan-item-icon { color: var(--blue); background-color: var(--blue-soft); }
+    .plan-item:nth-child(5) .plan-item-icon { color: var(--amber); background-color: var(--amber-soft); }
+    .plan-source { color: var(--muted); font-size: 8px; font-weight: 800; text-transform: uppercase; }
+    .plan-item-title { margin-top: 3px; font-size: 11px; font-weight: 800; }
+    .plan-reason { margin: 4px 0 8px; color: var(--muted); font-size: 9px; line-height: 1.4; }
+    .route-button { padding: 6px 9px; color: white; background-color: var(--teal); border: 0; border-radius: 5px; font-size: 9px; font-weight: 800; }
+    .route-button.secondary { color: var(--teal); background-color: #eaf5f6; }
+    .panel-foot { padding: 11px 18px; color: var(--muted); background-color: #f7f9fa; border-top: 1px solid var(--line); font-size: 8px; line-height: 1.4; }
+
+    /* Inline design board */
+    .inline-board { display: none; min-height: 700px; padding: 32px; background-color: #f3f6f8; }
+    body.inline-mode .app-shell { display: none; }
+    body.inline-mode .inline-board { display: block; }
+    .board-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 20px; }
+    .board-kicker { color: var(--teal); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+    .board-title { margin: 4px 0 0; font: 700 29px/1.1 "Aptos Display", Aptos, sans-serif; }
+    .board-note { max-width: 500px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.45; text-align: right; }
+
+    .inline-showcase { display: grid; grid-template-columns: 405px minmax(0, 1fr); gap: 18px; align-items: start; }
+
+    .lead-inline {
+      overflow: hidden;
+      background-color: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: 0 9px 28px rgba(22,54,66,0.12);
+    }
+
+    .inline-hero {
+      position: relative;
+      min-height: 108px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+      padding: 15px;
+      color: white;
+      background-image: linear-gradient(120deg, #087782 0%, #3488bd 56%, #d52b70 128%);
+    }
+
+    .inline-hero::after { content: ""; position: absolute; inset: 0; opacity: 0.15; background-image: repeating-linear-gradient(130deg, transparent 0 34px, white 34px 35px); }
+    .inline-person { width: 58px; height: 58px; z-index: 1; object-fit: cover; border: 3px solid rgba(255,255,255,0.8); border-radius: 50%; }
+    .inline-greeting { z-index: 1; flex: 1; }
+    .inline-greeting strong { display: block; font: 700 19px/1.15 "Aptos Display", Aptos, sans-serif; }
+    .inline-greeting span { display: block; margin-top: 4px; color: rgba(255,255,255,0.84); font-size: 9px; }
+    .inline-expand { width: 29px; height: 29px; display: grid; place-items: center; z-index: 1; color: white; background-color: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.34); border-radius: 6px; }
+    .inline-summary-copy { padding: 13px 14px 7px; color: var(--ink-soft); font-size: 10px; }
+    .summary-list { padding: 0 14px 12px; }
+    .summary-row { min-height: 54px; display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 9px; border-top: 1px solid var(--line-soft); }
+    .summary-icon { width: 31px; height: 31px; display: grid; place-items: center; color: var(--teal); background-color: var(--sky); border-radius: 50%; font-size: 12px; font-weight: 800; }
+    .summary-row:nth-child(2) .summary-icon { color: var(--red); background-color: var(--red-soft); }
+    .summary-row:nth-child(3) .summary-icon { color: var(--pink); background-color: var(--pink-soft); }
+    .summary-title { font-size: 10px; font-weight: 800; }
+    .summary-meta { margin-top: 2px; color: var(--muted); font-size: 8px; }
+    .chevron { color: var(--muted); }
+    .inline-foot { display: flex; justify-content: space-between; padding: 9px 14px; color: var(--muted); background-color: #fafcfc; border-top: 1px solid var(--line); font-size: 8px; }
+
+    .variant-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .variant-card { min-height: 232px; overflow: hidden; background-color: var(--paper); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
+    .variant-head { min-height: 47px; display: grid; grid-template-columns: 31px 1fr auto; align-items: center; gap: 9px; padding: 9px 11px; border-bottom: 1px solid var(--line); }
+    .variant-icon { width: 30px; height: 30px; display: grid; place-items: center; color: white; background-color: var(--teal); border-radius: 7px; font-size: 11px; font-weight: 800; }
+    .variant-card:nth-child(2) .variant-icon { background-color: var(--pink); }
+    .variant-card:nth-child(3) .variant-icon { background-color: var(--blue); }
+    .variant-card:nth-child(4) .variant-icon { background-color: #b2760b; }
+    .variant-title { font-size: 11px; font-weight: 800; }
+    .variant-prompt { margin-top: 2px; color: var(--muted); font-size: 8px; }
+    .variant-body { min-height: 145px; padding: 12px; }
+    .profile-row { display: grid; grid-template-columns: 72px 1fr; gap: 12px; align-items: center; }
+    .profile-row img { width: 68px; height: 68px; object-fit: cover; border-radius: 50%; }
+    .profile-score { font: 800 22px/1 "Aptos Display", Aptos, sans-serif; }
+    .profile-detail { margin-top: 5px; color: var(--muted); font-size: 8px; line-height: 1.5; }
+    .mini-plan { display: grid; gap: 8px; }
+    .mini-plan-row { display: grid; grid-template-columns: 20px 1fr auto; gap: 7px; align-items: center; font-size: 9px; }
+    .mini-number { width: 19px; height: 19px; display: grid; place-items: center; color: white; background-color: var(--pink); border-radius: 50%; font-size: 8px; font-weight: 800; }
+    .mini-meta { color: var(--muted); font-size: 8px; }
+    .mini-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .mini-stat { padding: 10px; background-color: #f3f7f8; border-radius: 6px; }
+    .mini-stat strong { display: block; font: 800 18px/1 "Aptos Display", Aptos, sans-serif; }
+    .mini-stat span { display: block; margin-top: 5px; color: var(--muted); font-size: 8px; }
+    .milestone-layout { display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: center; }
+    .milestone-layout img { width: 120px; height: 90px; object-fit: cover; object-position: center center; border-radius: 7px; }
+    .milestone-date { color: var(--pink); font-size: 9px; font-weight: 800; text-transform: uppercase; }
+    .milestone-heading { margin-top: 4px; font: 700 16px/1.15 "Aptos Display", Aptos, sans-serif; }
+    .milestone-copy { margin-top: 5px; color: var(--muted); font-size: 8px; line-height: 1.4; }
+
+    @media (max-width: 1220px) {
+      .app-body { grid-template-columns: 76px minmax(0, 1fr); }
+      .family-rail { padding-inline: 8px; }
+      .rail-label, .rail-item span:last-child, .rail-note { display: none; }
+      .rail-item { grid-template-columns: 1fr; justify-items: center; padding-inline: 0; }
+      .dashboard-grid { grid-template-columns: repeat(2, minmax(270px, 1fr)); }
+      .column:last-child { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .right-panel { width: 370px; min-width: 370px; }
+    }
+
+    @media (max-width: 760px) {
+      .product-context, .data-badge { display: none; }
+      .product-bar { padding-inline: 12px; }
+      .app-body { display: block; }
+      .family-rail { display: none; }
+      .mobile-family-nav { display: block; }
+      .canvas { padding: 18px 12px; }
+      .family-placeholder { min-height: calc(100vh - 135px); }
+      .family-hero { min-height: 154px; align-items: flex-start; padding: 22px 18px; }
+      .family-title { font-size: 28px; }
+      .welcome { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .day-pulse { width: 100%; }
+      .plan-band { align-items: flex-start; flex-wrap: wrap; }
+      .signal-trail { display: none; }
+      .plan-button { width: 100%; }
+      .dashboard-grid { grid-template-columns: 1fr; }
+      .column:last-child { grid-column: auto; grid-template-columns: 1fr; }
+      .right-panel { position: fixed; inset: 58px 0 0; z-index: 20; width: 100%; min-width: 0; min-height: calc(100vh - 58px); }
+      .board-header { align-items: flex-start; flex-direction: column; }
+      .board-note { text-align: left; }
+      .inline-showcase { grid-template-columns: 1fr; }
+      .variant-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 430px) {
+      .product-title { font-size: 12px; }
+      .avatar-wrap { width: 54px; height: 54px; }
+      .welcome h1 { font-size: 24px; }
+      .welcome .wave { display: none; }
+      .welcome-copy { font-size: 11px; }
+      .snapshot-body { grid-template-columns: 94px 1fr; padding-inline: 12px; }
+      .leave-ring { width: 84px; height: 84px; }
+      .leave-ring::after { width: 62px; height: 62px; }
+      .people-grid { gap: 5px; }
+      .person-tile img { width: 46px; height: 46px; }
+      .moment-card { grid-template-columns: minmax(0, 1fr) 140px; }
+      .moment-photo { width: 140px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="product-bar">
+      <div class="product-mark">Z</div>
+      <div class="product-title">Zava Employee Agent</div>
+      <div class="product-context" id="product-context">My HR Dashboard</div>
+      <div class="product-spacer"></div>
+      <div class="data-badge"><span class="data-dot"></span>Mock data · Offline</div>
+      <button class="icon-button" aria-label="Help">?</button>
+      <button class="icon-button" aria-label="Settings">⚙</button>
+    </header>
+
+    <div class="app-body">
+      <aside class="family-rail" aria-label="Employee Agent sections">
+        <div class="rail-label">Your workspace</div>
+        <nav class="rail-list">
+          <button type="button" class="rail-item active" data-family="home" aria-current="page"><span class="rail-icon">⌂</span><span>Home</span></button>
+          <button type="button" class="rail-item" data-family="time"><span class="rail-icon">◷</span><span>Time</span></button>
+          <button type="button" class="rail-item" data-family="money"><span class="rail-icon">€</span><span>Money</span></button>
+          <button type="button" class="rail-item" data-family="benefits"><span class="rail-icon">♡</span><span>Benefits</span></button>
+          <button type="button" class="rail-item" data-family="rewards"><span class="rail-icon">◇</span><span>Rewards</span></button>
+          <button type="button" class="rail-item" data-family="policy"><span class="rail-icon">≡</span><span>Policy</span></button>
+          <button type="button" class="rail-item" data-family="support"><span class="rail-icon">?</span><span>Support</span></button>
+          <button type="button" class="rail-item" data-family="learning"><span class="rail-icon">▤</span><span>Learning</span></button>
+          <button type="button" class="rail-item" data-family="team"><span class="rail-icon">♙</span><span>Team</span></button>
+          <button type="button" class="rail-item" data-family="people"><span class="rail-icon">◎</span><span>People</span></button>
+        </nav>
+        <div class="rail-note">Ten connected employee experiences in one full-screen workspace.</div>
+      </aside>
+
+      <div class="mobile-family-nav">
+        <label>Employee Agent section
+          <select id="family-select">
+            <option value="home">My HR Dashboard</option>
+            <option value="time">PTO & Leave</option>
+            <option value="money">Payroll Explainer</option>
+            <option value="benefits">Benefits & Life Events</option>
+            <option value="rewards">Total Rewards</option>
+            <option value="policy">Policy Q&A</option>
+            <option value="support">HR Case Desk</option>
+            <option value="learning">Learning & Compliance</option>
+            <option value="team">Manager Team Hub</option>
+            <option value="people">Org & People Graph</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="workspace">
+        <main class="main">
+          <div class="canvas">
+            <section class="family-placeholder" id="family-placeholder" tabindex="-1" aria-labelledby="family-title">
+              <div class="family-hero">
+                <div class="family-hero-icon" id="family-icon" aria-hidden="true">◷</div>
+                <div>
+                  <div class="family-greeting">Good afternoon, Megan</div>
+                  <h1 class="family-title" id="family-title">PTO & Leave</h1>
+                  <p class="family-summary" id="family-summary">Balances, requests, status, usage, and team coverage.</p>
+                </div>
+              </div>
+            </section>
+            <section class="welcome">
+              <div class="person">
+                <div class="avatar-wrap"><img class="avatar" src="../faces/Megan-Bowen.jpeg" alt="Megan Bowen"></div>
+                <div>
+                  <div class="welcome-kicker">Tuesday, August 11 · Employee experience</div>
+                  <h1>Good afternoon, Megan <span class="wave">👋</span></h1>
+                  <p class="welcome-copy">You are in good shape. Four things deserve your attention this week.</p>
+                </div>
+              </div>
+              <div class="day-pulse">
+                <div class="pulse-icon">✦</div>
+                <div><div class="pulse-label">Next important moment</div><div class="pulse-value">Privacy learning · Friday</div></div>
+              </div>
+            </section>
+
+            <section class="plan-band">
+              <div class="spark">✦</div>
+              <div class="plan-copy">
+                <h2 class="plan-title">Start your week with clarity</h2>
+                <p class="plan-subtitle">One course, one leave conflict, and two team approvals. Let me shape the best order for you.</p>
+              </div>
+              <div class="signal-trail" aria-label="Signals from Learning, Time, Team, and Benefits">
+                <img class="signal-avatar" src="../faces/Patti-Fernandez.jpeg" alt="Patti Fernandez">
+                <img class="signal-avatar" src="../faces/Diego-Siciliani.jpeg" alt="Diego Siciliani">
+                <img class="signal-avatar" src="../faces/Lee-Gu.jpeg" alt="Lee Gu">
+              </div>
+              <button class="plan-button">Build my HR action plan</button>
+            </section>
+
+            <div class="dashboard-grid">
+              <div class="column">
+                <section class="card">
+                  <div class="card-head"><div class="card-heading"><span class="card-icon">✓</span><h2 class="card-title">What needs you</h2></div><span class="card-link">View all 4</span></div>
+                  <div class="focus-list">
+                    <div class="focus-row urgent"><span class="focus-glyph">L</span><div><div class="row-title">Finish privacy foundations</div><div class="row-sub">Learning · 24 minutes remaining</div></div><span class="status red">Due Fri</span></div>
+                    <div class="focus-row"><span class="focus-glyph">T</span><div><div class="row-title">Review your vacation conflict</div><div class="row-sub">One customer review overlaps your draft</div></div><span class="status amber">Review</span></div>
+                    <div class="focus-row people"><span class="focus-glyph">M</span><div><div class="row-title">Decide on two team requests</div><div class="row-sub">One request affects next week's coverage</div></div><span class="status amber">2 waiting</span></div>
+                    <div class="focus-row"><span class="focus-glyph">B</span><div><div class="row-title">Check dependent coverage</div><div class="row-sub">Open enrollment closes in 23 days</div></div><span class="status green">On track</span></div>
+                  </div>
+                </section>
+
+                <section class="card">
+                  <div class="card-head"><div class="card-heading"><span class="card-icon">◷</span><h2 class="card-title">Your month ahead</h2></div><span class="card-link">August</span></div>
+                  <div class="timeline">
+                    <div class="timeline-row"><span class="date-chip">Today</span><div><div class="row-title">New pay statement</div><div class="row-sub">A one-time adjustment is included</div></div><span class="card-link">Explain</span></div>
+                    <div class="timeline-row"><span class="date-chip">Aug 14</span><div><div class="row-title">Privacy course due</div><div class="row-sub">86% of required learning complete</div></div><span class="card-link">Open</span></div>
+                    <div class="timeline-row"><span class="date-chip">Aug 28</span><div><div class="row-title">Equity vest</div><div class="row-sub">42 Zava units scheduled</div></div><span class="card-link">Details</span></div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="column">
+                <section class="card">
+                  <div class="card-head"><div class="card-heading"><span class="card-icon">◔</span><h2 class="card-title">Your HR snapshot</h2></div><span class="card-link">Personalize</span></div>
+                  <div class="snapshot-body">
+                    <div class="ring-wrap"><div class="leave-ring"></div><div class="ring-copy"><span class="ring-value">18</span><span class="ring-label">days available</span></div></div>
+                    <div class="snapshot-lines">
+                      <div class="snapshot-line"><span>Benefits</span><strong>3 active</strong></div>
+                      <div class="snapshot-line"><span>Open cases</span><strong>1 waiting</strong></div>
+                      <div class="snapshot-line"><span>Profile</span><strong>86%</strong></div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="card">
+                  <div class="card-head"><div class="card-heading"><span class="card-icon">▤</span><h2 class="card-title">Learning momentum</h2></div><span class="status red">1 due</span></div>
+                  <div class="learning-body">
+                    <div class="learning-top"><div><div class="row-title">Required learning</div><div class="learning-copy">6 of 7 complete</div></div><div class="learning-percent">86%</div></div>
+                    <div class="progress"><span></span></div>
+                    <div class="course-row"><div class="course-icon">◈</div><div class="course-copy"><div class="row-title">Privacy foundations</div><div class="row-sub">24 minutes · due Friday</div></div><span class="card-link">Continue</span></div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="column">
+                <section class="card">
+                  <div class="card-head"><div class="card-heading"><span class="card-icon">◎</span><h2 class="card-title">People around you</h2></div><span class="card-link">Open network</span></div>
+                  <div class="people-body">
+                    <p class="people-intro">Your manager, HR partner, and closest collaborator are one step away.</p>
+                    <div class="people-grid">
+                      <div class="person-tile"><img src="../faces/Diego-Siciliani.jpeg" alt="Diego Siciliani"><div class="person-name">Diego</div><div class="person-role">Manager</div></div>
+                      <div class="person-tile"><img src="../faces/Patti-Fernandez.jpeg" alt="Patti Fernandez"><div class="person-name">Patti</div><div class="person-role">HR partner</div></div>
+                      <div class="person-tile"><img src="../faces/Lee-Gu.jpeg" alt="Lee Gu"><div class="person-name">Lee</div><div class="person-role">Collaborator</div></div>
+                    </div>
+                    <div class="one-to-one"><img src="../faces/Diego-Siciliani.jpeg" alt="Diego Siciliani"><div class="one-to-one-copy"><div class="row-title">Your next one-to-one</div><div class="row-sub">Thursday, 10:30 · Career growth</div></div><span class="card-link">Prepare</span></div>
+                  </div>
+                </section>
+
+                <section class="card moment-card">
+                  <div class="moment-copy"><div class="moment-kicker">A moment worth celebrating</div><h2 class="moment-title">Five years at Zava</h2><p class="moment-text">Your anniversary is next month. We have pulled together your milestones and rewards.</p><span class="moment-action">View your story →</span></div>
+                  <img class="moment-photo" src="../images/zava-five-year-celebration.jpg" alt="Three colleagues celebrating a work anniversary together">
+                </section>
+              </div>
+            </div>
+            <footer class="footer"><span>Zava Employee Agent</span><span>·</span><span>Mock data · Offline</span><span>·</span><span>Work IQ-shaped employee experience</span></footer>
+          </div>
+        </main>
+
+        <aside class="right-panel" aria-label="My HR action plan">
+          <div class="panel-accent"></div>
+          <div class="panel-head"><div class="panel-mark">✦</div><div class="panel-heading"><div class="panel-kicker">Prepared from your HR signals</div><h2 class="panel-title">My HR action plan</h2></div><button class="panel-close" aria-label="Close">×</button></div>
+          <div class="panel-body">
+            <div class="assistant-note"><div class="assistant-logo">Z</div><div class="assistant-copy"><strong>Good afternoon, Megan.</strong> Start with privacy learning, then resolve your leave conflict. Your remaining items are comfortably on track.</div></div>
+            <div class="plan-item"><div class="plan-item-icon">L</div><div><div class="plan-source">Learning · First</div><div class="plan-item-title">Finish privacy foundations</div><p class="plan-reason">Required by Friday. One 24-minute module remains.</p><button class="route-button">Open in Learning</button></div></div>
+            <div class="plan-item"><div class="plan-item-icon">T</div><div><div class="plan-source">Time & leave · Review</div><div class="plan-item-title">Resolve the vacation conflict</div><p class="plan-reason">Your August 4-12 draft overlaps one customer review. Team coverage is healthy.</p><button class="route-button">Review leave request</button></div></div>
+            <div class="plan-item"><div class="plan-item-icon">M</div><div><div class="plan-source">My team · Today</div><div class="plan-item-title">Decide on two requests</div><p class="plan-reason">One approval affects support coverage next week.</p><button class="route-button">Open approvals</button></div></div>
+            <div class="plan-item"><div class="plan-item-icon">B</div><div><div class="plan-source">Benefits · On track</div><div class="plan-item-title">Confirm dependent coverage</div><p class="plan-reason">Enrollment closes in 23 days; current coverage remains active.</p><button class="route-button secondary">Review benefits</button></div></div>
+          </div>
+          <div class="panel-foot">AI-style suggestions are generated locally from sample data. No AI service is called, and changes are not saved.</div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <main class="inline-board">
+    <div class="board-header">
+      <div><div class="board-kicker">Zava Employee Agent · Family 01</div><h1 class="board-title">My HR Dashboard · prompt-driven surfaces</h1></div>
+      <p class="board-note">The default card leads with the employee, not the system. Four focused states show how prompt intent reshapes the same component.</p>
+    </div>
+    <div class="inline-showcase">
+      <section class="lead-inline">
+        <div class="inline-hero"><img class="inline-person" src="../faces/Megan-Bowen.jpeg" alt="Megan Bowen"><div class="inline-greeting"><strong>Good afternoon, Megan 👋</strong><span>Your week is in good shape.</span></div><div class="inline-expand" aria-label="Expand">↗</div></div>
+        <div class="inline-summary-copy">Here is your personalized HR summary for today.</div>
+        <div class="summary-list">
+          <div class="summary-row"><div class="summary-icon">✓</div><div><div class="summary-title">Four things need you</div><div class="summary-meta">One due Friday · two approvals</div></div><span class="chevron">›</span></div>
+          <div class="summary-row"><div class="summary-icon">L</div><div><div class="summary-title">Privacy learning</div><div class="summary-meta">86% complete · 24 minutes left</div></div><span class="chevron">›</span></div>
+          <div class="summary-row"><div class="summary-icon">T</div><div><div class="summary-title">18 vacation days</div><div class="summary-meta">One calendar conflict to review</div></div><span class="chevron">›</span></div>
+        </div>
+        <div class="inline-foot"><span>Mock data · Updated now</span><span>GetMyHRDashboard · summary</span></div>
+      </section>
+
+      <div class="variant-grid">
+        <section class="variant-card"><div class="variant-head"><div class="variant-icon">P</div><div><div class="variant-title">Profile health</div><div class="variant-prompt">“Is my profile complete?”</div></div><span class="card-link">↗</span></div><div class="variant-body profile-row"><img src="../faces/Megan-Bowen.jpeg" alt="Megan Bowen"><div><div class="profile-score">86%</div><div class="profile-detail">Contact details verified<br>Emergency contact added<br>Skills need review</div></div></div><div class="inline-foot"><span>One update recommended</span><span>profile</span></div></section>
+        <section class="variant-card"><div class="variant-head"><div class="variant-icon">✦</div><div><div class="variant-title">Next best actions</div><div class="variant-prompt">“What should I do next?”</div></div><span class="card-link">↗</span></div><div class="variant-body mini-plan"><div class="mini-plan-row"><span class="mini-number">1</span><strong>Finish privacy learning</strong><span class="mini-meta">24 min</span></div><div class="mini-plan-row"><span class="mini-number">2</span><strong>Review leave conflict</strong><span class="mini-meta">1 meeting</span></div><div class="mini-plan-row"><span class="mini-number">3</span><strong>Decide on approvals</strong><span class="mini-meta">2 waiting</span></div></div><div class="inline-foot"><span>Locally ranked</span><span>actions</span></div></section>
+        <section class="variant-card"><div class="variant-head"><div class="variant-icon">W</div><div><div class="variant-title">Worklife snapshot</div><div class="variant-prompt">“Show my HR snapshot.”</div></div><span class="card-link">↗</span></div><div class="variant-body"><div class="mini-stats"><div class="mini-stat"><strong>18</strong><span>Vacation days</span></div><div class="mini-stat"><strong>3</strong><span>Active benefits</span></div><div class="mini-stat"><strong>1</strong><span>Open HR case</span></div><div class="mini-stat"><strong>6/7</strong><span>Learning complete</span></div></div></div><div class="inline-foot"><span>This month</span><span>timeline</span></div></section>
+        <section class="variant-card"><div class="variant-head"><div class="variant-icon">M</div><div><div class="variant-title">Your milestones</div><div class="variant-prompt">“What is coming up?”</div></div><span class="card-link">↗</span></div><div class="variant-body milestone-layout"><img src="../images/zava-five-year-celebration.jpg" alt="Three colleagues celebrating a work anniversary together"><div><div class="milestone-date">September 8</div><div class="milestone-heading">Five years at Zava</div><div class="milestone-copy">Your anniversary story and updated rewards statement are nearly ready.</div></div></div><div class="inline-foot"><span>Three upcoming moments</span><span>milestones</span></div></section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    if (params.get('panel') === '1') document.body.classList.add('panel-open');
+    if (params.get('mode') === 'inline') document.body.classList.add('inline-mode');
+    const families = {
+      home: { title: 'My HR Dashboard', icon: '⌂', dark: '#0f548c', accent: '#0f6cbd', light: '#b4d6fa', summary: 'Your personalized overview across work and HR.' },
+      time: { title: 'PTO & Leave', icon: '◷', dark: '#02494c', accent: '#038387', light: '#9bd9db', summary: 'Balances, requests, status, usage, and team coverage.' },
+      money: { title: 'Payroll Explainer', icon: '€', dark: '#094509', accent: '#107c10', light: '#9fd89f', summary: 'Pay, deductions, documents, and clear change explanations.' },
+      benefits: { title: 'Benefits & Life Events', icon: '♡', dark: '#004377', accent: '#0078d4', light: '#a9d3f2', summary: 'Coverage, comparisons, dependents, and life-event changes.' },
+      rewards: { title: 'Total Rewards', icon: '◇', dark: '#6c5700', accent: '#c19c00', light: '#ecdfa5', summary: 'Your complete pay, bonus, equity, pension, and benefits value.' },
+      policy: { title: 'Policy Q&A', icon: '≡', dark: '#341a51', accent: '#5c2e91', light: '#c6b1de', summary: 'Policy answers with applicability, changes, and source receipts.' },
+      support: { title: 'HR Case Desk', icon: '?', dark: '#6e0811', accent: '#c50f1f', light: '#eeacb2', summary: 'Knowledge-first help and private case follow-up.' },
+      learning: { title: 'Learning & Compliance', icon: '▤', dark: '#2c3c85', accent: '#4f6bed', light: '#c8d1fa', summary: 'Required learning, progress, recommendations, and role growth.' },
+      team: { title: 'Manager Team Hub', icon: '♙', dark: '#712d09', accent: '#ca5010', light: '#efc4ad', summary: 'Approvals, team signals, absence, and manager actions.' },
+      people: { title: 'Org & People Graph', icon: '◎', dark: '#6d2064', accent: '#c239b3', light: '#edbbe7', summary: 'Relationships, organization context, and expertise discovery.' }
+    };
+    const select = document.getElementById('family-select');
+    const placeholder = document.getElementById('family-placeholder');
+    const setFamily = (familyId, focusView = false) => {
+      const family = families[familyId] || families.home;
+      document.body.classList.toggle('family-mode', familyId !== 'home');
+      document.getElementById('product-context').textContent = family.title;
+      document.getElementById('family-icon').textContent = family.icon;
+      document.getElementById('family-title').textContent = family.title;
+      document.getElementById('family-summary').textContent = family.summary;
+      placeholder.style.setProperty('--family-dark', family.dark);
+      placeholder.style.setProperty('--family-accent', family.accent);
+      placeholder.style.setProperty('--family-light', family.light);
+      select.value = familyId;
+      document.querySelectorAll('[data-family]').forEach((item) => {
+        const active = item.dataset.family === familyId;
+        item.classList.toggle('active', active);
+        if (active) item.setAttribute('aria-current', 'page');
+        else item.removeAttribute('aria-current');
+      });
+      if (focusView && familyId !== 'home') placeholder.focus();
+    };
+    document.querySelectorAll('[data-family]').forEach((item) => {
+      const family = families[item.dataset.family];
+      item.style.setProperty('--item-dark', family.dark);
+      item.style.setProperty('--item-accent', family.accent);
+      item.style.setProperty('--item-light', family.light);
+      item.addEventListener('click', () => setFamily(item.dataset.family, true));
+    });
+    select.addEventListener('change', () => setFamily(select.value, true));
+    setFamily(params.get('family') || 'home');
+  </script>
+</body>
+</html>

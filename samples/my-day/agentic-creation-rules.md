@@ -2,13 +2,23 @@
 
 > **Purpose.** This file is the **authoritative playbook** for building the next batch of
 > "wow" scenario samples for **SharePoint Copilot Apps** with the same architecture, quality,
-> and behavior proven by the **My Day** sample. It is written for a **coding agent**: rules are
+> and behavior proven by the **My Day** and **Zava Project Tracker** samples. It is written for a
+> **coding agent**: rules are
 > imperative and testable. Follow them to (1) generate a phased `todo.md` from a provided UX
 > design, then (2) implement the sample against that `todo.md`.
 >
 > **Prime directive:** every sample must be a **self-contained, offline, mock-data showcase** that
 > deploys from a committed `.sppkg` in minutes, looks premium, and is structured so the mock can
 > later be swapped for **live Microsoft Graph / SharePoint** data with no UI changes.
+
+## Document precedence
+
+- `todo.md` controls the solution's approved product scope, component names, phase order, and
+  acceptance gates.
+- This file controls implementation quality, dependency provenance, architecture, validation, and
+  packaging safety.
+- Validated reference implementations supply proven patterns where neither document is explicit.
+- Resolve conflicts in that order and record approved exceptions in `todo.md` before coding.
 
 ---
 
@@ -72,8 +82,10 @@ React 18), then verifies the build:
 npm install react@17.0.1 react-dom@17.0.1 --save
 npm install @types/react@17.0.45 @types/react-dom@17.0.17 --save-dev
 
-# Fluent UI v9 (components + icons) - the required UI stack (G4)
+# Fluent UI v9 + Griffel - the required UI stack (G4, G12, G13)
 npm install @fluentui/react-components@9.54.0 @fluentui/react-icons@2.0.270 --save
+npm install @fluentui/react-motion@9.16.1 @fluentui/react-provider@9.22.18 --save
+npm install @fluentui/react-theme@9.2.1 @griffel/react@1.7.7 --save
 ```
 
 Add **only when a scenario needs them** (not baseline):
@@ -87,8 +99,20 @@ npm install @pnp/sp @pnp/graph @pnp/logging --save
 ```
 
 > Keep versions aligned across samples for consistency (React 17.0.1, Fluent `@fluentui/react-components`
-> 9.x, `@fluentui/react-icons` 2.x). Confirm the exact `@microsoft/sp-copilot-component` /
-> `@microsoft/spfx-*` dev-preview versions from what the generator produced for the target SPFx build.
+> 9.x, `@fluentui/react-icons` 2.x). Pin a compatible `@fluentui/react-motion` when the Fluent barrel
+> otherwise hoists an older runtime and emits missing-export warnings. Confirm the exact
+> `@microsoft/sp-copilot-component` / `@microsoft/spfx-*` dev-preview versions from what the generator
+> produced for the target SPFx build.
+
+**Public dependency provenance is mandatory.** Required `@microsoft/*` SPFx preview packages are
+supported dependencies only when their lock entries resolve to public `https://registry.npmjs.org`
+tarballs. Do not commit Azure Artifacts / `*.pkgs.visualstudio.com` URLs, local `file:` / `link:` /
+`workspace:` specs, git dependencies, auth tokens, or project-scoped private registry settings. Add a
+project `.npmrc` containing only `registry=https://registry.npmjs.org/` when contributors may inherit
+corporate/user-level registry overrides. Add a lockfile validator equivalent to
+`scripts/validate-public-dependencies.mjs`, run it before every production build, and verify again
+after every `npm install` because a developer-level npm config can silently rewrite otherwise public
+packages through an internal mirror.
 
 ### 0.3 Example human kickoff prompt (design pic + high-level README)
 
@@ -152,6 +176,11 @@ review `todo.md` before greenlighting the build.
   Components**, the UX designs, and the README objectives are provided by the user; the **agent** adds
   the baseline React + Fluent packages on the human's "initial configuration" request (§0.1–§0.2).
   Never scaffold, rename, or restructure the user's components; build **from** their brief.
+- **G12 - Public dependencies only.** Every direct and transitive lock entry resolves through the
+  public npm registry. Validate the lockfile before packaging; package scope alone does not prove
+  public provenance.
+- **G13 - Host-document styling.** Pass `context.domElement.ownerDocument` into the React root and
+  render Fluent/Griffel styles through a document-scoped `RendererProvider` (§8).
 
 ---
 
@@ -230,6 +259,7 @@ Each Copilot Component lives under `src/copilotComponents/<name>/`:
       /* tool inputs */ ...this.properties,
       currentUser: resolveCurrentUser(this.context),
       theme: this.hostContext.theme,
+      targetDocument: this.context.domElement.ownerDocument,
       displayMode: this.hostContext.displayMode,
       availableDisplayModes: this.hostContext.availableDisplayModes,
       onRequestFullscreen: this._handleRequestFullscreen
@@ -300,18 +330,38 @@ export default zodToJsonSchema(schema);
 
 - **Single provider.** A `<Name>ThemeProvider` wraps the tree once; derive the Fluent theme from the
   `theme` prop (`'dark'` → `webDarkTheme`, else `webLightTheme`; default light when undefined).
+- **Target the owning document.** Pass `this.context.domElement.ownerDocument` through the root as
+  `targetDocument`. Create one memoized Griffel renderer for that document and wrap Fluent in its
+  `RendererProvider`. This is required in the Copilot iframe; parent-document style injection is not
+  reliable. Any `makeStyles` used by the provider surface itself must run in a descendant beneath
+  `RendererProvider`, not before the provider is mounted. Import `FluentProvider` from
+  `@fluentui/react-provider`, themes/tokens from `@fluentui/react-theme`, and styling APIs from
+  `@griffel/react` at this boundary so tests and bundles do not evaluate the full Fluent component
+  barrel just to establish theming.
 - **Iframe style-insertion workaround + flicker-free theme flips.** Remount the `FluentProvider`
   **exactly once** after the first commit via a `key` that changes 0→1 in a `useEffect([])`. Keep the
   key **stable thereafter**, so a mid-demo theme flip only swaps tokens (no remount, no flicker,
   in-flight state preserved):
 
   ```tsx
+  const renderer = React.useMemo(
+    () => createDOMRenderer(props.targetDocument),
+    [props.targetDocument]
+  );
   const [gen, setGen] = React.useState(0);
   React.useEffect(() => setGen(1), []);
   const theme = props.theme === 'dark' ? webDarkTheme : webLightTheme;
-  return <FluentProvider key={gen} theme={theme} className={styles.provider}>{children}</FluentProvider>;
+  return (
+    <RendererProvider renderer={renderer} targetDocument={props.targetDocument}>
+      <FluentProvider key={gen} theme={theme} targetDocument={props.targetDocument}>
+        {children}
+      </FluentProvider>
+    </RendererProvider>
+  );
   ```
 
+- Add a Jest regression that renders a Griffel-styled child into a separate document and asserts that
+  `style[data-make-styles-bucket]` is inserted into that document's `<head>`.
 - **Tokens only.** No hex/rgb for text. On brand surfaces use `colorNeutralForegroundOnBrand`.
 
 ---
@@ -449,8 +499,9 @@ export default zodToJsonSchema(schema);
 ### 17.1 Commands
 
 - Dev: `heft start --clean` (`https://localhost:4321`).
-- Validate: `heft test --clean` (build + lint + jest).
-- Release: `heft test --clean --production && heft package-solution --production`.
+- Dependency provenance: `npm run check:dependencies`.
+- Validate: `npm run check:dependencies && heft test --clean` (dependency audit + build + lint + jest).
+- Release: `npm run build` (all checks + production test + package).
 - Node.js **>=22.14.0 <23.0.0**.
 
 ### 17.2 Lint / Griffel gotchas (learned - avoid these)
@@ -466,6 +517,11 @@ export default zodToJsonSchema(schema);
 ### 17.3 Quality gate
 
 - A phase is not done until `heft test --clean` is **green with zero warnings**.
+- Never hide a package version mismatch with a broad Webpack warning filter. Pin the compatible public
+  runtime or narrow imports first; suppress only a verified third-party false positive.
+- Production packaging MUST start with the public-dependency audit. For larger or multi-component
+  samples, also audit the generated `.sppkg` for stale/unhashed JavaScript, duplicate bundled media,
+  unexpected icon-font payloads, and explicit package-size thresholds.
 
 ### 17.4 Ship the package
 
@@ -500,6 +556,7 @@ samples/<name>/
   config/                         # Heft/SPFx + copilot-agent.json, config.json, package-solution.json
   copilot/                        # manifest.json, declarativeAgent.json, ai-plugin.json, instruction.txt
   sharepoint/solution/<name>.sppkg  # committed, ready-to-deploy
+  scripts/validate-public-dependencies.mjs  # public registry + lockfile provenance gate
   src/copilotComponents/<name>/
     <Name>CopilotComponent.ts / .manifest.json / <Name>CopilotComponentProperties.ts
     components/
@@ -520,13 +577,15 @@ samples/<name>/
 - [ ] User-scaffolded via the Yeoman generator; component count/names set by the user; **agent-installed** baseline packages (React 17 + Fluent v9) on the "initial configuration" request.
 - [ ] Copilot Component (no web part / no property pane); Heft; React 17; Fluent v9.
 - [ ] Root selector + separate inline/full-screen views; `requestDisplayModeAsync` for expand.
-- [ ] Single stable-key theme provider; tokens only; no `background` shorthand; no inline styles.
+- [ ] Owner-document `RendererProvider` + stable-key Fluent provider; tokens only; no `background`
+  shorthand; no inline styles; cross-document style-insertion test.
 - [ ] `I<Name>DataService` + Mock impl; Graph-shaped mock; mapper; relative-time resolution.
 - [ ] Standard M365 demo personas; real signed-in user via page context; one connected story.
 - [ ] All imagery bundled base64; no external runtime references; graceful fallbacks.
 - [ ] One deterministic **signature** feature with streamed reveal + personalized headline (reduced-motion safe).
 - [ ] Optional session-persisted settings that reshape the UX; visibility-driven re-flow layout.
 - [ ] Staggered entrance + reduced-motion guards; large-display scaling; positive empty states.
-- [ ] `heft test --clean` green (zero warnings); committed `.sppkg`.
+- [ ] Public-only dependency/lockfile audit passes; `heft test --clean` is green with zero warnings;
+  committed `.sppkg` is rebuilt and package output is audited.
 - [ ] README (PnP template + 60-second demo script) + `assets/sample.json` synced to real assets.
 - [ ] `todo.md` generated first and kept current with the ▢/🔶/✅ legend.

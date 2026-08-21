@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "33b1fe16-e3cd-46e8-bcfe-9cde014c3f1e",
+  "alias": "GetEmployeeMilestonesCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetEmployeeMilestones",
+      "description": {
+        "default": "Show the signed-in employee's upcoming service, career, and rewards milestones. Use this tool for prompts such as 'What is coming up?', 'Show my milestones', or 'When is my work anniversary?'. Pass a month, quarter, or year horizon only when requested, and pass a milestone ID only for a known specific milestone."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getEmployeeMilestones/GetEmployeeMilestonesCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

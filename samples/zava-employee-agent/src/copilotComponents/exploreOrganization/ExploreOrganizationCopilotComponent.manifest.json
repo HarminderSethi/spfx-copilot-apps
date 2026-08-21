@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "ad3d32f9-5f28-47cc-9cce-fc0e1eca4e76",
+  "alias": "ExploreOrganizationCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "ExploreOrganization",
+      "description": {
+        "default": "Explore an organization or person's reporting context in an accessible collapsible hierarchy. Use for org structure and adjacent teams; use FindExpert for skill-based people discovery."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/exploreOrganization/ExploreOrganizationCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}
