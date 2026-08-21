@@ -33,6 +33,8 @@ is proven.
 1. **Write the brief bundle.** Provide README objectives, one or more UX designs, a current-target
   component portfolio, and a prompt-routing matrix. For a small sample these may be sections in
   `todo.md`; a complex multi-family sample may use separate component-plan and demo-prompt documents.
+  Decide the short keynote, longer business demo, and technical/code walkthrough before polish so
+  implementation evidence naturally supports all three.
 2. **Freeze identities and package metadata.** Approve final component/tool names, GUID ownership,
   routes, package IDs, and short plugin metadata before generation. API plugin v2.4
   `name_for_human` MUST be **20 characters or fewer**; use a short plugin-facing name when the full
@@ -42,16 +44,18 @@ is proven.
   approved current-target intents. Supporting detail, history, and retrieval-only variants stay as
   internal full-screen routes until they earn independent conversational routing.
 4. **Generate final identities with Yeoman.** Never copy, rename, or repurpose component scaffolds.
-5. **Install once and automate immediately.** Pin the shared stack; add catalog, media, generated-
-  plugin, and final package-output validators before scaling bodies. Generate/validate bundle membership
-  from the catalog instead of maintaining component entries by hand. Confirm the clean baseline compiles.
+5. **Install once and automate immediately.** Pin the shared stack; add catalog, media, gallery,
+  generated-plugin, and final package-output validators before scaling bodies. Generate/validate bundle
+  membership from the catalog instead of maintaining component entries by hand. Confirm the clean
+  baseline compiles.
 6. **Prove the shared boundary and three operation slices.** Build owner-document theming, current-user
   fallback, intent resolution, fresh-invocation versioning, display-mode routing, then one complete
   information, review, and submit experience.
 7. **Scale from the catalog.** Reuse host/workflow/chart mechanics while keeping domain composition and
   evidence specific. Add focused tests and visual evidence with each family or workspace.
-8. **Ship through one command.** Source audits -> clean production tests -> package-solution -> validate
-  the generated plugin -> audit the actual `.sppkg` JavaScript/media/icon output and size thresholds.
+8. **Ship through one command.** Source/catalog/media/gallery audits -> clean production tests ->
+  package-solution -> validate the generated plugin -> audit the actual `.sppkg` JavaScript/media/icon
+  output and size thresholds. Run a clean-clone/offline rehearsal before public submission.
 
 ### 0.1 Supported scaffolding and automation
 
@@ -164,10 +168,10 @@ approved sample values, but keep the actions and gates.
 14. **Run tenant-host smoke separately.** If `{tenantDomain}` or authentication is unavailable, record
   the exact external prerequisite in `todo.md`; never mark CSP, iframe focus, or screen-reader host
   behavior complete from the local harness.
-15. **Package only after all executable gates pass.** Run catalog/media audits, clean tests with zero
-  warnings, production build, Teams/Copilot package generation, `.sppkg` generation, generated-plugin
-  validation, final package-output/size audit, diagnostics, and `git diff --check`. Stop temporary
-  servers and update `todo.md` immediately.
+15. **Package only after all executable gates pass.** Run catalog/media/gallery audits, clean tests with
+  zero warnings, production build, Teams/Copilot package generation, `.sppkg` generation,
+  generated-plugin validation, final package-output/size audit, diagnostics, and `git diff --check`.
+  Stop temporary servers and update `todo.md` immediately.
 16. **Educate users when the tool catalog is large.** If the agent has more than 10 purpose-designed
   inline tools, add the catalog-driven Agent Capability Explorer pattern (§6.4) and reserve the final
   conversation starter for “What can this agent do?”. Do not expect three generic starters to explain
@@ -180,11 +184,14 @@ scripts/configure-intent-components.mjs   # catalog -> adapters/schemas/manifest
 scripts/validate-intent-components.mjs    # fail-fast identity/schema/registration audit
 scripts/validate-generated-ai-plugin.mjs  # shipped ZIP -> plugin v2.4/functions/MCP/length audit
 scripts/validate-package-output.mjs        # .sppkg -> JS/media/icon/stale-output/size audit
+scripts/validate-gallery-assets.mjs        # sample.json -> metadata/PNG/order/URL coverage audit
 scripts/generate-embedded-faces.mjs       # deterministic bundled-media generator/check
 scripts/serve-ux-review.mjs               # tenant-free visual harness builder/server
+scripts/capture-gallery-assets.mjs         # recommended harness -> catalog-named publication PNGs
 ux-review/                                # all-intent host, widths, themes, evidence controls
 ux-review/evidence/screenshots/           # one approved image per intent
 ux-review/evidence/<phase>-matrix.json     # machine-readable quality evidence
+assets/sample.json                         # unified gallery metadata; references real assets only
 ```
 
 Recommended scripts for future samples:
@@ -192,12 +199,13 @@ Recommended scripts for future samples:
 ```json
 {
   "check:intents": "node scripts/validate-intent-components.mjs",
+  "check:gallery": "node scripts/validate-gallery-assets.mjs",
   "check:generated-plugin": "node scripts/validate-generated-ai-plugin.mjs",
   "check:mock-media": "node scripts/generate-embedded-faces.mjs --check",
   "check:package-output": "node scripts/validate-package-output.mjs",
   "start:ux-review": "node scripts/serve-ux-review.mjs",
-  "validate": "npm run check:intents && npm run check:mock-media && heft test --clean",
-  "build": "npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output"
+  "validate": "npm run check:intents && npm run check:mock-media && npm run check:gallery && heft test --clean",
+  "build": "npm run check:intents && npm run check:mock-media && npm run check:gallery && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output"
 }
 ```
 
@@ -340,6 +348,11 @@ phased implementation. If only planning is requested, stop before dependency or 
   emits that graph once. Keep separate bundles only for a measured lazy-loading/isolation benefit and
   document the size trade-off. Never repeat a complete base64 media catalog across bundles. Clean before
   every production package and enforce the artifact gates in §18.
+- **G24 - Separate invocation, transient, and confirmed state.** Normalize prompt properties into a
+  deterministic signature/version owned by the Copilot component instance. Keep supported inline
+  filters, selections, drafts, and review stage in a typed transient snapshot across host display-mode
+  rerenders; clear it only for a fresh signature. Persist only confirmed mock actions/receipts in a
+  sandbox-safe session store. Never put unconfirmed drafts or host context in shared session storage.
 
 ---
 
@@ -382,6 +395,9 @@ scope and progress from it. Generate it **before** coding, from the provided UX 
   leave tenant high-contrast/screen-reader validation as a separate open item.
 - External prerequisites get one precise open checkbox naming the missing value/authentication and the
   checks it blocks. Do not leave broad “finish Phase” tasks open when all local executable work passed.
+- Reusable definitions of done are prose rubrics, not unchecked aggregate project tasks. Keep checkbox
+  counts meaningful by recording only concrete implementation, validation, publication, or external
+  prerequisite work.
 - Evidence files supplement `todo.md`; they do not replace it. Store machine-readable matrices and
   screenshots under the sample's review/evidence folder and link/name them in the relevant checkbox.
 
@@ -408,8 +424,8 @@ before or after pure mock-data modeling as long as it precedes the code that imp
 6. **Phase 5 - Configuration impact (optional but high-value).** Session-persisted settings that
    actually reshape the UX. (§12)
 7. **Phase 6 - Showcase polish.** Motion/first impression; make the hero feature the "wow" moment;
-   narrative coherence of the mock; visual finish; demo enablement (60-second script); demo
-   reliability. (§11–§15)
+  narrative coherence of the mock; visual finish; demo enablement (short keynote, longer business
+  journey, technical/code walkthrough); demo reliability. (§11–§15)
 8. **Deferred - Dynamic data / API integration.** Live service implementations for Graph, SharePoint,
    Planner, Project, Fabric, finance, or governance sources; real signature-feature backend; tool-input
    rework; provisioning. (§16)
@@ -492,6 +508,13 @@ interface IResolvedIntent<TNormalized> {
   rerenders MUST NOT increment it or reset edits.
 - Compact transferred params by omitting `undefined`; do not serialize absent values into full-screen
   state. Test `{}`, partial, invalid, stale, and fresh values at the resolver boundary.
+- The `BaseCopilotComponent` subclass owns the current signature, version, and typed transient snapshot
+  because the host can replace inline React with full screen while preserving the component instance.
+  Inline operation bodies report snapshots through one callback; full screen consumes the same object.
+  Representative information, review, and submit paths MUST prove this boundary before scaling adapters.
+- Treat snapshot coverage honestly. A visible continued-context summary is useful foundation, but exact
+  route continuation is complete only when the destination module consumes the transferred entity,
+  filter, selected evidence, draft, or what-if values. Track specialized adapters explicitly.
 
 ### 4.1 Full-screen topology and routing contract
 
@@ -1013,6 +1036,13 @@ metadata, routes, and preview adapters rather than copying Zava-specific UI/data
 - Persist confirmed mock actions in a typed session-local store guarded for sandboxed hosts. Apply
   immutable overlays to the seeded baseline so actions and receipts can appear across related inline
   and full-screen routes during the same session.
+- Keep in-memory state authoritative and use `sessionStorage` as best-effort persistence; sandbox denial
+  MUST NOT break the workflow. Expose immutable reads, append-only record commands, subscriptions for
+  cross-route synchronization, and Reset. Test storage reload, denied-storage fallback, subscriptions,
+  remount restoration, and UI reset.
+- Persist only confirmed actions. Prompt defaults, in-progress drafts, selected evidence, host context,
+  and transient workflow stage remain component-instance state unless a product requirement explicitly
+  defines resumable drafts and their privacy/lifecycle contract.
 - Receipts include stable sample ID, timestamp, actor, result, and next-step text. Provide an explicit
   Reset demo data command that clears the session overlay and restores the deterministic baseline.
 - Reuse validated submit/request workflows from dashboard launchers instead of cloning their forms.
@@ -1120,7 +1150,7 @@ evidence, safeguards, rationale, confirmation, semantic receipt, updated queue, 
 - The future-sample `build` script MUST run this order as one command:
 
   ```bash
-  npm run check:intents && npm run check:mock-media && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output
+  npm run check:intents && npm run check:mock-media && npm run check:gallery && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output
   ```
 
   Keep both generated-output checks after `package-solution`: `check:generated-plugin` validates
@@ -1311,16 +1341,25 @@ log/evidence and update `todo.md` when the accepted baseline changes.
 ## 19. Docs & sample gallery
 
 - **README** from the PnP sample template: Summary, Screenshots, Applies to, Prerequisites, **Minimal
-  Path to Awesome** (with a "ready-made package" callout linking the `.sppkg`), **60-second demo
-  script**, Features, Data source, Solution structure, References, author + version history.
+  Path to Awesome** (with a "ready-made package" callout linking the `.sppkg`), Features, mock-data and
+  safety disclosure, accessibility/responsive evidence, localization/worldwide scope, validation
+  status, demo assets, Solution structure, References, author + version history.
   Use plain hyphens `-` in prose (avoid em dashes). One screenshot per row (no crowded tables).
+- If a public tenant-testing/deployment video exists, include a GitHub-compatible clickable thumbnail
+  (`img.youtube.com` linked to the video) plus a text link. Do not use unsupported iframe embeds in a
+  GitHub README.
 - Maintain one prompt-routing matrix for every current-target tool: primary prompt, expected tool,
   expected normalized properties, inline result, and full-screen destination. Add sibling collision
   pairs and record selected tool, extracted properties, visible UX, Expand destination, and whether a
   fresh prompt resets defaults. Use the same matrix as routing test data and demo rehearsal input.
 - For a complex catalog, keep a concise component plan that separates current-target tools from future
-  candidates and states why each current tool earned independent routing. Keep a timed demo script
-  separate from this engineering playbook; it should prove dynamic inline resolution before full screen.
+  candidates and states why each current tool earned independent routing. Keep demo scripts separate
+  from this engineering playbook. Publish three useful cuts where scope warrants it:
+  - a roughly 3-minute keynote that proves multiple inline UX shapes before one full-screen payoff;
+  - a roughly 10-minute business-value journey across evidence, trade-offs, workspaces, and confirmation;
+  - a roughly 5-minute developer walkthrough pairing live UX with exact owning code and build output.
+  Each script includes audience, setup/reset, prompts, expected tools/properties, presenter actions,
+  safety/feature guardrails, fallback path, and rehearsal checklist.
 - For agents with 11+ operational tools, document the capability explorer, its final conversation
   starter, category model, prompt copy/launch behavior, safe preview mode, and how future maintainers add
   education metadata for a new tool without editing the explorer UI.
@@ -1328,6 +1367,19 @@ log/evidence and update `todo.md` when the accepted baseline changes.
   descriptions, `products`, `metadata` (`SAMPLE-TYPE`, `CLIENT-SIDE-DEV: React`, `SPFX-VERSION`),
   `thumbnails` (reference **only assets that exist**), `authors`, `references`. Keep thumbnails in sync
   with the real files in `assets/`.
+- Capture every current inline component plus representative full-screen workspace, mobile, dark,
+  education, and receipt states for publication. Promote only settled, validated harness evidence or
+  recapture from the current build with animation disabled and the host frame clipped consistently.
+- Prefer a deterministic `capture-gallery-assets.mjs` Playwright script: derive intent names from the
+  catalog, select harness intent/mode/width controls, disable animation/transition during capture, wait
+  for two animation frames, clip `.host` rather than the harness toolbar, use stable kebab-case names,
+  and fail on missing/blank/overflowing output. Recapture only after the visual matrix is green.
+- `validate-gallery-assets.mjs` MUST parse `sample.json`, enforce required PnP metadata, unique names and
+  orders, local file existence, PNG signature/minimum dimensions, descriptive alt text, exact raw GitHub
+  URLs, expected screenshot count, and no unlisted publication PNGs.
+- Before public submission, validate README/demo links, run the canonical clean build, report final
+  artifact hashes, stop review servers, perform a clean-clone/offline rehearsal, and isolate any
+  tenant-authenticated CSP/focus/screen-reader/high-contrast prerequisite as one external gate.
 - Do not add another competing rules, skill, or agent-definition file for this sample. This project-
   specific playbook and `todo.md` are the implementation authorities.
 
@@ -1340,8 +1392,12 @@ samples/<name>/
   README.md
   todo.md                         # phased Markdown checkbox tracker
   agentic-creation-rules.md       # project-specific engineering playbook
+  <Sample>-3-Minute-Demo.md       # short inline-first keynote
+  <Sample>-10-Minute-Demo.md      # comprehensive business-value journey
+  <Sample>-5-Minute-Tech-Demo.md  # UX + architecture/code walkthrough
+  <Sample>-Demo-Prompts.md        # all-tool routing/property/collision matrix
   assets/                         # sample.json, screenshots, faces/, source images
-  scripts/                        # catalog/media/plugin/package-output validators and generators
+  scripts/                        # catalog/media/gallery/plugin/package-output validators and generators
   config/                         # Heft/SPFx + copilot-agent.json, config.json, package-solution.json
   copilot/                        # manifest.json, declarativeAgent.json, ai-plugin.json, instruction.txt
   sharepoint/solution/<name>.sppkg  # committed, ready-to-deploy
@@ -1383,6 +1439,9 @@ samples/<name>/
   Expand preserves prompt context and validated transient state rather than opening generic home.
 - [ ] Intent resolvers normalize unknown input, compact absent params, and increment a deterministic
   properties-version token only for fresh prompt state, never passive host rerenders.
+- [ ] The component instance owns typed transient information/review/submit state across host mode
+  rerenders; fresh signatures clear it; destination modules consume transferred state where exact
+  continuation is claimed.
 - [ ] Operation-aware information/review/submit dispatchers; unique `data-layout` identities; no generic
   fallback body or shared domain review evidence.
 - [ ] If the catalog has 11+ operational inline tools, one generated Agent Capability Explorer exists,
@@ -1404,6 +1463,9 @@ samples/<name>/
   visible safeguards/rationale; green approved, red returned/rejected.
 - [ ] Submit/request forms cover prompt prefill -> visible validation -> matched review -> confirm ->
   receipt -> prompt-backed reset; every reviewed value is draft-backed or explicitly derived.
+- [ ] Confirmed decisions/submissions append typed immutable session receipts; in-memory fallback,
+  guarded sessionStorage, subscriptions, remount restoration, and Reset are tested. Unconfirmed drafts
+  and host context are not persisted.
 - [ ] D3/Vega geometry derives from data; metric/group selectors redraw materially different data;
   accessible names, exact values/insight, keyboard behavior, and text/list equivalent supplied.
 - [ ] Approved deterministic signature experiences with immediate insight and reduced-motion safety.
@@ -1424,7 +1486,14 @@ samples/<name>/
 - [ ] `check:package-output` runs last and passes against the final `.sppkg`: hashed JS only, no duplicate
   media/base64 payloads across bundles, no accidental Fluent icon font, and size investigation flags
   recorded against the accepted baseline.
+- [ ] `check:gallery` passes: every publication screenshot exists, is a valid adequately sized PNG,
+  has unique order/alt text/raw URL in `assets/sample.json`, and no publication PNG is unlisted.
 - [ ] Prompt-routing matrix covers every current tool, normalized properties, inline result, exact
   full-screen destination, sibling collisions, and fresh-invocation reset behavior.
-- [ ] README (PnP template + 60-second demo script) + `assets/sample.json` synced to real assets.
+- [ ] README includes real screenshots, ready-made package, safety/accessibility/worldwide/validation
+  scope, demo links, and a GitHub-compatible tenant-testing video when available.
+- [ ] Short keynote, longer business demo, and technical/code demo are rehearsable, accurately scoped,
+  linked from README, and do not claim unimplemented state transfer or external writes.
+- [ ] Clean-clone/offline build rehearsal passes; final `.sppkg` and agent ZIP hashes are reported;
+  temporary servers are stopped; one canonical tenant prerequisite gate names any remaining host checks.
 - [ ] `todo.md` generated first and kept current with Markdown checkboxes and validation-backed status.
