@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Kudos and Recognition Wall"
+      },
+      "description": {
+        "default": "Recognise colleagues and see recent recognition."
+      },
+      "components": [
+        "be58ec58-82d8-40a8-a0fe-2d9e6dbc370f"
+      ]
+    }
+  ]
+}
