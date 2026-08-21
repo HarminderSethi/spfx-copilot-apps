@@ -13,11 +13,9 @@ From the rendered UI, the signed-in user can:
 - Open an issue to see who is affected and Microsoft's latest updates
 - Switch between a compact inline card and a fullscreen overview
 
-
 ![Main View](assets/main%20page.png)
 ![Component rendering](assets/copilot_component_rendering.png)
-![Fullscreen service health overview](assets/Full%20page%20view.png)
-
+![Fullscreen service health overview](assets/full%20page%20view.png)
 
 ## Compatibility
 

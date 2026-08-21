@@ -34,23 +34,20 @@ From the rendered UI, the signed-in user can:
 
 This solution reads live directory data through the Microsoft Graph `/users` endpoint (beta) via the SPFx-brokered `MSGraphClientV3` client, so beyond the usual SPFx tenant setup it needs the Microsoft Graph permission declared in [`config/package-solution.json`](./config/package-solution.json) approved by a tenant admin:
 
-| Permission      | Why it's needed |
-| ---------------- | ---------------- |
-| `User.Read.All` | Search the tenant's users by name and read profile fields (`jobTitle`, `department`, `userType`, `accountEnabled`) used to render and filter results. |
+- **`User.Read.All`**: Search the tenant's users by name and read profile fields (`jobTitle`, `department`, `userType`, `accountEnabled`) used to render and filter results.
 
 After deploying the `.sppkg` to the App Catalog, a tenant admin must approve this once in the **SharePoint Admin Center → Advanced → API access**. Any time a requested scope changes, it needs to be re-approved there before it takes effect.
 
 ## Solution
 
-| Solution         | Author(s)                                                          |
-| ---------------- | ------------------------------------------------------------------- |
-| people-directory | Siddharth Vaghasia ([siddharth-vaghasia](https://github.com/siddharth-vaghasia)) |
+- **Solution:** people-directory
+- **Author:** [Siddharth Vaghasia](https://github.com/siddharth-vaghasia)
 
 ## Version history
 
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.0.0.0 | July 13, 2026     | Initial release |
+| Version | Date          | Comments        |
+| ------- | ------------- | --------------- |
+| 1.0.0.0 | July 13, 2026 | Initial release |
 
 ## Disclaimer
 
@@ -66,7 +63,7 @@ After deploying the `.sppkg` to the App Catalog, a tenant admin must approve thi
   - `npm install -g @rushstack/heft`
   - `npm install`
   - `npm run start`
-- Since SPFx Copilot Components can't be tested in the local workbench, `npm run start` serves against a hosted tenant workbench (see [`.vscode/launch.json`](./.vscode/launch.json) and [`config/serve.json`](./config/serve.json))
+- Since SPFx Copilot Components can't be tested in the local workbench, `npm run start` serves against the hosted tenant workbench configured in [`config/serve.json`](./config/serve.json)
 - Package and deploy the solution to your **App Catalog**, grant the Graph permission noted under Prerequisites, then invoke the **People Directory Agent** in Microsoft 365 Copilot
 
 Other build commands can be listed using `heft --help`.
@@ -84,11 +81,11 @@ This sample illustrates the following concepts:
 - **Tool argument extraction** — the tool's `inputQuery` argument (defined via Zod in [`PeopleDirectoryCopilotComponentProperties.ts`](./src/copilotComponents/peopleDirectory/PeopleDirectoryCopilotComponentProperties.ts)) instructs Copilot to extract just the search term from the user's natural-language request.
 - **Theme awareness** — light/dark theme driven by the Copilot host context, using Fluent UI v9 theme tokens throughout.
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+Better pictures and documentation increase sample usage and the value provided to others. Thanks for your submissions in advance.
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+Share your sample through the Microsoft 365 Patterns and Practices program to gain visibility and exposure. Learn more about the [Microsoft 365 community and open-source projects](https://aka.ms/m365pnp).
 
-## Some Advance Concepts Explored
+## Advanced concepts explored
 
 ### Adding a new tool parameter that Copilot can populate
 
@@ -106,7 +103,6 @@ The compiled JSON Schema is referenced by the component's manifest, which is how
 1. Add a field to the `z.object({...})` above, with a `.describe(...)` that tells Copilot what to extract and when (mark it required/optional, describe the expected format, and give worked examples of phrases → values).
 2. Read the new field off `props` (or `props.message`/`props.inputQuery`'s siblings) in [`PeopleDirectoryCopilotComponent.tsx`](./src/copilotComponents/peopleDirectory/PeopleDirectoryCopilotComponent.tsx) / [`PeopleDirectory.tsx`](./src/copilotComponents/peopleDirectory/components/PeopleDirectory.tsx) and use it to drive the component's behavior.
 
-
 ### Instructing the agent to infer a parameter from user intent
 
 Two things work together to make Copilot infer `inputQuery` from a freeform request rather than asking the user to fill in a form field:
@@ -114,7 +110,7 @@ Two things work together to make Copilot infer `inputQuery` from a freeform requ
 - The Zod `.describe()` text on the parameter itself (above) is the primary signal — it tells Copilot's tool-calling model what to extract, gives extraction examples, and states the empty-string fallback when nothing was named.
 - The declarative agent's [`instruction.txt`](./copilot/instruction.txt) reinforces and generalizes that behavior at the agent level: it tells the agent that every call to `search_microsoft_365_people` **must** include `inputQuery`, lists the filler phrases to strip ("find", "search for", "who is", ...), and gives before/after examples (e.g. `"find me Dharati Patel"` → `inputQuery: "Dharati Patel"`), plus an explicit instruction never to invent a name the user didn't provide.
 
-Together these let the agent turn a natural-language ask like *"who is Dharati Patel?"* directly into a tool call with `inputQuery: "Dharati Patel"`, with no intermediate clarifying question.
+Together these let the agent turn a natural-language ask like _"who is Dharati Patel?"_ directly into a tool call with `inputQuery: "Dharati Patel"`, with no intermediate clarifying question.
 
 ### SPFx React control library used in the Copilot Component
 
