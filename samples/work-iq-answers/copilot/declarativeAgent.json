@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Work IQ Answers",
+  "description": "Ask about your meetings, documents, projects, and colleagues. Answers come from Work IQ, grounded in your own Microsoft 365 content, and every person, meeting, and file mentioned is shown as a clickable source.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Meeting decisions",
+      "text": "What did we decide in the Q3 planning meeting?"
+    },
+    {
+      "title": "Who's involved",
+      "text": "Who's working on the Contoso proposal?"
+    },
+    {
+      "title": "Project status",
+      "text": "What's the latest on the migration project this week?"
+    },
+    {
+      "title": "Catch up",
+      "text": "What did I miss while I was away?"
+    }
+  ],
+  "actions": [
+    {
+      "id": "workIQAnswersAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}
