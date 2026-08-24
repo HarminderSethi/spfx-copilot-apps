@@ -1,0 +1,20 @@
+{
+  "extends": "./node_modules/@microsoft/spfx-web-build-rig/profiles/default/tsconfig-base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "preserveSymlinks": true,
+    "paths": {
+      "react": ["./node_modules/@types/react/index"],
+      "react/jsx-runtime": ["./node_modules/@types/react/jsx-runtime"],
+      "react/jsx-dev-runtime": ["./node_modules/@types/react/jsx-dev-runtime"],
+      "react-dom": ["./node_modules/@types/react-dom/index"]
+    }
+  },
+  "watchOptions": {
+    // Prevent the TypeScript watch program from re-triggering incremental builds
+    // when the copilot-agent task regenerates its outputs (temp/copilot staging
+    // and the teams/<agent>.zip package) on every build, which otherwise causes
+    // an infinite build loop during `heft start` / `heft build-watch`.
+    "excludeDirectories": ["**/teams", "**/temp/copilot"]
+  }
+}
