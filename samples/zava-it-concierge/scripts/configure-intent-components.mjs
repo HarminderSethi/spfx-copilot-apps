@@ -110,8 +110,8 @@ await writeFile(agentConfigPath, `${JSON.stringify(agentConfig, null, 2)}\n`, 'u
 const declarativeAgentPath = path.join(projectRoot, 'copilot', 'declarativeAgent.json');
 const declarativeAgent = JSON.parse(await readFile(declarativeAgentPath, 'utf8'));
 declarativeAgent.conversation_starters = [
+  { title: 'Submit a support ticket', text: 'Submit an IT support ticket because my video calls drop when I undock.' },
   { title: 'Diagnose my Surface', text: 'Run device diagnostics for battery drain on my Surface.' },
-  { title: 'Configure a device', text: 'Configure a Surface Laptop request with 32 GB memory and 512 GB storage.' },
   { title: 'Review approval queue', text: 'Show all pending requests awaiting my approval.' },
   { title: 'Inspect fleet health', text: 'Show company fleet health by region and department.' },
   { title: 'Correlate an incident', text: 'Correlate signals for major incident INC-7091.' },

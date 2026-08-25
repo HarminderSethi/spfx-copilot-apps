@@ -111,8 +111,8 @@ check(plugin.description_for_model.length <= 8000, 'Plugin model description exc
 const declarativeAgent = await readJson('copilot/declarativeAgent.json');
 const starters = declarativeAgent.conversation_starters ?? [];
 const expectedStarters = [
+  ['Submit a support ticket', 'Submit an IT support ticket because my video calls drop when I undock.', 'ReportItIssue'],
   ['Diagnose my Surface', 'Run device diagnostics for battery drain on my Surface.', 'RunDeviceDiagnostics'],
-  ['Configure a device', 'Configure a Surface Laptop request with 32 GB memory and 512 GB storage.', 'ConfigureDeviceRequest'],
   ['Review approval queue', 'Show all pending requests awaiting my approval.', 'GetApprovalQueue'],
   ['Inspect fleet health', 'Show company fleet health by region and department.', 'GetFleetHealth'],
   ['Correlate an incident', 'Correlate signals for major incident INC-7091.', 'CorrelateMajorIncident'],

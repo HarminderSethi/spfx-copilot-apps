@@ -3,7 +3,6 @@ import { Button } from '@fluentui/react-components';
 import { ArrowExpand20Regular, ArrowMinimize20Regular, Eye20Regular, Pen20Regular } from '@fluentui/react-icons';
 
 import type { IIntentDefinition } from '../intents/intentCatalog';
-import { DashboardFullScreenExperience } from '../fullscreen/DashboardFullScreenExperience';
 import { EstateRiskMap } from '../fullscreen/EstateRiskMap';
 import { buildChartModel } from './babylon/chartModels';
 import { InlineChart } from './charts/InlineChart';
@@ -12,6 +11,11 @@ import { InlineExperienceDetails } from './InlineExperienceDetails';
 import { OperationPanel } from './OperationPanel';
 
 import styles from './IntentCanvasApp.module.scss';
+
+const LazyDashboardFullScreenExperience = React.lazy(async () => {
+  const module = await import(/* webpackChunkName: 'zava-fullscreen-dashboard' */ '../fullscreen/DashboardFullScreenExperience');
+  return { default: module.DashboardFullScreenExperience };
+});
 
 const INLINE_CHART_INTENTS = new Set([
   'MyDeviceStatus', 'GetDeviceHealth', 'GetTeamBudget', 'PreviewRequestCost',
@@ -48,7 +52,11 @@ export function IntentCanvasApp(props: IIntentCanvasAppProps): React.ReactElemen
   const showDetailsInEvidence = (isTransactional && props.intent.name !== 'GetApprovalQueue') || hasInlineChart;
 
   if (props.isFullscreen) {
-    return <DashboardFullScreenExperience intent={props.intent} isDark={props.isDark} ownerWindow={props.ownerWindow} properties={props.properties} userName={props.userName} onExit={() => props.onDisplayModeChange('inline')} />;
+    return (
+      <React.Suspense fallback={<div className={styles.canvasFallback} role="status">Preparing full-screen workspace...</div>}>
+        <LazyDashboardFullScreenExperience intent={props.intent} isDark={props.isDark} ownerWindow={props.ownerWindow} properties={props.properties} userName={props.userName} onExit={() => props.onDisplayModeChange('inline')} />
+      </React.Suspense>
+    );
   }
 
   return (

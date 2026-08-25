@@ -6,12 +6,12 @@
   "instructions": "$[file('instruction.txt')]",
   "conversation_starters": [
     {
-      "title": "Diagnose my Surface",
-      "text": "Run device diagnostics for battery drain on my Surface."
+      "title": "Submit a support ticket",
+      "text": "Submit an IT support ticket because my video calls drop when I undock."
     },
     {
-      "title": "Configure a device",
-      "text": "Configure a Surface Laptop request with 32 GB memory and 512 GB storage."
+      "title": "Diagnose my Surface",
+      "text": "Run device diagnostics for battery drain on my Surface."
     },
     {
       "title": "Review approval queue",

@@ -11,9 +11,7 @@ The solution contains 30 independently routed operational tools plus one searcha
 > [!IMPORTANT]
 > The sample uses deterministic offline data and session-only confirmed actions. Prompt values can filter or prefill a component, but they never submit, approve, decline, delegate, declare, wipe, or apply a refresh plan without visible review and confirmation. Live Microsoft Graph, Intune, service-health, procurement, shipment, and finance integrations are intentionally deferred.
 >
-> The canonical production gate passes eight suites and 35 tests, validates 39 implementation screenshots, validates the generated 31-function API plugin and mirrored MCP tools, and audits a 2,137,549-byte `.sppkg` with no stale output, duplicate media, or icon-font payload.
-
-The approved product and UX specification is [Zava-IT-Concierge-Design-Brief.md](Zava-IT-Concierge-Design-Brief.md). Reusable implementation guidance lives in [agentic-creation-rules.md](agentic-creation-rules.md), and current release evidence is tracked in [todo.md](todo.md).
+> The canonical production gate passes eight suites and 35 tests, validates 39 implementation screenshots, validates the generated 31-function API plugin and mirrored MCP tools, and audits a 2,147,811-byte `.sppkg` with no stale output, duplicate media, or icon-font payload.
 
 ## Applies To
 
@@ -28,11 +26,11 @@ The approved product and UX specification is [Zava-IT-Concierge-Design-Brief.md]
 | Prompt-addressable tools | 31: 30 operational tools plus capability exploration |
 | Conversation starters | 6, each targeting one tool; explorer last |
 | Full-screen dashboards | 3: Personal, Team, and IT Portfolio |
-| Shared production entries | 1, with purpose-gated lazy chart and geography chunks |
+| Shared production entries | 1 initial 464,014-byte entry, with purpose-gated lazy dashboard, chart, and geography chunks |
 | Deterministic data | 150 employees, 180 devices, 10 catalog SKUs, and 300 tickets |
 | Publication screenshots | 39 real implementation captures |
 | Local tests | 8 suites and 35 tests |
-| Production package | 2,137,549 bytes; one primary entry and 42 lazy chunks |
+| Production package | 2,147,811 bytes; one primary entry and 44 lazy chunks |
 | Data mode | Offline mocked graph with session-only receipts |
 
 ## Screenshots
@@ -71,8 +69,8 @@ All 31 origins map to one owning dashboard. The shell preserves the initiating i
 
 | Starter | Expected tool |
 | --- | --- |
+| Submit a support ticket | `ReportItIssue` |
 | Diagnose my Surface | `RunDeviceDiagnostics` |
-| Configure a device | `ConfigureDeviceRequest` |
 | Review approval queue | `GetApprovalQueue` |
 | Inspect fleet health | `GetFleetHealth` |
 | Correlate an incident | `CorrelateMajorIncident` |
@@ -121,16 +119,36 @@ The implementation uses semantic headings, keyboard-operated lens tabs and chart
 
 The Playwright publication harness checks all 31 inline defaults plus representative full-screen, mobile, dark, detail, confirmation, and receipt states for broken images, horizontal overflow, deprecated generic chrome, page errors, and console errors. Authenticated Copilot iframe focus, tenant high contrast, and screen-reader output remain tenant-only validation gates.
 
-## Build
+## Test in Tenant Copilot Workbench
+
+Use the authenticated Copilot Workbench in your Microsoft 365 developer tenant as the primary development and debugging experience.
 
 ### Prerequisites
 
 - Node.js `>=22.14.0 <23.0.0`
-- A Microsoft 365 tenant that supports SPFx 1.24 Copilot Components for deployment testing
-- Chromium installed for optional screenshot regeneration: `npx playwright install chromium`
+- Access to a Microsoft 365 tenant that supports SPFx 1.24 Copilot Components
 
 ```powershell
 npm install
+$env:SPFX_SERVE_TENANT_DOMAIN = "contoso.sharepoint.com"
+heft start --nobrowser
+```
+
+Replace `contoso.sharepoint.com` with your tenant domain and keep the terminal running. Then open this URL, replacing `<tenant>` with the same tenant name:
+
+```text
+https://<tenant>.sharepoint.com/_layouts/CopilotWorkbench.aspx?debugManifestsFile=https%3A%2F%2Flocalhost%3A4321%2Ftemp%2Fbuild%2Fmanifests.js&debug=true&noredir=true
+```
+
+Allow debug scripts if prompted, start a fresh Workbench conversation, and use a prompt from [Zava-IT-Concierge-Prompt-Matrix.md](Zava-IT-Concierge-Prompt-Matrix.md). Verify the inline component first, then select **Full screen** to test its Personal, Team, or IT Portfolio continuation. Source changes rebuild automatically; refresh or start a new Workbench turn to test the update. Press `Ctrl+C` when finished.
+
+If the browser does not trust the localhost development certificate, run `heft trust-dev-cert` once and restart the development server.
+
+## Build and Package
+
+Run the canonical production gate before sharing or deploying the solution:
+
+```powershell
 npm run build
 ```
 
@@ -152,9 +170,17 @@ The ready-to-deploy package is [sharepoint/solution/zava-it-concierge.sppkg](sha
 
 [Watch on YouTube](https://www.youtube.com/watch?v=4asOZi4PNUQ)
 
-## Local Visual Review
+## Optional Local Visual Review
 
-Run the real React surfaces without a tenant:
+The local visual harness is a secondary option for focused layout checks and publication screenshot work. It does not replace validation in the authenticated tenant Copilot Workbench.
+
+Install Chromium once if you need screenshot regeneration:
+
+```powershell
+npx playwright install chromium
+```
+
+Run the React surfaces without a tenant:
 
 ```powershell
 npm run start:visual

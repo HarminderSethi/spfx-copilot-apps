@@ -33,6 +33,10 @@ the defaults.
   prompt box inside the component.
 - Prompt properties silently initialize a real selected entity, filter, scenario, or editable draft.
   Show provenance beside a domain field only when the user needs it to judge that field.
+- Treat the AI-to-UI handoff as the core product story. AI provides probabilistic, non-deterministic
+  natural-language understanding and selects or configures a bounded experience for the user's need.
+  The component owns deterministic records, calculations, validation, state transitions, decisions,
+  and actions. Never imply that model inference itself completed a consequential operation.
 - Information, review, submit, and education experiences have purpose-designed compositions. Share
   framing and mechanics, not one generic card body or evidence rail.
 - Expose exactly six conversation starters by default. Starters 1-5 open five distinct, high-value
@@ -54,8 +58,12 @@ the defaults.
   out a different renderer, but accessibility, fallback, performance, and evidence gates still apply.
 - Every visible control works and every consequential action stops at visible review and confirmation.
   Unsupported controls are removed rather than displayed as decorative or disabled promises.
+- Keep focused information, review, and action in the Copilot canvas. The primary happy path does not
+  send the user through a deep link, app switch, portal handoff, or duplicate external form. Inline
+  components answer or complete the immediate task directly in the flow of work.
 - Full screen adds context, comparison, planning, or coordinated operations. It preserves the invoking
-  entity/filter/draft where supported and never opens generic home merely because a route exists.
+  entity/filter/draft where supported and never opens generic home merely because a route exists. It
+  is the application-scale continuation inside Copilot, not a transition to a separate application.
 
 When the approved design conflicts with one of these defaults, record the override once in `todo.md`,
 implement it consistently, and add a focused automated check so later cleanup does not restore the
@@ -1382,6 +1390,24 @@ background images so an invalid custom property cannot silently remove the treat
 
 ### 9.4 Narrative coherence (storytelling)
 
+- Make the best-of-both-worlds pattern the primary story for every sample and scenario:
+  1. The user expresses a need naturally rather than navigating an application hierarchy.
+  2. AI interprets the language and selects a bounded tool, record, filter, or editable draft.
+  3. A purpose-built inline component presents exact information or deterministic controls directly
+     in the flow of work in the Copilot canvas.
+  4. The user reviews consequences and explicitly owns every decision or action.
+  5. When broader context is useful, full screen preserves the origin and expands into a full-scale
+     application experience inside Copilot.
+- Describe AI interpretation honestly as probabilistic or non-deterministic. Describe business data,
+  calculations, validation, workflow states, and confirmed operations as deterministic. Do not blur
+  these responsibilities with claims that AI approved, submitted, deleted, or otherwise committed an
+  action on the user's behalf.
+- Demonstrate adaptive UX through meaningful differences in composition: an information request opens
+  focused evidence, a review request opens records and consequences, and a submit request opens an
+  editable guarded workflow. Do not call cosmetic copy changes or a generic generated card adaptive.
+- Make the absence of navigation part of the value proposition: no link chase, portal transition, or
+  app switch is required for the primary task. Do not add an external destination merely to make the
+  sample resemble a conventional chatbot response.
 - Curate meetings + tasks + mail + news into **one connected story** so any AI/summary feature reads as
   insightful, not random (My Day themes the day around shipping the app: design-review meeting ↔
   related task ↔ flagged mail ↔ news post).
@@ -1977,7 +2003,10 @@ log/evidence and update `todo.md` when the accepted baseline changes.
   - a roughly 10-minute business-value journey across evidence, trade-offs, workspaces, and confirmation;
   - a roughly 5-minute developer walkthrough pairing live UX with exact owning code and build output.
   Each script includes audience, setup/reset, prompts, expected tools/properties, presenter actions,
-  safety/feature guardrails, fallback path, and rehearsal checklist.
+  safety/feature guardrails, fallback path, and rehearsal checklist. Every cut explicitly demonstrates
+  the same story spine: natural-language interpretation -> need-specific inline UX -> deterministic
+  user-owned information/decision/action -> context-preserving full screen inside Copilot. State that
+  the primary flow requires no external link or application transition.
 - Document `ExploreAgentCapabilities`, its sixth conversation starter, category model, prompt
   copy/launch behavior, safe preview mode, and how future maintainers add education metadata for a new
   tool without editing the explorer UI.
@@ -2000,7 +2029,9 @@ log/evidence and update `todo.md` when the accepted baseline changes.
 - Generate or validate three separate demo cuts when the sample warrants them: short keynote, business
   value, and technical architecture. Each uses exact matrix prompts and states expected tool, presenter
   interaction, safeguard, fallback/recovery path, and mock/live boundary. Demo prose never claims an
-  unimplemented workflow, external write, or tenant validation.
+  unimplemented workflow, external write, or tenant validation. Each cut distinguishes probabilistic
+  AI interpretation from deterministic component behavior and shows inline work before full-screen
+  application context without leaving the Copilot canvas.
 - Before public submission, validate README/demo links, run the canonical clean build, report final
   artifact hashes, stop review servers, perform a clean-clone/offline rehearsal, and isolate any
   tenant-authenticated CSP/focus/screen-reader/high-contrast prerequisite as one external gate.

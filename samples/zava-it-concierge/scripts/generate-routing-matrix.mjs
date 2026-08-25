@@ -33,7 +33,7 @@ const lines = [
   '',
   '| # | Expected tool | Operation | Lens | Copy/paste prompt | Optional property preview | Full-screen route | Collision boundary |',
   '| ---: | --- | --- | --- | --- | --- | --- | --- |',
-  ...intents.map((intent, index) => `| ${index + 1} | \`${intent.name}\` | ${intent.operation} | ${intent.lens} | ${escapeCell(intent.education.samplePrompt)} | ${escapeCell(propertySummary(intent))} | \`${intent.route}\` | ${escapeCell(collisionBoundary(intent.description))} |`),
+  ...intents.map((intent, index) => `| ${index + 1} | \`${intent.name}\` | ${intent.operation} | ${intent.lens} | ${escapeCell(intent.education.samplePrompt)} | \`${escapeCell(propertySummary(intent))}\` | \`${intent.route}\` | ${escapeCell(collisionBoundary(intent.description))} |`),
   '',
   '## Conversation starters',
   '',
@@ -42,7 +42,7 @@ const lines = [
   '| # | Title | Prompt | Expected tool |',
   '| ---: | --- | --- | --- |',
   ...declarativeAgent.conversation_starters.map((starter, index) => {
-    const explicitTargets = ['RunDeviceDiagnostics', 'ConfigureDeviceRequest', 'GetApprovalQueue', 'GetFleetHealth', 'CorrelateMajorIncident', 'ExploreAgentCapabilities'];
+    const explicitTargets = ['ReportItIssue', 'RunDeviceDiagnostics', 'GetApprovalQueue', 'GetFleetHealth', 'CorrelateMajorIncident', 'ExploreAgentCapabilities'];
     return `| ${index + 1} | ${escapeCell(starter.title)} | ${escapeCell(starter.text)} | \`${explicitTargets[index]}\` |`;
   }),
   '',

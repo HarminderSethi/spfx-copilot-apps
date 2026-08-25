@@ -15,8 +15,11 @@ lib-esm
 jest-output
 release
 solution
-temp
 *.sppkg
+!/sharepoint/solution/
+/sharepoint/solution/*
+!/sharepoint/solution/zava-it-concierge.sppkg
+temp
 .heft
 
 # Coverage directory used by tools like istanbul
