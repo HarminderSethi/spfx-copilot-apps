@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "SharePoint Photos Agent",
+  "description": "Find, filter, and explore photos stored in SharePoint document libraries.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Photos from an event",
+      "text": "Show me all photos from the Summer Fest event."
+    },
+    {
+      "title": "Photos from a library",
+      "text": "Show all photos from the Events document library."
+    },
+    {
+      "title": "Recent site photos",
+      "text": "Find the newest photos from the Marketing site."
+    },
+    {
+      "title": "Photos from a date range",
+      "text": "Show photos taken during last summer."
+    }
+  ],
+  "actions": [
+    {
+      "id": "photosAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}
