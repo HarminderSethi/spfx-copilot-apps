@@ -1,0 +1,355 @@
+.root {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  grid-template-rows: minmax(270px, 1fr) auto;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f8fbfc 0%, #edf5f6 100%);
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 290px;
+}
+
+.selectable {
+  cursor: pointer;
+  outline: none;
+}
+
+.selectable:focus-visible {
+  filter: drop-shadow(0 0 3px rgba(22, 120, 194, 0.75));
+}
+
+.selectable[data-selected="true"] .ringValue,
+.selectable[data-selected="true"] .barFace,
+.selectable[data-selected="true"] .capacityActual,
+.selectable[data-selected="true"] .paretoBar,
+.selectable[data-selected="true"] .waterfallBar,
+.selectable[data-selected="true"] .networkNode {
+  stroke: #172b4d;
+  stroke-width: 3;
+}
+
+.gridLine {
+  stroke: #dbe4e6;
+  stroke-width: 1;
+}
+
+.axisLabel,
+.legendLabel,
+.ringMainLabel,
+.networkLabel {
+  fill: #65747a;
+  font-family: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
+  font-size: 10px;
+}
+
+.pointValue,
+.barValue,
+.legendValue,
+.ringMainValue {
+  fill: #24343a;
+  font-family: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.ringTrack {
+  fill: #dce7e8;
+}
+
+.ringValue {
+  stroke: rgba(255, 255, 255, 0.78);
+  stroke-width: 1;
+}
+
+.ringMainValue {
+  font-size: 29px;
+}
+
+.ringMainLabel {
+  font-size: 10px;
+}
+
+.legendLabel {
+  fill: #506167;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.legendValue {
+  fill: #263d43;
+  font-size: 15px;
+}
+
+.trendLine {
+  fill: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pointHalo {
+  fill: #ffffff;
+  stroke: #c8dadd;
+}
+
+.linePoint {
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.barLabel {
+  fill: #44565c;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.barTrack {
+  fill: #e2eaeb;
+}
+
+.barFace,
+.capacityActual,
+.paretoBar,
+.waterfallBar {
+  stroke: rgba(255, 255, 255, 0.65);
+  stroke-width: 1;
+}
+
+.barTop,
+.waterfallTop {
+  opacity: 0.48;
+  transform-box: fill-box;
+}
+
+.barSide {
+  opacity: 0.7;
+}
+
+.capacityTrack {
+  fill: #e1e8ea;
+  stroke: #b8c6c9;
+  stroke-width: 1;
+}
+
+.thresholdLine {
+  stroke: #d13438;
+  stroke-dasharray: 5 4;
+  stroke-width: 1.5;
+}
+
+.thresholdLabel {
+  fill: #a4262c;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.paretoLine {
+  fill: none;
+  stroke: #172b4d;
+  stroke-width: 2.5;
+}
+
+.paretoPoint {
+  fill: #ffffff;
+  stroke: #172b4d;
+  stroke-width: 2;
+}
+
+.waterfallTop {
+  fill: #9b5d28;
+}
+
+.waterfallConnector {
+  stroke: #84979c;
+  stroke-dasharray: 3 3;
+  stroke-width: 1;
+}
+
+.networkLink {
+  stroke: #aebfc3;
+  stroke-width: 1.4;
+}
+
+.networkHalo {
+  fill: rgba(255, 255, 255, 0.72);
+  stroke: #d8e4e6;
+}
+
+.networkNode {
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.networkLabel {
+  fill: #44565c;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.dataRail {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 10px 12px 12px;
+  border-top: 1px solid #dce5e7;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.dataRail::-webkit-scrollbar {
+  display: none;
+}
+
+.dataRail button {
+  display: grid;
+  flex: 0 0 auto;
+  grid-template-columns: 8px minmax(64px, 1fr);
+  gap: 1px 7px;
+  min-width: 104px;
+  padding: 7px 9px;
+  border: 1px solid #d2dcde;
+  border-radius: 6px;
+  color: #25393f;
+  background: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.dataRail button[aria-pressed="true"] {
+  border-color: #1678c2;
+  box-shadow: inset 0 0 0 1px #1678c2;
+}
+
+.dataRail button:focus-visible {
+  outline: 2px solid #1678c2;
+  outline-offset: 1px;
+}
+
+.dataRail i {
+  grid-row: 1 / span 2;
+  width: 8px;
+  height: 8px;
+  margin-top: 3px;
+  border-radius: 50%;
+}
+
+.dataRail span {
+  overflow: hidden;
+  font-size: 9px;
+  line-height: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dataRail strong {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  line-height: 15px;
+}
+
+@media (max-width: 620px) {
+  .root {
+    min-height: 320px;
+    grid-template-rows: minmax(230px, 1fr) auto;
+  }
+
+  .chart {
+    min-height: 250px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selectable,
+  .dataRail button {
+    transition: none;
+  }
+}
+
+.capacityAxisLabel {
+  fill: #65747a;
+  font-family: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.dark {
+  background: linear-gradient(145deg, #14272e 0%, #10191f 100%);
+}
+
+.dark .gridLine {
+  stroke: #31464e;
+}
+
+.dark .axisLabel,
+.dark .legendLabel,
+.dark .ringMainLabel,
+.dark .networkLabel,
+.dark .barLabel,
+.dark .capacityAxisLabel {
+  fill: #bdc9cf;
+}
+
+.dark .pointValue,
+.dark .barValue,
+.dark .legendValue,
+.dark .ringMainValue {
+  fill: #f4f7f8;
+}
+
+.dark .ringTrack,
+.dark .barTrack {
+  fill: #2b3d45;
+}
+
+.dark .pointHalo,
+.dark .networkHalo {
+  fill: #17252c;
+  stroke: #60747d;
+}
+
+.dark .linePoint,
+.dark .networkNode {
+  stroke: #10191f;
+}
+
+.dark .capacityTrack {
+  fill: #263940;
+  stroke: #60747d;
+}
+
+.dark .paretoLine,
+.dark .paretoPoint {
+  stroke: #8ac7ed;
+}
+
+.dark .paretoPoint {
+  fill: #17252c;
+}
+
+.dark .networkLink,
+.dark .waterfallConnector {
+  stroke: #71858e;
+}
+
+.dark .dataRail {
+  border-top-color: #43545d;
+  background: rgba(16, 25, 31, 0.92);
+}
+
+.dark .dataRail button {
+  border-color: #52636c;
+  color: #f4f7f8;
+  background: #17252c;
+}
+
+.dark .dataRail button[aria-pressed="true"] {
+  border-color: #48c5cf;
+  box-shadow: inset 0 0 0 1px #48c5cf;
+}

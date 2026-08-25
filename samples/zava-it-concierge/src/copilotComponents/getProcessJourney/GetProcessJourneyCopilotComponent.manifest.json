@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "117279a9-ab9d-4fd5-978b-1ae163ed5025",
+  "alias": "GetProcessJourneyCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProcessJourneyTool",
+      "description": {
+        "default": "Use for the current stage, owner, blocker, and next step of one known process or request ID. Do not use to list all requests or track carrier delivery specifically."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProcessJourney/GetProcessJourneyCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

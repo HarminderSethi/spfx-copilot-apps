@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "881d4420-beb1-457f-aafb-96e446d75663",
+  "alias": "GenerateItBriefCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GenerateItBriefTool",
+      "description": {
+        "default": "Use only when the user asks for a brief, recap, executive summary, or narrative across a personal, team, or company scope. Do not use for a specific metric or action."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/generateItBrief/GenerateItBriefCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Zava IT Concierge",
+  "description": "Surface support, IT requests, approvals, and fleet operations in Copilot.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Diagnose my Surface",
+      "text": "Run device diagnostics for battery drain on my Surface."
+    },
+    {
+      "title": "Configure a device",
+      "text": "Configure a Surface Laptop request with 32 GB memory and 512 GB storage."
+    },
+    {
+      "title": "Review approval queue",
+      "text": "Show all pending requests awaiting my approval."
+    },
+    {
+      "title": "Inspect fleet health",
+      "text": "Show company fleet health by region and department."
+    },
+    {
+      "title": "Correlate an incident",
+      "text": "Correlate signals for major incident INC-7091."
+    },
+    {
+      "title": "Explore capabilities",
+      "text": "Explore what Zava IT Concierge can do."
+    }
+  ],
+  "actions": [
+    {
+      "id": "myDeviceAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}

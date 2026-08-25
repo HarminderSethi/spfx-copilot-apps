@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "df647f36-3209-434b-bb21-df97f0616f71",
+  "alias": "PreviewRequestCostCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "PreviewRequestCostTool",
+      "description": {
+        "default": "Use to calculate the cost and before/after budget impact of one request ID. Do not use for total team budget, company spend, or approving the request."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/previewRequestCost/PreviewRequestCostCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

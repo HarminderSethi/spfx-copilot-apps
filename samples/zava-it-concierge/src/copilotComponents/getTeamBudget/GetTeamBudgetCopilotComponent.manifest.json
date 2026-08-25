@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "2a7d9975-426c-46b7-a82e-993d5c5330b7",
+  "alias": "GetTeamBudgetCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetTeamBudgetTool",
+      "description": {
+        "default": "Use for the team-level IT budget: allocated, spent, committed, remaining, and pending totals. Do not use for one request cost or company-wide spend variance."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getTeamBudget/GetTeamBudgetCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

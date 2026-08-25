@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "796b08ab-b3ea-412d-9ff2-9e3fa7d77c01",
+  "alias": "ExploreAgentCapabilitiesCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ExploreAgentCapabilitiesTool",
+      "description": {
+        "default": "Use only for broad capability discovery such as what can you do, available scenarios, or help getting started. Do not use when the user asks for any specific IT task."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

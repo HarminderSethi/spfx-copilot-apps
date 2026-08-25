@@ -1,0 +1,90 @@
+- main [ref=f136e5]:
+  - generic [ref=f136e6]:
+    - generic [ref=f136e7]:
+      - generic [ref=f136e8]: Zava IT Concierge
+      - heading "Team ticket trend" [level=2] [ref=f136e10]
+    - button "View in full screen" [ref=f136e11]
+  - generic [ref=f136e15]:
+    - generic [ref=f136e16]:
+      - generic:
+        - generic: "47"
+        - generic: Tickets this month
+      - generic [ref=f136e17]:
+        - img "Team ticket trend Team ticket trend. 6 selectable data marks.. Select a mark for exact detail." [ref=f136e18]:
+          - generic [ref=f136e19]: "0"
+          - generic [ref=f136e21]: "20"
+          - generic [ref=f136e23]: "40"
+          - generic [ref=f136e25]: "60"
+          - 'button "1 mo: 45" [ref=f136e29] [cursor=pointer]':
+            - generic [ref=f136e32]: "45"
+            - generic [ref=f136e33]: 1 mo
+          - 'button "2 mo: 38" [ref=f136e34] [cursor=pointer]':
+            - generic [ref=f136e37]: "38"
+            - generic [ref=f136e38]: 2 mo
+          - 'button "3 mo: 56" [ref=f136e39] [cursor=pointer]':
+            - generic [ref=f136e42]: "56"
+            - generic [ref=f136e43]: 3 mo
+          - 'button "4 mo: 55" [ref=f136e44] [cursor=pointer]':
+            - generic [ref=f136e47]: "55"
+            - generic [ref=f136e48]: 4 mo
+          - 'button "5 mo: 46" [ref=f136e49] [cursor=pointer]':
+            - generic [ref=f136e52]: "46"
+            - generic [ref=f136e53]: 5 mo
+          - 'button "6 mo: 47" [ref=f136e54] [cursor=pointer]':
+            - generic [ref=f136e57]: "47"
+            - generic [ref=f136e58]: 6 mo
+        - generic "Team ticket trend data" [ref=f136e59]:
+          - button "1 mo 45" [pressed] [ref=f136e60] [cursor=pointer]:
+            - generic [ref=f136e62]: 1 mo
+            - strong [ref=f136e63]: "45"
+          - button "2 mo 38" [ref=f136e64] [cursor=pointer]:
+            - generic [ref=f136e66]: 2 mo
+            - strong [ref=f136e67]: "38"
+          - button "3 mo 56" [ref=f136e68] [cursor=pointer]:
+            - generic [ref=f136e70]: 3 mo
+            - strong [ref=f136e71]: "56"
+          - button "4 mo 55" [ref=f136e72] [cursor=pointer]:
+            - generic [ref=f136e74]: 4 mo
+            - strong [ref=f136e75]: "55"
+          - button "5 mo 46" [ref=f136e76] [cursor=pointer]:
+            - generic [ref=f136e78]: 5 mo
+            - strong [ref=f136e79]: "46"
+          - button "6 mo 47" [ref=f136e80] [cursor=pointer]:
+            - generic [ref=f136e82]: 6 mo
+            - strong [ref=f136e83]: "47"
+    - complementary "Selected evidence" [ref=f136e84]:
+      - paragraph [ref=f136e85]: Decision insight
+      - paragraph [ref=f136e86]: Product ticket volume is stable; performance incidents remain above the Zava cohort.
+      - list [ref=f136e87]:
+        - listitem [ref=f136e88]:
+          - generic [ref=f136e92]:
+            - strong [ref=f136e93]: 3 mo
+            - generic [ref=f136e94]: 66% deflected
+          - generic [ref=f136e95]: 56 tickets
+        - listitem [ref=f136e96]:
+          - generic [ref=f136e100]:
+            - strong [ref=f136e101]: 4 mo
+            - generic [ref=f136e102]: 71% deflected
+          - generic [ref=f136e103]: 55 tickets
+        - listitem [ref=f136e104]:
+          - generic [ref=f136e108]:
+            - strong [ref=f136e109]: 5 mo
+            - generic [ref=f136e110]: 65% deflected
+          - generic [ref=f136e111]: 46 tickets
+        - listitem [ref=f136e112]:
+          - generic [ref=f136e116]:
+            - strong [ref=f136e117]: 6 mo
+            - generic [ref=f136e118]: 70% deflected
+          - generic [ref=f136e119]: 47 tickets
+      - generic [ref=f136e120]:
+        - paragraph [ref=f136e121]: From your prompt
+        - generic [ref=f136e122]:
+          - strong [ref=f136e123]: period
+          - text: six-months
+        - generic [ref=f136e124]:
+          - strong [ref=f136e125]: category
+          - text: all
+      - 'generic "Experience type: Read-only insight" [ref=f136e126]': Read-only insight
+  - generic [ref=f136e130]:
+    - generic [ref=f136e131]: Prepared for Megan Bowen
+    - generic [ref=f136e132]: team/team-it#tickets

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "e3ea2533-f0eb-4a5c-98c9-7469e74c1555",
+  "alias": "DelegateApprovalCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "DelegateApprovalTool",
+      "description": {
+        "default": "Use only to delegate or reassign one approval to another person with scope and rationale. Do not use to approve, decline, or list requests."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/delegateApproval/DelegateApprovalCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

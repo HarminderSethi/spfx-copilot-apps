@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "package": "sharepoint/solution/zava-it-concierge.sppkg",
+  "packageBytes": 2137549,
+  "packageSha256": "d3e440592c1bde617861ccad11a10d9f6564813dac3def67cb4fdd0202b272e1",
+  "agentPackage": "teams/zava-it-concierge.zip",
+  "agentPackageBytes": 12370,
+  "agentPackageSha256": "bd288a349792de2089b81b38ca0f7ae3dcb70fdd9c219942697c1e9e2769eb7b",
+  "agentIconHashes": {
+    "color.png": "dc2e8cf7c5819a494d2a0809b312cb5e1eda3cd04a7132eeb1605dc4c8c2b8ed",
+    "outline.png": "65f0b419ddcc3a13b909310033b1e063f1a07f8c37d32748851d0a9e68f9f934"
+  },
+  "configuredBundles": 1,
+  "configuredComponents": 31,
+  "primaryJavaScriptEntries": 1,
+  "lazyJavaScriptChunks": 42,
+  "productionJavaScriptFiles": 43,
+  "totalJavaScriptBytes": 2506558,
+  "largestJavaScript": {
+    "path": "ClientSideAssets/zava-it-concierge-copilot-components_1b3a560e48b22e420bfd.js",
+    "bytes": 1732809
+  },
+  "packagedMediaFiles": 11,
+  "duplicateMediaHashes": 0,
+  "inlineImagePayloads": 0,
+  "duplicateInlineImagePayloads": 0,
+  "staleOutputFiles": 0,
+  "fluentIconFontPayload": false,
+  "limits": {
+    "maximumEntryBytes": 2097152,
+    "maximumJavaScriptBytes": 4194304,
+    "maximumPackageBytes": 10485760
+  }
+}

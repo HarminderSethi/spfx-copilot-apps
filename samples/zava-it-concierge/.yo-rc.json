@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": false,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "zava-it-concierge",
+    "libraryId": "42067fb6-0ecc-4a7f-84e3-083f884c3264",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "zava-it-concierge",
+    "solutionShortDescription": "zava-it-concierge description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent",
+    "template": "none",
+    "componentName": "ExploreAgentCapabilities"
+  }
+}

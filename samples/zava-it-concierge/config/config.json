@@ -1,0 +1,168 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "zava-it-concierge-copilot-components": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/myDeviceStatus/MyDeviceStatusCopilotComponent.js",
+          "manifest": "./src/copilotComponents/myDeviceStatus/MyDeviceStatusCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getDeviceHealth/GetDeviceHealthCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getDeviceHealth/GetDeviceHealthCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getRefreshEligibility/GetRefreshEligibilityCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getRefreshEligibility/GetRefreshEligibilityCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/exploreDeviceCatalog/ExploreDeviceCatalogCopilotComponent.js",
+          "manifest": "./src/copilotComponents/exploreDeviceCatalog/ExploreDeviceCatalogCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/configureDeviceRequest/ConfigureDeviceRequestCopilotComponent.js",
+          "manifest": "./src/copilotComponents/configureDeviceRequest/ConfigureDeviceRequestCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/draftDeviceJustification/DraftDeviceJustificationCopilotComponent.js",
+          "manifest": "./src/copilotComponents/draftDeviceJustification/DraftDeviceJustificationCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reportItIssue/ReportItIssueCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reportItIssue/ReportItIssueCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/runDeviceDiagnostics/RunDeviceDiagnosticsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/runDeviceDiagnostics/RunDeviceDiagnosticsCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getMyRequests/GetMyRequestsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getMyRequests/GetMyRequestsCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/findKnowledgeMatch/FindKnowledgeMatchCopilotComponent.js",
+          "manifest": "./src/copilotComponents/findKnowledgeMatch/FindKnowledgeMatchCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/trackDeviceShipment/TrackDeviceShipmentCopilotComponent.js",
+          "manifest": "./src/copilotComponents/trackDeviceShipment/TrackDeviceShipmentCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reviewDeviceApproval/ReviewDeviceApprovalCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reviewDeviceApproval/ReviewDeviceApprovalCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getApprovalQueue/GetApprovalQueueCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getApprovalQueue/GetApprovalQueueCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getTeamBudget/GetTeamBudgetCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getTeamBudget/GetTeamBudgetCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getTeamAssets/GetTeamAssetsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getTeamAssets/GetTeamAssetsCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/previewRequestCost/PreviewRequestCostCopilotComponent.js",
+          "manifest": "./src/copilotComponents/previewRequestCost/PreviewRequestCostCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/reviewPolicyException/ReviewPolicyExceptionCopilotComponent.js",
+          "manifest": "./src/copilotComponents/reviewPolicyException/ReviewPolicyExceptionCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getTeamTicketTrend/GetTeamTicketTrendCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getTeamTicketTrend/GetTeamTicketTrendCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/delegateApproval/DelegateApprovalCopilotComponent.js",
+          "manifest": "./src/copilotComponents/delegateApproval/DelegateApprovalCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getFleetHealth/GetFleetHealthCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getFleetHealth/GetFleetHealthCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getDeviceAgeDistribution/GetDeviceAgeDistributionCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getDeviceAgeDistribution/GetDeviceAgeDistributionCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getTicketDeflectionTrend/GetTicketDeflectionTrendCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getTicketDeflectionTrend/GetTicketDeflectionTrendCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getTopItIssues/GetTopItIssuesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getTopItIssues/GetTopItIssuesCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getServiceHealth/GetServiceHealthCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getServiceHealth/GetServiceHealthCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getLicenseReclaim/GetLicenseReclaimCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getLicenseReclaim/GetLicenseReclaimCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getItSpendBridge/GetItSpendBridgeCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getItSpendBridge/GetItSpendBridgeCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/planRefreshWaves/PlanRefreshWavesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/planRefreshWaves/PlanRefreshWavesCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/correlateMajorIncident/CorrelateMajorIncidentCopilotComponent.js",
+          "manifest": "./src/copilotComponents/correlateMajorIncident/CorrelateMajorIncidentCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/getProcessJourney/GetProcessJourneyCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProcessJourney/GetProcessJourneyCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/generateItBrief/GenerateItBriefCopilotComponent.js",
+          "manifest": "./src/copilotComponents/generateItBrief/GenerateItBriefCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyDeviceStatusCopilotComponentStrings": "lib/copilotComponents/myDeviceStatus/loc/{locale}.js",
+    "GetDeviceHealthCopilotComponentStrings": "lib/copilotComponents/getDeviceHealth/loc/{locale}.js",
+    "GetRefreshEligibilityCopilotComponentStrings": "lib/copilotComponents/getRefreshEligibility/loc/{locale}.js",
+    "ExploreDeviceCatalogCopilotComponentStrings": "lib/copilotComponents/exploreDeviceCatalog/loc/{locale}.js",
+    "ConfigureDeviceRequestCopilotComponentStrings": "lib/copilotComponents/configureDeviceRequest/loc/{locale}.js",
+    "DraftDeviceJustificationCopilotComponentStrings": "lib/copilotComponents/draftDeviceJustification/loc/{locale}.js",
+    "ReportItIssueCopilotComponentStrings": "lib/copilotComponents/reportItIssue/loc/{locale}.js",
+    "RunDeviceDiagnosticsCopilotComponentStrings": "lib/copilotComponents/runDeviceDiagnostics/loc/{locale}.js",
+    "GetMyRequestsCopilotComponentStrings": "lib/copilotComponents/getMyRequests/loc/{locale}.js",
+    "FindKnowledgeMatchCopilotComponentStrings": "lib/copilotComponents/findKnowledgeMatch/loc/{locale}.js",
+    "TrackDeviceShipmentCopilotComponentStrings": "lib/copilotComponents/trackDeviceShipment/loc/{locale}.js",
+    "ReviewDeviceApprovalCopilotComponentStrings": "lib/copilotComponents/reviewDeviceApproval/loc/{locale}.js",
+    "GetApprovalQueueCopilotComponentStrings": "lib/copilotComponents/getApprovalQueue/loc/{locale}.js",
+    "GetTeamBudgetCopilotComponentStrings": "lib/copilotComponents/getTeamBudget/loc/{locale}.js",
+    "GetTeamAssetsCopilotComponentStrings": "lib/copilotComponents/getTeamAssets/loc/{locale}.js",
+    "PreviewRequestCostCopilotComponentStrings": "lib/copilotComponents/previewRequestCost/loc/{locale}.js",
+    "ReviewPolicyExceptionCopilotComponentStrings": "lib/copilotComponents/reviewPolicyException/loc/{locale}.js",
+    "GetTeamTicketTrendCopilotComponentStrings": "lib/copilotComponents/getTeamTicketTrend/loc/{locale}.js",
+    "DelegateApprovalCopilotComponentStrings": "lib/copilotComponents/delegateApproval/loc/{locale}.js",
+    "GetFleetHealthCopilotComponentStrings": "lib/copilotComponents/getFleetHealth/loc/{locale}.js",
+    "GetDeviceAgeDistributionCopilotComponentStrings": "lib/copilotComponents/getDeviceAgeDistribution/loc/{locale}.js",
+    "GetTicketDeflectionTrendCopilotComponentStrings": "lib/copilotComponents/getTicketDeflectionTrend/loc/{locale}.js",
+    "GetTopItIssuesCopilotComponentStrings": "lib/copilotComponents/getTopItIssues/loc/{locale}.js",
+    "GetServiceHealthCopilotComponentStrings": "lib/copilotComponents/getServiceHealth/loc/{locale}.js",
+    "GetLicenseReclaimCopilotComponentStrings": "lib/copilotComponents/getLicenseReclaim/loc/{locale}.js",
+    "GetItSpendBridgeCopilotComponentStrings": "lib/copilotComponents/getItSpendBridge/loc/{locale}.js",
+    "PlanRefreshWavesCopilotComponentStrings": "lib/copilotComponents/planRefreshWaves/loc/{locale}.js",
+    "CorrelateMajorIncidentCopilotComponentStrings": "lib/copilotComponents/correlateMajorIncident/loc/{locale}.js",
+    "GetProcessJourneyCopilotComponentStrings": "lib/copilotComponents/getProcessJourney/loc/{locale}.js",
+    "GenerateItBriefCopilotComponentStrings": "lib/copilotComponents/generateItBrief/loc/{locale}.js",
+    "ExploreAgentCapabilitiesCopilotComponentStrings": "lib/copilotComponents/exploreAgentCapabilities/loc/{locale}.js"
+  }
+}

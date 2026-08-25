@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "f41f3463-ae9c-43b3-b707-e45cf666fadc",
+  "alias": "GetMyRequestsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetMyRequestsTool",
+      "description": {
+        "default": "Use to list the current user's own IT requests and tickets with status, owner, and ETA. Do not use for approval work, one shipment, or one process stage."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getMyRequests/GetMyRequestsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

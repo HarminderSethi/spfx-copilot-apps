@@ -1,0 +1,73 @@
+- main [ref=f6e5]:
+  - generic [ref=f6e6]:
+    - generic [ref=f6e7]:
+      - generic [ref=f6e8]: Zava IT Concierge
+      - heading "Report an IT issue" [level=2] [ref=f6e10]
+    - button "View in full screen" [ref=f6e11]
+  - generic [ref=f6e16]:
+    - generic [ref=f6e17]:
+      - generic [ref=f6e18]:
+        - generic [ref=f6e19]: Create and review
+        - heading "Report an IT issue" [level=3] [ref=f6e20]
+        - paragraph [ref=f6e21]: Capture an IT issue with symptom, severity, context, review, confirmation, and a receipt.
+      - region "Report an IT issue form" [ref=f6e23]:
+        - generic [ref=f6e24]:
+          - generic [ref=f6e25]:
+            - generic [ref=f6e26]: Category*
+            - combobox "Issue category" [ref=f6e28] [cursor=pointer]: Collaboration
+          - generic [ref=f6e32]:
+            - generic [ref=f6e33]: Severity*
+            - combobox "Issue severity" [ref=f6e35] [cursor=pointer]: Medium
+        - generic [ref=f6e39]:
+          - generic [ref=f6e40]: What is happening?*
+          - textbox "What is happening?" [ref=f6e42]:
+            - /placeholder: Calls drop when the Surface is undocked
+          - generic [ref=f6e43]: Describe the symptom in your own words.
+        - generic [ref=f6e44]:
+          - generic [ref=f6e45]: Business impact and troubleshooting tried*
+          - textbox "Business impact and troubleshooting tried" [ref=f6e47]
+          - generic [ref=f6e48]: Include who is affected, any workaround, and what you already tried.
+        - generic [ref=f6e49]:
+          - generic [ref=f6e50]: Detected device
+          - strong [ref=f6e51]: ZVA-SRF-1042
+          - generic [ref=f6e52]: Surface Laptop 13.8-inch / compliant / last seen today
+        - generic [ref=f6e53] [cursor=pointer]:
+          - checkbox "Attach safe device diagnostics (no personal files)" [checked] [ref=f6e54]
+          - generic [ref=f6e55]: Attach safe device diagnostics (no personal files)
+        - button [disabled] [ref=f6e56]
+    - complementary "Selected evidence" [ref=f6e60]:
+      - paragraph [ref=f6e61]: Decision insight
+      - paragraph [ref=f6e62]: The symptom affects video calls while undocked and includes enough context for triage.
+      - list [ref=f6e63]:
+        - listitem [ref=f6e64]:
+          - generic [ref=f6e68]:
+            - strong [ref=f6e69]: Symptom
+            - generic [ref=f6e70]: Reproduced twice today
+          - generic [ref=f6e71]: Calls drop when undocked
+        - listitem [ref=f6e72]:
+          - generic [ref=f6e76]:
+            - strong [ref=f6e77]: Impact
+            - generic [ref=f6e78]: "Workaround: remain docked"
+          - generic [ref=f6e79]: Customer meetings
+        - listitem [ref=f6e80]:
+          - generic [ref=f6e84]:
+            - strong [ref=f6e85]: Device context
+            - generic [ref=f6e86]: Surface Laptop, Copilot+ PC, 13.8-inch
+          - generic [ref=f6e87]: ZVA-SRF-1042
+        - listitem [ref=f6e88]:
+          - generic [ref=f6e92]:
+            - strong [ref=f6e93]: Diagnostic metadata
+            - generic [ref=f6e94]: No personal files included
+          - generic [ref=f6e95]: Ready
+      - generic [ref=f6e96]:
+        - paragraph [ref=f6e97]: From your prompt
+        - generic [ref=f6e98]:
+          - strong [ref=f6e99]: symptom
+          - text: Video calls drop when undocked
+        - generic [ref=f6e100]:
+          - strong [ref=f6e101]: severity
+          - text: medium
+      - 'generic "Experience type: Submission workflow" [ref=f6e102]': Submission workflow
+  - generic [ref=f6e106]:
+    - generic [ref=f6e107]: Prepared for Megan Bowen
+    - generic [ref=f6e108]: me/request-workspace#report-issue

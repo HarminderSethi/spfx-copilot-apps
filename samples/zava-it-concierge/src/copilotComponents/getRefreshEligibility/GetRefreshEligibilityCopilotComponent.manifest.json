@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "3559c05e-39bc-47da-af88-d94c2af86588",
+  "alias": "GetRefreshEligibilityCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetRefreshEligibilityTool",
+      "description": {
+        "default": "Use for one employee device refresh eligibility, timing, age, warranty, and policy. Do not use for company refresh-wave planning or browsing replacements."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getRefreshEligibility/GetRefreshEligibilityCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "1047d81e-b04f-4b63-a7f8-9f8d8c95f1e2",
+  "alias": "RunDeviceDiagnosticsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "RunDeviceDiagnosticsTool",
+      "description": {
+        "default": "Use when the user asks to run, check, test, troubleshoot, or diagnose a device symptom. Do not use to submit an issue or show static health metrics only."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/runDeviceDiagnostics/RunDeviceDiagnosticsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

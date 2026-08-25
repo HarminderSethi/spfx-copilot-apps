@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "a3f42522-5656-4a61-862f-090bfa6d656f",
+  "alias": "GetApprovalQueueCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetApprovalQueueTool",
+      "description": {
+        "default": "Use to show multiple requests awaiting the current manager's approval, with status filters and counts. Do not use to decide one named request or exception."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getApprovalQueue/GetApprovalQueueCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "f89f8973-b036-4043-befe-28103da89d63",
+  "alias": "GetServiceHealthCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetServiceHealthTool",
+      "description": {
+        "default": "Use for current Microsoft 365 service status and known incidents by service. Do not use to correlate raw signals into a major incident or report a user issue."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getServiceHealth/GetServiceHealthCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}
