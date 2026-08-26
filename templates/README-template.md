@@ -21,6 +21,8 @@ Short summary on functionality and used technologies.
 <!--
 Please provide a high-quality screenshot of your sample below. It should be
 stored in a folder called `assets`. If possible, use a resolution of 1920x1080.
+The filename is your choice, but it must match an image reference in
+`assets/sample.json`.
 
 You can add as many screenshots as you'd like to help users understand your
 sample without having to download and install it.
@@ -86,7 +88,7 @@ Don't use "click"; use "select" or "use".
 Be inclusive and think about accessibility -- don't rely on images alone to describe steps.
 -->
 
-- Clone this repository (or [download this solution as a .ZIP file](https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/YOUR-SOLUTION-NAME) then unzip it)
+- Clone this repository (or [download this solution as a .ZIP file](https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/YOUR-SOLUTION-NAME) then unzip it)
 - From your command line, change your current directory to the directory containing this sample (`YOUR-SOLUTION-NAME`, located under `samples`)
 - In the command line run:
   - `npm install`
@@ -116,9 +118,9 @@ and @YOURGITHUBUSERNAME with your GitHub username, prefixed with "@".
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for community members to volunteer their time and help resolve issues.
 
-You can try looking at [issues related to this sample](https://github.com/pnp/spfx-copilot-apps/issues) to see if anybody else is having the same issues.
+You can try looking at [issues related to this sample](https://github.com/pnp/spfx-copilot-components/issues) to see if anybody else is having the same issues.
 
-If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-apps/issues/new).
+If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-components/issues/new).
 
 ## Disclaimer
 

@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Zava Retail Store — Retail Performance Copilot App",
     "shortDescription": "A SharePoint Copilot App (SPFx 1.24 Copilot Component) that renders an executive retail cockpit inside the Microsoft 365 Copilot canvas — a compact inline performance card that expands to a full-screen dashboard covering sales, category mix, customer satisfaction, feedback, top products and store comparisons.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/zava-retail-store",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/zava-retail-store",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-retail-store",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-retail-store",
     "longDescription": [
       "Zava Retail Store is a SharePoint Copilot App built as an SPFx 1.24 Copilot Component (not a classic web part). The same React component renders in two display modes inside the Microsoft 365 Copilot canvas: a compact inline card and an immersive full-screen executive dashboard. Copilot opens to a compact performance card — headline metrics and a sales trend — then can request expansion via requestDisplayModeAsync('fullscreen') to reveal the full experience.",
       "The full-screen experience is an executive dashboard shell (app rail + top bar) composed of modular sections: a metrics row (sales vs target, transactions, avg basket, CSAT, NPS, conversion rate), a sales trend panel, sales by category, a customer satisfaction gauge, recent customer feedback, a top-products carousel and store/region comparison. A Filters dialog lets the user pick the target store and date and enable/disable individual panels, and the whole dashboard re-flows live to match the selection.",
@@ -36,21 +36,21 @@
         "name": "concept-mockup.png",
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/zava-retail-store/assets/concept-mockup.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/zava-retail-store/assets/concept-mockup.png",
         "alt": "Zava Retail Store scenario — inline card and full-screen dashboard"
       },
       {
         "name": "screenshot-inline.png",
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/zava-retail-store/assets/screenshot-inline.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/zava-retail-store/assets/screenshot-inline.png",
         "alt": "Inline Zava Retail performance card in the Copilot canvas"
       },
       {
         "name": "screenshot-fullscreen.png",
         "type": "image",
         "order": 102,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/zava-retail-store/assets/screenshot-fullscreen.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/zava-retail-store/assets/screenshot-fullscreen.png",
         "alt": "Full-screen Zava Retail executive dashboard"
       }
     ],

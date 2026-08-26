@@ -1,8 +1,8 @@
 # Zava Employee Agent
 
-Powered by SPFx Copilot Apps
+Powered by SPFx Copilot Components
 
-> Intro brief for the coding agent — adapted from the _People Compass Agent UX Design Review_ deck. All naming has been updated from "People Compass" to **Zava Employee Agent** to align with the Zava sample-brand convention already used across the `pnp/spfx-copilot-apps` gallery (Zava Retail Store, Zava Insurance).
+> Intro brief for the coding agent — adapted from the _People Compass Agent UX Design Review_ deck. All naming has been updated from "People Compass" to **Zava Employee Agent** to align with the Zava sample-brand convention already used across the `pnp/spfx-copilot-components` gallery (Zava Retail Store, Zava Insurance).
 
 ---
 
@@ -126,4 +126,4 @@ The canonical per-family layouts, action-plan model, navigation contract, parame
 5. Treat **Learning & Compliance** as the onboarding-equivalent family (replaces a dedicated onboarding component).
 6. Ship with **mocked Zava employee data** end-to-end so the sample can be deployed and demoed in minutes, matching the bar set by `zava-retail-store` and `zava-insurance`.
 
-**Next step:** turn this brief into the sample README and prompt pack for the `pnp/spfx-copilot-apps` repository.
+**Next step:** turn this brief into the sample README and prompt pack for the `pnp/spfx-copilot-components` repository.

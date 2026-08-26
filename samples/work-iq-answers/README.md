@@ -100,7 +100,7 @@ No UI code is touched — mock and live responses go through the same extraction
 
 ## Minimal path to awesome
 
-- Clone this repository (or [download this solution as a .ZIP file](https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/work-iq-answers) then unzip it)
+- Clone this repository (or [download this solution as a .ZIP file](https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/work-iq-answers) then unzip it)
 - From your command line, change your current directory to the directory containing this sample (`work-iq-answers`, located under `samples`)
 - In the command line run:
   - `npm install`
@@ -148,7 +148,7 @@ Neither shape labels a source as a meeting, a file, or a person, so `core/citati
 
 ## Help
 
-If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-apps/issues/new).
+If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-components/issues/new).
 
 ## Disclaimer
 

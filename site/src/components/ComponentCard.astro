@@ -1,0 +1,60 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+import type { ComponentRecord } from '../lib/catalog';
+import { sitePath } from '../lib/catalog';
+
+interface Props {
+  component: ComponentRecord;
+  index?: number;
+}
+
+const { component, index = 0 } = Astro.props;
+const detailUrl = sitePath(`/samples/${component.slug}/`);
+const formattedDate = new Intl.DateTimeFormat('en', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+}).format(new Date(`${component.updatedAt}T00:00:00Z`));
+---
+
+<article
+  class="component-card"
+  data-component-card
+  data-search={component.searchText}
+  data-authors={component.authors.map((author) => author.gitHubAccount.toLocaleLowerCase('en-US')).join('|')}
+  data-title={component.title}
+  data-updated={component.updatedAt}
+  style={`--card-index: ${Math.min(index, 8)}`}
+>
+  <a class="component-card__media" href={detailUrl} aria-label={`View ${component.title}`}>
+    <picture>
+      <source
+        srcset={`${sitePath(component.preview.src640)} 640w, ${sitePath(component.preview.src960)} 960w`}
+        sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+        type="image/webp"
+      />
+      <img
+        src={sitePath(component.preview.src640)}
+        alt={component.preview.alt}
+        width={component.preview.width}
+        height={component.preview.height}
+        loading={index < 3 ? 'eager' : 'lazy'}
+        decoding="async"
+      />
+    </picture>
+  </a>
+  <div class="component-card__body">
+    <div class="component-card__meta">
+      <span>{component.spfxVersion}</span>
+      <time datetime={component.updatedAt}>{formattedDate}</time>
+    </div>
+    <h3><a href={detailUrl}>{component.title}</a></h3>
+    <p>{component.shortDescription}</p>
+    <div class="component-card__footer">
+      <span>{component.authors.map((author) => author.name).join(', ')}</span>
+      <a href={detailUrl} aria-label={`View details for ${component.title}`}>
+        Details <ArrowUpRight size={17} aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</article>

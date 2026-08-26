@@ -1,6 +1,6 @@
 # Zava Employee Agent
 
-Powered by SPFx Copilot Apps
+Powered by SPFx Copilot Components
 
 ## Summary
 

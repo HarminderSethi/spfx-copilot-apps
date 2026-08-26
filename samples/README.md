@@ -1,6 +1,6 @@
 # Samples
 
-This folder contains the SharePoint Copilot Apps samples. Each sample lives in its own self-contained subfolder.
+This folder contains SPFx Copilot Components samples for SharePoint Copilot Apps. Each sample lives in its own self-contained subfolder.
 
 | Sample | Folder |
 | --- | --- |
@@ -17,6 +17,7 @@ This folder contains the SharePoint Copilot Apps samples. Each sample lives in i
 | Release readiness board | [`release-readiness-board`](./release-readiness-board) |
 | SharePoint Photos Copilot Agent | [`photos`](./photos) |
 | SP Permissions Explorer | [`sp-permissions-explorer`](./sp-permissions-explorer) |
+| Work IQ Answers | [`work-iq-answers`](./work-iq-answers) |
 | Zava AI Project Portfolio Agent | [`zava-project-tracker`](./zava-project-tracker) |
 | Zava Employee Agent | [`zava-employee-agent`](./zava-employee-agent) |
 | Zava Retail Store | [`zava-retail-store`](./zava-retail-store) |
@@ -25,5 +26,5 @@ This folder contains the SharePoint Copilot Apps samples. Each sample lives in i
 
 1. Review the [Contribution Guidance](../CONTRIBUTING.md).
 2. Create a new folder here using a descriptive, lowercase, hyphen-separated name.
-3. Add a mandatory `assets` folder containing `sample.json` and `preview.png`.
+3. Add a mandatory `assets` folder containing `sample.json` and at least one image referenced by its `thumbnails` collection.
 4. Use the assets in the [`templates`](../templates) folder as a starting point for your sample's `README.md` and `sample.json`.

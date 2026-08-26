@@ -150,7 +150,7 @@ The settings drawer is **controlled by session-scoped state** (`sessionStorage`)
 ### Wireframe
 
 ```text
-INLINE  ☀ Good morning, Vesa   ▸ Next: Sync 10:00 (12m)   ✓ 3 tasks due   📰 "SPFx Copilot Apps ships"
+INLINE  ☀ Good morning, Vesa   ▸ Next: Sync 10:00 (12m)   ✓ 3 tasks due   📰 "SPFx Copilot Components ships"
 
 FULL    ┌ Agenda timeline ┐┌ Tasks ◔ ┐┌ News wall ┐
         │  (dynamic grid) ││  Mail   ││ Quick a.  │   + "Plan my day" briefing · settings drawer
