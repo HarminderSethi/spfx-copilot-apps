@@ -66,7 +66,7 @@ export function EventsCalendarView(
           defaultView={ECalendarViews.Month}
           events={calendarEvents}
           firstDayOfWeek={props.firstDayOfWeek}
-          height={props.scrollAreaHeight}
+          height={800}
           locale={props.dateLocale}
           timeZone={props.timeZone}
         />
