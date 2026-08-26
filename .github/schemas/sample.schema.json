@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pnp.github.io/spfx-copilot-components/schemas/sample.schema.json",
+  "title": "Copilot Component sample metadata",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "source",
+      "title",
+      "shortDescription",
+      "url",
+      "downloadUrl",
+      "longDescription",
+      "creationDateTime",
+      "updateDateTime",
+      "products",
+      "metadata",
+      "thumbnails",
+      "authors",
+      "references"
+    ],
+    "properties": {
+      "name": { "type": "string", "minLength": 1 },
+      "source": { "const": "pnp" },
+      "title": { "type": "string", "minLength": 1 },
+      "shortDescription": { "type": "string", "minLength": 1 },
+      "url": { "type": "string", "format": "uri" },
+      "downloadUrl": { "type": "string", "format": "uri" },
+      "longDescription": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "creationDateTime": { "type": "string", "format": "date" },
+      "updateDateTime": { "type": "string", "format": "date" },
+      "products": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": { "type": "string", "minLength": 1 }
+      },
+      "metadata": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/keyValue" }
+      },
+      "thumbnails": {
+        "type": "array",
+        "minItems": 1,
+        "contains": {
+          "type": "object",
+          "required": ["type"],
+          "properties": { "type": { "const": "image" } }
+        },
+        "items": { "$ref": "#/$defs/thumbnail" }
+      },
+      "authors": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/author" }
+      },
+      "references": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/reference" }
+      }
+    }
+  },
+  "$defs": {
+    "keyValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "value"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "value": { "type": "string", "minLength": 1 }
+      }
+    },
+    "thumbnail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "order", "url", "alt"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "order": { "type": "integer", "minimum": 0 },
+        "url": { "type": "string", "format": "uri" },
+        "alt": { "type": "string", "minLength": 1 }
+      }
+    },
+    "author": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gitHubAccount", "pictureUrl", "name"],
+      "properties": {
+        "gitHubAccount": { "type": "string", "minLength": 1 },
+        "pictureUrl": { "type": "string", "format": "uri" },
+        "name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

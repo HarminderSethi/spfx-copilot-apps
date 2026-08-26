@@ -1,0 +1,27 @@
+---
+import { ArrowRight } from '@lucide/astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { catalog, sitePath } from '../lib/catalog';
+
+const components = [...catalog.components].sort((left, right) =>
+  right.updatedAt.localeCompare(left.updatedAt) || left.title.localeCompare(right.title),
+);
+const formatDate = (value: string) => new Intl.DateTimeFormat('en', {
+  year: 'numeric', month: 'long', day: 'numeric',
+}).format(new Date(`${value}T00:00:00Z`));
+---
+
+<BaseLayout title="What's new" description="Recently created and updated Copilot Component samples.">
+  <header class="page-heading container"><p class="eyebrow">Catalog activity</p><h1>What's new</h1><p>Recently created and updated samples, ordered by their gallery metadata.</p></header>
+  <section class="content-section container">
+    <div class="updates-list">
+      {components.map((component) => (
+        <article>
+          <time datetime={component.updatedAt}>{formatDate(component.updatedAt)}</time>
+          <div><p class="eyebrow">{component.createdAt === component.updatedAt ? 'Added' : 'Updated'}</p><h2><a href={sitePath(`/samples/${component.slug}/`)}>{component.title}</a></h2><p>{component.shortDescription}</p></div>
+          <a href={sitePath(`/samples/${component.slug}/`)} aria-label={`View ${component.title}`}><ArrowRight size={20} aria-hidden="true" /></a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

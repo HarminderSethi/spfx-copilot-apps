@@ -93,9 +93,9 @@ Other build commands can be listed using `heft --help`.
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for community members to volunteer their time and help resolve issues.
 
-You can try looking at [issues related to this sample](https://github.com/pnp/spfx-copilot-apps/issues) to see if anybody else is having the same issues.
+You can try looking at [issues related to this sample](https://github.com/pnp/spfx-copilot-components/issues) to see if anybody else is having the same issues.
 
-If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-apps/issues/new).
+If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-components/issues/new).
 
 ## Disclaimer
 

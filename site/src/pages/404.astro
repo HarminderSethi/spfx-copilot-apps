@@ -1,0 +1,14 @@
+---
+import { ArrowLeft } from '@lucide/astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sitePath } from '../lib/catalog';
+---
+
+<BaseLayout title="Page not found">
+  <section class="not-found container">
+    <p class="eyebrow">404</p>
+    <h1>That component is not here</h1>
+    <p>The page may have moved, or the component may not be in the catalog yet.</p>
+    <a class="button button--primary" href={sitePath('/')}><ArrowLeft size={17} aria-hidden="true" /> Browse components</a>
+  </section>
+</BaseLayout>

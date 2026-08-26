@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "People Directory - Find Microsoft 365 People in Copilot Chat",
     "shortDescription": "An SPFx Copilot Component that searches Microsoft 365 users in Copilot chat, with inline and fullscreen results, filters, and direct Teams/email actions.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/people-directory",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/people-directory",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/people-directory",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/people-directory",
     "longDescription": [
       "People Directory is a SharePoint Framework Copilot Component that brings Microsoft 365 people search directly into the Copilot canvas. A declarative agent calls the component as a tool and it renders a live, interactive people search experience in both inline and fullscreen display modes.",
       "The sample reads real tenant directory data through the SPFx-brokered Microsoft Graph client using /users (beta), supports internal-only and active-only filters, shows profile photos and key identity details, and provides direct actions to start a Teams chat or send email to selected users."
@@ -35,21 +35,21 @@
         "name": "1.png",
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/people-directory/assets/1.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/people-directory/assets/1.png",
         "alt": "Inline people search results rendered in Microsoft 365 Copilot chat."
       },
       {
         "name": "2.png",
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/people-directory/assets/2.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/people-directory/assets/2.png",
         "alt": "Fullscreen People Directory overview in Microsoft 365 Copilot."
       },
       {
         "name": "3.png",
         "type": "image",
         "order": 102,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/people-directory/assets/3.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/people-directory/assets/3.png",
         "alt": "Person result row with profile details and Teams chat/email actions."
       }
     ],

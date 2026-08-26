@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Work IQ Answers",
     "shortDescription": "Turns a Work IQ answer into structured UI: entity chips inline and every citation grouped into a clickable source panel.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/work-iq-answers",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/work-iq-answers",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/work-iq-answers",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/work-iq-answers",
     "longDescription": [
       "Work IQ Answers sends the user's natural-language question to the Work IQ Chat API and renders the response as structured UI instead of plain text. The people, meetings, and files that Work IQ tags inline in its answer become clickable chips, and every citation it returns is grouped into a source panel that deep-links into Teams, SharePoint, or a person's profile. Follow-up questions reuse the same conversation, so multi-turn works as the API intends.",
       "The sample is the only one in this repository that calls Work IQ rather than Microsoft Graph, and it demonstrates the SPFx AadHttpClient pattern for a non-Graph Entra-secured API: a single webApiPermissionRequests entry for the delegated WorkIQAgent.Ask permission, approved once by a tenant admin, with no middle tier and no client secret.",
@@ -32,7 +32,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/work-iq-answers/assets/preview.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/work-iq-answers/assets/preview.png",
         "alt": "Work IQ Answers rendering a cited answer with entity chips and a grouped source panel"
       }
     ],

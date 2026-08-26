@@ -1,11 +1,11 @@
 [
   {
-    "name": "pnp-spfx-copilot-apps-YOUR-SAMPLE-NAME",
+    "name": "pnp-spfx-copilot-components-YOUR-SAMPLE-NAME",
     "source": "pnp",
     "title": "YOUR-SAMPLE-TITLE",
     "shortDescription": "YOUR-SHORT-DESCRIPTION",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/YOUR-SAMPLE-NAME",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/YOUR-SAMPLE-NAME",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/YOUR-SAMPLE-NAME",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/YOUR-SAMPLE-NAME",
     "longDescription": [
       "YOUR-LONG-DESCRIPTION"
     ],
@@ -33,7 +33,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/YOUR-SAMPLE-NAME/assets/preview.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/YOUR-SAMPLE-NAME/assets/preview.png",
         "alt": "Sample preview"
       }
     ],

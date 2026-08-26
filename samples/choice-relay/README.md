@@ -127,7 +127,7 @@ Copilot creates the typed arguments for both. React owns the local state. The co
 
 ## Help
 
-We do not support samples, but the community is always willing to help. Search the [repository issues](https://github.com/pnp/spfx-copilot-apps/issues) or [create a new issue](https://github.com/pnp/spfx-copilot-apps/issues/new) with your environment and reproduction steps.
+We do not support samples, but the community is always willing to help. Search the [repository issues](https://github.com/pnp/spfx-copilot-components/issues) or [create a new issue](https://github.com/pnp/spfx-copilot-components/issues/new) with your environment and reproduction steps.
 
 ## References
 
