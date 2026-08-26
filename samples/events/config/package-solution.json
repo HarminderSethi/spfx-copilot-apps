@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-copilot-app-events",
+    "id": "3ef6fb14-05df-426e-80f7-a12e4b1d3f19",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Find and display accessible SharePoint Events in Microsoft 365 Copilot."
+      },
+      "longDescription": {
+        "default": "A Copilot declarative agent that searches SharePoint Events list items by date range, topic, site, and layout."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Read.All"
+      }
+    ],
+    "features": [
+      {
+        "title": "spfx-copilot-app-events Feature",
+        "description": "The feature that activates elements of the SharePoint Events Copilot solution.",
+        "id": "21c4b48a-46f0-4d35-ab26-e40b7f84cade",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-copilot-app-events.sppkg"
+  }
+}

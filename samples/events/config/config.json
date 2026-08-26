@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "events-copilot-component": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/events/EventsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/events/EventsCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EventsCopilotComponentStrings": "lib/copilotComponents/events/loc/{locale}.js"
+  }
+}

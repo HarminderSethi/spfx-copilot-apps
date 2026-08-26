@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Events Agent",
+  "description": "Finds and displays SharePoint Events across the sites the user can access, with optional date, topic, site, count, and layout preferences.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Next week's events",
+      "text": "Show me events for next week"
+    },
+    {
+      "title": "Today's events",
+      "text": "What events do I have today?"
+    },
+    {
+      "title": "Events by topic",
+      "text": "Show me events about the town hall"
+    },
+    {
+      "title": "Customized event view",
+      "text": "Show 8 events from https://contoso.sharepoint.com/sites/HR as a grid, with descriptions and without locations"
+    }
+  ],
+  "actions": [
+    {
+      "id": "eventsAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}
