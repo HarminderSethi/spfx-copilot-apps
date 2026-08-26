@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.21.1",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "spfx-copilot-app-events",
+    "libraryId": "3ef6fb14-05df-426e-80f7-a12e4b1d3f19",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-copilot-app-events",
+    "solutionShortDescription": "SharePoint Events Copilot component",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent"
+  }
+}

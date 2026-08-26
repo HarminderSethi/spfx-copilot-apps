@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "fe93528c-bd3d-49cb-888a-126b95ca02bf",
+  "developer": {
+    "name": "João Mendes",
+    "websiteUrl": "https://www.spteck.com",
+    "privacyUrl": "https://www.spteck.com/privacy",
+    "termsOfUseUrl": "https://www.spteck.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Events Agent",
+    "full": "Events Agent"
+  },
+  "description": {
+    "short": "Find SharePoint events",
+    "full": "Finds and displays SharePoint Events across accessible sites by date range, topic, site URL, count, or layout."
+  },
+  "accentColor": "#FFFFFF",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "eventsAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": [
+    "identity"
+  ],
+  "validDomains": []
+}
