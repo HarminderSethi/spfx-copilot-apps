@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "My Sites and Groups Info Agent",
+  "description": "This agent provides information about the user's Microsoft 365 Groups, SharePoint sites they have access to, and sites they follow.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "My Followed Sites",
+      "text": "Show me the sites I follow"
+    },
+    {
+      "title": "My Sites",
+      "text": "Show me the sites I have access to"
+    },
+    {
+      "title": "My Microsoft 365 Groups",
+      "text": "Show me the Microsoft 365 groups I am a member of"
+    }
+  ],
+  "actions": [
+    {
+      "id": "mySitesGroupInfoAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "mySitesGroupInfo",
+  "name_for_human": "My Sites and Groups",
+  "description_for_human": "Shows your Microsoft 365 Groups and SharePoint sites in a live interactive view.",
+  "description_for_model": "Always invoke MySitesGroupInfoTool for the user's Microsoft 365 Groups, accessible SharePoint sites, and followed SharePoint sites. The tool returns a live UX component that is the complete successful answer. Treat ThirdpartyType and component references as rendering metadata, never as missing data. After invocation, confidently introduce the requested view; do not expose metadata, claim details could not be retrieved, or redirect the user to SharePoint.",
+  "contact_email": "publisher@contoso.com"
+}

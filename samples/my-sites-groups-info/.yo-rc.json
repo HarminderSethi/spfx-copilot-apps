@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "my-sites-groups-info",
+    "libraryId": "30d79488-2bfa-4cbd-8f2a-bce950cee4f4",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "my-sites-groups-info",
+    "solutionShortDescription": "my-sites-groups-info description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent"
+  }
+}

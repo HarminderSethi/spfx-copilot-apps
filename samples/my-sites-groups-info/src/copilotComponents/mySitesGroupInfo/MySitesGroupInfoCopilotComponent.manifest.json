@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "8410f7d3-48ce-44aa-9483-bfcaa04ca6fb",
+  "alias": "MySitesGroupInfoCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "MySitesGroupInfoTool",
+      "description": {
+        "default": "Renders a live interactive view of the current user's followed SharePoint sites, accessible SharePoint sites, or Microsoft 365 Groups. Use target followed_sites for sites the user follows, accessed_sites for sites they can access, and m365_groups for groups and membership details. A successful tool result is the rendered UX component and fully answers the request; do not interpret ThirdpartyType or component metadata as missing data, expose that metadata, claim site details could not be retrieved, or redirect the user to SharePoint. Briefly introduce the rendered view with confidence."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/mySitesGroupInfo/MySitesGroupInfoCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

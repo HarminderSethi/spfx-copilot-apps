@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "my-sites-groups-info-client-side-solution",
+    "id": "30d79488-2bfa-4cbd-8f2a-bce950cee4f4",
+    "version": "1.0.7.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Harminder Singh",
+      "websiteUrl": "https://github.com/HarminderSethi",
+      "privacyUrl": "https://github.com/HarminderSethi",
+      "termsOfUseUrl": "https://github.com/HarminderSethi",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "webApiPermissionRequests": [
+      { "resource": "Microsoft Graph", "scope": "Sites.Read.All" },
+      { "resource": "Microsoft Graph", "scope": "Group.Read.All" },
+      { "resource": "Microsoft Graph", "scope": "GroupMember.ReadWrite.All" },
+      { "resource": "Microsoft Graph", "scope": "Directory.Read.All" },
+      { "resource": "Microsoft Graph", "scope": "Files.Read.All" },
+      { "resource": "Microsoft Graph", "scope": "People.Read" }
+    ],
+    "metadata": {
+      "shortDescription": {
+        "default": "my-sites-groups-info description"
+      },
+      "longDescription": {
+        "default": "my-sites-groups-info description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "my-sites-groups-info Feature",
+        "description": "The feature that activates elements of the my-sites-groups-info solution.",
+        "id": "3a084aea-ff14-482a-b6d5-0c4c69031249",
+        "version": "1.0.7.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/my-sites-groups-info.sppkg"
+  }
+}

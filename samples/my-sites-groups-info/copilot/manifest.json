@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.4",
+  "id": "6f72f458-0796-45f0-8f9e-6c21e12b4457",
+  "developer": {
+    "name": "Harminder Singh",
+    "websiteUrl": "https://github.com/HarminderSethi",
+    "privacyUrl": "https://github.com/HarminderSethi",
+    "termsOfUseUrl": "https://github.com/HarminderSethi"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "My Sites and Groups Info Agent",
+    "full": "My Sites and Groups Info Agent"
+  },
+  "description": {
+    "short": "Info on M365 Groups, SharePoint sites you access and follow.",
+    "full": "This agent provides information about the user's Microsoft 365 Groups, SharePoint sites they have access to, and sites they follow."
+  },
+  "accentColor": "#FFFFFF",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "mySitesGroupInfoAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

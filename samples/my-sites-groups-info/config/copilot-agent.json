@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "My Sites and Groups Info Agent"
+      },
+      "description": {
+        "default": "This agent provides information about the user's Microsoft 365 Groups, SharePoint sites they have access to, and sites they follow."
+      },
+      "components": [
+        "8410f7d3-48ce-44aa-9483-bfcaa04ca6fb"
+      ]
+    }
+  ]
+}
