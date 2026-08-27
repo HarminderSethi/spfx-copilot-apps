@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "eee0b93b-a267-476a-b95d-f7ce5b2ecf9e",
+  "alias": "WorkIQAnswersCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "AskWorkIQTool",
+      "description": {
+        "default": "Answers questions about the signed-in user's own work in Microsoft 365 — meetings and what was decided in them, documents and their contents, projects and who is working on them, and what has happened recently across their mail, chats, meetings, and files — by asking Work IQ and rendering the answer as a structured card with the people, meetings, and files it mentions shown as clickable chips and every source listed in a citation panel. Use this tool whenever the user asks a question about their own work, their meetings, their documents, their colleagues, or their projects, and whenever they ask what was decided, who is involved, or what the latest is on something. Also use it for follow-up questions, which continue the same Work IQ conversation. Do not use it to send mail, create meetings, or change anything — this tool only answers."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/workIQAnswers/WorkIQAnswersCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

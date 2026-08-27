@@ -1,0 +1,178 @@
+- generic [ref=f64e5]:
+  - complementary "IT Concierge lenses" [ref=f64e6]:
+    - tablist [ref=f64e9]:
+      - tab [selected] [ref=f64e10] [cursor=pointer]
+      - tab [ref=f64e13] [cursor=pointer]
+      - tab [ref=f64e16] [cursor=pointer]
+  - main [ref=f64e19]:
+    - generic [ref=f64e20]:
+      - generic [ref=f64e21]:
+        - generic [ref=f64e22]: Personal / Support
+        - strong [ref=f64e23]: Report an IT issue
+      - generic [ref=f64e24]:
+        - generic [ref=f64e25]: submit
+        - button [ref=f64e26]
+    - generic [ref=f64e30]:
+      - generic [ref=f64e31]:
+        - text: My IT workspace
+        - heading "What needs attention before it interrupts Megan's next customer workshop?" [level=1] [ref=f64e32]
+        - paragraph [ref=f64e33]: Keep work moving by connecting device health, support, requests, knowledge, and next-device choices.
+      - generic [ref=f64e34]:
+        - generic [ref=f64e35]:
+          - generic [ref=f64e36]: Device health
+          - strong [ref=f64e37]: 76%
+          - generic [ref=f64e38]: Battery is the only constrained dimension
+        - generic [ref=f64e39]:
+          - generic [ref=f64e40]: Open work
+          - strong [ref=f64e41]: "3"
+          - generic [ref=f64e42]: One request needs manager review
+        - generic [ref=f64e43]:
+          - generic [ref=f64e44]: Next milestone
+          - strong [ref=f64e45]: 2 days
+          - generic [ref=f64e46]: USB4 Dock expected Aug 24
+    - navigation "Personal capabilities" [ref=f64e47]:
+      - button "My Surface My devices" [ref=f64e48] [cursor=pointer]:
+        - generic [ref=f64e49]: My Surface
+        - generic [ref=f64e50]: My devices
+      - button "Device health My devices" [ref=f64e51] [cursor=pointer]:
+        - generic [ref=f64e52]: Device health
+        - generic [ref=f64e53]: My devices
+      - button "Refresh eligibility My devices" [ref=f64e54] [cursor=pointer]:
+        - generic [ref=f64e55]: Refresh eligibility
+        - generic [ref=f64e56]: My devices
+      - button "Surface catalog Requests" [ref=f64e57] [cursor=pointer]:
+        - generic [ref=f64e58]: Surface catalog
+        - generic [ref=f64e59]: Requests
+      - button "Configure a request Requests" [ref=f64e60] [cursor=pointer]:
+        - generic [ref=f64e61]: Configure a request
+        - generic [ref=f64e62]: Requests
+      - button "Draft justification Requests" [ref=f64e63] [cursor=pointer]:
+        - generic [ref=f64e64]: Draft justification
+        - generic [ref=f64e65]: Requests
+      - button "Report an IT issue Support" [ref=f64e66] [cursor=pointer]:
+        - generic [ref=f64e67]: Report an IT issue
+        - generic [ref=f64e68]: Support
+      - button "Device diagnostics Support" [ref=f64e69] [cursor=pointer]:
+        - generic [ref=f64e70]: Device diagnostics
+        - generic [ref=f64e71]: Support
+      - button "My requests My requests" [ref=f64e72] [cursor=pointer]:
+        - generic [ref=f64e73]: My requests
+        - generic [ref=f64e74]: My requests
+      - button "Knowledge match Support" [ref=f64e75] [cursor=pointer]:
+        - generic [ref=f64e76]: Knowledge match
+        - generic [ref=f64e77]: Support
+      - button "Device shipment My requests" [ref=f64e78] [cursor=pointer]:
+        - generic [ref=f64e79]: Device shipment
+        - generic [ref=f64e80]: My requests
+      - button "Process journey My requests" [ref=f64e81] [cursor=pointer]:
+        - generic [ref=f64e82]: Process journey
+        - generic [ref=f64e83]: My requests
+      - button "IT Concierge capabilities Discover" [ref=f64e84] [cursor=pointer]:
+        - generic [ref=f64e85]: IT Concierge capabilities
+        - generic [ref=f64e86]: Discover
+    - region "Report an IT issue workspace" [ref=f64e87]:
+      - generic [ref=f64e88]:
+        - generic [ref=f64e89]:
+          - generic [ref=f64e90]:
+            - text: Live decision model
+            - heading "Report an IT issue" [level=2] [ref=f64e91]
+          - generic [ref=f64e92]:
+            - strong [ref=f64e93]: "2"
+            - generic [ref=f64e94]: Reproductions today
+        - generic [ref=f64e95]:
+          - img "Report an IT issue. 4 selectable data marks." [ref=f64e96]
+          - list "Report an IT issue data" [ref=f64e97]:
+            - listitem [ref=f64e98]:
+              - button "Reproductions today 2" [pressed] [ref=f64e99] [cursor=pointer]:
+                - generic [ref=f64e101]: Reproductions today
+                - strong [ref=f64e102]: "2"
+            - listitem [ref=f64e103]:
+              - button "Meetings affected 4" [ref=f64e104] [cursor=pointer]:
+                - generic [ref=f64e106]: Meetings affected
+                - strong [ref=f64e107]: "4"
+            - listitem [ref=f64e108]:
+              - button "Diagnostic signals 8" [ref=f64e109] [cursor=pointer]:
+                - generic [ref=f64e111]: Diagnostic signals
+                - strong [ref=f64e112]: "8"
+            - listitem [ref=f64e113]:
+              - button "Severity score 60" [ref=f64e114] [cursor=pointer]:
+                - generic [ref=f64e116]: Severity score
+                - strong [ref=f64e117]: "60"
+      - complementary "Selected business context" [ref=f64e118]:
+        - paragraph [ref=f64e119]: Decision insight
+        - heading "The symptom affects video calls while undocked and includes enough context for triage." [level=2] [ref=f64e120]
+        - list [ref=f64e121]:
+          - listitem [ref=f64e122]:
+            - generic [ref=f64e126]:
+              - strong [ref=f64e127]: Symptom
+              - generic [ref=f64e128]: Reproduced twice today
+            - generic [ref=f64e129]: Calls drop when undocked
+          - listitem [ref=f64e130]:
+            - generic [ref=f64e134]:
+              - strong [ref=f64e135]: Impact
+              - generic [ref=f64e136]: "Workaround: remain docked"
+            - generic [ref=f64e137]: Customer meetings
+          - listitem [ref=f64e138]:
+            - generic [ref=f64e142]:
+              - strong [ref=f64e143]: Device context
+              - generic [ref=f64e144]: Surface Laptop, Copilot+ PC, 13.8-inch
+            - generic [ref=f64e145]: ZVA-SRF-1042
+          - listitem [ref=f64e146]:
+            - generic [ref=f64e150]:
+              - strong [ref=f64e151]: Diagnostic metadata
+              - generic [ref=f64e152]: No personal files included
+            - generic [ref=f64e153]: Ready
+        - region "Report an IT issue form" [ref=f64e155]:
+          - generic [ref=f64e156]:
+            - generic [ref=f64e157]:
+              - text: Category
+              - combobox "Issue category" [ref=f64e159] [cursor=pointer]:
+                - option "Collaboration" [selected]
+                - option "Hardware"
+                - option "Connectivity"
+                - option "Access and identity"
+                - option "Software"
+            - generic [ref=f64e160]:
+              - text: Severity
+              - combobox "Issue severity" [ref=f64e162] [cursor=pointer]:
+                - option "Low"
+                - option "Medium" [selected]
+                - option "High"
+                - option "Critical"
+          - generic [ref=f64e163]: What is happening?
+          - textbox "What is happening?" [ref=f64e165]:
+            - /placeholder: Calls drop when the Surface is undocked
+          - generic [ref=f64e166]: Business impact and troubleshooting tried
+          - textbox "Business impact and troubleshooting tried" [ref=f64e168]
+          - generic [ref=f64e169]:
+            - generic [ref=f64e170]: Detected device
+            - strong [ref=f64e171]: ZVA-SRF-1042
+            - generic [ref=f64e172]: Surface Laptop 13.8-inch / compliant / last seen today
+          - generic [ref=f64e173] [cursor=pointer]:
+            - checkbox "Attach safe device diagnostics (no personal files)" [checked] [ref=f64e174]
+            - generic [ref=f64e175]: Attach safe device diagnostics (no personal files)
+          - button [disabled] [ref=f64e176]
+        - generic [ref=f64e180]:
+          - strong [ref=f64e181]: Carried from the conversation
+          - generic [ref=f64e182]: "symptom: Video calls drop when undocked"
+          - generic [ref=f64e183]: "severity: medium"
+    - region "Personal IT overview" [ref=f64e184]:
+      - generic [ref=f64e185]:
+        - img "Black Microsoft Surface Laptop viewed from the rear with the keyboard open" [ref=f64e186]
+        - generic [ref=f64e187]:
+          - generic [ref=f64e188]: Assigned Surface
+          - strong [ref=f64e189]: Surface Laptop 13.8-inch
+          - generic [ref=f64e190]: ZVA-SRF-1042 / compliant / 42 months
+      - generic [ref=f64e191]:
+        - generic [ref=f64e192]: Work in motion
+        - strong [ref=f64e193]: REQ-2048
+        - paragraph [ref=f64e194]: Manager review is the only blocker. Budget, configuration, and four evidence sources are ready.
+        - generic [ref=f64e195]: "Next: Diego decision"
+      - generic [ref=f64e196]:
+        - generic [ref=f64e197]: Continuity plan
+        - strong [ref=f64e198]: 2 h 15 m
+        - paragraph [ref=f64e199]: Battery runtime is below the mobile-work target; stay docked for today’s customer workshop.
+        - generic [ref=f64e200]: Refresh eligible Nov 5
+    - generic [ref=f64e201]:
+      - generic [ref=f64e202]: Prepared for Megan Bowen
+      - generic [ref=f64e205]: me/request-workspace#report-issue

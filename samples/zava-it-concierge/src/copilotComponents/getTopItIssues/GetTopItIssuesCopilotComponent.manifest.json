@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "e1533536-1bb6-4153-8038-e050ed47aee8",
+  "alias": "GetTopItIssuesCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetTopItIssuesTool",
+      "description": {
+        "default": "Use to rank company IT issue categories and identify which causes account for most tickets. Do not use for deflection rate, one team trend, or service status."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getTopItIssues/GetTopItIssuesCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "zava-employee-copilot-components": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/getMyHrDashboard/GetMyHrDashboardCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getMyHrDashboard/GetMyHrDashboardCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/getProfileHealth/GetProfileHealthCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getProfileHealth/GetProfileHealthCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/getNextBestActions/GetNextBestActionsCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getNextBestActions/GetNextBestActionsCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/getWorklifeSnapshot/GetWorklifeSnapshotCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getWorklifeSnapshot/GetWorklifeSnapshotCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/getEmployeeMilestones/GetEmployeeMilestonesCopilotComponent.js",
+          "manifest": "./src/copilotComponents/getEmployeeMilestones/GetEmployeeMilestonesCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/policyAnswer/PolicyAnswerCopilotComponent.js",
+          "manifest": "./src/copilotComponents/policyAnswer/PolicyAnswerCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/policyComparison/PolicyComparisonCopilotComponent.js",
+          "manifest": "./src/copilotComponents/policyComparison/PolicyComparisonCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/leaveBalance/LeaveBalanceCopilotComponent.js",
+          "manifest": "./src/copilotComponents/leaveBalance/LeaveBalanceCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/requestTimeOff/RequestTimeOffCopilotComponent.js",
+          "manifest": "./src/copilotComponents/requestTimeOff/RequestTimeOffCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/latestPay/LatestPayCopilotComponent.js",
+          "manifest": "./src/copilotComponents/latestPay/LatestPayCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/explainPayChange/ExplainPayChangeCopilotComponent.js",
+          "manifest": "./src/copilotComponents/explainPayChange/ExplainPayChangeCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/compareBenefitPlans/CompareBenefitPlansCopilotComponent.js",
+          "manifest": "./src/copilotComponents/compareBenefitPlans/CompareBenefitPlansCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/startLifeEvent/StartLifeEventCopilotComponent.js",
+          "manifest": "./src/copilotComponents/startLifeEvent/StartLifeEventCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/createHrCase/CreateHrCaseCopilotComponent.js",
+          "manifest": "./src/copilotComponents/createHrCase/CreateHrCaseCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/requiredLearning/RequiredLearningCopilotComponent.js",
+          "manifest": "./src/copilotComponents/requiredLearning/RequiredLearningCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/totalRewardsSummary/TotalRewardsSummaryCopilotComponent.js",
+          "manifest": "./src/copilotComponents/totalRewardsSummary/TotalRewardsSummaryCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/approvalInbox/ApprovalInboxCopilotComponent.js",
+          "manifest": "./src/copilotComponents/approvalInbox/ApprovalInboxCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/teamAbsenceCalendar/TeamAbsenceCalendarCopilotComponent.js",
+          "manifest": "./src/copilotComponents/teamAbsenceCalendar/TeamAbsenceCalendarCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/findExpert/FindExpertCopilotComponent.js",
+          "manifest": "./src/copilotComponents/findExpert/FindExpertCopilotComponent.manifest.json"
+        }
+      ,
+        {
+          "entrypoint": "./lib/copilotComponents/exploreOrganization/ExploreOrganizationCopilotComponent.js",
+          "manifest": "./src/copilotComponents/exploreOrganization/ExploreOrganizationCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GetMyHrDashboardCopilotComponentStrings": "lib/copilotComponents/getMyHrDashboard/loc/{locale}.js",
+    "GetProfileHealthCopilotComponentStrings": "lib/copilotComponents/getProfileHealth/loc/{locale}.js",
+    "GetNextBestActionsCopilotComponentStrings": "lib/copilotComponents/getNextBestActions/loc/{locale}.js",
+    "GetWorklifeSnapshotCopilotComponentStrings": "lib/copilotComponents/getWorklifeSnapshot/loc/{locale}.js",
+    "GetEmployeeMilestonesCopilotComponentStrings": "lib/copilotComponents/getEmployeeMilestones/loc/{locale}.js",
+    "PolicyAnswerCopilotComponentStrings": "lib/copilotComponents/policyAnswer/loc/{locale}.js",
+    "PolicyComparisonCopilotComponentStrings": "lib/copilotComponents/policyComparison/loc/{locale}.js",
+    "LeaveBalanceCopilotComponentStrings": "lib/copilotComponents/leaveBalance/loc/{locale}.js",
+    "RequestTimeOffCopilotComponentStrings": "lib/copilotComponents/requestTimeOff/loc/{locale}.js",
+    "LatestPayCopilotComponentStrings": "lib/copilotComponents/latestPay/loc/{locale}.js",
+    "ExplainPayChangeCopilotComponentStrings": "lib/copilotComponents/explainPayChange/loc/{locale}.js",
+    "CompareBenefitPlansCopilotComponentStrings": "lib/copilotComponents/compareBenefitPlans/loc/{locale}.js",
+    "StartLifeEventCopilotComponentStrings": "lib/copilotComponents/startLifeEvent/loc/{locale}.js",
+    "CreateHrCaseCopilotComponentStrings": "lib/copilotComponents/createHrCase/loc/{locale}.js",
+    "RequiredLearningCopilotComponentStrings": "lib/copilotComponents/requiredLearning/loc/{locale}.js",
+    "TotalRewardsSummaryCopilotComponentStrings": "lib/copilotComponents/totalRewardsSummary/loc/{locale}.js",
+    "ApprovalInboxCopilotComponentStrings": "lib/copilotComponents/approvalInbox/loc/{locale}.js",
+    "TeamAbsenceCalendarCopilotComponentStrings": "lib/copilotComponents/teamAbsenceCalendar/loc/{locale}.js",
+    "FindExpertCopilotComponentStrings": "lib/copilotComponents/findExpert/loc/{locale}.js",
+    "ExploreOrganizationCopilotComponentStrings": "lib/copilotComponents/exploreOrganization/loc/{locale}.js"
+  }
+}

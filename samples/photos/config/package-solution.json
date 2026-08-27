@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-copilot-app-photos-client-side-solution",
+    "id": "7b72f266-36e5-4e4b-ae03-49288d4bf9ae",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Read.All"
+      }
+    ],
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SharePoint Photos searches image files through Microsoft Graph and displays them in an interactive gallery."
+      },
+      "longDescription": {
+        "default": "A Copilot declarative agent that finds photos across SharePoint document libraries by topic, event, site, folder, and date range."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-copilot-app-photos Feature",
+        "description": "The feature that activates elements of the spfx-copilot-app-photos solution.",
+        "id": "0186f30e-a0cc-48a8-9f34-4668d12702f2",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-copilot-app-photos.sppkg"
+  }
+}

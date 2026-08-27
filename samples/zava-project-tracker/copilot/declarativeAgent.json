@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.7/schema.json",
+  "version": "v1.7",
+  "name": "Zava AI Project Portfolio Agent",
+  "description": "Intent-driven project delivery, AI investment, portfolio governance, capacity, and approvals.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Review my priorities",
+      "text": "What needs my attention across my projects this week?"
+    },
+    {
+      "title": "Compare projects",
+      "text": "Compare Customer Service Copilot with Contract Intelligence on delivery and value."
+    },
+    {
+      "title": "Explore what this agent can do",
+      "text": "Show me the project and portfolio scenarios you can help with."
+    }
+  ],
+  "actions": [
+    {
+      "id": "projectTrackerAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}

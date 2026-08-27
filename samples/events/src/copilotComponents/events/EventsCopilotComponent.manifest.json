@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "1b9c5d4d-ff19-419c-9ade-878fa00187c6",
+  "alias": "EventsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "EventsTool",
+      "description": {
+        "default": "Finds and displays SharePoint Events across accessible sites. The expanded view uses feature unless the user explicitly requests another layout. Use it for date ranges, topics, absolute site URLs, result counts, layouts, and event-field visibility preferences."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/events/EventsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

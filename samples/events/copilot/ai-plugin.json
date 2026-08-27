@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "events",
+  "name_for_human": "Events Agent",
+  "description_for_human": "Find and view SharePoint events",
+  "description_for_model": "Use EventsTool to find and display SharePoint Events. It supports inclusive UTC date ranges, topic keywords, absolute SharePoint site URLs, result counts from 1 to 50, layouts, and location, organizer, or description visibility preferences. It searches all accessible sites when siteUrl is omitted.",
+  "contact_email": "joao.j.mendes@spteck.com"
+}

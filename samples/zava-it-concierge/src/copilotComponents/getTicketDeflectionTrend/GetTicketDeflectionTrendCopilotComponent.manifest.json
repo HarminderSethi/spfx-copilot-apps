@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "7470ec99-dfed-467c-b23a-65ba439f6c66",
+  "alias": "GetTicketDeflectionTrendCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetTicketDeflectionTrendTool",
+      "description": {
+        "default": "Use for company-wide self-service ticket deflection rate versus agent-handled volume over time. Do not use for one team trend or issue-category ranking."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getTicketDeflectionTrend/GetTicketDeflectionTrendCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -13,6 +13,7 @@ export default class MyDayCopilotComponent extends BaseCopilotComponent<IMyDayCo
       message: this.properties.message,
       currentUser: resolveCurrentUser(this.context),
       theme: this.hostContext.theme,
+      targetDocument: this.context.domElement.ownerDocument,
       displayMode: this.hostContext.displayMode,
       availableDisplayModes: this.hostContext.availableDisplayModes,
       onRequestFullscreen: this._handleRequestFullscreen

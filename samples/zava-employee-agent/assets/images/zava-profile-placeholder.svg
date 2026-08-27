@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title description">
+  <title id="title">Zava employee profile placeholder</title>
+  <description id="description">A neutral employee silhouette on a Zava gradient background.</description>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#087782"/>
+      <stop offset=".58" stop-color="#2b91ad"/>
+      <stop offset="1" stop-color="#d52b70"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="120" fill="url(#background)"/>
+  <circle cx="120" cy="86" r="44" fill="#fff" opacity=".94"/>
+  <path d="M43 219c5-69 149-69 154 0z" fill="#fff" opacity=".94"/>
+</svg>

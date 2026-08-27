@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "5fab161e-1a31-40f1-b0fd-32efe8db3139",
+  "alias": "CreateHrCaseCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "CreateHRCase",
+      "description": {
+        "default": "Open a private, reviewable HR case intake with category, subject, description, and privacy boundary prefilled. Offer a knowledge answer first when safe and never submit automatically."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/createHrCase/CreateHrCaseCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

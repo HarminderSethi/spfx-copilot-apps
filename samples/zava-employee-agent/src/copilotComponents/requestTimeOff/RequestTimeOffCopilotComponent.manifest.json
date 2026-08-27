@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "703eefce-e788-4b7b-953a-27be16a24256",
+  "alias": "RequestTimeOffCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "RequestTimeOff",
+      "description": {
+        "default": "Open a reviewable time-off request with prompt-supplied leave type, dates, and reason prefilled. Calculate working days and show calendar or coverage conflicts; never submit automatically."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/requestTimeOff/RequestTimeOffCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

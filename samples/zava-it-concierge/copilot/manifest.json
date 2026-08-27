@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "2a634411-c178-40b0-9061-aa15a6b330c7",
+  "developer": {
+    "name": "Zava",
+    "websiteUrl": "https://zava.example.com",
+    "privacyUrl": "https://zava.example.com/privacy",
+    "termsOfUseUrl": "https://zava.example.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Zava IT Concierge",
+    "full": "Zava IT Concierge"
+  },
+  "description": {
+    "short": "Device support, requests, approvals, and IT operations.",
+    "full": "A Copilot experience for Surface device health, support, requests, approvals, service health, fleet analytics, and IT operations."
+  },
+  "accentColor": "#0B5A7A",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "myDeviceAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

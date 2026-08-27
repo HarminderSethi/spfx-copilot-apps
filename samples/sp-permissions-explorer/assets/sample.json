@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "SP Permissions Explorer - SharePoint Access Review Copilot App",
     "shortDescription": "An SPFx Copilot Component that lets users review SharePoint access, inspect principals and permission levels, and perform guarded write operations from Microsoft 365 Copilot.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/sp-permissions-explorer",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/sp-permissions-explorer",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/sp-permissions-explorer",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/sp-permissions-explorer",
     "longDescription": [
       "SP Permissions Explorer is a SharePoint Copilot App built as an SPFx 1.24 Copilot Component. It lets the signed-in user ask Microsoft 365 Copilot who has access to a site and get back an interactive permissions experience with users, groups, external or guest users, and permission levels.",
       "The same React component renders in inline and full-screen display modes inside the Copilot canvas. It queries SharePoint using the user's delegated identity, supports filtering and principal lookup, and exposes write operations such as grant or remove access and change permission levels, with every write confirmed in the UI before it runs."
@@ -35,14 +35,14 @@
         "name": "SharePointAccessReview_Introduction.png",
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/sp-permissions-explorer/assets/SharePointAccessReview_Introduction.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/sp-permissions-explorer/assets/SharePointAccessReview_Introduction.png",
         "alt": "Inline permissions review overview in Microsoft 365 Copilot"
       },
       {
         "name": "SharePointAccessReview_Grant.png",
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/sp-permissions-explorer/assets/SharePointAccessReview_Grant.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/sp-permissions-explorer/assets/SharePointAccessReview_Grant.png",
         "alt": "Guarded grant access dialog in the permissions explorer"
       }
     ],

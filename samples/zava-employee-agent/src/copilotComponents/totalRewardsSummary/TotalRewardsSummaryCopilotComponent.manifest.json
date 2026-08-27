@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "1b8eb747-3d16-4876-ac5b-1923d251fbc6",
+  "alias": "TotalRewardsSummaryCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetTotalRewards",
+      "description": {
+        "default": "Show annual total rewards value across salary, bonus, equity, pension, and employer-funded benefits with a composition chart. Use for annual employment value; use payroll tools for a pay period."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/totalRewardsSummary/TotalRewardsSummaryCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

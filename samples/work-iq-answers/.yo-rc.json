@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.18.0",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "work-iq-answers",
+    "libraryId": "c8077771-c757-41ad-919c-1a433436e69f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "WorkIQAnswers",
+    "solutionShortDescription": "WorkIQAnswers description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent"
+  }
+}

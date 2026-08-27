@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Work IQ Answers"
+      },
+      "description": {
+        "default": "Answers questions about your meetings, documents, projects, and colleagues using Work IQ, and shows the people, meetings, and files behind every answer as clickable sources."
+      },
+      "components": [
+        "eee0b93b-a267-476a-b95d-f7ce5b2ecf9e"
+      ]
+    }
+  ]
+}

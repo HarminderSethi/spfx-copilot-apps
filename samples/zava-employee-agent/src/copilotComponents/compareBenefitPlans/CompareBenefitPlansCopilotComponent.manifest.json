@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "5ac0d82d-3755-4dce-bd1e-25fc84ade775",
+  "alias": "CompareBenefitPlansCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "CompareBenefitPlans",
+      "description": {
+        "default": "Compare benefit plans in a weighted matrix using coverage tier, dependent count, and stated priorities such as deductible or dental. Use for plan decisions, not for starting a life-event change."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/compareBenefitPlans/CompareBenefitPlansCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -21,6 +21,9 @@ _Inline (left) + full-screen (right)._
 
 ## Screenshots & demo
 
+- [3-minute business and vision demo](./Zava-Retail-3-Minute-Demo.md)
+- [5-minute developer and architecture demo](./Zava-Retail-5-Minute-Technical-Demo.md)
+
 | Inline | Full screen |
 | --- | --- |
 | ![Inline screenshot](./assets/screenshot-inline.png) | ![Full-screen screenshot](./assets/screenshot-fullscreen.png) |
@@ -49,15 +52,15 @@ _Inline (left) + full-screen (right)._
 
 ## Solution
 
-| Solution          | Author(s)                                               |
-| ----------------- | ------------------------------------------------------- |
-| zava-retail-store | Paolo Pialorsi (Microsoft) &#124; [GitHub](https://github.com/PaoloPia) &#124; [LinkedIn](https://www.linkedin.com/in/paolopialorsi/) |
+- **Solution:** zava-retail-store
+- **Author:** Paolo Pialorsi (Microsoft) | [GitHub](https://github.com/PaoloPia) |
+  [LinkedIn](https://www.linkedin.com/in/paolopialorsi/)
 
 ## Version history
 
-| Version | Date | Comments        |
-| ------- | ---- | --------------- |
-| 1.0     | 07.06.2026  | Initial release |
+| Version | Date       | Comments        |
+| ------- | ---------- | --------------- |
+| 1.0     | 07.06.2026 | Initial release |
 
 ## Disclaimer
 
@@ -82,7 +85,7 @@ _Inline (left) + full-screen (right)._
 Production build, test, and package:
 
 ```bash
-heft test --clean --production && heft package-solution --production
+npm run build
 ```
 
 Other build commands can be listed using `heft --help`.
@@ -141,6 +144,9 @@ Microsoft Graph (`/me`, `/me/photo` for the signed-in user); retail metrics, cat
 ```text
 zava-retail-store/
   README.md
+  Zava-Retail-3-Minute-Demo.md                 # business and vision presenter script
+  Zava-Retail-5-Minute-Technical-Demo.md       # developer and architecture walkthrough
+  scripts/validate-public-dependencies.mjs     # public npm provenance release gate
   config/                       # Heft / SPFx + Copilot agent configuration
   copilot/                      # declarative agent + plugin manifests
   src/

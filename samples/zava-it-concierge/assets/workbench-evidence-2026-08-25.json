@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "capturedOn": "2026-08-25",
+  "tenantWorkbench": "https://span001.sharepoint.com/_layouts/15/copilotworkbench.aspx",
+  "localManifest": "https://localhost:4321/temp/build/manifests.js",
+  "method": "Direct component/tool selection in the authenticated Copilot Component Workbench; this run does not prove natural-language model routing.",
+  "inline": {
+    "expectedComponents": 31,
+    "instantiatedComponents": 31,
+    "readyComponents": 31,
+    "brandedComponents": 31,
+    "componentsWithFullScreenControl": 31,
+    "headings": [
+      "My Surface",
+      "Device health",
+      "Refresh eligibility",
+      "Surface catalog",
+      "Configure a request",
+      "Draft justification",
+      "Report an IT issue",
+      "Device diagnostics",
+      "My requests",
+      "Knowledge match",
+      "Device shipment",
+      "Device approval",
+      "Approval queue",
+      "Team IT budget",
+      "Team assets",
+      "Request cost impact",
+      "Policy exception",
+      "Team ticket trend",
+      "Delegate approval",
+      "Fleet health",
+      "Device age distribution",
+      "Ticket deflection",
+      "Top IT issues",
+      "Service health",
+      "License reclaim",
+      "IT spend bridge",
+      "Refresh wave plan",
+      "Incident correlation",
+      "Process journey",
+      "IT brief",
+      "IT Concierge capabilities"
+    ]
+  },
+  "fullScreen": {
+    "expandedComponents": 31,
+    "componentsWithBackControl": 31,
+    "returnedToInline": 31,
+    "lensCounts": {
+      "personal": 13,
+      "team": 8,
+      "portfolio": 10
+    },
+    "visibleOriginContext": 25,
+    "missingVisibleOriginContext": [
+      "GetTicketDeflectionTrend",
+      "GetTopItIssues",
+      "GetItSpendBridge",
+      "PlanRefreshWaves",
+      "CorrelateMajorIncident",
+      "GenerateItBrief"
+    ]
+  },
+  "diagnostics": [
+    {
+      "severity": "error",
+      "source": "@fluentui/react-provider",
+      "message": "There are conflicting ids in your DOM.",
+      "scope": "Repeated when component iframes initialized."
+    },
+    {
+      "severity": "warning",
+      "source": "Fluent icon registration",
+      "message": "Some icons were re-registered: Options20Regular, Drafts20Regular.",
+      "scope": "Repeated when component iframes initialized."
+    },
+    {
+      "severity": "warning",
+      "source": "Workbench host",
+      "message": "Unrecognized feature: private-network-access, plus fallback theme-token warnings on initial load.",
+      "scope": "Host/browser diagnostics; classify separately from component defects."
+    }
+  ],
+  "notCovered": [
+    "Natural-language prompt routing and extracted property validation",
+    "Keyboard-only focus order and focus restoration",
+    "Screen-reader output, tenant high contrast, forced colors, and 200 percent zoom",
+    "Final deployed SPPKG hash verification"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "416c0f19-021e-4405-9f21-02957bd3d12f",
+  "alias": "PolicyAnswerCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "AskPolicy",
+      "description": {
+        "default": "Answer an employee policy question with applicability, confidence, effective dates, and visible source receipts. Use for questions about what a policy says or which rule applies; use ComparePolicies when the user explicitly asks to compare countries or policy variants."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/policyAnswer/PolicyAnswerCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

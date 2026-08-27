@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "ddc01e03-cf25-4180-99b5-3ecb5a24ca98",
+  "alias": "GetProjectTimelineCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectTimeline",
+      "description": {
+        "default": "Visualize a project timeline, dependencies, baseline variance, and critical path."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectTimeline/GetProjectTimelineCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "db468dbe-fc1a-480a-ac52-2c2d0c0680cb",
+  "alias": "GetProjectHealthCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetProjectHealth",
+      "description": {
+        "default": "Explain a project's delivery, financial, value, scope, and risk health."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getProjectHealth/GetProjectHealthCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

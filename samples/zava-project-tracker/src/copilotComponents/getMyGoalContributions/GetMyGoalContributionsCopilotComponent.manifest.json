@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "57fc9f39-31c4-414c-8399-d2252337a68d",
+  "alias": "GetMyGoalContributionsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetMyGoalContributions",
+      "description": {
+        "default": "Map the signed-in user's work to strategic objectives and measurable key results."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getMyGoalContributions/GetMyGoalContributionsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

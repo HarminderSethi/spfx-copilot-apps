@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "a023ecc0-3ec5-448b-92db-0321455c3f0d",
+  "alias": "GetPortfolioAiSpendCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetPortfolioAiSpend",
+      "description": {
+        "default": "Analyze portfolio AI spend, usage, model mix, unit cost, and project concentration."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getPortfolioAiSpend/GetPortfolioAiSpendCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

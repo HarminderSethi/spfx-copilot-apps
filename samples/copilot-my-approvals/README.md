@@ -60,7 +60,7 @@ After deploying the `.sppkg` to the App Catalog, a tenant admin must approve the
 - In the command line run:
   - `npm install`
   - `npm run start`
-- Since SPFx Copilot Components can't be tested in the local workbench, `npm start` serves against a hosted tenant workbench (see [`.vscode/launch.json`](./.vscode/launch.json))
+- Since SPFx Copilot Components can't be tested in the local workbench, `npm start` serves against the hosted tenant workbench configured in [`config/serve.json`](./config/serve.json)
 - Package and deploy the solution to your **App Catalog**, approve the API permissions above, then invoke the **MyApprovals Agent** in Microsoft 365 Copilot
 
 Production build, test, and package:

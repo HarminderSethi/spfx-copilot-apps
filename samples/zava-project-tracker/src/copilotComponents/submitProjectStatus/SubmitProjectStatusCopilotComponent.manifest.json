@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "9d101a7c-6924-4407-b34f-204cfe3b154d",
+  "alias": "SubmitProjectStatusCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "SubmitProjectStatus",
+      "description": {
+        "default": "Prepare an editable project status report for review before mock submission."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/submitProjectStatus/SubmitProjectStatusCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

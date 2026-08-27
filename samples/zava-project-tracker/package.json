@@ -1,0 +1,78 @@
+{
+  "name": "zava-project-tracker",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.14.0 < 23.0.0"
+  },
+  "scripts": {
+    "build": "npm run check:intents && npm run check:mock-media && npm run check:gallery && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output",
+    "check:gallery": "node scripts/validate-gallery-assets.mjs",
+    "check:generated-plugin": "node scripts/validate-generated-ai-plugin.mjs",
+    "check:intents": "node scripts/validate-intent-components.mjs",
+    "check:mock-media": "node scripts/generate-embedded-faces.mjs --check",
+    "check:package-output": "node scripts/validate-package-output.mjs",
+    "clean": "heft clean",
+    "eject-webpack": "heft eject-webpack",
+    "generate:mock-media": "node scripts/generate-embedded-faces.mjs",
+    "start": "heft start --clean",
+    "start:ux-review": "node scripts/serve-ux-review.mjs"
+  },
+  "dependencies": {
+    "@fluentui/react-avatar": "9.11.3",
+    "@fluentui/react-components": "9.54.0",
+    "@fluentui/react-icons": "2.0.270",
+    "@fluentui/react-motion": "9.16.1",
+    "@fluentui/react-provider": "9.22.18",
+    "@fluentui/react-text": "9.6.18",
+    "@fluentui/react-theme": "9.2.1",
+    "@griffel/react": "1.7.7",
+    "@microsoft/sp-copilot-component": "1.24.0-beta.2",
+    "@microsoft/sp-lodash-subset": "1.24.0-beta.2",
+    "d3-array": "^3.2.4",
+    "d3-format": "^3.1.0",
+    "d3-geo": "^3.1.1",
+    "d3-hierarchy": "^3.1.2",
+    "d3-sankey": "^0.12.3",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^3.2.0",
+    "d3-time-format": "^4.1.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tslib": "2.3.1",
+    "vega": "^6.2.0",
+    "vega-lite": "^6.4.1",
+    "zod": "3.24.1",
+    "zod-to-json-schema": "3.24.1"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-config-spfx": "1.24.0-beta.2",
+    "@microsoft/eslint-plugin-spfx": "1.24.0-beta.2",
+    "@microsoft/spfx-heft-plugins": "1.24.0-beta.2",
+    "@microsoft/spfx-web-build-rig": "1.24.0-beta.2",
+    "@rushstack/heft": "1.2.17",
+    "@types/d3-array": "^3.2.1",
+    "@types/d3-format": "^3.0.4",
+    "@types/d3-geo": "^3.1.0",
+    "@types/d3-hierarchy": "^3.1.7",
+    "@types/d3-sankey": "^0.12.4",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-shape": "^3.1.7",
+    "@types/d3-time-format": "^4.0.3",
+    "@types/jest": "30.0.0",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "17.0.17",
+    "@types/webpack-env": "~1.15.2",
+    "css-loader": "~7.1.2",
+    "esbuild": "0.25.9",
+    "eslint": "9.37.0",
+    "typescript": "~5.8.0",
+    "unzipper": "0.12.3"
+  },
+  "overrides": {
+    "@rushstack/heft": "1.2.17"
+  },
+  "resolutions": {
+    "@types/react": "17.0.45"
+  }
+}

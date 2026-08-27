@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "zava-project-tracker-client-side-solution",
+    "id": "2f61811a-8e4e-4234-8a27-811ee8199a4e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "zava-project-tracker description"
+      },
+      "longDescription": {
+        "default": "zava-project-tracker description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "zava-project-tracker Feature",
+        "description": "The feature that activates elements of the zava-project-tracker solution.",
+        "id": "9dad5dc9-1893-403c-828d-82ce5f4fbc87",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/zava-project-tracker.sppkg"
+  }
+}

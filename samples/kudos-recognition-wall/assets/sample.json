@@ -1,0 +1,81 @@
+[
+  {
+    "name": "pnp-spfx-copilot-apps-kudos-recognition-wall",
+    "source": "pnp",
+    "title": "Kudos & Recognition Wall - Recognise colleagues from Microsoft 365 Copilot chat",
+    "shortDescription": "Give kudos and browse your organization's recognition wall directly from Microsoft 365 Copilot chat.",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/kudos-recognition-wall",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/kudos-recognition-wall",
+    "longDescription": [
+      "Kudos & Recognition Wall brings peer recognition into Microsoft 365 Copilot. Ask the Kudos and Recognition Wall agent to show the wall and it renders an inline card of recent recognitions, or an expanded fullscreen wall with team, value, and time filters plus Most recognised and Top givers leaderboards. Name a colleague and a reason and it opens a pre-filled compose card so you can give kudos without leaving the conversation.",
+      "Built as a SharePoint Copilot App (SPFx 1.24.0-beta.2, @microsoft/sp-copilot-component), the same component renders both the compact inline card and the expanded wall. It reads and writes a SharePoint Kudos list via RenderListDataAsStream and brokers Microsoft Graph for colleague search and department enrichment, with a built-in mock backend for zero-setup demos and Fluent UI v9 runtime theming that follows the Copilot host."
+    ],
+    "creationDateTime": "2026-08-12",
+    "updateDateTime": "2026-08-12",
+    "products": [
+      "SharePoint",
+      "Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SPFx-CopilotComponent"
+      },
+      {
+        "key": "CLIENT-SIDE-DEV",
+        "value": "React"
+      },
+      {
+        "key": "SPFX-VERSION",
+        "value": "1.24.0-beta.2"
+      }
+    ],
+    "thumbnails": [
+      {
+        "name": "preview.png",
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/kudos-recognition-wall/assets/preview.png",
+        "alt": "Inline Kudos card inside a Microsoft 365 Copilot chat, showing a digest of recent recognitions with Give kudos and Open the wall actions."
+      },
+      {
+        "name": "kudos-recognition-wall-expanded.png",
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/kudos-recognition-wall/assets/kudos-recognition-wall-expanded.png",
+        "alt": "Expanded recognition wall with a filterable feed of kudos and Most recognised and Top givers leaderboards."
+      },
+      {
+        "name": "kudos-recognition-wall-give-kudos.png",
+        "type": "image",
+        "order": 102,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/kudos-recognition-wall/assets/kudos-recognition-wall-give-kudos.png",
+        "alt": "Give kudos dialog for choosing a colleague, team, and recognised value, with a message field."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ejazhussain",
+        "pictureUrl": "https://github.com/ejazhussain.png",
+        "name": "Ejaz Hussain"
+      }
+    ],
+    "references": [
+      {
+        "name": "Overview of SharePoint Copilot Apps",
+        "description": "Extend Microsoft 365 Copilot with custom, interactive experiences built using the familiar SharePoint Framework (SPFx) tools and client-side development model.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
+      },
+      {
+        "name": "Build agents for Microsoft 365 Copilot",
+        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
+      },
+      {
+        "name": "Overview of the SharePoint Framework",
+        "description": "The SharePoint Framework (SPFx) is a page and web part model that provides full support for client-side SharePoint development.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview"
+      }
+    ]
+  }
+]

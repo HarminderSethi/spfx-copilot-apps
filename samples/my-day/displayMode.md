@@ -2,9 +2,9 @@
 
 > Status: experimental — based on the in-development SPFx Copilot Component model. APIs may change.
 >
-> Reference source: [`BaseCopilotComponent.ts` on `main`](https://onedrive.visualstudio.com/ODSP-Web/_git/odsp-web?path=/sp-client/spfx-core/sp-copilot-component/src/BaseCopilotComponent.ts&version=GBmain&_a=contents)
+> Reference source: [Display modes in SharePoint Copilot components](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/displaymode)
 >
-> Worked example: [`HelloWorld` sample](./HelloWorld) in this folder.
+> Worked example: [Build your first SharePoint Copilot App](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app).
 
 ## TL;DR
 
@@ -33,7 +33,7 @@ It mirrors a subset of the MCP Apps [`McpUiHostContext`](https://apps.extensions
 
 ### How a `displayMode` change reaches your component
 
-```
+```ts
 ┌──────────────┐                                                ┌──────────────────────┐
 │ Copilot host │ ──ui/notifications/host-context-changed──▶    │     SPFx loader      │
 └──────────────┘     { displayMode: 'fullscreen' }              └──────────┬───────────┘
@@ -69,11 +69,12 @@ The signature literally only accepts `'fullscreen'`. From the JSDoc:
 
 What this means in practice:
 
-| You want to…                              | Who does it                                | How                                                                |
-| ----------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------ |
-| Expand from inline to fullscreen          | Component (or user via host UI)            | `await this.requestDisplayModeAsync('fullscreen')`                 |
-| Collapse from fullscreen back to inline   | **Host only** — user clicks host affordance | You do nothing. `onHostContextChanged` fires when it happens.      |
-| Detect any mode change                    | The framework                              | Re-renders automatically; read `this.hostContext.displayMode`.     |
+- **Expand from inline to fullscreen:** the component calls
+  `await this.requestDisplayModeAsync('fullscreen')`.
+- **Collapse from fullscreen back to inline:** the host owns this transition; the component waits
+  for `onHostContextChanged`.
+- **Detect any mode change:** the framework re-renders automatically; read
+  `this.hostContext.displayMode`.
 
 If you try to call `this.requestDisplayModeAsync('inline')`, TypeScript will reject it at compile time. There is intentionally no escape hatch — collapsing belongs to the host.
 
@@ -187,17 +188,18 @@ A flex header is generally preferable to `position: absolute` for a top-right co
 
 Three possible flows:
 
-| Flow              | What you see                                                                                                              |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Host honors       | `ISPRequestDisplayModeResult` resolves with the new mode → `onHostContextChanged({ displayMode: 'fullscreen' })` → re-render. |
-| Host denies       | `ISPRequestDisplayModeResult` resolves carrying the *unchanged* current mode. No `onHostContextChanged` fires.            |
-| Host later collapses (user-driven) | `onHostContextChanged({ displayMode: 'inline' })` → re-render. Your button reappears.                       |
+- **Host honors:** `ISPRequestDisplayModeResult` resolves with the new mode, then
+  `onHostContextChanged({ displayMode: 'fullscreen' })` triggers a re-render.
+- **Host denies:** the result carries the unchanged current mode and no context-change notification
+  fires.
+- **Host later collapses:** `onHostContextChanged({ displayMode: 'inline' })` triggers a re-render
+  and the component's expand button reappears.
 
 You only ever drive the *request*. You never own the resulting state — that's the host's job, communicated back through `hostContext` and the notification channel.
 
 ## 5. References
 
-- [`BaseCopilotComponent.ts` on `main`](https://onedrive.visualstudio.com/ODSP-Web/_git/odsp-web?path=/sp-client/spfx-core/sp-copilot-component/src/BaseCopilotComponent.ts&version=GBmain&_a=contents) — the source of truth for the API contract, including the `requestDisplayModeAsync` signature and JSDoc.
-- [`sp-copilot-component` package on `main`](https://onedrive.visualstudio.com/ODSP-Web/_git/odsp-web?path=%2Fsp-client%2Fspfx-core%2Fsp-copilot-component&version=GBmain&_a=contents) — the full package, including `SPCopilotBridge.ts` for the underlying transport.
+- [Display modes in SharePoint Copilot components](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/displaymode) — public API and lifecycle guidance for `hostContext.displayMode` and `requestDisplayModeAsync`.
+- [Build your first SharePoint Copilot App](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app) — public end-to-end component, Workbench, packaging, and deployment tutorial.
+- [SharePoint Framework v1.24 preview release notes](https://learn.microsoft.com/sharepoint/dev/spfx/release-1.24.0) — supported preview toolchain and package guidance.
 - [MCP Apps spec — `McpUiHostContext`](https://apps.extensions.modelcontextprotocol.io/api/interfaces/spec.types.McpUiHostContext.html) — the upstream shape that `ICopilotComponentHostContext` mirrors.
-- [HelloWorld sample](./HelloWorld) in this folder — a complete worked example: top-right Expand button, fullscreen pill, theme-aware palette, click counter to demonstrate `render()`-driven state changes.

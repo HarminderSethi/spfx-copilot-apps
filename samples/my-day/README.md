@@ -19,6 +19,9 @@ _Inline (left) + full-screen (right)._
 
 ## Screenshots & demo
 
+- [3-minute business and vision demo](./My-Day-3-Minute-Demo.md)
+- [5-minute developer and architecture demo](./My-Day-5-Minute-Technical-Demo.md)
+
 ### Inline
 
 ![Inline screenshot](./assets/screenshot-inline.png)
@@ -59,15 +62,15 @@ _Inline (left) + full-screen (right)._
 
 ## Solution
 
-| Solution | Author(s)                                               |
-| -------- | ------------------------------------------------------- |
-| my-day   | Vesa Juvonen (Microsoft) &#124; [GitHub](https://github.com/vesajuvonen) &#124; [LinkedIn](https://www.linkedin.com/in/vesajuvonen/) |
+- **Solution:** my-day
+- **Author:** Vesa Juvonen (Microsoft) | [GitHub](https://github.com/vesajuvonen) |
+  [LinkedIn](https://www.linkedin.com/in/vesajuvonen/)
 
 ## Version history
 
-| Version | Date | Comments        |
-| ------- | ---- | --------------- |
-| 1.0     | 7.2.2026  | Initial version |
+| Version | Date     | Comments        |
+| ------- | -------- | --------------- |
+| 1.0     | 7.2.2026 | Initial version |
 
 ## Disclaimer
 
@@ -92,7 +95,7 @@ _Inline (left) + full-screen (right)._
 Production build, test, and package:
 
 ```bash
-heft test --clean --production && heft package-solution --production
+npm run build
 ```
 
 Other build commands can be listed using `heft --help`.
@@ -147,7 +150,7 @@ The settings drawer is **controlled by session-scoped state** (`sessionStorage`)
 ### Wireframe
 
 ```text
-INLINE  ☀ Good morning, Vesa   ▸ Next: Sync 10:00 (12m)   ✓ 3 tasks due   📰 "SPFx Copilot Apps ships"
+INLINE  ☀ Good morning, Vesa   ▸ Next: Sync 10:00 (12m)   ✓ 3 tasks due   📰 "SPFx Copilot Components ships"
 
 FULL    ┌ Agenda timeline ┐┌ Tasks ◔ ┐┌ News wall ┐
         │  (dynamic grid) ││  Mail   ││ Quick a.  │   + "Plan my day" briefing · settings drawer
@@ -207,9 +210,10 @@ samples/my-day/
 
 > Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions in advance.
 
-> Share your solution with others through the Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/community/home.
+<!-- Separate PnP template callouts. -->
+
+> Share your solution with others through the Microsoft 365 Patterns and Practices program to get visibility and exposure. Learn more from the [Microsoft 365 & Power Platform Community](https://aka.ms/community/home).
 
 _Part of the **SharePoint Copilot Apps** sample gallery - complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
 
-
-<img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-apps/samples/my-day" />
+![Visitor statistics](https://m365-visitor-stats.azurewebsites.net/spfx-copilot-apps/samples/my-day)

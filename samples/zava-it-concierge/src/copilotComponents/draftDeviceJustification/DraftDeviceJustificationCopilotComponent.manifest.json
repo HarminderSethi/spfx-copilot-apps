@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "d52c4266-5f46-4e5f-b754-38de21b63374",
+  "alias": "DraftDeviceJustificationCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "DraftDeviceJustificationTool",
+      "description": {
+        "default": "Use only to draft or edit the business justification for an existing device request. Do not use to configure hardware, compare devices, or preview request cost."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/draftDeviceJustification/DraftDeviceJustificationCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

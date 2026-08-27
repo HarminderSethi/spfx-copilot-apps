@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "7ccdc228-b5ad-4944-b162-f4e506ee4073",
+  "alias": "ReleaseReadinessBoardCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "ReleaseReadinessBoardTool",
+      "description": {
+        "default": "Show release readiness with blockers, overdue checks, completion, and owner accountability."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/releaseReadinessBoard/ReleaseReadinessBoardCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

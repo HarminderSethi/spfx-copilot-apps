@@ -21,6 +21,8 @@ export interface IMyDayAppProps extends IMyDayCopilotComponentProperties {
   currentUser?: IUser;
   /** Color theme advertised by the Copilot host. */
   theme?: SPCopilotTheme;
+  /** Document that owns the Copilot component's host element. */
+  targetDocument?: Document;
   /** Container display mode advertised by the Copilot host. */
   displayMode?: SPCopilotDisplayMode;
   /** Display modes the host supports. */
@@ -36,7 +38,7 @@ export interface IMyDayAppProps extends IMyDayCopilotComponentProperties {
  * {@link MyDayFullscreen}) from the host-advertised display mode.
  */
 const MyDayApp: React.FunctionComponent<IMyDayAppProps> = (props) => {
-  const { message, currentUser, theme, displayMode, onRequestFullscreen } = props;
+  const { message, currentUser, theme, targetDocument, displayMode, onRequestFullscreen } = props;
 
   const view =
     displayMode === 'fullscreen' ? (
@@ -50,7 +52,11 @@ const MyDayApp: React.FunctionComponent<IMyDayAppProps> = (props) => {
       />
     );
 
-  return <MyDayThemeProvider theme={theme}>{view}</MyDayThemeProvider>;
+  return (
+    <MyDayThemeProvider theme={theme} targetDocument={targetDocument}>
+      {view}
+    </MyDayThemeProvider>
+  );
 };
 
 export default MyDayApp;

@@ -1,0 +1,352 @@
+- generic [ref=f11e5]:
+  - complementary "IT Concierge lenses" [ref=f11e6]:
+    - tablist [ref=f11e9]:
+      - tab "Personal" [ref=f11e10] [cursor=pointer]
+      - tab "Team" [ref=f11e13] [cursor=pointer]
+      - tab "IT portfolio" [selected] [ref=f11e16] [cursor=pointer]
+  - tabpanel "IT portfolio" [ref=f11e19]:
+    - banner [ref=f11e20]:
+      - generic [ref=f11e21]:
+        - generic [ref=f11e22]: IT portfolio dashboard
+        - strong [ref=f11e23]: IT control center
+      - generic [ref=f11e24]:
+        - generic [ref=f11e25]: Live operating picture
+        - button [ref=f11e26]
+    - generic [ref=f11e30]:
+      - generic [ref=f11e31]:
+        - generic [ref=f11e32]:
+          - img "Lee Gu" [ref=f11e33]
+          - generic [ref=f11e34]:
+            - text: IT control center
+            - heading "Enterprise technology health, service continuity, and investment value." [level=1] [ref=f11e35]
+            - paragraph [ref=f11e36]: One operating picture for Lee Gu and the IT leadership team.
+        - generic [ref=f11e37]:
+          - generic [ref=f11e38]: Last refreshed
+          - strong [ref=f11e39]: Today, 9:00 AM
+          - generic [ref=f11e40]: Deterministic showcase data
+      - generic [ref=f11e41]:
+        - generic [ref=f11e42]:
+          - generic [ref=f11e43]: Fleet health
+          - strong [ref=f11e44]: 77%
+          - generic [ref=f11e45]: 180 managed devices
+        - generic [ref=f11e46]:
+          - generic [ref=f11e47]: Open tickets
+          - strong [ref=f11e48]: "60"
+          - generic [ref=f11e49]: Across 8 categories
+        - generic [ref=f11e50]:
+          - generic [ref=f11e51]: Services healthy
+          - strong [ref=f11e52]: 3 / 5
+          - generic [ref=f11e53]: Teams and Intune degraded
+        - generic [ref=f11e54]:
+          - generic [ref=f11e55]: Forecast remaining
+          - strong [ref=f11e56]: $202,020
+          - generic [ref=f11e57]: After commitments and forecast
+        - generic [ref=f11e58]:
+          - generic [ref=f11e59]: License opportunity
+          - strong [ref=f11e60]: $44,774
+          - generic [ref=f11e61]: Annual reclaim value
+      - generic [ref=f11e62]:
+        - generic [ref=f11e63]:
+          - generic [ref=f11e64]:
+            - generic [ref=f11e65]:
+              - text: Global estate risk map
+              - heading "Where is device risk concentrated?" [level=2] [ref=f11e66]
+            - generic [ref=f11e67]:
+              - combobox "Filter fleet by region" [ref=f11e69] [cursor=pointer]:
+                - option "All regions" [selected]
+                - option "North America"
+                - option "Europe"
+                - option "Asia Pacific"
+                - option "Latin America"
+              - combobox "Filter fleet by department" [ref=f11e71] [cursor=pointer]:
+                - option "All departments" [selected]
+                - option "Product"
+                - option "Sales"
+                - option "Finance"
+                - option "Operations"
+                - option "Engineering"
+                - option "Marketing"
+          - generic [ref=f11e73]:
+            - img "Global estate device risk map Country map with selectable department cohorts in North America, Latin America, Europe, and Asia Pacific. Color shows health, marker size shows device count, and the outer ring shows critical-device count." [ref=f11e74]:
+              - generic: North America
+              - generic: Latin America
+              - generic: Europe
+              - generic: Asia Pacific
+              - 'button "North America / Product: 74% health, 10 devices, 4 critical" [ref=f11e79] [cursor=pointer]'
+              - 'button "North America / Sales: 76% health, 11 devices, 6 critical" [ref=f11e82] [cursor=pointer]'
+              - 'button "North America / Finance: 82% health, 2 devices, 1 critical" [ref=f11e85] [cursor=pointer]'
+              - 'button "North America / Operations: 72% health, 9 devices, 6 critical" [ref=f11e88] [cursor=pointer]'
+              - 'button "North America / Engineering: 74% health, 4 devices, 2 critical" [ref=f11e91] [cursor=pointer]'
+              - 'button "North America / Marketing: 76% health, 16 devices, 5 critical" [ref=f11e94] [cursor=pointer]'
+              - 'button "Europe / Product: 80% health, 9 devices, 3 critical" [ref=f11e97] [cursor=pointer]'
+              - 'button "Europe / Sales: 76% health, 8 devices, 3 critical" [ref=f11e100] [cursor=pointer]'
+              - 'button "Europe / Finance: 80% health, 8 devices, 2 critical" [ref=f11e103] [cursor=pointer]'
+              - 'button "Europe / Operations: 79% health, 3 devices, 0 critical" [ref=f11e106] [cursor=pointer]'
+              - 'button "Europe / Engineering: 77% health, 3 devices, 1 critical" [ref=f11e109] [cursor=pointer]'
+              - 'button "Europe / Marketing: 78% health, 10 devices, 3 critical" [ref=f11e112] [cursor=pointer]'
+              - 'button "Asia Pacific / Product: 80% health, 7 devices, 1 critical" [ref=f11e115] [cursor=pointer]'
+              - 'button "Asia Pacific / Sales: 76% health, 7 devices, 4 critical" [ref=f11e118] [cursor=pointer]'
+              - 'button "Asia Pacific / Finance: 75% health, 5 devices, 4 critical" [ref=f11e121] [cursor=pointer]'
+              - 'button "Asia Pacific / Operations: 82% health, 8 devices, 2 critical" [ref=f11e124] [cursor=pointer]'
+              - 'button "Asia Pacific / Engineering: 74% health, 13 devices, 9 critical" [ref=f11e127] [cursor=pointer]'
+              - 'button "Asia Pacific / Marketing: 80% health, 6 devices, 2 critical" [ref=f11e130] [cursor=pointer]'
+              - 'button "Latin America / Product: 80% health, 4 devices, 1 critical" [ref=f11e133] [cursor=pointer]'
+              - 'button "Latin America / Sales: 75% health, 8 devices, 3 critical" [ref=f11e136] [cursor=pointer]'
+              - 'button "Latin America / Finance: 76% health, 7 devices, 2 critical" [ref=f11e139] [cursor=pointer]'
+              - 'button "Latin America / Operations: 79% health, 11 devices, 3 critical" [ref=f11e142] [cursor=pointer]'
+              - 'button "Latin America / Engineering: 75% health, 6 devices, 3 critical" [ref=f11e145] [cursor=pointer]'
+              - 'button "Latin America / Marketing: 78% health, 5 devices, 1 critical" [ref=f11e148] [cursor=pointer]'
+            - generic "Map legend" [ref=f11e151]:
+              - generic [ref=f11e152]: 80+ healthy
+              - generic [ref=f11e154]: 75-79 watch
+              - generic [ref=f11e156]: 70-74 attention
+              - generic [ref=f11e158]:
+                - generic [ref=f11e159]: Circle
+                - text: device volume
+              - generic [ref=f11e160]:
+                - generic [ref=f11e161]: Ring
+                - text: critical devices
+          - generic [ref=f11e162]:
+            - generic [ref=f11e163]: Selected cohort
+            - strong [ref=f11e164]: North America / Product
+            - generic [ref=f11e165]: 74% health
+            - generic [ref=f11e166]: 10 devices / 4 critical
+        - complementary [ref=f11e167]:
+          - generic [ref=f11e168]:
+            - text: Major incident
+            - generic [ref=f11e169]:
+              - generic [ref=f11e170]: Investigating
+              - generic [ref=f11e171]: INC-7091
+            - heading "Intermittent Teams media routing" [level=2] [ref=f11e172]
+            - paragraph [ref=f11e173]: 18 signals and 12 tickets converge across Europe and North America.
+            - generic [ref=f11e174]:
+              - img "Lee Gu" [ref=f11e175]
+              - generic [ref=f11e176]:
+                - strong [ref=f11e177]: Lee Gu
+                - generic [ref=f11e178]: Incident commander
+          - generic [ref=f11e179]:
+            - generic [ref=f11e180]:
+              - generic [ref=f11e181]:
+                - text: Microsoft 365
+                - heading "Service health" [level=2] [ref=f11e182]
+              - generic [ref=f11e183]: 3 healthy
+            - generic [ref=f11e184]:
+              - generic [ref=f11e185]: Microsoft Teams
+              - generic [ref=f11e186]: Degraded
+              - generic [ref=f11e187]: 1 active
+            - generic [ref=f11e188]:
+              - generic [ref=f11e189]: Exchange Online
+              - generic [ref=f11e190]: Healthy
+              - generic [ref=f11e191]: No incidents
+            - generic [ref=f11e192]:
+              - generic [ref=f11e193]: SharePoint Online
+              - generic [ref=f11e194]: Healthy
+              - generic [ref=f11e195]: No incidents
+            - generic [ref=f11e196]:
+              - generic [ref=f11e197]: OneDrive for Business
+              - generic [ref=f11e198]: Healthy
+              - generic [ref=f11e199]: No incidents
+            - generic [ref=f11e200]:
+              - generic [ref=f11e201]: Microsoft Intune
+              - generic [ref=f11e202]: Degraded
+              - generic [ref=f11e203]: 1 active
+          - generic [ref=f11e204]:
+            - generic [ref=f11e205]:
+              - generic [ref=f11e206]:
+                - generic [ref=f11e207]: People impact
+                - heading "Accountability and reach" [level=2] [ref=f11e208]
+              - generic [ref=f11e209]: 82 affected
+            - generic [ref=f11e210]:
+              - img "Lee Gu" [ref=f11e211]
+              - generic [ref=f11e212]:
+                - strong [ref=f11e213]: Lee Gu
+                - generic [ref=f11e214]: Incident command / Europe
+              - generic [ref=f11e215]: Owner
+            - generic [ref=f11e216]:
+              - img "Diego Siciliani" [ref=f11e217]
+              - generic [ref=f11e218]:
+                - strong [ref=f11e219]: Diego Siciliani
+                - generic [ref=f11e220]: Business approvals / Product
+              - generic [ref=f11e221]: 7 pending
+            - generic [ref=f11e222]:
+              - img "Megan Bowen" [ref=f11e223]
+              - generic [ref=f11e224]:
+                - strong [ref=f11e225]: Megan Bowen
+                - generic [ref=f11e226]: Impacted user / North America
+              - generic [ref=f11e227]: 2 cases
+      - generic [ref=f11e228]:
+        - generic [ref=f11e229]:
+          - generic [ref=f11e230]:
+            - generic [ref=f11e231]:
+              - text: Demand
+              - heading "Ticket volume and deflection" [level=2] [ref=f11e232]
+            - generic [ref=f11e233]: 60 open
+          - img "Six-month IT ticket volume and deflection trend" [ref=f11e234]:
+            - generic [ref=f11e235]:
+              - strong [ref=f11e238]: "45"
+              - generic [ref=f11e239]: 1 mo
+            - generic [ref=f11e240]:
+              - strong [ref=f11e243]: "38"
+              - generic [ref=f11e244]: 2 mo
+            - generic [ref=f11e245]:
+              - strong [ref=f11e248]: "56"
+              - generic [ref=f11e249]: 3 mo
+            - generic [ref=f11e250]:
+              - strong [ref=f11e253]: "55"
+              - generic [ref=f11e254]: 4 mo
+            - generic [ref=f11e255]:
+              - strong [ref=f11e258]: "46"
+              - generic [ref=f11e259]: 5 mo
+            - generic [ref=f11e260]:
+              - strong [ref=f11e263]: "47"
+              - generic [ref=f11e264]: 6 mo
+        - generic [ref=f11e265]:
+          - generic [ref=f11e266]:
+            - generic [ref=f11e267]:
+              - text: Investment
+              - heading "Budget to forecast bridge" [level=2] [ref=f11e268]
+            - generic [ref=f11e269]: $202,020 remaining
+          - generic [ref=f11e270]:
+            - generic [ref=f11e271]:
+              - generic [ref=f11e272]: Budget
+              - strong [ref=f11e274]: $804,000
+            - generic [ref=f11e275]:
+              - generic [ref=f11e276]: Spent
+              - strong [ref=f11e278]: $474,360
+            - generic [ref=f11e279]:
+              - generic [ref=f11e280]: Committed
+              - strong [ref=f11e282]: $63,300
+            - generic [ref=f11e283]:
+              - generic [ref=f11e284]: Forecast
+              - strong [ref=f11e286]: $64,320
+            - generic [ref=f11e287]:
+              - generic [ref=f11e288]: Remaining
+              - strong [ref=f11e290]: $202,020
+        - generic [ref=f11e291]:
+          - generic [ref=f11e292]:
+            - generic [ref=f11e293]:
+              - text: Support drivers
+              - heading "Top issue categories" [level=2] [ref=f11e294]
+            - generic [ref=f11e295]: 80% focus
+          - img "Top IT issue categories" [ref=f11e296]:
+            - generic [ref=f11e297]:
+              - generic [ref=f11e298]: Software access
+              - strong [ref=f11e301]: "38"
+            - generic [ref=f11e302]:
+              - generic [ref=f11e303]: VPN
+              - strong [ref=f11e306]: "38"
+            - generic [ref=f11e307]:
+              - generic [ref=f11e308]: Email
+              - strong [ref=f11e311]: "38"
+            - generic [ref=f11e312]:
+              - generic [ref=f11e313]: Hardware
+              - strong [ref=f11e316]: "38"
+            - generic [ref=f11e317]:
+              - generic [ref=f11e318]: Performance
+              - strong [ref=f11e321]: "37"
+            - generic [ref=f11e322]:
+              - generic [ref=f11e323]: Password
+              - strong [ref=f11e326]: "37"
+      - generic [ref=f11e327]:
+        - generic [ref=f11e328]:
+          - generic [ref=f11e329]:
+            - generic [ref=f11e330]:
+              - text: Lifecycle outlook
+              - heading "Device age distribution" [level=2] [ref=f11e331]
+            - generic [ref=f11e332]: 34 past threshold
+          - img "Device age distribution" [ref=f11e333]:
+            - generic [ref=f11e334]:
+              - generic [ref=f11e335]: 0-1 year
+              - strong [ref=f11e338]: "22"
+            - generic [ref=f11e339]:
+              - generic [ref=f11e340]: 1-2 years
+              - strong [ref=f11e343]: "34"
+            - generic [ref=f11e344]:
+              - generic [ref=f11e345]: 2-3 years
+              - strong [ref=f11e348]: "32"
+            - generic [ref=f11e349]:
+              - generic [ref=f11e350]: 3-4 years
+              - strong [ref=f11e353]: "37"
+            - generic [ref=f11e354]:
+              - generic [ref=f11e355]: 4-5 years
+              - strong [ref=f11e358]: "28"
+            - generic [ref=f11e359]:
+              - generic [ref=f11e360]: 5+ years
+              - strong [ref=f11e363]: "27"
+        - generic [ref=f11e364]:
+          - generic [ref=f11e365]:
+            - generic [ref=f11e366]:
+              - text: Capacity plan
+              - heading "Refresh waves" [level=2] [ref=f11e367]
+            - generic [ref=f11e368]: 1 over capacity
+          - generic [ref=f11e369]:
+            - generic [ref=f11e370]:
+              - generic [ref=f11e371]:
+                - text: FY26 Q3
+                - generic [ref=f11e372]: North America
+              - generic [ref=f11e373]: 50 devices
+              - strong [ref=f11e375]: $71,000
+            - generic [ref=f11e376]:
+              - generic [ref=f11e377]:
+                - text: FY26 Q3
+                - generic [ref=f11e378]: Europe
+              - generic [ref=f11e379]: 46 devices
+              - strong [ref=f11e381]: $67,850
+            - generic [ref=f11e382]:
+              - generic [ref=f11e383]:
+                - text: FY26 Q3
+                - generic [ref=f11e384]: Asia Pacific
+              - generic [ref=f11e385]: 49 devices
+              - strong [ref=f11e387]: $74,970
+            - generic [ref=f11e388]:
+              - generic [ref=f11e389]:
+                - text: FY26 Q3
+                - generic [ref=f11e390]: Latin America
+              - generic [ref=f11e391]: 59 devices
+              - strong [ref=f11e393]: $93,515
+            - generic [ref=f11e394]:
+              - generic [ref=f11e395]:
+                - text: FY26 Q4
+                - generic [ref=f11e396]: North America
+              - generic [ref=f11e397]: 64 devices
+              - strong [ref=f11e399]: $90,880
+            - generic [ref=f11e400]:
+              - generic [ref=f11e401]:
+                - text: FY26 Q4
+                - generic [ref=f11e402]: Europe
+              - generic [ref=f11e403]: 69 devices
+              - strong [ref=f11e405]: $101,775
+        - generic [ref=f11e406]:
+          - generic [ref=f11e407]:
+            - generic [ref=f11e408]:
+              - text: Value recovery
+              - heading "License reclaim" [level=2] [ref=f11e409]
+            - generic [ref=f11e410]: $44,774 / year
+          - generic [ref=f11e411]:
+            - generic [ref=f11e412]:
+              - generic [ref=f11e413]:
+                - strong [ref=f11e414]: Microsoft 365 E5
+                - generic [ref=f11e415]: 1168 active of 1240
+              - generic [ref=f11e416]: 42 reclaimable
+              - strong [ref=f11e417]: $23,940
+            - generic [ref=f11e418]:
+              - generic [ref=f11e419]:
+                - strong [ref=f11e420]: Power BI Pro
+                - generic [ref=f11e421]: 431 active of 510
+              - generic [ref=f11e422]: 58 reclaimable
+              - strong [ref=f11e423]: $8,352
+            - generic [ref=f11e424]:
+              - generic [ref=f11e425]:
+                - strong [ref=f11e426]: Visio Plan 2
+                - generic [ref=f11e427]: 137 active of 184
+              - generic [ref=f11e428]: 31 reclaimable
+              - strong [ref=f11e429]: $5,642
+            - generic [ref=f11e430]:
+              - generic [ref=f11e431]:
+                - strong [ref=f11e432]: Project Plan 3
+                - generic [ref=f11e433]: 96 active of 126
+              - generic [ref=f11e434]: 19 reclaimable
+              - strong [ref=f11e435]: $6,840
+    - contentinfo [ref=f11e436]:
+      - generic [ref=f11e437]: Prepared for Megan Bowen
+      - generic [ref=f11e440]: Dashboard data as of 2026-08-22

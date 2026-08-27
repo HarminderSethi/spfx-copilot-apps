@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "1edf4ba0-1b27-43e6-be20-62c6433f11d5",
+  "alias": "LeaveBalanceCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetLeaveBalance",
+      "description": {
+        "default": "Show the signed-in employee's available leave as a visual balance composition with expiring carryover and upcoming booked time. Use for balance questions; use RequestTimeOff when the user wants to book dates."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/leaveBalance/LeaveBalanceCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

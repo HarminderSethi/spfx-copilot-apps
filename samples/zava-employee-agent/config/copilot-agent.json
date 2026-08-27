@@ -1,0 +1,35 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Zava Employee Agent"
+      },
+      "description": {
+        "default": "An employee-first HR front door with 20 dedicated tools for summaries, policy, leave, pay, benefits, private support, required learning, total rewards, manager approvals, team absence, experts, and organization context."
+      },
+      "components": [
+        "8064330b-0364-4491-88f7-2461d4d1b2ab",
+        "4d9b7f77-f6a1-4d27-94db-d98ef1e13b16",
+        "242bb7e3-385b-441c-ae83-137f67274360",
+        "9b0eda01-ec31-404d-8178-8f4dac580217",
+        "33b1fe16-e3cd-46e8-bcfe-9cde014c3f1e",
+        "416c0f19-021e-4405-9f21-02957bd3d12f",
+        "63b7d56d-08b1-4cd3-8baa-57e45db2cec1",
+        "1edf4ba0-1b27-43e6-be20-62c6433f11d5",
+        "703eefce-e788-4b7b-953a-27be16a24256",
+        "d37a8755-d839-4981-b7d2-3111887af626",
+        "f0e53524-4301-4bf7-bcbd-f24f41ac8768",
+        "5ac0d82d-3755-4dce-bd1e-25fc84ade775",
+        "0e499a63-6927-49e5-8287-c53ec11ac69e",
+        "5fab161e-1a31-40f1-b0fd-32efe8db3139",
+        "ec97942d-c6d7-4c7c-b4e5-fe99e92f064b",
+        "1b8eb747-3d16-4876-ac5b-1923d251fbc6",
+        "4aa6f973-4fe7-48c4-9e89-11d3cb3b687f",
+        "b0c11879-9934-4e06-ab0d-75aa6832103b",
+        "e8c49623-76d1-4728-8e78-5a90f735e293",
+        "ad3d32f9-5f28-47cc-9cce-fc0e1eca4e76"
+      ]
+    }
+  ]
+}

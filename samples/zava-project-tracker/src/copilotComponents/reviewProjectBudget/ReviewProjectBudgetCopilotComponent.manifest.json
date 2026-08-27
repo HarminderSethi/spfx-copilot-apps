@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "a1f63dcf-b832-4f4c-b799-544cf9aab873",
+  "alias": "ReviewProjectBudgetCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReviewProjectBudget",
+      "description": {
+        "default": "Review a project budget request, forecast bridge, alternatives, and benefit impact."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reviewProjectBudget/ReviewProjectBudgetCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

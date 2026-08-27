@@ -1,0 +1,65 @@
+---
+import { ArrowRight, ExternalLink } from '@lucide/astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const videos = [
+  {
+    label: 'Try',
+    title: 'Test and demo SharePoint Copilot Apps in minutes - in any Microsoft 365 tenant',
+    id: '4asOZi4PNUQ',
+  },
+  {
+    label: 'Explore',
+    title: 'Copilot Just Got a Body: Real Enterprise Apps, Live Inside the Canvas',
+    id: 'sq2HRK1J3_o',
+  },
+  {
+    label: 'Build',
+    title: 'Creating your first SharePoint Copilot App - Tutorial',
+    id: '1TaK6osdvc0',
+  },
+];
+---
+
+<BaseLayout title="Getting started" description="Choose, test, and build Copilot Components with SPFx.">
+  <header class="page-heading container">
+    <p class="eyebrow">Getting started</p>
+    <h1>From sample to working component</h1>
+    <p>Each sample is self-contained. Choose an experience, review its prerequisites, and follow the sample README as the authoritative setup guide.</p>
+  </header>
+
+  <section class="steps-band">
+    <ol class="container getting-started-steps">
+      <li><strong>1</strong><div><h2>Choose a component</h2><p>Start with the scenario and interaction pattern that matches your goal.</p></div></li>
+      <li><strong>2</strong><div><h2>Check prerequisites</h2><p>Confirm the documented SPFx, Node.js, tenant, permission, and Copilot requirements.</p></div></li>
+      <li><strong>3</strong><div><h2>Build and deploy</h2><p>Run the commands from that sample’s README and deploy its package through your app catalog.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="content-section container">
+    <div class="section-heading"><div><p class="eyebrow">Learning path</p><h2>See the full workflow</h2></div></div>
+    <div class="video-grid">
+      {videos.map((video) => (
+        <article class="video-card">
+          <a class="video-card__media" href={`https://www.youtube.com/watch?v=${video.id}`}>
+            <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" />
+            <span aria-hidden="true">▶</span>
+          </a>
+          <div><p class="eyebrow">{video.label}</p><h3>{video.title}</h3><a href={`https://www.youtube.com/watch?v=${video.id}`}>Watch on YouTube <ExternalLink size={15} aria-hidden="true" /></a></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="content-section content-section--tint">
+    <div class="container resource-list">
+      <div><p class="eyebrow">Official guidance</p><h2>Build on the supported platform</h2><p>Use the current Microsoft documentation for environment setup, packaging, deployment, and Copilot extensibility concepts.</p></div>
+      <nav aria-label="Getting started resources">
+        <a href="https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment">Set up the SPFx environment <ArrowRight size={16} aria-hidden="true" /></a>
+        <a href="https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps">Overview of SharePoint Copilot Apps <ArrowRight size={16} aria-hidden="true" /></a>
+        <a href="https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app">Build your first Copilot App <ArrowRight size={16} aria-hidden="true" /></a>
+        <a href="https://microsoft.github.io/copilot-camp/pages/sharepoint/sharepoint-copilot-apps/">Copilot Camp hands-on lab <ArrowRight size={16} aria-hidden="true" /></a>
+      </nav>
+    </div>
+  </section>
+</BaseLayout>

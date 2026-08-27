@@ -1,0 +1,70 @@
+- main [ref=f148e5]:
+  - generic [ref=f148e6]:
+    - generic [ref=f148e7]:
+      - generic [ref=f148e8]: Zava IT Concierge
+      - heading "Draft justification" [level=2] [ref=f148e10]
+    - button "View in full screen" [ref=f148e11]
+  - generic [ref=f148e15]:
+    - generic [ref=f148e16]:
+      - generic [ref=f148e17]:
+        - generic [ref=f148e18]: Create and review
+        - heading "Draft justification" [level=3] [ref=f148e19]
+        - paragraph [ref=f148e20]: Draft an editable, evidence-grounded business justification for a device request.
+      - region "Draft justification form" [ref=f148e22]:
+        - generic [ref=f148e23]:
+          - generic [ref=f148e24]: Business outcome*
+          - combobox "Business outcome" [ref=f148e26] [cursor=pointer]: Customer workshops
+        - group "Evidence to include" [ref=f148e30]:
+          - generic [ref=f148e32] [cursor=pointer]:
+            - 'checkbox "Battery health: 62%" [checked] [ref=f148e33]'
+            - generic [ref=f148e34]: "Battery health: 62%"
+          - generic [ref=f148e35] [cursor=pointer]:
+            - 'checkbox "Device age: 42 months" [checked] [ref=f148e36]'
+            - generic [ref=f148e37]: "Device age: 42 months"
+          - generic [ref=f148e38] [cursor=pointer]:
+            - checkbox "Standard policy path" [checked] [ref=f148e39]
+            - generic [ref=f148e40]: Standard policy path
+          - generic [ref=f148e41] [cursor=pointer]:
+            - checkbox "Four upcoming workshops" [ref=f148e42]
+            - generic [ref=f148e43]: Four upcoming workshops
+        - generic [ref=f148e44]:
+          - generic [ref=f148e45]: Editable justification*
+          - textbox "Editable justification" [ref=f148e47]
+          - generic [ref=f148e48]: Use the selected evidence to explain why the request is necessary.
+        - button [disabled] [ref=f148e49]
+    - complementary "Selected evidence" [ref=f148e53]:
+      - paragraph [ref=f148e54]: Decision insight
+      - paragraph [ref=f148e55]: The draft connects customer workshops, battery constraints, device age, and policy timing.
+      - list [ref=f148e56]:
+        - listitem [ref=f148e57]:
+          - generic [ref=f148e61]:
+            - strong [ref=f148e62]: Business outcome
+            - generic [ref=f148e63]: Reliable all-day facilitation
+          - generic [ref=f148e64]: Customer workshops
+        - listitem [ref=f148e65]:
+          - generic [ref=f148e69]:
+            - strong [ref=f148e70]: Device evidence
+            - generic [ref=f148e71]: Below mobile-work target
+          - generic [ref=f148e72]: Battery 62%
+        - listitem [ref=f148e73]:
+          - generic [ref=f148e77]:
+            - strong [ref=f148e78]: Lifecycle evidence
+            - generic [ref=f148e79]: Approaching refresh threshold
+          - generic [ref=f148e80]: 42 months
+        - listitem [ref=f148e81]:
+          - generic [ref=f148e85]:
+            - strong [ref=f148e86]: Policy fit
+            - generic [ref=f148e87]: No exception required
+          - generic [ref=f148e88]: Standard path
+      - generic [ref=f148e89]:
+        - paragraph [ref=f148e90]: From your prompt
+        - generic [ref=f148e91]:
+          - strong [ref=f148e92]: requestId
+          - text: REQ-2048
+        - generic [ref=f148e93]:
+          - strong [ref=f148e94]: emphasis
+          - text: Customer workshops
+      - 'generic "Experience type: Submission workflow" [ref=f148e95]': Submission workflow
+  - generic [ref=f148e99]:
+    - generic [ref=f148e100]: Prepared for Megan Bowen
+    - generic [ref=f148e101]: me/request-workspace#justify

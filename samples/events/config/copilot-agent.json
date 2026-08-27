@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Events Agent"
+      },
+      "description": {
+        "default": "Find and explore SharePoint Events by date, topic, site, or layout."
+      },
+      "components": [
+        "1b9c5d4d-ff19-419c-9ade-878fa00187c6"
+      ]
+    }
+  ]
+}

@@ -1,12 +1,8 @@
 import * as React from 'react';
 
-import {
-  FluentProvider,
-  makeStyles,
-  tokens,
-  webDarkTheme,
-  webLightTheme
-} from '@fluentui/react-components';
+import { FluentProvider } from '@fluentui/react-provider';
+import { webDarkTheme, webLightTheme, tokens } from '@fluentui/react-theme';
+import { createDOMRenderer, makeStyles, RendererProvider } from '@griffel/react';
 import type { SPCopilotTheme } from '@microsoft/sp-copilot-component';
 
 const useStyles = makeStyles({
@@ -26,7 +22,29 @@ const useStyles = makeStyles({
 export interface IMyDayThemeProviderProps {
   /** Color theme advertised by the Copilot host. */
   theme?: SPCopilotTheme;
+  /** Document that owns the Copilot component's host element. */
+  targetDocument?: Document;
 }
+
+interface IMyDayFluentProviderProps extends IMyDayThemeProviderProps {
+  mountGeneration: number;
+}
+
+const MyDayFluentProvider: React.FunctionComponent<IMyDayFluentProviderProps> = (props) => {
+  const styles = useStyles();
+  const fluentTheme = props.theme === 'dark' ? webDarkTheme : webLightTheme;
+
+  return (
+    <FluentProvider
+      key={props.mountGeneration}
+      theme={fluentTheme}
+      targetDocument={props.targetDocument}
+      className={styles.provider}
+    >
+      {props.children}
+    </FluentProvider>
+  );
+};
 
 /**
  * Sets up Fluent UI v9 theming for the component.
@@ -40,8 +58,10 @@ export interface IMyDayThemeProviderProps {
  * which re-runs Fluent's style insertion once the host document is ready.
  */
 const MyDayThemeProvider: React.FunctionComponent<IMyDayThemeProviderProps> = (props) => {
-  const styles = useStyles();
-  const { theme, children } = props;
+  const renderer = React.useMemo(
+    () => createDOMRenderer(props.targetDocument),
+    [props.targetDocument]
+  );
 
   const [mountGeneration, setMountGeneration] = React.useState(0);
   React.useEffect(() => {
@@ -50,12 +70,16 @@ const MyDayThemeProvider: React.FunctionComponent<IMyDayThemeProviderProps> = (p
     setMountGeneration(1);
   }, []);
 
-  const fluentTheme = theme === 'dark' ? webDarkTheme : webLightTheme;
-
   return (
-    <FluentProvider key={mountGeneration} theme={fluentTheme} className={styles.provider}>
-      {children}
-    </FluentProvider>
+    <RendererProvider renderer={renderer} targetDocument={props.targetDocument}>
+      <MyDayFluentProvider
+        mountGeneration={mountGeneration}
+        theme={props.theme}
+        targetDocument={props.targetDocument}
+      >
+        {props.children}
+      </MyDayFluentProvider>
+    </RendererProvider>
   );
 };
 

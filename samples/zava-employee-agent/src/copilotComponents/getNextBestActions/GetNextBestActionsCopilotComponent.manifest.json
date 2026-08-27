@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "242bb7e3-385b-441c-ae83-137f67274360",
+  "alias": "GetNextBestActionsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "GetNextBestActions",
+      "description": {
+        "default": "Rank the signed-in employee's next best HR actions. Use this tool for prompts such as 'What should I do next?', 'Show my HR priorities', or 'What HR tasks are most urgent?'. Pass an explicitly requested period or HR focus family, and include sensitive actions only when the user explicitly asks for them."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getNextBestActions/GetNextBestActionsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

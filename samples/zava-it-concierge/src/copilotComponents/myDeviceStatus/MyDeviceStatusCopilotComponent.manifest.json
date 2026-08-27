@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "9db2cb5c-9458-4de8-b34b-8ed4353f39d6",
+  "alias": "MyDeviceStatusCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "MyDeviceStatusTool",
+      "description": {
+        "default": "Use for an assigned-device overview: Surface model, owner, warranty, compliance, and summary health. Do not use for detailed health metrics or running diagnostics."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/myDeviceStatus/MyDeviceStatusCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

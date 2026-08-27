@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "cb24c889-dd73-413e-b5ac-2aacc2135f38",
+  "alias": "CorrelateMajorIncidentCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "CorrelateMajorIncidentTool",
+      "description": {
+        "default": "Use to investigate or correlate signals, services, regions, and tickets for one potential major incident. Do not use for the general service-health board or user issue submission."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/correlateMajorIncident/CorrelateMajorIncidentCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

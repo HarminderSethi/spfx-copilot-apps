@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "fe69f8fc-4f97-449f-9eb3-600faffe2672",
+  "alias": "GetPortfolioRiskExposureCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetPortfolioRiskExposure",
+      "description": {
+        "default": "Analyze systemic portfolio risk, concentration, propagation, and shared mitigations."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getPortfolioRiskExposure/GetPortfolioRiskExposureCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+- main [ref=f3e5]:
+  - generic [ref=f3e6]:
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]: Zava IT Concierge
+      - heading "IT spend bridge" [level=2] [ref=f3e10]
+    - button "View in full screen" [ref=f3e11]
+  - generic [ref=f3e16]:
+    - generic [ref=f3e17]:
+      - generic:
+        - generic: $202,020
+        - generic: Forecast remaining
+      - generic [ref=f3e18]:
+        - img "IT spend bridge IT spend bridge. 5 selectable data marks.. Select a mark for exact detail." [ref=f3e19]:
+          - 'button "Budget: 804000" [ref=f3e20] [cursor=pointer]':
+            - generic [ref=f3e23]: $804,000
+            - generic [ref=f3e24]: Budget
+          - 'button "Spent: 474360" [ref=f3e25] [cursor=pointer]':
+            - generic [ref=f3e28]: $474,360
+            - generic [ref=f3e29]: Spent
+          - 'button "Committed: 63300" [ref=f3e30] [cursor=pointer]':
+            - generic [ref=f3e33]: $63,300
+            - generic [ref=f3e34]: Committed
+          - 'button "Forecast: 64320" [ref=f3e35] [cursor=pointer]':
+            - generic [ref=f3e38]: $64,320
+            - generic [ref=f3e39]: Forecast
+          - 'button "Remaining: 202020" [ref=f3e40] [cursor=pointer]':
+            - generic [ref=f3e43]: $202,020
+            - generic [ref=f3e44]: Remaining
+        - generic "IT spend bridge data" [ref=f3e45]:
+          - button "Budget $804,000" [pressed] [ref=f3e46] [cursor=pointer]:
+            - generic [ref=f3e48]: Budget
+            - strong [ref=f3e49]: $804,000
+          - button "Spent $474,360" [ref=f3e50] [cursor=pointer]:
+            - generic [ref=f3e52]: Spent
+            - strong [ref=f3e53]: $474,360
+          - button "Committed $63,300" [ref=f3e54] [cursor=pointer]:
+            - generic [ref=f3e56]: Committed
+            - strong [ref=f3e57]: $63,300
+          - button "Forecast $64,320" [ref=f3e58] [cursor=pointer]:
+            - generic [ref=f3e60]: Forecast
+            - strong [ref=f3e61]: $64,320
+          - button "Remaining $202,020" [ref=f3e62] [cursor=pointer]:
+            - generic [ref=f3e64]: Remaining
+            - strong [ref=f3e65]: $202,020
+    - complementary "Selected evidence" [ref=f3e66]:
+      - paragraph [ref=f3e67]: Decision insight
+      - paragraph [ref=f3e68]: Committed hardware is the largest variance driver; forecast remains positive without deferring refresh work.
+      - list [ref=f3e69]:
+        - listitem [ref=f3e70]:
+          - generic [ref=f3e74]:
+            - strong [ref=f3e75]: Budget
+            - generic [ref=f3e76]: Available balance
+          - generic [ref=f3e77]: $804,000
+        - listitem [ref=f3e78]:
+          - generic [ref=f3e82]:
+            - strong [ref=f3e83]: Spent
+            - generic [ref=f3e84]: Reduces remaining budget
+          - generic [ref=f3e85]: $474,360
+        - listitem [ref=f3e86]:
+          - generic [ref=f3e90]:
+            - strong [ref=f3e91]: Committed
+            - generic [ref=f3e92]: Reduces remaining budget
+          - generic [ref=f3e93]: $63,300
+        - listitem [ref=f3e94]:
+          - generic [ref=f3e98]:
+            - strong [ref=f3e99]: Forecast
+            - generic [ref=f3e100]: Reduces remaining budget
+          - generic [ref=f3e101]: $64,320
+        - listitem [ref=f3e102]:
+          - generic [ref=f3e106]:
+            - strong [ref=f3e107]: Remaining
+            - generic [ref=f3e108]: Available balance
+          - generic [ref=f3e109]: $202,020
+      - generic [ref=f3e110]:
+        - paragraph [ref=f3e111]: From your prompt
+        - generic [ref=f3e112]:
+          - strong [ref=f3e113]: quarter
+          - text: current
+        - generic [ref=f3e114]:
+          - strong [ref=f3e115]: department
+          - text: all
+      - 'generic "Experience type: Read-only insight" [ref=f3e116]': Read-only insight
+  - generic [ref=f3e120]:
+    - generic [ref=f3e121]: Prepared for Megan Bowen
+    - generic [ref=f3e122]: company/control-center#spend

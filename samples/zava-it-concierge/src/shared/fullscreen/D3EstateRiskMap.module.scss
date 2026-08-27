@@ -1,0 +1,151 @@
+.root {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  overflow: hidden;
+  background: #eef5f7;
+}
+
+.dark {
+  background: #14272e;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 440px;
+}
+
+.ocean {
+  fill: #eef5f7;
+}
+
+.graticule {
+  fill: none;
+  stroke: #d0dfe2;
+  stroke-width: 0.65;
+}
+
+.land {
+  fill: #d3dfd7;
+  stroke: #82968d;
+  stroke-width: 0.8;
+}
+
+.borders {
+  fill: none;
+  stroke: #a9b9b2;
+  stroke-width: 0.5;
+}
+
+.regionLabel {
+  fill: #40545a;
+  font-family: "Aptos", "Segoe UI Variable", "Segoe UI", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+.marker {
+  cursor: pointer;
+  outline: none;
+}
+
+.criticalRing {
+  fill: rgba(255, 255, 255, 0.72);
+  stroke: #d13438;
+  stroke-opacity: 0.58;
+  stroke-width: 1.5;
+}
+
+.healthMarker {
+  stroke: #ffffff;
+  stroke-width: 2;
+  transition: transform 140ms ease, stroke-width 140ms ease;
+}
+
+.markerCore {
+  fill: #ffffff;
+  pointer-events: none;
+}
+
+.marker:hover .healthMarker,
+.marker:focus-visible .healthMarker,
+.marker[data-selected="true"] .healthMarker {
+  stroke: #172b4d;
+  stroke-width: 3.5;
+  transform: scale(1.12);
+}
+
+.marker:focus-visible .criticalRing {
+  stroke: #172b4d;
+  stroke-width: 3;
+}
+
+.legend {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  max-width: calc(100% - 28px);
+  padding: 8px 10px;
+  border: 1px solid #d3dcde;
+  border-radius: 6px;
+  color: #52636a;
+  background: rgba(255, 255, 255, 0.94);
+  font-size: 10px;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.legend i[data-tone="healthy"] { background: #24a148; }
+.legend i[data-tone="watch"] { background: #00a6b2; }
+.legend i[data-tone="attention"] { background: #e6a700; }
+.legend b { color: #263d43; font-size: 10px; }
+
+.dark .ocean { fill: #14272e; }
+.dark .graticule { stroke: #31464e; }
+.dark .land { fill: #2d4943; stroke: #779086; }
+.dark .borders { stroke: #526b62; }
+.dark .regionLabel { fill: #d4e0e3; }
+.dark .criticalRing { fill: rgba(16, 25, 31, 0.72); }
+.dark .healthMarker { stroke: #10191f; }
+.dark .markerCore { fill: #f4f7f8; }
+.dark .marker:hover .healthMarker,
+.dark .marker:focus-visible .healthMarker,
+.dark .marker[data-selected="true"] .healthMarker { stroke: #f4f7f8; }
+.dark .legend { border-color: #52636c; color: #bdc9cf; background: rgba(23, 37, 44, 0.94); }
+.dark .legend b { color: #f4f7f8; }
+
+@media (max-width: 700px) {
+  .root,
+  .map {
+    min-height: 310px;
+  }
+
+  .legend {
+    position: static;
+    max-width: none;
+    margin: 0 10px 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .healthMarker {
+    transition: none;
+  }
+}

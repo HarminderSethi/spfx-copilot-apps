@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "SharePoint Photos Agent"
+      },
+      "description": {
+        "default": "Find, filter, and explore photos stored in SharePoint document libraries."
+      },
+      "components": [
+        "3392662e-5903-417e-95eb-d051a74c8e09"
+      ]
+    }
+  ]
+}

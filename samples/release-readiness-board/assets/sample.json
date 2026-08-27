@@ -1,0 +1,68 @@
+[
+  {
+    "name": "pnp-spfx-copilot-apps-release-readiness-board",
+    "source": "pnp",
+    "title": "Release readiness board",
+    "shortDescription": "Track blockers, overdue checks, and go-live confidence directly in Copilot.",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/release-readiness-board",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/release-readiness-board",
+    "longDescription": [
+      "Release readiness board gives delivery teams a compact inline release-health snapshot and a full-screen execution board in Microsoft 365 Copilot. Teams can filter by release and owner, focus on blockers, update checklist status, and post a readiness summary back to chat. The sample ships mock-first and includes a real-data adapter mode via an external HTTPS API."
+    ],
+    "creationDateTime": "2026-08-02",
+    "updateDateTime": "2026-08-02",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SPFx-CopilotComponent"
+      },
+      {
+        "key": "CLIENT-SIDE-DEV",
+        "value": "React"
+      },
+      {
+        "key": "SPFX-VERSION",
+        "value": "1.24.0-beta.2"
+      }
+    ],
+    "thumbnails": [
+      {
+        "name": "preview.png",
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/release-readiness-board/assets/preview.png",
+        "alt": "Inline release readiness summary card"
+      },
+      {
+        "name": "screenshot-fullscreen.png",
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/release-readiness-board/assets/screenshot-fullscreen.png",
+        "alt": "Full-screen release readiness checklist board"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ValerasNarbutas",
+        "pictureUrl": "https://github.com/ValerasNarbutas.png",
+        "name": "Valeras Narbutas"
+      }
+    ],
+    "references": [
+      {
+        "name": "Overview of SharePoint Copilot Apps",
+        "description": "Build and deploy interactive SharePoint Copilot Apps with SPFx Copilot components and declarative agents.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
+      },
+      {
+        "name": "Build your first SharePoint Copilot App",
+        "description": "Step-by-step guide to scaffold, build, and deploy SPFx Copilot components.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app"
+      }
+    ]
+  }
+]

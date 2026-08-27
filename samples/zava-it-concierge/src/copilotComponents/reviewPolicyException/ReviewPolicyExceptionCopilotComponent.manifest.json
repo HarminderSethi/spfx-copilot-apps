@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "dded869b-0b3b-4987-b8d7-dd0753144b88",
+  "alias": "ReviewPolicyExceptionCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReviewPolicyExceptionTool",
+      "description": {
+        "default": "Use to approve or decline one off-catalog or over-threshold policy exception. Do not use for a standard device approval, approval queue, or cost-only preview."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reviewPolicyException/ReviewPolicyExceptionCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

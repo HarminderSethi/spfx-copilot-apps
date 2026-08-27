@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "8575e938-9857-4058-86b6-751d1383d528",
+  "alias": "GetDeviceAgeDistributionCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetDeviceAgeDistributionTool",
+      "description": {
+        "default": "Use for company device age cohorts, refresh threshold counts, and projected cohort cost. Do not use for overall fleet health or scheduling refresh waves."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getDeviceAgeDistribution/GetDeviceAgeDistributionCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "76ff1266-0079-45b9-89b3-53bc3941aa98",
+  "alias": "GetItSpendBridgeCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetItSpendBridgeTool",
+      "description": {
+        "default": "Use for company-wide IT budget-to-forecast variance and spend drivers. Do not use for a team budget, one request cost, or license reclaim."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getItSpendBridge/GetItSpendBridgeCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

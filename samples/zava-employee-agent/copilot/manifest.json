@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "0667b909-5102-4b2b-994c-497409ad35bf",
+  "developer": {
+    "name": "Zava",
+    "websiteUrl": "https://www.contoso.com",
+    "privacyUrl": "https://www.contoso.com/privacy",
+    "termsOfUseUrl": "https://www.contoso.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Zava Employee Agent",
+    "full": "Zava Employee Agent"
+  },
+  "description": {
+    "short": "Employee-first HR tools for summaries, priorities, timelines, and more.",
+    "full": "Zava Employee Agent renders 20 dedicated HR tools across employee summaries, policy, leave, payroll, benefits, support, learning, rewards, manager workflows, and people experiences."
+  },
+  "accentColor": "#0F6CBD",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "getMyHrDashboardAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

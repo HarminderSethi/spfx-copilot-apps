@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "4bfc5a08-b28b-4927-8f87-81a9bb465372",
+  "alias": "GetPortfolioBudgetForecastCopilotCompone",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetPortfolioBudgetForecast",
+      "description": {
+        "default": "Analyze portfolio funding, forecast variance, allocation, and investment-to-outcome flow."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getPortfolioBudgetForecast/GetPortfolioBudgetForecastCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

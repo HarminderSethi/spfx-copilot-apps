@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "74cecdba-40e9-4513-bbcc-cfb41c6e6741",
+  "alias": "TrackDeviceShipmentCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "TrackDeviceShipmentTool",
+      "description": {
+        "default": "Use to track one device order or shipment through imaging, carrier delivery, setup, and return. Do not use for all requests or generic process status."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/trackDeviceShipment/TrackDeviceShipmentCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}
