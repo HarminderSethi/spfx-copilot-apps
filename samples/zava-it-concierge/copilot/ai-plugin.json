@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "myDevice",
+  "name_for_human": "IT Concierge",
+  "description_for_human": "Diagnose devices, manage IT requests and approvals, and explore fleet operations.",
+  "description_for_model": "Render the relevant Zava IT Concierge Copilot Component for device support, requests, approvals, service health, fleet analytics, and IT operations.",
+  "contact_email": "publisher@zava.example.com"
+}

@@ -1,0 +1,143 @@
+{
+  "$schema": "./asset-provenance.schema.json",
+  "reviewedOn": "2026-08-25",
+  "assets": [
+    {
+      "path": "src/shared/assets/people/Megan-Bowen.png",
+      "source": "../zava-employee-agent/assets/faces/Megan-Bowen.jpeg",
+      "sha256": "a331c753984ecc20fc4c07104110f35c0983f8084694ddfb7d28f9d9aff99658",
+      "intendedUse": "Megan Bowen current-user portrait in Me and request experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/people/Diego-Siciliani.png",
+      "source": "../zava-employee-agent/assets/faces/Diego-Siciliani.jpeg",
+      "sha256": "7425e4b87a79ca4a4189bed185c8565ac1d8d590e6364b8f9cb691e74ec9c2b9",
+      "intendedUse": "Diego Siciliani manager portrait in Team and approval experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/people/Adele-Vance.png",
+      "source": "https://randomuser.me/api/portraits/women/65.jpg",
+      "retrievedOn": "2026-08-24",
+      "sha256": "cf517c6a983c1eae6bac417bcf8ac48629a5874581541887d76f24d1af604331",
+      "intendedUse": "Representational Adele Vance portrait in Team approval experiences",
+      "note": "Authorized UI Faces placeholder from Random User Generator; representational demo portrait, not an official Microsoft identity photo."
+    },
+    {
+      "path": "src/shared/assets/people/Alex-Wilber.png",
+      "source": "https://randomuser.me/api/portraits/men/81.jpg",
+      "retrievedOn": "2026-08-24",
+      "sha256": "68c689cdc44fb96dedd50ef059c529442cb2d88f6a4ec652e2e1fc5529f5d174",
+      "intendedUse": "Representational Alex Wilber portrait in Team approval experiences",
+      "note": "Authorized UI Faces placeholder from Random User Generator; representational demo portrait, not an official Microsoft identity photo."
+    },
+    {
+      "path": "src/shared/assets/people/Lee-Gu.png",
+      "source": "../zava-employee-agent/assets/faces/Lee-Gu.jpeg",
+      "sha256": "c8f76dbd08c6423cf7ccaae209d30ad91239490a6dbdc08f7e4821125e49704f",
+      "intendedUse": "Lee Gu IT operations portrait in Company and incident experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/people/Johanna-Lorenz.png",
+      "source": "../zava-employee-agent/assets/faces/Johanna-Lorenz.jpeg",
+      "sha256": "73efee788e10a211e5f084bd08521e94d6b6c6079a8680ff1a5c5f3f565d0f2c",
+      "intendedUse": "Johanna Lorenz portrait in Team readiness experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/people/Nestor-Wilke.png",
+      "source": "../zava-employee-agent/assets/faces/Nestor-Wilke.jpeg",
+      "sha256": "207a6b72f0f48d13fa895f955a8d7f35cc15a8b939fc4b450e75edb0f99b609c",
+      "intendedUse": "Nestor Wilke portrait in Team readiness experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/people/Patti-Fernandez.png",
+      "source": "../zava-employee-agent/assets/faces/Patti-Fernandez.jpeg",
+      "sha256": "a059ae5dba2996d83e87cb5dcbd7b86ebd6e9287aa0d47b1aeabe2017f5515cb",
+      "intendedUse": "Patti Fernandez portrait in Team readiness experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/people/Pradeep-Gupta.png",
+      "source": "../zava-employee-agent/assets/faces/Pradeep-Gupta.jpeg",
+      "sha256": "e680d6ff20dbc9ca2ac70aae476196bc26ecffffafd59c7b6dff6bb7f35ba336",
+      "intendedUse": "Pradeep Gupta portrait in Team readiness experiences",
+      "note": "Approved fictional Microsoft 365 demo persona bundled from the sibling Zava sample."
+    },
+    {
+      "path": "src/shared/assets/products/surface-laptop.png",
+      "source": "https://www.microsoft.com/en-us/surface/devices/surface-laptop",
+      "sourceAsset": "https://images.ctfassets.net/jy9s7k22hbg4/7nol3BojitE7SFBvuweyyH/d29b360d9d35c634a0a61aa0fd1f6177/Msft-Laptop-Device.png",
+      "retrievedOn": "2026-08-22",
+      "sha256": "aac7c77a8ca0ab0cf7843a05f7bf03d5183e54e90a479486d18cb551b9617550",
+      "intendedUse": "Surface Laptop product imagery in device catalog and personal device experiences",
+      "note": "Official Microsoft-hosted transparent product render, packaged locally; colors and configurations vary by market."
+    },
+    {
+      "path": "src/shared/assets/products/surface-pro.png",
+      "source": "https://www.microsoft.com/en-us/surface/devices/surface-pro",
+      "sourceAsset": "https://images.ctfassets.net/jy9s7k22hbg4/48CzrZ2cQXTRnbMToEpX0i/03093756fb62e9369dd24c23c9879684/Msft-Pro-Device.png",
+      "retrievedOn": "2026-08-22",
+      "sha256": "ac8cae6041cfafeeae050a542dbe08c3e6fee53a01fc9f5dfca25698c10435eb",
+      "intendedUse": "Surface Pro product imagery in device catalog and request experiences",
+      "note": "Official Microsoft-hosted transparent product render, packaged locally; keyboard is sold separately and configurations vary by market."
+    },
+    {
+      "path": "copilot/color.png",
+      "source": "Generated locally by scripts/generate-agent-icons.ps1",
+      "sha256": "dc2e8cf7c5819a494d2a0809b312cb5e1eda3cd04a7132eeb1605dc4c8c2b8ed",
+      "intendedUse": "192 by 192 color icon for the Zava IT Concierge Teams and Copilot app package",
+      "note": "Original Zava monogram: a geometric white Z with a cyan estate-health ring on the steel brand field. Flat, text-free, and generated deterministically."
+    },
+    {
+      "path": "copilot/outline.png",
+      "source": "Generated locally by scripts/generate-agent-icons.ps1",
+      "sha256": "65f0b419ddcc3a13b909310033b1e063f1a07f8c37d32748851d0a9e68f9f934",
+      "intendedUse": "32 by 32 monochrome outline icon for the Zava IT Concierge Teams and Copilot app package",
+      "note": "Monochrome white version of the Zava monogram on transparency; alpha-preserving and generated deterministically."
+    },
+    {
+      "path": "assets/it-concierge-inline-canvas.png",
+      "source": "User-supplied design brief",
+      "sha256": "d48776e773f8aace7ecf74628d2dcfb6a6b4f5fe09ab1ecb44c1c8798a8f3084",
+      "intendedUse": "Design reference only",
+      "note": "Not shipped as runtime product imagery."
+    },
+    {
+      "path": "assets/it-concierge-my-it-view.png",
+      "source": "User-supplied design brief",
+      "sha256": "3350848dffbcf12b9d4f4243c53b4e2ac65dcf36e2bb2d84b22e19c4c5850379",
+      "intendedUse": "Design reference only",
+      "note": "Not shipped as runtime product imagery."
+    },
+    {
+      "path": "assets/it-concierge-control-center.png",
+      "source": "User-supplied design brief",
+      "sha256": "72a321254d985dc5138d8688ff9a51cc2120e028807d802d458cd81308887b31",
+      "intendedUse": "Design reference only",
+      "note": "Not shipped as runtime product imagery."
+    },
+    {
+      "path": "assets/it-concierge-approval-workspace.png",
+      "source": "User-supplied design brief",
+      "sha256": "fedc175f528e04794bcd913c10fa982adee14e49329dff20b71bd858fa848723",
+      "intendedUse": "Design reference only",
+      "note": "Not shipped as runtime product imagery."
+    }
+  ],
+  "pendingAcquisitions": [
+    {
+      "kind": "Additional Microsoft Surface product renders",
+      "requirement": "Current official Surface Laptop Studio, Surface Go, and Surface Hub product imagery with approved reuse terms",
+      "fallback": "Use a clearly labeled product-family silhouette and complete specification data; do not imply that generated art is official product photography."
+    },
+    {
+      "kind": "Microsoft 365 service marks",
+      "requirement": "Current official product icons with approved reuse terms",
+      "fallback": "Use Fluent System service icons and visible service names."
+    }
+  ]
+}

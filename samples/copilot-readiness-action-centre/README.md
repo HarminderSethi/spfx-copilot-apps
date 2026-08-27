@@ -32,8 +32,8 @@ Ships with offline mock data for immediate demos, plus optional live SharePoint 
 
 ## Version history
 
-| Version | Date         | Comments                                      |
-| ------- | ------------ | --------------------------------------------- |
+| Version | Date          | Comments                                       |
+| ------- | ------------- | ---------------------------------------------- |
 | 1.0     | July 14, 2026 | Initial release for community / PnP submission |
 
 ## Prerequisites
@@ -126,10 +126,10 @@ This sample illustrates:
 ```text
 copilot-readiness-action-centre/
   README.md
-  agentic-creation-rules.md       # PnP Copilot Apps architecture playbook (reference)
   assets/
     sample.json                   # PnP gallery metadata (required)
     preview.png                   # Gallery preview (required)
+    preview-full.png              # Full Copilot conversation preview
   config/                         # Heft / SPFx + copilot-agent.json
   copilot/                        # Declarative agent + Teams package sources
   docs/data-model.md              # SharePoint list field reference
@@ -159,10 +159,10 @@ You can try looking at [issues related to this sample](https://github.com/pnp/sp
 
 If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/spfx-copilot-components/issues/new).
 
-For packaging tips (Zod → JSON Schema, white Teams outline icons, and agent validation), see [agentic-creation-rules.md](./agentic-creation-rules.md) and the PnP **my-day** sample.
+For packaging tips (Zod → JSON Schema, white Teams outline icons, and agent validation), see the [agentic creation rules](../my-day/agentic-creation-rules.md) from the PnP **my-day** sample.
 
 ## Disclaimer
 
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-<img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-apps/samples/copilot-readiness-action-centre" />
+![Visitor statistics](https://m365-visitor-stats.azurewebsites.net/spfx-copilot-apps/samples/copilot-readiness-action-centre)

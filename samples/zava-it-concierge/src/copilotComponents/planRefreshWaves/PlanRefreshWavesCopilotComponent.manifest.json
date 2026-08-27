@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "bb550394-80c3-463f-82c3-07eb4275d164",
+  "alias": "PlanRefreshWavesCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "PlanRefreshWavesTool",
+      "description": {
+        "default": "Use to model company device refresh schedules across quarters, regions, capacity, and budget without applying changes. Do not use for one device eligibility or age distribution."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/planRefreshWaves/PlanRefreshWavesCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

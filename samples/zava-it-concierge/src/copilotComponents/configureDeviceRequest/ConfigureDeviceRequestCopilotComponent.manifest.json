@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "77101364-aeb9-4e6d-a5b4-636973a7b084",
+  "alias": "ConfigureDeviceRequestCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ConfigureDeviceRequestTool",
+      "description": {
+        "default": "Use to configure a specific Surface request with model, memory, storage, accessories, live price, and policy review. Do not use for catalog comparison or justification drafting."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/configureDeviceRequest/ConfigureDeviceRequestCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

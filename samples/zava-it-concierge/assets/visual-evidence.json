@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "captureTool": "Playwright 1.62.1",
+  "source": "scripts/visual-harness",
+  "totalCaptures": 39,
+  "inlineDefaults": 31,
+  "dashboardCaptures": 3,
+  "representativeVariants": 5,
+  "failureCount": 0,
+  "captures": [
+    {
+      "filename": "inline-my-device-status.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 201315,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "My Surface",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-device-health.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 196685,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Device health",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-refresh-eligibility.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 121634,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Refresh eligibility",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-explore-device-catalog.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 188804,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Surface catalog",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-configure-device-request.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 57246,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Configure a request",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-draft-device-justification.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 57666,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Draft justification",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-report-it-issue.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 63495,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Report an IT issue",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-run-device-diagnostics.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 119125,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Device diagnostics",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-my-requests.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 124103,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "My requests",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-find-knowledge-match.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 124042,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Knowledge match",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-track-device-shipment.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 123818,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Device shipment",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-review-device-approval.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 55704,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Device approval",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-approval-queue.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 56944,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Approval queue",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-team-budget.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 183473,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Team IT budget",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-team-assets.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 125226,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Team assets",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-preview-request-cost.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 126023,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Request cost impact",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-review-policy-exception.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 55070,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Policy exception",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-team-ticket-trend.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 132579,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Team ticket trend",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-delegate-approval.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 59100,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Delegate approval",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-fleet-health.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 222317,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Fleet health",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-device-age-distribution.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 159293,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Device age distribution",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-ticket-deflection-trend.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 137224,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Ticket deflection",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-top-it-issues.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 129095,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Top IT issues",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-service-health.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 173168,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Service health",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-license-reclaim.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 188165,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "License reclaim",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-it-spend-bridge.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 125140,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "IT spend bridge",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-plan-refresh-waves.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 139286,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Refresh wave plan",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-correlate-major-incident.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 172905,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Incident correlation",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-get-process-journey.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 123326,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Process journey",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-generate-it-brief.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 124480,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "IT brief",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-explore-agent-capabilities.png",
+      "variant": "inline-default",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 141749,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "IT Concierge capabilities",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "fullscreen-personal.png",
+      "variant": "dashboard-personal",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 299646,
+      "width": 1440,
+      "height": 1128,
+      "brokenImages": [],
+      "canvasCount": 1,
+      "deprecatedChrome": [],
+      "engineCount": 1,
+      "horizontalOverflow": false,
+      "title": "Good morning, Megan. Your work setup is ready, with one battery risk to plan around.",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "fullscreen-team.png",
+      "variant": "dashboard-team",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 260054,
+      "width": 1440,
+      "height": 1188,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Product team operations: people, devices, approvals, and budget in one daily cockpit.",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "fullscreen-portfolio.png",
+      "variant": "dashboard-portfolio",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 451079,
+      "width": 1440,
+      "height": 2037,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Enterprise technology health, service continuity, and investment value.",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "fullscreen-personal-mobile.png",
+      "variant": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 247188,
+      "width": 390,
+      "height": 2858,
+      "brokenImages": [],
+      "canvasCount": 1,
+      "deprecatedChrome": [],
+      "engineCount": 1,
+      "horizontalOverflow": false,
+      "title": "Good morning, Megan. Your work setup is ready, with one battery risk to plan around.",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "fullscreen-portfolio-dark.png",
+      "variant": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 449537,
+      "width": 1440,
+      "height": 2037,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Enterprise technology health, service continuity, and investment value.",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-approval-queue-detail.png",
+      "variant": "detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 61793,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Approval queue",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-review-device-approval-confirmation.png",
+      "variant": "confirmation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 53115,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Device approval",
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "filename": "inline-configure-device-request-receipt.png",
+      "variant": "receipt",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bytes": 40556,
+      "width": 1440,
+      "height": 1000,
+      "brokenImages": [],
+      "canvasCount": 0,
+      "deprecatedChrome": [],
+      "engineCount": 0,
+      "horizontalOverflow": false,
+      "title": "Configure a request",
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ]
+}

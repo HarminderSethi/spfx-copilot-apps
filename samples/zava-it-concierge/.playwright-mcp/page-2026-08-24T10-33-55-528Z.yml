@@ -1,0 +1,135 @@
+- main [ref=f4e5]:
+  - generic [ref=f4e6]:
+    - generic [ref=f4e7]:
+      - generic [ref=f4e8]: Zava IT Concierge
+      - heading "Refresh wave plan" [level=2] [ref=f4e10]
+    - button "View in full screen" [ref=f4e11]
+  - generic [ref=f4e16]:
+    - generic [ref=f4e17]:
+      - generic:
+        - generic: "1"
+        - generic: Wave above capacity
+      - generic [ref=f4e18]:
+        - img "Refresh wave plan Refresh wave plan. 16 selectable data marks.. Select a mark for exact detail." [ref=f4e19]:
+          - 'button "FY26 Q3 / North America: 50" [ref=f4e20] [cursor=pointer]':
+            - generic [ref=f4e23]: "50"
+            - generic [ref=f4e24]: FY26 Q3 / North America
+          - 'button "FY26 Q3 / Europe: 46" [ref=f4e25] [cursor=pointer]':
+            - generic [ref=f4e28]: "46"
+            - generic [ref=f4e29]: FY26 Q3 / Europe
+          - 'button "FY26 Q3 / Asia Pacific: 49" [ref=f4e30] [cursor=pointer]':
+            - generic [ref=f4e33]: "49"
+            - generic [ref=f4e34]: FY26 Q3 / Asia Pacific
+          - 'button "FY26 Q3 / Latin America: 59" [ref=f4e35] [cursor=pointer]':
+            - generic [ref=f4e38]: "59"
+            - generic [ref=f4e39]: FY26 Q3 / Latin America
+          - 'button "FY26 Q4 / North America: 64" [ref=f4e40] [cursor=pointer]':
+            - generic [ref=f4e43]: "64"
+            - generic [ref=f4e44]: FY26 Q4 / North America
+          - 'button "FY26 Q4 / Europe: 69" [ref=f4e45] [cursor=pointer]':
+            - generic [ref=f4e48]: "69"
+            - generic [ref=f4e49]: FY26 Q4 / Europe
+          - 'button "FY26 Q4 / Asia Pacific: 71" [ref=f4e50] [cursor=pointer]':
+            - generic [ref=f4e53]: "71"
+            - generic [ref=f4e54]: FY26 Q4 / Asia Pacific
+          - 'button "FY26 Q4 / Latin America: 74" [ref=f4e55] [cursor=pointer]':
+            - generic [ref=f4e58]: "74"
+            - generic [ref=f4e59]: FY26 Q4 / Latin America
+          - generic [ref=f4e60]:
+            - generic [ref=f4e62]: Capacity
+            - generic [ref=f4e64]: Planned
+        - generic "Refresh wave plan data" [ref=f4e65]:
+          - button "FY26 Q3 / North America 50" [pressed] [ref=f4e66] [cursor=pointer]:
+            - generic [ref=f4e68]: FY26 Q3 / North America
+            - strong [ref=f4e69]: "50"
+          - button "FY26 Q3 / Europe 46" [ref=f4e70] [cursor=pointer]:
+            - generic [ref=f4e72]: FY26 Q3 / Europe
+            - strong [ref=f4e73]: "46"
+          - button "FY26 Q3 / Asia Pacific 49" [ref=f4e74] [cursor=pointer]:
+            - generic [ref=f4e76]: FY26 Q3 / Asia Pacific
+            - strong [ref=f4e77]: "49"
+          - button "FY26 Q3 / Latin America 59" [ref=f4e78] [cursor=pointer]:
+            - generic [ref=f4e80]: FY26 Q3 / Latin America
+            - strong [ref=f4e81]: "59"
+          - button "FY26 Q4 / North America 64" [ref=f4e82] [cursor=pointer]:
+            - generic [ref=f4e84]: FY26 Q4 / North America
+            - strong [ref=f4e85]: "64"
+          - button "FY26 Q4 / Europe 69" [ref=f4e86] [cursor=pointer]:
+            - generic [ref=f4e88]: FY26 Q4 / Europe
+            - strong [ref=f4e89]: "69"
+          - button "FY26 Q4 / Asia Pacific 71" [ref=f4e90] [cursor=pointer]:
+            - generic [ref=f4e92]: FY26 Q4 / Asia Pacific
+            - strong [ref=f4e93]: "71"
+          - button "FY26 Q4 / Latin America 74" [ref=f4e94] [cursor=pointer]:
+            - generic [ref=f4e96]: FY26 Q4 / Latin America
+            - strong [ref=f4e97]: "74"
+          - button "FY27 Q1 / North America 45" [ref=f4e98] [cursor=pointer]:
+            - generic [ref=f4e100]: FY27 Q1 / North America
+            - strong [ref=f4e101]: "45"
+          - button "FY27 Q1 / Europe 62" [ref=f4e102] [cursor=pointer]:
+            - generic [ref=f4e104]: FY27 Q1 / Europe
+            - strong [ref=f4e105]: "62"
+          - button "FY27 Q1 / Asia Pacific 48" [ref=f4e106] [cursor=pointer]:
+            - generic [ref=f4e108]: FY27 Q1 / Asia Pacific
+            - strong [ref=f4e109]: "48"
+          - button "FY27 Q1 / Latin America 48" [ref=f4e110] [cursor=pointer]:
+            - generic [ref=f4e112]: FY27 Q1 / Latin America
+            - strong [ref=f4e113]: "48"
+          - button "FY27 Q2 / North America 80" [ref=f4e114] [cursor=pointer]:
+            - generic [ref=f4e116]: FY27 Q2 / North America
+            - strong [ref=f4e117]: "80"
+          - button "FY27 Q2 / Europe 56" [ref=f4e118] [cursor=pointer]:
+            - generic [ref=f4e120]: FY27 Q2 / Europe
+            - strong [ref=f4e121]: "56"
+          - button "FY27 Q2 / Asia Pacific 64" [ref=f4e122] [cursor=pointer]:
+            - generic [ref=f4e124]: FY27 Q2 / Asia Pacific
+            - strong [ref=f4e125]: "64"
+          - button "FY27 Q2 / Latin America 92" [ref=f4e126] [cursor=pointer]:
+            - generic [ref=f4e128]: FY27 Q2 / Latin America
+            - strong [ref=f4e129]: "92"
+    - complementary "Selected evidence" [ref=f4e130]:
+      - paragraph [ref=f4e131]: Decision insight
+      - paragraph [ref=f4e132]: Moving 14 Europe devices into FY27 Q1 keeps all waves within weekly deployment capacity.
+      - list [ref=f4e133]:
+        - listitem [ref=f4e134]:
+          - generic [ref=f4e138]:
+            - strong [ref=f4e139]: FY26 Q3 / North America
+            - generic [ref=f4e140]: Capacity 58 / $71,000
+          - generic [ref=f4e141]: 50 devices
+        - listitem [ref=f4e142]:
+          - generic [ref=f4e146]:
+            - strong [ref=f4e147]: FY26 Q3 / Europe
+            - generic [ref=f4e148]: Capacity 65 / $67,850
+          - generic [ref=f4e149]: 46 devices
+        - listitem [ref=f4e150]:
+          - generic [ref=f4e154]:
+            - strong [ref=f4e155]: FY26 Q3 / Asia Pacific
+            - generic [ref=f4e156]: Capacity 72 / $74,970
+          - generic [ref=f4e157]: 49 devices
+        - listitem [ref=f4e158]:
+          - generic [ref=f4e162]:
+            - strong [ref=f4e163]: FY26 Q3 / Latin America
+            - generic [ref=f4e164]: Capacity 79 / $93,515
+          - generic [ref=f4e165]: 59 devices
+        - listitem [ref=f4e166]:
+          - generic [ref=f4e170]:
+            - strong [ref=f4e171]: FY26 Q4 / North America
+            - generic [ref=f4e172]: Capacity 58 / $90,880
+          - generic [ref=f4e173]: 64 devices
+        - listitem [ref=f4e174]:
+          - generic [ref=f4e178]:
+            - strong [ref=f4e179]: FY26 Q4 / Europe
+            - generic [ref=f4e180]: Capacity 65 / $101,775
+          - generic [ref=f4e181]: 69 devices
+      - generic [ref=f4e182]:
+        - paragraph [ref=f4e183]: From your prompt
+        - generic [ref=f4e184]:
+          - strong [ref=f4e185]: region
+          - text: all
+        - generic [ref=f4e186]:
+          - strong [ref=f4e187]: maxDevicesPerWeek
+          - text: "42"
+      - 'generic "Experience type: Read-only insight" [ref=f4e188]': Read-only insight
+  - generic [ref=f4e192]:
+    - generic [ref=f4e193]: Prepared for Megan Bowen
+    - generic [ref=f4e194]: company/fleet-analytics#refresh-waves

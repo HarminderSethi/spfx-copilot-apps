@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "08493f09-3a61-4b1f-be6e-3354eb64b78e",
+  "alias": "GetDeviceHealthCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetDeviceHealthTool",
+      "description": {
+        "default": "Use for detailed Surface health metrics: battery, storage, performance, patch, and compliance. Do not use to run diagnostic checks or show warranty inventory."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getDeviceHealth/GetDeviceHealthCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

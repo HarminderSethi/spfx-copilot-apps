@@ -1,0 +1,46 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Zava IT Concierge"
+      },
+      "description": {
+        "default": "Surface support, IT requests, approvals, and fleet operations in Copilot."
+      },
+      "components": [
+        "9db2cb5c-9458-4de8-b34b-8ed4353f39d6",
+        "08493f09-3a61-4b1f-be6e-3354eb64b78e",
+        "3559c05e-39bc-47da-af88-d94c2af86588",
+        "003a6d55-58f8-4d2f-b2ad-fd0e34dbe38d",
+        "77101364-aeb9-4e6d-a5b4-636973a7b084",
+        "d52c4266-5f46-4e5f-b754-38de21b63374",
+        "f41b498c-7218-4316-ab6d-b9f232c0a0cb",
+        "1047d81e-b04f-4b63-a7f8-9f8d8c95f1e2",
+        "f41f3463-ae9c-43b3-b707-e45cf666fadc",
+        "8b29f9c7-3d4f-474e-9196-ae501c470e90",
+        "74cecdba-40e9-4513-bbcc-cfb41c6e6741",
+        "950a81c0-f13d-4082-aecf-04823132efa8",
+        "a3f42522-5656-4a61-862f-090bfa6d656f",
+        "2a7d9975-426c-46b7-a82e-993d5c5330b7",
+        "b5911ecc-b742-44e9-9632-f46555fa0dbc",
+        "df647f36-3209-434b-bb21-df97f0616f71",
+        "dded869b-0b3b-4987-b8d7-dd0753144b88",
+        "10b1b998-cba8-4e2d-aa82-9053e0c1222d",
+        "e3ea2533-f0eb-4a5c-98c9-7469e74c1555",
+        "2be6cb8e-b20a-4743-9933-4918fb2283b1",
+        "8575e938-9857-4058-86b6-751d1383d528",
+        "7470ec99-dfed-467c-b23a-65ba439f6c66",
+        "e1533536-1bb6-4153-8038-e050ed47aee8",
+        "f89f8973-b036-4043-befe-28103da89d63",
+        "2231c536-3061-479d-80c7-177250842281",
+        "76ff1266-0079-45b9-89b3-53bc3941aa98",
+        "bb550394-80c3-463f-82c3-07eb4275d164",
+        "cb24c889-dd73-413e-b5ac-2aacc2135f38",
+        "117279a9-ab9d-4fd5-978b-1ae163ed5025",
+        "881d4420-beb1-457f-aafb-96e446d75663",
+        "796b08ab-b3ea-412d-9ff2-9e3fa7d77c01"
+      ]
+    }
+  ]
+}

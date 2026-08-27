@@ -32,10 +32,18 @@
     ],
     "thumbnails": [
       {
+        "name": "preview.png",
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/copilot-readiness-action-centre/assets/preview.png",
-        "alt": "Copilot Readiness Action Centre preview"
+        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/copilot-readiness-action-centre/assets/preview.png",
+        "alt": "Copilot Readiness Action Centre showing readiness score, critical risks, open actions, and prioritized findings"
+      },
+      {
+        "name": "preview-full.png",
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/copilot-readiness-action-centre/assets/preview-full.png",
+        "alt": "Full Copilot conversation with readiness findings, risk explanations, and recommended remediation actions"
       }
     ],
     "authors": [

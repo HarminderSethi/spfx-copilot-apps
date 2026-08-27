@@ -1,0 +1,154 @@
+- generic [ref=e5]:
+  - complementary "IT Concierge lenses" [ref=e6]:
+    - generic [ref=e9]:
+      - text: Zava
+      - strong [ref=e10]: IT Concierge
+    - tablist [ref=e11]:
+      - tab "Personal" [selected] [ref=e12] [cursor=pointer]
+      - tab "Team" [ref=e16] [cursor=pointer]
+      - tab "IT portfolio" [ref=e20] [cursor=pointer]
+    - generic [ref=e24]:
+      - generic [ref=e25]: Mock workspace
+      - strong [ref=e26]: Offline and safe
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: Personal / My devices
+        - strong [ref=e31]: My Surface
+      - generic [ref=e32]:
+        - generic [ref=e33]: information
+        - button [ref=e34]
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - text: My IT workspace
+        - heading "What needs attention before it interrupts Megan's next customer workshop?" [level=1] [ref=e40]
+        - paragraph [ref=e41]: Keep work moving by connecting device health, support, requests, knowledge, and next-device choices.
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: Device health
+          - strong [ref=e45]: 76%
+          - generic [ref=e46]: Battery is the only constrained dimension
+        - generic [ref=e47]:
+          - generic [ref=e48]: Open work
+          - strong [ref=e49]: "3"
+          - generic [ref=e50]: One request needs manager review
+        - generic [ref=e51]:
+          - generic [ref=e52]: Next milestone
+          - strong [ref=e53]: 2 days
+          - generic [ref=e54]: USB4 Dock expected Aug 24
+    - navigation "Personal capabilities" [ref=e55]:
+      - button "My Surface My devices" [ref=e56] [cursor=pointer]:
+        - generic [ref=e57]: My Surface
+        - generic [ref=e58]: My devices
+      - button "Device health My devices" [ref=e59] [cursor=pointer]:
+        - generic [ref=e60]: Device health
+        - generic [ref=e61]: My devices
+      - button "Refresh eligibility My devices" [ref=e62] [cursor=pointer]:
+        - generic [ref=e63]: Refresh eligibility
+        - generic [ref=e64]: My devices
+      - button "Surface catalog Requests" [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]: Surface catalog
+        - generic [ref=e67]: Requests
+      - button "Configure a request Requests" [ref=e68] [cursor=pointer]:
+        - generic [ref=e69]: Configure a request
+        - generic [ref=e70]: Requests
+      - button "Draft justification Requests" [ref=e71] [cursor=pointer]:
+        - generic [ref=e72]: Draft justification
+        - generic [ref=e73]: Requests
+      - button "Report an IT issue Support" [ref=e74] [cursor=pointer]:
+        - generic [ref=e75]: Report an IT issue
+        - generic [ref=e76]: Support
+      - button "Device diagnostics Support" [ref=e77] [cursor=pointer]:
+        - generic [ref=e78]: Device diagnostics
+        - generic [ref=e79]: Support
+      - button "My requests My requests" [ref=e80] [cursor=pointer]:
+        - generic [ref=e81]: My requests
+        - generic [ref=e82]: My requests
+      - button "Knowledge match Support" [ref=e83] [cursor=pointer]:
+        - generic [ref=e84]: Knowledge match
+        - generic [ref=e85]: Support
+      - button "Device shipment My requests" [ref=e86] [cursor=pointer]:
+        - generic [ref=e87]: Device shipment
+        - generic [ref=e88]: My requests
+      - button "Process journey My requests" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]: Process journey
+        - generic [ref=e91]: My requests
+      - button "IT Concierge capabilities Discover" [ref=e92] [cursor=pointer]:
+        - generic [ref=e93]: IT Concierge capabilities
+        - generic [ref=e94]: Discover
+    - region "My Surface workspace" [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - text: Live decision model
+            - heading "My Surface" [level=2] [ref=e99]
+          - generic [ref=e100]:
+            - strong [ref=e101]: "76"
+            - generic [ref=e102]: Overall health
+        - generic [ref=e103]:
+          - img "My Surface. 4 selectable data marks." [ref=e104]
+          - list "My Surface data" [ref=e105]:
+            - listitem [ref=e106]:
+              - button "Overall health 76" [pressed] [ref=e107] [cursor=pointer]:
+                - generic [ref=e109]: Overall health
+                - strong [ref=e110]: "76"
+            - listitem [ref=e111]:
+              - button "Compliance 100" [ref=e112] [cursor=pointer]:
+                - generic [ref=e114]: Compliance
+                - strong [ref=e115]: "100"
+            - listitem [ref=e116]:
+              - button "Warranty window 20" [ref=e117] [cursor=pointer]:
+                - generic [ref=e119]: Warranty window
+                - strong [ref=e120]: "20"
+            - listitem [ref=e121]:
+              - button "Lifecycle readiness 88" [ref=e122] [cursor=pointer]:
+                - generic [ref=e124]: Lifecycle readiness
+                - strong [ref=e125]: "88"
+      - complementary "Selected business context" [ref=e126]:
+        - paragraph [ref=e127]: Decision insight
+        - heading "Surface Laptop, Copilot+ PC, 13.8-inch is compliant; battery health is the only dimension below the Zava target." [level=2] [ref=e128]
+        - list [ref=e129]:
+          - listitem [ref=e130]:
+            - generic [ref=e134]:
+              - strong [ref=e135]: Surface Laptop, Copilot+ PC, 13.8-inch
+              - generic [ref=e136]: Windows 11 Enterprise
+            - generic [ref=e137]: ZVA-SRF-1042
+          - listitem [ref=e138]:
+            - img "Megan Bowen" [ref=e139]
+            - generic [ref=e140]:
+              - strong [ref=e141]: Accountable owner
+              - generic [ref=e142]: Product / North America
+            - generic [ref=e143]: Megan Bowen
+          - listitem [ref=e144]:
+            - generic [ref=e148]:
+              - strong [ref=e149]: Warranty
+              - generic [ref=e150]: Coverage ends Nov 4, 2026
+            - generic [ref=e151]: 74 days remaining
+          - listitem [ref=e152]:
+            - generic [ref=e156]:
+              - strong [ref=e157]: Compliance
+              - generic [ref=e158]: Last checked today at 8:20 AM
+            - generic [ref=e159]: Compliant
+        - generic [ref=e160]:
+          - strong [ref=e161]: Carried from the conversation
+          - generic [ref=e162]: "deviceId: ZVA-SRF-1042"
+    - region "Personal IT overview" [ref=e163]:
+      - generic [ref=e164]:
+        - img "Black Microsoft Surface Laptop viewed from the rear with the keyboard open" [ref=e165]
+        - generic [ref=e166]:
+          - generic [ref=e167]: Assigned Surface
+          - strong [ref=e168]: Surface Laptop 13.8-inch
+          - generic [ref=e169]: ZVA-SRF-1042 / compliant / 42 months
+      - generic [ref=e170]:
+        - generic [ref=e171]: Work in motion
+        - strong [ref=e172]: REQ-2048
+        - paragraph [ref=e173]: Manager review is the only blocker. Budget, configuration, and four evidence sources are ready.
+        - generic [ref=e174]: "Next: Diego decision"
+      - generic [ref=e175]:
+        - generic [ref=e176]: Continuity plan
+        - strong [ref=e177]: 2 h 15 m
+        - paragraph [ref=e178]: Battery runtime is below the mobile-work target; stay docked for today’s customer workshop.
+        - generic [ref=e179]: Refresh eligible Nov 5
+    - generic [ref=e180]:
+      - generic [ref=e181]: Prepared for Megan Bowen
+      - generic [ref=e184]: me/my-it#device

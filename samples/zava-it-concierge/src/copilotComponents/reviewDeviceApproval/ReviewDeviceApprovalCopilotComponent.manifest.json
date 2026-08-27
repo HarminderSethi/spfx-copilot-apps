@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "950a81c0-f13d-4082-aecf-04823132efa8",
+  "alias": "ReviewDeviceApprovalCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReviewDeviceApprovalTool",
+      "description": {
+        "default": "Use to approve or decline one standard device request with a request ID or named requester. Do not use for a queue, policy exception, cost-only preview, or delegation."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reviewDeviceApproval/ReviewDeviceApprovalCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "zava-it-concierge",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.14.0 < 23.0.0"
+  },
+  "scripts": {
+    "build": "npm run validate:intents && npm run check:agent-icons && npm run validate:assets && npm run check:routing-matrix && npm run check:gallery && heft test --clean --production && heft package-solution --production && npm run check:generated-plugin && npm run check:package-output",
+    "capture:visual": "node scripts/capture-visual-evidence.mjs",
+    "check:agent-icons": "pwsh -NoProfile -File scripts/generate-agent-icons.ps1 -Check",
+    "check:gallery": "node scripts/validate-gallery-assets.mjs",
+    "check:generated-plugin": "node scripts/validate-generated-ai-plugin.mjs",
+    "check:package-output": "node scripts/validate-package-output.mjs",
+    "check:routing-matrix": "node scripts/generate-routing-matrix.mjs --check",
+    "clean": "heft clean",
+    "configure:intents": "node scripts/configure-intent-components.mjs",
+    "eject-webpack": "heft eject-webpack",
+    "generate:agent-icons": "pwsh -NoProfile -File scripts/generate-agent-icons.ps1",
+    "generate:routing-matrix": "node scripts/generate-routing-matrix.mjs",
+    "start": "heft start --clean",
+    "start:visual": "node scripts/visual-harness/start.mjs",
+    "validate:assets": "node scripts/validate-assets.mjs",
+    "validate:intents": "node scripts/validate-intent-components.mjs"
+  },
+  "dependencies": {
+    "@babylonjs/core": "9.21.2",
+    "@fluentui/react-components": "9.74.6",
+    "@fluentui/react-icons": "2.0.337",
+    "@griffel/react": "1.7.7",
+    "@microsoft/sp-copilot-component": "1.24.0-beta.2",
+    "@microsoft/sp-lodash-subset": "1.24.0-beta.2",
+    "d3-geo": "3.1.1",
+    "d3-scale": "4.0.2",
+    "d3-shape": "3.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "topojson-client": "3.1.0",
+    "tslib": "2.3.1",
+    "world-atlas": "2.0.2",
+    "zod": "3.24.1",
+    "zod-to-json-schema": "3.24.1"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-config-spfx": "1.24.0-beta.2",
+    "@microsoft/eslint-plugin-spfx": "1.24.0-beta.2",
+    "@microsoft/spfx-heft-plugins": "1.24.0-beta.2",
+    "@microsoft/spfx-web-build-rig": "1.24.0-beta.2",
+    "@rushstack/heft": "1.2.17",
+    "@types/d3-geo": "3.1.0",
+    "@types/d3-scale": "4.0.9",
+    "@types/d3-shape": "3.1.7",
+    "@types/jest": "30.0.0",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "17.0.17",
+    "@types/topojson-client": "3.1.5",
+    "@types/webpack-env": "~1.15.2",
+    "css-loader": "~7.1.2",
+    "esbuild": "0.25.9",
+    "eslint": "9.37.0",
+    "playwright": "^1.62.1",
+    "typescript": "~5.8.0",
+    "unzipper": "^0.12.3"
+  },
+  "overrides": {
+    "@rushstack/heft": "1.2.17"
+  }
+}

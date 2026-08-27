@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "10b1b998-cba8-4e2d-aa82-9053e0c1222d",
+  "alias": "GetTeamTicketTrendCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetTeamTicketTrendTool",
+      "description": {
+        "default": "Use for one team's monthly ticket volume, categories, and comparison with a company baseline. Do not use for company deflection or top issue ranking."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getTeamTicketTrend/GetTeamTicketTrendCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

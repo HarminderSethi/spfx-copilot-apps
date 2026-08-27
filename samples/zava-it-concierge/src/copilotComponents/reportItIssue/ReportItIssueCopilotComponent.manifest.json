@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "f41b498c-7218-4316-ab6d-b9f232c0a0cb",
+  "alias": "ReportItIssueCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ReportItIssueTool",
+      "description": {
+        "default": "Use to create and submit a support issue with symptom, severity, context, review, and receipt. Do not use when the user asks to run diagnostics or find help content."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/reportItIssue/ReportItIssueCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

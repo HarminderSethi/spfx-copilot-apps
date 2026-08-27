@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "2231c536-3061-479d-80c7-177250842281",
+  "alias": "GetLicenseReclaimCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetLicenseReclaimTool",
+      "description": {
+        "default": "Use for inactive Microsoft 365 license cohorts, reclaimable seats, annual value, safeguards, and owners. Do not use for hardware spend or team budget."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getLicenseReclaim/GetLicenseReclaimCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light;
+  background: #e8eef1;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  background: #081318;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.visual-harness {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+@media (max-width: 620px) {
+  .visual-harness {
+    padding: 8px;
+  }
+}
+
+.visual-harness[data-mode="fullscreen"] {
+  width: 100%;
+  padding: 0;
+}

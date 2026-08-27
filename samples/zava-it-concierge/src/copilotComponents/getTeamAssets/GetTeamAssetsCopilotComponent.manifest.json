@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "b5911ecc-b742-44e9-9632-f46555fa0dbc",
+  "alias": "GetTeamAssetsCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetTeamAssetsTool",
+      "description": {
+        "default": "Use for a manager roster of team members and assigned devices, age, compliance, and refresh risk. Do not use for company fleet health or one employee device."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getTeamAssets/GetTeamAssetsCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

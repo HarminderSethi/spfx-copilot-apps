@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "8b29f9c7-3d4f-474e-9196-ae501c470e90",
+  "alias": "FindKnowledgeMatchCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "FindKnowledgeMatchTool",
+      "description": {
+        "default": "Use to find and rank support articles for a question or symptom. Do not use to run diagnostics, report an issue, or inspect service incidents."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/findKnowledgeMatch/FindKnowledgeMatchCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

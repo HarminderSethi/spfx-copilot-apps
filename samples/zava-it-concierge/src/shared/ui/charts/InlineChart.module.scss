@@ -1,0 +1,41 @@
+.loading {
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  color: #617278;
+  background: linear-gradient(145deg, #f8fbfc, #edf5f6);
+  font-size: 12px;
+}
+
+.loading span {
+  width: 148px;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #d9e5e7 0%, #1678c2 48%, #00a6b2 68%, #d9e5e7 100%);
+  background-size: 200% 100%;
+  animation: inline-chart-loading 1.2s linear infinite;
+}
+
+@keyframes inline-chart-loading {
+  from { background-position-x: 100%; }
+  to { background-position-x: -100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading span {
+    animation: none;
+  }
+}
+
+.dark {
+  color: #bdc9cf;
+  background: linear-gradient(145deg, #14272e, #10191f);
+}
+
+.dark span {
+  background: linear-gradient(90deg, #31464e 0%, #48a5df 48%, #48c5cf 68%, #31464e 100%);
+  background-size: 200% 100%;
+}

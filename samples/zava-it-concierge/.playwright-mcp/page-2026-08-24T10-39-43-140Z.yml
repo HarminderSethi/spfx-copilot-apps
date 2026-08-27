@@ -1,0 +1,117 @@
+- main [ref=f8e5]:
+  - generic [ref=f8e6]:
+    - generic [ref=f8e7]:
+      - generic [ref=f8e8]: Zava IT Concierge
+      - heading "Incident correlation" [level=2] [ref=f8e10]
+    - button "View in full screen" [ref=f8e11]
+  - generic [ref=f8e16]:
+    - generic [ref=f8e17]:
+      - generic:
+        - generic: "18"
+        - generic: Correlated signals
+      - generic [ref=f8e18]:
+        - img "Incident correlation Incident correlation. 12 selectable data marks.. Select a mark for exact detail." [ref=f8e19]:
+          - 'button "Intermittent Teams media routing: 100" [ref=f8e30] [cursor=pointer]':
+            - generic [ref=f8e33]: Intermittent Teams media routing
+          - 'button "Microsoft Teams: 82" [ref=f8e34] [cursor=pointer]':
+            - generic [ref=f8e37]: Microsoft Teams
+          - 'button "Europe: 65" [ref=f8e38] [cursor=pointer]':
+            - generic [ref=f8e41]: Europe
+          - 'button "North America: 65" [ref=f8e42] [cursor=pointer]':
+            - generic [ref=f8e45]: North America
+          - 'button "Signal 1: 34" [ref=f8e46] [cursor=pointer]':
+            - generic [ref=f8e49]: Signal 1
+          - 'button "Signal 2: 38" [ref=f8e50] [cursor=pointer]':
+            - generic [ref=f8e53]: Signal 2
+          - 'button "Signal 3: 42" [ref=f8e54] [cursor=pointer]':
+            - generic [ref=f8e57]: Signal 3
+          - 'button "Signal 4: 46" [ref=f8e58] [cursor=pointer]':
+            - generic [ref=f8e61]: Signal 4
+          - 'button "Signal 5: 50" [ref=f8e62] [cursor=pointer]':
+            - generic [ref=f8e65]: Signal 5
+          - 'button "Signal 6: 54" [ref=f8e66] [cursor=pointer]':
+            - generic [ref=f8e69]: Signal 6
+          - 'button "Signal 7: 58" [ref=f8e70] [cursor=pointer]':
+            - generic [ref=f8e73]: Signal 7
+          - 'button "Signal 8: 62" [ref=f8e74] [cursor=pointer]':
+            - generic [ref=f8e77]: Signal 8
+        - generic "Incident correlation data" [ref=f8e78]:
+          - button "Intermittent Teams media routing 100" [pressed] [ref=f8e79] [cursor=pointer]:
+            - generic [ref=f8e81]: Intermittent Teams media routing
+            - strong [ref=f8e82]: "100"
+          - button "Microsoft Teams 82" [ref=f8e83] [cursor=pointer]:
+            - generic [ref=f8e85]: Microsoft Teams
+            - strong [ref=f8e86]: "82"
+          - button "Europe 65" [ref=f8e87] [cursor=pointer]:
+            - generic [ref=f8e89]: Europe
+            - strong [ref=f8e90]: "65"
+          - button "North America 65" [ref=f8e91] [cursor=pointer]:
+            - generic [ref=f8e93]: North America
+            - strong [ref=f8e94]: "65"
+          - button "Signal 1 34" [ref=f8e95] [cursor=pointer]:
+            - generic [ref=f8e97]: Signal 1
+            - strong [ref=f8e98]: "34"
+          - button "Signal 2 38" [ref=f8e99] [cursor=pointer]:
+            - generic [ref=f8e101]: Signal 2
+            - strong [ref=f8e102]: "38"
+          - button "Signal 3 42" [ref=f8e103] [cursor=pointer]:
+            - generic [ref=f8e105]: Signal 3
+            - strong [ref=f8e106]: "42"
+          - button "Signal 4 46" [ref=f8e107] [cursor=pointer]:
+            - generic [ref=f8e109]: Signal 4
+            - strong [ref=f8e110]: "46"
+          - button "Signal 5 50" [ref=f8e111] [cursor=pointer]:
+            - generic [ref=f8e113]: Signal 5
+            - strong [ref=f8e114]: "50"
+          - button "Signal 6 54" [ref=f8e115] [cursor=pointer]:
+            - generic [ref=f8e117]: Signal 6
+            - strong [ref=f8e118]: "54"
+          - button "Signal 7 58" [ref=f8e119] [cursor=pointer]:
+            - generic [ref=f8e121]: Signal 7
+            - strong [ref=f8e122]: "58"
+          - button "Signal 8 62" [ref=f8e123] [cursor=pointer]:
+            - generic [ref=f8e125]: Signal 8
+            - strong [ref=f8e126]: "62"
+    - complementary "Selected evidence" [ref=f8e127]:
+      - paragraph [ref=f8e128]: Decision insight
+      - paragraph [ref=f8e129]: Teams media failures in Europe and North America converge on one routing incident with 82% confidence.
+      - list [ref=f8e130]:
+        - listitem [ref=f8e131]:
+          - img "Lee Gu" [ref=f8e132]
+          - generic [ref=f8e133]:
+            - strong [ref=f8e134]: INC-7091
+            - generic [ref=f8e135]: Intermittent Teams media routing
+          - generic [ref=f8e136]: Investigating
+        - listitem [ref=f8e137]:
+          - generic [ref=f8e141]:
+            - strong [ref=f8e142]: Microsoft Teams
+            - generic [ref=f8e143]: Media relay path
+          - generic [ref=f8e144]: Primary service
+        - listitem [ref=f8e145]:
+          - generic [ref=f8e149]:
+            - strong [ref=f8e150]: Affected regions
+            - generic [ref=f8e151]: Europe / North America
+          - generic [ref=f8e152]: "2"
+        - listitem [ref=f8e153]:
+          - generic [ref=f8e157]:
+            - strong [ref=f8e158]: Linked tickets
+            - generic [ref=f8e159]: Performance and call quality
+          - generic [ref=f8e160]: "12"
+        - listitem [ref=f8e161]:
+          - img "Lee Gu" [ref=f8e162]
+          - generic [ref=f8e163]:
+            - strong [ref=f8e164]: Accountable owner
+            - generic [ref=f8e165]: IT Operations Lead
+          - generic [ref=f8e166]: Lee Gu
+      - generic [ref=f8e167]:
+        - paragraph [ref=f8e168]: From your prompt
+        - generic [ref=f8e169]:
+          - strong [ref=f8e170]: incidentId
+          - text: INC-7091
+        - generic [ref=f8e171]:
+          - strong [ref=f8e172]: service
+          - text: Microsoft Teams
+      - 'generic "Experience type: Read-only insight" [ref=f8e173]': Read-only insight
+  - generic [ref=f8e177]:
+    - generic [ref=f8e178]: Prepared for Megan Bowen
+    - generic [ref=f8e179]: company/control-center#incident-correlation

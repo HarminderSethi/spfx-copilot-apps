@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "2be6cb8e-b20a-4743-9933-4918fb2283b1",
+  "alias": "GetFleetHealthCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "GetFleetHealthTool",
+      "description": {
+        "default": "Use for company fleet health and risk concentration by region and department. Do not use for device age cohorts, refresh scheduling, team assets, or one device."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/getFleetHealth/GetFleetHealthCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

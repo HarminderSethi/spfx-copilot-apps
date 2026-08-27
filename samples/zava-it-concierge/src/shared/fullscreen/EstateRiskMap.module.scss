@@ -1,0 +1,19 @@
+.loading {
+  display: grid;
+  min-height: 440px;
+  place-items: center;
+  color: #616161;
+  background: #eef5f7;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .loading {
+    min-height: 310px;
+  }
+}
+
+.dark {
+  color: #bdc9cf;
+  background: #14272e;
+}

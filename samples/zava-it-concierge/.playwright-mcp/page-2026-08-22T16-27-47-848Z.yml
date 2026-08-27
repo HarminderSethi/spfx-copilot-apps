@@ -1,0 +1,167 @@
+- generic [ref=f77e5]:
+  - complementary "IT Concierge lenses" [ref=f77e6]:
+    - generic [ref=f77e9]:
+      - text: Zava
+      - strong [ref=f77e10]: IT Concierge
+    - tablist [ref=f77e11]:
+      - tab "Personal" [ref=f77e12] [cursor=pointer]
+      - tab "Team" [selected] [ref=f77e16] [cursor=pointer]
+      - tab "IT portfolio" [ref=f77e20] [cursor=pointer]
+    - generic [ref=f77e24]:
+      - generic [ref=f77e25]: Mock workspace
+      - strong [ref=f77e26]: Offline and safe
+  - main [ref=f77e27]:
+    - generic [ref=f77e28]:
+      - generic [ref=f77e29]:
+        - generic [ref=f77e30]: Team / Approvals
+        - strong [ref=f77e31]: Device approval
+      - generic [ref=f77e32]:
+        - generic [ref=f77e33]: review
+        - button [ref=f77e34]
+    - generic [ref=f77e38]:
+      - generic [ref=f77e39]:
+        - text: Team operations
+        - heading "Which decision removes the most team friction while protecting budget and policy?" [level=1] [ref=f77e40]
+        - paragraph [ref=f77e41]: Help Diego make fast, defensible people and spend decisions without losing policy or delivery context.
+      - generic [ref=f77e42]:
+        - generic [ref=f77e43]:
+          - generic [ref=f77e44]: Awaiting review
+          - strong [ref=f77e45]: "7"
+          - generic [ref=f77e46]: Two exceed the review target
+        - generic [ref=f77e47]:
+          - generic [ref=f77e48]: Budget available
+          - strong [ref=f77e49]: $36.4K
+          - generic [ref=f77e50]: 29% remains after commitments
+        - generic [ref=f77e51]:
+          - generic [ref=f77e52]: Refresh risk
+          - strong [ref=f77e53]: 18%
+          - generic [ref=f77e54]: Three Product devices need planning
+    - navigation "Team capabilities" [ref=f77e55]:
+      - button "Device approval Approvals" [ref=f77e56] [cursor=pointer]:
+        - generic [ref=f77e57]: Device approval
+        - generic [ref=f77e58]: Approvals
+      - button "Approval queue Approvals" [ref=f77e59] [cursor=pointer]:
+        - generic [ref=f77e60]: Approval queue
+        - generic [ref=f77e61]: Approvals
+      - button "Team IT budget Team planning" [ref=f77e62] [cursor=pointer]:
+        - generic [ref=f77e63]: Team IT budget
+        - generic [ref=f77e64]: Team planning
+      - button "Team assets Team planning" [ref=f77e65] [cursor=pointer]:
+        - generic [ref=f77e66]: Team assets
+        - generic [ref=f77e67]: Team planning
+      - button "Request cost impact Approvals" [ref=f77e68] [cursor=pointer]:
+        - generic [ref=f77e69]: Request cost impact
+        - generic [ref=f77e70]: Approvals
+      - button "Policy exception Approvals" [ref=f77e71] [cursor=pointer]:
+        - generic [ref=f77e72]: Policy exception
+        - generic [ref=f77e73]: Approvals
+      - button "Team ticket trend Team planning" [ref=f77e74] [cursor=pointer]:
+        - generic [ref=f77e75]: Team ticket trend
+        - generic [ref=f77e76]: Team planning
+      - button "Delegate approval Approvals" [ref=f77e77] [cursor=pointer]:
+        - generic [ref=f77e78]: Delegate approval
+        - generic [ref=f77e79]: Approvals
+    - region "Device approval workspace" [ref=f77e80]:
+      - generic [ref=f77e81]:
+        - generic [ref=f77e82]:
+          - generic [ref=f77e83]:
+            - text: Live decision model
+            - heading "Device approval" [level=2] [ref=f77e84]
+          - generic [ref=f77e85]:
+            - strong [ref=f77e86]: "100"
+            - generic [ref=f77e87]: Evidence complete
+        - generic [ref=f77e88]:
+          - img "Device approval. 4 selectable data marks." [ref=f77e89]
+          - list "Device approval data" [ref=f77e90]:
+            - listitem [ref=f77e91]:
+              - button "Evidence complete 100" [pressed] [ref=f77e92] [cursor=pointer]:
+                - generic [ref=f77e94]: Evidence complete
+                - strong [ref=f77e95]: "100"
+            - listitem [ref=f77e96]:
+              - button "Policy fit 100" [ref=f77e97] [cursor=pointer]:
+                - generic [ref=f77e99]: Policy fit
+                - strong [ref=f77e100]: "100"
+            - listitem [ref=f77e101]:
+              - button "Budget remaining 31" [ref=f77e102] [cursor=pointer]:
+                - generic [ref=f77e104]: Budget remaining
+                - strong [ref=f77e105]: "31"
+            - listitem [ref=f77e106]:
+              - button "Request age days 2" [ref=f77e107] [cursor=pointer]:
+                - generic [ref=f77e109]: Request age days
+                - strong [ref=f77e110]: "2"
+      - complementary "Selected business context" [ref=f77e111]:
+        - paragraph [ref=f77e112]: Decision insight
+        - heading "Megan's request is within policy and leaves 31% of the Product hardware budget uncommitted." [level=2] [ref=f77e113]
+        - list [ref=f77e114]:
+          - listitem [ref=f77e115]:
+            - img "Megan Bowen" [ref=f77e116]
+            - generic [ref=f77e117]:
+              - strong [ref=f77e118]: Megan Bowen
+              - generic [ref=f77e119]: Requested 2 days ago
+            - generic [ref=f77e120]: Product Manager
+          - listitem [ref=f77e121]:
+            - generic [ref=f77e125]:
+              - strong [ref=f77e126]: Surface Laptop 13.8-inch
+              - generic [ref=f77e127]: Standard configuration
+            - generic [ref=f77e128]: 32 GB / 512 GB
+          - listitem [ref=f77e129]:
+            - generic [ref=f77e133]:
+              - strong [ref=f77e134]: Budget after approval
+              - generic [ref=f77e135]: 31% remains
+            - generic [ref=f77e136]: $30,221
+          - listitem [ref=f77e137]:
+            - generic [ref=f77e141]:
+              - strong [ref=f77e142]: Business case
+              - generic [ref=f77e143]: Customer workshops and battery constraints
+            - generic [ref=f77e144]: 4 linked sources
+        - region "Device approval decision" [ref=f77e146]:
+          - generic [ref=f77e147]:
+            - text: Approval condition
+            - combobox "Approval condition" [ref=f77e149] [cursor=pointer]:
+              - option "Standard approval" [selected]
+              - option "Approve after old device return"
+              - option "Charge alternate cost center"
+          - generic [ref=f77e150]:
+            - generic [ref=f77e151]: Budget after approval
+            - strong [ref=f77e152]: $30,221
+            - generic [ref=f77e153]: 31% remains / standard configuration / no exception
+          - generic [ref=f77e154]: Decision rationale
+          - textbox "Decision rationale" [ref=f77e156]
+          - generic [ref=f77e157]:
+            - button [disabled] [ref=f77e158]
+            - button [disabled] [ref=f77e162]
+        - generic [ref=f77e166]:
+          - strong [ref=f77e167]: Carried from the conversation
+          - generic [ref=f77e168]: "requestId: REQ-2048"
+    - region "Team operations overview" [ref=f77e169]:
+      - generic [ref=f77e170]:
+        - generic [ref=f77e171]:
+          - img "Megan Bowen" [ref=f77e172]
+          - generic [ref=f77e173]:
+            - strong [ref=f77e174]: Megan Bowen
+            - generic [ref=f77e175]: Device / ready
+          - generic [ref=f77e176]: $2,069
+        - generic [ref=f77e177]:
+          - generic [ref=f77e178]: AV
+          - generic [ref=f77e179]:
+            - strong [ref=f77e180]: Adele Vance
+            - generic [ref=f77e181]: Exception / 5 days
+          - generic [ref=f77e182]: $2,399
+        - generic [ref=f77e183]:
+          - generic [ref=f77e184]: AW
+          - generic [ref=f77e185]:
+            - strong [ref=f77e186]: Alex Wilber
+            - generic [ref=f77e187]: Device / overdue
+          - generic [ref=f77e188]: $1,899
+      - generic [ref=f77e189]:
+        - generic [ref=f77e190]: Product budget
+        - strong [ref=f77e191]: $36.4K
+        - paragraph [ref=f77e192]: Available after posted and committed spend. Pending approvals represent another 4.6%.
+      - generic [ref=f77e197]:
+        - generic [ref=f77e198]: Decision principle
+        - strong [ref=f77e199]: Evidence first
+        - paragraph [ref=f77e200]: Rank complete, policy-aligned requests ahead of exceptions and incomplete submissions.
+        - generic [ref=f77e201]: 2 requests past target
+    - generic [ref=f77e202]:
+      - generic [ref=f77e203]: Prepared for Megan Bowen
+      - generic [ref=f77e206]: team/team-it#approval
