@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "cf8a6aa3-35f3-4706-947c-d6d6c6d267b3",
+  "developer": {
+    "name": "Ramin Ahmadi",
+    "websiteUrl": "https://codingwithramin.com",
+    "privacyUrl": "https://codingwithramin.com/privacy",
+    "termsOfUseUrl": "https://codingwithramin.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Work IQ Answers",
+    "full": "Work IQ Answers"
+  },
+  "description": {
+    "short": "Cited answers about your work, rendered as structured UI in Copilot chat.",
+    "full": "Work IQ Answers sends your question to the Work IQ Chat API and renders the response as structured UI rather than plain text. Ask about your meetings, documents, projects, or colleagues: the people, meetings, and files mentioned in the answer become clickable chips, and every citation Work IQ returns is grouped into a source panel that deep-links straight into Teams, SharePoint, or the person's profile. Expand to fullscreen for the grouped sources and to ask follow-up questions, which continue the same Work IQ conversation. Answers are grounded in your own Microsoft 365 content and respect your existing permissions."
+  },
+  "accentColor": "#FFFFFF",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "workIQAnswersAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

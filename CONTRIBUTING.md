@@ -1,4 +1,4 @@
-# Contributing to SharePoint Copilot Apps Samples
+# Contributing to SPFx Copilot Components
 
 Thank you for your interest in contributing! This repository thrives on community contributions, and we welcome new samples, improvements to existing samples, bug fixes, and documentation updates.
 
@@ -10,8 +10,8 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## Before you start
 
-- Search the [existing samples](./samples) and [open issues](https://github.com/pnp/spfx-copilot-apps/issues) to avoid duplicating work.
-- For larger contributions, consider [opening an issue](https://github.com/pnp/spfx-copilot-apps/issues/new) first to discuss your idea with the maintainers.
+- Search the [existing samples](./samples) and [open issues](https://github.com/pnp/spfx-copilot-components/issues) to avoid duplicating work.
+- For larger contributions, consider [opening an issue](https://github.com/pnp/spfx-copilot-components/issues/new) first to discuss your idea with the maintainers.
 - Make sure any third-party libraries you use are licensed in a way that allows redistribution as part of an open source sample.
 
 ## Contributing a new sample
@@ -22,19 +22,19 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 4. **Add a `README.md`** based on [`templates/README-template.md`](./templates/README-template.md). Replace every placeholder with information specific to your sample.
 5. **Create a mandatory `assets` folder** inside your sample. Every sample must include this folder.
 6. **Add a `sample.json`** based on [`templates/sample-template.json`](./templates/sample-template.json) **into the `assets` folder**, filling in the metadata for your sample. This file is required.
-7. **Add a `preview.png`** (and optionally additional screenshots or a video link) into the same `assets` folder so others can preview your work without installing it. The `preview.png` is required.
+7. **Add at least one gallery image** (and optionally additional screenshots or a video link) into the same `assets` folder. Reference every gallery image in `sample.json`; the first image by ascending `order` becomes the catalog preview. No specific filename is required.
 8. **Test thoroughly** to confirm the sample builds and runs from a clean clone using only the steps documented in your `README.md`.
 
 ### Folder structure for a sample
 
-The `assets` folder is mandatory and must contain both `sample.json` and `preview.png`.
+The `assets` folder is mandatory and must contain `sample.json` plus at least one image referenced by its `thumbnails` collection.
 
 ```text
 samples/
 └── your-sample-name/
     ├── assets/
     │   ├── sample.json   (required)
-    │   └── preview.png   (required)
+    │   └── component-overview.png   (example gallery image)
     ├── src/
     └── README.md
 ```
@@ -58,7 +58,7 @@ If you are fixing a bug or improving an existing sample, please:
 
 ## Reporting issues and suggesting samples
 
-- Use the [issue list](https://github.com/pnp/spfx-copilot-apps/issues) to report bugs in a sample or to suggest a new sample.
+- Use the [issue list](https://github.com/pnp/spfx-copilot-components/issues) to report bugs in a sample or to suggest a new sample.
 - Be as specific as possible, including the affected sample name, steps to reproduce, and your environment details.
 
 Thank you for helping the community! You rock ❤️

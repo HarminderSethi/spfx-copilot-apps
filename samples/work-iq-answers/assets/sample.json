@@ -1,0 +1,74 @@
+[
+  {
+    "name": "pnp-spfx-copilot-apps-work-iq-answers",
+    "source": "pnp",
+    "title": "Work IQ Answers",
+    "shortDescription": "Turns a Work IQ answer into structured UI: entity chips inline and every citation grouped into a clickable source panel.",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/work-iq-answers",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/work-iq-answers",
+    "longDescription": [
+      "Work IQ Answers sends the user's natural-language question to the Work IQ Chat API and renders the response as structured UI instead of plain text. The people, meetings, and files that Work IQ tags inline in its answer become clickable chips, and every citation it returns is grouped into a source panel that deep-links into Teams, SharePoint, or a person's profile. Follow-up questions reuse the same conversation, so multi-turn works as the API intends.",
+      "The sample is the only one in this repository that calls Work IQ rather than Microsoft Graph, and it demonstrates the SPFx AadHttpClient pattern for a non-Graph Entra-secured API: a single webApiPermissionRequests entry for the delegated WorkIQAgent.Ask permission, approved once by a tenant admin, with no middle tier and no client secret.",
+      "It ships with useMock enabled, so the full experience (inline card, fullscreen view, grouped sources, entity chips, sensitivity badge) runs with zero live dependencies. The mock responses are the exact wire shape of the real API and flow through the same parsing code, so switching to the live endpoint changes no UI code."
+    ],
+    "creationDateTime": "2026-08-21",
+    "updateDateTime": "2026-08-21",
+    "products": ["SharePoint", "Microsoft 365 Copilot"],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SPFx-CopilotComponent"
+      },
+      {
+        "key": "CLIENT-SIDE-DEV",
+        "value": "React"
+      },
+      {
+        "key": "SPFX-VERSION",
+        "value": "1.24.0-beta.2"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/work-iq-answers/assets/preview.png",
+        "alt": "Work IQ Answers rendering a cited answer with entity chips and a grouped source panel"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "AhmadiRamin",
+        "pictureUrl": "https://github.com/AhmadiRamin.png",
+        "name": "Ramin Ahmadi"
+      }
+    ],
+    "references": [
+      {
+        "name": "Work IQ REST API overview",
+        "description": "Multi-turn conversations with Microsoft 365 Copilot over HTTP, with enterprise and web search grounding.",
+        "url": "https://learn.microsoft.com/microsoft-365/copilot/extensibility/work-iq/rest/overview"
+      },
+      {
+        "name": "Work IQ - copilotConversation: chat",
+        "description": "The chat endpoint used by this sample, including the attributions and sensitivityLabel response shapes.",
+        "url": "https://learn.microsoft.com/microsoft-365/copilot/extensibility/work-iq/rest/copilotconversation-chat"
+      },
+      {
+        "name": "Connect to Entra ID-secured APIs in SharePoint Framework solutions",
+        "description": "How webApiPermissionRequests and AadHttpClient let an SPFx solution call a non-Graph Entra-secured API without a middle tier.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/use-aadhttpclient"
+      },
+      {
+        "name": "Build agents for Microsoft 365 Copilot",
+        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
+      },
+      {
+        "name": "Overview of the SharePoint Framework",
+        "description": "The SharePoint Framework (SPFx) is a page and web part model that provides full support for client-side SharePoint development.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview"
+      }
+    ]
+  }
+]

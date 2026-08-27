@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "3392662e-5903-417e-95eb-d051a74c8e09",
+  "alias": "PhotosCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "PhotosTool",
+      "description": {
+        "default": "Search SharePoint for matching photos and render them in an interactive gallery."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/photos/PhotosCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

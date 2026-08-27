@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "photos",
+  "name_for_human": "SharePoint Photos",
+  "description_for_human": "Find and display SharePoint photos in an interactive gallery.",
+  "description_for_model": "Searches SharePoint document libraries for image files through Microsoft Graph Search and displays the matching photos in an interactive PhotoAlbum gallery. Supports natural-language topics and events, library/site/folder scope, optional personal OneDrive inclusion, date ranges, ordering, layout, and result limits.",
+  "contact_email": "joao.j.mendes@spteck.com"
+}

@@ -1,13 +1,27 @@
-# SharePoint Copilot Apps Samples - UX in Copilot canvas
+# Copilot Components - UX in Copilot canvas
 
-This repository contains Microsoft and community provided samples that demonstrate how to build, extend, and customize **Copilot experiences for Microsoft 365 Copilot**. The goal is to provide a curated, open collection of reusable samples that help you get started faster when building Sharepoint Copilot Apps which provide you an option to expose UX components directly in the Microsoft 365 Copilot canvas.
+[![Copilot Components: interactive experiences that bring answers, actions, and rich business workflows directly into the Copilot canvas](./assets/copilot-components-github.png)](https://pnp.github.io/spfx-copilot-components/)
+
+**[Explore the Copilot Components gallery](https://pnp.github.io/spfx-copilot-components/)**
+
+This repository contains Microsoft and community provided samples that demonstrate how to build, extend, and customize **Copilot experiences for Microsoft 365 Copilot**. The goal is to provide a curated, open collection of reusable SPFx Copilot components that help you get started faster when building SharePoint Copilot Apps with UX directly in the Microsoft 365 Copilot canvas.
 
 See more details from the announcement blog post at [Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/).
 
-![SharePoint Skills Credly Badge](./assets/copilot-apps-teaser-slide.png)
-
 > [!NOTE]
 > This repository is a community effort, maintained together with the [Microsoft 365 & Power Platform Community](https://aka.ms/community/home). Samples are provided _as is_ and are not officially supported products. See [SUPPORT.md](./SUPPORT.md) for details.
+
+## Fast path to testing
+
+**Ready-built packages.** Several samples include a ready-built `.sppkg` file under `sharepoint/solution/`. Follow that sample's README to upload the package to your tenant App Catalog and deploy the scenario without building it from source first. Sample-specific setup, permissions, and data prerequisites still apply.
+
+**No Microsoft 365 Copilot add-on is required during public preview.** You can build, deploy, and run SharePoint Copilot Apps without a Microsoft 365 Copilot add-on license or configuring consumption-based Copilot billing. An eligible Microsoft 365 user license, a SharePoint tenant, and the required deployment permissions are still needed. Optional services used by an individual sample, such as Microsoft Graph, external APIs, added knowledge sources, or Copilot Studio capabilities, can have separate licensing or usage costs. See the [official SharePoint Copilot Apps preview guidance](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app#prerequisites).
+
+## Get moving
+
+- **Try** - [Test and demo SharePoint Copilot Apps in minutes - in any Microsoft 365 tenant](https://www.youtube.com/watch?v=4asOZi4PNUQ)
+- **Explore** - [Copilot Just Got a Body: Real Enterprise Apps, Live Inside the Canvas](https://www.youtube.com/watch?v=sq2HRK1J3_o)
+- **Build** - [Creating your first SharePoint Copilot App - Tutorial](https://www.youtube.com/watch?v=1TaK6osdvc0)
 
 ## What you'll find here
 
@@ -15,7 +29,7 @@ Each sample lives in its own self-contained folder under the [`samples`](./sampl
 
 - A clear `README.md` describing what the sample does and how to run it.
 - The complete source code required to build and deploy the sample.
-- A mandatory `assets` folder containing a `sample.json` metadata file (used to surface the sample in community sample browsers) and a `preview.png` screenshot. Additional screenshots or recordings can also be placed here.
+- A mandatory `assets` folder containing a `sample.json` metadata file and at least one locally stored image referenced by its `thumbnails` collection. The first image by ascending `order` is used as the gallery preview; its filename can be chosen to fit the sample.
 
 ## Using the samples
 
@@ -24,13 +38,13 @@ To build and run these samples, you'll need to clone the repository and work wit
 Clone this repository:
 
 ```bash
-git clone https://github.com/pnp/spfx-copilot-apps.git
+git clone https://github.com/pnp/spfx-copilot-components.git
 ```
 
 Navigate into the cloned repository:
 
 ```bash
-cd spfx-copilot-apps
+cd spfx-copilot-components
 ```
 
 Move into the sample you want to use, replacing `sample-folder-name` with the name of the sample:
@@ -57,7 +71,7 @@ All contributors on this repository will be acknowledged with special SharePoint
 Please use the following logic when submitting questions or issues so they reach the right place:
 
 - For a general question or challenge with SharePoint Copilot Apps or the SharePoint Framework, use the [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues).
-- For an issue with a specific sample in this repository, use the [issue list in this repository](https://github.com/pnp/spfx-copilot-apps/issues).
+- For an issue with a specific sample in this repository, use the [issue list in this repository](https://github.com/pnp/spfx-copilot-components/issues).
 
 ## Additional resources
 

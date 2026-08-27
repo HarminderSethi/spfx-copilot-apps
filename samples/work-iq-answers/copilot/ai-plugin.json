@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "workIQAnswers",
+  "name_for_human": "Work IQ Answers",
+  "description_for_human": "Ask a question about your work and get a cited answer, with the people, meetings, and files behind it.",
+  "description_for_model": "Plugin for answering questions about the signed-in user's own work in Microsoft 365 by calling the Work IQ Chat API. Handles questions about meetings and what was decided in them, documents and their contents, projects and their status, and colleagues and what they are working on, grounded in the user's own mail, chats, meetings, and files with the user's existing permissions applied. Renders the answer as a structured card: people, meetings, and files mentioned inline become clickable chips, and every citation is grouped into a source panel that deep-links into Teams, SharePoint, or a person's profile. Follow-up questions continue the same Work IQ conversation. Use this plugin whenever the user asks what was decided, who is involved, what the latest is on a project, or any other question about their own work. This plugin only answers questions; it cannot send mail, create meetings, or modify content.",
+  "contact_email": "ramin.ahmadi@gmail.com"
+}

@@ -1,0 +1,153 @@
+---
+import { ArrowRight, CalendarDays, Search, X } from '@lucide/astro';
+import ComponentCard from '../components/ComponentCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { catalog, sitePath } from '../lib/catalog';
+
+const components = [...catalog.components].sort((left, right) =>
+  right.updatedAt.localeCompare(left.updatedAt) || left.title.localeCompare(right.title),
+);
+---
+
+<BaseLayout>
+  <section class="catalog-intro container">
+    <div>
+      <p class="eyebrow">Microsoft 365 & Power Platform Community</p>
+      <h1>Copilot Components</h1>
+      <p class="catalog-intro__descriptor">Built with SPFx</p>
+      <p class="catalog-intro__copy">
+        Interactive experiences that bring answers, actions, and rich business workflows directly into the Microsoft 365 Copilot canvas.
+      </p>
+    </div>
+    <div class="catalog-stat" aria-label={`${catalog.components.length} community components`}>
+      <strong>{catalog.components.length}</strong>
+      <span>community components</span>
+    </div>
+  </section>
+
+  <aside class="community-ribbon" aria-label="Community calls">
+    <div class="community-ribbon__inner container">
+      <CalendarDays size={24} aria-hidden="true" />
+      <p>Join the Copilot, Microsoft 365 & Power Platform community calls.</p>
+      <a href="https://aka.ms/community/home">View community calls <ArrowRight size={16} aria-hidden="true" /></a>
+    </div>
+  </aside>
+
+  <div
+    class="catalog-backdrop"
+    style={`--catalog-side-right: url('${sitePath('/images/side-bg-right.webp')}'); --catalog-side-left: url('${sitePath('/images/side-bg-left.webp')}');`}
+  >
+    <section class="catalog-shell container" aria-labelledby="catalog-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Sample catalog</p>
+          <h2 id="catalog-heading">Explore components</h2>
+        </div>
+        <a class="text-link" href={sitePath('/getting-started/')}>How to use a sample <ArrowRight size={17} aria-hidden="true" /></a>
+      </div>
+
+      <form class="catalog-toolbar" id="catalog-filters">
+        <div class="search-control">
+          <Search size={19} aria-hidden="true" />
+          <label class="sr-only" for="component-search">Search components</label>
+          <input id="component-search" name="q" type="search" placeholder="Search components" autocomplete="off" />
+          <button id="clear-search" type="button" title="Clear search" aria-label="Clear search" hidden>
+            <X size={17} aria-hidden="true" />
+          </button>
+        </div>
+        <label class="sr-only" for="contributor-filter">Contributor</label>
+        <select id="contributor-filter" name="author">
+          <option value="">All contributors</option>
+          {catalog.contributors.map((author) => <option value={author.gitHubAccount}>{author.name}</option>)}
+        </select>
+        <label class="sr-only" for="sort-components">Sort components</label>
+        <select id="sort-components" name="sort">
+          <option value="updated">Recently updated</option>
+          <option value="name">Name</option>
+        </select>
+      </form>
+
+      <p class="result-count" id="result-count" aria-live="polite">Showing {components.length} components</p>
+      <div class="component-grid" id="component-grid">
+        {components.map((component, index) => <ComponentCard component={component} index={index} />)}
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <Search size={28} aria-hidden="true" />
+        <h3>No components found</h3>
+        <p>Try a broader search or choose another contributor.</p>
+        <button class="button button--secondary" id="empty-clear" type="button">Clear filters</button>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  function requiredElement<T extends Element>(selector: string): T {
+    const element = document.querySelector<T>(selector);
+    if (!element) throw new Error(`Catalog control could not be initialized: ${selector}`);
+    return element;
+  }
+
+  const form = requiredElement<HTMLFormElement>('#catalog-filters');
+  const grid = requiredElement<HTMLElement>('#component-grid');
+  const search = requiredElement<HTMLInputElement>('#component-search');
+  const contributor = requiredElement<HTMLSelectElement>('#contributor-filter');
+  const sort = requiredElement<HTMLSelectElement>('#sort-components');
+  const count = requiredElement<HTMLElement>('#result-count');
+  const empty = requiredElement<HTMLElement>('#empty-state');
+  const clearSearch = requiredElement<HTMLButtonElement>('#clear-search');
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-component-card]')];
+
+  const query = new URLSearchParams(window.location.search);
+  search.value = query.get('q') ?? '';
+  const requestedAuthor = query.get('author');
+  if (requestedAuthor && [...contributor.options].some((option) => option.value === requestedAuthor)) {
+    contributor.value = requestedAuthor;
+  }
+  if (query.get('sort') === 'name') sort.value = 'name';
+
+  function applyFilters() {
+    const searchValue = search.value.trim().toLocaleLowerCase('en-US');
+    const authorValue = contributor.value.toLocaleLowerCase('en-US');
+    const matches = cards.filter((card) => {
+      const authors = card.dataset.authors?.split('|') ?? [];
+      return (!searchValue || card.dataset.search?.includes(searchValue)) &&
+        (!authorValue || authors.includes(authorValue));
+    });
+
+    matches.sort((left, right) => sort.value === 'name'
+      ? (left.dataset.title ?? '').localeCompare(right.dataset.title ?? '')
+      : (right.dataset.updated ?? '').localeCompare(left.dataset.updated ?? '') ||
+        (left.dataset.title ?? '').localeCompare(right.dataset.title ?? ''));
+    cards.forEach((card) => { card.hidden = true; });
+    matches.forEach((card) => {
+      card.hidden = false;
+      grid.append(card);
+    });
+
+    count.textContent = matches.length === cards.length
+      ? `Showing ${matches.length} components`
+      : `Showing ${matches.length} matching components`;
+    empty.hidden = matches.length > 0;
+    clearSearch.hidden = !searchValue;
+
+    const nextQuery = new URLSearchParams();
+    if (searchValue) nextQuery.set('q', search.value.trim());
+    if (authorValue) nextQuery.set('author', contributor.value);
+    if (sort.value === 'name') nextQuery.set('sort', 'name');
+    window.history.replaceState({}, '', `${window.location.pathname}${nextQuery.size ? `?${nextQuery}` : ''}`);
+  }
+
+  form.addEventListener('input', applyFilters);
+  form.addEventListener('change', applyFilters);
+  clearSearch.addEventListener('click', () => {
+    search.value = '';
+    search.focus();
+    applyFilters();
+  });
+  document.querySelector('#empty-clear')?.addEventListener('click', () => {
+    form.reset();
+    applyFilters();
+  });
+  applyFilters();
+</script>

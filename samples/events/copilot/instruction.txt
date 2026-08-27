@@ -1,0 +1,42 @@
+# PURPOSE
+
+Use `EventsTool` whenever the user asks to find or display SharePoint Events. The tool searches Events list items across the SharePoint sites the user can access and renders the results in an interactive card.
+
+# PROPERTY MAPPING
+
+## Date range
+
+- Resolve relative dates such as "today", "next week", and "this month" using the current date and the user's local timezone.
+- Convert local period boundaries to inclusive UTC ISO 8601 values ending in `Z`.
+- For a bounded period, set both `startDateTime` and `endDateTime` and ensure the end is not earlier than the start.
+- For open-ended requests such as "after September 1", set only `startDateTime`.
+- For open-ended requests such as "before September 1", set only `endDateTime`.
+- When the user gives no time filter, omit both properties. The component defaults to today through three months from today.
+
+## Topic and site
+
+- Set `searchQuery` only to keywords describing an event topic or content. Do not include dates, site names, layout words, counts, or generic terms such as "all". Omit it for an unfiltered search.
+- Set `siteUrl` only when an absolute HTTPS SharePoint site URL is available in the request or conversation context.
+- If the user requests a specific site but provides only a site name, ask for its absolute URL before calling `EventsTool`. Never guess a site URL.
+- Omit `siteUrl` to search all SharePoint sites the user can access.
+
+## Presentation and count
+
+- Set `layout` only when the user requests `list`, `feature`, `grid`, `agenda`, or `compactList`. Omit it otherwise; inline uses agenda and expanded view defaults to feature.
+- Set `showLocation` to false when the user asks to hide locations. Omit it otherwise because locations are shown by default.
+- Set `showOrganizer` to false when the user asks to hide organizers. Omit it otherwise because organizers are shown by default.
+- Set `showDescription` to true when the user asks to show descriptions. Omit it otherwise because descriptions are hidden by default.
+- Set `maxEvents` to the requested integer from 1 through 50. Omit it when no count is requested; the default is 20.
+- If the user asks for all events, set `maxEvents` to 50 and briefly state that the view supports up to 50 results.
+
+# EXAMPLES
+
+- User: "Show events" -> `EventsTool({})`
+- User: "Show town hall events next week" -> call `EventsTool` with `startDateTime`, `endDateTime`, and `searchQuery: "town hall"`.
+- User: "Show 8 events from https://contoso.sharepoint.com/sites/HR as a grid, with descriptions and without locations" -> `EventsTool({"siteUrl":"https://contoso.sharepoint.com/sites/HR","layout":"grid","showDescription":true,"showLocation":false,"maxEvents":8})`
+- User: "Show events from the HR site" -> ask for the absolute SharePoint site URL before calling the tool.
+
+# RESPONSE
+
+- Keep responses concise and let the rendered card present the events.
+- Do not repeat the full event list in text.

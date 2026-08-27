@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "work-iq-answers",
+    "id": "c8077771-c757-41ad-919c-1a433436e69f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Work IQ",
+        "scope": "WorkIQAgent.Ask"
+      }
+    ],
+    "developer": {
+      "name": "Ramin Ahmadi",
+      "websiteUrl": "https://codingwithramin.com",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "iconPath": "assets/96x96.png",
+    "metadata": {
+      "shortDescription": {
+        "default": "Ask Work IQ a question and get a cited, structured answer inside Copilot chat."
+      },
+      "longDescription": {
+        "default": "Work IQ Answers sends the user's question to the Work IQ Chat API and renders the response as structured UI rather than plain text. People, meetings, and files mentioned in the answer become clickable chips, and every citation Work IQ returns is grouped into a source panel that deep-links into Teams, SharePoint, or the person's profile. Follow-up questions continue the same Work IQ conversation."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "work-iq-answers Feature",
+        "description": "The feature that activates elements of the work-iq-answers solution.",
+        "id": "de25bede-7f50-4108-8ce0-7e7903e1fc36",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/work-iq-answers.sppkg"
+  }
+}

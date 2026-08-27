@@ -1,0 +1,97 @@
+---
+import { GitFork, Menu } from '@lucide/astro';
+import '../styles/global.css';
+import { catalog, sitePath } from '../lib/catalog';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = 'Copilot Components',
+  description = 'Community-built Copilot Components that bring interactive experiences into Microsoft 365 Copilot.',
+  image = catalog.components[0]?.preview.src960,
+} = Astro.props;
+const pageTitle = title === 'Copilot Components' ? title : `${title} | Copilot Components`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = image ? new URL(sitePath(image), Astro.site) : undefined;
+const currentPath = Astro.url.pathname;
+const navigation = [
+  { label: 'Components', href: '/' },
+  { label: 'Getting started', href: '/getting-started/' },
+  { label: 'Contributors', href: '/contributors/' },
+  { label: 'Contributing', href: '/contributing/' },
+  { label: "What's new", href: '/whats-new/' },
+];
+const isCurrent = (href: string) => href === '/'
+  ? currentPath === sitePath('/') || currentPath.startsWith(sitePath('/samples/'))
+  : currentPath.startsWith(sitePath(href));
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#f1f2f4" />
+    <link rel="icon" type="image/png" href={sitePath('/images/copilot.png')} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="spectrum" aria-hidden="true"></div>
+      <div class="site-header__inner container">
+        <a class="brand" href={sitePath('/')} aria-label="Copilot Components home">
+          <img src={sitePath('/images/copilot.png')} alt="" width="38" height="38" />
+          <span>Copilot <strong>Components</strong></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          {navigation.map((item) => (
+            <a href={sitePath(item.href)} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          ))}
+          <a class="nav-github" href="https://github.com/pnp/spfx-copilot-components">
+            <GitFork size={18} aria-hidden="true" /> GitHub
+          </a>
+        </nav>
+        <details class="mobile-nav">
+          <summary title="Open navigation" aria-label="Open navigation"><Menu size={22} /></summary>
+          <nav aria-label="Mobile navigation">
+            {navigation.map((item) => <a href={sitePath(item.href)}>{item.label}</a>)}
+            <a href="https://github.com/pnp/spfx-copilot-components">GitHub</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main-content"><slot /></main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <strong>Microsoft 365 & Power Platform Community</strong>
+          <p>Built by the community, for the community.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="https://aka.ms/community/home">Community home</a>
+          <a href={sitePath('/catalog.json')}>Catalog JSON</a>
+          <a href="https://github.com/pnp/spfx-copilot-components/issues/new">Report an issue</a>
+          <a href="https://github.com/pnp/spfx-copilot-components/security/policy">Security</a>
+          <a href="https://github.com/pnp/spfx-copilot-components/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a>
+          <a href="https://github.com/pnp/spfx-copilot-components/blob/main/LICENSE">MIT license</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

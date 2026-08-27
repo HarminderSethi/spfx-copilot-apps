@@ -1,0 +1,98 @@
+name: Deploy gallery
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "samples/**"
+      - "site/**"
+      - ".github/schemas/**"
+      - ".github/workflows/deploy-gallery.yml"
+      - "templates/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22.19.0"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install gallery dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Test catalog model
+        working-directory: site
+        run: npm test
+
+      - name: Check and build gallery
+        working-directory: site
+        run: npm run check && npm run build
+
+      - name: Install Chromium
+        working-directory: site
+        run: npx playwright install --with-deps chromium
+
+      - name: Test desktop, mobile, and accessibility
+        working-directory: site
+        run: npm run test:e2e
+
+      - name: Record build metrics
+        run: |
+          {
+            echo "## Gallery artifact"
+            echo "- Catalog entries: $(node -p "require('./site/dist/catalog.json').components.length")"
+            echo "- Pages: $(find site/dist -name index.html -o -name 404.html | wc -l)"
+            echo "- Optimized previews: $(find site/dist/generated/previews -name '*.webp' | wc -l)"
+            echo "- Site size: $(du -sh site/dist | cut -f1)"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site/dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+
+      - name: Smoke test deployment
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          curl --fail --retry 4 --retry-delay 3 "${SITE_URL}"
+          curl --fail --retry 4 --retry-delay 3 "${SITE_URL}catalog.json"
+          curl --fail --retry 4 --retry-delay 3 "${SITE_URL}samples/apps-directory/"
+          curl --fail --retry 4 --retry-delay 3 "${SITE_URL}generated/previews/apps-directory-640.webp" --output /dev/null
