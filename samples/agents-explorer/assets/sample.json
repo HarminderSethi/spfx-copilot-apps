@@ -1,16 +1,17 @@
 [
   {
-    "name": "pnp-spfx-copilot-components-YOUR-SAMPLE-NAME",
+    "name": "pnp-spfx-copilot-components-agents-explorer",
     "source": "pnp",
-    "title": "YOUR-SAMPLE-TITLE",
-    "shortDescription": "YOUR-SHORT-DESCRIPTION",
-    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/YOUR-SAMPLE-NAME",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/YOUR-SAMPLE-NAME",
+    "title": "Agents Explorer - Discover Copilot Agents in Copilot Chat",
+    "shortDescription": "SPFx Copilot Component that brings a tenant-wide, live view of Copilot Agents (Power Platform / Copilot Studio bots) into the Microsoft 365 Copilot canvas.",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/agents-explorer",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/agents-explorer",
     "longDescription": [
-      "YOUR-LONG-DESCRIPTION"
+      "Agents Explorer is an SPFx Copilot Component that brings a tenant-wide view of Copilot Agents (Power Platform / Copilot Studio bots) directly into the Microsoft 365 Copilot canvas. A declarative agent (\"AgentsExplorer Agent\") calls it as a tool, and it renders a live, interactive grid of agents inline in the conversation or as a fullscreen overview, reading real Dataverse data across every Power Platform environment the signed-in user can reach.",
+      "From the rendered UI, the signed-in user can see every Copilot Agent published across all Dataverse environments they have access to (with icon, owner, last-modified date, and published/not-published status), filter to agents they own, agents shared with them, or all agents, search by name/owner/schema name (with the search term extracted automatically from their Copilot request), open any agent directly in Copilot Studio, and expand the inline card to a fullscreen view for browsing larger agent lists."
     ],
-    "creationDateTime": "2026-01-01",
-    "updateDateTime": "2026-01-01",
+    "creationDateTime": "2026-09-06",
+    "updateDateTime": "2026-09-06",
     "products": [
       "SharePoint",
       "Microsoft 365 Copilot"
@@ -18,7 +19,7 @@
     "metadata": [
       {
         "key": "SAMPLE-TYPE",
-        "value": "SPFx-WebPart"
+        "value": "SPFx-Copilot-Component"
       },
       {
         "key": "CLIENT-SIDE-DEV",
@@ -26,22 +27,34 @@
       },
       {
         "key": "SPFX-VERSION",
-        "value": "1.22.0"
+        "value": "1.24.0-beta.2"
       }
     ],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/YOUR-SAMPLE-NAME/assets/preview.png",
-        "alt": "Sample preview"
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/agents-explorer/assets/3.png",
+        "alt": "Component in Action running in Microsoft 365 Copilot"
+      },
+      {
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/agents-explorer/assets/1.png",
+        "alt": "Inline Copilot Agents Explorer grid in the Copilot Component Workbench"
+      },
+      {
+        "type": "image",
+        "order": 102,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/agents-explorer/assets/2.png",
+        "alt": "Debug panel showing the AgentsExplorerTool invoked with ownershipFilter and searchText arguments"
       }
     ],
     "authors": [
       {
-        "gitHubAccount": "YOUR-GITHUB-ACCOUNT",
-        "pictureUrl": "https://github.com/YOUR-GITHUB-ACCOUNT.png",
-        "name": "YOUR-NAME"
+        "gitHubAccount": "siddharth-vaghasia",
+        "pictureUrl": "https://github.com/siddharth-vaghasia.png",
+        "name": "Siddharth Vaghasia"
       }
     ],
     "references": [
@@ -54,6 +67,11 @@
         "name": "Overview of the SharePoint Framework",
         "description": "The SharePoint Framework (SPFx) is a page and web part model that provides full support for client-side SharePoint development.",
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview"
+      },
+      {
+        "name": "Use Microsoft Graph in your solution",
+        "description": "Learn how SharePoint Framework solutions can use Microsoft Graph APIs via brokered, SSO-based calls.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis"
       }
     ]
   }
