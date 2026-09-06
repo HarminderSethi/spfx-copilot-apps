@@ -15,7 +15,7 @@
     {
       "name": "GetNextBestActions",
       "description": {
-        "default": "Rank the signed-in employee's next best HR actions. Use this tool for prompts such as 'What should I do next?', 'Show my HR priorities', or 'What HR tasks are most urgent?'. Pass an explicitly requested period or HR focus family, and include sensitive actions only when the user explicitly asks for them."
+        "default": "Rank concrete HR tasks for the signed-in employee by urgency and impact. Use for prompts such as 'What should I do next?', 'Show my HR priorities', or 'What HR tasks are most urgent?'. Do not use for a broad status summary; use GetMyHRDashboard, or for profile-only recommendations; use GetProfileHealth. Pass period or focusArea when explicit, and set includeSensitive only when requested."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getNextBestActions/GetNextBestActionsCopilotComponentProperties.js:default;"

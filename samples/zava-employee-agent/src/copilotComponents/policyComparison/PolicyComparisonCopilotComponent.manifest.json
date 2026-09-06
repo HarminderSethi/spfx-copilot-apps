@@ -15,7 +15,7 @@
     {
       "name": "ComparePolicies",
       "description": {
-        "default": "Compare one policy topic across two or more jurisdictions in a side-by-side matrix with highlighted differences. Use only for explicit comparisons; use AskPolicy for a single policy answer."
+        "default": "Compare one policy topic across two or more jurisdictions or policy variants in a side-by-side differences matrix. Use for prompts such as 'Compare parental leave in Finland and Sweden' or 'How do these country policies differ?'. Do not use for a single policy question; use AskPolicy. Pass the topic, at least two jurisdictions, and any stated effectiveOn date."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/policyComparison/PolicyComparisonCopilotComponentProperties.js:default;"

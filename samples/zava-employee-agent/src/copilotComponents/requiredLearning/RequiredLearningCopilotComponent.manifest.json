@@ -15,7 +15,7 @@
     {
       "name": "GetRequiredLearning",
       "description": {
-        "default": "Show required employee learning due soon with compliance progress, urgency, estimated effort, and resume actions. Use for mandatory or compliance learning, not general recommendations."
+        "default": "Show the signed-in employee's required or compliance learning queue with due dates, completion progress, urgency, and resume actions. Use for prompts such as 'What training is required?', 'Show my mandatory learning', or 'What compliance courses are due?'. Do not use for general skill-development recommendations. Pass dueWithinDays or includeOptional only when requested."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/requiredLearning/RequiredLearningCopilotComponentProperties.js:default;"

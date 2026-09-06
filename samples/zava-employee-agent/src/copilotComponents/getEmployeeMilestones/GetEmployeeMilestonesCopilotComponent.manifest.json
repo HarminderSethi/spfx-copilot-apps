@@ -15,7 +15,7 @@
     {
       "name": "GetEmployeeMilestones",
       "description": {
-        "default": "Show the signed-in employee's upcoming service, career, and rewards milestones. Use this tool for prompts such as 'What is coming up?', 'Show my milestones', or 'When is my work anniversary?'. Pass a month, quarter, or year horizon only when requested, and pass a milestone ID only for a known specific milestone."
+        "default": "Show the signed-in employee's service anniversaries, career events, and rewards milestones. Use for prompts such as 'When is my work anniversary?', 'Show my career milestones', or 'What milestones are this quarter?'. Do not use for a general HR timeline or worklife metrics; use GetWorklifeSnapshot. Pass period or milestoneId only when requested or known."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getEmployeeMilestones/GetEmployeeMilestonesCopilotComponentProperties.js:default;"

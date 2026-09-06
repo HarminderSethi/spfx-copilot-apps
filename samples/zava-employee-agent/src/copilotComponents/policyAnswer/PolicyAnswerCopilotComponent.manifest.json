@@ -15,7 +15,7 @@
     {
       "name": "AskPolicy",
       "description": {
-        "default": "Answer an employee policy question with applicability, confidence, effective dates, and visible source receipts. Use for questions about what a policy says or which rule applies; use ComparePolicies when the user explicitly asks to compare countries or policy variants."
+        "default": "Answer one employee policy question with applicability, confidence, effective dates, and source receipts. Use for prompts such as 'What parental leave policy applies to me?' or 'What are the remote-work rules in Finland?'. Do not use for an explicit comparison across countries or policy variants; use ComparePolicies. Pass question and any stated jurisdiction, effectiveOn date, or includeSources preference."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/policyAnswer/PolicyAnswerCopilotComponentProperties.js:default;"

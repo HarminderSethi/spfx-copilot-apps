@@ -15,7 +15,7 @@
     {
       "name": "GetTotalRewards",
       "description": {
-        "default": "Show annual total rewards value across salary, bonus, equity, pension, and employer-funded benefits with a composition chart. Use for annual employment value; use payroll tools for a pay period."
+        "default": "Show the signed-in employee's annual total rewards across salary, bonus, equity, pension, and employer-funded benefits. Use for prompts such as 'What is my total compensation?', 'Show my annual rewards', or 'What is my employment package worth?'. Do not use for one pay statement; use GetLatestPay, or to explain a pay difference; use ExplainPayChange. Pass year, currency, includeEquity, or includeBenefitsValue only when stated."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/totalRewardsSummary/TotalRewardsSummaryCopilotComponentProperties.js:default;"

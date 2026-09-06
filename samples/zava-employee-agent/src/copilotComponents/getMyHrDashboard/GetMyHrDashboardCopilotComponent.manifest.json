@@ -15,7 +15,7 @@
     {
       "name": "GetMyHRDashboard",
       "description": {
-        "default": "Render the signed-in employee's general Zava HR summary. Use this tool for broad requests such as 'What needs my attention?', 'Show my HR dashboard', or 'Give me my HR summary'. Do not use it for profile completeness, ranked next actions, worklife snapshots, or milestones because those intents have dedicated tools. Pass an explicitly requested period, focus family, locale, privacy level, or permission for sensitive details."
+        "default": "Render the signed-in employee's broad cross-family HR summary with key alerts and attention items. Use for prompts such as 'What needs my attention across HR?', 'Show my HR dashboard', or 'Give me my HR summary'. Do not use for profile completeness, ranked next actions, worklife metrics or timeline, or milestones; use GetProfileHealth, GetNextBestActions, GetWorklifeSnapshot, or GetEmployeeMilestones. Pass period, focusArea, locale, privacyLevel, or includeSensitive only when explicit."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getMyHrDashboard/GetMyHrDashboardCopilotComponentProperties.js:default;"

@@ -15,7 +15,7 @@
     {
       "name": "ExplainPayChange",
       "description": {
-        "default": "Explain why net pay changed between two periods with a driver waterfall for earnings and deductions. Use for comparison and variance questions; use GetLatestPay for a single statement."
+        "default": "Explain why the signed-in employee's pay changed between two periods using earnings and deduction drivers. Use for prompts such as 'Why did my pay change?' or 'Compare my July and June pay'. Do not use to display one pay statement; use GetLatestPay. Pass period, compareTo, and includeDeductions when stated."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/explainPayChange/ExplainPayChangeCopilotComponentProperties.js:default;"

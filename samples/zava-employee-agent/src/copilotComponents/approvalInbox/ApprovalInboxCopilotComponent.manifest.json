@@ -15,7 +15,7 @@
     {
       "name": "GetApprovalInbox",
       "description": {
-        "default": "Show a manager's pending approval queue with requester context, urgency, and coverage impact. Use for approvals waiting on the manager; use GetTeamAbsenceCalendar for absence overlap questions."
+        "default": "Show decisions waiting on the signed-in manager, including requester, urgency, and coverage impact. Use for prompts such as 'What needs my approval?' or 'Show pending leave approvals'. Do not use for who is away, absence overlap, or coverage planning; use GetTeamAbsenceCalendar. Pass teamId or approvalType only when the user specifies them."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/approvalInbox/ApprovalInboxCopilotComponentProperties.js:default;"

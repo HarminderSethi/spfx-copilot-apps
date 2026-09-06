@@ -15,7 +15,7 @@ import { getGreeting } from '../utils/greeting';
 import MetricTile from './MetricTile';
 
 const useStyles = makeStyles({
-  root: { display: 'flex', flexDirection: 'column', gap: '18px' },
+  root: { display: 'flex', flexDirection: 'column', gap: '18px', outlineStyle: 'none' },
   top: {
     minHeight: '72px',
     display: 'flex',

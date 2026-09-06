@@ -15,7 +15,7 @@
     {
       "name": "StartLifeEvent",
       "description": {
-        "default": "Start a reviewable benefits life-event workflow with event, effective date, and dependent count prefilled. Preview coverage and monthly cost impact; never submit automatically."
+        "default": "Start a reviewable benefits-change workflow for a marriage, birth, adoption, relocation, or loss of coverage. Use for prompts such as 'I had a new child and need to update benefits' or 'Start a marriage life event'. Do not use to compare plans without a life event; use CompareBenefitPlans. Pass lifeEvent, effectiveDate, and dependentCount from the prompt, and never submit without user review and confirmation."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/startLifeEvent/StartLifeEventCopilotComponentProperties.js:default;"

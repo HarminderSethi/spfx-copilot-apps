@@ -15,7 +15,7 @@
     {
       "name": "CompareBenefitPlans",
       "description": {
-        "default": "Compare benefit plans in a weighted matrix using coverage tier, dependent count, and stated priorities such as deductible or dental. Use for plan decisions, not for starting a life-event change."
+        "default": "Compare benefit plan options in a weighted matrix for a coverage tier, dependent count, and stated priorities. Use for prompts such as 'Compare benefit plans' or 'Which plan fits my family?'. Do not use to report or begin a marriage, birth, adoption, relocation, or loss-of-coverage change; use StartLifeEvent. Pass only plan-choice criteria the user states."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/compareBenefitPlans/CompareBenefitPlansCopilotComponentProperties.js:default;"

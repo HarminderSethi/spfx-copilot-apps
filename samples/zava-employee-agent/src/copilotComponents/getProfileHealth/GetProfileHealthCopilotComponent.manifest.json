@@ -15,7 +15,7 @@
     {
       "name": "GetProfileHealth",
       "description": {
-        "default": "Show the signed-in employee's HR profile completeness and recommended profile updates. Use this tool for prompts such as 'Is my profile complete?', 'Check my profile health', or 'What profile information should I update?'. This intent needs no prompt parameters."
+        "default": "Show the signed-in employee's HR profile completeness score, missing information, and recommended profile updates. Use for prompts such as 'Is my profile complete?', 'Check my profile health', or 'What profile information should I update?'. Do not use for unrelated HR priorities or a broad dashboard; use GetNextBestActions or GetMyHRDashboard. This tool takes no prompt parameters."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getProfileHealth/GetProfileHealthCopilotComponentProperties.js:default;"

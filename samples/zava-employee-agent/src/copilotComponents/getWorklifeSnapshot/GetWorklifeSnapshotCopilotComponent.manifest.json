@@ -15,7 +15,7 @@
     {
       "name": "GetWorklifeSnapshot",
       "description": {
-        "default": "Show the signed-in employee's worklife snapshot, HR metrics, and upcoming timeline. Use this tool for prompts such as 'Show my HR snapshot', 'What is happening in my worklife?', or 'Show my HR timeline'. Pass a period only when the user specifies today, this week, this month, or this year."
+        "default": "Show the signed-in employee's time-bound worklife metrics and upcoming HR event timeline. Use for prompts such as 'Show my worklife snapshot', 'What is happening in my worklife this month?', or 'Show my HR timeline'. Do not use for a broad cross-family summary, ranked tasks, or service milestones; use GetMyHRDashboard, GetNextBestActions, or GetEmployeeMilestones. Pass period only when specified."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getWorklifeSnapshot/GetWorklifeSnapshotCopilotComponentProperties.js:default;"

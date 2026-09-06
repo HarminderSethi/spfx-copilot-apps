@@ -15,7 +15,7 @@
     {
       "name": "GetTeamAbsenceCalendar",
       "description": {
-        "default": "Show a manager's team absence heatmap for a date range with overlap and remaining coverage explained. Use for who is away or coverage risk; use GetApprovalInbox for pending decisions."
+        "default": "Show the signed-in manager's team absences for a date range, including overlap and remaining coverage. Use for prompts such as 'Who is away next week?', 'Show team absences', or 'Do we have coverage for the launch?'. Do not use for requests awaiting an approval decision; use GetApprovalInbox. Pass teamId, startDate, or endDate only when stated."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/teamAbsenceCalendar/TeamAbsenceCalendarCopilotComponentProperties.js:default;"

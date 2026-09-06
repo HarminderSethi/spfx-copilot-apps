@@ -44,7 +44,7 @@ for (const thumbnail of thumbnails) {
   const width = bytes.readUInt32BE(16);
   const height = bytes.readUInt32BE(20);
   assert(width >= 320 && height >= 240, `${thumbnail.name} is too small (${width}x${height}).`);
-  const expectedUrl = `https://github.com/pnp/spfx-copilot-apps/raw/main/${repositoryPath}/${thumbnail.name}`;
+  const expectedUrl = `https://github.com/pnp/spfx-copilot-components/raw/main/${repositoryPath}/${thumbnail.name}`;
   assert(thumbnail.url === expectedUrl, `${thumbnail.name} has an unexpected raw GitHub URL.`);
 }
 

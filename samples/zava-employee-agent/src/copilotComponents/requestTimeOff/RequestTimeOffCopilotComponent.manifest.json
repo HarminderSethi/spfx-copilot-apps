@@ -15,7 +15,7 @@
     {
       "name": "RequestTimeOff",
       "description": {
-        "default": "Open a reviewable time-off request with prompt-supplied leave type, dates, and reason prefilled. Calculate working days and show calendar or coverage conflicts; never submit automatically."
+        "default": "Open a reviewable time-off request with leave type, dates, and reason prefilled. Use for prompts such as 'Request vacation next week' or 'Book time off from August 4 to 12'. Do not use for balance-only questions; use GetLeaveBalance. Pass leaveType, startDate, endDate, and reason from the prompt. Show working days and conflicts, and never submit without user review and confirmation."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/requestTimeOff/RequestTimeOffCopilotComponentProperties.js:default;"

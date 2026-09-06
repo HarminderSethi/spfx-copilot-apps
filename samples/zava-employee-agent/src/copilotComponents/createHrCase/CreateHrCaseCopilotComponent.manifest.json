@@ -15,7 +15,7 @@
     {
       "name": "CreateHRCase",
       "description": {
-        "default": "Open a private, reviewable HR case intake with category, subject, description, and privacy boundary prefilled. Offer a knowledge answer first when safe and never submit automatically."
+        "default": "Open a private, reviewable HR case intake with category, subject, description, and privacy level prefilled. Use for prompts such as 'Open an HR case about my payroll deduction' or 'I need private help from HR'. For an informational policy question, use AskPolicy. Never submit automatically; require user review and confirmation."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/createHrCase/CreateHrCaseCopilotComponentProperties.js:default;"

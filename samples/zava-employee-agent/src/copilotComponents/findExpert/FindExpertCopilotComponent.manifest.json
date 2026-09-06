@@ -15,7 +15,7 @@
     {
       "name": "FindExpert",
       "description": {
-        "default": "Find people with a requested expertise using visible role, skill, location, and collaboration evidence. Use for expert matching; use ExploreOrganization for reporting structure and organization context."
+        "default": "Find people who match requested expertise using skill, role, location, and collaboration evidence. Use for prompts such as 'Find an accessibility expert' or 'Who knows Azure in Helsinki?'. Do not use for reporting lines, org charts, or team membership; use ExploreOrganization. Pass expertise and optional location from the prompt."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/findExpert/FindExpertCopilotComponentProperties.js:default;"

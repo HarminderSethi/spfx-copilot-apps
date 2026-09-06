@@ -15,7 +15,7 @@
     {
       "name": "GetLeaveBalance",
       "description": {
-        "default": "Show the signed-in employee's available leave as a visual balance composition with expiring carryover and upcoming booked time. Use for balance questions; use RequestTimeOff when the user wants to book dates."
+        "default": "Show the signed-in employee's available leave balance, expiring carryover, and already booked time. Use for prompts such as 'How much vacation do I have?', 'When does my carryover expire?', or 'Show my sick leave balance'. Do not use when the employee wants to book dates; use RequestTimeOff. Pass leaveType or asOfDate only when stated."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/leaveBalance/LeaveBalanceCopilotComponentProperties.js:default;"

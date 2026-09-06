@@ -15,7 +15,7 @@
     {
       "name": "ExploreOrganization",
       "description": {
-        "default": "Explore an organization or person's reporting context in an accessible collapsible hierarchy. Use for org structure and adjacent teams; use FindExpert for skill-based people discovery."
+        "default": "Show reporting lines, team membership, and adjacent organization context in a collapsible hierarchy. Use for prompts such as 'Show the org chart', 'Who reports to Megan?', or 'Explore Customer Experience'. Do not use to search by skill or expertise; use FindExpert. Pass personId, organizationId, or depth only when known or requested."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreOrganization/ExploreOrganizationCopilotComponentProperties.js:default;"

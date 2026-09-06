@@ -15,7 +15,7 @@
     {
       "name": "GetLatestPay",
       "description": {
-        "default": "Show the signed-in employee's latest pay statement with gross, deductions, net pay, and a privacy-safe composition visual. Use for the amount or statement itself; use ExplainPayChange for why it changed."
+        "default": "Show one pay statement for the signed-in employee with gross pay, deductions, and net pay. Use for prompts such as 'Show my latest pay', 'What was my net pay?', or 'Show my July statement'. Do not use to explain a period-to-period difference; use ExplainPayChange, or for annual total compensation; use GetTotalRewards. Pass period only when stated."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/latestPay/LatestPayCopilotComponentProperties.js:default;"
