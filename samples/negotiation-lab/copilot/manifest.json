@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.0",
+  "id": "66ddb96d-d76d-4f69-9703-4d09d5b1b8b0",
+  "developer": {
+    "name": "Nello D'Andrea",
+    "websiteUrl": "https://github.com/ferrarirosso",
+    "privacyUrl": "https://github.com/ferrarirosso",
+    "termsOfUseUrl": "https://github.com/ferrarirosso"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Negotiation Lab",
+    "full": "Negotiation Lab"
+  },
+  "description": {
+    "short": "Practise negotiation in React with a Copilot-powered counterpart.",
+    "full": "A compact SPFx beta.3 sample: APVEE provisions two SharePoint lists; one tabbed React board separates terms-free questions from offers with editable terms, and Copilot returns validated reply previews."
+  },
+  "accentColor": "#5B3FD6",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "negotiationLabAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": [
+    "identity"
+  ],
+  "validDomains": []
+}

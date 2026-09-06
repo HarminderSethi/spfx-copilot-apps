@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "3d858efd-6781-490d-b97a-33eeadb4ef54",
+  "alias": "NegotiationLabOpenPracticeCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+  "tools": [
+    {
+      "name": "NegotiationLabOpenPractice",
+      "description": {
+        "default": "Render a fresh current Negotiation Lab board. Use open mode for start, show or resume requests. Use answer mode with the Ready question context value to show one concise counterpart answer inside the matching current board. The call loads state but never starts, updates or completes a negotiation."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/openPractice/OpenPracticeCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

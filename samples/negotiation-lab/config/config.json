@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "negotiation-lab-open-practice-copilot-component": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/openPractice/OpenPracticeCopilotComponent.js",
+          "manifest": "./src/copilotComponents/openPractice/OpenPracticeCopilotComponent.manifest.json"
+        }
+      ]
+    },
+    "negotiation-lab-show-reply-copilot-component": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/showReply/ShowReplyCopilotComponent.js",
+          "manifest": "./src/copilotComponents/showReply/ShowReplyCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}

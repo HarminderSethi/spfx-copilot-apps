@@ -1,0 +1,4 @@
+{
+  "$schema": "./negotiation-lab.deployment.schema.json",
+  "targetSiteUrl": "/sites/negotiation-lab"
+}
