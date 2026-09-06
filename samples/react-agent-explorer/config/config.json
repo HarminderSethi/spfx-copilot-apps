@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "agents-explorer-copilot-component": {
+      "components": [
+        {
+          "entrypoint": "./lib/copilotComponents/agentsExplorer/AgentsExplorerCopilotComponent.js",
+          "manifest": "./src/copilotComponents/agentsExplorer/AgentsExplorerCopilotComponent.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AgentsExplorerCopilotComponentStrings": "lib/copilotComponents/agentsExplorer/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "394cb912-8d95-4ca8-a688-e6ba5efba835",
+  "alias": "AgentsExplorerCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+
+  "tools": [
+    {
+      "name": "AgentsExplorerTool",
+      "description": {
+        "default": "Finds and displays the Copilot Agents published across the Microsoft 365 tenant's Power Platform environments."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/agentsExplorer/AgentsExplorerCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

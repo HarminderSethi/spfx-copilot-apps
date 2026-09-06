@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "agents-explorer-client-side-solution",
+    "id": "a07b3a2d-4eec-48f0-a169-09f1171eadd7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "agents-explorer description"
+      },
+      "longDescription": {
+        "default": "agents-explorer description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "agents-explorer Feature",
+        "description": "The feature that activates elements of the agents-explorer solution.",
+        "id": "0e2b7de1-fb02-4559-858a-1d8d21d3e355",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      },
+      {
+        "resource": "PowerApps Service",
+        "scope": "User"
+      },
+      {
+        "resource": "Dynamics CRM",
+        "scope": "user_impersonation"
+      },
+      {
+        "resource": "Azure Service Management",
+        "scope": "user_impersonation"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/agents-explorer.sppkg"
+  }
+}
