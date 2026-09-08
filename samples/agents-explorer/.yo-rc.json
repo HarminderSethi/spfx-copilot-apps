@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.21.1",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.2",
+    "libraryName": "agents-explorer",
+    "libraryId": "a07b3a2d-4eec-48f0-a169-09f1171eadd7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "agents-explorer",
+    "solutionShortDescription": "agents-explorer description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "copilotComponent"
+  }
+}
