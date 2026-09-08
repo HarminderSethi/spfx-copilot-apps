@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "4b6ec63f-d530-4469-8482-1ee86bea2e54",
+  "alias": "NegotiationLabShowReplyCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+  "tools": [
+    {
+      "name": "NegotiationLabShowReply",
+      "description": {
+        "default": "Show the counterpart response when protocol v5 context is AwaitingCounterpart and the current message matches binding.pending.playerMessage. Copy sessionItemId and replyToPendingId from binding.pending. Keep counter prose qualitative because React compares the values. A counter must supply a complete absolute issueKey,value package that differs from the pending player offer; use accept for the exact package."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/showReply/ShowReplyCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

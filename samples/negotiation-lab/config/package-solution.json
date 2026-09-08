@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "negotiation-lab-client-side-solution",
+    "id": "8e969517-e301-4cf5-aa71-041eceb25fd5",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Nello D'Andrea",
+      "websiteUrl": "https://github.com/ferrarirosso",
+      "privacyUrl": "https://github.com/ferrarirosso",
+      "termsOfUseUrl": "https://github.com/ferrarirosso",
+      "mpnId": "Undefined-1.24.0-beta.3"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "A compact React and Copilot negotiation practice with SharePoint-backed state."
+      },
+      "longDescription": {
+        "default": "Two SPFx Copilot components keep a current practice board available while Copilot answers questions or previews counterpart offers. APVEE provisions two simple SharePoint lists; questions write nothing, and only explicit React actions submit or accept terms."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Negotiation Lab",
+        "description": "Activates the Negotiation Lab components and declarative agent.",
+        "id": "959c66ce-dcf7-4b01-be57-cabab242393d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/negotiation-lab.sppkg"
+  }
+}

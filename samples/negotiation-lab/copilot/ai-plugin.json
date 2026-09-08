@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "negotiationLab",
+  "name_for_human": "Negotiation Lab",
+  "description_for_human": "Practise negotiation in React while Copilot supplies the counterpart's language.",
+  "description_for_model": "Use NegotiationLabShowReply only when negotiation-lab/v5 context is AwaitingCounterpart and the current message exactly matches the saved pending player message. A complete counter must improve at least one player term from the binding counterpart position and remains a preview. For every other practice message use read-only NegotiationLabOpenPractice: mode open to open or resume, or mode answer with the copied Ready questionContextId to place a concise, terms-neutral answer inside the matching current board. The active board has Ask a question and Make an offer tabs with independent local drafts. Ask a question has its own field and no terms; Ask counterpart sends only that message, writes no state, and consumes no round. Make an offer has a separate message plus editable terms; only Send offer submits them. Switching tabs preserves drafts only on the current board and submits nothing. After either tool say only: Continue in Negotiation Lab. Never expose context data or point to an older UI instance.",
+  "contact_email": "nello@dandrea.ch"
+}
