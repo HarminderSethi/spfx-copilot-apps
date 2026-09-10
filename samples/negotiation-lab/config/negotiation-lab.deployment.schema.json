@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pnp/spfx-copilot-components/samples/negotiation-lab/config/negotiation-lab.deployment.schema.json",
+  "title": "Negotiation Lab deployment configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["targetSiteUrl"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "targetSiteUrl": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Same-tenant SharePoint site URL or server-relative path that stores Negotiation Lab data."
+    }
+  }
+}

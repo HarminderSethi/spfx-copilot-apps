@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "Negotiation Lab"
+      },
+      "description": {
+        "default": "A small negotiation practice where a tabbed React board separates terms-free questions from offers with their own message and editable terms, while Copilot supplies counterpart language."
+      },
+      "components": [
+        "3d858efd-6781-490d-b97a-33eeadb4ef54",
+        "4b6ec63f-d530-4469-8482-1ee86bea2e54"
+      ]
+    }
+  ]
+}

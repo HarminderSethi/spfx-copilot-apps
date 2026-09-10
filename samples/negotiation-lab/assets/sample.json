@@ -1,0 +1,107 @@
+[
+  {
+    "name": "pnp-spfx-copilot-components-negotiation-lab",
+    "source": "pnp",
+    "title": "Negotiation Lab",
+    "shortDescription": "Augment SPFx React components with Copilot conversations, structured replies and APVEE-provisioned SharePoint storage.",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/negotiation-lab",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/negotiation-lab",
+    "longDescription": [
+      "Learn how to provision SharePoint lists with APVEE from an SPFx Copilot component, send messages and structured context to Microsoft 365 Copilot, and display generated answers and proposals inside React. Built with SPFx 1.24.0-beta.3 and React 18.",
+      "Negotiation Lab demonstrates the integration through SaaS renewal, total job offer and service recovery scenarios. Users ask questions, edit terms and confirm outcomes, with a saved Cool, Medium or Hard counterpart style and practice state stored in two SharePoint lists."
+    ],
+    "creationDateTime": "2026-08-03",
+    "updateDateTime": "2026-09-06",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SPFx-CopilotComponent"
+      },
+      {
+        "key": "CLIENT-SIDE-DEV",
+        "value": "React"
+      },
+      {
+        "key": "SPFX-VERSION",
+        "value": "1.24.0-beta.3"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ferrarirosso",
+        "pictureUrl": "https://github.com/ferrarirosso.png",
+        "name": "Nello D'Andrea"
+      }
+    ],
+    "thumbnails": [
+      {
+        "name": "preview.png",
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/negotiation-lab/assets/preview.png",
+        "alt": "Counteroffer preview showing CHF 108,000, 24 months and 16 support hours with explicit confirmation actions"
+      },
+      {
+        "name": "ask-counterpart.png",
+        "type": "image",
+        "order": 200,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/negotiation-lab/assets/ask-counterpart.png",
+        "alt": "Copilot answers a renewal question inside the Negotiation Lab React component"
+      },
+      {
+        "name": "agreement.png",
+        "type": "image",
+        "order": 300,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/negotiation-lab/assets/agreement.png",
+        "alt": "Recorded agreement with the same terms as the confirmed counteroffer"
+      },
+      {
+        "name": "choose-scenario.png",
+        "type": "image",
+        "order": 500,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/negotiation-lab/assets/choose-scenario.png",
+        "alt": "Three negotiation scenarios and the Cool, Medium or Hard style selector"
+      },
+      {
+        "name": "ask-question.png",
+        "type": "image",
+        "order": 600,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/negotiation-lab/assets/ask-question.png",
+        "alt": "Question entered in the component before asking the counterpart"
+      },
+      {
+        "name": "make-offer.png",
+        "type": "image",
+        "order": 700,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/negotiation-lab/assets/make-offer.png",
+        "alt": "Separate offer-editing example with an unsent draft of CHF 90,000, 36 months and 16 support hours"
+      }
+    ],
+    "references": [
+      {
+        "name": "Overview of SharePoint Copilot Apps",
+        "description": "Extend Microsoft 365 Copilot with interactive experiences built with the SharePoint Framework.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
+      },
+      {
+        "name": "Build your first SharePoint Copilot App",
+        "description": "Create, test, package, and deploy a SharePoint Copilot App.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app"
+      },
+      {
+        "name": "Tenant-scoped deployment",
+        "description": "Deploy a SharePoint Framework solution once and make it available across the tenant.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/tenant-scoped-deployment"
+      },
+      {
+        "name": "APVEE M365 Actionable Provisioning",
+        "description": "Provision a small SharePoint schema from a declarative action plan.",
+        "url": "https://www.npmjs.com/package/@apvee/m365-actionable-provisioning"
+      }
+    ]
+  }
+]

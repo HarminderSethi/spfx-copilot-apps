@@ -1,6 +1,10 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type APIRequestContext } from '@playwright/test';
 
+test.beforeEach(async ({ page }) => {
+  await page.route('https://m365-visitor-stats.azurewebsites.net/**', (route) => route.abort());
+});
+
 async function fetchCatalog(request: APIRequestContext) {
   const response = await request.get('./catalog.json');
   expect(response.ok()).toBeTruthy();
@@ -47,12 +51,59 @@ test('component detail exposes source, download, and documentation', async ({ pa
   await expect(page.getByRole('heading', { level: 2, name: 'Setup and implementation' })).toBeVisible();
 });
 
-test('home and detail pages have no automatically detectable accessibility violations', async ({ page }) => {
-  for (const route of ['./', './samples/apps-directory/']) {
-    await page.goto(route);
-    const results = await new AxeBuilder({ page }).analyze();
-    expect(results.violations, `${route} accessibility violations`).toEqual([]);
-  }
+test('tracks visits using the current site route', async ({ page }) => {
+  const tracker = page.locator('img[data-visitor-stats]');
+
+  await page.goto('./');
+  await expect(tracker).toHaveAttribute(
+    'src',
+    'https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/',
+  );
+
+  await page.goto('./contributors/');
+  await expect(tracker).toHaveAttribute(
+    'src',
+    'https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/contributors',
+  );
+
+  await page.goto('./samples/apps-directory/');
+  await expect(tracker).toHaveAttribute(
+    'src',
+    'https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/apps-directory',
+  );
+});
+
+test('defaults to light, switches themes accessibly, and persists the preference', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto('./');
+
+  const toggle = page.getByRole('switch', { name: 'Switch to dark mode' });
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(toggle).toHaveAttribute('aria-checked', 'false');
+
+  await toggle.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(page.getByRole('switch', { name: 'Switch to light mode' })).toHaveAttribute('aria-checked', 'true');
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('copilot-components-theme'))).toBe('dark');
+
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(page.getByRole('switch', { name: 'Switch to light mode' })).toHaveAttribute('aria-checked', 'true');
+});
+
+test('light and dark pages have no automatically detectable accessibility violations', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('copilot-components-theme', 'light'));
+  await page.goto('./');
+  const lightHomeResults = await new AxeBuilder({ page }).analyze();
+  expect(lightHomeResults.violations).toEqual([]);
+
+  await page.getByRole('switch', { name: 'Switch to dark mode' }).click();
+  const darkHomeResults = await new AxeBuilder({ page }).analyze();
+  expect(darkHomeResults.violations).toEqual([]);
+
+  await page.goto('./samples/apps-directory/');
+  const darkDetailResults = await new AxeBuilder({ page }).analyze();
+  expect(darkDetailResults.violations).toEqual([]);
 });
 
 test('mobile navigation exposes all primary destinations', async ({ page }, testInfo) => {

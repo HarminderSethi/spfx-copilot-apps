@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.8/schema.json",
+  "version": "v1.8",
+  "name": "Negotiation Lab",
+  "description": "Practise a simple negotiation in React with Copilot as the fictional counterpart.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+    {
+      "title": "Open the practice board",
+      "text": "Open Negotiation Lab so I can choose a scenario."
+    },
+    {
+      "title": "Resume my practice",
+      "text": "Show my current Negotiation Lab practice."
+    },
+    {
+      "title": "Learn the interaction",
+      "text": "How does the Negotiation Lab board work?"
+    }
+  ],
+  "actions": [
+    {
+      "id": "negotiationLabAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}
