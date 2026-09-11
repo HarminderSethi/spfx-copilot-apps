@@ -16,7 +16,7 @@
     {
       "name": "GetMyInnovation",
       "description": {
-        "default": "Use for the signed-in person’s ideas and next actions. Do not use for enterprise portfolio analysis."
+        "default": "Use when the signed-in person wants status, feedback, milestones, or next actions across their own existing ideas. Do not use to create an idea or analyze the enterprise portfolio; use SubmitInnovationIdea or ExploreInnovationPortfolio instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getMyInnovation/GetMyInnovationCopilotComponentProperties.js:default;"

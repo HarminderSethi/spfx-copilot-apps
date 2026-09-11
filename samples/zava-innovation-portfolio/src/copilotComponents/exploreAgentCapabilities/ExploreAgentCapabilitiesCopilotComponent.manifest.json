@@ -16,7 +16,7 @@
     {
       "name": "ExploreAgentCapabilities",
       "description": {
-        "default": "Use for discovering available innovation scenarios. Do not use for a specific operational request."
+        "default": "Use only when a user asks what the agent can do or needs help choosing an innovation scenario. Do not use when the request already names a specific operational job; select that job’s tool instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponentProperties.js:default;"

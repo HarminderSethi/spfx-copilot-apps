@@ -16,7 +16,7 @@
     {
       "name": "GenerateInnovationBrief",
       "description": {
-        "default": "Use for an evidence-grounded executive innovation brief. Do not use for raw analysis."
+        "default": "Use when leadership needs an editable, evidence-grounded narrative brief that summarizes current findings and decisions. Do not use for interactive portfolio exploration or a health scorecard; use ExploreInnovationPortfolio or GetInnovationPortfolioHealth instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/generateInnovationBrief/GenerateInnovationBriefCopilotComponentProperties.js:default;"

@@ -16,7 +16,7 @@
     {
       "name": "ExploreInnovationPortfolio",
       "description": {
-        "default": "Use for multi-dimensional portfolio funnel and balance analysis. Do not use for personal idea status."
+        "default": "Use when leadership wants interactive, multi-dimensional analysis of the enterprise funnel, balance, themes, and portfolio composition. Do not use for a concise exception scorecard, realized-value tracking, or personal idea status; use GetInnovationPortfolioHealth, TrackInnovationValue, or GetMyInnovation instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreInnovationPortfolio/ExploreInnovationPortfolioCopilotComponentProperties.js:default;"

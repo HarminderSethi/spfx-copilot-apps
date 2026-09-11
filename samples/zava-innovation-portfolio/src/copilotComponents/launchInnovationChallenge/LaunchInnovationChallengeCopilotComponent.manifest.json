@@ -16,7 +16,7 @@
     {
       "name": "LaunchInnovationChallenge",
       "description": {
-        "default": "Use for framing and launching a measurable strategic challenge. Do not use for idea submission."
+        "default": "Use when a program owner wants to design and confirm a new strategic challenge with audience, criteria, timeline, and measurable outcomes. Do not use to submit an entrant’s idea or manage an existing pilot; use SubmitInnovationIdea or ManageInnovationExperiment instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/launchInnovationChallenge/LaunchInnovationChallengeCopilotComponentProperties.js:default;"

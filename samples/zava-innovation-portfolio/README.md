@@ -451,15 +451,16 @@ workflow transitions, and the session action store. Live adapters remain deferre
 
 ## Conversation starters
 
-Use exactly six starters. Starters 1-5 target distinct operational tools; starter 6 targets discovery.
+Use exactly six starters. Each targets a distinct inline tool across personal submission, portfolio insight,
+idea approval, and capability discovery. Starter 6 always opens the capability explorer.
 
 | # | Title | Starter | Expected inline component |
 | ---: | --- | --- | --- |
 | 1 | Submit an idea | Submit an idea to reduce new-hire onboarding time by half. | `SubmitInnovationIdea` |
-| 2 | My ideas | Show the ideas that need my attention. | `GetMyInnovation` |
+| 2 | Global innovation | Compare innovation participation and conversion across regions. | `ExploreGlobalInnovation` |
 | 3 | Portfolio funnel | Show stage conversion in our innovation portfolio funnel. | `ExploreInnovationPortfolio` |
-| 4 | Review queue | Show my innovation gate review queue. | `GetInnovationReviewQueue` |
-| 5 | Funding decision | Review the funding request for Smart Onboarding Journey. | `ReviewInnovationFunding` |
+| 4 | Portfolio health | Show which innovation portfolio health measures are outside target. | `GetInnovationPortfolioHealth` |
+| 5 | Approve an idea | Review Smart Onboarding Journey for gate approval. | `ReviewIdeaGate` |
 | 6 | Explore capabilities | Explore what this agent can do. | `ExploreAgentCapabilities` |
 
 Every request selects one primary tool. Related evidence appears inside that component rather than

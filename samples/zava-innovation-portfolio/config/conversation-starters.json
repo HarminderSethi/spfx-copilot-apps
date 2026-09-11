@@ -6,9 +6,9 @@
       "targetName": "SubmitInnovationIdea"
     },
     {
-      "title": "My ideas",
-      "text": "Show the ideas that need my attention.",
-      "targetName": "GetMyInnovation"
+      "title": "Global innovation",
+      "text": "Compare innovation participation and conversion across regions.",
+      "targetName": "ExploreGlobalInnovation"
     },
     {
       "title": "Portfolio funnel",
@@ -16,14 +16,14 @@
       "targetName": "ExploreInnovationPortfolio"
     },
     {
-      "title": "Review queue",
-      "text": "Show my innovation gate review queue.",
-      "targetName": "GetInnovationReviewQueue"
+      "title": "Portfolio health",
+      "text": "Show which innovation portfolio health measures are outside target.",
+      "targetName": "GetInnovationPortfolioHealth"
     },
     {
-      "title": "Funding decision",
-      "text": "Review the funding request for Smart Onboarding Journey.",
-      "targetName": "ReviewInnovationFunding"
+      "title": "Approve an idea",
+      "text": "Review Smart Onboarding Journey for gate approval.",
+      "targetName": "ReviewIdeaGate"
     },
     {
       "title": "Explore capabilities",

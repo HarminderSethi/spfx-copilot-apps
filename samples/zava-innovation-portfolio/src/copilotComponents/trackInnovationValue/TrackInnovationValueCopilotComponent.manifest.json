@@ -16,7 +16,7 @@
     {
       "name": "TrackInnovationValue",
       "description": {
-        "default": "Use for projected-versus-realized value and pilot accountability. Do not use for future business cases."
+        "default": "Use when a funded idea or portfolio needs projected benefits compared with realized benefits, variance, milestones, confidence, and owners. Do not use to model a future business case or inspect overall portfolio composition; use BuildIdeaBusinessCase or ExploreInnovationPortfolio instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/trackInnovationValue/TrackInnovationValueCopilotComponentProperties.js:default;"

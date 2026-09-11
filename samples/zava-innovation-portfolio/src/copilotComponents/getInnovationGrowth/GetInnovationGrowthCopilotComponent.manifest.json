@@ -16,7 +16,7 @@
     {
       "name": "GetInnovationGrowth",
       "description": {
-        "default": "Use for participation, throughput, and conversion trends. Do not use for budget health."
+        "default": "Use when a program owner wants time-based participation, throughput, and conversion trends across innovation programs. Do not use for geographic comparison or enterprise health; use ExploreGlobalInnovation or GetInnovationPortfolioHealth instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getInnovationGrowth/GetInnovationGrowthCopilotComponentProperties.js:default;"

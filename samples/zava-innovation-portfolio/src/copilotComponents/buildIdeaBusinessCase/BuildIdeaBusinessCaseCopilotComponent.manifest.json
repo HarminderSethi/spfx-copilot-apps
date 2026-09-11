@@ -16,7 +16,7 @@
     {
       "name": "BuildIdeaBusinessCase",
       "description": {
-        "default": "Use for modeling one idea’s financial case. Do not use for approving funding."
+        "default": "Use when a screened idea needs projected costs, benefits, payback, assumptions, and confidence modeled before review. Do not use to approve capital or track realized benefits; use ReviewInnovationFunding or TrackInnovationValue instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/buildIdeaBusinessCase/BuildIdeaBusinessCaseCopilotComponentProperties.js:default;"

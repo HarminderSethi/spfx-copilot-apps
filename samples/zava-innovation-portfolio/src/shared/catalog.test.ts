@@ -11,6 +11,7 @@ describe('innovation catalog and domain',()=>{
   it('covers five operational profiles and isolated education',()=>{
     expect(new Set(INTENTS.map(i=>i.lens))).toEqual(new Set(['my-innovation','programs-pilots','reviews-gates','investment','enterprise-insights','education']));
     expect(INTENTS.filter(i=>i.operation==='education')).toHaveLength(1);
+    expect(INTENTS.filter(i=>i.operation!=='education')).toHaveLength(16);
   });
   it('provides a coherent portfolio-sized deterministic domain',()=>{
     expect(IDEAS).toHaveLength(120);expect(PEOPLE).toHaveLength(11);expect(REGION_DATA).toHaveLength(4);

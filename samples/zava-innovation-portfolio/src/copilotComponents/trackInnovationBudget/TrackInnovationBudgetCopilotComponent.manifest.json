@@ -16,7 +16,7 @@
     {
       "name": "TrackInnovationBudget",
       "description": {
-        "default": "Use for allocated, committed, spent, forecast, and available funding. Do not use for one funding decision."
+        "default": "Use when finance wants the aggregate innovation budget reconciled across allocated, committed, spent, forecast, and available funds. Do not use to decide one capital request or measure realized benefits; use ReviewInnovationFunding or TrackInnovationValue instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/trackInnovationBudget/TrackInnovationBudgetCopilotComponentProperties.js:default;"

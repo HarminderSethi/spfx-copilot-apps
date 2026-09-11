@@ -16,7 +16,7 @@
     {
       "name": "GetInnovationPortfolioHealth",
       "description": {
-        "default": "Use for leadership portfolio health and exceptions. Do not use for one metric only."
+        "default": "Use when leadership wants a concise KPI health scorecard that highlights dimensions outside target and accountable exceptions. Do not use for exploratory funnel and balance analysis or a single idea’s value; use ExploreInnovationPortfolio or TrackInnovationValue instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getInnovationPortfolioHealth/GetInnovationPortfolioHealthCopilotComponentProperties.js:default;"

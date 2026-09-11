@@ -16,7 +16,7 @@
     {
       "name": "SubmitInnovationIdea",
       "description": {
-        "default": "Use for creating one new innovation idea. Do not use for existing idea status or business cases."
+        "default": "Use when a person wants to create and confirm one new idea draft from a problem or opportunity. Do not use for an existing idea’s status or financial case; use GetMyInnovation or BuildIdeaBusinessCase instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/submitInnovationIdea/SubmitInnovationIdeaCopilotComponentProperties.js:default;"

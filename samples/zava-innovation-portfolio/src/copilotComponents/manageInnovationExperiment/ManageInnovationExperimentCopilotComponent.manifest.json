@@ -16,7 +16,7 @@
     {
       "name": "ManageInnovationExperiment",
       "description": {
-        "default": "Use for pilot hypotheses, evidence, and learning recommendations. Do not use for funding approval."
+        "default": "Use when a funded pilot needs hypotheses, observations, evidence, and a go, pivot, or stop learning recommendation. Do not use to design a new challenge, approve funding, or make a gate decision; use LaunchInnovationChallenge, ReviewInnovationFunding, or ReviewIdeaGate instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/manageInnovationExperiment/ManageInnovationExperimentCopilotComponentProperties.js:default;"

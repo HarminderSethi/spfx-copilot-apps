@@ -16,7 +16,7 @@
     {
       "name": "GetInnovationReviewQueue",
       "description": {
-        "default": "Use for prioritizing pending innovation reviews. Do not use to decide a selected gate."
+        "default": "Use when a reviewer wants to prioritize multiple pending gate reviews by age, evidence, and consequence without deciding them. Do not use to decide one selected idea; use ReviewIdeaGate instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getInnovationReviewQueue/GetInnovationReviewQueueCopilotComponentProperties.js:default;"

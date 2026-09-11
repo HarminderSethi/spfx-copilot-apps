@@ -16,7 +16,7 @@
     {
       "name": "CelebrateInnovationImpact",
       "description": {
-        "default": "Use for recognizing people behind measured innovation impact. Do not use for general announcements."
+        "default": "Use when measured value exists and a person wants to recognize named contributors with evidence-grounded praise. Do not use for general announcements or executive reporting; use GenerateInnovationBrief instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/celebrateInnovationImpact/CelebrateInnovationImpactCopilotComponentProperties.js:default;"

@@ -16,7 +16,7 @@
     {
       "name": "ExploreGlobalInnovation",
       "description": {
-        "default": "Use for regional participation and conversion gaps. Do not use for individual ideas."
+        "default": "Use when a program owner wants region-by-region participation, inclusion, and conversion gaps on a geographic view. Do not use for time-based program growth or an individual submission; use GetInnovationGrowth or GetMyInnovation instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreGlobalInnovation/ExploreGlobalInnovationCopilotComponentProperties.js:default;"

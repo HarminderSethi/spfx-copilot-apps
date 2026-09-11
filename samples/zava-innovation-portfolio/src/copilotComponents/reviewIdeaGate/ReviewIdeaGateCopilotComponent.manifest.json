@@ -16,7 +16,7 @@
     {
       "name": "ReviewIdeaGate",
       "description": {
-        "default": "Use for deciding one idea gate with evidence. Do not use for funding decisions."
+        "default": "Use when a reviewer must decide whether one selected idea advances, changes, parks, or stops based on gate evidence. Do not use to prioritize the queue or approve capital; use GetInnovationReviewQueue or ReviewInnovationFunding instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/reviewIdeaGate/ReviewIdeaGateCopilotComponentProperties.js:default;"

@@ -16,7 +16,7 @@
     {
       "name": "ReviewInnovationFunding",
       "description": {
-        "default": "Use for deciding one funding request and its consequences. Do not use for budget overview."
+        "default": "Use when a committee must approve, adjust, defer, or decline one gate-approved capital request and inspect its consequences. Do not use for gate progression or aggregate budget position; use ReviewIdeaGate or TrackInnovationBudget instead."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/reviewInnovationFunding/ReviewInnovationFundingCopilotComponentProperties.js:default;"
