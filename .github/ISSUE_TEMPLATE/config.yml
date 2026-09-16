@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Generic SharePoint or SharePoint Framework issue
+    url: https://github.com/SharePoint/sp-dev-docs/issues
+    about: Report general SharePoint, SharePoint Copilot Apps, or SharePoint Framework issues in the sp-dev-docs repository.

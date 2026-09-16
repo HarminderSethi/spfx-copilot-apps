@@ -68,10 +68,10 @@ All contributors on this repository will be acknowledged with special SharePoint
 
 ## Have issues or questions?
 
-Please use the following logic when submitting questions or issues so they reach the right place:
+Before submitting an issue, determine whether it is a general SharePoint or SharePoint Framework issue, or an issue with a specific sample in this repository:
 
-- For a general question or challenge with SharePoint Copilot Apps or the SharePoint Framework, use the [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues).
-- For an issue with a specific sample in this repository, use the [issue list in this repository](https://github.com/pnp/spfx-copilot-components/issues).
+- For a general question or challenge with SharePoint Copilot Apps or the SharePoint Framework, submit the issue to the [SharePoint developer documentation issue tracker](https://github.com/SharePoint/sp-dev-docs/issues). Do not submit generic issues to this repository.
+- For an issue with a specific sample in this repository, use the [sample issue form](https://github.com/pnp/spfx-copilot-components/issues/new?template=sample-issue.yml). Include the affected sample, exact reproduction steps, expected and actual behavior, and relevant environment details.
 
 ## Additional resources
 
