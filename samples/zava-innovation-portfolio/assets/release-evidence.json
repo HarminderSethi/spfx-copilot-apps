@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T12:29:07.974Z",
+  "generatedAt": "2026-09-11T17:47:50.255Z",
   "package": "sharepoint/solution/zava-innovation-portfolio.sppkg",
-  "packageBytes": 421879,
-  "packageSha256": "1403bc8faf0b75bdef96542b3b593a230c8515142e0d7e72e7d03fb9ce50474f",
+  "packageBytes": 425600,
+  "packageSha256": "c343b02aeed698763a692b1698454a58d43651f301e831ac16d99aecafd860ac",
   "agentPackage": "teams/zava-innovation-hub.zip",
-  "agentPackageBytes": 8348,
-  "agentPackageSha256": "54e5860e2e05e4ff502d648ef5fd70bc3f48c771f7b769ed26d2ed9c8478b777",
+  "agentPackageBytes": 9603,
+  "agentPackageSha256": "b61c59c0fbb83696a5315173adb2ea69608b7ac6568024ac6f9e050f8e22bbc6",
   "agentIconHashes": {
     "color.png": "322fbe8a77a3d6289661eb7d5bb10af8c499fe521f0f3a7bb08c8a671ed8f900",
     "outline.png": "b8cc02f48c878e8855d900713398b3ba0c9c6e7a39d1b360ad1ad7926cd09cbd"
@@ -14,10 +14,10 @@
   "configuredBundles": 1,
   "configuredComponents": 17,
   "productionJavaScriptFiles": 1,
-  "totalJavaScriptBytes": 399686,
+  "totalJavaScriptBytes": 404679,
   "largestJavaScript": {
-    "path": "ClientSideAssets/zava-innovation-components_0fb60e0b10fa80116e94.js",
-    "bytes": 399686
+    "path": "ClientSideAssets/zava-innovation-components_74182f6853e485cad1eb.js",
+    "bytes": 404679
   },
   "packagedMediaFiles": 11,
   "duplicateMediaHashes": 0,

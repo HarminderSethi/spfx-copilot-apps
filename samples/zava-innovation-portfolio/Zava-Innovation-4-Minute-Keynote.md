@@ -1,39 +1,90 @@
 # Zava Innovation Hub - 4-minute keynote
 
-## Reset
+## Core message
 
-Open any full-screen lens and select **Reset demo data**. Start a fresh Copilot conversation as Megan Bowen.
+Copilot is no longer only a place to ask questions and receive text. Copilot Components bring trusted,
+interactive business UX directly into the conversation. People can start, review, approve, fund, and
+measure work without leaving the Copilot canvas or losing their context.
 
-## 0:00-0:35 - Strategy becomes a challenge
+## Setup
 
-Prompt: **Launch an employee challenge to reduce new-hire onboarding time.**
+Start a fresh Copilot conversation as Megan Bowen. Keep the audience focused on the conversation canvas:
+every prompt should produce a purpose-built interface inline in chat.
 
-Show the prompt-prefilled Challenge Studio. Point out that Copilot selected the bounded tool; React owns fields, evidence review, confirmation, and receipt.
+## 0:00-0:35 - From conversation to business UX
 
-## 0:35-1:10 - Megan submits an idea
+**Say:**
+
+"Most business processes still force people to leave the conversation, find the right application,
+navigate to the right record, and reconstruct the context. Here, the experience comes to the user.
+Copilot understands the business intent and selects the right Copilot Component."
 
 Prompt: **Submit an idea for a smart onboarding journey that cuts ramp time in half.**
 
-Edit the outcome, review evidence, and confirm the demo submission. Emphasize that no portal navigation or tenant write occurred.
+Show the prefilled idea canvas appearing directly in chat. Point out the structured fields, accountable
+owner, evidence, and readiness state. This is an application experience, not a text answer.
 
-## 1:10-2:05 - Diego reviews the submission
+## 0:35-1:20 - Complete work without context switching
 
-Prompt: **Show my innovation gate review queue.**
+**Say:**
 
-Use Screening, Business case, and Pilot buckets. Open Smart Onboarding Journey. Show evidence completeness, strategic fit, value, strengths, and the APAC accessibility gap. Choose **Send back for evaluation**, enter the missing evidence, review the consequence, and confirm. Return to the queue and show the action count change.
+"Megan can shape the idea, review the evidence, and confirm the next step in the same place where the
+request began. She does not open an innovation portal, search for a form, or copy information between
+systems. The conversation remains the context, while the component provides the controls."
 
-Reopen and use **Approve and advance** for the happy-path rehearsal.
+Edit one field and advance through evidence and confirmation. Show the visible receipt.
 
-## 2:05-2:45 - Miriam allocates capital
+"Copilot handles intent and handoff. The component owns deterministic validation, human confirmation,
+and the business record of what happened."
 
-Prompt: **Review the funding request for Smart Onboarding Journey.**
+## 1:20-2:10 - Modernize review and approval
 
-Show funding consequence and explicit confirmation. Expand into Investment without losing the selected business context.
+Prompt: **Review Smart Onboarding Journey for gate approval.**
 
-## 2:45-3:35 - Enterprise Insights
+Show the review experience inline with evidence completeness, strategic fit, value, strengths, and gaps.
 
-Switch to Joni Sherman and Enterprise Insights. Land on the horizontal stage-gate funnel, then scan impact versus effort, horizon balance, program momentum, and strategic themes. The visual should answer portfolio health in under ten seconds.
+**Say:**
 
-## 3:35-4:00 - Recognize impact
+"The same canvas now becomes a decision workspace for the reviewer. The UX changes with the job to be
+done. This is not a generic card and not another chatbot response. It is a bounded approval experience
+with the evidence and consequences visible before the human decides."
 
-Scroll to **Top performing ideas by value realized**. Explain that rank uses verified value, ROI, evidence confidence, and named contribution, not raw votes. Select **Acknowledge impact** for Megan. Close on the recognition banner and the session receipt.
+Choose **Approve and advance**, review the consequence, and confirm.
+
+## 2:10-2:55 - Bring portfolio insight into the conversation
+
+Prompt: **Show stage conversion in our innovation portfolio funnel.**
+
+Show the stage-gate funnel, impact versus effort, horizon balance, program momentum, and strategic themes.
+
+**Say:**
+
+"For leadership, the Copilot canvas becomes an analytical workspace. The user can inspect portfolio
+health and act on an exception without first navigating to a dashboard. The right visualization appears
+for the current intent, with the business context preserved."
+
+Briefly contrast the portfolio, health, and global views: each intent produces a clearly different UX
+instead of routing every question to one broad dashboard.
+
+## 2:55-3:30 - Discover the complete capability set
+
+Prompt: **Explore what this agent can do.**
+
+Show the capability explorer with all 16 operational experiences grouped into five work areas.
+
+**Say:**
+
+"One agent can expose an entire portfolio of modernized processes. People discover the available jobs in
+business language, preview the expected outcome, and invoke the right experience without learning the
+underlying application landscape."
+
+## 3:30-4:00 - Close
+
+**Say:**
+
+"This is the shift: from Copilot as an assistant beside the business process to Copilot as the canvas for
+the business process. Copilot Components let us modernize one process at a time while giving users one
+consistent place to work.
+
+No portal hunting. No copy and paste. No context switching. The right UX appears directly in chat, the
+human stays in control, and the work moves forward."

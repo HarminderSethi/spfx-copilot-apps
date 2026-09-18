@@ -1,6 +1,6 @@
 # Zava Innovation Hub routing matrix
 
-Generated from the approved intent catalog and starter configuration.
+Generated from configured component manifests and the canonical starter configuration.
 
 | Tool | Positive use boundary | Nearest exclusion |
 | --- | --- | --- |

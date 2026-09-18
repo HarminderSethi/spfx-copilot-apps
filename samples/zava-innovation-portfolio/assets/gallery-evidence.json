@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-08-28T12:25:53.425Z",
+  "capturedAt": "2026-09-11T17:45:02.428Z",
   "sourceFiles": [
     "src/shared/InnovationApp.tsx",
     "src/shared/InnovationCopilotComponentBase.tsx",
@@ -16,7 +16,7 @@
     "src/shared/sessionStore.ts",
     "package-lock.json"
   ],
-  "sourceSha256": "fd978e7da325b403815d7c0ca2bd8d662140162717f92db35415cdffa2782fc6",
+  "sourceSha256": "5fbea882f9166e4d5021e6a5e69515faa281a676148fcf2920e41570c25c8b50",
   "totalCaptures": 11,
   "failureCount": 0,
   "captures": [
@@ -69,9 +69,9 @@
       "height": 900,
       "alt": "Inline searchable catalog of Zava Innovation Hub operational scenarios and safe prompt previews",
       "capturedWidth": 760,
-      "capturedHeight": 1540,
-      "bytes": 82413,
-      "sha256": "0e11e8a62fe8339c73c41d7f7ac01db66b0394735ea55480f94fe2db099aa66b",
+      "capturedHeight": 1360,
+      "bytes": 94682,
+      "sha256": "fbd4abe68fbd59b6203c1fa49b3275ac748c60a62a7f1b19ffa75697c9686903",
       "layouts": [
         "ExploreAgentCapabilities-gallery"
       ]
