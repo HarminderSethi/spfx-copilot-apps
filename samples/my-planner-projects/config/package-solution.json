@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "my-planner-projects-agent",
+    "id": "e23ed5d8-34ba-4c56-9101-3ab3869e2bf8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.0-beta.3"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Copilot agent for Microsoft Planner projects"
+      },
+      "longDescription": {
+        "default": "Finds Planner projects by status, assignment, activity, creation date, and due date, and prepares editable basic plans from supported project templates for explicit creation."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Tasks.ReadWrite"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "GroupMember.Read.All"
+      }
+    ],
+    "features": [
+      {
+        "title": "my-planner-projects-agent Feature",
+        "description": "The feature that activates elements of the my-planner-projects-agent solution.",
+        "id": "6b762398-6415-4b68-ac5e-8dac5edd0cb1",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/my-planner-projects-agent.sppkg"
+  }
+}

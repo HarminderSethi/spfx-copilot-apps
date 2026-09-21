@@ -1,0 +1,423 @@
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - link "Skip to main content" [ref=e6] [cursor=pointer]:
+      - /url: javascript:void(0)
+    - banner [ref=e7]:
+      - generic [ref=e9]:
+        - text:  
+        - link "Microsoft" [ref=e10] [cursor=pointer]:
+          - /url: https://www.microsoft.com
+          - generic [aria-hidden] [ref=e12]: Microsoft
+        - text:  
+        - link "Support" [ref=e14] [cursor=pointer]:
+          - /url: https://support.microsoft.com/en-us
+        - navigation "Contextual menu" [ref=e16]:
+          - list [ref=e17]:
+            - listitem [ref=e18]:
+              - link "Microsoft 365" [ref=e19] [cursor=pointer]:
+                - /url: https://www.microsoft.com/microsoft-365?ocid=cmmttvzgpuy
+            - listitem [ref=e20]:
+              - link "Office" [ref=e21] [cursor=pointer]:
+                - /url: https://www.microsoft.com/microsoft-365/microsoft-office?ocid=cmml7tr0rib
+            - listitem [ref=e22]:
+              - button "Products " [ref=e24] [cursor=pointer]
+            - listitem [ref=e25]:
+              - button "Devices " [ref=e27] [cursor=pointer]
+            - listitem [ref=e28]:
+              - generic [ref=e29]:
+                - button "More" [ref=e30] [cursor=pointer]: More 
+                - text: 
+            - listitem [ref=e31]:
+              - link "Buy Microsoft 365" [ref=e32] [cursor=pointer]:
+                - /url: https://go.microsoft.com/fwlink/?linkid=849747
+        - generic [ref=e33]:
+          - navigation "All Microsoft menu" [ref=e35]:
+            - list [ref=e36]:
+              - listitem [ref=e37]:
+                - generic [ref=e38]:
+                  - button "All Microsoft " [ref=e39] [cursor=pointer]
+                  - text: 
+          - search [ref=e40]:
+            - button "Search for help" [ref=e42] [cursor=pointer]: 
+          - link "Sign in to your account" [ref=e45] [cursor=pointer]:
+            - /url: https://support.microsoft.com/en-us/authentication/signin?ru=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fplanner%2Fcopilot%2Fuse-templates-to-get-started-with-planner-agent
+  - generic [ref=e51]:
+    - generic [ref=e52]:
+      - text: 
+      - complementary "Related Links" [ref=e53]:
+        - generic [ref=e54]:
+          - link "Overview" [ref=e57]:
+            - /url: create-a-new-plan-with-copilot-in-planner-preview
+          - generic [ref=e58]:
+            - link "Planner Agent in Planner" [ref=e60]:
+              - /url: access-planner-agent
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - link "Access Planner Agent" [ref=e63]:
+                  - /url: access-planner-agent
+              - listitem [ref=e64]:
+                - link "Create a plan from scratch" [ref=e65]:
+                  - /url: create-a-plan-from-scratch-with-planner-agent
+              - listitem [ref=e66]:
+                - link "Use templates to get started" [ref=e67]:
+                  - /url: use-templates-to-get-started-with-planner-agent
+              - listitem [ref=e68]:
+                - link "Execute tasks" [ref=e69]:
+                  - /url: execute-tasks-with-planner-agent
+              - listitem [ref=e70]:
+                - link "Add resources as context" [ref=e71]:
+                  - /url: add-resources-as-context-for-planner-agent
+              - listitem [ref=e72]:
+                - link "Generate status reports" [ref=e73]:
+                  - /url: generate-automatic-status-reports-with-planner-agent
+              - listitem [ref=e74]:
+                - link "Planner Agent and SharePoint" [ref=e75]:
+                  - /url: planner-agent-and-microsoft-sharepoint
+              - listitem [ref=e76]:
+                - link "Chat with Planner Agent in basic plans" [ref=e77]:
+                  - /url: chat-with-planner-agent-basic-plans
+              - listitem [ref=e78]:
+                - link "Frequently asked questions" [ref=e79]:
+                  - /url: frequently-asked-questions-about-planner-agent
+          - link "Planner Agent in Microsoft Copilot" [ref=e82]:
+            - /url: ../what-is-planner-agent-in-copilot
+    - main [ref=e83]:
+      - heading "Use templates to get started with Planner Agent" [level=1] [ref=e84]
+      - region "L_AppliesTo_RoleDescription" [ref=e85]:
+        - group [ref=e87]:
+          - generic "Applies To" [ref=e88] [cursor=pointer]
+      - generic [ref=e89]:
+        - paragraph [ref=e90]: Microsoft Planner offers a set of ready-made Planner Agent templates to provide you with a head start for creating a new plan and interacting with the Planner Agent. The templates support a range of possible plan types and have a set of tasks that the Planner Agent can help complete.
+        - generic [ref=e91]:
+          - paragraph [ref=e92]: Note
+          - paragraph [ref=e93]:
+            - text: Planner Agent is currently rolling out to customers. Learn more about it in
+            - link "Frequently asked questions about Planner Agent" [ref=e94] [cursor=pointer]:
+              - /url: frequently-asked-questions-about-planner-agent
+            - text: .
+        - heading "Why use a pre-made template?" [level=2] [ref=e95]
+        - paragraph [ref=e96]: If you're new to Planner Agent, using a template is a great way to explore its features and learn how to interact with it effectively.
+        - paragraph [ref=e97]: If you're new to Planner Agent, using a template is a great way to explore its features and learn how to interact with it effectively. Additionally, if your intended plan falls into one of the categories of the pre-made templates, using a template gives you a head start and reduces the struggles that can come with starting from a blank page.
+        - heading "Create a new plan from a template" [level=2] [ref=e98]
+        - list [ref=e99]:
+          - listitem [ref=e100]:
+            - text: Open
+            - strong [ref=e101]: Planner in Teams
+            - text: .
+          - listitem [ref=e102]:
+            - text: Select
+            - strong [ref=e103]: + New plan
+            - text: in the top left of the page.
+          - listitem [ref=e104]:
+            - text: Scroll down to
+            - strong [ref=e105]: Planner agent
+            - text: templates.
+          - listitem [ref=e106]:
+            - text: Select any
+            - strong [ref=e107]: Planner agent
+            - text: template that meets your needs. For example, select
+            - strong [ref=e108]: Research Report
+            - text: under the
+            - strong [ref=e109]: Planner agent Templates
+            - text: header for a plan to write a research report on any topic.
+          - listitem [ref=e110]: Review the template to ensure it meets your needs.
+          - listitem [ref=e111]:
+            - text: Select
+            - strong [ref=e112]: Use template
+            - text: .
+          - listitem [ref=e113]: Give your plan a name and select the relevant group to add to the plan
+          - listitem [ref=e114]:
+            - text: Select
+            - strong [ref=e115]: Create
+            - text: .
+        - heading "Edit the template to meet your needs" [level=2] [ref=e116]
+        - paragraph [ref=e117]: "After creating a templated plan, you can edit the plan goal and add files to help the Planner Agent properly execute tasks. Let's look at an example:"
+        - paragraph [ref=e118]: "Oscar is a product manager at an EV company. He is conducting market research on the EV market. He is using the Project Manager Research template, and to edit the template to meet his need, Oscar completes the follow steps:"
+        - list [ref=e119]:
+          - listitem [ref=e120]: On the Goals view, edit the template goal "Complete a research report on the life cycle of a great white shark" by replacing "life cycle of a great white shark" with "EV market."
+          - listitem [ref=e121]:
+            - text: Select
+            - strong [ref=e122]: Add files for better results
+            - text: .
+          - listitem [ref=e123]:
+            - text: Choose relevant documentation. For his scenario, Oscar selects Contoso Market Research.docx.
+            - link "Learn more about adding files for context." [ref=e124] [cursor=pointer]:
+              - /url: add-resources-as-context-for-planner-agent
+        - generic [ref=e125]:
+          - paragraph [ref=e126]: Tip
+          - paragraph [ref=e127]: To generate tasks for a goal, ensure that no tasks are currently associated with that goal. Task generation applies only to goals without existing tasks.
+        - paragraph [ref=e128]:
+          - text: With this personalization made, Oscar can now assign tasks to the Planner Agent to start execution on the plan.
+          - link "Learn more about executing tasks with the Planner agent." [ref=e129] [cursor=pointer]:
+            - /url: execute-tasks-with-planner-agent
+        - heading "More ways to work with Planner Agent" [level=2] [ref=e130]
+        - paragraph [ref=e131]:
+          - link "Create a plan from scratch with Planner agent" [ref=e132] [cursor=pointer]:
+            - /url: create-a-plan-from-scratch-with-planner-agent
+        - paragraph [ref=e133]:
+          - link "Execute tasks with Planner agent" [ref=e134] [cursor=pointer]:
+            - /url: execute-tasks-with-planner-agent
+        - paragraph [ref=e135]:
+          - link "Add resources as context for Planner agent" [ref=e136] [cursor=pointer]:
+            - /url: add-resources-as-context-for-planner-agent
+        - paragraph [ref=e137]:
+          - link "Frequently asked questions about Planner agent" [ref=e138] [cursor=pointer]:
+            - /url: frequently-asked-questions-about-planner-agent
+  - generic [ref=e145]:
+    - region "L_Feedback_RoleDescription" [ref=e147]:
+      - heading "Was this information helpful?" [level=2] [ref=e148]
+      - group "Was this information helpful?" [ref=e149]:
+        - button "Yes" [ref=e150] [cursor=pointer]
+        - button "No" [ref=e151] [cursor=pointer]
+    - text: 
+  - contentinfo [ref=e155]:
+    - navigation "Footer Resource links" [ref=e156]:
+      - generic:
+        - generic [ref=e157]:
+          - heading "What's new" [level=2] [ref=e158]
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "Surface Pro What's new" [ref=e161] [cursor=pointer]:
+                - /url: https://www.microsoft.com/surface/devices/surface-pro
+                - text: Surface Pro
+            - listitem [ref=e162]:
+              - link "Surface Laptop What's new" [ref=e163] [cursor=pointer]:
+                - /url: https://www.microsoft.com/surface/devices/surface-laptop
+                - text: Surface Laptop
+            - listitem [ref=e164]:
+              - link "Surface Laptop Ultra What's new" [ref=e165] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra?icid=DSM_Footer_WhatsNew_SurfaceLaptopUltra
+                - text: Surface Laptop Ultra
+            - listitem [ref=e166]:
+              - link "Surface RTX Spark Dev Box What's new" [ref=e167] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/surface/devices/surface-rtx-spark-dev-box?icid=DSM_Footer_WhatsNew_SurfaceRTXSparkDevBox
+                - text: Surface RTX Spark Dev Box
+            - listitem [ref=e168]:
+              - link "Copilot for organizations What's new" [ref=e169] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/microsoft-copilot/organizations?icid=DSM_Footer_CopilotOrganizations
+                - text: Copilot for organizations
+            - listitem [ref=e170]:
+              - link "Copilot for personal use What's new" [ref=e171] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/microsoft-copilot/for-individuals?form=MY02PT&OCID=GE_web_Copilot_Free_868g3t5nj
+                - text: Copilot for personal use
+            - listitem [ref=e172]:
+              - link "Explore Microsoft products What's new" [ref=e173] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/microsoft-products-and-apps
+                - text: Explore Microsoft products
+            - listitem [ref=e174]:
+              - link "Windows 11 apps What's new" [ref=e175] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/windows/apps-for-windows?icid=DSM_Footer_WhatsNew_Windows11apps
+                - text: Windows 11 apps
+        - generic [ref=e176]:
+          - heading "Microsoft Store" [level=2] [ref=e177]
+          - list [ref=e178]:
+            - listitem [ref=e179]:
+              - link "Account profile Microsoft Store" [ref=e180] [cursor=pointer]:
+                - /url: https://account.microsoft.com/
+                - text: Account profile
+            - listitem [ref=e181]:
+              - link "Download Center Microsoft Store" [ref=e182] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/download
+                - text: Download Center
+            - listitem [ref=e183]:
+              - link "Microsoft Store support Microsoft Store" [ref=e184] [cursor=pointer]:
+                - /url: https://go.microsoft.com/fwlink/?linkid=2139749
+                - text: Microsoft Store support
+            - listitem [ref=e185]:
+              - link "Returns Microsoft Store" [ref=e186] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/returns
+                - text: Returns
+            - listitem [ref=e187]:
+              - link "Order tracking Microsoft Store" [ref=e188] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/order-tracking
+                - text: Order tracking
+            - listitem [ref=e189]:
+              - link "Certified Refurbished Microsoft Store" [ref=e190] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/certified-refurbished-products
+                - text: Certified Refurbished
+            - listitem [ref=e191]:
+              - link "Microsoft Store Promise Microsoft Store" [ref=e192] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store_7102020
+                - text: Microsoft Store Promise
+            - listitem [ref=e193]:
+              - link "Flexible Payments Microsoft Store" [ref=e194] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/payment-financing-options?icid=footer_financing_vcc
+                - text: Flexible Payments
+        - generic [ref=e195]:
+          - heading "Education" [level=2] [ref=e196]
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - link "Microsoft in education Education" [ref=e199] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/education
+                - text: Microsoft in education
+            - listitem [ref=e200]:
+              - link "Devices for education Education" [ref=e201] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/education/devices/overview
+                - text: Devices for education
+            - listitem [ref=e202]:
+              - link "Microsoft Teams for Education Education" [ref=e203] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/education/products/teams
+                - text: Microsoft Teams for Education
+            - listitem [ref=e204]:
+              - link "Microsoft 365 Education Education" [ref=e205] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/education/products/microsoft-365
+                - text: Microsoft 365 Education
+            - listitem [ref=e206]:
+              - link "How to buy for your school Education" [ref=e207] [cursor=pointer]:
+                - /url: https://www.microsoft.com/education/how-to-buy
+                - text: How to buy for your school
+            - listitem [ref=e208]:
+              - link "Educator training and development Education" [ref=e209] [cursor=pointer]:
+                - /url: https://education.microsoft.com/
+                - text: Educator training and development
+            - listitem [ref=e210]:
+              - link "Deals for students and parents Education" [ref=e211] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/education
+                - text: Deals for students and parents
+            - listitem [ref=e212]:
+              - link "AI for education Education" [ref=e213] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/education/ai-in-education
+                - text: AI for education
+      - generic:
+        - generic [ref=e214]:
+          - heading "Business" [level=2] [ref=e215]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "Microsoft AI Business" [ref=e218] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/ai?icid=DSM_Footer_AI
+                - text: Microsoft AI
+            - listitem [ref=e219]:
+              - link "Microsoft Security Business" [ref=e220] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/security
+                - text: Microsoft Security
+            - listitem [ref=e221]:
+              - link "Dynamics 365 Business" [ref=e222] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/dynamics-365
+                - text: Dynamics 365
+            - listitem [ref=e223]:
+              - link "Microsoft 365 Business" [ref=e224] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/microsoft-365/business
+                - text: Microsoft 365
+            - listitem [ref=e225]:
+              - link "Microsoft Power Platform Business" [ref=e226] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/power-platform
+                - text: Microsoft Power Platform
+            - listitem [ref=e227]:
+              - link "Microsoft Teams Business" [ref=e228] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
+                - text: Microsoft Teams
+            - listitem [ref=e229]:
+              - link "Microsoft 365 Copilot Business" [ref=e230] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/microsoft-365-copilot?icid=DSM_Footer_Microsoft365Copilot
+                - text: Microsoft 365 Copilot
+            - listitem [ref=e231]:
+              - link "Small Business Business" [ref=e232] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore
+                - text: Small Business
+        - generic [ref=e233]:
+          - heading "Developer & IT" [level=2] [ref=e234]
+          - list [ref=e235]:
+            - listitem [ref=e236]:
+              - link "Azure Developer & IT" [ref=e237] [cursor=pointer]:
+                - /url: https://azure.microsoft.com/en-us/
+                - text: Azure
+            - listitem [ref=e238]:
+              - link "Microsoft Developer Developer & IT" [ref=e239] [cursor=pointer]:
+                - /url: https://developer.microsoft.com/en-us/
+                - text: Microsoft Developer
+            - listitem [ref=e240]:
+              - link "Microsoft Learn Developer & IT" [ref=e241] [cursor=pointer]:
+                - /url: https://learn.microsoft.com/
+                - text: Microsoft Learn
+            - listitem [ref=e242]:
+              - link "Support for AI marketplace apps Developer & IT" [ref=e243] [cursor=pointer]:
+                - /url: https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98
+                - text: Support for AI marketplace apps
+            - listitem [ref=e244]:
+              - link "Microsoft Tech Community Developer & IT" [ref=e245] [cursor=pointer]:
+                - /url: https://techcommunity.microsoft.com/
+                - text: Microsoft Tech Community
+            - listitem [ref=e246]:
+              - link "Microsoft Marketplace Developer & IT" [ref=e247] [cursor=pointer]:
+                - /url: https://marketplace.microsoft.com?icid=DSM_Footer_Marketplace&ocid=cmm3atxvn98
+                - text: Microsoft Marketplace
+            - listitem [ref=e248]:
+              - link "Software companies Developer & IT" [ref=e249] [cursor=pointer]:
+                - /url: https://www.microsoft.com/software-development-companies?icid=DSM_Footer_SoftwareCompanies&ocid=cmm3atxvn98
+                - text: Software companies
+            - listitem [ref=e250]:
+              - link "Visual Studio Developer & IT" [ref=e251] [cursor=pointer]:
+                - /url: https://visualstudio.microsoft.com/
+                - text: Visual Studio
+        - generic [ref=e252]:
+          - heading "Company" [level=2] [ref=e253]
+          - list [ref=e254]:
+            - listitem [ref=e255]:
+              - link "Careers Company" [ref=e256] [cursor=pointer]:
+                - /url: https://careers.microsoft.com/
+                - text: Careers
+            - listitem [ref=e257]:
+              - link "About Microsoft Company" [ref=e258] [cursor=pointer]:
+                - /url: https://www.microsoft.com/about
+                - text: About Microsoft
+            - listitem [ref=e259]:
+              - link "Company news Company" [ref=e260] [cursor=pointer]:
+                - /url: https://news.microsoft.com/source/?icid=DSM_Footer_Company_CompanyNews
+                - text: Company news
+            - listitem [ref=e261]:
+              - link "Privacy at Microsoft Company" [ref=e262] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/privacy?icid=DSM_Footer_Company_Privacy
+                - text: Privacy at Microsoft
+            - listitem [ref=e263]:
+              - link "Investors Company" [ref=e264] [cursor=pointer]:
+                - /url: https://www.microsoft.com/investor/default.aspx
+                - text: Investors
+            - listitem [ref=e265]:
+              - link "Diversity and inclusion Company" [ref=e266] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/diversity/default?icid=DSM_Footer_Company_Diversity
+                - text: Diversity and inclusion
+            - listitem [ref=e267]:
+              - link "Accessibility Company" [ref=e268] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/accessibility
+                - text: Accessibility
+            - listitem [ref=e269]:
+              - link "Sustainability Company" [ref=e270] [cursor=pointer]:
+                - /url: https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability
+                - text: Sustainability
+    - generic [ref=e271]:
+      - link "Content Language Selector. Currently set to English (United States)" [ref=e272] [cursor=pointer]:
+        - /url: https://support.microsoft.com/en-us/worldwide
+        - text:  English (United States)
+      - link "Your Privacy Choices Opt-Out Icon Your Privacy Choices" [ref=e273] [cursor=pointer]:
+        - /url: https://aka.ms/yourcaliforniaprivacychoices
+        - img "Your Privacy Choices Opt-Out Icon" [ref=e274]
+        - generic [ref=e279]: Your Privacy Choices
+      - link "Consumer Health Privacy" [ref=e280] [cursor=pointer]:
+        - /url: https://go.microsoft.com/fwlink/?linkid=2259814
+      - navigation "Microsoft corporate links":
+        - list [ref=e282]:
+          - listitem [ref=e283]:
+            - link "Sitemap" [ref=e284] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-us/sitemap1.aspx
+          - listitem [ref=e285]:
+            - link "Contact Microsoft" [ref=e286] [cursor=pointer]:
+              - /url: https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=undefined
+          - listitem [ref=e287]:
+            - link "Privacy" [ref=e288] [cursor=pointer]:
+              - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+          - listitem [ref=e289]:
+            - link "Terms of use" [ref=e290] [cursor=pointer]:
+              - /url: https://go.microsoft.com/fwlink/?LinkID=206977
+          - listitem [ref=e291]:
+            - link "Trademarks" [ref=e292] [cursor=pointer]:
+              - /url: https://go.microsoft.com/fwlink/?linkid=2196228
+          - listitem [ref=e293]:
+            - link "Safety & eco" [ref=e294] [cursor=pointer]:
+              - /url: https://go.microsoft.com/fwlink/?linkid=2196227
+          - listitem [ref=e295]:
+            - link "Recycling" [ref=e296] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-us/legal/compliance/recycling
+          - listitem [ref=e297]:
+            - link "About our ads" [ref=e298] [cursor=pointer]:
+              - /url: https://choice.microsoft.com
+          - listitem [ref=e299]: © Microsoft 2026

@@ -1,0 +1,118 @@
+- generic [active] [ref=f13e1]:
+  - banner [ref=f13e2]:
+    - button "Skip to content" [ref=f13e3] [cursor=pointer]
+    - button "Accessibility Feedback" [ref=f13e6] [cursor=pointer]
+    - generic [ref=f13e9]:
+      - link [ref=f13e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Back to Bing search" [level=1] [ref=f13e11]
+      - search [ref=f13e12]:
+        - button "Search" [ref=f13e15] [cursor=pointer]
+        - searchbox "Enter your search here - Search suggestions will show as you type" [ref=f13e16]: "\"Planner agent Templates\" \"Research Report\""
+        - generic [ref=f13e17] [cursor=pointer]
+        - button "Search using an image" [ref=f13e22] [cursor=pointer]
+    - complementary "Account Rewards and Preferences" [ref=f13e24]:
+      - button "Microsoft Rewards" [ref=f13e25] [cursor=pointer]
+      - link "Sign in" [ref=f13e26] [cursor=pointer]:
+        - /url: javascript:void(0)
+    - navigation "Search Filter" [ref=f13e28]:
+      - list [ref=f13e29]:
+        - listitem [ref=f13e30]:
+          - link "All" [ref=f13e31] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=f13e32]:
+          - link "Search" [ref=f13e33] [cursor=pointer]:
+            - /url: /copilotsearch?q=%22Planner+agent+Templates%22+%22Research+Report%22&FORM=CSSCOP
+        - listitem [ref=f13e36]:
+          - link "Images" [ref=f13e37] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=740f193a7132ced4b5ad02287d7afeed4a73cf3ad84ba6c321b828690a2b7161JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L2ltYWdlcy9zZWFyY2g_cT0lMjJQbGFubmVyK2FnZW50K1RlbXBsYXRlcyUyMislMjJSZXNlYXJjaCtSZXBvcnQlMjImRk9STT1IRFJTQzM&ntb=1
+        - listitem [ref=f13e38]:
+          - link "Videos" [ref=f13e39] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=326ec148838d7e834b14e87fa9a2c4f0947bbc12f3334b0988b32ffc0954b710JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9zZWFyY2g_cT0lMjJQbGFubmVyK2FnZW50K1RlbXBsYXRlcyUyMislMjJSZXNlYXJjaCtSZXBvcnQlMjImRk9STT1IRFJTQzQ&ntb=1
+        - listitem [ref=f13e40]:
+          - link "Maps" [ref=f13e41] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e87b6cd0b893f05175b39d31cba3247984fc10713f7f50f1a415d014acbff22dJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L21hcHM_cT0lMjJQbGFubmVyK2FnZW50K1RlbXBsYXRlcyUyMislMjJSZXNlYXJjaCtSZXBvcnQlMjImRk9STT1IRFJTQzY&ntb=1
+        - listitem [ref=f13e42]:
+          - link "News" [ref=f13e43] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4ed5dcae94dc7ab623f2098b036b68d27aaed73247c615d6c1ab3981b1758f35JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L25ld3Mvc2VhcmNoP3E9JTIyUGxhbm5lcithZ2VudCtUZW1wbGF0ZXMlMjIrJTIyUmVzZWFyY2grUmVwb3J0JTIyJkZPUk09SERSU0M3&ntb=1
+        - listitem [ref=f13e44]:
+          - link "Copilot" [ref=f13e45] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=75bb6a367d32f9d584322e72d5061d4104f651d3c23cf3e0d131269ea4371005JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L2NoYXQ_cHJvbXB0PSUyMlBsYW5uZXIrYWdlbnQrVGVtcGxhdGVzJTIyKyUyMlJlc2VhcmNoK1JlcG9ydCUyMiZzZW5kcXVlcnk9MSZGT1JNPVNDQ09EWA&ntb=1
+        - listitem [ref=f13e46]:
+          - button [ref=f13e47] [cursor=pointer]
+  - generic [ref=f13e51]:
+    - main "Search Results" [ref=f13e52]:
+      - list [ref=f13e53]:
+        - listitem [ref=f13e54]:
+          - link "Microsoft Support" [ref=f13e56] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=46b38f3968ef33b336e78c7d5e2c45afe23a9afa884e0e84701692dafdfdb0d7JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9zdXBwb3J0Lm1pY3Jvc29mdC5jb20vZW4tdXMvcGxhbm5lci9jb3BpbG90L3VzZS10ZW1wbGF0ZXMtdG8tZ2V0LXN0YXJ0ZWQtd2l0aC1wbGFubmVyLWFnZW50&ntb=1
+            - generic [ref=f13e61]:
+              - generic [ref=f13e62]: Microsoft Support
+              - generic [ref=f13e63]: https://support.microsoft.com › en-us › planner › copilot › use-templates-to...
+          - heading [level=2] [ref=f13e66]:
+            - link "Use templates to get started with Planner Agent" [ref=f13e67] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=46b38f3968ef33b336e78c7d5e2c45afe23a9afa884e0e84701692dafdfdb0d7JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9zdXBwb3J0Lm1pY3Jvc29mdC5jb20vZW4tdXMvcGxhbm5lci9jb3BpbG90L3VzZS10ZW1wbGF0ZXMtdG8tZ2V0LXN0YXJ0ZWQtd2l0aC1wbGFubmVyLWFnZW50&ntb=1
+          - paragraph [ref=f13e69]: For example, select Research Report under the Planner agent Templates header for a plan to write a research report on any topic. …
+        - listitem [ref=f13e70]:
+          - generic [ref=f13e72]:
+            - heading [level=2] [ref=f13e74]:
+              - link "Videos of Planner Agent Templates Research Report" [ref=f13e75] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=cf7487e10e738945b34d557137793f85ac4d5627baaa11af775686bebc327aa8JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9zZWFyY2g_cT0lMjJQbGFubmVyK2FnZW50K1RlbXBsYXRlcyUyMislMjJSZXNlYXJjaCtSZXBvcnQlMjImcXB2dD0lMjJQbGFubmVyK2FnZW50K1RlbXBsYXRlcyUyMislMjJSZXNlYXJjaCtSZXBvcnQlMjImRk9STT1WRFJF&ntb=1
+            - generic [ref=f13e81]:
+              - 'link "How to generate a project report using the Microsoft Planner Agent from YouTube · Duration: 7 minutes 37 seconds · 235 views · uploaded on 5 months ago · uploaded by Steve Knutson · Click to play. · In this video I demonstrate how to generate a project report in Microsoft Planner using the Planner Agent. The Agent generates a loop page that I can manually edit and once done I can publish the report as a news post in SharePoint. I use the Planner Agent you must have a Microsoft 365 Copilot license assigned to your user account. Once the ..." [ref=f13e84] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=7d7d43b4622d8fa035ecfb94045306924498414775cb61d52376744b90d491e8JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9JTIyUGxhbm5lcithZ2VudCtUZW1wbGF0ZXMlMjIrJTIyUmVzZWFyY2grUmVwb3J0JTIyJm1pZD03M0RCQTA1RjZERUZBODg5NkE1RjczREJBMDVGNkRFRkE4ODk2QTVGJmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDcDNXUnMtNzR4Q19jUkNpUkFUZDl4dyZGT1JNPVZJUkU&ntb=1
+                - generic [ref=f13e85]:
+                  - generic [ref=f13e86]: 7:37
+                  - generic [ref=f13e95]:
+                    - generic "How to generate a project report using the Microsoft Planner Agent" [ref=f13e96]:
+                      - text: How to generate a project
+                      - strong [ref=f13e97]: report
+                      - text: using the Microsoft
+                      - strong [ref=f13e98]: Planner
+                      - strong [ref=f13e99]: Agent
+                    - generic [ref=f13e100]:
+                      - generic [ref=f13e101]:
+                        - img "Video source site" [ref=f13e102]
+                        - text: YouTube · Steve Knutson
+                      - generic [ref=f13e103]: 235 views · 5 months ago
+              - 'link "Meet the New Microsoft Planner Agent | AI-Powered Task Management Demo from YouTube · Duration: 3 minutes 28 seconds · 829 views · uploaded on 4 months ago · uploaded by Marque360: Microsoft Gold Partner · Click to play. · Discover the new Microsoft Planner Agent in action! In this quick demo, we show how Planner’s latest AI-powered capabilities help teams streamline task management, improve productivity, and stay organized with less manual effort. In this video, you’ll see: -How the new Planner Agent works -AI-assisted task creation and management -Smarter ..." [ref=f13e106] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=51a9c5322eb75adb53a0c8763c6eb5971c8d2e3107bbc20e881dbda97681c8deJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9JTIyUGxhbm5lcithZ2VudCtUZW1wbGF0ZXMlMjIrJTIyUmVzZWFyY2grUmVwb3J0JTIyJm1pZD1BMzlGMDJBOTdDRjM5NUUwOTM2Q0EzOUYwMkE5N0NGMzk1RTA5MzZDJmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDUjRSRWx1cmlrajBSd0EydTBkZk0xUSZGT1JNPVZJUkU&ntb=1
+                - generic [ref=f13e107]:
+                  - generic [ref=f13e108]: 3:28
+                  - generic [ref=f13e117]:
+                    - generic "Meet the New Microsoft Planner Agent | AI-Powered Task Management Demo" [ref=f13e118]:
+                      - text: Meet the New Microsoft
+                      - strong [ref=f13e119]: Planner
+                      - strong [ref=f13e120]: Agent
+                      - text: "| AI-Powered Task Management Demo"
+                    - generic [ref=f13e121]:
+                      - generic [ref=f13e122]:
+                        - img "Video source site" [ref=f13e123]
+                        - text: "YouTube · Marque360: Microsoft Gold Partner"
+                      - generic [ref=f13e124]: 829 views · 4 months ago
+              - 'link "How to use the Researcher agent in Microsoft Copilot | Microsoft from YouTube · Duration: 1 minutes 7 seconds · 7.1K views · uploaded on 11 months ago · uploaded by Microsoft Helps · Click to play. · Learn how to create reports in minutes using the Researcher Agent in Microsoft Copilot. This step-by-step tutorial walks you through how to use AI-powered search and summarization tools to quickly gather insights, cite sources, and build structured content—without leaving your workflow. Whether you''re a student, professional, or just curious ..." [ref=f13e127] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=74efe5d55b0c3796ed46d685077c2c079d857148525dcf439623f376064c167aJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9JTIyUGxhbm5lcithZ2VudCtUZW1wbGF0ZXMlMjIrJTIyUmVzZWFyY2grUmVwb3J0JTIyJm1pZD00NjRCQjc3RjU4QjU2NUY1QjgyQTQ2NEJCNzdGNThCNTY1RjVCODJBJmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDQm9jNWRlUEFqa0dKTW1xSEpkcDlfUSZGT1JNPVZJUkU&ntb=1
+                - generic [ref=f13e128]:
+                  - generic [ref=f13e129]: 1:07
+                  - generic [ref=f13e138]:
+                    - generic "How to use the Researcher agent in Microsoft Copilot | Microsoft" [ref=f13e139]:
+                      - text: How to use the Researcher
+                      - strong [ref=f13e140]: agent
+                      - text: in Microsoft Copilot | Microsoft
+                    - generic [ref=f13e141]:
+                      - generic [ref=f13e142]:
+                        - img "Video source site" [ref=f13e143]
+                        - text: YouTube · Microsoft Helps
+                      - generic [ref=f13e144]: 7.1K views · 11 months ago
+    - complementary "Additional Results" [ref=f13e145]:
+      - list
+  - contentinfo [ref=f13e146]:
+    - generic [ref=f13e147]:
+      - list:
+        - listitem [ref=f13e148]:
+          - link "Privacy" [ref=f13e149] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a657464f06e19be49f8883b058a9381a5707b37a46afedd44fe469276672aaafJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=f13e150]:
+          - link "Terms" [ref=f13e151] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=18a84bd0975f0ca8c55f56976181f0984690e6b0916d18d6500d4c2a2e6be68bJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1
+          - generic [ref=f13e152]: New

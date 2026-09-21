@@ -1,0 +1,490 @@
+- generic [active] [ref=f15e1]:
+  - generic:
+    - dialog:
+      - generic [ref=f15e2]:
+        - generic [ref=f15e3]:
+          - paragraph
+        - generic:
+          - generic:
+            - generic [ref=f15e5]: Microsoft and our third-party vendors use cookies and similar technologies to deliver, maintain, and improve our services and ads. If you agree, we will use this data for ads personalization and associated analytics.
+            - generic [ref=f15e6]:
+              - text: You can select ‘Accept’ to consent to these uses, ‘Reject’ to decline these uses or click on ‘More options’ to review your options. You can change your selection under ‘Manage Cookie Preferences’ at the bottom of this page.
+              - link "Privacy Statement" [ref=f15e7] [cursor=pointer]:
+                - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+          - generic [ref=f15e8]:
+            - link "Accept" [ref=f15e10] [cursor=pointer]:
+              - /url: "javascript: void(0)"
+            - link "Reject" [ref=f15e12] [cursor=pointer]:
+              - /url: "javascript: void(0)"
+            - link "More options" [ref=f15e13] [cursor=pointer]:
+              - /url: "javascript: void(0)"
+  - banner [ref=f15e14]:
+    - button "Skip to content" [ref=f15e15] [cursor=pointer]
+    - button "Accessibility Feedback" [ref=f15e18] [cursor=pointer]
+    - generic [ref=f15e21]:
+      - link [ref=f15e22] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Back to Bing search" [level=1] [ref=f15e23]
+      - search [ref=f15e24]:
+        - button "Search" [ref=f15e27] [cursor=pointer]
+        - searchbox "Enter your search here - Search suggestions will show as you type" [ref=f15e28]: "\"Software development\" \"Use template\" \"Microsoft Planner\""
+        - generic [ref=f15e29] [cursor=pointer]
+        - button "Search using an image" [ref=f15e34] [cursor=pointer]
+    - complementary "Account Rewards and Preferences" [ref=f15e36]:
+      - button "Microsoft Rewards" [ref=f15e37] [cursor=pointer]:
+        - generic [ref=f15e38]: Rewards
+      - link "Sign in" [ref=f15e54] [cursor=pointer]:
+        - /url: javascript:void(0)
+    - navigation "Search Filter" [ref=f15e56]:
+      - list [ref=f15e57]:
+        - listitem [ref=f15e58]:
+          - link "All" [ref=f15e59] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=f15e60]:
+          - link "Search" [ref=f15e61] [cursor=pointer]:
+            - /url: /copilotsearch?q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&FORM=CSSCOP
+        - listitem [ref=f15e64]:
+          - link "Images" [ref=f15e65] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e96400e771056b8a132a67e9d5c47d9454aa7fef8a61671623e4e59aa9103bc0JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L2ltYWdlcy9zZWFyY2g_cT0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImRk9STT1IRFJTQzM&ntb=1
+        - listitem [ref=f15e66]:
+          - link "Videos" [ref=f15e67] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=df9bd47a0541ca6e533040bd7a2359d65ec295a4681426bf50cdcd9ccada8189JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9zZWFyY2g_cT0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImRk9STT1IRFJTQzQ&ntb=1
+        - listitem [ref=f15e68]:
+          - link "Maps" [ref=f15e69] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=59d53a1b63b4e430a811604bae5c1656b10930d137bf32796f90536fc2f7fbabJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L21hcHM_cT0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImRk9STT1IRFJTQzY&ntb=1
+        - listitem [ref=f15e70]:
+          - link "News" [ref=f15e71] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=0139970821b8dddd23cf422460a5ce81620a3d25d241a259f010a3441483b32eJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L25ld3Mvc2VhcmNoP3E9JTIyU29mdHdhcmUrZGV2ZWxvcG1lbnQlMjIrJTIyVXNlK3RlbXBsYXRlJTIyKyUyMk1pY3Jvc29mdCtQbGFubmVyJTIyJkZPUk09SERSU0M3&ntb=1
+        - listitem [ref=f15e72]:
+          - link "Copilot" [ref=f15e73] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=efbf9af2af7c7eb489167129f5dc3462656f67a7bcd16b1f6a32fce19ac47fbcJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L2NoYXQ_cHJvbXB0PSUyMlNvZnR3YXJlK2RldmVsb3BtZW50JTIyKyUyMlVzZSt0ZW1wbGF0ZSUyMislMjJNaWNyb3NvZnQrUGxhbm5lciUyMiZzZW5kcXVlcnk9MSZGT1JNPVNDQ09EWA&ntb=1
+        - listitem [ref=f15e74]:
+          - button [ref=f15e75] [cursor=pointer]
+  - main "Search Results" [ref=f15e80]:
+    - generic [ref=f15e82]:
+      - generic [aria-hidden] [ref=f15e83]:
+        - generic [ref=f15e84] [cursor=pointer]
+        - generic [ref=f15e87] [cursor=pointer]
+        - generic [ref=f15e90] [cursor=pointer]
+      - text: About 5,930 results
+    - generic [ref=f15e93]:
+      - list [ref=f15e94]:
+        - listitem [ref=f15e95]:
+          - list [ref=f15e96]:
+            - listitem [ref=f15e97]:
+              - generic [ref=f15e98]:
+                - generic [ref=f15e99] [cursor=pointer]:
+                  - generic [ref=f15e100]: Atlassian
+                  - generic [ref=f15e105]:
+                    - generic [ref=f15e106]: https://www.atlassian.com › jira › project-mgmt
+                    - button [ref=f15e107]:
+                      - img "About our ads" [ref=f15e109]
+                - heading [level=2] [ref=f15e110]:
+                  - link "Templates & Integrations - Easy To Use & Customize" [ref=f15e111] [cursor=pointer]:
+                    - /url: https://www.bing.com/aclick?ld=e8UbMNvjXfEVOEOf5DT_4-vTVUCUxHqJ1EctUcOg0miDIlk82AgNG5w53L_tokWyUdTsiSiHldx-aAgcB5chZ_kYISYZvJdYc0IEv3oDYD5fUyHMXNwOAMBzrNf35ZjAsOuis3RCpNeDQHA3l0M7Oxd472vdGgdEfwzdHWtukkVzZqcf9kG2Q7LIYnYO9QXdBXWTVem2YT43e-aBGWFDXkkCPpdNA&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUzZmNhbXBhaWduJTNkNDcwNzExMTkxJTI2YWRncm91cCUzZDEyOTk2MjQwNDU4OTk0NDQlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjgyMjk4Njk1OCUzYWxvYy0xNTIlMjZtYXRjaHR5cGUlM2RiJTI2YmlkbWF0Y2h0eXBlJTNkYmIlMjZuZXR3b3JrJTNkbyUyNmRldmljZSUzZGMlMjZjcmVhdGl2ZSUzZDgxMjI2NTY4MTg3Mjk1JTI2a2V5d29yZCUzZGdhbnR0JTI1MjBjaGFydCUyNTIwdGVtcGxhdGUlMjZxdWVyeXN0cmluZyUzZCUyNTIyU29mdHdhcmUlMjUyMGRldmVsb3BtZW50JTI1MjIlMjUyMCUyNTIyVXNlJTI1MjB0ZW1wbGF0ZSUyNTIyJTI1MjAlMjUyMk1pY3Jvc29mdCUyNTIwUGxhbm5lciUyNTIyJTI2ZHNfZWlkJTNkNzAwMDAwMDAxNzM4Nzk1JTI2ZHNfZTElM2RNSUNST1NPRlQlMjZtc19hY2NfaWQlM2RGMTExNEY1QiUyNm1zY2xraWQlM2RhY2JiOTUwZTAwNjUxMjk4MjU4M2ZmOTUwYjA3NzkyZg&rlid=acbb950e006512982583ff950b07792f&ntb=1
+                - generic [ref=f15e112]:
+                  - generic [ref=f15e113]:
+                    - generic [ref=f15e114]: Sponsored
+                    - text: Manage Projects, Track Progress & Distribute Tasks for Effective Teamwork. Jira’s AI-Powered Features and Tools Make Project Management Easy. Get Started Free!
+                  - generic [ref=f15e117]:
+                    - strong [ref=f15e118]: "Site visitors:"
+                    - text: Over 100K in the past month
+        - listitem [ref=f15e119]:
+          - button "Hide" [ref=f15e124] [cursor=pointer]
+      - list [ref=f15e127]:
+        - listitem [ref=f15e128]:
+          - generic [ref=f15e129]:
+            - link "Explore this image" [ref=f15e132] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=qBRTAfM9&id=F9AD41EEC266DD61F0DB3BFC405F0906EA90986F&thid=OIP.qBRTAfM9LPAMz9EKzR9z5gHaE8&mediaurl=https://windowsreport.com/wp-content/uploads/2024/08/400-million-2024-08-20T161902.806.jpg&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&ck=749B3C5AD4E07B4D6C924485AE7FF079&idpp=rc&expw=1536&exph=1024&form=rc2idp
+            - generic [ref=f15e134]:
+              - link "Windows Report" [ref=f15e136] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=52c8bb9a426fcf8f217c6e97d7bd5d2dc7e7be31bc8fa0f3912deff96f4a8613JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93aW5kb3dzcmVwb3J0LmNvbS9taWNyb3NvZnQtcGxhbm5lci10ZW1wbGF0ZXMv&ntb=1
+                - generic [ref=f15e141]:
+                  - generic [ref=f15e142]: Windows Report
+                  - generic [ref=f15e143]: https://windowsreport.com › microsoft-planner-templates
+              - heading [level=2] [ref=f15e146]:
+                - 'link "Microsoft Planner Templates: How to Create and Use …" [ref=f15e147] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=52c8bb9a426fcf8f217c6e97d7bd5d2dc7e7be31bc8fa0f3912deff96f4a8613JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93aW5kb3dzcmVwb3J0LmNvbS9taWNyb3NvZnQtcGxhbm5lci10ZW1wbGF0ZXMv&ntb=1
+              - paragraph [ref=f15e148]: Aug 2, 2024 · Thankfully, Microsoft Planner offers several ways to create and use templates, making …
+        - listitem [ref=f15e150]:
+          - link "Bloom Software" [ref=f15e152] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=14ee060f7c30578b66b523908c315f1a26d1be253ef385c1dad1b6c05a033a05JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cuYmxvb21zb2Z0d2FyZWNvLmNvbS9ibG9nL2dldC1zdGFydGVkLXF1aWNrbHktd2l0aC1wcmUtbWFkZS10ZW1wbGF0ZXMtaW4tbWljcm9zb2Z0LXBsYW5uZXItd2Vi&ntb=1
+            - generic [ref=f15e157]:
+              - generic [ref=f15e158]: Bloom Software
+              - generic [ref=f15e159]: https://www.bloomsoftwareco.com › blog › get-started-quickly-with-pre-made...
+          - heading [level=2] [ref=f15e162]:
+            - link "Get started quickly with pre-made templates in Microsoft Planner (Web)" [ref=f15e163] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=14ee060f7c30578b66b523908c315f1a26d1be253ef385c1dad1b6c05a033a05JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cuYmxvb21zb2Z0d2FyZWNvLmNvbS9ibG9nL2dldC1zdGFydGVkLXF1aWNrbHktd2l0aC1wcmUtbWFkZS10ZW1wbGF0ZXMtaW4tbWljcm9zb2Z0LXBsYW5uZXItd2Vi&ntb=1
+          - paragraph [ref=f15e165]: No need to create a project plan from scratch in Microsoft Planner – instead, use a pre-made template plan. Typically in Microsoft’s …
+        - listitem [ref=f15e166]:
+          - link "ClickUp" [ref=f15e168] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=918e0482cd47aedb9456bf0317b5640168ae49e5df5db9ed394d0eeb9f7e11e9JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9jbGlja3VwLmNvbS9ibG9nL21pY3Jvc29mdC1wbGFubmVyLXRlbXBsYXRlcy8&ntb=1
+            - generic [ref=f15e173]:
+              - generic [ref=f15e174]: ClickUp
+              - generic [ref=f15e175]: https://clickup.com › blog › microsoft-planner-templates
+          - heading [level=2] [ref=f15e178]:
+            - link "Microsoft Planner Template For Productivity & Project Management" [ref=f15e179] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=918e0482cd47aedb9456bf0317b5640168ae49e5df5db9ed394d0eeb9f7e11e9JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9jbGlja3VwLmNvbS9ibG9nL21pY3Jvc29mdC1wbGFubmVyLXRlbXBsYXRlcy8&ntb=1
+          - paragraph [ref=f15e181]: For teams already deeply entrenched in the Microsoft 365 ecosystem, Microsoft Planner is an intuitive way to manage tasks. It …
+        - listitem [ref=f15e182]:
+          - generic [ref=f15e183]:
+            - heading [level=2] [ref=f15e184]:
+              - link "Images of Software Development Use Template Microsoft Planner" [ref=f15e185] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=8dab18babe38073607cca6724407b456a7f1f0894a22f19c7b9e7753f23eb551JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L2ltYWdlcy9zZWFyY2g_cT1zb2Z0d2FyZStkZXZlbG9wbWVudCt1c2UrdGVtcGxhdGUrbWljcm9zb2Z0K3BsYW5uZXImcXB2dD0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImRk9STT1JR1JF&ntb=1
+              - navigation "Related searches" [ref=f15e190]:
+                - list "Please use arrow keys to navigate" [ref=f15e196]:
+                  - listitem [ref=f15e197]:
+                    - link "Microsoft Planner Software Development" [ref=f15e198] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=cfc104dcb55f46d5a7626e523faa311b48c0c3a1f61e964b751c847a87aee019JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1NvZnR3YXJlK0RldmVsb3BtZW50Jm1tcmVxcnk9cnNnYmltZyZtbXJlcWg9Z0NPdjhpNWtxYkoyakYybzUzRyUyZnc1aENmQ0Q0d0VnWFc0bHMyRkltckRjJTNkJkZPUk09SVJTU1JQ&ntb=1
+                  - listitem [ref=f15e203]:
+                    - link "Microsoft Planner Template Example" [ref=f15e204] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=d63a0a57ed56722600d9a9a809c841be6e9eeb85a4ed8f1e9c8c9b33137a95feJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1RlbXBsYXRlK0V4YW1wbGUmbW1yZXFyeT1yc2diaW1nJm1tcmVxaD1lcTJvZkgzV0M4aEkyOWE0dEVZZzJlRmNialpvckhxQmdrZk1vd0VjSElrJTNkJkZPUk09SVJTU1JQ&ntb=1
+                  - listitem [ref=f15e209]:
+                    - link "Microsoft Planner Agile Template" [ref=f15e210] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=e30654f31ee6a67cd01af0680de1ae0a194e7daacf5e66ba50ff59c8a44deac3JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK0FnaWxlK1RlbXBsYXRlJm1tcmVxcnk9cnNnYmltZyZtbXJlcWg9YUNrSVBTSHRrTU9iYjA2azlBNmJWWWtiN2V1THlTaiUyZlY0azZZJTJmOGtXaW8lM2QmRk9STT1JUlNTUlA&ntb=1
+                  - listitem [ref=f15e215]:
+                    - link "Sample Microsoft Planner Templates" [ref=f15e216] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=8d8750d97ea1ca4111b2fade3f211fe63c9d23d78ac596321d3ec8d61ee7e688JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPVNhbXBsZStNaWNyb3NvZnQrUGxhbm5lcitUZW1wbGF0ZXMmbW1yZXFyeT1yc2diaW1nJm1tcmVxaD1WN29scjgyR0VkT2JRY3lCbGRQcVFoNUpyTjJpbDdab1VtelBQcHJpbkJ3JTNkJkZPUk09SVJTU1JQ&ntb=1
+                  - listitem [ref=f15e221]:
+                    - link "Microsoft Planner Templates For Project Management" [ref=f15e222] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=44661e3ee6f0ddec38599f4f98cb00f1884ae63e69f1202c9cff628b99773ddcJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1RlbXBsYXRlcytGb3IrUHJvamVjdCtNYW5hZ2VtZW50Jm1tcmVxcnk9cnNnYmltZyZtbXJlcWg9OGRxa3V1MlFmNk5KayUyYmJlYkhyOXdGSHNmVG4lMmJMclB3VVJwQ2JVNWZiUFUlM2QmRk9STT1JUlNTUlA&ntb=1
+                  - listitem [ref=f15e227]:
+                    - link "Microsoft Planner Project Management Template" [ref=f15e228] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=8a5b8130d3278646a3b4ff492581ad5992e4176aec56f451333dc8ecd0586f8bJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1Byb2plY3QrTWFuYWdlbWVudCtUZW1wbGF0ZSZtbXJlcXJ5PXJzZ2JpbWcmbW1yZXFoPXhPUU5RYjBSSk90NWY2Wm5objI0dU4xRlg3VnZwdmt1Y1JMU01MZDEyaFElM2QmRk9STT1JUlNTUlA&ntb=1
+                  - listitem [ref=f15e233]:
+                    - link "Microsoft Planner Project Plan Template" [ref=f15e234] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=0428b4b37fb82e6bc0206cd95e43298cb72fcc658af554fb59ef62853cdc3620JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1Byb2plY3QrUGxhbitUZW1wbGF0ZSZtbXJlcXJ5PXJzZ2JpbWcmbW1yZXFoPWRxOVpIcSUyZlh6VmtjTEU2M2xYdUxzdHZYdmxNNjRSVEUlMmI2NUFpZE10U3FnJTNkJkZPUk09SVJTU1JQ&ntb=1
+                  - listitem [ref=f15e239]:
+                    - link "Microsoft Planner Template Plan" [ref=f15e240] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=1ebd3dfc96fb80c23e2044a89d0c90590e155bf3bf7f572ac40cd883ed3c4562JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1RlbXBsYXRlK1BsYW4mbW1yZXFyeT1yc2diaW1nJm1tcmVxaD1rNkNmaW04MUlaYmtMU0pzQXNWY21jNlQ1WGpndVAzdW9HTk5XJTJiTzFTUGslM2QmRk9STT1JUlNTUlA&ntb=1
+                  - listitem [ref=f15e245]:
+                    - link "Microsoft Planner Template Ideas" [ref=f15e246] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=61ba610ef188449e2f373adb194923ad07062123e79d81eb15f2352282896b76JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK1RlbXBsYXRlK0lkZWFzJm1tcmVxcnk9cnNnYmltZyZtbXJlcWg9RktUZ0w3c0N5UXVuWXZncjk1SVZzR0lNZ1JMeno4anFWV1Y4JTJmRHVCMklrJTNkJkZPUk09SVJTU1JQ&ntb=1
+            - list "Please use arrow keys to navigate" [ref=f15e257]:
+              - listitem [ref=f15e258]:
+                - list [ref=f15e259]:
+                  - listitem [ref=f15e260]:
+                    - link "How To Use Ms Planner For Project Management at Kevin Proctor blog" [ref=f15e262] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=%2f4vI0mkB&id=B22710D48E40EC4FFED4C1D574B282046FB73B18&thid=OIP._4vI0mkBtaZXn5RtpWc8EQHaEM&mediaurl=https%3a%2f%2fwww.computerworld.com%2fwp-content%2fuploads%2f2024%2f03%2fmicrosoft-planner-app-100948583-orig.jpg%3fquality%3d50%26strip%3dall%26w%3d1024&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ff8bc8d26901b5a6579f946da5673c11%3frik%3dGDu3bwSCsnTVwQ%26pid%3dImgRaw%26r%3d0&exph=579&expw=1024&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=95140541A790C1DE0A54556691C37131&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e267]:
+                    - link "‘Unboxing’ the New Microsoft Planner for Enterprise Work Management ..." [ref=f15e269] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=dIKmQiTg&id=3CB8FFFF79CD4FE94B5ED9D5CC5AA1B47C63DF92&thid=OIP.dIKmQiTgmiL7E6Pzu5_SmgHaEK&mediaurl=https%3a%2f%2fwww.senseiprojectsolutions.com%2fwp-content%2fuploads%2f2024%2f05%2fa-screenshot-of-a-computer-description-automatica-15-1024x576.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7482a64224e09a22fb13a3f3bb9fd29a%3frik%3dkt9jfLShWszV2Q%26pid%3dImgRaw%26r%3d0&exph=576&expw=1024&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=C44420ABA09A8602327779CCB0304CB1&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e274]:
+                    - link "Microsoft Planner Templates" [ref=f15e276] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=ZVoEBmMm&id=13C1D4400C07DC2DAE4D89D7D0199993262B4761&thid=OIP.ZVoEBmMmcJUWNq1d-XeEdgHaDu&mediaurl=https%3a%2f%2fsm.pcmag.com%2fpcmag_uk%2fgallery%2fm%2fmicrosoft-%2fmicrosoft-planner_43j4.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.655a0406632670951636ad5df9778476%3frik%3dYUcrJpOZGdDXiQ%26pid%3dImgRaw%26r%3d0&exph=1272&expw=2528&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=1B234CF65B80EADE731BDDC51A4832B2&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e281]:
+                    - link "Getting Started With Microsoft Planner - Systemagic" [ref=f15e283] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=sIO4%2bTkj&id=C1587D65B31935745307CF8D59B4E1FE58068F3A&thid=OIP.sIO4-TkjfAuFVr3A8S4SAAHaDy&mediaurl=https%3a%2f%2fsystemagic.co.uk%2fwp-content%2fuploads%2f2024%2f09%2fChoosing-a-Template.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b083b8f939237c0b8556bdc0f12e1200%3frik%3dOo8GWP7htFmNzw%26pid%3dImgRaw%26r%3d0&exph=516&expw=1010&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=AFBC26F2177F1D53F272A7F45928412B&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e288]:
+                    - link "7-step beginner’s guide to mastering Microsoft Planner - Syntax Project ..." [ref=f15e290] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=XW9aTZqW&id=B17E1C577598E81F35CB8FDAA969E26809588DED&thid=OIP.XW9aTZqW5X-0PEahbwwadAHaFf&mediaurl=https%3a%2f%2fsyntaxprojectsolutions.com%2fwp-content%2fuploads%2f2025%2f08%2f2-templates-768x569.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5d6f5a4d9a96e57fb43c46a16f0c1a74%3frik%3d7Y1YCWjiaanajw%26pid%3dImgRaw%26r%3d0&exph=569&expw=768&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=C3C21D36801F673137668D684DDEC253&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e295]:
+                    - 'link "Microsoft Planner Review: Features, Pros And Cons – Forbes Advisor" [ref=f15e297] [cursor=pointer]':
+                      - /url: /images/search?view=detailV2&ccid=a9Xb0GY4&id=23E1F51F015660C16FBE7472D07B88EAE9EE588E&thid=OIP.a9Xb0GY4RC09zMJ96luKQwHaEC&mediaurl=https%3a%2f%2fthumbor.forbes.com%2fthumbor%2ffit-in%2fx%2fhttps%3a%2f%2fwww.forbes.com%2fadvisor%2fwp-content%2fuploads%2f2025%2f08%2fmsplanner-templates.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6bd5dbd06638442d3dccc27dea5b8a43%3frik%3djlju6eqIe9BydA%26pid%3dImgRaw%26r%3d0&exph=1640&expw=3012&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=EE4D0C180DA82D81FF904687BE32C88E&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e302]:
+                    - 'link "Microsoft Planner Templates: How to Create and Use Them" [ref=f15e304] [cursor=pointer]':
+                      - /url: /images/search?view=detailV2&ccid=6eAPuG%2bB&id=F9AD41EEC266DD61F0DBC87512804C48426B9F69&thid=OIP.6eAPuG-B3K85fsD2YVUGKQHaFj&mediaurl=https%3a%2f%2fwindowsreport.com%2fwp-content%2fuploads%2f2024%2f08%2ftemplates.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.e9e00fb86f81dcaf397ec0f661550629%3frik%3daZ9rQkhMgBJ1yA%26pid%3dImgRaw%26r%3d0&exph=800&expw=1068&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=4AADDF5B251885FFD77149CD5DA4A510&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e309]:
+                    - link "‘Unboxing’ the New Microsoft Planner for Enterprise Work Management ..." [ref=f15e311] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=YuBGWpiy&id=3CB8FFFF79CD4FE94B5E28CBC5A4D957C2AC1383&thid=OIP.YuBGWpiyJB2XFPkYAfaBHgHaEK&mediaurl=https%3a%2f%2fwww.senseiprojectsolutions.com%2fwp-content%2fuploads%2f2024%2f05%2fa-screenshot-of-a-computer-description-automatica-12.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.62e0465a98b2241d9714f91801f6811e%3frik%3dgxOswlfZpMXLKA%26pid%3dImgRaw%26r%3d0&exph=805&expw=1432&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=77406E7587AA67AE622D7F09424E28C7&selectedIndex=0&idpp=serp
+                  - listitem [ref=f15e316]:
+                    - link "Introducing The New Microsoft Planner (Everything You Need To Know ..." [ref=f15e318] [cursor=pointer]:
+                      - /url: /images/search?view=detailV2&ccid=GvL96DMQ&id=F05ADEBDA266C4EF9573C4A0C6064943423DF3C8&thid=OIP.GvL96DMQSuhB33IWIOqwJAHaDy&mediaurl=https%3a%2f%2fwww.boldtechsolutions.com%2fwp-content%2fuploads%2f2024%2f04%2fTemplates.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1af2fde833104ae841df721620eab024%3frik%3dyPM9QkNJBsagxA%26pid%3dImgRaw%26r%3d0&exph=295&expw=576&q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&mode=overlay&FORM=IQFRBA&ck=D364D737B7990BB742B553E8B4DEA4C4&selectedIndex=0&idpp=serp
+            - link "See all images" [ref=f15e323] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=5f69f171eb8f18e399120526ed4acc032d58d4e7e4bd1697bdb2fd98675186f9JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L2ltYWdlcy9zZWFyY2g_cT1zb2Z0d2FyZStkZXZlbG9wbWVudCt1c2UrdGVtcGxhdGUrbWljcm9zb2Z0K3BsYW5uZXImcXB2dD0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImRk9STT1JUUZSTUw&ntb=1
+        - listitem [ref=f15e330]:
+          - link "Microsoft Support" [ref=f15e332] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=46b38f3968ef33b336e78c7d5e2c45afe23a9afa884e0e84701692dafdfdb0d7JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9zdXBwb3J0Lm1pY3Jvc29mdC5jb20vZW4tdXMvcGxhbm5lci9jb3BpbG90L3VzZS10ZW1wbGF0ZXMtdG8tZ2V0LXN0YXJ0ZWQtd2l0aC1wbGFubmVyLWFnZW50&ntb=1
+            - generic [ref=f15e337]:
+              - generic [ref=f15e338]: Microsoft Support
+              - generic [ref=f15e339]: https://support.microsoft.com › en-us › planner › copilot › use-templates-to...
+          - heading [level=2] [ref=f15e342]:
+            - link "Use templates to get started with Planner Agent" [ref=f15e343] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=46b38f3968ef33b336e78c7d5e2c45afe23a9afa884e0e84701692dafdfdb0d7JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9zdXBwb3J0Lm1pY3Jvc29mdC5jb20vZW4tdXMvcGxhbm5lci9jb3BpbG90L3VzZS10ZW1wbGF0ZXMtdG8tZ2V0LXN0YXJ0ZWQtd2l0aC1wbGFubmVyLWFnZW50&ntb=1
+          - paragraph [ref=f15e345]: Jumpstart planning with Microsoft Planner agent templates to customize goals, attach files, and streamline task execution in Planner …
+        - listitem [ref=f15e346]:
+          - link "Microsoft" [ref=f15e348] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5a984ed460dc45137ac4ebf73695479cf2bfd50b66b59723f80fe446325d991eJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi11cy9taWNyb3NvZnQtMzY1L3BsYW5uZXIvYWdpbGUtbWV0aG9kb2xvZ3k_bXNvY2tpZD0wMzMyYTM3YWYzZTg2MWE4MmI5NWI0YjBmMmY0NjBhYw&ntb=1
+            - generic [ref=f15e353]:
+              - generic [ref=f15e354]: Microsoft
+              - generic [ref=f15e355]: https://www.microsoft.com › en-us › planner › agile-methodology
+          - heading [level=2] [ref=f15e358]:
+            - link "Agile Methodology for Project Management | Microsoft Project" [ref=f15e359] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=5a984ed460dc45137ac4ebf73695479cf2bfd50b66b59723f80fe446325d991eJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi11cy9taWNyb3NvZnQtMzY1L3BsYW5uZXIvYWdpbGUtbWV0aG9kb2xvZ3k_bXNvY2tpZD0wMzMyYTM3YWYzZTg2MWE4MmI5NWI0YjBmMmY0NjBhYw&ntb=1
+          - paragraph [ref=f15e361]: Use Microsoft Project to manage your work projects in an agile way. Easily add new people and allow anyone to view updates. …
+        - listitem [ref=f15e362]:
+          - link "ProjectManager" [ref=f15e364] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=fb701c66ef4322d61f0e215ba347f20872f9808d9c124f08304fcbf6f46232f0JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cucHJvamVjdG1hbmFnZXIuY29tL2Jsb2cvcHJvamVjdC1wbGFubmluZy10ZW1wbGF0ZXM&ntb=1
+            - generic [ref=f15e369]:
+              - generic [ref=f15e370]: ProjectManager
+              - generic [ref=f15e371]: https://www.projectmanager.com › blog › project-planning-templates
+          - heading [level=2] [ref=f15e374]:
+            - link "22 Free Project Planning Templates for Excel and Word" [ref=f15e375] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=fb701c66ef4322d61f0e215ba347f20872f9808d9c124f08304fcbf6f46232f0JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cucHJvamVjdG1hbmFnZXIuY29tL2Jsb2cvcHJvamVjdC1wbGFubmluZy10ZW1wbGF0ZXM&ntb=1
+          - paragraph [ref=f15e377]: 4 days ago · Project planning templates are an important part of project management. They organize your tasks, help you write a …
+        - listitem [ref=f15e378]:
+          - link "LinkedIn" [ref=f15e380] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=03d8eb90d4a498adf1b593f0aaeab55291b3446ab5221c44c4643e8d78126628JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL3Bvc3RzL25vb2xpLXZpbm9kLWt1bWFyLXBhdGVsX2Rlc2lnbnBhdHRlcm5zLXNvZnR3YXJlYXJjaGl0ZWN0dXJlLWNsZWFuY29kZS1hY3Rpdml0eS03NDE1Mjc4OTAzNzg4NzkzODU4LTM3bnA&ntb=1
+            - generic [ref=f15e385]:
+              - generic [ref=f15e386]: LinkedIn
+              - generic [ref=f15e387]: https://www.linkedin.com › posts › nooli-vinod-kumar-patel_designpatterns...
+          - heading [level=2] [ref=f15e390]:
+            - 'link "Template Method Pattern: Consistent Flow, Flexible Steps" [ref=f15e391] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=03d8eb90d4a498adf1b593f0aaeab55291b3446ab5221c44c4643e8d78126628JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL3Bvc3RzL25vb2xpLXZpbm9kLWt1bWFyLXBhdGVsX2Rlc2lnbnBhdHRlcm5zLXNvZnR3YXJlYXJjaGl0ZWN0dXJlLWNsZWFuY29kZS1hY3Rpdml0eS03NDE1Mjc4OTAzNzg4NzkzODU4LTM3bnA&ntb=1
+          - paragraph [ref=f15e393]: but individual steps can vary — use Template Method. 🎯 Final takeaway Template Method protects process integrity. It allows …
+        - listitem [ref=f15e394]:
+          - link "ONES" [ref=f15e396] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8dad0da9f0a0c946a595f06fe6b2d71b62dd47b4e9dc9358599ce40a3995b923JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9vbmVzLmNvbS9ibG9nLzUtbWljcm9zb2Z0LXByb2plY3QtbWFuYWdlbWVudC10b29scy1jb21wYXJlZC13aGljaC1pcy1iZXN0Lw&ntb=1
+            - generic [ref=f15e401]:
+              - generic [ref=f15e402]: ONES
+              - generic [ref=f15e403]: https://ones.com › blog
+          - heading [level=2] [ref=f15e406]:
+            - 'link "5 Microsoft Project Management Tools Compared: Which Is Best?" [ref=f15e407] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=8dad0da9f0a0c946a595f06fe6b2d71b62dd47b4e9dc9358599ce40a3995b923JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9vbmVzLmNvbS9ibG9nLzUtbWljcm9zb2Z0LXByb2plY3QtbWFuYWdlbWVudC10b29scy1jb21wYXJlZC13aGljaC1pcy1iZXN0Lw&ntb=1
+          - paragraph [ref=f15e409]: 3 days ago · Microsoft Planner – Best for lightweight task management with Teams-driven collaboration. Azure DevOps Boards – …
+        - listitem [ref=f15e410]:
+          - link "cloud.microsoft" [ref=f15e412] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=b4c696246c56d3d7ce19bbd89e33c22264b8e6ac14d210745b0b316a971592c2JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9tMzY1LmNsb3VkLm1pY3Jvc29mdC9jcmVhdGU&ntb=1
+            - generic [ref=f15e417]:
+              - generic [ref=f15e418]: cloud.microsoft
+              - generic [ref=f15e419]: https://m365.cloud.microsoft › create
+          - heading [level=2] [ref=f15e422]:
+            - link "Create documents, presentations and designs with Copilot | Microsoft …" [ref=f15e423] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=b4c696246c56d3d7ce19bbd89e33c22264b8e6ac14d210745b0b316a971592c2JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cHM6Ly9tMzY1LmNsb3VkLm1pY3Jvc29mdC9jcmVhdGU&ntb=1
+          - paragraph [ref=f15e425]: Quickly turn your ideas into designed content, videos, podcasts, or surveys. Get started easily with a prompt or Office template.
+        - listitem [ref=f15e426]:
+          - list [ref=f15e427]:
+            - listitem [ref=f15e428]:
+              - generic [ref=f15e429]:
+                - generic [ref=f15e430] [cursor=pointer]:
+                  - generic [ref=f15e431]: Atlassian
+                  - generic [ref=f15e436]:
+                    - generic [ref=f15e437]: https://www.atlassian.com › jira › project-mgmt
+                    - button [ref=f15e438]:
+                      - img "About our ads" [ref=f15e440]
+                - heading [level=2] [ref=f15e441]:
+                  - link "Templates & Integrations - Easy To Use & Customize" [ref=f15e442] [cursor=pointer]:
+                    - /url: https://www.bing.com/aclick?ld=e8jifMHtrEBtSjtUiqhYjZ6zVUCUyQ5XvoeriILKpT3tJu79TjXh9mqDP8DAKPfbiy1E_FsUNXwpUHHU9OefEk0qmZcx9xqQwM-ZfUJu5ZiMsg-7msfFiRRG5yXjIFj2YA1f4ZloGkHIM3P7qkPOWjwXJvFraakmwdFq8dSc1o_wxA07RDNNLHg01F5UnbNbsCMytbRSFpIwzc6IyLc1-mifU8p3w&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUzZmNhbXBhaWduJTNkNDcwNzExMTkxJTI2YWRncm91cCUzZDEyOTk2MjQwNDU4OTk0NDQlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjgyMjk4Njk1OCUzYWxvYy0xNTIlMjZtYXRjaHR5cGUlM2RiJTI2YmlkbWF0Y2h0eXBlJTNkYmIlMjZuZXR3b3JrJTNkbyUyNmRldmljZSUzZGMlMjZjcmVhdGl2ZSUzZDgxMjI2NTY4MTg3Mjk1JTI2a2V5d29yZCUzZGdhbnR0JTI1MjBjaGFydCUyNTIwdGVtcGxhdGUlMjZxdWVyeXN0cmluZyUzZCUyNTIyU29mdHdhcmUlMjUyMGRldmVsb3BtZW50JTI1MjIlMjUyMCUyNTIyVXNlJTI1MjB0ZW1wbGF0ZSUyNTIyJTI1MjAlMjUyMk1pY3Jvc29mdCUyNTIwUGxhbm5lciUyNTIyJTI2ZHNfZWlkJTNkNzAwMDAwMDAxNzM4Nzk1JTI2ZHNfZTElM2RNSUNST1NPRlQlMjZtc19hY2NfaWQlM2RGMTExNEY1QiUyNm1zY2xraWQlM2Q4NDI4ZDE3ZjE3NDQxZjM1MDdhZmJiZTQxYzI2OWY5Mg&rlid=8428d17f17441f3507afbbe41c269f92&ntb=1
+                - generic [ref=f15e443]:
+                  - generic [ref=f15e444]:
+                    - generic [ref=f15e445]: Sponsored
+                    - text: Manage Projects, Track Progress & Distribute Tasks for Effective Teamwork. Jira’s AI-Powered Features and Tools Make Project Management Easy. Get Started Free!
+                  - generic [ref=f15e448]:
+                    - strong [ref=f15e449]: "Site visitors:"
+                    - text: Over 100K in the past month
+                  - paragraph [ref=f15e450]: Centralized Management · Streamline Collaboration · Track Progress Easily
+                - list "Please use arrow keys to navigate" [ref=f15e457]:
+                  - listitem [ref=f15e458] [cursor=pointer]:
+                    - link "Download" [ref=f15e460]:
+                      - /url: https://www.bing.com/aclick?ld=e8CDiD__5SosEk6MboAKz4CzVUCUwgPVGAqJpGPmACBfHpJ_I2l4TtUrdGTpz8aPWS_zTeqmK3ph6xE59ktl6WfNv2pS2ULzqwhsrm5wHVPqzMbmDGiTCNWtttt8LiUF87OzHhBvfBGeSWZbmMwMn3yLipgCJfcMi7spLaf_6zcqGJ_OIkclQckksdcwKDon-GNx-CcD_DbracuSpTfTjvd51PCEPAzCCa4441B-qy1YD1SFu9&u=aHR0cHMlM2ElMmYlMmYlMmZhdGxhc3NpYW4uY29tJTJmYnIlMmZzb2Z0d2FyZSUyZmppcmElMmZkb3dubG9hZCUzZmNhbXBhaWduJTNkNDcwNzExMTkxJTI2YWRncm91cCUzZDEyOTk2MjQwNDU4OTk0NDQlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjgyMjk4Njk1OCUzYWxvYy0xNTIlMjZtYXRjaHR5cGUlM2RiJTI2YmlkbWF0Y2h0eXBlJTNkYmIlMjZuZXR3b3JrJTNkbyUyNmRldmljZSUzZGMlMjZjcmVhdGl2ZSUzZDgxMjI2NTY4MTg3Mjk1JTI2a2V5d29yZCUzZGdhbnR0JTI1MjBjaGFydCUyNTIwdGVtcGxhdGUlMjZxdWVyeXN0cmluZyUzZCUyNTIyU29mdHdhcmUlMjUyMGRldmVsb3BtZW50JTI1MjIlMjUyMCUyNTIyVXNlJTI1MjB0ZW1wbGF0ZSUyNTIyJTI1MjAlMjUyMk1pY3Jvc29mdCUyNTIwUGxhbm5lciUyNTIyJTI2ZHNfZWlkJTNkNzAwMDAwMDAxNzM4Nzk1JTI2ZHNfZTElM2RNSUNST1NPRlQlMjZtc19hY2NfaWQlM2RGMTExNEY1QiUyNm1zY2xraWQlM2QxN2VkZDZkMjVjMTMxMDQ0Yjk4NWJjNDk1NzcxMmM3Nw&rlid=17edd6d25c131044b985bc4957712c77&ntb=1
+                  - listitem [ref=f15e462] [cursor=pointer]:
+                    - link "Gantt Chart Examples |..." [ref=f15e464]:
+                      - /url: https://www.bing.com/aclick?ld=e8DndP5M7WBm4zLL8mwBBdcjVUCUyB8n4EHNMIsPeLWi2dipuORAQswIXTQje-1JxGwADv_vQoHik9cKWOUm7RQQ39_28ZKhjyNbd-WBitMmO3ToeSmKhNR_Pq3IY2JLHu87A0AnOtMAOYZ1I-lvGb_MWRsb0lgk7Z4WDjHFX2GAH46pN93wjqI8HHMtF49iIyUGMFDtndOjn_-kquwxD-JW0Sc_7sHmTe46SDmNfuuhdHmPvO&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZmFnaWxlJTJmcHJvamVjdC1tYW5hZ2VtZW50JTJmZ2FudHQtY2hhcnQtZXhhbXBsZXMlM2ZjYW1wYWlnbiUzZDQ3MDcxMTE5MSUyNmFkZ3JvdXAlM2QxMjk5NjI0MDQ1ODk5NDQ0JTI2dGFyZ2V0aWQlM2Rrd2QtODEyMjY4MjI5ODY5NTglM2Fsb2MtMTUyJTI2bWF0Y2h0eXBlJTNkYiUyNmJpZG1hdGNodHlwZSUzZGJiJTI2bmV0d29yayUzZG8lMjZkZXZpY2UlM2RjJTI2Y3JlYXRpdmUlM2Q4MTIyNjU2ODE4NzI5NSUyNmtleXdvcmQlM2RnYW50dCUyNTIwY2hhcnQlMjUyMHRlbXBsYXRlJTI2cXVlcnlzdHJpbmclM2QlMjUyMlNvZnR3YXJlJTI1MjBkZXZlbG9wbWVudCUyNTIyJTI1MjAlMjUyMlVzZSUyNTIwdGVtcGxhdGUlMjUyMiUyNTIwJTI1MjJNaWNyb3NvZnQlMjUyMFBsYW5uZXIlMjUyMiUyNmRzX2VpZCUzZDcwMDAwMDAwMTczODc5NSUyNmRzX2UxJTNkTUlDUk9TT0ZUJTI2bXNfYWNjX2lkJTNkRjExMTRGNUIlMjZtc2Nsa2lkJTNkZTlhNjNkMzU5ZTRhMTE0YTY0NDI1N2FlOTUyODdkZDk&rlid=e9a63d359e4a114a644257ae95287dd9&ntb=1
+                  - listitem [ref=f15e466] [cursor=pointer]:
+                    - link "View Templates" [ref=f15e468]:
+                      - /url: https://www.bing.com/aclick?ld=e8UYy7xVjiommCJsE3C6CFajVUCUzwZhSs-twQ27phuuXPiAswSrROOYmqjt9HIf16k52wN3sre1neoPT_j4sTWkyXlv5cITlOByt_dpEZ7qQmkOtB5ilNM7eUNaE1RahIDYgKzyqvnhUmJH5oPzpYf7D7YutdhXPBjOWDJ64TdEj1woAILAhfB6FLPfVrqsVhH5DIu-uaoeNwaxxf7kA2o8_seXw80H8fpLzLrteQm69JB1YN&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZnRlbXBsYXRlcyUzZmNhbXBhaWduJTNkNDcwNzExMTkxJTI2YWRncm91cCUzZDEyOTk2MjQwNDU4OTk0NDQlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjgyMjk4Njk1OCUzYWxvYy0xNTIlMjZtYXRjaHR5cGUlM2RiJTI2YmlkbWF0Y2h0eXBlJTNkYmIlMjZuZXR3b3JrJTNkbyUyNmRldmljZSUzZGMlMjZjcmVhdGl2ZSUzZDgxMjI2NTY4MTg3Mjk1JTI2a2V5d29yZCUzZGdhbnR0JTI1MjBjaGFydCUyNTIwdGVtcGxhdGUlMjZxdWVyeXN0cmluZyUzZCUyNTIyU29mdHdhcmUlMjUyMGRldmVsb3BtZW50JTI1MjIlMjUyMCUyNTIyVXNlJTI1MjB0ZW1wbGF0ZSUyNTIyJTI1MjAlMjUyMk1pY3Jvc29mdCUyNTIwUGxhbm5lciUyNTIyJTI2ZHNfZWlkJTNkNzAwMDAwMDAxNzM4Nzk1JTI2ZHNfZTElM2RNSUNST1NPRlQlMjZtc19hY2NfaWQlM2RGMTExNEY1QiUyNm1zY2xraWQlM2Q4MjFkYmYyNmJkNTIxOTQ0Mjk1YmQ1YmRiNjMwNGNlYw&rlid=821dbf26bd521944295bd5bdb6304cec&ntb=1
+                  - listitem [ref=f15e470] [cursor=pointer]:
+                    - link "Get Started" [ref=f15e472]:
+                      - /url: https://www.bing.com/aclick?ld=e8_DqAKogy_rlaGdoYuPRA_DVUCUxZrh_f5N6dXBq98gzRWjHOy1nJLZwLCkeOAh8PphfNySeUq_o9cwuyCyuPvdcEQvfjhMYN1wWqhC-PBZKdd_IkZg7YJtUtGj8f_p8L5HCzw3zDoh_kaN9nro98MuQnfQdRShWG2O_gb_ULIpLjCP1i4CaAwZJwc8b3njtszohZKqA6ma5DlP73RMHqgfrlX4L4WXA0q0rGdsNK-rEeqfp4&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZmZyZWUlM2ZjYW1wYWlnbiUzZDQ3MDcxMTE5MSUyNmFkZ3JvdXAlM2QxMjk5NjI0MDQ1ODk5NDQ0JTI2dGFyZ2V0aWQlM2Rrd2QtODEyMjY4MjI5ODY5NTglM2Fsb2MtMTUyJTI2bWF0Y2h0eXBlJTNkYiUyNmJpZG1hdGNodHlwZSUzZGJiJTI2bmV0d29yayUzZG8lMjZkZXZpY2UlM2RjJTI2Y3JlYXRpdmUlM2Q4MTIyNjU2ODE4NzI5NSUyNmtleXdvcmQlM2RnYW50dCUyNTIwY2hhcnQlMjUyMHRlbXBsYXRlJTI2cXVlcnlzdHJpbmclM2QlMjUyMlNvZnR3YXJlJTI1MjBkZXZlbG9wbWVudCUyNTIyJTI1MjAlMjUyMlVzZSUyNTIwdGVtcGxhdGUlMjUyMiUyNTIwJTI1MjJNaWNyb3NvZnQlMjUyMFBsYW5uZXIlMjUyMiUyNmRzX2VpZCUzZDcwMDAwMDAwMTczODc5NSUyNmRzX2UxJTNkTUlDUk9TT0ZUJTI2bXNfYWNjX2lkJTNkRjExMTRGNUIlMjZtc2Nsa2lkJTNkYjkwMmNhZDRiNzQxMTU1MTFjM2JhMDRmYmMyMzk3ZDg&rlid=b902cad4b74115511c3ba04fbc2397d8&ntb=1
+                  - listitem [ref=f15e474] [cursor=pointer]:
+                    - link "Basecamp Alternative Tool" [ref=f15e476]:
+                      - /url: https://www.bing.com/aclick?ld=e8xhPs7QfcyawlJzHG9OwBsDVUCUw0vB0TVWrV8PU6aaQPQbRxfVaz5Ov9vHU8vVsKkKZoiyEo1aDSzDXU64ZtslIeNNmmRk0yWzHFRELcSG5v38I2wW_-qqgezJdW6nQhPKxuRSee8rYOVpNnxwj-__jq7kzLEgdkIi9mdOgYLS8CWUPsJzmwTPiezcAEH0ElTbYSeBHG-e-2qePb2T8TfiD32b7I248HYmym1P3AfborlXGk&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZmNvbXBhcmlzb24lMmZqaXJhLXZzLWJhc2VjYW1wJTNmY2FtcGFpZ24lM2Q0NzA3MTExOTElMjZhZGdyb3VwJTNkMTI5OTYyNDA0NTg5OTQ0NCUyNnRhcmdldGlkJTNka3dkLTgxMjI2ODIyOTg2OTU4JTNhbG9jLTE1MiUyNm1hdGNodHlwZSUzZGIlMjZiaWRtYXRjaHR5cGUlM2RiYiUyNm5ldHdvcmslM2RvJTI2ZGV2aWNlJTNkYyUyNmNyZWF0aXZlJTNkODEyMjY1NjgxODcyOTUlMjZrZXl3b3JkJTNkZ2FudHQlMjUyMGNoYXJ0JTI1MjB0ZW1wbGF0ZSUyNnF1ZXJ5c3RyaW5nJTNkJTI1MjJTb2Z0d2FyZSUyNTIwZGV2ZWxvcG1lbnQlMjUyMiUyNTIwJTI1MjJVc2UlMjUyMHRlbXBsYXRlJTI1MjIlMjUyMCUyNTIyTWljcm9zb2Z0JTI1MjBQbGFubmVyJTI1MjIlMjZkc19laWQlM2Q3MDAwMDAwMDE3Mzg3OTUlMjZkc19lMSUzZE1JQ1JPU09GVCUyNm1zX2FjY19pZCUzZEYxMTE0RjVCJTI2bXNjbGtpZCUzZGZiYmE1ZWNlZGYyMjFlMmQ3YTJlMzQ1NWQ0NDA3MzBj&rlid=fbba5ecedf221e2d7a2e3455d440730c&ntb=1
+                  - listitem [ref=f15e478] [cursor=pointer]:
+                    - link "Jira Pricing" [ref=f15e480]:
+                      - /url: https://www.bing.com/aclick?ld=e8tGpq_4whRizgrkHKhcfcnDVUCUxuBPh_7KNSRjj9DJKmiGnR4iDh18JGsd9yLUk_NLwXXBPvK_sQ0cvsE8Zy6gfId6PZHXTeo9rK1tcti9Y_qognINrJFToI_YQ5e4KYXN8KcsTL5ft_JEsPHywNQtC8E7HlMFXtAmd6z-MTJZwHwuTqKAqdr0ZJUQaxga_OGRxbvGThVXQtq9ClqqzSci0rxQeQQWUKsWaexhZpPDQuwgmi&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZnByaWNpbmclM2ZjYW1wYWlnbiUzZDQ3MDcxMTE5MSUyNmFkZ3JvdXAlM2QxMjk5NjI0MDQ1ODk5NDQ0JTI2dGFyZ2V0aWQlM2Rrd2QtODEyMjY4MjI5ODY5NTglM2Fsb2MtMTUyJTI2bWF0Y2h0eXBlJTNkYiUyNmJpZG1hdGNodHlwZSUzZGJiJTI2bmV0d29yayUzZG8lMjZkZXZpY2UlM2RjJTI2Y3JlYXRpdmUlM2Q4MTIyNjU2ODE4NzI5NSUyNmtleXdvcmQlM2RnYW50dCUyNTIwY2hhcnQlMjUyMHRlbXBsYXRlJTI2cXVlcnlzdHJpbmclM2QlMjUyMlNvZnR3YXJlJTI1MjBkZXZlbG9wbWVudCUyNTIyJTI1MjAlMjUyMlVzZSUyNTIwdGVtcGxhdGUlMjUyMiUyNTIwJTI1MjJNaWNyb3NvZnQlMjUyMFBsYW5uZXIlMjUyMiUyNmRzX2VpZCUzZDcwMDAwMDAwMTczODc5NSUyNmRzX2UxJTNkTUlDUk9TT0ZUJTI2bXNfYWNjX2lkJTNkRjExMTRGNUIlMjZtc2Nsa2lkJTNkMmIwYzdlN2I0MmIzMTBlNDk2ZjkxNGUwNDlkMTgyMmI&rlid=2b0c7e7b42b310e496f914e049d1822b&ntb=1
+                  - listitem [ref=f15e482] [cursor=pointer]:
+                    - link "Start Your Free Trial" [ref=f15e484]:
+                      - /url: https://www.bing.com/aclick?ld=e8OL4TZjrqmDjcZzc3CFR2IDVUCUwPtLcwVN4RA7eGGfGUa4XE4fIv57UvNqgVV5O6sCIYds0Luh1Qd9qJyNXmK4gKTdmRFSAeh0X3F8GSSegQs8Ys6DjYG9MOWl97FKsl1gFvmPSai2nkYeey4aMrj0_Zr5K_T3sAFjtxkZV3XpJALrNUFFgUPkaeoaiDYm8wULjp9JlFvmLGJiB8SArrUGxxt9UWtmCw5sfJMwSf4kMRXYBX&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZmZyZWUlM2ZjYW1wYWlnbiUzZDQ3MDcxMTE5MSUyNmFkZ3JvdXAlM2QxMjk5NjI0MDQ1ODk5NDQ0JTI2dGFyZ2V0aWQlM2Rrd2QtODEyMjY4MjI5ODY5NTglM2Fsb2MtMTUyJTI2bWF0Y2h0eXBlJTNkYiUyNmJpZG1hdGNodHlwZSUzZGJiJTI2bmV0d29yayUzZG8lMjZkZXZpY2UlM2RjJTI2Y3JlYXRpdmUlM2Q4MTIyNjU2ODE4NzI5NSUyNmtleXdvcmQlM2RnYW50dCUyNTIwY2hhcnQlMjUyMHRlbXBsYXRlJTI2cXVlcnlzdHJpbmclM2QlMjUyMlNvZnR3YXJlJTI1MjBkZXZlbG9wbWVudCUyNTIyJTI1MjAlMjUyMlVzZSUyNTIwdGVtcGxhdGUlMjUyMiUyNTIwJTI1MjJNaWNyb3NvZnQlMjUyMFBsYW5uZXIlMjUyMiUyNmRzX2VpZCUzZDcwMDAwMDAwMTczODc5NSUyNmRzX2UxJTNkTUlDUk9TT0ZUJTI2bXNfYWNjX2lkJTNkRjExMTRGNUIlMjZtc2Nsa2lkJTNkYTY4MWZjNzJmM2IwMTY0YTAxNTY5NmU5ZjhkMjQ1OTE&rlid=a681fc72f3b0164a015696e9f8d24591&ntb=1
+                  - listitem [ref=f15e486] [cursor=pointer]:
+                    - link "Try JiraTM for 7 days" [ref=f15e488]:
+                      - /url: https://www.bing.com/aclick?ld=e8Ctze9pDx4sqgUDblCYM9jDVUCUygM078qlMkWd6pbZWWrseNVeX6m3KQmIYPLUw_qCKf8elHeF_HNPqfMK-1K8wQmEOHG1DaMx0--PUsR0EexQpsvkPnO9GGObjurMWlPWqLHG9SPdOZOEasfdgj53YJFTIlSBQSvnqv7CSel-jfcrIm2Gy_im9XjBdT9mzRfshFqzgjV-Z0Ic0tR-UyJDkYFbL2G4ZHNdmz4eJ4GYp4MjrF&u=aHR0cHMlM2ElMmYlMmZ3d3cuYXRsYXNzaWFuLmNvbSUyZnNvZnR3YXJlJTJmamlyYSUyZmZyZWUlM2ZjYW1wYWlnbiUzZDQ3MDcxMTE5MSUyNmFkZ3JvdXAlM2QxMjk5NjI0MDQ1ODk5NDQ0JTI2dGFyZ2V0aWQlM2Rrd2QtODEyMjY4MjI5ODY5NTglM2Fsb2MtMTUyJTI2bWF0Y2h0eXBlJTNkYiUyNmJpZG1hdGNodHlwZSUzZGJiJTI2bmV0d29yayUzZG8lMjZkZXZpY2UlM2RjJTI2Y3JlYXRpdmUlM2Q4MTIyNjU2ODE4NzI5NSUyNmtleXdvcmQlM2RnYW50dCUyNTIwY2hhcnQlMjUyMHRlbXBsYXRlJTI2cXVlcnlzdHJpbmclM2QlMjUyMlNvZnR3YXJlJTI1MjBkZXZlbG9wbWVudCUyNTIyJTI1MjAlMjUyMlVzZSUyNTIwdGVtcGxhdGUlMjUyMiUyNTIwJTI1MjJNaWNyb3NvZnQlMjUyMFBsYW5uZXIlMjUyMiUyNmRzX2VpZCUzZDcwMDAwMDAwMTczODc5NSUyNmRzX2UxJTNkTUlDUk9TT0ZUJTI2bXNfYWNjX2lkJTNkRjExMTRGNUIlMjZtc2Nsa2lkJTNkODEwNTE1ZTI3NDBkMWU2NjMyMmE3Zjc5N2Y2ZjcxMjM&rlid=810515e2740d1e66322a7f797f6f7123&ntb=1
+        - listitem [ref=f15e490]:
+          - generic [ref=f15e492]:
+            - generic [ref=f15e494]:
+              - heading [level=2] [ref=f15e496]:
+                - link "Videos of Software Development Use Template Microsoft Planner" [ref=f15e497] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=1a1ddc64e5efcd25d4ed927739a04d5d13e59d5d318c9a0f8cfc32868087864bJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9zZWFyY2g_cT0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImcXB2dD0lMjJTb2Z0d2FyZStkZXZlbG9wbWVudCUyMislMjJVc2UrdGVtcGxhdGUlMjIrJTIyTWljcm9zb2Z0K1BsYW5uZXIlMjImRk9STT1WRFJF&ntb=1
+              - generic [ref=f15e503]:
+                - 'link "How to Create Microsoft Planner Templates 2025 (QUICK & EASY) from YouTube · Duration: 1 minutes 39 seconds · 1K views · uploaded on Jul 15, 2025 · uploaded by How To Tutor · Click to play. · How to Create Microsoft Planner Templates 2025 (QUICK & EASY) Want to save time on repeat projects? In this step-by-step tutorial, you’ll learn how to create templates in Microsoft Planner, so you can quickly reuse task structures and workflows. We’ll show you how to: Duplicate an existing plan to use as a template Customize task lists ..." [ref=f15e506] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=8f0fe90d13bb62401d1a0a225f171cdcc9d63d36ed99db450543e3f4bb935781JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9JTIyU29mdHdhcmUrZGV2ZWxvcG1lbnQlMjIrJTIyVXNlK3RlbXBsYXRlJTIyKyUyMk1pY3Jvc29mdCtQbGFubmVyJTIyJm1pZD1GNzYzNkU2RjU2MjMwQzE2NTYxNUY3NjM2RTZGNTYyMzBDMTY1NjE1JmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDaU1ieHhLTktGNFpFcWduM2JNZTdFQSZGT1JNPVZJUkU&ntb=1
+                  - generic [ref=f15e507]:
+                    - generic [ref=f15e508]: 1:39
+                    - generic [ref=f15e517]:
+                      - generic "How to Create Microsoft Planner Templates 2025 (QUICK & EASY)" [ref=f15e518]:
+                        - text: How to Create
+                        - strong [ref=f15e519]: Microsoft
+                        - strong [ref=f15e520]: Planner
+                        - text: Templates 2025 (QUICK & EASY)
+                      - generic [ref=f15e521]:
+                        - generic [ref=f15e522]:
+                          - img "Video source site" [ref=f15e523]
+                          - text: YouTube · How To Tutor
+                        - generic [ref=f15e524]: 1K views · Jul 15, 2025
+                - 'link "Intro to Project Management with Microsoft Planner from YouTube · Duration: 10 minutes 11 seconds · 6.1K views · uploaded on 10 months ago · uploaded by ESS LLC - Your #1 Software Dudes! · Click to play. · Intro to Project Management with Microsoft Planner Want to organize your team projects effortlessly using Microsoft 365? In this beginner-friendly tutorial, we’ll walk you through everything you need to know to get started with Microsoft Planner — a powerful tool for managing tasks, tracking progress, and keeping your projects on schedule ..." [ref=f15e527] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=6f061afb32097c5d57d5bf124e0de79233f3daf1cf1876d6f851d1feb956c068JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9JTIyU29mdHdhcmUrZGV2ZWxvcG1lbnQlMjIrJTIyVXNlK3RlbXBsYXRlJTIyKyUyMk1pY3Jvc29mdCtQbGFubmVyJTIyJm1pZD1GMkVCRjRGRUMxOTIyOUVFQ0MyQUYyRUJGNEZFQzE5MjI5RUVDQzJBJmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDWTQ4cjVhbjBGcm95NEM5OUkwUl9hdyZGT1JNPVZJUkU&ntb=1
+                  - generic [ref=f15e528]:
+                    - generic [ref=f15e529]: 10:11
+                    - generic [ref=f15e538]:
+                      - generic "Intro to Project Management with Microsoft Planner" [ref=f15e539]:
+                        - text: Intro to Project Management with
+                        - strong [ref=f15e540]: Microsoft
+                        - strong [ref=f15e541]: Planner
+                      - generic [ref=f15e542]:
+                        - generic [ref=f15e543]:
+                          - img "Video source site" [ref=f15e544]
+                          - text: "YouTube · ESS LLC - Your #1 Software Dudes!"
+                        - generic [ref=f15e545]: 6.1K views · 10 months ago
+                - 'link "Microsoft Planner: Steps to Create a New Plan From Scratch from YouTube · Duration: 1 minutes 4 seconds · 20.7K views · uploaded on Aug 20, 2025 · uploaded by Laura Rogers, Microsoft MVP · Click to play. · Starting a new project can feel like a blank canvas. Explore the power of Planner templates to get organized. Sometimes, the best approach is the simplest one! #ProjectManagement #ProductivityHacks #MicrosoftPlanner #Microsoft365 #Teamwork #GetOrganized" [ref=f15e548] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=a438b37cf4f30f0984727dc43a08d8fd15eeba4bdf735e424ea4abf7a29c5360JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9JTIyU29mdHdhcmUrZGV2ZWxvcG1lbnQlMjIrJTIyVXNlK3RlbXBsYXRlJTIyKyUyMk1pY3Jvc29mdCtQbGFubmVyJTIyJm1pZD0zRDU1N0Y3OEQxQjJDN0ZDOTBDMDNENTU3Rjc4RDFCMkM3RkM5MEMwJmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDYlRWb0RDYVBNNndFMHhzREdHcjlWQSZtbXNjbj1zdHZvJkZPUk09VklSRQ&ntb=1
+                  - generic [ref=f15e549]:
+                    - generic [ref=f15e550]: 1:04
+                    - generic [ref=f15e559]:
+                      - 'generic "Microsoft Planner: Steps to Create a New Plan From Scratch" [ref=f15e560]':
+                        - strong [ref=f15e561]: Microsoft
+                        - strong [ref=f15e562]: Planner
+                        - text: ": Steps to Create a New Plan From Scratch"
+                      - generic [ref=f15e563]:
+                        - generic [ref=f15e564]:
+                          - img "Video source site" [ref=f15e565]
+                          - text: YouTube · Laura Rogers, Microsoft MVP
+                        - generic [ref=f15e566]: 20.7K views · Aug 20, 2025
+            - button "See more" [ref=f15e569]
+        - listitem [ref=f15e575]:
+          - generic [ref=f15e576]:
+            - heading [level=2] [ref=f15e577]:
+              - text: Deep dive into
+              - strong [ref=f15e578]: "\"Software development\" \"Use template\" \"Microsoft Plan"
+              - text: …
+            - list [ref=f15e579]:
+              - listitem [ref=f15e580]:
+                - link [ref=f15e581] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d4a84a5bcf804f81f9b43bde52e68d3467e80d01ad5478b536e9b21c97e04499JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPWhvdyt0bytjcmVhdGUrYStwbGFubmVyK3RlbXBsYXRlJkZPUk09UVNSRTE&ntb=1
+                  - generic [ref=f15e583]:
+                    - strong [ref=f15e584]: how to create a
+                    - text: planner template
+              - listitem [ref=f15e585]:
+                - link [ref=f15e586] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=41c9be8e256eb3f572cf5288875671f4dd0027fb731aaf677bb074a86f486c27JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK2xpc3QrdGVtcGxhdGUmRk9STT1RU1JFMg&ntb=1
+                  - generic [ref=f15e588]:
+                    - text: Microsoft Planner
+                    - strong [ref=f15e589]: list
+                    - text: template
+              - listitem [ref=f15e590]:
+                - link [ref=f15e591] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=b20d5c5973042d0c63f2a6b4376476dc17d1439e24d38ab1b96ff5e0632164d0JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPXdlZWtseStwbGFubmVyK3RlbXBsYXRlJkZPUk09UVNSRTM&ntb=1
+                  - generic [ref=f15e593]:
+                    - strong [ref=f15e594]: weekly
+                    - text: planner template
+              - listitem [ref=f15e595]:
+                - link [ref=f15e596] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=9432839abc41fc9175637ec7fb63c2ae706cd0b279243b90af03477aeaec1c6fJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtwcm9qZWN0K3BsYW5uZXIrdGVtcGxhdGVzJkZPUk09UVNSRTQ&ntb=1
+                  - generic [ref=f15e598]:
+                    - text: Microsoft
+                    - strong [ref=f15e599]: project
+                    - text: planner templates
+              - listitem [ref=f15e600]:
+                - link [ref=f15e601] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=4633c046031ac05538f8848c7bf55c42a9f149df0cfbd87c2754e56ee9befd73JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtUZWFtcytwbGFubmVyK3RlbXBsYXRlcyZGT1JNPVFTUkU1&ntb=1
+                  - generic [ref=f15e603]:
+                    - text: Microsoft
+                    - strong [ref=f15e604]: teams
+                    - text: planner templates
+              - listitem [ref=f15e605]:
+                - link [ref=f15e606] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=f339023b4d2474241994e8a709680a7e77b4f34ef49ee1cbb06fd1e2ce95b307JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtPZmZpY2UrcGxhbm5lcit0ZW1wbGF0ZSZGT1JNPVFTUkU2&ntb=1
+                  - generic [ref=f15e608]:
+                    - text: Microsoft
+                    - strong [ref=f15e609]: office
+                    - text: planner template
+              - listitem [ref=f15e610]:
+                - link [ref=f15e611] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=c1f216b6db0c2ca7c3bf8f424308ce6956e786bb1ee40a16bcab2f53128f5823JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK2V4YW1wbGVzJkZPUk09UVNSRTc&ntb=1
+                  - generic [ref=f15e613]:
+                    - text: Microsoft Planner
+                    - strong [ref=f15e614]: examples
+              - listitem [ref=f15e615]:
+                - link [ref=f15e616] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=084059ac09531bfc7567972d343b7bfb381dc5a9e8826a2e6b71e00b36a192d6JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPVBvd2VyK0F1dG9tYXRlK01pY3Jvc29mdCtQbGFubmVyJkZPUk09UVNSRTg&ntb=1
+                  - generic [ref=f15e618]:
+                    - strong [ref=f15e619]: power automate
+                    - text: Microsoft Planner
+        - listitem [ref=f15e620]:
+          - navigation "More results for \"Software development\" \"Use template\" \"Microsoft Planner\"":
+            - list:
+              - listitem [ref=f15e621]:
+                - generic "Page 1" [ref=f15e622]: "1"
+              - listitem [ref=f15e623]:
+                - link "Page 2" [ref=f15e624] [cursor=pointer]:
+                  - /url: /search?q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&FPIG=6085951283784418ADD5F69FC0AE21F4&first=10&FORM=PERE
+                  - text: "2"
+              - listitem [ref=f15e625]:
+                - link "Page 3" [ref=f15e626] [cursor=pointer]:
+                  - /url: /search?q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&FPIG=6085951283784418ADD5F69FC0AE21F4&first=20&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=f15e627]:
+                - link "Next page" [ref=f15e628] [cursor=pointer]:
+                  - /url: /search?q=%22Software+development%22+%22Use+template%22+%22Microsoft+Planner%22&FPIG=6085951283784418ADD5F69FC0AE21F4&first=10&FORM=PORE
+      - complementary "Additional Results" [ref=f15e629]:
+        - list [ref=f15e630]:
+          - listitem [ref=f15e631]:
+            - generic "Related searches" [ref=f15e632]:
+              - generic [ref=f15e634]:
+                - heading [level=2] [ref=f15e636]:
+                  - text: Deep dive into
+                  - strong [ref=f15e637]: "\"Software development\" \"Use template\" \"Microsoft Plan"
+                  - text: …
+                - generic [ref=f15e638]:
+                  - link [ref=f15e640] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=c0aace244bd2bfd56a7bc13df7febb925c936e4b319a43fff5cdae425c68fddfJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPWhvdyt0bytjcmVhdGUrYStwbGFubmVyK3RlbXBsYXRlJkZPUk09UjVGRA&ntb=1
+                    - generic [ref=f15e642]:
+                      - strong [ref=f15e643]: how to create a
+                      - text: planner template
+                  - link [ref=f15e645] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=118ad4020857feb6e1cd712796bc0124100fedd6e4a217ef5fc4b9800e9005ceJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK2xpc3QrdGVtcGxhdGUmRk9STT1SNUZEMQ&ntb=1
+                    - generic [ref=f15e647]:
+                      - text: Microsoft Planner
+                      - strong [ref=f15e648]: list
+                      - text: template
+                  - link [ref=f15e650] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=af1a658d8b1d8c1438b2a4f229fc8a10c12bb359007b219ddeaf817200117a27JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPXdlZWtseStwbGFubmVyK3RlbXBsYXRlJkZPUk09UjVGRDI&ntb=1
+                    - generic [ref=f15e652]:
+                      - strong [ref=f15e653]: weekly
+                      - text: planner template
+                  - link [ref=f15e655] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=9ac1141a26bc2f3c6f465af9ae75af1557494c31369bae30ba1ad587f0f299d1JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtwcm9qZWN0K3BsYW5uZXIrdGVtcGxhdGVzJkZPUk09UjVGRDM&ntb=1
+                    - generic [ref=f15e657]:
+                      - text: Microsoft
+                      - strong [ref=f15e658]: project
+                      - text: planner templates
+                  - link [ref=f15e660] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=6ad3f2a8668d141c41fcdc209051b536f2dfeab806650b45c7f538c6d2ee2e95JmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtUZWFtcytwbGFubmVyK3RlbXBsYXRlcyZGT1JNPVI1RkQ0&ntb=1
+                    - generic [ref=f15e662]:
+                      - text: Microsoft
+                      - strong [ref=f15e663]: teams
+                      - text: planner templates
+                  - link [ref=f15e665] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=5b645edcb63cc791a358a0200e87852317a14a61e7d0f383e04601266fce259dJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtPZmZpY2UrcGxhbm5lcit0ZW1wbGF0ZSZGT1JNPVI1RkQ1&ntb=1
+                    - generic [ref=f15e667]:
+                      - text: Microsoft
+                      - strong [ref=f15e668]: office
+                      - text: planner template
+                  - link [ref=f15e670] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=ab822a867107bdf8b7b0d72d147fd37d0fe3ff8d63fa53dcbf8c0cf79289736aJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtQbGFubmVyK2V4YW1wbGVzJkZPUk09UjVGRDY&ntb=1
+                    - generic [ref=f15e672]:
+                      - text: Microsoft Planner
+                      - strong [ref=f15e673]: examples
+                  - link [ref=f15e675] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=b0a632658beb153ee87af25f78ccb92200420a7130dc9e80138dd14e0fecf61eJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1L3NlYXJjaD9xPVBvd2VyK0F1dG9tYXRlK01pY3Jvc29mdCtQbGFubmVyJkZPUk09UjVGRDc&ntb=1
+                    - generic [ref=f15e677]:
+                      - strong [ref=f15e678]: power automate
+                      - text: Microsoft Planner
+  - contentinfo [ref=f15e679]:
+    - generic [ref=f15e680]:
+      - list:
+        - listitem [ref=f15e681]:
+          - link "Privacy" [ref=f15e682] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a657464f06e19be49f8883b058a9381a5707b37a46afedd44fe469276672aaafJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=f15e683]:
+          - link "Terms" [ref=f15e684] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=18a84bd0975f0ca8c55f56976181f0984690e6b0916d18d6500d4c2a2e6be68bJmltdHM9MTc4ODQ4MDAwMA&ptn=3&ver=2&hsh=4&fclid=0332a37a-f3e8-61a8-2b95-b4b0f2f460ac&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1
+          - generic [ref=f15e685]: New
