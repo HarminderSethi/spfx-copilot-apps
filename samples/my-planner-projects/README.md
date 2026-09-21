@@ -42,8 +42,14 @@ npx tsc --noEmit
 npm run build
 ```
 
-The production build runs lint, webpack, Copilot package generation, Jest tests, and SharePoint solution packaging. Output packages are written to `teams/my-planner-projects-agent.zip` and `sharepoint/solution/spfx-my-projects-agent.sppkg`.
+The production build runs lint, webpack, Copilot package generation, Jest tests, and SharePoint solution packaging. Output packages are written to `teams/my-planner-projects-agent.zip` and `sharepoint/solution/my-planner-projects-agent.sppkg`.
 
 ## Architecture documentation
 
 See [docs/architecture.md](docs/architecture.md) for the complete Copilot request lifecycle, component responsibilities, Graph data flow, selection persistence, fullscreen navigation, project creation flow, testing strategy, and packaging details.
+
+## Disclaimer
+
+**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+<img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/my-planner-projects" />
