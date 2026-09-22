@@ -1,101 +1,84 @@
-# Zava Customer Resolution - 10-Minute Copilot UX Demo
+# Zava Customer Resolution - 10-Minute Business Process Demo
 
 ## Goal
 
-Demonstrate a modern Copilot interaction model. Zava is reference data; the product story is how 21
-intent-specific UX components answer visually, publish visible state, and continue into four coherent
-workspaces without trapping the user in one record.
+Show how agents and deterministic Copilot UX modernize one connected customer-support process. The
+story stays inline until deeper coordination genuinely needs full screen.
 
 ## Setup
 
 - Reset session receipts and use light theme.
-- Confirm the labeled **Full screen** button appears at wide inline width and becomes icon-only when narrow.
-- Keep the capability explorer available as the final breadth proof.
-- Use the exact prompts below so routing can be judged independently from narration.
+- Start at 760 px; demonstrate one review at 340 px.
+- Use the six exact prompts below so routing remains independently testable.
+- State once: data and receipts are fictional and session-only.
 
 ## Journey
 
-### 0:00-1:00 - Portfolio question, visual answer
+### 0:00-1:30 - Submit a complete support case
 
-Prompt: **Which customer relationships need leadership attention?**
+Prompt: **42 Alpine House stores cannot activate their handhelds. Create the support case.**
 
-Expected: `ExploreCustomerHealth`, unscoped. Show the customer value/risk matrix and exact table. Then
-prompt **Show why Northwind Traders service health is falling** to show how `customerId` changes the
-same intent into a unique relationship constellation and customer-specific metrics.
+Expected: `TriageCustomerIssue`. Edit the report, customer, product, and impact. Remove the customer
+once to show validation, restore it, then Review. Use Edit to prove draft parity, confirm, and choose
+Start another. Explain that Copilot prefills; the person and deterministic form own the record.
 
-### 1:00-2:00 - Actionable personal work
+### 1:30-2:40 - Ask whether this is bigger than one case
 
-Prompt: **Show the customer cases that need my judgment now.**
+Prompt: **Are today's activation failures isolated or one emerging incident?**
 
-Expected: `GetPriorityServiceQueue`. Expand to My Queue. Select `ZCR-1140`, inspect its ranking reasons,
-choose **Mark resolved**, review the warning, cancel once, then confirm. The queue drops from six to five
-and advances. Use **Open resolution room** to continue with the selected case.
+Expected: `DetectServiceIncident`. Move 72% to 90%. Show six related cases becoming two, contrary
+evidence increasing, geometry changing, and the exact-value disclosure. Expand once to show that full
+screen continues into Service Operations only when coordinated analysis is needed.
 
-### 2:00-3:15 - Scoped and unscoped Resolution Room
+### 2:40-4:15 - Process an incident review queue
 
-Prompt: **Build a resolution plan for case ZCR-1048.**
+Prompt: **Review today's activation incident candidates and help me decide the next one.**
 
-Expected: `BuildResolutionPlan`, direct case detail. Show verified, contrary, and missing evidence beside
-the plan. Expand to exact Alpine detail. Choose **Back to active resolutions**: demand and incident
-charts plus ranked customer rooms now answer the unscoped question. Open another generated case and
-show that it still has verified/inference/gap evidence rather than an empty panel.
+Expected: `ReviewIncidentResponse`. Select the second item and return to the first. Edit decision,
+cadence, and rationale; Review, Edit, then Confirm. Verify the queue marks the item complete and selects
+the next candidate. At 340 px use Back to reviews and reopen detail to show replacement, not stacking.
 
-### 3:15-4:15 - Human correction and incident boundary
+### 4:15-5:45 - Process recovery requests with authority visible
 
-Prompt: **Diagnose the evidence for case ZCR-1048.** Contrast hypotheses and contrary network evidence.
-Then prompt **Are today's activation cases isolated or a broader incident?** Expected:
-`DetectServiceIncident`. Move 72% to 90%; the visible network and table change. Explain why
-`ReviewIncidentResponse` is a separate routed decision tool rather than another graph.
+Prompt: **Review pending customer recovery requests, starting with Alpine House.**
 
-### 4:15-5:15 - Customer 360 is a process, not a static profile
+Expected: `ReviewServiceRecovery`. Compare authority, trust lift, and precedent. Change amount and
+choose Request approval, inspect the consequence, Edit, choose Approve, then Confirm. Show automatic
+advance to Northwind and explain why entitlement lookup routes elsewhere.
 
-Navigate directly to Customer 360 without customer scope. Show all 12 companies and region filters
-(three per region). Open Northwind, review its synchronization constellation and commitments, then use
-**Back to customer search** and open Contoso. Point out that customer nodes, geometry, evidence,
-recovery remedies, authority, and outcomes change with the selected account.
+### 5:45-7:10 - Compose a customer-safe update
 
-### 5:15-6:15 - Guarded recovery and communication
+Prompt: **Draft a French and English update for Alpine House with the next update time.**
 
-Prompt: **Review the recovery options for case ZCR-1048.** Expected: `ReviewServiceRecovery`. Compare
-cost, authority, precedent, and trust outcome; enter Review but do not imply production approval. Then
-prompt **Draft a French and English update for Alpine House.** Expected: `ComposeCustomerUpdate`.
-Show that internal evidence is transformed into customer-safe facts and explicit promises.
+Expected: `ComposeCustomerUpdate`. Point out verified-fact chips and the absence of internal diagnosis.
+Change channel and next-update promise, edit the message, Review, Edit once, then Confirm mock send.
+The receipt is local and no external communication occurs.
 
-### 6:15-7:15 - Capacity and leadership visuals
+### 7:10-8:30 - Ask whether operations improved
 
-Prompt: **Show where team capacity is creating SLA risk today.** Expected: `BalanceServiceWorkload`.
-Show capacity versus SLA-risk bubbles sized by open demand. Contrast it with the incident network and
-customer portfolio matrix: three leadership questions, three different visual grammars.
+Prompt: **Is customer-service resolution keeping up with demand today?**
 
-### 7:15-8:30 - Coordinated Service Operations
+Expected: `ExploreServicePerformance`. Change Today, 7 days, and 30 days. Peak/current/change and D3
+geometry must update materially. Open exact values only after the visual answer is understood.
 
-Open Service Operations. Change Today / EMEA / All products to 7 days / APAC / Zava Commerce. Verify
-that KPIs, demand geometry, map bubbles, selected-region detail, recurring drivers, and recovery table
-all move. Narrate the decision, not the fictional numbers: one filter state coordinates every view.
+### 8:30-9:20 - Explain routing boundaries
 
-### 8:30-9:20 - Safe action lifecycle
+- Triage creates a case; diagnosis investigates an existing case.
+- Detection forms a cohort; incident review makes a decision.
+- Entitlement explains coverage; recovery review decides a remedy.
+- Customer update transforms verified facts; it cannot expose internal evidence.
+- Service performance answers demand flow; region and recurring-driver questions have dedicated tools.
 
-Open `StartExpertSwarm`, `CoordinateFieldService`, or `CreateKnowledgeFromResolution`. Show Draft ->
-Review -> Confirm -> session receipt -> Reset. Prompt values only prefill. Consequential actions remain
-human-controlled and no tenant record is changed.
+### 9:20-10:00 - Close on the operating model
 
-### 9:20-10:00 - Discoverability and Copilot awareness
-
-Prompt: **What can this agent do?** Search by role or outcome. Explain that each of the 23 tools has a
-unique “Use when / Do not use” model description. Ask **What am I looking at?** and show that the active
-component publishes its intent, route, selected entity, view/query, and purpose-specific visible summary.
-
-## Guardrails
-
-- The LLM routes and prefills; React owns records, calculations, charts, validation, and confirmation.
-- Every scoped detail has a route back to its owning list or portfolio.
-- Session receipts never claim production authorization.
-- The data is fictional and offline; the UX architecture is the demonstration.
+Ask **What am I looking at?** The active component publishes its intent, route, selected task, stage or
+chart scope, and a bounded visible summary. The LLM routes and prefills; React owns records,
+calculations, validation, visualization, review, confirmation, and accessible state.
 
 ## Rehearsal checklist
 
-- Verify all 23 local manifests load in Copilot Workbench.
-- Verify all 12 customers appear under **All regions**, and each region shows three.
-- Verify a generated Resolution Room case displays three evidence records.
-- Verify Service Operations filters change every coordinated output.
-- Use the matching publication screenshots if tenant routing is unavailable.
+- Both submit tools complete Draft -> Review -> Confirm -> Receipt -> Start another.
+- Both review tools support select, previous/next, Edit, Confirm, receipt, and queue advance.
+- Both chart controls change marks and exact values.
+- Primary actions remain visible at 760 px; no horizontal overflow occurs at 340 px.
+- Use the six matching inline screenshots if host routing is unavailable.

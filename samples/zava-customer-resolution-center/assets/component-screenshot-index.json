@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T17:31:41.723Z",
+  "generatedAt": "2026-09-22T11:09:53.587Z",
   "totalComponents": 23,
   "screenshots": [
     {
@@ -19,9 +19,9 @@
     {
       "intent": "ComposeCustomerUpdate",
       "file": "inline-compose-customer-update.png",
-      "layout": "ComposeCustomerUpdate-case-detail",
+      "layout": "customer-update-compact-trust-studio",
       "entry": "detail",
-      "alt": "Inline Compose Customer Update Copilot component showing its actionable detail experience."
+      "alt": "Inline Compose Customer Update Copilot component showing its actionable default experience."
     },
     {
       "intent": "CoordinateFieldService",
@@ -124,14 +124,14 @@
     {
       "intent": "ReviewIncidentResponse",
       "file": "inline-review-incident-response.png",
-      "layout": "incident-response-consequence-review",
+      "layout": "incident-candidate-compact-review-queue",
       "entry": "detail",
-      "alt": "Inline Review Incident Response Copilot component showing its actionable default experience."
+      "alt": "Inline Review Incident Response Copilot component showing its actionable detail experience."
     },
     {
       "intent": "ReviewServiceRecovery",
       "file": "inline-review-service-recovery.png",
-      "layout": "ReviewServiceRecovery-case-detail",
+      "layout": "service-recovery-compact-review-queue",
       "entry": "detail",
       "alt": "Inline Review Service Recovery Copilot component showing its actionable detail experience."
     },
@@ -159,7 +159,7 @@
     {
       "intent": "TriageCustomerIssue",
       "file": "inline-triage-customer-issue.png",
-      "layout": "triage-structured-intake",
+      "layout": "triage-compact-customer-intake",
       "entry": "detail",
       "alt": "Inline Triage Customer Issue Copilot component showing its actionable default experience."
     }

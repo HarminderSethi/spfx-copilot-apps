@@ -30,9 +30,32 @@ Generated from the immutable intent catalog and canonical conversation starters.
 
 ## Conversation Starters
 
-- **Resolve a customer issue:** Build a resolution plan for Alpine House's store activation issue. -> `BuildResolutionPlan`
-- **Priority queue:** Show the customer cases that need my judgment now. -> `GetPriorityServiceQueue`
-- **Incident signal:** Are today's activation cases isolated or a broader incident? -> `DetectServiceIncident`
-- **Customer portfolio:** Which customer relationships need leadership attention? -> `ExploreCustomerHealth`
-- **Service operations:** Show where service performance needs leadership intervention. -> `ExploreServicePerformance`
-- **Explore capabilities:** Explore what the Customer Resolution agent can do. -> `ExploreAgentCapabilities`
+- **Create support case:** 42 Alpine House stores cannot activate their handhelds. Create the support case. -> `TriageCustomerIssue`
+- **Detect incident:** Are today's activation failures isolated or one emerging incident? -> `DetectServiceIncident`
+- **Review incident:** Review today's activation incident candidates and help me decide the next one. -> `ReviewIncidentResponse`
+- **Review recovery:** Review pending customer recovery requests, starting with Alpine House. -> `ReviewServiceRecovery`
+- **Prepare update:** Draft a French and English update for Alpine House with the next update time. -> `ComposeCustomerUpdate`
+- **Service performance:** Is customer-service resolution keeping up with demand today? -> `ExploreServicePerformance`
+
+## Nearest-Sibling Collision Matrix
+
+These configuration-level cases verify positive ownership and negative boundaries. Final model routing still requires fresh-conversation host rehearsal.
+
+| Prompt | Expected tool | Must not also hit | Boundary |
+| --- | --- | --- | --- |
+| 42 Alpine House stores cannot activate their handhelds. Create the support case. | `TriageCustomerIssue` | `BuildResolutionPlan`, `DiagnoseCaseEvidence` | Create a new case; do not diagnose or plan an existing case. |
+| Build an editable resolution plan for existing case ZCR-1048. | `BuildResolutionPlan` | `TriageCustomerIssue`, `DiagnoseCaseEvidence` | Plan an existing case; do not create intake or investigate hypotheses. |
+| Compare the competing hypotheses and contrary evidence for case ZCR-1048. | `DiagnoseCaseEvidence` | `BuildResolutionPlan`, `DetectServiceIncident` | Diagnose one case; do not build the final plan or correlate a cohort. |
+| Are today's activation failures isolated or one emerging incident? | `DetectServiceIncident` | `ReviewIncidentResponse` | Analyze similarity; do not make the incident decision. |
+| Review today's activation incident candidates and help me decide the next one. | `ReviewIncidentResponse` | `DetectServiceIncident` | Decide an existing candidate; do not rerun exploratory clustering. |
+| Review pending customer recovery requests, starting with Alpine House. | `ReviewServiceRecovery` | `ReviewEntitlementCoverage`, `ComposeCustomerUpdate` | Decide a remedy; do not explain coverage or draft the message. |
+| Explain what Alpine House's agreement covers for case ZCR-1048. | `ReviewEntitlementCoverage` | `ReviewServiceRecovery` | Explain effective coverage without approving compensation. |
+| Draft a French and English update for Alpine House with the next update time. | `ComposeCustomerUpdate` | `ReviewServiceRecovery`, `ManageCustomerCommitments` | Compose a safe message; do not approve recovery or govern the promise ledger. |
+| Is customer-service resolution keeping up with demand today? | `ExploreServicePerformance` | `ExploreRegionalServiceImpact`, `ExploreRecurringServiceDrivers` | Answer movement over time; do not route to geography or cause analysis. |
+| Which regions have the highest case volume and SLA exposure? | `ExploreRegionalServiceImpact` | `ExploreServicePerformance`, `ExploreRecurringServiceDrivers` | Answer where impact occurs; do not answer trend or recurring cause. |
+| Which recurring causes create the most customer effort? | `ExploreRecurringServiceDrivers` | `ExploreServicePerformance`, `ExploreRegionalServiceImpact` | Rank recurring causes; do not answer time trend or geography. |
+| Which customer cases need my judgment next? | `GetPriorityServiceQueue` | `ManageCaseEscalation` | Rank the queue; do not move one selected case. |
+| Escalate case ZCR-1048 to another queue with acceptance criteria. | `ManageCaseEscalation` | `BalanceServiceWorkload`, `StartExpertSwarm` | Move one case; do not rebalance a team or recruit experts. |
+| Where is team capacity creating SLA risk today? | `BalanceServiceWorkload` | `ManageCaseEscalation` | Analyze aggregate capacity; do not escalate one case. |
+| Bring named activation specialists into case ZCR-1048 for one decision question. | `StartExpertSwarm` | `ManageCaseEscalation`, `BalanceServiceWorkload` | Recruit expertise without transferring queue ownership. |
+| What customer-resolution scenarios can this agent help me with? | `ExploreAgentCapabilities` | `TriageCustomerIssue`, `GetPriorityServiceQueue` | Educate only when no specific operational request is clear. |

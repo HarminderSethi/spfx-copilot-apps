@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-22T11:24:48.644Z",
+  "checks": [
+    {
+      "intent": "TriageCustomerIssue",
+      "state": "draft-760",
+      "maxHeight": 480,
+      "bodyHeight": 399,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "TriageCustomerIssue",
+      "state": "review-760",
+      "maxHeight": 420,
+      "bodyHeight": 335,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "TriageCustomerIssue",
+      "state": "receipt-760",
+      "maxHeight": 300,
+      "bodyHeight": 177,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "TriageCustomerIssue",
+      "state": "draft-340",
+      "maxHeight": 630,
+      "bodyHeight": 465,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "TriageCustomerIssue",
+      "state": "draft-760-dark",
+      "maxHeight": 480,
+      "bodyHeight": 399,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ComposeCustomerUpdate",
+      "state": "draft-760",
+      "maxHeight": 480,
+      "bodyHeight": 424,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ComposeCustomerUpdate",
+      "state": "review-760",
+      "maxHeight": 420,
+      "bodyHeight": 375,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ComposeCustomerUpdate",
+      "state": "receipt-760",
+      "maxHeight": 300,
+      "bodyHeight": 177,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ComposeCustomerUpdate",
+      "state": "draft-340",
+      "maxHeight": 630,
+      "bodyHeight": 604,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ComposeCustomerUpdate",
+      "state": "draft-760-dark",
+      "maxHeight": 480,
+      "bodyHeight": 424,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewIncidentResponse",
+      "state": "draft-760",
+      "maxHeight": 480,
+      "bodyHeight": 437,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewIncidentResponse",
+      "state": "review-760",
+      "maxHeight": 420,
+      "bodyHeight": 378,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewIncidentResponse",
+      "state": "receipt-760",
+      "maxHeight": 300,
+      "bodyHeight": 217,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewIncidentResponse",
+      "state": "detail-340",
+      "maxHeight": 630,
+      "bodyHeight": 523,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewIncidentResponse",
+      "state": "draft-760-dark",
+      "maxHeight": 480,
+      "bodyHeight": 437,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewServiceRecovery",
+      "state": "draft-760",
+      "maxHeight": 480,
+      "bodyHeight": 437,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewServiceRecovery",
+      "state": "review-760",
+      "maxHeight": 420,
+      "bodyHeight": 398,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewServiceRecovery",
+      "state": "receipt-760",
+      "maxHeight": 300,
+      "bodyHeight": 247,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewServiceRecovery",
+      "state": "detail-340",
+      "maxHeight": 630,
+      "bodyHeight": 523,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ReviewServiceRecovery",
+      "state": "draft-760-dark",
+      "maxHeight": 480,
+      "bodyHeight": 437,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "DetectServiceIncident",
+      "state": "threshold-72-760",
+      "maxHeight": 500,
+      "bodyHeight": 397,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "DetectServiceIncident",
+      "state": "threshold-90-340",
+      "maxHeight": 520,
+      "bodyHeight": 483,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ExploreServicePerformance",
+      "state": "today-760",
+      "maxHeight": 500,
+      "bodyHeight": 397,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    },
+    {
+      "intent": "ExploreServicePerformance",
+      "state": "7d-340",
+      "maxHeight": 520,
+      "bodyHeight": 455,
+      "overflow": false,
+      "blankSvg": false,
+      "primaryVisible": true,
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "failures": []
+}

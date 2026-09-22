@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T17:31:41.723Z",
+  "generatedAt": "2026-09-22T11:09:53.587Z",
   "totalIntents": 23,
   "totalCaptures": 81,
   "failureCount": 0,
-  "uniqueLayouts": 38,
+  "uniqueLayouts": 36,
   "captures": [
     {
       "intent": "BalanceServiceWorkload",
@@ -84,11 +84,11 @@
       "theme": "light",
       "width": 760,
       "file": "compose-customer-update-standard-light.png",
-      "layout": "ComposeCustomerUpdate-case-detail",
+      "layout": "customer-update-compact-trust-studio",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": "detail"
+      "reviewView": ""
     },
     {
       "intent": "ComposeCustomerUpdate",
@@ -96,11 +96,11 @@
       "theme": "light",
       "width": 340,
       "file": "compose-customer-update-narrow-light.png",
-      "layout": "ComposeCustomerUpdate-case-search",
+      "layout": "customer-update-compact-trust-studio",
       "entry": "list",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": "list"
+      "reviewView": ""
     },
     {
       "intent": "ComposeCustomerUpdate",
@@ -108,11 +108,11 @@
       "theme": "dark",
       "width": 760,
       "file": "compose-customer-update-standard-dark.png",
-      "layout": "ComposeCustomerUpdate-case-detail",
+      "layout": "customer-update-compact-trust-studio",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": "detail"
+      "reviewView": ""
     },
     {
       "intent": "CoordinateFieldService",
@@ -624,11 +624,11 @@
       "theme": "light",
       "width": 760,
       "file": "review-incident-response-standard-light.png",
-      "layout": "incident-response-consequence-review",
+      "layout": "incident-candidate-compact-review-queue",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": ""
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewIncidentResponse",
@@ -636,11 +636,11 @@
       "theme": "light",
       "width": 340,
       "file": "review-incident-response-narrow-light.png",
-      "layout": "incident-response-consequence-review",
+      "layout": "incident-candidate-compact-review-queue",
       "entry": "list",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": ""
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewIncidentResponse",
@@ -648,11 +648,11 @@
       "theme": "dark",
       "width": 760,
       "file": "review-incident-response-standard-dark.png",
-      "layout": "incident-response-consequence-review",
+      "layout": "incident-candidate-compact-review-queue",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": ""
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewServiceRecovery",
@@ -660,7 +660,7 @@
       "theme": "light",
       "width": 760,
       "file": "review-service-recovery-standard-light.png",
-      "layout": "ReviewServiceRecovery-case-detail",
+      "layout": "service-recovery-compact-review-queue",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",
@@ -672,11 +672,11 @@
       "theme": "light",
       "width": 340,
       "file": "review-service-recovery-narrow-light.png",
-      "layout": "ReviewServiceRecovery-case-search",
+      "layout": "service-recovery-compact-review-queue",
       "entry": "list",
       "customer": "alpine-house",
       "caseScope": "",
-      "reviewView": "list"
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewServiceRecovery",
@@ -684,7 +684,7 @@
       "theme": "dark",
       "width": 760,
       "file": "review-service-recovery-standard-dark.png",
-      "layout": "ReviewServiceRecovery-case-detail",
+      "layout": "service-recovery-compact-review-queue",
       "entry": "unknown",
       "customer": "alpine-house",
       "caseScope": "",
@@ -804,7 +804,7 @@
       "theme": "light",
       "width": 760,
       "file": "triage-customer-issue-standard-light.png",
-      "layout": "triage-structured-intake",
+      "layout": "triage-compact-customer-intake",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",
@@ -816,7 +816,7 @@
       "theme": "light",
       "width": 340,
       "file": "triage-customer-issue-narrow-light.png",
-      "layout": "triage-structured-intake",
+      "layout": "triage-compact-customer-intake",
       "entry": "list",
       "customer": "alpine-house",
       "caseScope": "",
@@ -828,7 +828,7 @@
       "theme": "dark",
       "width": 760,
       "file": "triage-customer-issue-standard-dark.png",
-      "layout": "triage-structured-intake",
+      "layout": "triage-compact-customer-intake",
       "entry": "detail",
       "customer": "alpine-house",
       "caseScope": "",

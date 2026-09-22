@@ -14,6 +14,34 @@ approved.
 
 ## Progress (latest)
 
+> **Flagship inline implementation, 22 September 2026:** all six modernization stories are implemented.
+> Two submissions use stage replacement and typed fields; two review tools use compact three-item
+> queues with editable decisions, receipts, responsive queue/detail replacement, and next-item advance;
+> two visual answers use materially different controls, D3 geometry, three-value summaries, and
+> collapsed exact tables. The automated flagship gate passes 24 checks with 22 light/narrow/dark and
+> stage screenshots. Measured body heights are 399-444 px for submit drafts, 335-375 px for submit
+> review, 437 px for review drafts, 398 px for review confirmation, 397 px for desktop charts, and
+> 455-523 px for narrow chart/review detail, all without horizontal overflow. The full matrix passes
+> 81 captures across all 23 intents with zero failures and 36 distinct layouts. Final routing,
+> publication, package, and external host gates remain active below.
+
+> **Inline business-process modernization reset, 22 September 2026:** the Zava IT Concierge rendered
+> experiences and owning source were reviewed against this sample. The 23 immutable generated
+> identities remain valid, but catalog breadth and full-screen dashboards are no longer the keynote.
+> Six existing tools are now the flagship inline portfolio: two compact submissions, two one-at-a-time
+> review queues, and two focused visual answers. All three implementation slices now pass their local
+> behavior and visual budgets; final routing rehearsal and external host/accessibility gates remain.
+
+> **Release-candidate packaging, 22 September 2026:** the canonical `npm run build` pipeline passes
+> all local intent, React, routing, media, gallery, publication, clean-test, generated-plugin, package-
+> output, and release-evidence gates. The committed testing artifact is
+> `sharepoint/solution/zava-customer-resolution-center.sppkg` (369,440 bytes; SHA-256
+> `3f9104422470d80a81691698326c1e10688d038561ab1763c80a99943a5d14d8`). It contains one
+> 605,450-byte hashed production JavaScript bundle, one current agent ZIP, five unique media files,
+> and 23 component definitions. The suite passes 41 tests with zero failures and zero warnings.
+> This is ready for guided package testing; the explicitly blocked public media-rights approval and
+> remaining authenticated host/accessibility checks are still required before public release sign-off.
+
 > Inline acceptance hardening completed locally on 18 September 2026. Eleven genuinely case-scoped
 > tools now share a catalog-owned navigation contract: no `caseId` opens ranked search, a valid
 > `caseId` opens exact detail, an unknown ID has a designed no-match state, and every detail exposes
@@ -35,6 +63,173 @@ approved.
 > component uniqueness, case navigation, incident threshold interaction, and workspace continuation
 > are proven. Exact subroutes, selected queue detail, complete workflow context, follow-up invocation,
 > failure-state boards, accessibility evidence, and authenticated host behavior remain open.
+
+## 22 September 2026 - Inline modernization reset
+
+This section supersedes the earlier keynote emphasis on catalog breadth, portfolio navigation, and
+multi-chart full-screen dashboards. Existing completed engineering evidence remains valid. The new
+acceptance target is a compelling business-process demo in which Copilot selects a small, deterministic
+application surface that lets a person create, review, or understand customer-support work without
+leaving the conversation.
+
+### Reference findings and design decision
+
+- [x] Inspect Zava IT Concierge inline submit, approval queue, and chart experiences at rendered and
+  source levels, including their owning forms, operation stages, queue/detail composition, charts,
+  responsive rules, and full-screen continuation.
+- [x] Identify the target root cause: this sample often composes case search, a four-metric case
+  preamble, domain evidence/chart content, and `OperationFlow` vertically. The individual modules are
+  useful, but their simultaneous rendering makes submit and review tools feel like long reports rather
+  than compact inline applications.
+- [x] Retain the 22 operational components plus `ExploreAgentCapabilities`; do not add or rename a
+  generated component for this redesign. Six existing identities already provide two strong stories
+  per required operation type, and preserving them avoids unnecessary routing collisions and new
+  scaffold work.
+- [x] Adopt the IT Concierge interaction model: one current task, one dominant visual or form, one
+  visible consequence, and one primary action. Draft, review, confirmation, and receipt replace each
+  other in the same bounded region rather than accumulating down the page.
+- [x] Keep full screen as optional continuation for deeper evidence and coordinated work. Inline must
+  complete a useful create/review/answer loop without requiring expansion.
+
+### Flagship inline portfolio and intent mapping
+
+| Type | Intent and story | Canonical prompt | Compact inline contract | Full-screen continuation | Nearest-sibling boundary |
+| --- | --- | --- | --- | --- | --- |
+| Submit 1 | `TriageCustomerIssue`: create a case from the customer's report | “42 Alpine House stores cannot activate their handhelds. Create the support case.” | Four essential fields, entitlement/SLA preview, Review, Confirm, session receipt | `my-queue/new-case` | Do not use when a case already exists; use diagnosis or planning instead. |
+| Submit 2 | `ComposeCustomerUpdate`: create a reviewed customer update | “Draft a French and English update for Alpine House with the next update time.” | Recipient/channel/language, editable message, verified-fact chips, Review, Confirm mock send, receipt | `customer-360/communications` | Do not expose internal diagnosis or approve a recovery remedy. |
+| Review 1 | `ReviewIncidentResponse`: work incident candidates one by one | “Review today's activation incident candidates and help me decide the next one.” | Three-row queue plus one selected candidate; editable Declare/Monitor/Close decision and rationale; Confirm advances to next | `resolution-room/incident-review` | Detection finds a cohort; this tool makes a decision on an existing candidate. |
+| Review 2 | `ReviewServiceRecovery`: work recovery requests one by one | “Review pending customer recovery requests, starting with Alpine House.” | Three-row queue plus selected remedy; editable option/amount/rationale; Approve/Request approval/Decline; Confirm advances to next | `customer-360/service-recovery` | Entitlement explains coverage; this tool decides a proposed remedy. |
+| Visual 1 | `DetectServiceIncident`: answer whether cases form an incident | “Are today's activation failures isolated or one emerging incident?” | One interactive emergence graph, threshold control, three exact summary values, compact accessible table disclosure | `service-operations/incident-detection` | Do not declare, monitor, or close an incident. |
+| Visual 2 | `ExploreServicePerformance`: answer whether resolution keeps pace | “Is customer-service resolution keeping up with demand today?” | One demand-to-resolution river, period selector, current/peak/gap values, compact accessible table disclosure | `service-operations/demand` | Regional and recurring-driver questions route to their dedicated visual tools. |
+
+The remaining 16 operational tools are supporting depth for technical walkthroughs and capability
+discovery. They must remain functional and routable, but they do not compete for keynote time until all
+six flagship tools pass the compact inline gate.
+
+### Compact inline UX contract
+
+- [ ] Replace the generic case-search-first treatment for the four scoped flagship submit/review tools
+  with operation-owned entry: prompt scope opens the exact task; missing scope opens a compact three-
+  item task queue, not the generic eight-result case browser.
+- [ ] Render only one submit stage at a time: **Draft -> Review -> Confirm -> Receipt**. Preserve edited
+  values between stages and provide **Edit** from Review and **Start another** from Receipt.
+- [ ] Render review tools as queue + selected item, not chart + generic textarea. At 760 px, keep a
+  220-260 px three-row queue beside detail. At 340 px, show either queue or detail with **Back to
+  reviews**, **Previous**, and **Next**; never stack the full queue above the full detail.
+- [ ] Make review fields operation-specific: incident decision/rationale/audience/cadence and recovery
+  remedy/amount/authority/rationale. Remove the generic freeform `OperationFlow` textarea from these
+  flagship reviews.
+- [ ] Keep chart answers to one visualization, one compact control row, no more than three headline
+  values, one sentence of interpretation, and a collapsed-by-default accessible exact-value table.
+- [ ] Use stable inline body budgets measured below the shared header: at 760 px width, target <= 480 px
+  for Draft/queue/chart and <= 420 px for Review/Receipt; at 340 px width, target <= 620 px with no
+  horizontal overflow. Height changes must call `requestSizeChangeAsync` once per settled stage.
+- [ ] Keep primary actions visible without scrolling at 760 px. On 340 px, preserve source order as
+  task context -> editable content -> consequence -> primary action.
+- [ ] Use purposeful visual identity: customer-language intake for triage, verified-fact/message studio
+  for communication, emergence network for incident review/detection, authority-and-outcome comparison
+  for recovery, and exact-value chart treatment for analytics. Shared framing must not make the six
+  experiences look like one generic form.
+- [ ] Publish bounded model context after task selection, material edit, stage transition, decision,
+  chart control change, and receipt. Do not publish every keystroke or sensitive freeform rationale.
+
+### Connected demo story
+
+The primary business-process story is **Alpine House launch recovery**. It demonstrates that Copilot
+routes natural language into deterministic UX while people retain control over business records and
+consequences.
+
+1. **Create the case:** `TriageCustomerIssue` turns the customer's report into a reviewed case with
+   entitlement and SLA consequence, then returns a session-only case receipt.
+2. **See the pattern:** `DetectServiceIncident` answers whether the new issue is isolated; changing the
+   threshold materially changes the cohort and exact values.
+3. **Review the incident:** `ReviewIncidentResponse` opens the highest-impact candidate, records a
+   Declare/Monitor/Close decision, and advances to the next queue item.
+4. **Review recovery:** `ReviewServiceRecovery` compares authorized remedies for the affected
+   customer, confirms one decision, and advances the recovery queue.
+5. **Communicate safely:** `ComposeCustomerUpdate` drafts from verified facts, exposes the next-update
+   promise, and records a mock-send receipt only after review.
+6. **Show operational improvement:** `ExploreServicePerformance` shows whether resolution is catching
+   demand after the intervention, with exact values and optional full-screen continuation.
+
+- [x] Rewrite the four-minute keynote around these six beats; remove capability breadth, directory
+  navigation, and multi-chart dashboard operation from the main-stage path.
+- [x] Rewrite the ten-minute business demo to add queue navigation, Edit, rejection/request-approval,
+  receipt/reset, responsive 340 px behavior, and one inline-to-full-screen continuation.
+- [x] Rewrite the five-minute technical demo around catalog routing boundaries, compact stage state,
+  queue selection, model-context snapshots, size requests, accessible chart tables, and session-only
+  receipts.
+- [x] Update conversation starters so at least one targets each flagship story and the final starter
+  remains capability discovery only if the host permits seven; otherwise capability discovery moves to
+  the agent greeting and all six starters target the demo portfolio.
+
+### Implementation and evidence plan
+
+#### Slice A - Compact submit shell
+
+- [x] Replace the multiline generic `OperationFlow` for flagship submissions with a typed compact
+  stage shell that accepts operation-specific fields, review summary, consequence, confirmation, and
+  receipt content.
+- [x] Rebuild `TriageCustomerIssue` as the reference submit: four essential inputs, visible SLA/
+  entitlement consequence, stage replacement, validation, Edit, Confirm, Receipt, and Start another.
+- [x] Rebuild `ComposeCustomerUpdate` on the proven shell with editable verified facts, channel,
+  language, next-update promise, customer-safe review, mock-send receipt, and no internal evidence.
+- [ ] Add focused tests for prefill, required validation, edit parity, double-confirm prevention,
+  receipt/reset, model-context snapshots, and deduplicated size requests.
+- [x] Capture and inspect both submit tools at 340/760 light, 760 dark, Review, validation, and Receipt;
+  reject any state exceeding the inline budget or hiding its primary action at 760 px.
+
+#### Slice B - One-at-a-time review queues
+
+- [x] Add a reusable three-item review queue primitive with selected-state semantics, pending counts,
+  Previous/Next, responsive queue/detail replacement, and automatic advance after a confirmed action.
+- [x] Rebuild `ReviewIncidentResponse` with candidate-specific graph/evidence, editable decision,
+  rationale, audience/cadence consequence, confirmation, receipt, and next-item advance.
+- [x] Rebuild `ReviewServiceRecovery` with customer/remedy queue, editable scenario and amount,
+  authority/precedent/customer-outcome consequence, decision options, receipt, and next-item advance.
+- [ ] Add tests for empty queue, select, edit, back, previous/next, approve, decline, request approval,
+  automatic advance, final-item completion, keyboard focus, model context, and session reset.
+- [x] Capture and inspect queue/detail/decision/receipt at 340/760 light and 760 dark with no nested
+  scrolling, no full generic case preamble, and one clearly dominant next action.
+
+#### Slice C - Focused visual answers
+
+- [x] Restyle `DetectServiceIncident` and `ExploreServicePerformance` against one shared chart-quality
+  contract while retaining distinct compositions and color semantics.
+- [x] Add period control and materially different data to the demand river; retain the incident
+  threshold's materially different cohorts and contrary case.
+- [x] Add concise interpretation, three headline values maximum, visible axis/legend labels, and a
+  collapsed-by-default accessible exact-value table to each chart.
+- [ ] Test control effects on marks, paths, values, summaries, table rows, model context, keyboard
+  operation, reduced motion, and no-data/error states.
+- [x] Capture and inspect both charts at 340/760 light and 760 dark for label fit, hierarchy, contrast,
+  nonblank marks, keynote readability, and inline height.
+
+#### Slice D - Story, regression, and release evidence **IN PROGRESS**
+
+- [x] Run a six-tool routing collision matrix covering positive prompts, omitted IDs, ambiguous
+  incident detection/review prompts, entitlement/recovery prompts, and demand/driver/regional prompts.
+- [x] Re-run all 23 intent defaults to prove the redesign does not regress supporting tools.
+- [x] Automate flagship stage screenshots and machine-readable height, overflow, chart-effect, action-
+  visibility, queue-advance, and responsive-replacement evidence.
+- [ ] Add bridge call-count/model-context payload assertions and exhaustive keyboard focus restoration
+  for the six flagship workflows.
+- [ ] Rehearse the six-beat story inside four minutes with deterministic reset and screenshot fallback.
+- [x] Refresh README gallery, demo documents, routing matrix, release evidence, Teams agent ZIP, and
+  `.sppkg` only after all flagship local gates pass.
+
+### Modernization acceptance gate
+
+- [x] Two submit tools complete Draft -> Review -> Confirm -> Receipt -> Start another inline.
+- [x] Two review tools expose a real queue and complete item decisions one by one with editable fields,
+  explicit consequences, receipts, and automatic advance.
+- [x] Two chart tools answer distinct leadership questions with beautiful responsive visuals,
+  materially effective controls, concise interpretation, and exact accessible values.
+- [ ] All six route from canonical prompts with no nearest-sibling collisions and preserve exact context
+  into their declared full-screen destinations.
+- [ ] All six pass 340/760 light, 760 dark, keyboard, focus, 200% zoom, reduced-motion, and bounded-height
+  checks in the tenant-free harness; representative submit/review/chart states pass authenticated
+  Workbench validation before the redesigned package is called release-ready.
 
 ## Approach and sequencing
 
@@ -569,7 +764,7 @@ forced into the main-stage story.
   release evidence; run `git diff --check`.
 - [ ] Run a clean-clone/offline rehearsal, inspect the shipped package and agent ZIP, stop temporary
   servers, and obtain release approval.
-- [ ] Commit the ready-to-deploy `.sppkg` only after every local executable gate passes.
+- [x] Commit the ready-to-deploy `.sppkg` only after every local executable gate passes.
 
 ## Deferred - Dynamic data / API integration
 

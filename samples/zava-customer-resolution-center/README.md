@@ -58,7 +58,8 @@ The machine-readable mapping from component intent to screenshot, layout, entry 
 
 The tenant-free matrix renders all 23 tools at standard light, narrow light, and standard dark, plus
 all four dashboard defaults at keynote light, desktop dark, and mobile light. The current matrix has
-81 captures, zero runtime/overflow/image/chart failures, and 38 unique layout identities. Local evidence
+81 captures, zero runtime/overflow/image/chart failures, and 36 unique layout identities. The flagship
+inline gate adds 24 submit/review/chart checks and 22 stage, narrow, and dark screenshots. Local evidence
 does not substitute for authenticated Workbench CSP, routing, iframe focus, forced-colors, or host
 screen-reader validation.
 
@@ -75,8 +76,10 @@ npm run build
 
 The ready-to-deploy offline package is
 [sharepoint/solution/zava-customer-resolution-center.sppkg](sharepoint/solution/zava-customer-resolution-center.sppkg).
-The validated package is 365,327 bytes with SHA-256
-`bc6176d04d95a79d9b0aced16cca6c3cbaf82a587c26f760c7c46e40e3c55736`. It contains one 585,614-byte
+This release uses Teams/declarative-agent app version **1.0.1**, SPFx solution and feature version
+**1.0.0.1**, and sample package version **0.0.2**.
+The validated package is 369,440 bytes with SHA-256
+`3f9104422470d80a81691698326c1e10688d038561ab1763c80a99943a5d14d8`. It contains one 605,450-byte
 hashed JavaScript asset, one current agent ZIP, five unique provenance-matched portraits, and 23
 Copilot Component definitions.
 
@@ -252,6 +255,24 @@ Supporting modules
 such as customer lookup, SLA calculation, duplicate evidence, sentiment history, policy detail, and
 source inspection belong inside the owning component and must not become separate tools.
 
+### Sweet-spot inline scenarios
+
+These six scenarios are the primary conversation starters and Microsoft keynote path. Together they
+demonstrate two compact submissions, two one-at-a-time review queues, and two focused visual answers.
+
+| Type | Starter intent | Inline experience | Intent resolution route |
+| --- | --- | --- | --- |
+| Submit | `TriageCustomerIssue` | Four-field case intake -> Review -> Create case -> session receipt | `my-queue/new-case` |
+| Submit | `ComposeCustomerUpdate` | Verified facts and editable customer message -> Review -> mock-send receipt | `customer-360/communications` |
+| Review | `ReviewIncidentResponse` | Three incident candidates -> selected decision/rationale -> confirm -> next item | `resolution-room/incident-review` |
+| Review | `ReviewServiceRecovery` | Three recovery requests -> remedy/amount/authority review -> confirm -> next item | `customer-360/service-recovery` |
+| Visual | `DetectServiceIncident` | Threshold-controlled emergence graph with three headline values and exact cohort disclosure | `service-operations/incident-detection` |
+| Visual | `ExploreServicePerformance` | Period-controlled demand river with peak/current/change and exact-value disclosure | `service-operations/demand` |
+
+Full screen continues the same selected entity or analytical scope; it does not replace the useful
+inline create, review, or answer loop. Detection does not declare an incident, entitlement does not
+approve recovery, and aggregate demand does not absorb regional or recurring-driver analysis.
+
 | Model | Count | Required contract |
 | --- | ---: | --- |
 | Information / interactive analysis | 11 | Answer the question immediately, then allow material filtering, selection, comparison, or chart-mode changes. |
@@ -263,18 +284,18 @@ source inspection belong inside the owning component and must not become separat
 
 | # | Component | Model | Prompt properties | First useful inline state | Material interaction and guarded action | Exact full-screen continuation |
 | ---: | --- | --- | --- | --- | --- | --- |
-| 1 | `TriageCustomerIssue` | Submit | `customerHint`, `contactHint`, `issueText`, `productHint`, `channel`, `language`, `reportedAt` | Structured issue canvas with resolved customer/contact, product, sentiment, entitlement, severity, similar cases, SLA preview, and missing evidence. | Editing impact/product/severity changes SLA, duplicate confidence, routing, and required fields. Review shows what will be created; confirm creates session case receipt. | `my-queue/new-case`; preserves draft, resolved entities, validation, and step. |
+| 1 | `TriageCustomerIssue` | Submit | `message`, `customerHint`, `productHint`, `channel`, `language` | Compact four-field intake with visible entitlement and SLA consequence. | Draft, validation, structured Review, Edit, Create case, receipt, and Start another replace one another in a bounded region. | `my-queue/new-case`; preserves draft, customer/product, validation, and stage. |
 | 2 | `GetPriorityServiceQueue` | Information | `ownerScope`, `team`, `priority`, `slaState`, `sentiment`, `region`, `product`, `limit` | Ranked queue with reason chips, SLA remaining, customer impact, sentiment, owner, and prepared-work state. | Filters rebuild rank and counts; selection opens concise evidence and next action. Reassign/escalate requires review. | `my-queue/priority`; preserves filters, sort, selected case, and scroll position. |
 | 3 | `ExploreCustomerHealth` | Information | `customerId`, `period`, `product`, `healthDimension`, `selectedEventId` | Customer outcome strip plus constellation timeline of goals, interactions, products, cases, commitments, and sentiment shifts. | Period/dimension changes the graph; selection coordinates source detail and accountable owner. | `customer-360/overview`; preserves customer, period, dimension, and event. |
 | 4 | `BuildResolutionPlan` | Submit | `caseId`, `goal`, `includeDiagnostics`, `includeKnowledge`, `targetResolutionAt` | Editable plan with ordered steps, supporting/conflicting evidence, confidence, owners, SLA consequence, and unresolved assumptions. | Add/remove/reorder steps, select evidence, assign owner, change due time, mark assumption. Validation blocks unsupported promises. Confirm saves session plan receipt, not external execution. | `resolution-room/plan`; preserves case, plan draft, evidence selection, and current step. |
 | 5 | `StartExpertSwarm` | Submit | `caseId`, `decisionQuestion`, `skills`, `urgency`, `region`, `candidateIds` | Recommended specialists with role/skill/availability evidence and a reviewed context-package outline. | Select experts, edit question/scope/due time, exclude sensitive evidence, preview Teams-shaped handoff. Confirm creates session swarm receipt. | `resolution-room/swarm`; preserves candidates, selection, package, and draft. |
-| 6 | `DetectServiceIncident` | Information | `caseId`, `product`, `version`, `symptom`, `region`, `period`, `similarityThreshold` | Incident emergence graph with related-case count, affected customers/sites, time pattern, confidence, and strongest shared signal. | Threshold and dimensions rebuild clusters; selection reveals exact cases and contrary evidence. | `service-operations/incident-detection`; preserves cohort, threshold, dimensions, and cluster. |
-| 7 | `ReviewIncidentResponse` | Review | `incidentCandidateId`, `proposedDecision`, `severity`, `audience`, `selectedCaseIds` | Impact summary, affected cohort, workaround confidence, communication readiness, owner, decision options, and consequences. | Declare/escalate/monitor/close requires rationale, owner, severity, audience, authority context, review, and confirmation. | `resolution-room/incident-review`; preserves candidate, cohort, evidence, and decision draft. |
-| 8 | `ReviewServiceRecovery` | Review | `caseId`, `recoveryType`, `amount`, `currency`, `duration`, `reason`, `authorityScope` | Customer context beside selectable recovery scenarios with policy, approval level, cost, precedent, and expected customer outcome. | Changing type/amount/duration recalculates authority, margin/cost, policy status, and outcome range. Approve/request approval/decline requires rationale and confirmation. | `customer-360/service-recovery`; preserves case, scenario, amount, evidence, and decision step. |
-| 9 | `ComposeCustomerUpdate` | Submit | `caseId`, `channel`, `language`, `audience`, `tone`, `purpose`, `includeCommitments` | Editable message with recipient/channel, verified facts, explicit commitments, next update time, tone control, and unsupported-claim warnings. | Change language/channel/tone; accept/reject draft sections; edit commitments. Send preview lists recipients and promises. Confirm creates mock send receipt. | `customer-360/communications`; preserves message draft, source facts, language, and review step. |
+| 6 | `DetectServiceIncident` | Information | `caseId`, `product`, `region`, `period`, `similarityThreshold` | One focused emergence graph with integrated threshold, related/contrary/strongest values, and collapsed exact cohort data. | Threshold changes cohort membership, chart connections, exact values, and visible-state summary. | `service-operations/incident-detection`; preserves cohort and threshold. |
+| 7 | `ReviewIncidentResponse` | Review | `caseId`, `focus`, `selectedId` | Compact three-candidate queue beside one selected incident decision. | Select/Previous/Next, edit Declare/Monitor/Close, cadence and rationale, Review/Edit/Confirm, receipt, and automatic next-item advance. | `resolution-room/incident-review`; preserves candidate, queue position, and decision draft. |
+| 8 | `ReviewServiceRecovery` | Review | `caseId`, `amount`, `focus`, `selectedId` | Compact three-request queue with authority, trust lift, precedent, remedy amount, and rationale. | Approve/Request approval/Decline uses Review/Edit/Confirm, receipt, and automatic next-item advance. | `customer-360/service-recovery`; preserves request, queue position, amount, and decision draft. |
+| 9 | `ComposeCustomerUpdate` | Submit | `caseId`, `channel`, `language`, `focus` | Compact verified-fact studio with recipient, channel, language, next-update promise, and editable customer-safe message. | Draft, structured Review, Edit, Confirm mock send, receipt, and Start another replace one another in a bounded region. | `customer-360/communications`; preserves case, draft, verified facts, language, and stage. |
 | 10 | `TrackResolutionOutcome` | Information | `caseId`, `customerId`, `outcome`, `period`, `selectedMetric` | Resolution scoreline for SLA, customer confirmation, reopen risk, recovery cost, next check, and owner. | Metric and period change evidence; record confirmation or schedule follow-up through reviewed session action. | `customer-360/outcomes`; preserves customer/case, metric, period, and selected evidence. |
 | 11 | `CreateKnowledgeFromResolution` | Submit | `caseId`, `audience`, `product`, `version`, `articleType`, `language` | Article canvas with problem, verified resolution, applicability, exclusions, steps, sources, owner, and review date. | Edit applicability and steps; remove sensitive/customer-specific content; validation checks evidence and unsupported generalization. Confirm creates draft article receipt. | `resolution-room/knowledge`; preserves article draft, evidence, validation, and step. |
-| 12 | `ExploreServicePerformance` | Information | `period`, `product`, `focus`, `selectedId` | Demand-to-resolution river with peak, current backlog, and exact change. | Period/product selection changes trend geometry and exact values in full screen. | `service-operations/demand`; continues into coordinated analytics. |
+| 12 | `ExploreServicePerformance` | Information | `period`, `region`, `product`, `focus`, `selectedId` | One focused demand river with period selector, peak/current/change, concise interpretation, and collapsed exact values. | Today, 7-day, and 30-day selections materially change values, geometry, labels, and visible-state summary. | `service-operations/demand`; preserves period and continues into coordinated analytics. |
 | 12a | `ExploreRegionalServiceImpact` | Information | `period`, `region`, `product`, `selectedId` | Projected regional impact map with case volume, SLA risk, CSAT, and exact table. | Region selection changes highlighted geography and regional detail. | `service-operations/regional-impact`; continues into coordinated analytics. |
 | 12b | `ExploreRecurringServiceDrivers` | Information | `period`, `product`, `focus`, `selectedId` | Recurring-driver Pareto ranking avoidable customer effort by cause. | Product selection changes drivers, bars, shares, and exact values in full screen. | `service-operations/recurring-drivers`; continues into coordinated analytics. |
 | 13 | `DiagnoseCaseEvidence` | Information | `caseId`, `diagnosticType`, `product`, `version`, `timeRange`, `selectedSignalId` | Diagnostic workbench with symptom timeline, telemetry, known changes, prior fixes, competing hypotheses, confidence, and evidence gaps. | Selecting signals and excluding bad evidence recalculates hypothesis support; a specialist can promote verified findings into the owning resolution plan. | `resolution-room/diagnostics`; preserves case, hypothesis, time range, signals, and selection. |
@@ -451,14 +472,18 @@ evidence, consequential review, confirmation, receipt, and leadership impact.
 
 Use exactly six starters; each targets one primary tool.
 
+The generated routing matrix also carries 16 nearest-sibling collision cases. The canonical build
+fails if a starter drifts, two starters target the same tool, or an expected positive/negative routing
+boundary disappears. Configuration-level checks do not replace fresh-conversation Copilot rehearsal.
+
 | # | Title | Starter | Expected component |
 | ---: | --- | --- | --- |
-| 1 | Resolve a customer issue | Build a resolution plan for Alpine House's store activation issue. | `BuildResolutionPlan` |
-| 2 | Priority queue | Show the customer cases that need my judgment now. | `GetPriorityServiceQueue` |
-| 3 | Incident signal | Are today's activation cases isolated or a broader incident? | `DetectServiceIncident` |
-| 4 | Customer health | Show why Northwind's service health is falling. | `ExploreCustomerHealth` |
-| 5 | Recovery decision | Review the recovery options for case ZCR-1048. | `ReviewServiceRecovery` |
-| 6 | Explore capabilities | Explore what the Customer Resolution agent can do. | `ExploreAgentCapabilities` |
+| 1 | Create support case | 42 Alpine House stores cannot activate their handhelds. Create the support case. | `TriageCustomerIssue` |
+| 2 | Detect incident | Are today's activation failures isolated or one emerging incident? | `DetectServiceIncident` |
+| 3 | Review incident | Review today's activation incident candidates and help me decide the next one. | `ReviewIncidentResponse` |
+| 4 | Review recovery | Review pending customer recovery requests, starting with Alpine House. | `ReviewServiceRecovery` |
+| 5 | Prepare update | Draft a French and English update for Alpine House with the next update time. | `ComposeCustomerUpdate` |
+| 6 | Service performance | Is customer-service resolution keeping up with demand today? | `ExploreServicePerformance` |
 
 ## Coherent mock data contract
 
@@ -554,8 +579,8 @@ accessible exact-value alternatives; global, responsive, theme, and accessibilit
 an audited offline package deploys with no runtime data dependency.
 
 Implementation status and validation evidence are tracked in [todo.md](todo.md) and
-[assets/release-evidence.json](assets/release-evidence.json). The local gate currently reports 38 tests,
-zero warnings, 81 visual captures, zero visual failures, 38 unique layout identities, one production
+[assets/release-evidence.json](assets/release-evidence.json). The local gate currently reports 41 tests,
+zero warnings, 81 visual captures, zero visual failures, 36 unique layout identities, one production
 bundle, and zero duplicate media. Local evidence does not claim authenticated host behavior.
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/zava-customer-resolution-center" />

@@ -1,78 +1,73 @@
-# Zava Customer Resolution - 4-Minute Copilot UX Keynote
+# Zava Customer Resolution - 4-Minute Keynote
 
 ## Setup
 
-Audience: Microsoft 365, Copilot, and design leaders. Reset the demo session, use light theme, and keep
-the component wide enough to show the labeled **Full screen** button. Confirmations are session-only.
+Reset session receipts, use light theme, and keep the inline component at 760 px. Every confirmation
+is a local demo receipt; no tenant customer record changes.
 
-Core line: **“Copilot is the application surface: natural language selects the right deterministic UX,
-and that UX tells Copilot exactly what the person can see.”**
+Core line: **Copilot chooses the right application surface; deterministic UX keeps people in control.**
 
 ## Run of show
 
-### 0:00-0:40 - A leadership question becomes a visual answer
+### 0:00-0:40 - Create the work, not another summary
 
-Prompt: **Which customer relationships need leadership attention?**
+Prompt: **42 Alpine House stores cannot activate their handhelds. Create the support case.**
 
-Expected tool: `ExploreCustomerHealth`, without `customerId`. Show the inline value/risk matrix: health
-versus renewal risk, bubble size as exposure, and exact values below. Point out that the LLM chose this
-tool because its positive routing boundary covers customer portfolio risk and excludes service backlog.
+Expected: `TriageCustomerIssue`. Show four essential fields and the entitlement/SLA consequence.
+Choose **Review**, point out that the form is replaced rather than stacked, then **Create case**. The
+session receipt proves explicit confirmation without pretending a production write occurred.
 
-Say: “The answer is not prose. Copilot gives us an inspectable visual data product.”
+Say: “Natural language started the process. The component owns validation and consequence.”
 
-### 0:40-1:20 - Specific context changes the experience
+### 0:40-1:15 - Turn one issue into an inspectable pattern
 
-Prompt: **Show why Northwind Traders service health is falling.**
+Prompt: **Are today's activation failures isolated or one emerging incident?**
 
-Expected tool: `ExploreCustomerHealth` with `customerId: northwind-traders`. Show Northwind’s unique
-constellation, synchronization evidence, commitments, health, risk, and recovery options. Contrast this
-with the portfolio matrix: same intent, materially different UX because the entity is now known.
+Expected: `DetectServiceIncident`. Move similarity from 72% to 90%. Related cases change from six to
+two, contrary cases stay visible, and exact values remain available behind one disclosure.
 
-### 1:20-2:00 - Every component tells Copilot what is visible
+Say: “The answer is a visual data product, not generated prose.”
 
-Ask: **What am I looking at?** Explain that the component publishes intent, route, selected customer,
-query/view state, and a bounded semantic summary through `updateModelContextAsync`. Then invoke:
-**Are today's activation cases isolated or a broader incident?** Change similarity from 72% to 90%; the
-network and exact cohort table change from six related cases to two, and Copilot receives the threshold.
+### 1:15-2:00 - Review work one item at a time
 
-### 2:00-2:45 - Inline expands into a real process
+Prompt: **Review today's activation incident candidates and help me decide the next one.**
 
-Prompt: **Build a resolution plan for case ZCR-1048.** Expand using the labeled **Full screen** control.
-Resolution Room opens directly on Alpine because the case is scoped. Choose **Back to active
-resolutions** to reveal the unscoped leadership portfolio, then reopen one room. Move to Customer 360:
-without a customer scope it opens the complete 12-company directory, three companies per region.
+Expected: `ReviewIncidentResponse`. Show the three-item queue beside one selected candidate. Change
+Monitor to Declare, edit cadence and rationale, choose **Review decision**, then confirm. The queue
+marks the completed candidate and advances to the next item.
 
-### 2:45-3:10 - One leadership question, one focused chart
+### 2:00-2:40 - Keep commercial judgment human
 
-Prompt: **Show how service demand and resolution are moving today.**
+Prompt: **Review pending customer recovery requests, starting with Alpine House.**
 
-Expected tool: `ExploreServicePerformance`. Show the isolated demand-to-resolution river and exact
-peak/current/change values. Emphasize that Copilot routed to one chart rather than an overloaded dashboard.
+Expected: `ReviewServiceRecovery`. Compare authority, trust lift, and precedent. Edit the amount,
+review the consequence, and confirm. The queue advances without hiding the next decision.
 
-### 3:10-3:35 - A different question routes to a different visual
+Say: “The agent assembled the evidence. A person owns the remedy and precedent.”
 
-Prompt: **Show where regional service impact needs leadership attention.**
+### 2:40-3:20 - Transform internal evidence into a safe promise
 
-Expected tool: `ExploreRegionalServiceImpact`. Select APAC on the projected map and show exact regional
-case volume, SLA risk, CSAT, and recovery exposure. Mention that recurring-driver questions route to a
-third isolated Pareto component rather than adding another chart here.
+Prompt: **Draft a French and English update for Alpine House with the next update time.**
 
-### 3:35-4:00 - Inline answers become coordinated operations
+Expected: `ComposeCustomerUpdate`. Show verified-fact chips, recipient, channel, language, promise,
+and editable message. Review and record the mock send receipt. Internal diagnostics never enter the
+customer message automatically.
 
-Expand either leadership chart into Service Operations. Change Today / EMEA / All products to 7 days /
-APAC / Zava Commerce. Show that KPIs, trend path, map bubbles, recurring drivers, and recovery exposure
-now coordinate because full screen is the right place for multi-chart analysis.
+### 3:20-4:00 - Show the process changing operations
 
-Close: **“The reference data is fictional. The important proof is the Copilot UX pattern: precise
-routing to one focused visual answer, visible-state awareness, and coordinated full-screen process only
-when the work needs more room.”**
+Prompt: **Is customer-service resolution keeping up with demand today?**
+
+Expected: `ExploreServicePerformance`. Change Today to 7 days. Peak, current, interpretation, and
+river geometry update together. Exact values stay collapsed until requested.
+
+Close: **“Copilot is the application surface: create, understand, review, communicate, and improve,
+with the right UX for each step and human control where consequences begin.”**
 
 ## Fallback order
 
-1. `inline-explore-customer-health.png`
-2. `inline-incident-emergence.png`
-3. `fullscreen-resolution-room.png`
-4. `fullscreen-customer-360.png`
-5. `inline-explore-service-performance.png`
-6. `inline-explore-regional-service-impact.png`
-7. `fullscreen-service-operations.png`
+1. `inline-triage-customer-issue.png`
+2. `inline-detect-service-incident.png`
+3. `inline-review-incident-response.png`
+4. `inline-review-service-recovery.png`
+5. `inline-compose-customer-update.png`
+6. `inline-explore-service-performance.png`
