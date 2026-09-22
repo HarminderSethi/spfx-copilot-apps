@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-31T19:07:56.271Z",
+  "generatedAt": "2026-09-22T07:12:29.224Z",
   "package": "sharepoint/solution/zava-procurement-command-center.sppkg",
-  "bytes": 441766,
-  "sha256": "bee8e7d0b72105145f51aa9786bc07030d622d7d5ea7a8d5cc11bcd0e6608896",
+  "bytes": 441774,
+  "sha256": "a9cd21d4c6c52e9d0f5e01efae16ee861c9b20861d7569986c715578ce4c13c7",
   "entries": 40,
   "javascriptAssets": 1,
   "agentArchives": 1,

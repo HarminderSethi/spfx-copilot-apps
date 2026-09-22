@@ -40,7 +40,7 @@ different throughout the journey.
 
 ## Applies to
 
-- SharePoint Framework `1.24.0-beta.3-55937989`
+- SharePoint Framework `1.24.0-beta.3`
 - Microsoft 365 Copilot declarative agents and Copilot Components preview
 - React `18.3.1`, Fluent UI v9 `9.74.6`, and Griffel `1.7.7`
 - Node.js `>=22.14.0 <23.0.0`

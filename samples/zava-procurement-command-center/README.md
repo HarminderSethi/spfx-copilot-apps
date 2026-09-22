@@ -31,7 +31,7 @@ runtime, overflow, label, chart, and focus results are in
 ## Implementation status
 
 - 22 immutable component identities generated through SharePoint Yeoman generator
-  `1.24.0-beta.3-55937989` and emitted in one shared React 18 bundle.
+  `1.24.0-beta.3` and emitted in one shared React 18 bundle.
 - Deterministic graph scale: 220 requesters, 14 categories, 600 requests, 90 suppliers, and 18 sourcing
   events centered on `ZPC-RFP-31` and invoice `ZPC-8831`.
 - Fluent UI v9 and owner-document Griffel theming with distinct My Requests, Sourcing Workbench,

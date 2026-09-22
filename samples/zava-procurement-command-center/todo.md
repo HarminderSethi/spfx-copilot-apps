@@ -196,7 +196,7 @@ The implementation order is stage-evidence driven, not the component table order
 ### Supported dependency baseline
 
 - [ ] Reconcile all `@microsoft/sp-*` packages with a fresh generator output for the exact approved
-  `1.24.0-beta.3-55937989` build.
+  `1.24.0-beta.3` build.
 - [x] Pin React/ReactDOM `18.3.1`, React types `18.2.79`/`18.2.25`, Fluent React Components `9.74.6`,
   Fluent Icons `2.0.314`, and Griffel React `1.7.7` exactly.
 - [x] Remove direct Fluent UI v8 after proving no v8 source import remains.
