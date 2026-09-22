@@ -12,7 +12,8 @@ output+='\n## Conversation Starters\n\n';
 for(const starter of starters)output+=`- **${starter.title}:** ${starter.text} -> \`${starter.tool}\`\n`;
 const target=path.join(root,'Zava-Customer-Resolution-Routing-Matrix.md');
 if(process.argv.includes('--check')){
-  if(!fs.existsSync(target)||fs.readFileSync(target,'utf8')!==output)throw new Error('Routing matrix is stale.');
+  const existing=fs.existsSync(target)?fs.readFileSync(target,'utf8').replaceAll('\r\n','\n'):'';
+  if(existing!==output)throw new Error('Routing matrix is stale.');
   console.log(JSON.stringify({routes:rows.length,starters:starters.length,current:true}));
 }else{
   fs.writeFileSync(target,output);

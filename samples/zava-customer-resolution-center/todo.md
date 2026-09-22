@@ -14,6 +14,16 @@ approved.
 
 ## Progress (latest)
 
+> **Release-candidate packaging, 22 September 2026:** the canonical `npm run build` pipeline passes
+> all local intent, React, routing, media, gallery, publication, clean-test, generated-plugin, package-
+> output, and release-evidence gates. The committed testing artifact is
+> `sharepoint/solution/zava-customer-resolution-center.sppkg` (365,332 bytes; SHA-256
+> `05fe4260cdb5dce112445a605f6c4e14cf090c118ddeb8ca2257850861ccee59`). It contains one
+> 585,614-byte hashed production JavaScript bundle, one current agent ZIP, five unique media files,
+> and 23 component definitions. The suite passes 38 tests with zero failures and zero warnings.
+> This is ready for guided package testing; the explicitly blocked public media-rights approval and
+> remaining authenticated host/accessibility checks are still required before public release sign-off.
+
 > Inline acceptance hardening completed locally on 18 September 2026. Eleven genuinely case-scoped
 > tools now share a catalog-owned navigation contract: no `caseId` opens ranked search, a valid
 > `caseId` opens exact detail, an unknown ID has a designed no-match state, and every detail exposes
@@ -569,7 +579,7 @@ forced into the main-stage story.
   release evidence; run `git diff --check`.
 - [ ] Run a clean-clone/offline rehearsal, inspect the shipped package and agent ZIP, stop temporary
   servers, and obtain release approval.
-- [ ] Commit the ready-to-deploy `.sppkg` only after every local executable gate passes.
+- [x] Commit the ready-to-deploy `.sppkg` only after every local executable gate passes.
 
 ## Deferred - Dynamic data / API integration
 

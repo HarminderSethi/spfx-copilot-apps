@@ -75,8 +75,8 @@ npm run build
 
 The ready-to-deploy offline package is
 [sharepoint/solution/zava-customer-resolution-center.sppkg](sharepoint/solution/zava-customer-resolution-center.sppkg).
-The validated package is 365,327 bytes with SHA-256
-`bc6176d04d95a79d9b0aced16cca6c3cbaf82a587c26f760c7c46e40e3c55736`. It contains one 585,614-byte
+The validated package is 365,332 bytes with SHA-256
+`05fe4260cdb5dce112445a605f6c4e14cf090c118ddeb8ca2257850861ccee59`. It contains one 585,614-byte
 hashed JavaScript asset, one current agent ZIP, five unique provenance-matched portraits, and 23
 Copilot Component definitions.
 

@@ -17,6 +17,9 @@ release
 solution
 temp
 *.sppkg
+!sharepoint/solution/
+sharepoint/solution/*
+!sharepoint/solution/zava-customer-resolution-center.sppkg
 .heft
 
 # Coverage directory used by tools like istanbul
