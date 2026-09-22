@@ -1,6 +1,7 @@
 import { max } from 'd3-array';
 import { scaleBand, scaleLinear, scaleSqrt } from 'd3-scale';
 import { area, curveMonotoneX, line } from 'd3-shape';
+import { serviceData } from '../domain';
 
 export interface ISeriesPoint { readonly label:string; readonly value:number; }
 export interface ITrendGeometry { readonly linePath:string; readonly areaPath:string; readonly points:readonly (ISeriesPoint&{readonly x:number;readonly y:number})[]; }
@@ -32,6 +33,8 @@ export const buildMatrix=(items:readonly IMatrixDatum[]):readonly IMatrixMark[]=
   return items.map(item=>({...item,x:x(item.cost),y:y(item.outcome),radius:radius(item.authority)}));
 };
 export const buildConstellation=(items:readonly INodeDatum[]):readonly INodeMark[]=>{
+  const customer=serviceData.getAggregate().customers.find(item=>item.name===items[0]?.id);
+  const resolved=customer?[items[0],...customer.constellation.map(item=>({id:item.label,group:item.kind,weight:item.weight,angle:item.angle}))]:items;
   const radius=scaleSqrt().domain([0,100]).range([12,31]);
-  return items.map(item=>{const radians=item.angle*Math.PI/180;const orbit=item.group==='customer'?0:item.group==='commitment'?92:142;return {...item,x:330+Math.cos(radians)*orbit*1.45,y:116+Math.sin(radians)*orbit,radius:radius(item.weight)};});
+  return resolved.map(item=>{const radians=item.angle*Math.PI/180;const orbit=item.group==='customer'?0:item.group==='commitment'?92:142;return {...item,x:330+Math.cos(radians)*orbit*1.45,y:116+Math.sin(radians)*orbit,radius:radius(item.weight)};});
 };

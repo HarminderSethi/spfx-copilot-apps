@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "0f88d08f-04ee-47fb-8520-1a5e16a45877",
+  "alias": "ExploreRecurringServiceDriversCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ExploreRecurringServiceDrivers",
+      "description": {
+        "default": "Use when leadership asks which recurring causes create the most case volume or customer effort. Do not use for geography, demand trends, or one incident cohort."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/exploreRecurringServiceDrivers/ExploreRecurringServiceDriversCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

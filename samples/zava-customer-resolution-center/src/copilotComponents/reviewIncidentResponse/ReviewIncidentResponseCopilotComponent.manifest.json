@@ -16,7 +16,7 @@
     {
       "name": "ReviewIncidentResponse",
       "description": {
-        "default": "Review a consequential incident decision. Do not use for exploratory clustering."
+        "default": "Use when a person must decide whether to declare, monitor, escalate, or close an incident candidate. Do not use for exploratory similarity analysis."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/reviewIncidentResponse/ReviewIncidentResponseCopilotComponentProperties.js:default;"

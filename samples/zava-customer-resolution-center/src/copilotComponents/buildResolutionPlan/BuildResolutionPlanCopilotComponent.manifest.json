@@ -16,7 +16,7 @@
     {
       "name": "BuildResolutionPlan",
       "description": {
-        "default": "Build an evidence-linked resolution plan. Do not declare incidents or approve recovery."
+        "default": "Use when a named case needs an editable, evidence-linked resolution plan. Do not use to diagnose a cause, declare an incident, or approve recovery."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/buildResolutionPlan/BuildResolutionPlanCopilotComponentProperties.js:default;"

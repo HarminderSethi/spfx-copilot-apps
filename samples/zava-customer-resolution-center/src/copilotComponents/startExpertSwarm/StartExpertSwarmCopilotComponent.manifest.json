@@ -16,7 +16,7 @@
     {
       "name": "StartExpertSwarm",
       "description": {
-        "default": "Create a bounded expert handoff. Do not use for queue reassignment."
+        "default": "Use when a case needs named specialists for one bounded decision question. Do not use for queue reassignment, escalation, or general workload balancing."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/startExpertSwarm/StartExpertSwarmCopilotComponentProperties.js:default;"

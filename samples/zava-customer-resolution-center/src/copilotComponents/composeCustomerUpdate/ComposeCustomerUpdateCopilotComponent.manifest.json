@@ -16,7 +16,7 @@
     {
       "name": "ComposeCustomerUpdate",
       "description": {
-        "default": "Draft a customer-safe localized update. Do not expose internal evidence."
+        "default": "Use when a named case needs an accurate localized customer-facing update. Do not use for internal diagnosis, recovery approval, or commitment governance."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/composeCustomerUpdate/ComposeCustomerUpdateCopilotComponentProperties.js:default;"

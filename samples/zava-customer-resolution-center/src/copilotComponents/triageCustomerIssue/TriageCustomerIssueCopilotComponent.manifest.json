@@ -16,7 +16,7 @@
     {
       "name": "TriageCustomerIssue",
       "description": {
-        "default": "Create a reviewed customer case from issue language. Do not use after a resolution goal exists."
+        "default": "Use when a customer reports a new or unresolved issue and a reviewable case intake is needed. Do not use after a case and resolution goal already exist."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/triageCustomerIssue/TriageCustomerIssueCopilotComponentProperties.js:default;"

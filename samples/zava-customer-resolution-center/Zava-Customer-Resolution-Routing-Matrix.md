@@ -15,7 +15,9 @@ Generated from the immutable intent catalog and canonical conversation starters.
 | `ComposeCustomerUpdate` | submit | customer-360 | `customer-360/communications` | teal |
 | `TrackResolutionOutcome` | information | customer-360 | `customer-360/outcomes` | teal |
 | `CreateKnowledgeFromResolution` | submit | resolution-room | `resolution-room/knowledge` | teal |
-| `ExploreServicePerformance` | information | service-operations | `service-operations/command` | coral |
+| `ExploreServicePerformance` | information | service-operations | `service-operations/demand` | coral |
+| `ExploreRegionalServiceImpact` | information | service-operations | `service-operations/regional-impact` | teal |
+| `ExploreRecurringServiceDrivers` | information | service-operations | `service-operations/recurring-drivers` | citrus |
 | `DiagnoseCaseEvidence` | information | resolution-room | `resolution-room/diagnostics` | coral |
 | `ReviewEntitlementCoverage` | information | customer-360 | `customer-360/entitlement` | citrus |
 | `ManageCaseEscalation` | review | my-queue | `my-queue/escalation` | coral |
@@ -31,6 +33,6 @@ Generated from the immutable intent catalog and canonical conversation starters.
 - **Resolve a customer issue:** Build a resolution plan for Alpine House's store activation issue. -> `BuildResolutionPlan`
 - **Priority queue:** Show the customer cases that need my judgment now. -> `GetPriorityServiceQueue`
 - **Incident signal:** Are today's activation cases isolated or a broader incident? -> `DetectServiceIncident`
-- **Customer health:** Show why Northwind's service health is falling. -> `ExploreCustomerHealth`
-- **Recovery decision:** Review the recovery options for case ZCR-1048. -> `ReviewServiceRecovery`
+- **Customer portfolio:** Which customer relationships need leadership attention? -> `ExploreCustomerHealth`
+- **Service operations:** Show where service performance needs leadership intervention. -> `ExploreServicePerformance`
 - **Explore capabilities:** Explore what the Customer Resolution agent can do. -> `ExploreAgentCapabilities`

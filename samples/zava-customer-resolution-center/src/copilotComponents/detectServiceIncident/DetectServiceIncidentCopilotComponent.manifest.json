@@ -16,7 +16,7 @@
     {
       "name": "DetectServiceIncident",
       "description": {
-        "default": "Analyze similar-case patterns. Do not declare or close an incident."
+        "default": "Use when asked whether similar cases form an emerging incident or cohort. Do not use to declare, escalate, monitor, or close the incident."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/detectServiceIncident/DetectServiceIncidentCopilotComponentProperties.js:default;"

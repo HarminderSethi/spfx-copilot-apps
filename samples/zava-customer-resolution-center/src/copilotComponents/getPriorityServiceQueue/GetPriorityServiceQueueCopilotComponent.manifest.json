@@ -16,7 +16,7 @@
     {
       "name": "GetPriorityServiceQueue",
       "description": {
-        "default": "Rank cases needing judgment. Do not use for detailed diagnosis of one case."
+        "default": "Use when a representative asks which cases need judgment or attention next. Do not use for diagnosis or resolution detail of one named case."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/getPriorityServiceQueue/GetPriorityServiceQueueCopilotComponentProperties.js:default;"

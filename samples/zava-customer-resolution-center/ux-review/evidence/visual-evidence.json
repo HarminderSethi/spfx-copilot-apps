@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T16:15:09.654Z",
-  "totalIntents": 21,
-  "totalCaptures": 75,
+  "generatedAt": "2026-09-21T17:31:41.723Z",
+  "totalIntents": 23,
+  "totalCaptures": 81,
   "failureCount": 0,
-  "uniqueLayouts": 25,
+  "uniqueLayouts": 38,
   "captures": [
     {
       "intent": "BalanceServiceWorkload",
@@ -12,7 +12,11 @@
       "theme": "light",
       "width": 760,
       "file": "balance-service-workload-standard-light.png",
-      "layout": "workload-skill-capacity-simulator"
+      "layout": "workload-capacity-risk-matrix",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "BalanceServiceWorkload",
@@ -20,7 +24,11 @@
       "theme": "light",
       "width": 340,
       "file": "balance-service-workload-narrow-light.png",
-      "layout": "workload-skill-capacity-simulator"
+      "layout": "workload-capacity-risk-matrix",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "BalanceServiceWorkload",
@@ -28,7 +36,11 @@
       "theme": "dark",
       "width": 760,
       "file": "balance-service-workload-standard-dark.png",
-      "layout": "workload-skill-capacity-simulator"
+      "layout": "workload-capacity-risk-matrix",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "BuildResolutionPlan",
@@ -36,7 +48,11 @@
       "theme": "light",
       "width": 760,
       "file": "build-resolution-plan-standard-light.png",
-      "layout": "resolution-plan-evidence-path"
+      "layout": "BuildResolutionPlan-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "BuildResolutionPlan",
@@ -44,7 +60,11 @@
       "theme": "light",
       "width": 340,
       "file": "build-resolution-plan-narrow-light.png",
-      "layout": "resolution-plan-evidence-path"
+      "layout": "BuildResolutionPlan-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "BuildResolutionPlan",
@@ -52,7 +72,11 @@
       "theme": "dark",
       "width": 760,
       "file": "build-resolution-plan-standard-dark.png",
-      "layout": "resolution-plan-evidence-path"
+      "layout": "BuildResolutionPlan-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ComposeCustomerUpdate",
@@ -60,7 +84,11 @@
       "theme": "light",
       "width": 760,
       "file": "compose-customer-update-standard-light.png",
-      "layout": "customer-update-trust-studio"
+      "layout": "ComposeCustomerUpdate-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ComposeCustomerUpdate",
@@ -68,7 +96,11 @@
       "theme": "light",
       "width": 340,
       "file": "compose-customer-update-narrow-light.png",
-      "layout": "customer-update-trust-studio"
+      "layout": "ComposeCustomerUpdate-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "ComposeCustomerUpdate",
@@ -76,7 +108,11 @@
       "theme": "dark",
       "width": 760,
       "file": "compose-customer-update-standard-dark.png",
-      "layout": "customer-update-trust-studio"
+      "layout": "ComposeCustomerUpdate-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "CoordinateFieldService",
@@ -84,7 +120,11 @@
       "theme": "light",
       "width": 760,
       "file": "coordinate-field-service-standard-light.png",
-      "layout": "field-service-readiness-planner"
+      "layout": "CoordinateFieldService-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "CoordinateFieldService",
@@ -92,7 +132,11 @@
       "theme": "light",
       "width": 340,
       "file": "coordinate-field-service-narrow-light.png",
-      "layout": "field-service-readiness-planner"
+      "layout": "CoordinateFieldService-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "CoordinateFieldService",
@@ -100,7 +144,11 @@
       "theme": "dark",
       "width": 760,
       "file": "coordinate-field-service-standard-dark.png",
-      "layout": "field-service-readiness-planner"
+      "layout": "CoordinateFieldService-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "CreateKnowledgeFromResolution",
@@ -108,7 +156,11 @@
       "theme": "light",
       "width": 760,
       "file": "create-knowledge-from-resolution-standard-light.png",
-      "layout": "knowledge-applicability-canvas"
+      "layout": "CreateKnowledgeFromResolution-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "CreateKnowledgeFromResolution",
@@ -116,7 +168,11 @@
       "theme": "light",
       "width": 340,
       "file": "create-knowledge-from-resolution-narrow-light.png",
-      "layout": "knowledge-applicability-canvas"
+      "layout": "CreateKnowledgeFromResolution-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "CreateKnowledgeFromResolution",
@@ -124,7 +180,11 @@
       "theme": "dark",
       "width": 760,
       "file": "create-knowledge-from-resolution-standard-dark.png",
-      "layout": "knowledge-applicability-canvas"
+      "layout": "CreateKnowledgeFromResolution-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "DetectServiceIncident",
@@ -132,7 +192,11 @@
       "theme": "light",
       "width": 760,
       "file": "detect-service-incident-standard-light.png",
-      "layout": "incident-detection-threshold-graph"
+      "layout": "incident-detection-threshold-graph",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "DetectServiceIncident",
@@ -140,7 +204,11 @@
       "theme": "light",
       "width": 340,
       "file": "detect-service-incident-narrow-light.png",
-      "layout": "incident-detection-threshold-graph"
+      "layout": "incident-detection-threshold-graph",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "DetectServiceIncident",
@@ -148,7 +216,11 @@
       "theme": "dark",
       "width": 760,
       "file": "detect-service-incident-standard-dark.png",
-      "layout": "incident-detection-threshold-graph"
+      "layout": "incident-detection-threshold-graph",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "DiagnoseCaseEvidence",
@@ -156,7 +228,11 @@
       "theme": "light",
       "width": 760,
       "file": "diagnose-case-evidence-standard-light.png",
-      "layout": "diagnostics-competing-hypotheses"
+      "layout": "DiagnoseCaseEvidence-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "DiagnoseCaseEvidence",
@@ -164,7 +240,11 @@
       "theme": "light",
       "width": 340,
       "file": "diagnose-case-evidence-narrow-light.png",
-      "layout": "diagnostics-competing-hypotheses"
+      "layout": "DiagnoseCaseEvidence-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "DiagnoseCaseEvidence",
@@ -172,7 +252,11 @@
       "theme": "dark",
       "width": 760,
       "file": "diagnose-case-evidence-standard-dark.png",
-      "layout": "diagnostics-competing-hypotheses"
+      "layout": "DiagnoseCaseEvidence-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ExploreAgentCapabilities",
@@ -180,7 +264,11 @@
       "theme": "light",
       "width": 760,
       "file": "explore-agent-capabilities-standard-light.png",
-      "layout": "capability-explorer-scenario-gallery"
+      "layout": "capability-explorer-scenario-gallery",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreAgentCapabilities",
@@ -188,7 +276,11 @@
       "theme": "light",
       "width": 340,
       "file": "explore-agent-capabilities-narrow-light.png",
-      "layout": "capability-explorer-scenario-gallery"
+      "layout": "capability-explorer-scenario-gallery",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreAgentCapabilities",
@@ -196,7 +288,11 @@
       "theme": "dark",
       "width": 760,
       "file": "explore-agent-capabilities-standard-dark.png",
-      "layout": "capability-explorer-scenario-gallery"
+      "layout": "capability-explorer-scenario-gallery",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreCustomerHealth",
@@ -204,7 +300,11 @@
       "theme": "light",
       "width": 760,
       "file": "explore-customer-health-standard-light.png",
-      "layout": "customer-health-relationship-constellation"
+      "layout": "customer-health-portfolio-matrix",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreCustomerHealth",
@@ -212,7 +312,11 @@
       "theme": "light",
       "width": 340,
       "file": "explore-customer-health-narrow-light.png",
-      "layout": "customer-health-relationship-constellation"
+      "layout": "customer-health-portfolio-matrix",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreCustomerHealth",
@@ -220,7 +324,83 @@
       "theme": "dark",
       "width": 760,
       "file": "explore-customer-health-standard-dark.png",
-      "layout": "customer-health-relationship-constellation"
+      "layout": "customer-health-portfolio-matrix",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
+    },
+    {
+      "intent": "ExploreRecurringServiceDrivers",
+      "mode": "inline",
+      "theme": "light",
+      "width": 760,
+      "file": "explore-recurring-service-drivers-standard-light.png",
+      "layout": "recurring-service-driver-pareto",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
+    },
+    {
+      "intent": "ExploreRecurringServiceDrivers",
+      "mode": "inline",
+      "theme": "light",
+      "width": 340,
+      "file": "explore-recurring-service-drivers-narrow-light.png",
+      "layout": "recurring-service-driver-pareto",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
+    },
+    {
+      "intent": "ExploreRecurringServiceDrivers",
+      "mode": "inline",
+      "theme": "dark",
+      "width": 760,
+      "file": "explore-recurring-service-drivers-standard-dark.png",
+      "layout": "recurring-service-driver-pareto",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
+    },
+    {
+      "intent": "ExploreRegionalServiceImpact",
+      "mode": "inline",
+      "theme": "light",
+      "width": 760,
+      "file": "explore-regional-service-impact-standard-light.png",
+      "layout": "regional-service-impact-map",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
+    },
+    {
+      "intent": "ExploreRegionalServiceImpact",
+      "mode": "inline",
+      "theme": "light",
+      "width": 340,
+      "file": "explore-regional-service-impact-narrow-light.png",
+      "layout": "regional-service-impact-map",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
+    },
+    {
+      "intent": "ExploreRegionalServiceImpact",
+      "mode": "inline",
+      "theme": "dark",
+      "width": 760,
+      "file": "explore-regional-service-impact-standard-dark.png",
+      "layout": "regional-service-impact-map",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreServicePerformance",
@@ -228,7 +408,11 @@
       "theme": "light",
       "width": 760,
       "file": "explore-service-performance-standard-light.png",
-      "layout": "service-performance-demand-river"
+      "layout": "service-performance-demand-river",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreServicePerformance",
@@ -236,7 +420,11 @@
       "theme": "light",
       "width": 340,
       "file": "explore-service-performance-narrow-light.png",
-      "layout": "service-performance-demand-river"
+      "layout": "service-performance-demand-river",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ExploreServicePerformance",
@@ -244,7 +432,11 @@
       "theme": "dark",
       "width": 760,
       "file": "explore-service-performance-standard-dark.png",
-      "layout": "service-performance-demand-river"
+      "layout": "service-performance-demand-river",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "GetPriorityServiceQueue",
@@ -252,7 +444,11 @@
       "theme": "light",
       "width": 760,
       "file": "get-priority-service-queue-standard-light.png",
-      "layout": "priority-queue-ranked-judgment"
+      "layout": "priority-queue-ranked-judgment",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "GetPriorityServiceQueue",
@@ -260,7 +456,11 @@
       "theme": "light",
       "width": 340,
       "file": "get-priority-service-queue-narrow-light.png",
-      "layout": "priority-queue-ranked-judgment"
+      "layout": "priority-queue-ranked-judgment",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "GetPriorityServiceQueue",
@@ -268,7 +468,11 @@
       "theme": "dark",
       "width": 760,
       "file": "get-priority-service-queue-standard-dark.png",
-      "layout": "priority-queue-ranked-judgment"
+      "layout": "priority-queue-ranked-judgment",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ManageCaseEscalation",
@@ -276,7 +480,11 @@
       "theme": "light",
       "width": 760,
       "file": "manage-case-escalation-standard-light.png",
-      "layout": "case-escalation-capacity-review"
+      "layout": "ManageCaseEscalation-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ManageCaseEscalation",
@@ -284,7 +492,11 @@
       "theme": "light",
       "width": 340,
       "file": "manage-case-escalation-narrow-light.png",
-      "layout": "case-escalation-capacity-review"
+      "layout": "ManageCaseEscalation-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "ManageCaseEscalation",
@@ -292,7 +504,11 @@
       "theme": "dark",
       "width": 760,
       "file": "manage-case-escalation-standard-dark.png",
-      "layout": "case-escalation-capacity-review"
+      "layout": "ManageCaseEscalation-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ManageCustomerCommitments",
@@ -300,7 +516,11 @@
       "theme": "light",
       "width": 760,
       "file": "manage-customer-commitments-standard-light.png",
-      "layout": "commitment-bilateral-promise-ledger"
+      "layout": "commitment-bilateral-promise-ledger",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ManageCustomerCommitments",
@@ -308,7 +528,11 @@
       "theme": "light",
       "width": 340,
       "file": "manage-customer-commitments-narrow-light.png",
-      "layout": "commitment-bilateral-promise-ledger"
+      "layout": "commitment-bilateral-promise-ledger",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ManageCustomerCommitments",
@@ -316,7 +540,11 @@
       "theme": "dark",
       "width": 760,
       "file": "manage-customer-commitments-standard-dark.png",
-      "layout": "commitment-bilateral-promise-ledger"
+      "layout": "commitment-bilateral-promise-ledger",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "PlanCustomerWinBack",
@@ -324,7 +552,11 @@
       "theme": "light",
       "width": 760,
       "file": "plan-customer-win-back-standard-light.png",
-      "layout": "winback-trust-recovery-plan"
+      "layout": "winback-trust-recovery-plan",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "PlanCustomerWinBack",
@@ -332,7 +564,11 @@
       "theme": "light",
       "width": 340,
       "file": "plan-customer-win-back-narrow-light.png",
-      "layout": "winback-trust-recovery-plan"
+      "layout": "winback-trust-recovery-plan",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "PlanCustomerWinBack",
@@ -340,7 +576,11 @@
       "theme": "dark",
       "width": 760,
       "file": "plan-customer-win-back-standard-dark.png",
-      "layout": "winback-trust-recovery-plan"
+      "layout": "winback-trust-recovery-plan",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ReviewEntitlementCoverage",
@@ -348,7 +588,11 @@
       "theme": "light",
       "width": 760,
       "file": "review-entitlement-coverage-standard-light.png",
-      "layout": "entitlement-effective-clause-ledger"
+      "layout": "ReviewEntitlementCoverage-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewEntitlementCoverage",
@@ -356,7 +600,11 @@
       "theme": "light",
       "width": 340,
       "file": "review-entitlement-coverage-narrow-light.png",
-      "layout": "entitlement-effective-clause-ledger"
+      "layout": "ReviewEntitlementCoverage-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "ReviewEntitlementCoverage",
@@ -364,7 +612,11 @@
       "theme": "dark",
       "width": 760,
       "file": "review-entitlement-coverage-standard-dark.png",
-      "layout": "entitlement-effective-clause-ledger"
+      "layout": "ReviewEntitlementCoverage-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewIncidentResponse",
@@ -372,7 +624,11 @@
       "theme": "light",
       "width": 760,
       "file": "review-incident-response-standard-light.png",
-      "layout": "incident-response-consequence-review"
+      "layout": "incident-response-consequence-review",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ReviewIncidentResponse",
@@ -380,7 +636,11 @@
       "theme": "light",
       "width": 340,
       "file": "review-incident-response-narrow-light.png",
-      "layout": "incident-response-consequence-review"
+      "layout": "incident-response-consequence-review",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ReviewIncidentResponse",
@@ -388,7 +648,11 @@
       "theme": "dark",
       "width": 760,
       "file": "review-incident-response-standard-dark.png",
-      "layout": "incident-response-consequence-review"
+      "layout": "incident-response-consequence-review",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "ReviewServiceRecovery",
@@ -396,7 +660,11 @@
       "theme": "light",
       "width": 760,
       "file": "review-service-recovery-standard-light.png",
-      "layout": "service-recovery-outcome-review"
+      "layout": "ReviewServiceRecovery-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "ReviewServiceRecovery",
@@ -404,7 +672,11 @@
       "theme": "light",
       "width": 340,
       "file": "review-service-recovery-narrow-light.png",
-      "layout": "service-recovery-outcome-review"
+      "layout": "ReviewServiceRecovery-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "ReviewServiceRecovery",
@@ -412,7 +684,11 @@
       "theme": "dark",
       "width": 760,
       "file": "review-service-recovery-standard-dark.png",
-      "layout": "service-recovery-outcome-review"
+      "layout": "ReviewServiceRecovery-case-detail",
+      "entry": "unknown",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "RunServiceQualityReview",
@@ -420,7 +696,11 @@
       "theme": "light",
       "width": 760,
       "file": "run-service-quality-review-standard-light.png",
-      "layout": "service-quality-transparent-scorecard"
+      "layout": "RunServiceQualityReview-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "RunServiceQualityReview",
@@ -428,7 +708,11 @@
       "theme": "light",
       "width": 340,
       "file": "run-service-quality-review-narrow-light.png",
-      "layout": "service-quality-transparent-scorecard"
+      "layout": "RunServiceQualityReview-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "RunServiceQualityReview",
@@ -436,7 +720,11 @@
       "theme": "dark",
       "width": 760,
       "file": "run-service-quality-review-standard-dark.png",
-      "layout": "service-quality-transparent-scorecard"
+      "layout": "RunServiceQualityReview-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "StartExpertSwarm",
@@ -444,7 +732,11 @@
       "theme": "light",
       "width": 760,
       "file": "start-expert-swarm-standard-light.png",
-      "layout": "expert-swarm-skill-availability"
+      "layout": "StartExpertSwarm-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "StartExpertSwarm",
@@ -452,7 +744,11 @@
       "theme": "light",
       "width": 340,
       "file": "start-expert-swarm-narrow-light.png",
-      "layout": "expert-swarm-skill-availability"
+      "layout": "StartExpertSwarm-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "StartExpertSwarm",
@@ -460,7 +756,11 @@
       "theme": "dark",
       "width": 760,
       "file": "start-expert-swarm-standard-dark.png",
-      "layout": "expert-swarm-skill-availability"
+      "layout": "StartExpertSwarm-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "TrackResolutionOutcome",
@@ -468,7 +768,11 @@
       "theme": "light",
       "width": 760,
       "file": "track-resolution-outcome-standard-light.png",
-      "layout": "resolution-outcome-verification"
+      "layout": "TrackResolutionOutcome-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "TrackResolutionOutcome",
@@ -476,7 +780,11 @@
       "theme": "light",
       "width": 340,
       "file": "track-resolution-outcome-narrow-light.png",
-      "layout": "resolution-outcome-verification"
+      "layout": "TrackResolutionOutcome-case-search",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "list"
     },
     {
       "intent": "TrackResolutionOutcome",
@@ -484,7 +792,11 @@
       "theme": "dark",
       "width": 760,
       "file": "track-resolution-outcome-standard-dark.png",
-      "layout": "resolution-outcome-verification"
+      "layout": "TrackResolutionOutcome-case-detail",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": "detail"
     },
     {
       "intent": "TriageCustomerIssue",
@@ -492,7 +804,11 @@
       "theme": "light",
       "width": 760,
       "file": "triage-customer-issue-standard-light.png",
-      "layout": "triage-structured-intake"
+      "layout": "triage-structured-intake",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "TriageCustomerIssue",
@@ -500,7 +816,11 @@
       "theme": "light",
       "width": 340,
       "file": "triage-customer-issue-narrow-light.png",
-      "layout": "triage-structured-intake"
+      "layout": "triage-structured-intake",
+      "entry": "list",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "TriageCustomerIssue",
@@ -508,7 +828,11 @@
       "theme": "dark",
       "width": 760,
       "file": "triage-customer-issue-standard-dark.png",
-      "layout": "triage-structured-intake"
+      "layout": "triage-structured-intake",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "",
+      "reviewView": ""
     },
     {
       "intent": "GetPriorityServiceQueue",
@@ -516,7 +840,11 @@
       "theme": "light",
       "width": 1600,
       "file": "get-priority-service-queue-my-queue-keynote-light.png",
-      "layout": "my-queue-workspace-shell"
+      "layout": "my-queue-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "GetPriorityServiceQueue",
@@ -524,7 +852,11 @@
       "theme": "dark",
       "width": 1280,
       "file": "get-priority-service-queue-my-queue-desktop-dark.png",
-      "layout": "my-queue-workspace-shell"
+      "layout": "my-queue-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "GetPriorityServiceQueue",
@@ -532,7 +864,11 @@
       "theme": "light",
       "width": 390,
       "file": "get-priority-service-queue-my-queue-mobile-light.png",
-      "layout": "my-queue-workspace-shell"
+      "layout": "my-queue-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "ExploreCustomerHealth",
@@ -540,7 +876,11 @@
       "theme": "light",
       "width": 1600,
       "file": "explore-customer-health-customer-360-keynote-light.png",
-      "layout": "customer-360-workspace-shell"
+      "layout": "customer-360-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "ExploreCustomerHealth",
@@ -548,7 +888,11 @@
       "theme": "dark",
       "width": 1280,
       "file": "explore-customer-health-customer-360-desktop-dark.png",
-      "layout": "customer-360-workspace-shell"
+      "layout": "customer-360-workspace-shell",
+      "entry": "detail",
+      "customer": "northwind-traders",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "ExploreCustomerHealth",
@@ -556,7 +900,11 @@
       "theme": "light",
       "width": 390,
       "file": "explore-customer-health-customer-360-mobile-light.png",
-      "layout": "customer-360-workspace-shell"
+      "layout": "customer-360-workspace-shell",
+      "entry": "detail",
+      "customer": "list",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "BuildResolutionPlan",
@@ -564,7 +912,11 @@
       "theme": "light",
       "width": 1600,
       "file": "build-resolution-plan-resolution-room-keynote-light.png",
-      "layout": "resolution-room-workspace-shell"
+      "layout": "resolution-room-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "BuildResolutionPlan",
@@ -572,7 +924,11 @@
       "theme": "dark",
       "width": 1280,
       "file": "build-resolution-plan-resolution-room-desktop-dark.png",
-      "layout": "resolution-room-workspace-shell"
+      "layout": "resolution-room-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1001",
+      "reviewView": ""
     },
     {
       "intent": "BuildResolutionPlan",
@@ -580,7 +936,11 @@
       "theme": "light",
       "width": 390,
       "file": "build-resolution-plan-resolution-room-mobile-light.png",
-      "layout": "resolution-room-workspace-shell"
+      "layout": "resolution-room-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "list",
+      "reviewView": ""
     },
     {
       "intent": "ExploreServicePerformance",
@@ -588,7 +948,11 @@
       "theme": "light",
       "width": 1600,
       "file": "explore-service-performance-service-operations-keynote-light.png",
-      "layout": "service-operations-workspace-shell"
+      "layout": "service-operations-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "ExploreServicePerformance",
@@ -596,7 +960,11 @@
       "theme": "dark",
       "width": 1280,
       "file": "explore-service-performance-service-operations-desktop-dark.png",
-      "layout": "service-operations-workspace-shell"
+      "layout": "service-operations-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     },
     {
       "intent": "ExploreServicePerformance",
@@ -604,7 +972,11 @@
       "theme": "light",
       "width": 390,
       "file": "explore-service-performance-service-operations-mobile-light.png",
-      "layout": "service-operations-workspace-shell"
+      "layout": "service-operations-workspace-shell",
+      "entry": "detail",
+      "customer": "alpine-house",
+      "caseScope": "ZCR-1048",
+      "reviewView": ""
     }
   ],
   "failures": []

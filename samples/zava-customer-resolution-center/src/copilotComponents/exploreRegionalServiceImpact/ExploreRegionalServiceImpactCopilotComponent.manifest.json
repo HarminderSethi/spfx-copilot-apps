@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "ddf21976-cb07-42dd-aec6-039d15758666",
+  "alias": "ExploreRegionalServiceImpactCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": [
+      "inline",
+      "fullscreen"
+    ]
+  },
+  "tools": [
+    {
+      "name": "ExploreRegionalServiceImpact",
+      "description": {
+        "default": "Use when leadership asks which regions have the most cases, SLA risk, or recovery exposure. Do not use for demand trends, recurring drivers, or one named customer."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/exploreRegionalServiceImpact/ExploreRegionalServiceImpactCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

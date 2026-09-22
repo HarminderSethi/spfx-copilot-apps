@@ -7,27 +7,29 @@
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "developer": {
-      "name": "",
-      "websiteUrl": "",
-      "privacyUrl": "",
-      "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.24.0-beta.3-55937989"
+      "name": "Microsoft 365 PnP Community",
+      "websiteUrl": "https://pnp.github.io/",
+      "privacyUrl": "https://privacy.microsoft.com/",
+      "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
+      "mpnId": "Undefined-1.24.0-beta.3"
     },
     "metadata": {
       "shortDescription": {
-        "default": "zava-customer-resolution-center description"
+        "default": "Visual, intent-routed customer resolution experiences in Microsoft 365 Copilot."
       },
       "longDescription": {
-        "default": "zava-customer-resolution-center description"
+        "default": "Twenty-three Copilot Components provide focused visual answers, evidence-led resolution workflows, customer relationship context, guarded decisions, and coordinated service operations."
       },
       "screenshotPaths": [],
       "videoUrl": "",
-      "categories": []
+      "categories": [
+        "Productivity"
+      ]
     },
     "features": [
       {
-        "title": "zava-customer-resolution-center Feature",
-        "description": "The feature that activates elements of the zava-customer-resolution-center solution.",
+        "title": "Zava Customer Resolution Center",
+        "description": "Activates the Zava Customer Resolution Copilot Components and declarative agent.",
         "id": "dd98a7a9-58c5-40a8-9f36-70537f82aab5",
         "version": "1.0.0.0"
       }

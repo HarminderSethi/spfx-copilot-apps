@@ -16,7 +16,7 @@
     {
       "name": "ManageCaseEscalation",
       "description": {
-        "default": "Review a queue escalation and evidence package. Do not recruit an expert swarm."
+        "default": "Use when a named case may move to another queue or owner with evidence and acceptance criteria. Do not use to recruit specialists or balance the whole team."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/manageCaseEscalation/ManageCaseEscalationCopilotComponentProperties.js:default;"

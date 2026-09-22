@@ -3,16 +3,16 @@
     "name": "pnp-sp-dev-spfx-copilot-components-zava-customer-resolution-center",
     "source": "pnp",
     "title": "Zava Customer Resolution Center",
-    "shortDescription": "An evidence-led customer resolution Copilot App with 21 tools and four connected workspaces.",
+    "shortDescription": "An evidence-led customer resolution Copilot App with 23 tools and four connected workspaces.",
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-customer-resolution-center",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-customer-resolution-center",
     "longDescription": [
       "Zava Customer Resolution Center turns fragmented customer exceptions into inspectable resolution work across triage, diagnostics, planning, incidents, recovery, communication, verification, and learning.",
-      "Twenty operational components and one capability explorer continue into My Queue, Customer 360, Resolution Room, and Service Operations through one coherent Alpine House story.",
+      "Twenty-two operational components and one capability explorer continue into My Queue, Customer 360, Resolution Room, and Service Operations through one coherent reference story.",
       "The sample is deterministic, offline, responsive, and explicit that confirmed actions are session-only. Verified facts, calculations, inferences, recommendations, human decisions, and actions remain distinct."
     ],
     "creationDateTime": "2026-08-31",
-    "updateDateTime": "2026-08-31",
+    "updateDateTime": "2026-09-21",
     "products": ["SharePoint", "Copilot"],
     "metadata": [
       { "key": "SAMPLE-TYPE", "value": "SPFx-CopilotComponent" },

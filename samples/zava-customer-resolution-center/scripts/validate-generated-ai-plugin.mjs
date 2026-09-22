@@ -1,3 +1,21 @@
-import fs from 'node:fs';import path from 'node:path';import unzipper from 'unzipper';
-const root=path.resolve(import.meta.dirname,'..');const zip=path.join(root,'teams','zava-customer-resolution.zip');if(!fs.existsSync(zip))throw new Error('Generated agent ZIP is missing.');const archive=await unzipper.Open.file(zip);const entry=archive.files.find(item=>item.path==='ai-plugin.json');if(!entry)throw new Error('Generated ai-plugin.json is missing.');const plugin=JSON.parse((await entry.buffer()).toString('utf8'));const functions=plugin.functions||[];const assert=(value,message)=>{if(!value)throw new Error(message)};assert(plugin.schema_version==='v2.4','Generated plugin must use v2.4.');assert(plugin.name_for_human.length<=20,'name_for_human exceeds 20 characters.');assert(plugin.description_for_human.length<=100,'description_for_human exceeds 100 characters.');assert(plugin.description_for_model.length<=2048,'description_for_model exceeds 2,048 characters.');assert(functions.length===21,`Expected 21 functions, received ${functions.length}.`);assert(new Set(functions.map(item=>item.name)).size===21,'Generated function names must be unique.');assert(archive.files.some(item=>item.path==='declarativeAgent.json'),'Generated declarative agent is missing.');
-console.log(JSON.stringify({schema:plugin.schema_version,functions:21,nameLength:plugin.name_for_human.length,agentFiles:archive.files.length}));
+import fs from 'node:fs';
+import path from 'node:path';
+import unzipper from 'unzipper';
+
+const root=path.resolve(import.meta.dirname,'..');
+const zip=path.join(root,'teams','zava-customer-resolution.zip');
+if(!fs.existsSync(zip))throw new Error('Generated agent ZIP is missing.');
+const archive=await unzipper.Open.file(zip);
+const entry=archive.files.find(item=>item.path==='ai-plugin.json');
+if(!entry)throw new Error('Generated ai-plugin.json is missing.');
+const plugin=JSON.parse((await entry.buffer()).toString('utf8'));
+const functions=plugin.functions||[];
+const assert=(value,message)=>{if(!value)throw new Error(message)};
+assert(plugin.schema_version==='v2.4','Generated plugin must use v2.4.');
+assert(plugin.name_for_human.length<=20,'name_for_human exceeds 20 characters.');
+assert(plugin.description_for_human.length<=100,'description_for_human exceeds 100 characters.');
+assert(plugin.description_for_model.length<=2048,'description_for_model exceeds 2,048 characters.');
+assert(functions.length===23,`Expected 23 functions, received ${functions.length}.`);
+assert(new Set(functions.map(item=>item.name)).size===23,'Generated function names must be unique.');
+assert(archive.files.some(item=>item.path==='declarativeAgent.json'),'Generated declarative agent is missing.');
+console.log(JSON.stringify({schema:plugin.schema_version,functions:23,nameLength:plugin.name_for_human.length,agentFiles:archive.files.length}));

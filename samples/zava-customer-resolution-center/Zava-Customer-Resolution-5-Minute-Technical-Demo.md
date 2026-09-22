@@ -1,21 +1,36 @@
 # Zava Customer Resolution - 5-Minute Technical Demo
 
-## 0:00-1:00 - Immutable routed components
+## 0:00-1:00 - LLM routing is an explicit contract
 
-Open `src/shared/catalog.ts` and `scripts/configure-intent-components.mjs`. Explain that 21 Yeoman-generated identities retain unique GUIDs and schemas while one catalog configures tool metadata, routes, adapters, registrations, and one shared bundle.
+Open `src/shared/catalog.ts`, `scripts/configure-intent-components.mjs`, and one generated manifest.
+Show 23 immutable Yeoman identities, unique GUIDs/tools/routes, parameter schemas, and descriptions that
+all state **Use when** plus **Do not use**. Contrast nearby boundaries: incident analysis versus incident
+decision; recovery review versus customer update; case escalation versus workload balancing.
 
-## 1:00-2:00 - Host and state boundary
+## 1:00-2:00 - Every component reports what is visible
 
-Open `ServiceCopilotComponentBase.tsx`, `ServiceThemeProvider.tsx`, and `sessionStore.ts`. Show the persistent React 18 root, owner-document Griffel renderer, host-authoritative full-screen request, Copilot bridge context, and guarded session-only receipts.
+Open `ServiceInlineExperiences.tsx`, `ServiceApp.tsx`, and `ServiceCopilotComponentBase.tsx`. Show the
+23-intent `visibleSummary` map, specialized case/incident/capability updates, snapshot deduplication, and
+`updateModelContextAsync` publishing text plus structured content. The host receives intent, route,
+display mode, selected case/customer/capability, query/view, and a bounded description of the rendered UX.
 
-## 2:00-3:00 - Coherent offline service graph
+## 2:00-3:00 - One coherent offline graph, not hardcoded screenshots
 
-Open `domain.ts` and `domain.test.ts`. Show 60 customers, 500 cases, Alpine House coherence, and pure SLA, priority, incident, and recovery calculations. Run `npm run test`; report the discovered total accurately.
+Open `domain.ts` and `domain.test.ts`. Show 12 curated customers (three per region), 500 cases, four
+canonical customer stories, customer-owned constellation nodes, distinct recovery portfolios, and
+explicit or deterministic evidence for every case. Run `npm test`; report the current discovered total.
 
-## 3:00-4:00 - D3 data products
+## 3:00-4:00 - Coordinated visual data products
 
-Open `visualizations/serviceGeometry.ts` and `ServiceCharts.tsx`. Show D3 scales/shapes, Natural Earth projection, React-owned marks, exact-value tables, keyboard-selectable map marks, and geometry tests proving changed inputs alter paths and membership.
+Open `visualizations/serviceGeometry.ts` and `ServiceCharts.tsx`. Show D3 scales/shapes, Natural Earth
+projection, exact-value tables, customer portfolio and workload matrices, incident network, and the
+Service Operations period/region/product state. Change filters in the harness to prove paths, map marks,
+driver bars, KPIs, and recovery exposure all redraw from one state.
 
-## 4:00-5:00 - Evidence and package gates
+## 4:00-5:00 - Host and release evidence
 
-Run `npm run build`. Explain the ordered catalog, React, media, routing, gallery, publication, test, generated-plugin, package-output, and release-evidence checks. Open `assets/release-evidence.json` and the final `.sppkg`. State that authenticated Workbench CSP, routing, iframe focus, forced colors, and host screen-reader behavior remain an external tenant gate.
+Open `ServiceThemeProvider.tsx`, `sessionStore.ts`, and `assets/release-evidence.json`. Show the persistent
+React 18 root, owner-document Griffel rendering, responsive labeled/icon-only full-screen control,
+host-authoritative display mode, and session-only receipts. Run `npm run build`: catalog, React, routing,
+media, gallery, publication, tests, plugin, package output, and release hashes must all pass. Authenticated
+iframe focus, forced-colors, screen-reader output, and public media rights remain explicit external gates.

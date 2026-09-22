@@ -3,8 +3,8 @@
     { "title": "Resolve a customer issue", "text": "Build a resolution plan for Alpine House's store activation issue.", "tool": "BuildResolutionPlan" },
     { "title": "Priority queue", "text": "Show the customer cases that need my judgment now.", "tool": "GetPriorityServiceQueue" },
     { "title": "Incident signal", "text": "Are today's activation cases isolated or a broader incident?", "tool": "DetectServiceIncident" },
-    { "title": "Customer health", "text": "Show why Northwind's service health is falling.", "tool": "ExploreCustomerHealth" },
-    { "title": "Recovery decision", "text": "Review the recovery options for case ZCR-1048.", "tool": "ReviewServiceRecovery" },
+    { "title": "Customer portfolio", "text": "Which customer relationships need leadership attention?", "tool": "ExploreCustomerHealth" },
+    { "title": "Service operations", "text": "Show where service performance needs leadership intervention.", "tool": "ExploreServicePerformance" },
     { "title": "Explore capabilities", "text": "Explore what the Customer Resolution agent can do.", "tool": "ExploreAgentCapabilities" }
   ]
 }

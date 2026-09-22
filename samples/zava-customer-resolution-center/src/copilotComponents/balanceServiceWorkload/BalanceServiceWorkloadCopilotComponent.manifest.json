@@ -16,7 +16,7 @@
     {
       "name": "BalanceServiceWorkload",
       "description": {
-        "default": "Simulate skill-aware workload changes. Do not silently reassign cases."
+        "default": "Use when leadership asks where capacity creates SLA risk or how work could move across teams. Do not use for one case escalation or silent reassignment."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/balanceServiceWorkload/BalanceServiceWorkloadCopilotComponentProperties.js:default;"

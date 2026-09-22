@@ -1,0 +1,167 @@
+{
+  "generatedAt": "2026-09-21T17:31:41.723Z",
+  "totalComponents": 23,
+  "screenshots": [
+    {
+      "intent": "BalanceServiceWorkload",
+      "file": "inline-balance-service-workload.png",
+      "layout": "workload-capacity-risk-matrix",
+      "entry": "detail",
+      "alt": "Inline Balance Service Workload Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "BuildResolutionPlan",
+      "file": "inline-build-resolution-plan.png",
+      "layout": "BuildResolutionPlan-case-detail",
+      "entry": "detail",
+      "alt": "Inline Build Resolution Plan Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "ComposeCustomerUpdate",
+      "file": "inline-compose-customer-update.png",
+      "layout": "ComposeCustomerUpdate-case-detail",
+      "entry": "detail",
+      "alt": "Inline Compose Customer Update Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "CoordinateFieldService",
+      "file": "inline-coordinate-field-service.png",
+      "layout": "CoordinateFieldService-case-detail",
+      "entry": "detail",
+      "alt": "Inline Coordinate Field Service Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "CreateKnowledgeFromResolution",
+      "file": "inline-create-knowledge-from-resolution.png",
+      "layout": "CreateKnowledgeFromResolution-case-detail",
+      "entry": "detail",
+      "alt": "Inline Create Knowledge From Resolution Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "DetectServiceIncident",
+      "file": "inline-detect-service-incident.png",
+      "layout": "incident-detection-threshold-graph",
+      "entry": "detail",
+      "alt": "Inline Detect Service Incident Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "DiagnoseCaseEvidence",
+      "file": "inline-diagnose-case-evidence.png",
+      "layout": "DiagnoseCaseEvidence-case-detail",
+      "entry": "detail",
+      "alt": "Inline Diagnose Case Evidence Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "ExploreAgentCapabilities",
+      "file": "inline-explore-agent-capabilities.png",
+      "layout": "capability-explorer-scenario-gallery",
+      "entry": "detail",
+      "alt": "Inline Explore Agent Capabilities Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ExploreCustomerHealth",
+      "file": "inline-explore-customer-health.png",
+      "layout": "customer-health-portfolio-matrix",
+      "entry": "detail",
+      "alt": "Inline Explore Customer Health Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ExploreRecurringServiceDrivers",
+      "file": "inline-explore-recurring-service-drivers.png",
+      "layout": "recurring-service-driver-pareto",
+      "entry": "detail",
+      "alt": "Inline Explore Recurring Service Drivers Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ExploreRegionalServiceImpact",
+      "file": "inline-explore-regional-service-impact.png",
+      "layout": "regional-service-impact-map",
+      "entry": "detail",
+      "alt": "Inline Explore Regional Service Impact Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ExploreServicePerformance",
+      "file": "inline-explore-service-performance.png",
+      "layout": "service-performance-demand-river",
+      "entry": "detail",
+      "alt": "Inline Explore Service Performance Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "GetPriorityServiceQueue",
+      "file": "inline-get-priority-service-queue.png",
+      "layout": "priority-queue-ranked-judgment",
+      "entry": "detail",
+      "alt": "Inline Get Priority Service Queue Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ManageCaseEscalation",
+      "file": "inline-manage-case-escalation.png",
+      "layout": "ManageCaseEscalation-case-detail",
+      "entry": "detail",
+      "alt": "Inline Manage Case Escalation Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "ManageCustomerCommitments",
+      "file": "inline-manage-customer-commitments.png",
+      "layout": "commitment-bilateral-promise-ledger",
+      "entry": "detail",
+      "alt": "Inline Manage Customer Commitments Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "PlanCustomerWinBack",
+      "file": "inline-plan-customer-win-back.png",
+      "layout": "winback-trust-recovery-plan",
+      "entry": "detail",
+      "alt": "Inline Plan Customer Win Back Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ReviewEntitlementCoverage",
+      "file": "inline-review-entitlement-coverage.png",
+      "layout": "ReviewEntitlementCoverage-case-detail",
+      "entry": "detail",
+      "alt": "Inline Review Entitlement Coverage Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "ReviewIncidentResponse",
+      "file": "inline-review-incident-response.png",
+      "layout": "incident-response-consequence-review",
+      "entry": "detail",
+      "alt": "Inline Review Incident Response Copilot component showing its actionable default experience."
+    },
+    {
+      "intent": "ReviewServiceRecovery",
+      "file": "inline-review-service-recovery.png",
+      "layout": "ReviewServiceRecovery-case-detail",
+      "entry": "detail",
+      "alt": "Inline Review Service Recovery Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "RunServiceQualityReview",
+      "file": "inline-run-service-quality-review.png",
+      "layout": "RunServiceQualityReview-case-detail",
+      "entry": "detail",
+      "alt": "Inline Run Service Quality Review Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "StartExpertSwarm",
+      "file": "inline-start-expert-swarm.png",
+      "layout": "StartExpertSwarm-case-detail",
+      "entry": "detail",
+      "alt": "Inline Start Expert Swarm Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "TrackResolutionOutcome",
+      "file": "inline-track-resolution-outcome.png",
+      "layout": "TrackResolutionOutcome-case-detail",
+      "entry": "detail",
+      "alt": "Inline Track Resolution Outcome Copilot component showing its actionable detail experience."
+    },
+    {
+      "intent": "TriageCustomerIssue",
+      "file": "inline-triage-customer-issue.png",
+      "layout": "triage-structured-intake",
+      "entry": "detail",
+      "alt": "Inline Triage Customer Issue Copilot component showing its actionable default experience."
+    }
+  ]
+}

@@ -5,5 +5,5 @@
   "name_for_human": "Zava Resolution",
   "description_for_human": "Resolve customer exceptions with evidence, empathy, policy, and accountable action.",
   "description_for_model": "Use one focused tool for the requested customer-resolution job. Prefer information tools for analysis, submit tools for editable drafts, and review tools for consequential decisions. Never imply that a session receipt changed a production system.",
-  "contact_email": "publisher@contoso.com"
+  "contact_email": "pnp@microsoft.com"
 }

@@ -16,7 +16,7 @@
     {
       "name": "PlanCustomerWinBack",
       "description": {
-        "default": "Build a guarded trust-recovery plan. Do not initiate outreach automatically."
+        "default": "Use when a customer relationship needs a guarded multi-action trust and retention plan. Do not use for one recovery concession or automatic outreach."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/planCustomerWinBack/PlanCustomerWinBackCopilotComponentProperties.js:default;"

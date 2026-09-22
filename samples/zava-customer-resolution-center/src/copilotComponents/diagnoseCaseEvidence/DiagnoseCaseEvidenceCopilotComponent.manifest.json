@@ -16,7 +16,7 @@
     {
       "name": "DiagnoseCaseEvidence",
       "description": {
-        "default": "Compare diagnostic hypotheses and signals. Do not confirm unsupported causes."
+        "default": "Use when a named case needs competing hypotheses compared against verified, contrary, and missing evidence. Do not use to confirm an unsupported cause or build the final plan."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/diagnoseCaseEvidence/DiagnoseCaseEvidenceCopilotComponentProperties.js:default;"

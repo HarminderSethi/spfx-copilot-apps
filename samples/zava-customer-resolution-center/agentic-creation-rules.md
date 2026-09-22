@@ -160,7 +160,9 @@ approved sample values, but keep the actions and gates.
    configure and validate manifests, adapters, schemas, bundles, localized resources, registrations,
    and tool descriptions. The validator MUST fail on duplicate GUID/tool/description, wrong counts,
   placeholder descriptions/properties, missing registrations, missing generated files, duplicate bundle
-  membership, or a manifest absent from the approved bundle strategy.
+  membership, or a manifest absent from the approved bundle strategy. Every description MUST include a
+  positive `Use when` trigger and a nearest-sibling `Do not use` boundary; generate collision tests for
+  prompts that could plausibly route to either sibling.
 4. **Install and pin the shared stack once.** React 18, Fluent v9, Griffel, focused D3 modules/types,
    Jest, and only approved optional libraries. Run a clean compile before feature implementation.
 5. **Build and visually approve the premium shared host before 30 bodies.** Implement current-user
@@ -179,7 +181,10 @@ approved sample values, but keep the actions and gates.
 7. **Classify every intent by operation.** Information/status, Review/decision, or Request/submit.
    Implement one complete vertical slice of each operation before scaling siblings.
 8. **Give every intent a purpose-designed body.** Shared framing/workflow mechanics are allowed;
-   shared generic evidence/review bodies are not. Every root/stage gets a unique `data-layout` identity.
+  shared generic evidence/review bodies are not. Every root/stage gets a unique `data-layout` identity.
+  Inline answers one conversational question with one dominant visual/list/form. Split independent
+  chart questions into separately generated components; reserve coordinated multi-chart dashboards for
+  full screen.
 9. **Audit every visible control.** A retained filter/toggle/select/button MUST change records,
    grouping, chart marks, calculations, selected evidence, or workflow stage. Remove unsupported
    decorative affordances. Do not ship controls that only change a caption.
@@ -195,7 +200,8 @@ approved sample values, but keep the actions and gates.
   decorative coordinate plot is not a map.
 12. **Add focused test matrices while implementing.** Assert catalog/layout uniqueness, all information
   defaults, retained control effects, selected detail, no-match/error fallback, all review safeguards,
-  and every form's prefill/validation/Edit/review/confirm/receipt/reset lifecycle.
+  and every form's prefill/validation/Edit/review/confirm/receipt/reset lifecycle. Assert every tool
+  publishes one activation snapshot plus updated snapshots for material visible-state changes.
 13. **Create a local visual harness before Workbench review.** It MUST render every intent, width, and
   theme without a tenant. Automate screenshots plus runtime, overflow, image, control-label, chart,
   keyboard-focus, reduced-motion, and 200% browser-zoom checks. Save a machine-readable evidence file.
@@ -477,6 +483,25 @@ phased implementation. If only planning is requested, stop before dependency or 
   release-evidence automation before scale-out. The final build regenerates and validates package hashes,
   bundle/media counts, screenshots, routing matrix, and README/demo links from current artifacts. Never
   hand-copy remembered counts or hashes into release claims.
+- **G29 - Every tool owns one unique LLM routing boundary.** Each generated tool description MUST state
+  both a positive trigger (`Use when ...`) and the nearest negative boundary (`Do not use ...`). The
+  catalog also owns one realistic prompt, decision question, outcome, excluded sibling intents, and
+  normalized properties. Validators fail duplicate or placeholder descriptions, missing positive/
+  negative boundaries, route collisions, and untested collision pairs. A different component name over
+  the same routing semantics is not a new intent.
+- **G30 - One conversational question, one focused inline answer.** Inline is not a dashboard canvas.
+  Give one immediate question one dominant visual/list/form and only the supporting context required to
+  interpret or act on it. If independent user questions need different charts (for example trend, map,
+  and driver Pareto), promote them to separately routed, final-named Yeoman components when each earns
+  intent status. Coordinate those charts together only in full screen, where multi-view analysis is the
+  explicit job. Do not stack several independently meaningful charts into one inline component merely
+  to show breadth.
+- **G31 - Every rendered state tells Copilot what the user can see.** Every inline and full-screen
+  activation MUST publish one complete, bounded, purpose-specific semantic snapshot after the useful
+  view commits. Update it after material list/detail, selection, filter, chart, workflow, receipt, or
+  route changes. Include intent, route/view, display mode, visible entity IDs/labels, active filters,
+  workflow stage, visible summary, and safe next actions. Deduplicate equal snapshots. Generic catalog
+  outcome text alone is insufficient; the summary must identify the actual visual/data currently shown.
 
 ---
 
@@ -882,6 +907,14 @@ type from component names at render time.
   intents and asserts the expected count of unique default layouts.
 - A shared application root owns only framing: workspace accent, title/summary, full-screen action,
   routed body, and status/context footer. It does not own a universal intent body.
+- **Inline density budget:** the settled first view has one dominant answer and normally no more than
+  one chart/data visualization. Supporting exact-value tables, compact evidence, legends, and one local
+  action area are allowed when they explain that answer. Two visuals may coexist only when they answer
+  one inseparable question and selection is coordinated. Three independently useful charts MUST NOT be
+  shipped as one inline experience; generate separately routed components and join them in full screen.
+- Before splitting, write the three candidate user questions. If each can be asked naturally, has a
+  distinct `Use when`/`Do not use` boundary, and produces a useful standalone answer, each earns its own
+  final-named Yeoman component. If not, keep the material as supporting detail or full-screen analysis.
 
 ### 6.2 Truthful control audit
 
@@ -970,6 +1003,11 @@ This is not technical API documentation and not a static help page.
 
 **Inline education UX:**
 
+- List every current operational scenario. Do not truncate with an unlabelled `slice` or show a total
+  count that cannot be reached. Use search/filter plus Previous/Next paging or virtualization when all
+  items do not fit. Display visible range, total result count, and page position; reset paging when the
+  query/filter changes and publish range/page/selected-preview state to Copilot.
+
 - Lead with business language: “What are you trying to accomplish?” not component/tool names.
 - Group scenarios into 4-7 understandable categories based on the agent domain (for Zava: My Work,
   Project delivery, Portfolio decisions, Approvals). Show counts and searchable/filterable scenarios.
@@ -1043,13 +1081,18 @@ transport or send raw protocol messages.
 | Tell Copilot what the UI currently shows | `copilotBridge.updateModelContextAsync(...)` | Publish one complete semantic snapshot; the latest call replaces the previous context and does not start a chat turn. |
 | Ask Copilot to continue the conversation | `copilotBridge.sendFollowUpMessageAsync(...)` | User-initiated only; build content with `createCopilotTextContent` and handle host rejection. |
 | Expand the current experience | `requestDisplayModeAsync('fullscreen')` | Offer only when full screen is declared/available; wait for `hostContext.displayMode` instead of changing mode locally. |
-| Resize inline content | automatic host sizing; rarely `requestSizeChangeAsync(...)` | Prefer the framework observer; manual sizing must respect advertised container dimensions. |
+| Resize inline content | automatic host sizing; `requestSizeChangeAsync(width, height)` when needed | Prefer the framework observer. If list/detail, workflow, filter, or responsive changes are not reflected reliably, observe the rendered inline root, clamp to `hostContext.containerDimensions`, batch per animation frame, deduplicate equal sizes, skip full screen, and disconnect on teardown. |
 | Open an external destination | `copilotBridge.openLinkAsync(...)` | User-initiated, valid HTTPS URL, and handle `isError`. Internal routes stay inside React state. |
 | Execute or refresh server work | `copilotBridge.callServerToolAsync(...)` | Use for an actual MCP server operation, not for local UI transitions; inspect `isError`. |
 | Read server resources | `copilotBridge.readServerResourceAsync(...)` | Use for declared server resources; keep large payloads out of model context. |
 
 **Model-context snapshots:**
 
+- Publish an initial purpose-specific snapshot for **every** component after its first useful state
+  commits. A static information body still needs context; do not limit reporting to forms or components
+  with interactive filters. The activation summary names the visible visual grammar and decisive data
+  (for example demand river, selected regional map, ranked queue, evidence canvas, or review draft), not
+  merely the catalog outcome.
 - Every inline and full-screen root defines a typed `IModelContextSnapshot` containing at minimum the
   intent/tool key, display mode, semantic route/view, selected entity IDs and labels, active filters,
   visible summary, workflow stage, and available next actions. Full screen adds its focused workspace
@@ -1058,6 +1101,10 @@ transport or send raw protocol messages.
   mode/route change, material filter or selection change, review entry, and confirmed receipt. Coalesce
   rapid changes and deduplicate by a stable semantic signature. Never call the bridge from render or
   send on every keystroke, animation frame, hover, focus event, or chart redraw.
+- List/detail experiences publish list result count/query before selection, selected entity and visible
+  detail after drill-in, and restored list state after Back. Paginated surfaces publish visible range,
+  total count, page, active filters, and selected preview. Charts publish the filter/selection values
+  that materially determine the marks, paths, coordinates, hierarchy, or exact-value table.
 - Prefer `structuredContent` for stable IDs/state and a short `content` summary for model grounding.
   Include only what the user can currently see or has explicitly selected. Do not send hidden records,
   secrets, access tokens, raw telemetry, or unconfirmed sensitive/free-text draft values. For a form,
@@ -1780,11 +1827,18 @@ samples/<name>/
   it is not a generic card/KPI layout, thin accent-line skin, or initials-only people experience.
 - [ ] Catalog-driven configure/validate scripts pass: unique GUIDs/tools/descriptions, expected bundles,
   schemas, resources, registrations, and no scaffold placeholders.
+- [ ] Every tool description has one tested `Use when` trigger and `Do not use` nearest-sibling
+  boundary; positive, negative, and collision prompts cover every current tool.
 - [ ] Copilot Component (no web part / no property pane); Heft; target-profile React 18 runtime/types
   pinned and single-versioned in the application graph; only the generated isolated SP loader React 17
   copy is accepted; one persistent `createRoot`; abortable/idempotent effects; Fluent v9 only.
 - [ ] Focused inline root + approved shared/isolated/hybrid full-screen topology;
   `requestDisplayModeAsync` for the consistent top-right View in full screen control.
+- [ ] Each inline component answers one conversational question with one dominant visual/list/form;
+  independently useful trend/map/driver or other chart questions are separate final-named generated
+  components, while coordinated multi-chart analysis lives in full screen.
+- [ ] Inline size changes are verified in the tenant host. Where automatic sizing is insufficient,
+  `requestSizeChangeAsync(width, height)` is bounded, batched, deduplicated, inline-only, and cleaned up.
 - [ ] Every primary workspace has a useful default dashboard; navigation orientation is justified by
   workspace count/labels/workflow and uses the available mobile, desktop, and projector canvas.
 - [ ] Workspace purpose matrix covers persona, competitor/category benchmark, data grain, decision
@@ -1797,6 +1851,9 @@ samples/<name>/
 - [ ] Every inline/full-screen journey publishes a bounded, deduplicated semantic snapshot with
   `updateModelContextAsync`; each sample demonstrates an explicit user-triggered follow-up; bridge
   rejection/error paths and no-automatic-message behavior are tested.
+- [ ] Every component publishes one purpose-specific activation snapshot naming the actual visible UX
+  and data; list/detail, paging, filter, chart selection, workflow, receipt, and Back transitions publish
+  updated visible state without hidden/sensitive payloads.
 - [ ] Message-driven update demo works end to end: current full-screen selection grounds Copilot, chat
   or an explicit message action routes to the domain-appropriate update tool, and fresh tool properties
   open a prefilled Draft -> Validate -> Review -> Confirm -> Receipt flow without auto-submission.
@@ -1808,7 +1865,9 @@ samples/<name>/
 - [ ] Operation-aware information/review/submit dispatchers; unique `data-layout` identities; no generic
   fallback body or shared domain review evidence.
 - [ ] If the catalog has 11+ operational inline tools, one generated Agent Capability Explorer exists,
-  complete education metadata validates, and the final conversation starter routes to it.
+  complete education metadata validates, and the final conversation starter routes to it. Every
+  operational scenario is reachable through search/filter and paging/virtualization; visible range,
+  total count, page, and selected preview are accessible and reported to Copilot.
 - [ ] Single stable-key theme provider; Griffel renderer targets `ownerDocument`; tokens only; no
   `background` shorthand; no inline styles.
 - [ ] Shared mode-root error boundary provides localized accessible recovery; event-handler/async

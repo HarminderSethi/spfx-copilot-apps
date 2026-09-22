@@ -16,7 +16,7 @@
     {
       "name": "ExploreCustomerHealth",
       "description": {
-        "default": "Explain relationship health. Do not use for aggregate service operations."
+        "default": "Use when asked about one customer relationship or the cross-customer health and renewal-risk portfolio. Do not use for service-operations backlog analysis."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreCustomerHealth/ExploreCustomerHealthCopilotComponentProperties.js:default;"

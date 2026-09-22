@@ -1,15 +1,15 @@
 # Zava Customer Resolution Center
 
 > [!IMPORTANT]
-> **Status: OFFLINE SHOWCASE IMPLEMENTED - EXTERNAL GATES REMAIN.** All 20 operational Copilot
+> **Status: OFFLINE SHOWCASE IMPLEMENTED - EXTERNAL GATES REMAIN.** All 22 operational Copilot
 > Components plus the capability explorer have immutable Yeoman-generated identities and one shared
-> React 18 bundle. A coherent 60-customer/500-case service graph, purpose-specific inline experiences,
+> React 18 bundle. A coherent 12-customer/500-case service graph, purpose-specific inline experiences,
 > four distinct dashboards, D3 chart/map geometry, persona media, publication automation, and package
 > audits are implemented. Authenticated tenant routing/host accessibility, localization/RTL completion,
 > and public media-rights approval remain explicit release gates.
 
 > **Planned sample type:** self-contained, offline-first SPFx Copilot Components showcase<br>
-> **Planned catalog:** 20 operational inline components + 1 capability explorer<br>
+> **Planned catalog:** 22 operational inline components + 1 capability explorer<br>
 > **Planned full-screen model:** 4 role-aware lenses in one shared application<br>
 > **Reference quality bar:** [Zava Innovation Hub](../zava-innovation-portfolio/README.md) and its
 > [agentic creation rules](../zava-innovation-portfolio/agentic-creation-rules.md)
@@ -32,6 +32,22 @@ Mobile and dark-mode evidence is available in
 [assets/fullscreen-resolution-room-mobile.png](assets/fullscreen-resolution-room-mobile.png) and
 [assets/fullscreen-resolution-room-dark.png](assets/fullscreen-resolution-room-dark.png).
 
+### Complete inline component gallery
+
+| | | |
+| --- | --- | --- |
+| **Balance service workload**<br>![Balance service workload](assets/inline-balance-service-workload.png) | **Build resolution plan**<br>![Build resolution plan](assets/inline-build-resolution-plan.png) | **Compose customer update**<br>![Compose customer update](assets/inline-compose-customer-update.png) |
+| **Coordinate field service**<br>![Coordinate field service](assets/inline-coordinate-field-service.png) | **Create resolution knowledge**<br>![Create resolution knowledge](assets/inline-create-knowledge-from-resolution.png) | **Detect service incident**<br>![Detect service incident](assets/inline-detect-service-incident.png) |
+| **Diagnose case evidence**<br>![Diagnose case evidence](assets/inline-diagnose-case-evidence.png) | **Explore agent capabilities**<br>![Explore agent capabilities](assets/inline-explore-agent-capabilities.png) | **Explore customer health**<br>![Explore customer health](assets/inline-explore-customer-health.png) |
+| **Explore service performance**<br>![Explore service performance](assets/inline-explore-service-performance.png) | **Priority service queue**<br>![Priority service queue](assets/inline-get-priority-service-queue.png) | **Manage case escalation**<br>![Manage case escalation](assets/inline-manage-case-escalation.png) |
+| **Explore regional service impact**<br>![Explore regional service impact](assets/inline-explore-regional-service-impact.png) | **Explore recurring service drivers**<br>![Explore recurring service drivers](assets/inline-explore-recurring-service-drivers.png) | **Manage customer commitments**<br>![Manage customer commitments](assets/inline-manage-customer-commitments.png) |
+| **Plan customer win-back**<br>![Plan customer win-back](assets/inline-plan-customer-win-back.png) | **Review entitlement coverage**<br>![Review entitlement coverage](assets/inline-review-entitlement-coverage.png) | **Review incident response**<br>![Review incident response](assets/inline-review-incident-response.png) |
+| **Review service recovery**<br>![Review service recovery](assets/inline-review-service-recovery.png) | **Run service quality review**<br>![Run service quality review](assets/inline-run-service-quality-review.png) | **Start expert swarm**<br>![Start expert swarm](assets/inline-start-expert-swarm.png) |
+| **Track resolution outcome**<br>![Track resolution outcome](assets/inline-track-resolution-outcome.png) | **Triage customer issue**<br>![Triage customer issue](assets/inline-triage-customer-issue.png) | |
+
+The machine-readable mapping from component intent to screenshot, layout, entry mode, and alt text is
+[assets/component-screenshot-index.json](assets/component-screenshot-index.json).
+
 ## Demo and review assets
 
 - [Zava-Customer-Resolution-4-Minute-Keynote.md](Zava-Customer-Resolution-4-Minute-Keynote.md)
@@ -40,9 +56,9 @@ Mobile and dark-mode evidence is available in
 - [Zava-Customer-Resolution-Designer-Review.md](Zava-Customer-Resolution-Designer-Review.md)
 - [Zava-Customer-Resolution-Routing-Matrix.md](Zava-Customer-Resolution-Routing-Matrix.md)
 
-The tenant-free matrix renders all 21 tools at standard light, narrow light, and standard dark, plus
+The tenant-free matrix renders all 23 tools at standard light, narrow light, and standard dark, plus
 all four dashboard defaults at keynote light, desktop dark, and mobile light. The current matrix has
-75 captures, zero runtime/overflow/image/chart failures, and 25 unique layout identities. Local evidence
+81 captures, zero runtime/overflow/image/chart failures, and 38 unique layout identities. Local evidence
 does not substitute for authenticated Workbench CSP, routing, iframe focus, forced-colors, or host
 screen-reader validation.
 
@@ -59,9 +75,9 @@ npm run build
 
 The ready-to-deploy offline package is
 [sharepoint/solution/zava-customer-resolution-center.sppkg](sharepoint/solution/zava-customer-resolution-center.sppkg).
-The validated package is 328,835 bytes with SHA-256
-`5a3a94d0cc7d5f374b1eaca0e69f7e364c28e48ddf3e3186aa2c7a7cc6a15984`. It contains one 514,197-byte
-hashed JavaScript asset, one current agent ZIP, five unique provenance-matched portraits, and 21
+The validated package is 365,327 bytes with SHA-256
+`bc6176d04d95a79d9b0aced16cca6c3cbaf82a587c26f760c7c46e40e3c55736`. It contains one 585,614-byte
+hashed JavaScript asset, one current agent ZIP, five unique provenance-matched portraits, and 23
 Copilot Component definitions.
 
 ## Business story
@@ -186,7 +202,7 @@ dashboard enlarged from inline.
 
 | Lens | Persona and category benchmark | Decision question and data grain | Unique default and work | Must not become |
 | --- | --- | --- | --- | --- |
-| **My Queue** | Amina Yusuf, senior service representative; omni-channel agent workspace and skills-based queue patterns. | “What needs my judgment now?” Case and next-action grain. | Ranked cases beside one selected case, SLA consequence, prepared work, and a keyboard-efficient next action. Triage, plan, communicate, escalate, and verify. | A KPI dashboard or a miniature Resolution Room. |
+| **My Queue** | Megan Bowen, customer success manager; omni-channel judgment queue and customer-priority patterns. | “What needs my judgment now?” Case and next-action grain. | Ranked cases beside one selected case, SLA consequence, prepared work, and a keyboard-efficient next action. Prioritize, plan, communicate, escalate, and verify. | A KPI dashboard or a miniature Resolution Room. |
 | **Customer 360** | Megan Bowen, customer success manager; relationship health, success planning, and commitment-management patterns. | “Why does this issue matter to the relationship?” Customer, goal, commitment, and interaction grain. | Relationship constellation, product adoption, service history, bilateral promises, sentiment movement, and retention exposure. Coordinate follow-up, recovery, and win-back. | A CRM field dump or a duplicate case timeline. |
 | **Resolution Room** | Pradeep Gupta, product specialist; major-case, diagnostic workbench, and collaborative swarm patterns. | “What is true, what should we try, and is it safe to act?” Evidence, hypothesis, plan-step, and incident-candidate grain. | Evidence canvas as the dominant workspace, coordinated with diagnostics, SLA consequence, experts, incident signal, and bounded action review. | A generic dashboard, chat transcript, or customer-profile page. |
 | **Service Operations** | Joni Sherman, VP Customer Operations; service operations command, incident, quality, and workforce patterns. | “Where will intervention prevent customer harm?” Cohort, queue, region, driver, and outcome grain. | Demand-to-resolution river, incident emergence, SLA distribution, recovery outcome/cost, capacity, quality, and named interventions. | Four KPI cards or an enlarged queue. |
@@ -202,18 +218,34 @@ anchored to customer goals and commitments. Service history, product adoption, c
 sentiment reveal why the current issue matters. Sensitive commercial data is permission-aware in the
 future live adapter and clearly marked in mock mode.
 
-**Resolution Room** is the keynote workspace. Wide layouts coordinate case evidence, a resolution
-plan, SLA clock, diagnostics, similar-case incident signal, experts, and a bounded action panel. Narrow
-layouts preserve the same order as a sequential workflow. One selected evidence ID coordinates visual,
-source detail, and plan step.
+**Resolution Room** opens an active-resolution portfolio when no case is in context: demand trend,
+incident emergence, active-customer counts, and ranked resolution rooms answer where work is stuck.
+Selecting a room opens case and customer evidence, relationship consequence, SLA, and resolution path;
+**Back to active resolutions** restores the portfolio. Expanding a case-scoped inline component skips
+the portfolio and preserves that exact case. Narrow layouts preserve the same sequence.
 
 **Service Operations** answers where leadership action changes outcomes. It uses unframed analytical
 regions, not a grid of equal KPI cards. A service demand river, incident emergence map, SLA distribution,
 recovery cost/outcome matrix, and recurring-driver Pareto coordinate through shared filters and selection.
 
+### Leadership visual answers
+
+The catalog keeps 23 immutable tools and promotes three distinct leadership chart questions instead of combining
+near-duplicate summary components:
+
+| Leadership question | Owning inline component | Visual answer |
+| --- | --- | --- |
+| Where is demand changing, and where should leadership intervene? | `ExploreServicePerformance` | Demand-to-resolution river, projected global impact map, recurring-driver Pareto, and exact tables. |
+| Is one customer issue becoming a broader incident? | `DetectServiceIncident` | Threshold-controlled cohort graph with related and contrary cases. |
+| Where is capacity creating customer-facing SLA risk? | `BalanceServiceWorkload` | Capacity-versus-SLA-risk bubble matrix sized by open demand, with exact team values. |
+| Where is resolution work stuck across customers? | Resolution Room unscoped entry | Active-customer portfolio, demand river, incident emergence, and ranked drill-in rooms. |
+
+This intentionally contrasts charts, map, network graph, matrix, portfolio, and customer constellation
+layouts with the review forms and queues elsewhere in the catalog.
+
 ## Inline component portfolio
 
-The target is **20 operational Copilot Components plus one education component**. The expanded catalog
+The target is **22 operational Copilot Components plus one education component**. The expanded catalog
 covers the full role system: representative, supervisor, product specialist, field coordinator,
 recovery approver, customer success manager, knowledge lead, quality lead, and service executive.
 Supporting modules
@@ -222,7 +254,7 @@ source inspection belong inside the owning component and must not become separat
 
 | Model | Count | Required contract |
 | --- | ---: | --- |
-| Information / interactive analysis | 9 | Answer the question immediately, then allow material filtering, selection, comparison, or chart-mode changes. |
+| Information / interactive analysis | 11 | Answer the question immediately, then allow material filtering, selection, comparison, or chart-mode changes. |
 | Submit / create | 6 | Prompt-prefilled draft -> validation -> review -> explicit confirmation -> session receipt. |
 | Review / decision | 5 | Queue/record -> evidence and consequence -> decision draft -> confirmation -> session receipt. |
 | Education / discovery | 1 | Search/filter all operational scenarios, copy realistic prompts, and preview without confirming actions. |
@@ -242,7 +274,9 @@ source inspection belong inside the owning component and must not become separat
 | 9 | `ComposeCustomerUpdate` | Submit | `caseId`, `channel`, `language`, `audience`, `tone`, `purpose`, `includeCommitments` | Editable message with recipient/channel, verified facts, explicit commitments, next update time, tone control, and unsupported-claim warnings. | Change language/channel/tone; accept/reject draft sections; edit commitments. Send preview lists recipients and promises. Confirm creates mock send receipt. | `customer-360/communications`; preserves message draft, source facts, language, and review step. |
 | 10 | `TrackResolutionOutcome` | Information | `caseId`, `customerId`, `outcome`, `period`, `selectedMetric` | Resolution scoreline for SLA, customer confirmation, reopen risk, recovery cost, next check, and owner. | Metric and period change evidence; record confirmation or schedule follow-up through reviewed session action. | `customer-360/outcomes`; preserves customer/case, metric, period, and selected evidence. |
 | 11 | `CreateKnowledgeFromResolution` | Submit | `caseId`, `audience`, `product`, `version`, `articleType`, `language` | Article canvas with problem, verified resolution, applicability, exclusions, steps, sources, owner, and review date. | Edit applicability and steps; remove sensitive/customer-specific content; validation checks evidence and unsupported generalization. Confirm creates draft article receipt. | `resolution-room/knowledge`; preserves article draft, evidence, validation, and step. |
-| 12 | `ExploreServicePerformance` | Information | `period`, `region`, `team`, `product`, `channel`, `metric`, `selectedDriverId` | Leadership view with demand, SLA, resolution quality, sentiment, recovery cost, incident drivers, and named exceptions. | Filters rebuild models; chart/table mode, metric, and selection coordinate exact values and action owners. | `service-operations/command`; preserves filters, metric, mode, and driver. |
+| 12 | `ExploreServicePerformance` | Information | `period`, `product`, `focus`, `selectedId` | Demand-to-resolution river with peak, current backlog, and exact change. | Period/product selection changes trend geometry and exact values in full screen. | `service-operations/demand`; continues into coordinated analytics. |
+| 12a | `ExploreRegionalServiceImpact` | Information | `period`, `region`, `product`, `selectedId` | Projected regional impact map with case volume, SLA risk, CSAT, and exact table. | Region selection changes highlighted geography and regional detail. | `service-operations/regional-impact`; continues into coordinated analytics. |
+| 12b | `ExploreRecurringServiceDrivers` | Information | `period`, `product`, `focus`, `selectedId` | Recurring-driver Pareto ranking avoidable customer effort by cause. | Product selection changes drivers, bars, shares, and exact values in full screen. | `service-operations/recurring-drivers`; continues into coordinated analytics. |
 | 13 | `DiagnoseCaseEvidence` | Information | `caseId`, `diagnosticType`, `product`, `version`, `timeRange`, `selectedSignalId` | Diagnostic workbench with symptom timeline, telemetry, known changes, prior fixes, competing hypotheses, confidence, and evidence gaps. | Selecting signals and excluding bad evidence recalculates hypothesis support; a specialist can promote verified findings into the owning resolution plan. | `resolution-room/diagnostics`; preserves case, hypothesis, time range, signals, and selection. |
 | 14 | `ReviewEntitlementCoverage` | Information | `caseId`, `customerId`, `product`, `requestedRemedy`, `serviceDate`, `region` | Coverage ledger showing contract, warranty, SLA, exclusions, consumption, requested remedy, and effective-date evidence. | Changing remedy/date/product recalculates coverage, response obligation, exception path, and authority without approving anything. | `customer-360/entitlement`; preserves customer/case, remedy scenario, selected clause, and effective date. |
 | 15 | `ManageCaseEscalation` | Review | `caseId`, `targetQueue`, `severity`, `reason`, `ownerId`, `dueAt` | Escalation canvas with current attempts, authority boundary, target team capacity, required context, SLA consequence, and acceptance criteria. | Escalate/return/retain requires target, owner, reason, due time, reviewed evidence package, confirmation, and receipt. | `my-queue/escalation`; preserves case, target, owner, package, and decision draft. |
@@ -251,7 +285,7 @@ source inspection belong inside the owning component and must not become separat
 | 18 | `ManageCustomerCommitments` | Review | `customerId`, `caseId`, `period`, `status`, `selectedCommitmentId` | Promise ledger separating company and customer commitments with owner, source, due date, evidence, risk, and downstream dependency. | Complete/renegotiate/escalate a promise with evidence and customer-impact preview; changes require review and receipt. | `customer-360/commitments`; preserves filters, selected promise, evidence, and action draft. |
 | 19 | `RunServiceQualityReview` | Review | `caseId`, `reviewType`, `criteria`, `selectedFindingId`, `proposedOutcome` | Quality scorecard for process adherence, resolution correctness, communication, knowledge use, customer effort, and coaching evidence. | Reviewers accept/edit findings and record pass/coaching/remediation with named owner and confirmation; no opaque agent quality score. | `service-operations/quality-review`; preserves case, criteria, findings, and outcome draft. |
 | 20 | `PlanCustomerWinBack` | Submit | `customerId`, `riskReason`, `objective`, `offers`, `ownerIds`, `targetDate` | Retention plan with relationship evidence, unresolved harms, stakeholders, recovery actions, commercial guardrails, success measures, and timeline. | Editing actions/offers recalculates cost, authority, customer outcome range, and dependencies. Confirm creates a reviewed win-back plan, not external outreach. | `customer-360/win-back`; preserves customer, plan draft, scenario, owners, and step. |
-| 21 | `ExploreAgentCapabilities` | Education | `query`, `audience`, `operation`, `featuredIntent` | Searchable gallery of all 20 operations with business-language prompts and safe previews. | Filter/search/copy prompt/preview. Submit and review previews stop before confirmation. | Isolated `education/capabilities`; preserves search, filters, and featured intent. |
+| 21 | `ExploreAgentCapabilities` | Education | `query`, `audience`, `operation`, `featuredIntent` | Searchable gallery of all 22 operations with business-language prompts and safe previews. | Filter/search/copy prompt/preview. Submit and review previews stop before confirmation. | Isolated `education/capabilities`; preserves search, filters, and featured intent. |
 
 ### Ownership and routing boundaries
 
@@ -428,7 +462,8 @@ Use exactly six starters; each targets one primary tool.
 
 ## Coherent mock data contract
 
-The offline graph must include at least 60 customers across AMER, EMEA, APAC, and LATAM; 180 contacts;
+The offline graph includes 12 curated customers, three per region across AMER, EMEA, APAC, and LATAM,
+plus 500 linked cases. This keeps the complete customer directory visible while preserving operational scale.
 12 products and versions; 500 cases over 18 months; channels and localized interactions; entitlements;
 SLA policies; orders; product telemetry summaries; knowledge articles; diagnostics; commitments;
 sentiment events; 8 incident candidates; 3 declared incidents; expert skills and availability; recovery
@@ -493,7 +528,7 @@ claimed by the front-end sample.
   `ReviewServiceRecovery`, and exact Resolution Room continuation at narrow and wide widths.
 - [ ] **Gate 4 - Connected hero:** complete Store launch rescue across personas, confirmations, receipts,
   and downstream updates.
-- [ ] **Gate 5 - Catalog:** generate and implement only the approved 20 operational component identities
+- [ ] **Gate 5 - Catalog:** generate and implement only the approved 22 operational component identities
   plus `ExploreAgentCapabilities`;
   validate routing collisions and safe capability previews.
 - [ ] **Gate 6 - Quality:** tests, accessibility, localization/RTL, themes, responsive screenshots,
@@ -511,7 +546,7 @@ claimed by the front-end sample.
 
 ## Definition of done
 
-The future implementation is complete only when all 20 operational inline components are independently
+The future implementation is complete only when all 22 operational inline components are independently
 valuable and routable; the capability explorer safely represents them; all four full-screen lenses have
 a useful default; the three hero scenarios run from one deterministic graph; every consequential action
 uses review, confirmation, and receipt; exact continuation preserves state; signature visuals have
@@ -519,8 +554,8 @@ accessible exact-value alternatives; global, responsive, theme, and accessibilit
 an audited offline package deploys with no runtime data dependency.
 
 Implementation status and validation evidence are tracked in [todo.md](todo.md) and
-[assets/release-evidence.json](assets/release-evidence.json). The local gate currently reports 19 tests,
-zero warnings, 75 visual captures, zero visual failures, 25 unique layout identities, one production
+[assets/release-evidence.json](assets/release-evidence.json). The local gate currently reports 38 tests,
+zero warnings, 81 visual captures, zero visual failures, 38 unique layout identities, one production
 bundle, and zero duplicate media. Local evidence does not claim authenticated host behavior.
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/zava-customer-resolution-center" />

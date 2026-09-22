@@ -16,7 +16,7 @@
     {
       "name": "CoordinateFieldService",
       "description": {
-        "default": "Plan reviewed site visits, parts, people, and windows."
+        "default": "Use when a named case requires site visits, technicians, parts, routes, or access windows. Do not use for digital-only resolution work."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/coordinateFieldService/CoordinateFieldServiceCopilotComponentProperties.js:default;"

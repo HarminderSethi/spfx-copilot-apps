@@ -16,7 +16,7 @@
     {
       "name": "ManageCustomerCommitments",
       "description": {
-        "default": "Review bilateral promises and evidence. Do not infer completion."
+        "default": "Use when company or customer promises need evidence, owners, due dates, renegotiation, or escalation. Do not use to infer completion or draft general updates."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/manageCustomerCommitments/ManageCustomerCommitmentsCopilotComponentProperties.js:default;"

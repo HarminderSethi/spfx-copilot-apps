@@ -53,6 +53,14 @@
           "manifest": "./src/copilotComponents/exploreServicePerformance/ExploreServicePerformanceCopilotComponent.manifest.json"
         },
         {
+          "entrypoint": "./lib/copilotComponents/exploreRegionalServiceImpact/ExploreRegionalServiceImpactCopilotComponent.js",
+          "manifest": "./src/copilotComponents/exploreRegionalServiceImpact/ExploreRegionalServiceImpactCopilotComponent.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/copilotComponents/exploreRecurringServiceDrivers/ExploreRecurringServiceDriversCopilotComponent.js",
+          "manifest": "./src/copilotComponents/exploreRecurringServiceDrivers/ExploreRecurringServiceDriversCopilotComponent.manifest.json"
+        },
+        {
           "entrypoint": "./lib/copilotComponents/diagnoseCaseEvidence/DiagnoseCaseEvidenceCopilotComponent.js",
           "manifest": "./src/copilotComponents/diagnoseCaseEvidence/DiagnoseCaseEvidenceCopilotComponent.manifest.json"
         },

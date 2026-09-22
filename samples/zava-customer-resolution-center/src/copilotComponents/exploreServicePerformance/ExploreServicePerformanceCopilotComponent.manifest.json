@@ -16,7 +16,7 @@
     {
       "name": "ExploreServicePerformance",
       "description": {
-        "default": "Analyze systemic service performance. Do not use for one representative queue."
+        "default": "Use when leadership asks how service demand, backlog, or resolution throughput is moving over time. Do not use for geography, recurring drivers, or one named case."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreServicePerformance/ExploreServicePerformanceCopilotComponentProperties.js:default;"

@@ -16,7 +16,7 @@
     {
       "name": "ReviewServiceRecovery",
       "description": {
-        "default": "Review fair authorized recovery. Do not compose customer communication."
+        "default": "Use when a named case needs a fair, policy-aware recovery or concession decision. Do not use to draft customer communication or a win-back plan."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/reviewServiceRecovery/ReviewServiceRecoveryCopilotComponentProperties.js:default;"

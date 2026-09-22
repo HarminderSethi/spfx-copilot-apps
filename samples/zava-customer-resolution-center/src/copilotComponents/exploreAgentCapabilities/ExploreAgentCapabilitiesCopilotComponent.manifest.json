@@ -16,7 +16,7 @@
     {
       "name": "ExploreAgentCapabilities",
       "description": {
-        "default": "Discover customer-resolution scenarios. Do not use for a specific request."
+        "default": "Use when the user asks what the agent can do or needs help choosing a customer-resolution scenario. Do not use when a specific operational request is already clear."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/exploreAgentCapabilities/ExploreAgentCapabilitiesCopilotComponentProperties.js:default;"

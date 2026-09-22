@@ -16,7 +16,7 @@
     {
       "name": "RunServiceQualityReview",
       "description": {
-        "default": "Review transparent service quality findings. Do not use opaque AI scores."
+        "default": "Use when a resolved or active case needs transparent correctness, compliance, communication, or customer-effort review. Do not use opaque AI scoring or aggregate performance analysis."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/runServiceQualityReview/RunServiceQualityReviewCopilotComponentProperties.js:default;"

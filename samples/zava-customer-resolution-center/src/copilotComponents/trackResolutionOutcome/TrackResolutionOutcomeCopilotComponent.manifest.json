@@ -16,7 +16,7 @@
     {
       "name": "TrackResolutionOutcome",
       "description": {
-        "default": "Verify one customer outcome. Do not use for aggregate performance."
+        "default": "Use when asked whether a named case restored the customer promise and remained resolved. Do not use for aggregate service performance or quality review."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/trackResolutionOutcome/TrackResolutionOutcomeCopilotComponentProperties.js:default;"

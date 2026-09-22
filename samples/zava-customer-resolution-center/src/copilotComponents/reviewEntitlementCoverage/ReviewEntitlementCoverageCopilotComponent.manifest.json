@@ -16,7 +16,7 @@
     {
       "name": "ReviewEntitlementCoverage",
       "description": {
-        "default": "Explain entitlement and SLA coverage. Do not approve compensation."
+        "default": "Use when a named customer or case needs contract, warranty, SLA, exclusion, or remedy coverage explained. Do not use to approve compensation."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/reviewEntitlementCoverage/ReviewEntitlementCoverageCopilotComponentProperties.js:default;"

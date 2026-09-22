@@ -14,16 +14,27 @@ approved.
 
 ## Progress (latest)
 
-> Keynote-quality redesign validated locally on 31 August 2026. The generic prototype was replaced by a
-> coherent 60-customer/500-case service graph, exhaustive 21-intent dispatcher, four distinct dashboard
-> roots, D3-derived charts, real offline Natural Earth projection, exact-value tables, five
-> provenance-matched portraits, and guarded session receipts. The canonical build passes 19 tests with
-> zero warnings. The tenant-free matrix passes 75 captures with zero runtime/overflow/image/chart
-> failures and 25 unique layouts. The audited 328,835-byte `.sppkg` contains one 514,197-byte hashed JS
-> bundle, one current agent ZIP, five unique media files, and 21 definitions; SHA-256 is
-> `5a3a94d0cc7d5f374b1eaca0e69f7e364c28e48ddf3e3186aa2c7a7cc6a15984`. Authenticated tenant behavior,
+> Inline acceptance hardening completed locally on 18 September 2026. Eleven genuinely case-scoped
+> tools now share a catalog-owned navigation contract: no `caseId` opens ranked search, a valid
+> `caseId` opens exact detail, an unknown ID has a designed no-match state, and every detail exposes
+> **Back to case search**. Selection and query changes publish bounded visible state to Copilot. The
+> Teams/Copilot manifest now carries Zava product metadata, and the four-minute keynote focuses on the
+> component UX. The broader keynote-quality redesign provides a coherent 12-customer/500-case service
+> graph, exhaustive 23-intent dispatcher, four distinct dashboard roots, D3-derived charts, a real
+> offline Natural Earth projection, exact-value tables, five provenance-matched portraits, and guarded
+> session receipts. The canonical build passes 38 tests with zero warnings. The tenant-free matrix
+> passes 81 captures with zero runtime/overflow/image/chart failures and 38 unique layouts. The audited
+> 365,327-byte `.sppkg` contains one 585,614-byte hashed JS bundle, one current agent ZIP, five unique
+> media files, and 23 definitions; SHA-256 is
+> `bc6176d04d95a79d9b0aced16cca6c3cbaf82a587c26f760c7c46e40e3c55736`. Authenticated tenant behavior,
 > localization/RTL completion, exhaustive browser interaction semantics, and public media rights remain
 > open and are not claimed complete.
+
+> **Microsoft review readiness, 18 September 2026:** ready for design critique and guided validation;
+> not ready for final functionality/accessibility sign-off. Local alignment, responsive pixels,
+> component uniqueness, case navigation, incident threshold interaction, and workspace continuation
+> are proven. Exact subroutes, selected queue detail, complete workflow context, follow-up invocation,
+> failure-state boards, accessibility evidence, and authenticated host behavior remain open.
 
 ## Approach and sequencing
 
@@ -55,13 +66,17 @@ forced into the main-stage story.
 - [x] Review the current README against the complete agentic creation rules.
 - [x] Inspect the named Revenue Deal Room reference at rendered desktop, mobile, dark, inline, source,
   media, responsive, visual-evidence, demo, and package levels.
-- [x] Reconcile Gate 5 with the stated final target: 20 operational components plus
+- [x] Reconcile Gate 5 with the final target: 22 operational components plus
   `ExploreAgentCapabilities`.
 - [x] Document the implementation thesis: one inspectable resolution object safely advanced by
   different roles, not a sequence of unrelated AI summaries.
 - [x] Define the six-beat keynote and reserve the eight-interface choreography for the extended demo.
 - [x] Approve Alpine House / `ZCR-1048` as the canonical connected hero record.
-- [x] Approve the 20 operational tools plus `ExploreAgentCapabilities` as the immutable current catalog.
+- [x] Approve the 22 operational tools plus `ExploreAgentCapabilities` as the immutable current catalog.
+- [x] Split the overloaded `ExploreServicePerformance` inline answer into three independently routed
+  visuals: demand river, regional impact map (`ddf21976-cb07-42dd-aec6-039d15758666`), and recurring-
+  driver Pareto (`0f88d08f-04ee-47fb-8520-1a5e16a45877`). Keep coordinated multi-chart analysis in
+  full-screen Service Operations only.
 - [x] Approve all exact inline-to-full-screen destinations and ownership/negative-routing boundaries.
 - [x] Confirm that all current tools satisfy at least two promotion tests; move any weaker candidate to
   an internal route before generation.
@@ -114,10 +129,33 @@ forced into the main-stage story.
 - [x] Approve recovery authority bands, incident-declaration authority, sensitive commercial masking,
   and policy-pack assumptions as demo behavior rather than production authorization claims.
 - [ ] Define the exact downstream state change and receipt produced by each keynote confirmation.
-- [ ] Define setup, reset, expected route, timing, narrator point, and screenshot fallback for every
+- [x] Define setup, reset, expected route, timing, narrator point, and screenshot fallback for every
   keynote beat.
 - [ ] Select one explicit Copilot follow-up action and resulting fresh invocation for the required
   message-driven demonstration.
+
+### Inline component acceptance contract
+
+- [x] Audit all 23 component identities, routes, default layouts, operations, and model parameters.
+- [x] Keep all 23 tool IDs/routes unique and all 27+ inline/workspace layout identities distinct.
+- [x] Classify 11 case-scoped tools centrally; do not force case navigation onto aggregate, creation,
+  customer, incident-cohort, commitment, win-back, or capability experiences.
+- [x] For every case-scoped tool, open ranked search when `caseId` is absent and exact detail when it is
+  present; retain an explicit **Back to case search** action from detail and unknown-ID states.
+- [x] Publish current list/detail mode, query, selected case, route, and a bounded visible summary to
+  Copilot whenever the inline view materially changes.
+- [x] Give all 23 generated tool descriptions explicit **Use when** and **Do not use** boundaries for
+  LLM routing; fail intent validation if any component lacks either boundary.
+- [x] Publish a purpose-specific activation summary from every inline intent, including the visible UX
+  - [x] Observe inline rendered dimensions and call `requestSizeChangeAsync(width, height)` when list,
+    detail, workflow, filter, or responsive content size changes; clamp to advertised host dimensions,
+    batch per animation frame, deduplicate equal sizes, and disconnect on teardown.
+  grammar and relevant customer/case/selection/query context; preserve richer dynamic updates for case
+  navigation, incident threshold, and capability selection.
+- [ ] Add browser interaction evidence for search, no-match, selection, back, keyboard focus, and
+  bridge updates across every case-scoped tool.
+- [ ] Extend equivalent reversible navigation to customer-, incident-, commitment-, expert-, and
+  capability-scoped tools using their own entity grain rather than a generic case picker.
 
 ### Package and existing scaffold decisions
 
@@ -141,10 +179,10 @@ forced into the main-stage story.
 
 - [x] Remove the approved untouched placeholder and verify no placeholder source, registration,
   localization, or manifest remains.
-- [x] Generate the 20 operational components with final names using the supported SharePoint Yeoman
+- [x] Generate the 22 operational components with final names using the supported SharePoint Yeoman
   Copilot Component command and the same pinned generator version.
 - [x] Generate `ExploreAgentCapabilities` as its own education component through Yeoman.
-- [x] Verify 21 unique generated component GUIDs, aliases, tool names, schemas, resources, and entries.
+- [x] Verify 23 unique generated component GUIDs, aliases, tool names, schemas, resources, and entries.
 - [x] Configure one shared bundle with exact manifest coverage and no duplicate membership.
 
 ### Supported dependency baseline
@@ -160,7 +198,7 @@ forced into the main-stage story.
 ### Catalog and fail-fast automation
 
 - [x] Create one typed catalog owning operation model, identity, schema, route, preview, prompt,
-  negative-routing boundaries, and education metadata for all 21 components.
+  negative-routing boundaries, and education metadata for all 23 components.
 - [x] Add catalog-driven configure and intent validation scripts.
 - [ ] Add React baseline, routing matrix, media provenance, gallery, publication, generated plugin,
   package output, mock-media, and release-evidence scripts required by the playbook.
@@ -176,7 +214,9 @@ forced into the main-stage story.
 - [x] Define source contracts and lean view models for customers, contacts, sites, products/versions,
   cases, interactions, entitlements, SLA policies, telemetry, diagnostics, knowledge, commitments,
   incidents, experts, recovery policies, communications, outcomes, and quality reviews.
-- [x] Seed at least 60 customers and 500 cases with deterministic cross-record relationships; broader
+- [x] Seed 12 curated customers, exactly three per region, and 500 cases with deterministic cross-record
+  relationships. The reduced customer count is an approved demo decision so **All regions** shows every
+  company without pagination while each region remains concise.
   contact/product-history scale remains an extension target.
   months across AMER, EMEA, APAC, and LATAM.
 - [x] Make Alpine House / `ZCR-1048` coherent across keynote evidence, workflow, policy, receipt,
@@ -226,6 +266,12 @@ forced into the main-stage story.
   snapshots for filters, selections, drafts, and workflow stage.
 - [x] Implement host-authoritative Expand and catalog-owned workspace/route metadata.
 - [ ] Publish bounded deduplicated semantic model context only after committed material state changes.
+- [x] Deduplicate identical model-context snapshots and publish case/list query, capability selection,
+  and incident threshold/cohort changes without conflating generic selection IDs with case IDs.
+- [x] Publish intent, route, display mode, selected entity, query/view, and a bounded purpose-specific
+  visible-state summary for every component activation through `updateModelContextAsync`.
+- [ ] Extend bounded model context to operation stage, reviewed draft, confirmation/receipt, active
+  full-screen lens, and other retained analytical selections; add bridge call-count/error tests.
 - [ ] Send follow-up messages only from explicit user actions with pending, error, and deduplication
   behavior.
 - [ ] Add focused lifecycle, StrictMode cleanup, owner-document, passive-rerender, fresh-invocation,
@@ -235,6 +281,8 @@ forced into the main-stage story.
 
 - [x] Implement `DetectServiceIncident` with deterministic D3 cluster geometry, threshold controls,
   controls that materially rebuild the cohort, contrary evidence, exact records, and table equivalent.
+- [x] Exercise the incident threshold in the browser: changing 72% to 90% updates visible cohort text
+  and exact table classification from six related cases to two.
 - [ ] Continue exactly to `service-operations/incident-detection` with cohort, threshold, dimensions,
   and selected cluster preserved.
 - [ ] Design no-match, partial-evidence, stale-source, and permission-limited states.
@@ -263,7 +311,7 @@ forced into the main-stage story.
   accessible list/table.
 - [x] Add five correctly named persona portraits with hash provenance and reliable fallbacks; public
   redistribution rights remain blocked below.
-- [x] Capture and inspect all 21 intents at 340/760 light and 760 dark plus all four dashboards at
+- [x] Capture and inspect all 23 intents at 340/760 light and 760 dark plus all four dashboards at
   keynote light, desktop dark, and mobile light.
   Resolution Room, recovery review, incident emergence, and a partial-evidence/error state.
 - [ ] Validate runtime, console, image, overflow, focus, keyboard, reduced-motion, and 200% zoom evidence.
@@ -302,6 +350,12 @@ forced into the main-stage story.
 
 - [x] Implement the ranked queue and selected-case action workspace with SLA pressure, entitlement,
   SLA pressure, sentiment, entitlement, ownership, prepared work, and one recommended next action.
+- [x] Make every ranked row selectable and explain its score through visible reasons, owner, impact,
+  status, and SLA consequence in an adjacent decision workspace.
+- [x] Add **Open resolution room** for the selected case and guarded **Mark resolved** -> **Confirm
+  resolved** behavior that removes the item for the demo session and advances to the next priority.
+- [x] Prove the workflow in the browser: select `ZCR-1140`, confirm resolution, reduce the queue from six
+  to five, auto-select `ZCR-1048`, and continue into that exact Resolution Room.
 - [ ] Implement exact routes for `my-queue/new-case`, `my-queue/priority`, and
   `my-queue/escalation`.
 - [ ] Validate that My Queue does not repeat the Resolution Room evidence workspace.
@@ -310,6 +364,23 @@ forced into the main-stage story.
 
 - [x] Implement relationship constellation, customer goals, service history,
   bilateral commitments, sentiment movement, and retention exposure.
+- [x] When no `customerId` is supplied, open a searchable/filterable 12-customer directory with health,
+  goal, region, tier, language, open cases, sites, exposure, and renewal risk; select a customer to open
+  detail and retain **Back to customer search**.
+- [x] Add distinct Alpine House, Northwind Traders, Contoso Retail, and Fabrikam Stores profiles with
+  different goals, health, sites, exposure, case patterns, and bilateral commitments.
+- [x] Give each named customer an explicit canonical case and evidence pack: Alpine activation
+  (`ZCR-1048`), Northwind delivery synchronization (`ZCR-1001`), Contoso payment reconciliation
+  (`ZCR-1002`), and Fabrikam inventory availability (`ZCR-1003`).
+- [x] Use the named case evidence and customer-specific resolution steps in Resolution Room rather than
+  relabeling Alpine evidence or relying on generator coincidences.
+- [x] Guarantee at least three visible evidence records for every one of the 500 Resolution Room cases;
+  preserve explicit canonical evidence and generate deterministic verified/inference/gap packs for the
+  remaining cases.
+- [x] Give every customer owned constellation labels, kinds, weights, and angles; named customers also
+  receive distinct recovery remedies, costs, authority, precedent, and trust outcomes.
+- [x] Prove directory -> Northwind detail -> directory in the browser and capture Alpine detail,
+  Northwind dark detail, and mobile directory states.
 - [ ] Implement exact routes for `customer-360/overview`, `service-recovery`, `communications`,
   `outcomes`, `entitlement`, `commitments`, and `win-back`.
 - [ ] Validate permission-aware commercial treatment and prevent CRM-record-dump composition.
@@ -321,12 +392,24 @@ forced into the main-stage story.
 - [x] Coordinate case evidence, hypotheses, plan dependencies, experts, and incident signal in the
   distinct Resolution Room dashboard.
   recovery consequence, and customer-safe output without nested queues.
+- [x] When no `caseId` is supplied, open an active-resolution portfolio with leadership demand and
+  incident charts plus ranked customer rooms; selecting a room opens case/customer-specific evidence,
+  resolution path, relationship consequence, and **Back to active resolutions**.
+- [x] Preserve selected customer and case across full-screen tab changes; prove portfolio -> Alpine room
+  -> Service Operations -> persisted room -> portfolio in the browser.
 - [ ] Validate sequential narrow-screen order and evidence/action continuity across every route.
 
 ### Service Operations
 
 - [x] Implement demand-to-resolution river, projected global impact map, recovery
   cost/outcome matrix, recurring-driver Pareto, workload, quality, and named interventions.
+- [x] Establish three distinct routed leadership visual answers without adding duplicate component
+  identities: service performance river/map/Pareto, incident cohort graph, and workload capacity/SLA-
+  risk matrix, all with exact-value tables.
+- [x] Replace the static Service Operations dashboard with coordinated period, region, and product
+  filters that update KPIs, demand path, map bubbles/selection, driver bars, and recovery exposure.
+- [x] Verify Today/EMEA/All -> 7 days/APAC/Commerce in the browser changes demand to 1,184, SLA risk to
+  45%, geography, driver mix, path geometry, and recovery exposure to $1.64M.
 - [ ] Implement exact routes for `service-operations/incident-detection`, `command`, `workload`, and
   `quality-review`.
 - [ ] Validate materially different filters/datasets and prevent repeated chart modules or generic KPI
@@ -336,6 +419,13 @@ forced into the main-stage story.
 
 - [ ] Implement stable responsive navigation, workspace identity, keyboard behavior, destination focus,
   and narrow-screen adaptation.
+- [x] Use navigation/current-page semantics for the four workspace roots, make **Open prepared plan**
+  continue from My Queue to Resolution Room, and remove unsupported enabled dashboard actions.
+- [x] Preserve the current inline case selection and query in the full-screen render path.
+- [x] Follow the Zava IT Concierge expand pattern: show an icon-plus-**Full screen** button at suitable
+  inline widths and retain the icon-only accessible control below 620px.
+- [x] Apply the scoped-entry rule: inline `customerId`/`caseId` opens exact detail; direct tab navigation
+  without scope opens the owning customer or resolution portfolio before drill-in.
 - [ ] Validate every catalog destination preserves its declared entity, filters, evidence selection,
   draft/scenario values, and workflow step.
 - [ ] Prove full screen adds role-owned context and operations instead of enlarging inline content.
@@ -347,6 +437,11 @@ forced into the main-stage story.
 - [x] Implement purpose-specific inline roots for `TriageCustomerIssue`, `GetPriorityServiceQueue`,
   `ExploreCustomerHealth`, and `DiagnoseCaseEvidence`.
 - [x] Implement purpose-specific inline roots for `ReviewEntitlementCoverage` and `BalanceServiceWorkload`.
+- [x] Make unscoped `ExploreCustomerHealth` a leadership customer value/risk matrix sized by annual
+  exposure; retain a customer-owned constellation when `customerId` is supplied.
+- [x] Re-audit all 23 inline visual grammars after the full-screen redesign. Keep the immutable catalog;
+  use existing intents for portfolio matrix, river/map/Pareto, incident network, and capacity/risk
+  matrix rather than adding near-duplicate leadership tools.
 
 ### Collaborate, govern, and coordinate
 
@@ -371,16 +466,18 @@ forced into the main-stage story.
 
 ## Phase 7 - Capability explorer and routing education
 
-- [ ] Implement `ExploreAgentCapabilities` from catalog metadata with search, audience/operation
-  filters, selected detail, realistic prompt copy, safe preview, Previous/Next, and featured tour.
+- [x] Implement `ExploreAgentCapabilities` from catalog metadata with search, selected detail, realistic
+  prompt copy, safe preview, and Previous/Next paging across all 22 operational scenarios.
+- [x] Verify browser paging exposes ranges 1-7, 8-14, 15-21, and 22-22; disable Previous on page 1 and
+  Next on page 4, reset to page 1 after search changes, and publish page/range state to Copilot.
 - [ ] Keep `education/capabilities` isolated from operational navigation and preserve its search,
   filters, and featured intent.
 - [ ] Stop review/submit previews before confirmation and label them as demo previews with no action
   applied.
-- [ ] Validate all 20 operational previews, no network/writes, no nested headers, keyboard behavior,
+- [ ] Validate all 22 operational previews, no network/writes, no nested headers, keyboard behavior,
   prompt-copy success/failure, and preview reset.
 - [ ] Generate and validate positive prompts, collision pairs, exclusions, normalized properties, exact
-  routes, and fallback prompts for all 21 tools.
+  routes, and fallback prompts for all 23 tools.
 
 ## Phase 8 - Global quality and visual evidence
 
@@ -395,6 +492,15 @@ forced into the main-stage story.
   with text, icon, and status meaning.
 - [ ] Audit every visible control for a tested effect on records, geometry, calculation, evidence,
   selection, draft, or workflow stage; remove decorative controls.
+- [x] Move focus to changed workflow headings, announce Review/Receipt transitions, and provide a
+  designed capability no-match state with a **View all capabilities** recovery action.
+- [x] Replace the inaccessible translucent full-screen hero persona box with opaque carbon and explicit
+  white text; verify 13.5:1 rendered contrast in light mode and inspect light, dark, and mobile pixels.
+- [x] Use Megan Bowen's approved bundled portrait as the My Queue owner and align the catalog role,
+  workspace brief, hero narrative, and tenant-free harness identity.
+- [x] Prove My Queue row selection updates adjacent case work and selected Resolution Room context.
+- [ ] Audit triage fields, copy feedback, every remaining analytical selection, and every workflow
+  control before functionality sign-off.
 
 ### Tenant-free visual harness
 
@@ -407,14 +513,27 @@ forced into the main-stage story.
 - [x] Save one screenshot per intent at standard/narrow/dark plus dashboard mobile/dark/keynote states
   and machine-readable evidence; error/confirmation/receipt publication states remain open.
   receipt states with a machine-readable evidence matrix.
+- [x] Publish one current standard-light screenshot for every one of the 23 components under `assets/`,
+  generate `component-screenshot-index.json`, show the complete set in the README, and refresh the ten
+  curated PnP gallery images from the same capture run.
 - [ ] Conduct multimodal pixel review for hierarchy, keynote readability, clipping, density, image
   cropping, contrast, repeated composition, and customer-service distinctiveness.
 
 ### Authenticated tenant gate
 
-- [ ] **BLOCKED: tenant domain/authentication** Validate Workbench CSP, display mode, generated tool
-  routing, property extraction, bridge context/follow-up, iframe focus restoration, forced colors, and
-  host screen-reader output in an authenticated tenant.
+- [x] Authenticate to the `span001.sharepoint.com` Copilot Component Workbench and load the local
+  `https://localhost:4321/temp/build/manifests.js` debug manifest over the trusted SPFx HTTPS server.
+- [x] Verify Workbench discovers all 23 local manifests and instantiate one default inline turn for
+  every component. Confirm 23/23 nonblank iframes, each with `data-intent` and `data-layout`, and zero
+  Workbench event-log error entries; every portable-component URL retains the localhost debug manifest.
+- [x] Re-run the original 21 turns after the universal context update and verify 21 ready iframes, 42 successful
+  Workbench **Component state update** events (initial plus purpose-specific snapshots), and zero errors.
+- [x] After the leadership-chart split, restart localhost and instantiate all 23 tools in authenticated
+  Workbench. Verify 23/23 nonblank intent/layout frames, 23 ready components, 46 state updates, 96
+  size-change/resize events, and zero host errors.
+- [ ] Complete authenticated Workbench CSP/resource inspection, parameter extraction, inline-to-full-
+  screen state preservation, host theme rerender, bridge context/follow-up, fresh invocation, iframe
+  focus restoration, forced colors, keyboard, and host screen-reader validation.
 - [ ] **BLOCKED: public media-rights approval** Confirm redistribution rights for all persona, product,
   site, and channel media or replace them and regenerate provenance, screenshots, release evidence, and
   package output.
@@ -428,6 +547,11 @@ forced into the main-stage story.
   limitations, support owner, and version history.
 - [x] Create a 4-minute keynote, 10-minute business journey, and 5-minute technical
   walkthrough with setup, reset, timing, routing, guardrails, and fallback paths.
+- [x] Rewrite all demos around Copilot UX rather than the fictional business case: visual answers,
+  routing boundaries, visible-state awareness, responsive expansion, list/portfolio drill-in and back,
+  coordinated leadership filters, guarded decisions, and capability discovery.
+- [x] Align the six conversation starters to customer portfolio, actionable queue, scoped resolution,
+  incident analysis, coordinated Service Operations, and capability discovery.
 - [x] Create `assets/sample.json`, designer review, generated routing matrix, media provenance,
   gallery evidence, and release evidence from canonical artifacts.
 - [ ] Document mock/live service boundaries, formulas, policy assumptions, telemetry/outcome plan, and
@@ -437,7 +561,7 @@ forced into the main-stage story.
 
 - [x] Run catalog, React, routing, media, gallery, publication, and clean production tests
   with zero warnings.
-- [x] Build the production solution and validate the generated API plugin v2.4 with 21 functions inside
+- [x] Build the production solution and validate the generated API plugin v2.4 with 23 functions inside
   the embedded agent ZIP.
 - [x] Audit the `.sppkg` for hashed production JavaScript, shared entry coverage, no stale output,
   no duplicate substantial media/base64 catalogs, no Fluent icon font, and approved size thresholds.

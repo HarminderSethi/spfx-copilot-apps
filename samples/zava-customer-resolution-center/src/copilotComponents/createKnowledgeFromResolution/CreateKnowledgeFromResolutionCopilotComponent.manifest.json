@@ -16,7 +16,7 @@
     {
       "name": "CreateKnowledgeFromResolution",
       "description": {
-        "default": "Create knowledge from verified resolution evidence. Do not publish directly."
+        "default": "Use when a verified case resolution should become a reusable knowledge draft. Do not use for unverified diagnosis or direct publication."
       },
       "propertiesSchema": {
         "id": "$../../../lib/copilotComponents/createKnowledgeFromResolution/CreateKnowledgeFromResolutionCopilotComponentProperties.js:default;"
