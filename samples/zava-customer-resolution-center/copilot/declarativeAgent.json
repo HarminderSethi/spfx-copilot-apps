@@ -6,28 +6,28 @@
   "instructions": "$[file('instruction.txt')]",
   "conversation_starters": [
     {
-      "title": "Resolve a customer issue",
-      "text": "Build a resolution plan for Alpine House's store activation issue."
+      "title": "Create support case",
+      "text": "42 Alpine House stores cannot activate their handhelds. Create the support case."
     },
     {
-      "title": "Priority queue",
-      "text": "Show the customer cases that need my judgment now."
+      "title": "Detect incident",
+      "text": "Are today's activation failures isolated or one emerging incident?"
     },
     {
-      "title": "Incident signal",
-      "text": "Are today's activation cases isolated or a broader incident?"
+      "title": "Review incident",
+      "text": "Review today's activation incident candidates and help me decide the next one."
     },
     {
-      "title": "Customer portfolio",
-      "text": "Which customer relationships need leadership attention?"
+      "title": "Review recovery",
+      "text": "Review pending customer recovery requests, starting with Alpine House."
     },
     {
-      "title": "Service operations",
-      "text": "Show where service performance needs leadership intervention."
+      "title": "Prepare update",
+      "text": "Draft a French and English update for Alpine House with the next update time."
     },
     {
-      "title": "Explore capabilities",
-      "text": "Explore what the Customer Resolution agent can do."
+      "title": "Service performance",
+      "text": "Is customer-service resolution keeping up with demand today?"
     }
   ],
   "actions": [

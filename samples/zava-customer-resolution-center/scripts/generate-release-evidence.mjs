@@ -22,6 +22,8 @@ const entries=Object.values(config.bundles).flatMap(bundle=>bundle.components||[
 const evidence={
   schemaVersion:1,
   generatedAt:new Date().toISOString(),
+  agentVersion:'1.0.1',
+  spfxSolutionVersion:packageConfig.solution.version,
   package:'sharepoint/solution/zava-customer-resolution-center.sppkg',
   packageBytes:packageBuffer.length,
   packageSha256:hash(packageBuffer),
