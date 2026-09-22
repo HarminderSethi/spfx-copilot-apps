@@ -4,14 +4,17 @@
 
 Copilot is no longer only a place to ask questions and receive text. Copilot Components bring trusted,
 interactive business UX directly into the conversation. People can start, review, approve, fund, and
-measure work without leaving the Copilot canvas or losing their context.
+measure work without leaving the Copilot canvas or losing their context. When the task needs more room,
+the same scenario can continue in full screen with broader business context intact.
 
 ## Setup
 
-Start a fresh Copilot conversation as Megan Bowen. Keep the audience focused on the conversation canvas:
-every prompt should produce a purpose-built interface inline in chat.
+Start a fresh Copilot conversation as Megan Bowen. Use one story throughout: Smart Onboarding Journey,
+an idea to reduce new-hire onboarding time by half. Move through four inline components: submission,
+personal progress, gate review, and portfolio insight. Open the fourth component in full screen so the
+same analysis expands into the Enterprise Insights workspace.
 
-## 0:00-0:35 - From conversation to business UX
+## 0:00-0:45 - Inline 1: From conversation to submitted idea
 
 **Say:**
 
@@ -19,27 +22,31 @@ every prompt should produce a purpose-built interface inline in chat.
 navigate to the right record, and reconstruct the context. Here, the experience comes to the user.
 Copilot understands the business intent and selects the right Copilot Component."
 
-Prompt: **Submit an idea for a smart onboarding journey that cuts ramp time in half.**
+Prompt: **Submit an idea to reduce new-hire onboarding time by half.**
 
 Show the prefilled idea canvas appearing directly in chat. Point out the structured fields, accountable
-owner, evidence, and readiness state. This is an application experience, not a text answer.
-
-## 0:35-1:20 - Complete work without context switching
-
-**Say:**
-
-"Megan can shape the idea, review the evidence, and confirm the next step in the same place where the
-request began. She does not open an innovation portal, search for a form, or copy information between
-systems. The conversation remains the context, while the component provides the controls."
-
-Edit one field and advance through evidence and confirmation. Show the visible receipt.
+owner, evidence, and readiness state. Edit one field, advance through evidence and confirmation, and
+show the visible receipt.
 
 "Copilot handles intent and handoff. The component owns deterministic validation, human confirmation,
 and the business record of what happened."
 
-## 1:20-2:10 - Modernize review and approval
+## 0:45-1:15 - Inline 2: Keep personal work moving
 
-Prompt: **Review Smart Onboarding Journey for gate approval.**
+Prompt: **Show my innovation ideas and what needs attention.**
+
+Show Smart Onboarding Journey in Megan's personal innovation view. Point out its status, readiness, and
+next action alongside her other work.
+
+**Say:**
+
+"The submission is not lost in the chat history. Copilot can bring Megan's active work back as a
+personalized operating view, with the progress and next action already in context. The UX changes from
+capturing one idea to helping her move a portfolio of work forward."
+
+## 1:15-2:00 - Inline 3: Modernize review and approval
+
+Prompt: **Review Smart Onboarding Journey innovation submission for gate approval.**
 
 Show the review experience inline with evidence completeness, strategic fit, value, strengths, and gaps.
 
@@ -51,7 +58,7 @@ with the evidence and consequences visible before the human decides."
 
 Choose **Approve and advance**, review the consequence, and confirm.
 
-## 2:10-2:55 - Bring portfolio insight into the conversation
+## 2:00-2:40 - Inline 4: See the idea in portfolio context
 
 Prompt: **Show stage conversion in our innovation portfolio funnel.**
 
@@ -59,24 +66,27 @@ Show the stage-gate funnel, impact versus effort, horizon balance, program momen
 
 **Say:**
 
-"For leadership, the Copilot canvas becomes an analytical workspace. The user can inspect portfolio
-health and act on an exception without first navigating to a dashboard. The right visualization appears
-for the current intent, with the business context preserved."
+"We started with one onboarding problem, shaped it into an idea, and advanced it through a human gate.
+Now leadership can see that work in the context of the whole portfolio. The conversation becomes an
+analytical workspace without sending the user away to find and configure a dashboard."
 
-Briefly contrast the portfolio, health, and global views: each intent produces a clearly different UX
-instead of routing every question to one broad dashboard.
+Point to stage conversion, impact versus effort, and horizon balance. Briefly connect the approved idea
+to the portfolio evidence leaders use to judge whether work is moving and remains strategically balanced.
 
-## 2:55-3:30 - Discover the complete capability set
+## 2:40-3:30 - Expand without losing context
 
-Prompt: **Explore what this agent can do.**
+Select **Expand** (**View in full screen**) from the portfolio component.
 
-Show the capability explorer with all 16 operational experiences grouped into five work areas.
+Show the Enterprise Insights workspace opening on the same portfolio analysis. Point out the leadership
+KPI strip, the funnel and comparison views now visible together, and Smart Onboarding Journey in the
+ranked realized-value outcomes. Briefly point to the five connected work areas in the rail without
+navigating away.
 
 **Say:**
 
-"One agent can expose an entire portfolio of modernized processes. People discover the available jobs in
-business language, preview the expected outcome, and invoke the right experience without learning the
-underlying application landscape."
+"Full screen is not a different destination and it does not reset the user's work. It preserves the
+portfolio scenario and adds leadership scope, comparison space, and connected work areas. Inline is
+optimized for the task in the conversation; full screen adds context when the decision demands it."
 
 ## 3:30-4:00 - Close
 
