@@ -33,13 +33,13 @@ test('events sample increments catalog and contributor counts', async ({ page, r
   await expect(page.getByRole('heading', { level: 3, name: 'SharePoint Events Copilot Agent' })).toBeVisible();
 
   await page.getByRole('combobox', { name: 'Contributor' }).selectOption('joaojmendes');
-  await expect(page.locator('[data-component-card]:visible')).toHaveCount(3);
-  await expect(page.locator('#result-count')).toHaveText('Showing 3 matching components');
+  await expect(page.locator('[data-component-card]:visible')).toHaveCount(4);
+  await expect(page.locator('#result-count')).toHaveText('Showing 4 matching components');
   await expect(page).toHaveURL(/\?author=joaojmendes$/);
 
   await page.goto('./contributors/');
   const contributor = page.locator('.contributor-card').filter({ hasText: 'João Mendes' });
-  await expect(contributor).toContainText('3 component samples');
+  await expect(contributor).toContainText('4 component samples');
 });
 
 test('component detail exposes source, download, and documentation', async ({ page }) => {
