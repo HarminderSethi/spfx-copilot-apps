@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.29/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.29",
+  "version": "1.0.1",
+  "id": "b2e7cb79-ae52-4fdd-9da0-c362b53bcb04",
+  "developer": {
+    "name": "SPTECK",
+    "websiteUrl": "https://www.contoso.com",
+    "privacyUrl": "https://www.contoso.com/privacy",
+    "termsOfUseUrl": "https://www.contoso.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Planner Projects",
+    "full": "My Planner Projects Agent"
+  },
+  "description": {
+    "short": "Find and create Microsoft Planner projects.",
+    "full": "Review accessible Planner plans, surface active or overdue work, and prepare editable plans from supported project templates before explicit creation."
+  },
+  "accentColor": "#FFFFFF",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "myprojectsAgent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": ["identity"],
+  "validDomains": []
+}

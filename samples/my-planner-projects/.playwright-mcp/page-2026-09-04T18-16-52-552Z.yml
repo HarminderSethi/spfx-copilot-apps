@@ -1,0 +1,10 @@
+- generic [ref=f6e6]:
+  - generic [ref=f6e7]:
+    - img "Planner"
+    - generic [ref=f6e8]: Microsoft Planner
+  - generic [ref=f6e9]: A simple, visual way to organize teamwork
+  - button "Sign In" [ref=f6e10] [cursor=pointer]
+  - generic [ref=f6e11]: Planner mobile
+  - generic [ref=f6e12]:
+    - button "Get Planner For iOS" [ref=f6e13] [cursor=pointer]
+    - button "Get Planner For Android" [ref=f6e14] [cursor=pointer]
