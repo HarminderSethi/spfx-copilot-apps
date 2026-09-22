@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Copilot M365 Roadmap Features",
     "shortDescription": "A Copilot Agent that helps teams stay informed about the latest Microsoft 365 roadmap features.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/copilot-m365-roadmap-features",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/copilot-m365-roadmap-features",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/copilot-m365-roadmap-features",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/copilot-m365-roadmap-features",
     "longDescription": [
       "Copilot M365 Roadmap Features demonstrates a SharePoint Framework-based Copilot Agent that helps teams stay informed about the latest Microsoft 365 roadmap features. This solution leverages Microsoft 365 roadmap features, enabling proactive adaptation to new releases, updates, and deployments across Microsoft Teams, SharePoint, Outlook, and other Microsoft 365 applications."
     ],
@@ -30,8 +30,8 @@
       }
     ],
     "thumbnails": [
-      { "name": "fullscreen-roadmap-features.png", "type": "image", "order": 100, "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/copilot-m365-roadmap-features/assets/fullscreen-roadmap-features.png", "alt": "Zava full-screen roadmap features dashboard" },
-      { "name": "inline-roadmap-features.png", "type": "image", "order": 101, "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/copilot-m365-roadmap-features/assets/inline-roadmap-features.png", "alt": "Zava inline roadmap features dashboard" }
+      { "name": "fullscreen-roadmap-features.png", "type": "image", "order": 100, "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/copilot-m365-roadmap-features/assets/fullscreen-roadmap-features.png", "alt": "Zava full-screen roadmap features dashboard" },
+      { "name": "inline-roadmap-features.png", "type": "image", "order": 101, "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/copilot-m365-roadmap-features/assets/inline-roadmap-features.png", "alt": "Zava inline roadmap features dashboard" }
     ],
     "authors": [
       {

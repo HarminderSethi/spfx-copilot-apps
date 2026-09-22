@@ -94,7 +94,7 @@ This sample illustrates the following concepts:
 
 ## Help
 
-If you encounter issues using this solution, please [open an issue](https://github.com/pnp/spfx-copilot-apps/issues) in the repository.
+If you encounter issues using this solution, please [open an issue](https://github.com/pnp/spfx-copilot-components/issues) in the repository.
 
 ## Disclaimer
 

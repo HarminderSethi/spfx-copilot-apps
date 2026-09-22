@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "My Sites & Groups Info - Explore SharePoint Sites and Microsoft 365 Groups in Copilot Chat",
     "shortDescription": "An SPFx Copilot Component that helps users discover and manage followed and accessible SharePoint sites and Microsoft 365 Groups directly in Copilot chat.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/my-sites-groups-info",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/my-sites-groups-info",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/my-sites-groups-info",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/my-sites-groups-info",
     "longDescription": [
       "My Sites & Groups Info is a SharePoint Copilot App built as an SPFx 1.24 Copilot Component. Its declarative agent renders live SharePoint site and Microsoft 365 Group information from Microsoft Graph and SharePoint Search directly in the Copilot conversation.",
       "The React component supports followed sites, accessible sites, and groups the user belongs to, direct site links, follow and unfollow actions, fullscreen rendering, and permission-aware group membership management for viewing, adding, and removing members."
@@ -35,21 +35,21 @@
         "name": "MainPage.png",
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/my-sites-groups-info/assets/MainPage.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/my-sites-groups-info/assets/MainPage.png",
         "alt": "My Sites and Groups overview showing SharePoint sites and Microsoft 365 Groups in Copilot."
       },
       {
         "name": "FullScreenView.png",
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/my-sites-groups-info/assets/FullScreenView.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/my-sites-groups-info/assets/FullScreenView.png",
         "alt": "Fullscreen view of followed and accessible SharePoint sites and Microsoft 365 Groups."
       },
       {
         "name": "AddRemoveGroupUsers.png",
         "type": "image",
         "order": 102,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/my-sites-groups-info/assets/AddRemoveGroupUsers.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/my-sites-groups-info/assets/AddRemoveGroupUsers.png",
         "alt": "Microsoft 365 Group membership view with controls to search, add, and remove users."
       }
     ],

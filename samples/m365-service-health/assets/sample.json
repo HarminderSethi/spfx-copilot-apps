@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "M365 Service Health - Live Microsoft 365 Service Health in Copilot Chat",
     "shortDescription": "An SPFx Copilot Component that displays live Microsoft 365 service health in Copilot chat, with interactive inline and full-screen views powered by Microsoft Graph.",
-    "url": "https://github.com/pnp/spfx-copilot-apps/tree/main/samples/m365-service-health",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-apps/tree/main/samples/m365-service-health",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/m365-service-health",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/m365-service-health",
     "longDescription": [
       "M365 Service Health is a SharePoint Copilot App built as an SPFx 1.24 Copilot Component. Its declarative agent answers service availability questions by rendering live Microsoft 365 service health data from the Microsoft Graph service health API directly in the Copilot conversation.",
       "The React component supports inline and full-screen display modes, service search, active-issue filtering, natural-language service name resolution, and issue details with impact and status updates. It also demonstrates brokered Microsoft Graph access, retry with exponential backoff, classified error handling, host-driven theming, and graceful degradation."
@@ -35,21 +35,21 @@
         "name": "main page.png",
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/m365-service-health/assets/main%20page.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-service-health/assets/main%20page.png",
         "alt": "M365 Service Health overview showing current Microsoft 365 service status"
       },
       {
         "name": "copilot_component_rendering.png",
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/m365-service-health/assets/copilot_component_rendering.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-service-health/assets/copilot_component_rendering.png",
         "alt": "M365 Service Health component rendered in a Copilot conversation"
       },
       {
         "name": "full page view.png",
         "type": "image",
         "order": 102,
-        "url": "https://github.com/pnp/spfx-copilot-apps/raw/main/samples/m365-service-health/assets/full%20page%20view.png",
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-service-health/assets/full%20page%20view.png",
         "alt": "Full-screen M365 Service Health overview with filtering and issue details"
       }
     ],
