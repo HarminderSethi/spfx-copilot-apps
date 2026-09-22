@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": true,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.21.1",
+    "sdksVersions": {},
+    "version": "1.24.0-beta.4",
+    "libraryName": "spfx-1-24-b-4",
+    "libraryId": "38a55f9b-30c9-48bc-a4bc-5858d25a6278",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-1-24-b-4",
+    "solutionShortDescription": "spfx-1-24-b-4 description",
+    "skipFeatureDeployment": true,
+    "componentType": "copilotComponent"
+  }
+}

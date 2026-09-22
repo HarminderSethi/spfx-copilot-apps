@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "namespace": "m365ProductRoadmap",
+  "name_for_human": "M365 Product Roadmap",
+  "description_for_human": "Explore Microsoft 365 product roadmap features.",
+  "description_for_model": "Whenever the user asks about Microsoft 365 roadmap features, products, release status, platforms, release phases, cloud instances, availability dates, or a specific roadmap ID. The interactive UI manages search, filtering, paging, and details.",
+  "contact_email": "joao.j.mendes@spteck.com"
+}
