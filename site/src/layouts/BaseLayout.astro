@@ -10,11 +10,11 @@ interface Props {
 }
 
 const {
-  title = 'Copilot Components',
-  description = 'Community-built Copilot Components that bring interactive experiences into Microsoft 365 Copilot.',
+  title = 'Copilot UX components',
+  description = 'Community-built UX components that bring interactive experiences into the Microsoft 365 Copilot canvas.',
   image = catalog.components[0]?.preview.src960,
 } = Astro.props;
-const pageTitle = title === 'Copilot Components' ? title : `${title} | Copilot Components`;
+const pageTitle = title === 'Copilot UX components' ? title : `${title} | Copilot UX components`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = image ? new URL(sitePath(image), Astro.site) : undefined;
 const currentPath = Astro.url.pathname;
@@ -75,9 +75,9 @@ const isCurrent = (href: string) => href === '/'
     <header class="site-header">
       <div class="spectrum" aria-hidden="true"></div>
       <div class="site-header__inner container">
-        <a class="brand" href={sitePath('/')} aria-label="Copilot Components home">
+        <a class="brand" href={sitePath('/')} aria-label="Copilot UX components home">
           <img src={sitePath('/images/copilot.png')} alt="" width="38" height="38" />
-          <span>Copilot <strong>Components</strong></span>
+          <span>Copilot <strong>UX components</strong></span>
         </a>
         <div class="site-header__actions">
           <nav class="desktop-nav" aria-label="Primary navigation">

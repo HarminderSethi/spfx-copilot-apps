@@ -277,7 +277,7 @@ export async function generateGallery({ repositoryRoot, siteRoot }) {
       path.join(brandRoot, 'copilot-components.png'),
     ),
     copyFile(
-      path.join(repositoryRoot, 'assets', 'sharepoint-copilot-apps-badge.png'),
+      path.join(repositoryRoot, 'assets', 'contributor-badge.png'),
       path.join(brandRoot, 'contributor-badge.png'),
     ),
   ]);

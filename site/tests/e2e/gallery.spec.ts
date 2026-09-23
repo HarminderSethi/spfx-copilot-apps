@@ -15,7 +15,7 @@ test('catalog loads and filters without layout navigation', async ({ page, reque
   const catalog = await fetchCatalog(request);
   await page.goto('./');
 
-  await expect(page.getByRole('heading', { level: 1, name: 'Copilot Components' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Copilot UX components' })).toBeVisible();
   await expect(page.locator('[data-component-card]')).toHaveCount(catalog.components.length);
   await page.getByRole('searchbox', { name: 'Search components' }).fill('Work IQ');
   await expect(page.locator('[data-component-card]:visible')).toHaveCount(1);
