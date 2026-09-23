@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.8/schema.json",
+  "version": "v1.8",
+  "name": "M365 Product Roadmap",
+  "description": "Explore upcoming and recently updated Microsoft 365 product features.",
+  "instructions": "$[file('instruction.txt')]",
+  "conversation_starters": [
+     {
+      "title": "Copilot for M365",
+      "text": "What is new in Microsoft Copilot for Microsoft 365?"
+    },
+    {
+      "title": "Latest M365 Features",
+      "text": "What is new in Microsoft 365 this week?"
+    },
+    {
+      "title": "Teams Roadmap",
+      "text": "What new Teams features are being released?"
+    },
+    {
+      "title": "Outlook Updates",
+      "text": "Are there any new Outlook features coming soon?"
+    },
+   
+    {
+      "title": "Features Rolling Out",
+      "text": "Show Microsoft 365 features that are rolling out."
+    },
+    {
+      "title": "Recently Updated",
+      "text": "What Microsoft 365 roadmap items changed this week?"
+    },
+    {
+      "title": "Feature Status Check",
+      "text": "Is [feature name] still in preview or has it rolled out?"
+    },
+    {
+      "title": "GA Timeline",
+      "text": "When will [feature name] be generally available?"
+    },
+    {
+      "title": "IT Admin Updates",
+      "text": "What Microsoft 365 features should IT admins be aware of this month?"
+    },
+    {
+      "title": "Security & Compliance",
+      "text": "Show me all security and compliance feature updates."
+    },
+    {
+      "title": "Purview Features",
+      "text": "List all Microsoft Purview features currently rolling out."
+    },
+    {
+      "title": "Roadmap by ID",
+      "text": "Get me details on roadmap item [ID number]."
+    }
+  ],
+  "actions": [
+    {
+      "id": "m365ProductRoadmapAction",
+      "file": "ai-plugin.json"
+    }
+  ]
+}

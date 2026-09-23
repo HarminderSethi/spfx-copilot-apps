@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/@microsoft/spfx-heft-plugins/lib-commonjs/plugins/copilotAgentPlugin/copilot-agent.schema.json",
+  "agents": [
+    {
+      "name": {
+        "default": "M365 Product Roadmap"
+      },
+      "description": {
+        "default": "Explore upcoming and recently updated Microsoft 365 product features."
+      },
+      "toolDiscovery": "static",
+      "components": [
+        "3cd249ec-3cfc-4088-aac8-8b6a452cc6b9"
+      ]
+    }
+  ]
+}

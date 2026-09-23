@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "m365-product-roadmap",
+    "id": "38a55f9b-30c9-48bc-a4bc-5858d25a6278",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "SPTeck",
+      "websiteUrl": "https://spteck.com",
+      "privacyUrl": "https://spteck.com/privacy",
+      "termsOfUseUrl": "https://spteck.com/terms",
+      "mpnId": "Undefined-1.24.0-beta.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Microsoft 365 product roadmap Copilot agent"
+      },
+      "longDescription": {
+        "default": "Search and explore Microsoft 365 roadmap features from Copilot using the dedicated public roadmap MCP server."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "M365 Product Roadmap",
+        "description": "Activates the M365 Product Roadmap Copilot component.",
+        "id": "786e8248-2e8a-4322-8ef1-f8b2b615eadf",
+        "version": "1.0.0.1"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/m365-product-roadmap.sppkg"
+  }
+}

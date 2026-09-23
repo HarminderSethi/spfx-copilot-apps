@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
+  "id": "3cd249ec-3cfc-4088-aac8-8b6a452cc6b9",
+  "alias": "M365ProductRoadmapCopilotComponent",
+  "componentType": "CopilotComponent",
+  "copilotType": "Ux",
+  "version": "*",
+  "manifestVersion": 2,
+  "capabilities": {
+    "availableDisplayModes": ["inline", "fullscreen"]
+  },
+  "tools": [
+    {
+      "name": "ShowM365ProductRoadmap",
+      "description": {
+        "default": "Search and display Microsoft 365 roadmap features. Use it for product, status, platform, release phase, cloud instance, availability, recently updated, or roadmap ID questions. The interactive UI manages filtering, infinite paging, and details."
+      },
+      "propertiesSchema": {
+        "id": "$../../../lib/copilotComponents/m365ProductRoadmap/M365ProductRoadmapCopilotComponentProperties.js:default;"
+      }
+    }
+  ]
+}

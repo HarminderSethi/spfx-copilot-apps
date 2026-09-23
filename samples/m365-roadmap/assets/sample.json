@@ -1,0 +1,90 @@
+[
+  {
+    "name": "pnp-spfx-copilot-components-m365-roadmap",
+    "source": "pnp",
+    "title": "M365 Product Roadmap",
+    "shortDescription": "An SPFx 1.24 Copilot UX component for discovering Microsoft 365 roadmap features through the public Microsoft Release Communications MCP server.",
+    "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/m365-roadmap",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/m365-roadmap",
+    "longDescription": [
+      "M365 Product Roadmap is a SharePoint Framework 1.24 Copilot UX component that helps users discover and explore Microsoft 365 roadmap features through the public Microsoft Release Communications (MRC) MCP server. The component provides both compact inline views and fullscreen responsive card grids for browsing upcoming Microsoft 365 releases.",
+      "The component supports advanced filtering and search capabilities including debounced search, product picker, status dropdown, exact roadmap ID input, and multi-select filters for release phase, platform, and cloud. It features lazy-loading detail dialogs with overview information, rollout timelines, metadata, and direct links to Microsoft source documentation.",
+      "Built with React and TypeScript using the SharePoint Framework 1.24, the component leverages @spteck/react-controls-v2 for UI controls and @emotion/css for styling with Fluent design tokens. It demonstrates best practices for integrating Copilot components with remote MCP endpoints, including offset paging with deduplication, stale-request protection, and light/dark theme support."
+    ],
+    "creationDateTime": "2026-09-22",
+    "updateDateTime": "2026-09-22",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SPFx-CopilotComponent"
+      },
+      {
+        "key": "CLIENT-SIDE-DEV",
+        "value": "React"
+      },
+      {
+        "key": "SPFX-VERSION",
+        "value": "1.24.0-beta.4"
+      }
+    ],
+    "thumbnails": [
+      {
+        "name": "preview.png",
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-roadmap/assets/preview.png",
+        "alt": "M365 Product Roadmap component gallery preview showing roadmap feature cards in Microsoft 365 Copilot."
+      },
+      {
+        "name": "expand.png",
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-roadmap/assets/expand.png",
+        "alt": "Fullscreen M365 Product Roadmap component displaying expanded roadmap feature card with details."
+      },
+      {
+        "name": "filters.png",
+        "type": "image",
+        "order": 102,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-roadmap/assets/filters.png",
+        "alt": "M365 Product Roadmap component with filtering options including product picker and status dropdown."
+      },
+      {
+        "name": "details.png",
+        "type": "image",
+        "order": 103,
+        "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/m365-roadmap/assets/details.png",
+        "alt": "M365 Product Roadmap component detail dialog showing roadmap feature overview and rollout timeline."
+      }
+     
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "joaojmendes",
+        "pictureUrl": "https://github.com/joaojmendes.png",
+        "name": "João Mendes"
+      }
+    ],
+    "references": [
+      {
+        "name": "Build agents for Microsoft 365 Copilot",
+        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors.",
+        "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
+      },
+      {
+        "name": "Overview of the SharePoint Framework",
+        "description": "Learn about the SharePoint Framework client-side development model.",
+        "url": "https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview"
+      },
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot combines large language models with organizational context and extensibility.",
+        "url": "https://www.microsoft.com/microsoft-365/copilot"
+      }
+    ]
+  }
+]
