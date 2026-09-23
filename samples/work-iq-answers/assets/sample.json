@@ -13,7 +13,7 @@
     ],
     "creationDateTime": "2026-08-21",
     "updateDateTime": "2026-08-21",
-    "products": ["SharePoint", "Microsoft 365 Copilot"],
+    "products": ["SharePoint", "Microsoft Copilot"],
     "metadata": [
       {
         "key": "SAMPLE-TYPE",
@@ -46,7 +46,7 @@
     "references": [
       {
         "name": "Work IQ REST API overview",
-        "description": "Multi-turn conversations with Microsoft 365 Copilot over HTTP, with enterprise and web search grounding.",
+        "description": "Multi-turn conversations with Microsoft Copilot over HTTP, with enterprise and web search grounding.",
         "url": "https://learn.microsoft.com/microsoft-365/copilot/extensibility/work-iq/rest/overview"
       },
       {
@@ -60,8 +60,8 @@
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/use-aadhttpclient"
       },
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

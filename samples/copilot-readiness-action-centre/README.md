@@ -2,7 +2,7 @@
 
 ## Summary
 
-A SharePoint Copilot App (SPFx 1.24 Copilot Component) that turns Microsoft 365 Copilot readiness findings into governed remediation actions inside the Microsoft 365 Copilot canvas. Users review readiness scores and risks, drill into evidence and affected SharePoint resources, assign owners and due dates, and create remediation tasks stored in SharePoint lists.
+An SPFx 1.24 Copilot component that turns Microsoft Copilot readiness findings into governed remediation actions inside the Microsoft Copilot canvas. Users review readiness scores and risks, drill into evidence and affected SharePoint resources, assign owners and due dates, and create remediation tasks stored in SharePoint lists.
 
 Ships with offline mock data for immediate demos, plus optional live SharePoint list integration via a swappable data service.
 
@@ -14,14 +14,14 @@ Ships with offline mock data for immediate demos, plus optional live SharePoint 
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![React 17](https://img.shields.io/badge/React-17-blue.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
-> SharePoint Copilot Apps and SPFx 1.24 are public preview capabilities. APIs and packaging behaviour can change before general availability.
+> SPFx 1.24 Copilot components are in public preview. APIs and packaging behaviour can change before general availability.
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) with SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](https://aka.ms/m365/devprogram)
@@ -39,7 +39,7 @@ Ships with offline mock data for immediate demos, plus optional live SharePoint 
 ## Prerequisites
 
 - Node.js **>=22.14.0** and **&lt;23.0.0**
-- Microsoft 365 tenant with SharePoint Copilot Apps public preview available
+- Microsoft 365 tenant where the SPFx Copilot components public preview is available
 - SharePoint App Catalog administrator access
 - [Heft](https://heft.rushstack.io/) (`npm install -g @rushstack/heft`) or use `npx heft`
 - For live SharePoint data: [PnP.PowerShell](https://pnp.github.io/powershell/) to provision lists
@@ -54,8 +54,8 @@ Ships with offline mock data for immediate demos, plus optional live SharePoint 
 2. Select **Enable this app and add it to all sites** (required for Copilot integration).
 3. Select **Enable app**.
 4. In the App Catalog, select the app and choose **Add to Teams** (publishes the declarative agent to the tenant agent catalog during preview).
-5. In **Microsoft 365 Copilot**, add **Copilot Readiness Action Centre** from the agent list.
-6. Try: *"Are we ready to deploy Microsoft 365 Copilot?"* or invoke the tool with `{ "useMockData": true }`.
+5. In **Microsoft Copilot**, add **Copilot Readiness Action Centre** from the agent list.
+6. Try: *"Are we ready to deploy Microsoft Copilot?"* or invoke the tool with `{ "useMockData": true }`.
 
 ### Option B - build from source
 
@@ -117,7 +117,7 @@ This sample illustrates:
 
 ### Suggested prompts
 
-- Are we ready to deploy Microsoft 365 Copilot?
+- Are we ready to deploy Microsoft Copilot?
 - Show me our critical Copilot readiness risks.
 - Create a remediation plan for SharePoint oversharing.
 

@@ -36,14 +36,14 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/people-directory/assets/1.png",
-        "alt": "Inline people search results rendered in Microsoft 365 Copilot chat."
+        "alt": "Inline people search results rendered in Microsoft Copilot chat."
       },
       {
         "name": "2.png",
         "type": "image",
         "order": 101,
         "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/people-directory/assets/2.png",
-        "alt": "Fullscreen People Directory overview in Microsoft 365 Copilot."
+        "alt": "Fullscreen People Directory overview in Microsoft Copilot."
       },
       {
         "name": "3.png",
@@ -67,8 +67,8 @@
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment"
       },
       {
-        "name": "Microsoft 365 Copilot extensibility",
-        "description": "Build and extend experiences for Microsoft 365 Copilot with agents and tools.",
+        "name": "Microsoft Copilot extensibility",
+        "description": "Build and extend experiences for Microsoft Copilot with agents and tools.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

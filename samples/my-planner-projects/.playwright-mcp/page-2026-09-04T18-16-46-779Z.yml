@@ -307,9 +307,9 @@
                 - /url: https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
                 - text: Microsoft Teams
             - listitem [ref=e229]:
-              - link "Microsoft 365 Copilot Business" [ref=e230] [cursor=pointer]:
+              - link "Microsoft Copilot Business" [ref=e230] [cursor=pointer]:
                 - /url: https://www.microsoft.com/en-us/microsoft-365-copilot?icid=DSM_Footer_Microsoft365Copilot
-                - text: Microsoft 365 Copilot
+                - text: Microsoft Copilot
             - listitem [ref=e231]:
               - link "Small Business Business" [ref=e232] [cursor=pointer]:
                 - /url: https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore

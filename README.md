@@ -4,7 +4,7 @@
 
 **[Explore the Copilot Components gallery](https://pnp.github.io/spfx-copilot-components/)**
 
-This repository contains Microsoft and community provided samples that demonstrate how to build, extend, and customize **Copilot experiences for Microsoft 365 Copilot**. The goal is to provide a curated, open collection of reusable SPFx Copilot components that help you get started faster when building SharePoint Copilot Apps with UX directly in the Microsoft 365 Copilot canvas.
+This repository contains Microsoft and community provided samples that demonstrate how to build, extend, and customize **Copilot experiences for Microsoft Copilot**. The goal is to provide a curated, open collection of reusable SPFx Copilot components that help you get started faster when building SharePoint Copilot Apps with UX directly in the Microsoft Copilot canvas.
 
 See more details from the announcement blog post at [Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/).
 
@@ -15,7 +15,7 @@ See more details from the announcement blog post at [Going beyond text in Micros
 
 **Ready-built packages.** Several samples include a ready-built `.sppkg` file under `sharepoint/solution/`. Follow that sample's README to upload the package to your tenant App Catalog and deploy the scenario without building it from source first. Sample-specific setup, permissions, and data prerequisites still apply.
 
-**No Microsoft 365 Copilot add-on is required during public preview.** You can build, deploy, and run SharePoint Copilot Apps without a Microsoft 365 Copilot add-on license or configuring consumption-based Copilot billing. An eligible Microsoft 365 user license, a SharePoint tenant, and the required deployment permissions are still needed. Optional services used by an individual sample, such as Microsoft Graph, external APIs, added knowledge sources, or Copilot Studio capabilities, can have separate licensing or usage costs. See the [official SharePoint Copilot Apps preview guidance](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app#prerequisites).
+**No Microsoft Copilot add-on is required during public preview.** You can build, deploy, and run SharePoint Copilot Apps without a Microsoft Copilot add-on license or configuring consumption-based Copilot billing. An eligible Microsoft 365 user license, a SharePoint tenant, and the required deployment permissions are still needed. Optional services used by an individual sample, such as Microsoft Graph, external APIs, added knowledge sources, or Copilot Studio capabilities, can have separate licensing or usage costs. See the [official SharePoint Copilot Apps preview guidance](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app#prerequisites).
 
 ## Get moving
 
@@ -76,7 +76,7 @@ Before submitting an issue, determine whether it is a general SharePoint or Shar
 ## Additional resources
 
 - [Going beyond text in Microsoft 365 Copilot – Introducing SharePoint Copilot Apps](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/)
-- [Build agents for Microsoft 365 Copilot](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Build agents for Microsoft Copilot](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Overview of the SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)
 - [SharePoint Framework development tools and libraries](https://learn.microsoft.com/sharepoint/dev/spfx/tools-and-libraries)
 - [Set up your Microsoft 365 development environment](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)

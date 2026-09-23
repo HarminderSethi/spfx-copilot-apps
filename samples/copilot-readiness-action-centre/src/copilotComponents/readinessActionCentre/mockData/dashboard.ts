@@ -4,7 +4,7 @@ import { DashboardData } from '../models/readiness';
 export const mockDashboard: DashboardData = {
   assessment: {
     id: 1,
-    title: 'Microsoft 365 Copilot Readiness Assessment',
+    title: 'Microsoft Copilot Readiness Assessment',
     tenantName: 'Contoso',
     assessmentDate: new Date().toISOString(),
     overallScore: 42,

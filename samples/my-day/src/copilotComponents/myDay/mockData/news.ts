@@ -17,7 +17,7 @@ export const mockNews: IMockNewsSeed[] = [
     name: 'spfx-copilot-apps-early-access.aspx',
     webUrl: 'https://contoso.sharepoint.com/sites/intranet/SitePages/spfx-copilot-apps-early-access.aspx',
     description:
-      'Build rich, interactive experiences that run directly inside Microsoft 365 Copilot using the SharePoint Framework.',
+      'Build rich, interactive experiences that run directly inside Microsoft Copilot using the SharePoint Framework.',
     thumbnailWebUrl: newsImages.spfxCopilot,
     bannerImageWebUrl: newsImages.spfxCopilot,
     publishedOffsetMin: -60,

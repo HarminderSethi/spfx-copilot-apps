@@ -7,13 +7,13 @@
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/release-readiness-board",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/release-readiness-board",
     "longDescription": [
-      "Release readiness board gives delivery teams a compact inline release-health snapshot and a full-screen execution board in Microsoft 365 Copilot. Teams can filter by release and owner, focus on blockers, update checklist status, and post a readiness summary back to chat. The sample ships mock-first and includes a real-data adapter mode via an external HTTPS API."
+      "Release readiness board gives delivery teams a compact inline release-health snapshot and a full-screen execution board in Microsoft Copilot. Teams can filter by release and owner, focus on blockers, update checklist status, and post a readiness summary back to chat. The sample ships mock-first and includes a real-data adapter mode via an external HTTPS API."
     ],
     "creationDateTime": "2026-08-02",
     "updateDateTime": "2026-08-02",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {

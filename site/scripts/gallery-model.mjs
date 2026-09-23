@@ -134,7 +134,7 @@ export function normalizeSample(slug, sample, readmeMarkdown, imageMetadata) {
     longDescription: sample.longDescription,
     createdAt: sample.creationDateTime,
     updatedAt: sample.updateDateTime,
-    products: sample.products.map((product) => product === 'Copilot' ? 'Microsoft 365 Copilot' : product),
+    products: sample.products.map((product) => product === 'Copilot' ? 'Microsoft Copilot' : product),
     sampleType: metadataValue(sample, 'SAMPLE-TYPE'),
     clientTechnology: metadataValue(sample, 'CLIENT-SIDE-DEV'),
     spfxVersion: metadataValue(sample, 'SPFX-VERSION'),

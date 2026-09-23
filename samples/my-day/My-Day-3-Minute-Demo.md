@@ -5,7 +5,7 @@
 **What if Copilot could help someone understand and shape their workday without sending them across five different applications?**
 
 My Day brings the signals that compete for attention - meetings, tasks, important mail, company news,
-and focus time - into one personal experience inside Microsoft 365 Copilot.
+and focus time - into one personal experience inside Microsoft Copilot.
 
 > **Copilot understands the request. The component turns it into a useful experience. The user stays
 > focused and in control.**
@@ -16,7 +16,7 @@ SharePoint, and organizational intelligence without redesigning the experience.
 
 ## Before presenting
 
-- Deploy `sharepoint/solution/my-day.sppkg` and open the My Day agent in Microsoft 365 Copilot.
+- Deploy `sharepoint/solution/my-day.sppkg` and open the My Day agent in Microsoft Copilot.
 - Start a new conversation and use a desktop-width window.
 - Keep the prompt **What does my day look like?** ready to paste.
 - If settings were changed during rehearsal, restore all panels and Celsius before starting.

@@ -43,7 +43,7 @@ The primary three-minute story uses two inline components before expanding into 
 >
 > “The conversational model can interpret what I mean. The Copilot Component then turns that non-deterministic understanding into a deterministic, reviewable experience.”
 
-**On screen:** Open Zava Employee Agent in Microsoft 365 Copilot with an empty conversation.
+**On screen:** Open Zava Employee Agent in Microsoft Copilot with an empty conversation.
 
 ### 0:20-1:05 — Inline guided action: request time off
 

@@ -1,6 +1,6 @@
 # Samples
 
-This folder contains SPFx Copilot Components samples for SharePoint Copilot Apps. Each sample lives in its own self-contained subfolder.
+This folder contains SPFx Copilot component samples. Each sample lives in its own self-contained subfolder.
 
 | Sample | Folder |
 | --- | --- |

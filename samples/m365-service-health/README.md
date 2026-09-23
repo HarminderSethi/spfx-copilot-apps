@@ -22,12 +22,12 @@ From the rendered UI, the signed-in user can:
 ![SPFx 1.24.0-beta.2](https://img.shields.io/badge/SPFx-1.24.0--beta.2-green.svg)
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](https://aka.ms/m365/devprogram)
@@ -60,7 +60,7 @@ After deploying the `.sppkg` to the App Catalog, a tenant admin must approve thi
   - `npm install`
   - `npm run start`
 - Since SPFx Copilot Components can't be tested in the local workbench, `npm start` serves against a hosted tenant workbench
-- Package and deploy the solution to your **App Catalog**, approve the API permission above, then invoke the **M365 Service Health Agent** in Microsoft 365 Copilot
+- Package and deploy the solution to your **App Catalog**, approve the API permission above, then invoke the **M365 Service Health Agent** in Microsoft Copilot
 
 Production build, test, and package:
 

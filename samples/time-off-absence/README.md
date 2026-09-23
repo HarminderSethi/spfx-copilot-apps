@@ -1,10 +1,10 @@
-# My Time Off — Time-Off & Absence Copilot App
+# My Time Off — Time-Off & Absence Copilot UX Component
 
 ![SPFx](https://img.shields.io/badge/SPFx-1.24.0--beta.2-yellow.svg) ![Node](https://img.shields.io/badge/Node.js-22.x-339933.svg) ![React](https://img.shields.io/badge/React-17-61DAFB.svg) ![Data](https://img.shields.io/badge/Data-SharePoint%20%2B%20Graph-2D9CDB.svg) ![Modes](https://img.shields.io/badge/Modes-inline%20%2B%20fullscreen-5B3EE8.svg)
 
 ## Summary
 
-**My Time Off** is a **SharePoint Copilot App** built as an SPFx 1.24 **Copilot Components** sample (not a classic web part). It brings an employee's time-off (PTO) experience _inside_ Microsoft 365 Copilot: instead of answering with plain text, Copilot renders three interactive SharePoint components — a personal **overview**, a **request** experience, and a **team** view with manager approvals — directly in the chat canvas.
+**My Time Off** is a sample of SPFx 1.24 **Copilot components** (not classic web parts). It brings an employee's time-off (PTO) experience _inside_ Microsoft Copilot: instead of answering with plain text, Copilot renders three interactive SharePoint components — a personal **overview**, a **request** experience, and a **team** view with manager approvals — directly in the chat canvas.
 
 The point of the sample is to show what makes SPFx Copilot Components different from a generic "MCP app": **authenticated, delegated client-side API calls.** Every component reads and writes its data with the _signed-in user's own identity_, calling **SharePoint REST** and **Microsoft Graph** directly from the browser — no MCP server, no middle tier, no app-only secrets.
 
@@ -27,7 +27,7 @@ All three are wired into a single declarative agent, **"My Time Off"**, via [`co
 
 ```mermaid
 flowchart LR
-    User([Employee / Manager]) --> Copilot[Microsoft 365 Copilot]
+    User([Employee / Manager]) --> Copilot[Microsoft Copilot]
     Copilot -->|GetMyTimeOff| A[timeOffOverview]
     Copilot -->|RequestTimeOff| B[timeOffRequest]
     Copilot -->|GetTeamTimeOff| C[timeOffTeam]
@@ -57,7 +57,7 @@ The Fluent v9 styling shell injects theme tokens twice — through `FluentProvid
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx) (Copilot Component)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](http://aka.ms/o365devprogram)
@@ -65,7 +65,7 @@ The Fluent v9 styling shell injects theme tokens twice — through `FluentProvid
 ## Prerequisites
 
 - Node.js >=22.14.0 <23.0.0
-- A Microsoft 365 tenant with **SharePoint** and **Microsoft 365 Copilot** enabled
+- A Microsoft 365 tenant with **SharePoint** and **Microsoft Copilot** enabled
 - A **SharePoint App Catalog** (tenant or site collection) and rights to deploy to it
 - Rights to **approve API permissions** in the SharePoint admin center (for the Microsoft Graph scopes)
 - [Heft](https://heft.rushstack.io/) (`npm install -g @rushstack/heft`)
@@ -129,7 +129,7 @@ export const TIME_OFF_LISTS_SITE_PATH = '/sites/spfx';
 
 The **host** is taken automatically from the SPFx page context at runtime, so only the site path is configured here — the components follow whichever tenant they run in.
 
-**Why this is required:** the components read their data with delegated, client-side SharePoint REST calls. Inside Microsoft 365 Copilot / BizChat there is no current SharePoint page, so the host resolves the "current web" to the tenant **root** site — where the lists don't exist. Every REST call then 404s and the component silently falls back to demo data. Pinning the site path (while taking the host from context) fixes this. (Leave it `''` only if the components run on a page that already lives on the lists' own site.)
+**Why this is required:** the components read their data with delegated, client-side SharePoint REST calls. Inside Microsoft Copilot / BizChat there is no current SharePoint page, so the host resolves the "current web" to the tenant **root** site — where the lists don't exist. Every REST call then 404s and the component silently falls back to demo data. Pinning the site path (while taking the host from context) fixes this. (Leave it `''` only if the components run on a page that already lives on the lists' own site.)
 
 **Runtime override (no rebuild) — the `TimeOffSite` tenant property.** `TIME_OFF_LISTS_SITE_PATH` is only the compiled-in _default_. At runtime each component reads a SharePoint **tenant property** named `TimeOffSite` (an app-catalog storage entity) with a delegated, client-side call — `GET {web}/_api/web/GetStorageEntity('TimeOffSite')`, which resolves from any site in the tenant, including the Copilot root web. When that property is present and non-empty its value **wins** over the constant. This lets an admin repoint every component at a different lists site **without rebuilding or redeploying** the package. Publish it with the provisioning script's `-SetTenantProperty` switch:
 
@@ -165,7 +165,7 @@ Other build commands can be listed using `heft --help`.
 
 ### 6. Try it in Copilot
 
-Open Microsoft 365 Copilot, pick the **My Time Off** agent (or invoke the tools from your own agent), and use the prompts below.
+Open Microsoft Copilot, pick the **My Time Off** agent (or invoke the tools from your own agent), and use the prompts below.
 
 ## Sample Copilot prompts
 
@@ -190,7 +190,7 @@ Open Microsoft 365 Copilot, pick the **My Time Off** agent (or invoke the tools 
 
 ## Features
 
-My Time Off demonstrates how to build a rich, theme-aware, **data-connected** UX inside the Microsoft 365 Copilot canvas using SPFx Copilot Components.
+My Time Off demonstrates how to build a rich, theme-aware, **data-connected** UX inside the Microsoft Copilot canvas using SPFx Copilot Components.
 
 This sample illustrates the following concepts:
 
@@ -266,6 +266,6 @@ samples/time-off-absence/
 
 > Share your solution with others through the Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/community/home.
 
-_Part of the **SharePoint Copilot Apps** sample gallery - complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
+_Part of the **Copilot UX components** sample gallery - complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/time-off-absence" />

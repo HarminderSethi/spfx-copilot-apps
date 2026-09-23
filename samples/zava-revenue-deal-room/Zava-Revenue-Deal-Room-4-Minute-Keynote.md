@@ -6,7 +6,7 @@ For Microsoft customers, partners, sellers, and product leaders. The promise is 
 
 ## Setup and reset
 
-- Deploy the ready-made `.sppkg` and add **Zava Revenue Deal Room** in Microsoft 365 Copilot.
+- Deploy the ready-made `.sppkg` and add **Zava Revenue Deal Room** in Microsoft Copilot.
 - Start a fresh conversation as Megan Bowen.
 - Keep the local screenshot sequence open as the fallback: `inline-buying-committee.png`, `inline-commercial-scenario.png`, `fullscreen-deal-room.png`, and `fullscreen-revenue-command.png`.
 - State once: all records are deterministic mock data and no CRM, customer, quote, contract, or forecast is changed.

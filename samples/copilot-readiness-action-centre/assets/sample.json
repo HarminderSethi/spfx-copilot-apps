@@ -3,18 +3,18 @@
     "name": "pnp-spfx-copilot-apps-copilot-readiness-action-centre",
     "source": "pnp",
     "title": "Copilot Readiness Action Centre",
-    "shortDescription": "Review Microsoft 365 Copilot readiness risks and create governed SharePoint remediation actions from the Copilot canvas.",
+    "shortDescription": "Review Microsoft Copilot readiness risks and create governed SharePoint remediation actions from the Copilot canvas.",
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/copilot-readiness-action-centre",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/copilot-readiness-action-centre",
     "longDescription": [
-      "Copilot Readiness Action Centre is a SharePoint Copilot App built as an SPFx 1.24 Copilot Component. It surfaces readiness scores and risk findings in the Microsoft 365 Copilot canvas, with inline and full-screen display modes, Fluent UI v9 host-driven theming, and governed remediation actions written to SharePoint lists.",
+      "Copilot Readiness Action Centre is a SharePoint Copilot App built as an SPFx 1.24 Copilot Component. It surfaces readiness scores and risk findings in the Microsoft Copilot canvas, with inline and full-screen display modes, Fluent UI v9 host-driven theming, and governed remediation actions written to SharePoint lists.",
       "The sample ships offline mock data for immediate demos and a swappable IReadinessDataService so a live SharePoint implementation is a drop-in path. Architecture follows the PnP agentic creation rules: thin entry component, root App selector, ThemeProvider, separate inline and full-screen views, and Zod tool inputs exported via zodToJsonSchema for Teams and agent packaging."
     ],
     "creationDateTime": "2026-07-14",
     "updateDateTime": "2026-07-14",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -55,8 +55,8 @@
     ],
     "references": [
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

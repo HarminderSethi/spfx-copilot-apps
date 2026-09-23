@@ -1,6 +1,6 @@
 # Zava Employee Agent demo prompts
 
-Use this catalog to test tool selection and parameter extraction in Microsoft 365 Copilot. Start a new conversation when testing routing collisions. Each prompt should select exactly one inline Copilot Component.
+Use this catalog to test tool selection and parameter extraction in Microsoft Copilot. Start a new conversation when testing routing collisions. Each prompt should select exactly one inline Copilot Component.
 
 > Expected properties below are the normalized values used by the component. When a prompt omits a field, the component may apply the documented offline-demo default. Prompt values prefill or filter UX; they never submit or decide automatically.
 

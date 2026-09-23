@@ -1,6 +1,6 @@
 # Work IQ Answers Agent Overview
 
-"Work IQ Answers" is a Microsoft 365 Copilot agent, implemented as an SPFx Copilot Component, that answers questions about the signed-in user's own work by calling the Work IQ Chat API and rendering the result as structured UI.
+"Work IQ Answers" is a Microsoft Copilot agent, implemented as an SPFx Copilot Component, that answers questions about the signed-in user's own work by calling the Work IQ Chat API and rendering the result as structured UI.
 
 **Core Function:**
 The agent renders answers as a card rather than as chat text. Work IQ returns an answer with people, meetings, and files tagged inline and a list of citations; the component parses those out and shows them as clickable chips and a grouped source panel, so the user can go straight to the meeting, document, or person behind any part of the answer.

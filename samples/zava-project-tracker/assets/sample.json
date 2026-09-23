@@ -7,7 +7,7 @@
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-project-tracker",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-project-tracker",
     "longDescription": [
-      "Zava demonstrates dynamic UX resolution inside Microsoft 365 Copilot. Thirty operational SPFx Copilot Components independently route natural-language intents to purpose-built information, comparison, submission, and decision experiences. A thirty-first capability explorer helps users discover the complete scenario catalog through business outcomes and safe previews.",
+      "Zava demonstrates dynamic UX resolution inside Microsoft Copilot. Thirty operational SPFx Copilot Components independently route natural-language intents to purpose-built information, comparison, submission, and decision experiences. A thirty-first capability explorer helps users discover the complete scenario catalog through business outcomes and safe previews.",
       "Operational components expand into one responsive full-screen application with My Work, Project, Portfolio, and Decisions dashboards. Project selection coordinates delivery, budget, AI spend, milestones, risk, team load, and benefits. Portfolio views show company investment, run-rate, value, capacity, and systemic exposure. Decisions uses one evidence-first inbox backed by the same records as the inline review components.",
       "The sample is deterministic, offline, and safe for worldwide demonstrations. Prompt values prefill or filter UX but never submit or decide automatically. Confirmed sample actions create browser-session receipts and never write to an external system. The production package uses one optimized shared bundle, bundled personas, Fluent UI v9, React 17, Griffel owner-document styling, focused D3 visualizations, and automated plugin/package-output validation."
     ],
@@ -86,8 +86,8 @@
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app"
       },
       {
-        "name": "Microsoft 365 Copilot",
-        "description": "Microsoft 365 Copilot combines large language models with organizational context and extensibility.",
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot combines large language models with organizational context and extensibility.",
         "url": "https://www.microsoft.com/microsoft-365/copilot"
       },
       {

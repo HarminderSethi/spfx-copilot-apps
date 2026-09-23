@@ -16,7 +16,7 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Review Microsoft 365 Copilot readiness risks and create governed remediation actions."
+        "default": "Review Microsoft Copilot readiness risks and create governed remediation actions."
       },
       "longDescription": {
         "default": "A SharePoint Copilot App for reviewing readiness assessments, investigating risks, selecting affected resources, assigning owners and creating remediation actions in SharePoint."

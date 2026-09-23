@@ -13,7 +13,7 @@
     "updateDateTime": "2026-01-01",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -46,8 +46,8 @@
     ],
     "references": [
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

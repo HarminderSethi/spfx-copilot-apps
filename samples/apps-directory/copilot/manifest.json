@@ -19,7 +19,7 @@
   },
   "description": {
     "short": "Browse and launch workplace apps from Copilot.",
-    "full": "Apps directory brings your organisation's full application catalogue into Microsoft 365 Copilot. Browse apps by category, search by name or keyword, mark your most-used apps as favourites for quick access, and launch any app directly from the Copilot chat. You can also add custom app shortcuts and filter the directory to show only your personal favourites."
+    "full": "Apps directory brings your organisation's full application catalogue into Microsoft Copilot. Browse apps by category, search by name or keyword, mark your most-used apps as favourites for quick access, and launch any app directly from the Copilot chat. You can also add custom app shortcuts and filter the directory to show only your personal favourites."
   },
   "accentColor": "#FFFFFF",
   "copilotAgents": {

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.5/schema.json",
   "version": "v1.5",
   "name": "Copilot Readiness Action Centre",
-  "description": "Review Microsoft 365 Copilot readiness findings and create controlled remediation actions.",
+  "description": "Review Microsoft Copilot readiness findings and create controlled remediation actions.",
   "instructions": "$[file('instruction.txt')]",
   "conversation_starters": [
     {
       "title": "Review readiness",
-      "text": "Are we ready to deploy Microsoft 365 Copilot?"
+      "text": "Are we ready to deploy Microsoft Copilot?"
     },
     {
       "title": "Critical risks",

@@ -1,10 +1,10 @@
-# My Day - Personalized Intranet Copilot App
+# My Day - Personalized Intranet Copilot UX Component
 
 ![SPFx](https://img.shields.io/badge/version-1.24.0--beta.2-yellow.svg) ![Node](https://img.shields.io/badge/Node.js-22.x-339933.svg) ![React](https://img.shields.io/badge/React-17-61DAFB.svg) ![Data](https://img.shields.io/badge/Data-Mockup-2D9CDB.svg) ![Modes](https://img.shields.io/badge/Modes-inline%20%2B%20fullscreen-5B3EE8.svg)
 
 ## Summary
 
-**My Day** is a **SharePoint Copilot App** built as an SPFx 1.24 **Copilot Component** (not a classic web part). Copilot opens to a living personal cockpit - greeting, next meeting, tasks and news - then expands to a full personal dashboard. Maximum relatability for a launch demo.
+**My Day** is an SPFx 1.24 **Copilot component** (not a classic web part). Copilot opens to a living personal cockpit - greeting, next meeting, tasks and news - then expands to a full personal dashboard. Maximum relatability for a launch demo.
 
 The same React component renders in two modes inside the Copilot canvas:
 
@@ -45,7 +45,7 @@ _Inline (left) + full-screen (right)._
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](http://aka.ms/o365devprogram)
@@ -82,7 +82,7 @@ _Inline (left) + full-screen (right)._
 
 > **Ready-made package included.** Because this is a scenario sample that runs entirely on mock data - with no live customer data or line-of-business integration - the repository ships the fully built solution package so you can deploy and demo it in minutes without building anything. Grab the package here: [sharepoint/solution/my-day.sppkg](./sharepoint/solution/my-day.sppkg).
 >
-> To use it, upload `my-day.sppkg` to your tenant **App Catalog**, enable solution in all sites (includes Copilot), and invoke the agent in Microsoft 365 Copilot. Prefer to build from source instead? Follow the steps below.
+> To use it, upload `my-day.sppkg` to your tenant **App Catalog**, enable solution in all sites (includes Copilot), and invoke the agent in Microsoft Copilot. Prefer to build from source instead? Follow the steps below.
 
 - Clone this repository
 - Ensure that you are at the solution folder (`samples/my-day`)
@@ -104,7 +104,7 @@ Other build commands can be listed using `heft --help`.
 
 A tight, repeatable flow for a live demo. All data is mock, so it works the same every time.
 
-1. **Invoke it** - in Microsoft 365 Copilot, select the **My Day** agent and send: _"What does my day look like?"_ The compact **inline card** renders.
+1. **Invoke it** - in Microsoft Copilot, select the **My Day** agent and send: _"What does my day look like?"_ The compact **inline card** renders.
 2. **Land the personal hook** (~10s) - call out the greeting using the **real signed-in user's name and photo**, the time-aware sub-line, and the dynamic summary ("You have 3 meetings and 2 high-priority tasks ahead."). Tap a tile (Next meeting / Tasks) to show the inline drill-down, then back.
 3. **Expand** (~10s) - click the **expand** control on the greeting card. The **full-screen dashboard** animates in - agenda timeline, tasks completion ring, important mail with face avatars, a news wall with real thumbnails, and the weather card.
 4. **The "wow" moment** (~15s) - click **Plan my day**. Watch the assistant "think" and then **stream in** a prioritized, deterministic focus briefing that opens with the user's name and reads as one connected story (prep the Design Review → review the inline-view PR → polish the demo script → reply to Megan).
@@ -115,7 +115,7 @@ A tight, repeatable flow for a live demo. All data is mock, so it works the same
 
 ## Features
 
-My Day demonstrates how to build a rich, theme-aware UX inside the Microsoft 365 Copilot canvas using an SPFx Copilot Component.
+My Day demonstrates how to build a rich, theme-aware UX inside the Microsoft Copilot canvas using an SPFx Copilot Component.
 
 This sample illustrates the following concepts:
 
@@ -214,6 +214,6 @@ samples/my-day/
 
 > Share your solution with others through the Microsoft 365 Patterns and Practices program to get visibility and exposure. Learn more from the [Microsoft 365 & Power Platform Community](https://aka.ms/community/home).
 
-_Part of the **SharePoint Copilot Apps** sample gallery - complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
+_Part of the **Copilot UX components** sample gallery - complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/my-day" />

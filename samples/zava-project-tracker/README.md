@@ -2,7 +2,7 @@
 
 ## Summary
 
-Zava demonstrates intent-driven UX inside Microsoft 365 Copilot. Thirty independently routed
+Zava demonstrates intent-driven UX inside Microsoft Copilot. Thirty independently routed
 operational Copilot Components answer personal delivery, project, portfolio, AI investment, capacity,
 submission, and approval intents. A catalog-driven capability explorer helps users discover them.
 
@@ -30,7 +30,7 @@ testing, use the complete [31-component prompt catalog](Zava-Project-Tracker-Dem
 ![version](https://img.shields.io/badge/version-1.24.0--beta.2-yellow.svg)
 
 This sample targets the SPFx `1.24.0-beta.2` Copilot Component preview used by the repository. Confirm
-the supported SPFx/Copilot App version in your target tenant before production adoption.
+the supported SPFx Copilot component version in your target tenant before production adoption.
 
 ## Applies to
 
@@ -42,7 +42,7 @@ the supported SPFx/Copilot App version in your target tenant before production a
 ## Prerequisites
 
 - Node.js `>=22.14.0 <23.0.0` for local development.
-- A SharePoint app catalog and Microsoft 365 Copilot access for deployment and tenant-host validation.
+- A SharePoint app catalog and Microsoft Copilot access for deployment and tenant-host validation.
 - No external API, Azure resource, or runtime network dependency is required for the sample data.
 - For local Workbench testing, replace `{tenantDomain}` in `config/serve.json` with the target tenant
   domain. The ready-made package does not require this local development setting.
@@ -82,12 +82,12 @@ the supported SPFx/Copilot App version in your target tenant before production a
   npm start
   ```
 
-- Add the generated Zava agent to Microsoft 365 Copilot and start with one of the three conversation
+- Add the generated Zava agent to Microsoft Copilot and start with one of the three conversation
   starters. Use the prompt catalog for deterministic routing checks.
 
 ### Video: test the package in Microsoft 365
 
-Use this walkthrough to deploy and test SharePoint Copilot App `.sppkg` packages in a Microsoft 365
+Use this walkthrough to deploy and test SPFx Copilot component `.sppkg` packages in a Microsoft 365
 tenant:
 
 [![Watch the Microsoft 365 tenant package testing walkthrough](https://img.youtube.com/vi/4asOZi4PNUQ/hqdefault.jpg)](https://www.youtube.com/watch?v=4asOZi4PNUQ)

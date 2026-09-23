@@ -1,6 +1,6 @@
 # SharePoint Events Copilot Component
 
-`EventsCopilotComponent` is a SharePoint Framework (SPFx) Copilot UX component that finds SharePoint Events list items and renders them as either an event feed or a calendar inside Microsoft 365 Copilot.
+`EventsCopilotComponent` is a SharePoint Framework (SPFx) Copilot UX component that finds SharePoint Events list items and renders them as either an event feed or a calendar inside Microsoft Copilot.
 
 The component uses Microsoft Graph Search and respects the signed-in user's SharePoint permissions. It searches SharePoint Events list items; it does not query Outlook calendars or the Microsoft Graph `/me/events` endpoint.
 

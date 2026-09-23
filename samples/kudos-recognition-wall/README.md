@@ -1,8 +1,8 @@
-# Kudos & Recognition Wall - Recognise colleagues in Microsoft 365 Copilot chat
+# Kudos & Recognition Wall - Recognise colleagues in Microsoft Copilot chat
 
 ## Summary
 
-**Kudos & Recognition Wall** is an SPFx **Copilot Component** that brings peer recognition into the Microsoft 365 Copilot canvas. A declarative agent ("Kudos and Recognition Wall") calls it as a tool, so colleagues can give kudos and browse who has been recognised without leaving the conversation.
+**Kudos & Recognition Wall** is an SPFx **Copilot Component** that brings peer recognition into the Microsoft Copilot canvas. A declarative agent ("Kudos and Recognition Wall") calls it as a tool, so colleagues can give kudos and browse who has been recognised without leaving the conversation.
 
 The same component renders in two host display modes:
 
@@ -18,7 +18,7 @@ From the rendered UI, the signed-in user can:
 
 Data is read from and written to a SharePoint **Kudos** list, with the recipient picker and department enrichment brokered through Microsoft Graph. The component also ships with a mock backend so it can be demoed without provisioning anything.
 
-![Inline Kudos card inside a Microsoft 365 Copilot chat](assets/preview.png)
+![Inline Kudos card inside a Microsoft Copilot chat](assets/preview.png)
 
 ![Expanded recognition wall with feed, filters and leaderboards](assets/kudos-recognition-wall-expanded.png)
 
@@ -29,14 +29,14 @@ Data is read from and written to a SharePoint **Kudos** list, with the recipient
 ![SPFx 1.24.0-beta.2](https://img.shields.io/badge/SPFx-1.24.0--beta.2-green.svg)
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
 > Don't worry if you're unsure about the compatibility details above. We'll verify them when we review your pull request.
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](https://aka.ms/m365/devprogram)
@@ -111,7 +111,7 @@ The component degrades gracefully without it: the picker falls back to the mock 
 npm run build
 ```
 
-- Upload the resulting `sharepoint/solution/o365c-kudos-wall.sppkg` to your **App Catalog** and deploy it, approve the API permission above, then invoke the **Kudos and Recognition Wall** agent in Microsoft 365 Copilot. Try a starter:
+- Upload the resulting `sharepoint/solution/o365c-kudos-wall.sppkg` to your **App Catalog** and deploy it, approve the API permission above, then invoke the **Kudos and Recognition Wall** agent in Microsoft Copilot. Try a starter:
   - "Show me the kudos wall" → the inline digest / wall
   - "Give Sarah kudos for saving the client demo" → the compose card, pre-filled
 

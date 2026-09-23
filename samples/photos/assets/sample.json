@@ -3,18 +3,18 @@
     "name": "pnp-spfx-copilot-apps-photos",
     "source": "pnp",
     "title": "SharePoint Photos Copilot Agent",
-    "shortDescription": "Find SharePoint and OneDrive photos from Microsoft 365 Copilot and explore them in an interactive gallery.",
+    "shortDescription": "Find SharePoint and OneDrive photos from Microsoft Copilot and explore them in an interactive gallery.",
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/photos",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/photos",
     "longDescription": [
-      "SharePoint Photos Copilot Agent brings natural-language photo discovery to Microsoft 365 Copilot. It searches SharePoint document libraries and, when requested, personal OneDrive by using Microsoft Graph Search, then presents matching images in an interactive gallery.",
+      "SharePoint Photos Copilot Agent brings natural-language photo discovery to Microsoft Copilot. It searches SharePoint document libraries and, when requested, personal OneDrive by using Microsoft Graph Search, then presents matching images in an interactive gallery.",
       "The gallery supports responsive layouts, fullscreen browsing, pagination, zoom, thumbnails, slideshow controls, date filtering, and relevance, modified-date, or name sorting. Search scopes can target a SharePoint site, document library, folder, or explicitly requested OneDrive content."
     ],
     "creationDateTime": "2026-08-24",
     "updateDateTime": "2026-08-24",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -36,7 +36,7 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/photos/assets/preview.png",
-        "alt": "Inline SharePoint Photos Agent gallery displaying recent event photos in Microsoft 365 Copilot."
+        "alt": "Inline SharePoint Photos Agent gallery displaying recent event photos in Microsoft Copilot."
       },
       {
         "name": "screenshot-agent-home.png",
@@ -50,7 +50,7 @@
         "type": "image",
         "order": 102,
         "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/photos/assets/screenshot-fullscreen-gallery.png",
-        "alt": "Fullscreen masonry gallery displaying SharePoint event photos in Microsoft 365 Copilot."
+        "alt": "Fullscreen masonry gallery displaying SharePoint event photos in Microsoft Copilot."
       },
       {
         "name": "screenshot-photo-lightbox.png",
@@ -69,8 +69,8 @@
     ],
     "references": [
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

@@ -19,7 +19,7 @@ import type { IKudoswallCopilotComponentProperties } from "./KudoswallCopilotCom
 /**
  * Kudos & Recognition Wall — an SPFx Copilot Component.
  *
- * Renders in the Microsoft 365 Copilot canvas. The host's display mode selects
+ * Renders in the Microsoft Copilot canvas. The host's display mode selects
  * the surface (inline card vs full-canvas wall) and the tool arguments
  * (recipient / message) select the inline state (launcher vs compose).
  *

@@ -9,7 +9,7 @@
 // WHY A FIXED SITE PATH IS NEEDED
 // The components fetch their data with delegated, client-side SharePoint REST
 // calls. On a SharePoint page the "current web" already IS the site that holds the
-// lists. But these are Copilot Components: inside Microsoft 365 Copilot / BizChat
+// lists. But these are Copilot Components: inside Microsoft Copilot / BizChat
 // there is no current SharePoint page, and the host resolves the current web to
 // the tenant ROOT site. REST calls against the root web 404 (the lists live on a
 // specific site, not the root), so every component silently falls back to demo

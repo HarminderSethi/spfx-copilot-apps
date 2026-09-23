@@ -1,10 +1,10 @@
-# SP Permissions Explorer - SharePoint Access Review Copilot App
+# SP Permissions Explorer - SharePoint Access Review Copilot UX Component
 
 ![SPFx](https://img.shields.io/badge/version-1.24.0--beta.2-yellow.svg) ![Node](https://img.shields.io/badge/Node.js-22.x-339933.svg) ![React](https://img.shields.io/badge/React-17-61DAFB.svg) ![Data](https://img.shields.io/badge/Data-SharePoint-2D9CDB.svg) ![Modes](https://img.shields.io/badge/Modes-inline%20%2B%20fullscreen-5B3EE8.svg)
 
 ## Summary
 
-**SP Permissions Explorer** is a **SharePoint Copilot App** built as an SPFx 1.24 **Copilot Component** (not a classic web part). It lets the signed-in user ask Microsoft 365 Copilot _"who has access to this site?"_ and get back an interactive, on-canvas permissions experience - users, groups, external/guest users and permission levels - instead of a wall of text.
+**SP Permissions Explorer** is an SPFx 1.24 **Copilot component** (not a classic web part). It lets the signed-in user ask Microsoft Copilot _"who has access to this site?"_ and get back an interactive, on-canvas permissions experience - users, groups, external/guest users and permission levels - instead of a wall of text.
 
 The component queries SharePoint directly with the **user's own delegated identity**, so it only ever surfaces what the user is already allowed to see. From the same experience the user can review access in depth, look up whether a specific person or group has access, and perform **write operations** (grant/remove access, change permission level, add/remove from a SharePoint group) - every write is confirmed in the UI before it runs.
 
@@ -25,7 +25,7 @@ The same React component renders in two modes inside the Copilot canvas:
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](http://aka.ms/o365devprogram)
@@ -64,7 +64,7 @@ The same React component renders in two modes inside the Copilot canvas:
   - `npm install -g @rushstack/heft`
   - `npm install`
   - `heft start --clean` - local dev server at `https://localhost:4321`
-- Invoke the agent in Microsoft 365 Copilot, name a site you have access to, and confirm the inline access summary renders, expands to full screen, filters correctly, resolves a specific person or group, and prompts for confirmation before any write action.
+- Invoke the agent in Microsoft Copilot, name a site you have access to, and confirm the inline access summary renders, expands to full screen, filters correctly, resolves a specific person or group, and prompts for confirmation before any write action.
 
 Production build, test, and package:
 
@@ -76,7 +76,7 @@ Other build commands can be listed using `heft --help`.
 
 ## Demo script
 
-1. **Invoke it** - in Microsoft 365 Copilot, select the **Permissions Explorer Agent** agent and ask: _"Who has access to the Home site?"_ The **inline access summary** renders.
+1. **Invoke it** - in Microsoft Copilot, select the **Permissions Explorer Agent** agent and ask: _"Who has access to the Home site?"_ The **inline access summary** renders.
 2. **Read the summary** - call out the high-level counts (users, groups, external/guest users, permission levels) drawn live from SharePoint with the signed-in user's identity.
 3. **Expand** - open the **full-screen** explorer to show the full permissions table, then apply a **filter** (e.g. _External users_ or _Full control_) and watch the table re-scope.
 4. **Look someone up** - ask _"Does Adele Vance have access?"_ to switch to **userLookup** mode and open the **principal details panel** with their effective access and how it's granted.
@@ -86,7 +86,7 @@ Other build commands can be listed using `heft --help`.
 
 ## Features
 
-SP Permissions Explorer demonstrates how to build a data-driven, delegated-identity admin experience inside the Microsoft 365 Copilot canvas using an SPFx Copilot Component.
+SP Permissions Explorer demonstrates how to build a data-driven, delegated-identity admin experience inside the Microsoft Copilot canvas using an SPFx Copilot Component.
 
 This sample illustrates the following concepts:
 
@@ -101,8 +101,8 @@ This sample illustrates the following concepts:
 ## References
 
 - [Getting started with SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Introducing SharePoint Copilot Apps](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/)
-- [Overview of SharePoint Copilot Apps](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/copilot/overview-copilot-apps)
+- [Introducing SPFx Copilot components](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/)
+- [Overview of SPFx Copilot components](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/copilot/overview-copilot-apps)
 - [SharePoint REST API](https://learn.microsoft.com/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service)
 - [Heft Documentation](https://heft.rushstack.io/)
 - [Microsoft 365 & Power Platform Community](https://aka.ms/community/home) - Guidance, tooling, samples and open-source controls for your Copilot, Microsoft 365 & Power Platform development
@@ -121,4 +121,3 @@ If you encounter any issues using this solution, please open an issue in this re
 ---
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/sp-permissions-explorer" />
-

@@ -14,7 +14,7 @@
     "updateDateTime": "2026-07-31",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -63,7 +63,7 @@
     "references": [
       {
         "name": "Overview of SharePoint Copilot Apps",
-        "description": "Extend Microsoft 365 Copilot with interactive experiences built with the SharePoint Framework.",
+        "description": "Extend Microsoft Copilot with interactive experiences built with the SharePoint Framework.",
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
       },
       {

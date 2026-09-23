@@ -17,10 +17,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Time-Off (PTO) showcase: view balances, request leave, and manage team approvals inside Microsoft 365 Copilot."
+        "default": "Time-Off (PTO) showcase: view balances, request leave, and manage team approvals inside Microsoft Copilot."
       },
       "longDescription": {
-        "default": "My Time Off is a SharePoint Framework Copilot Components sample. It surfaces an employee's PTO inside Microsoft 365 Copilot as three interactive components — a personal overview, a request experience with a live Outlook calendar conflict check, and a team view with inline manager approvals. It showcases authenticated client-side API calls: every component reads and writes its data with the signed-in user's own delegated identity, calling SharePoint REST and Microsoft Graph directly from the browser, with no MCP server or middle tier."
+        "default": "My Time Off is a SharePoint Framework Copilot Components sample. It surfaces an employee's PTO inside Microsoft Copilot as three interactive components — a personal overview, a request experience with a live Outlook calendar conflict check, and a team view with inline manager approvals. It showcases authenticated client-side API calls: every component reads and writes its data with the signed-in user's own delegated identity, calling SharePoint REST and Microsoft Graph directly from the browser, with no MCP server or middle tier."
       },
       "screenshotPaths": [],
       "videoUrl": "",

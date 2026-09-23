@@ -7,14 +7,14 @@
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/negotiation-lab",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/negotiation-lab",
     "longDescription": [
-      "Learn how to provision SharePoint lists with APVEE from an SPFx Copilot component, send messages and structured context to Microsoft 365 Copilot, and display generated answers and proposals inside React. Built with SPFx 1.24.0-beta.3 and React 18.",
+      "Learn how to provision SharePoint lists with APVEE from an SPFx Copilot component, send messages and structured context to Microsoft Copilot, and display generated answers and proposals inside React. Built with SPFx 1.24.0-beta.3 and React 18.",
       "Negotiation Lab demonstrates the integration through SaaS renewal, total job offer and service recovery scenarios. Users ask questions, edit terms and confirm outcomes, with a saved Cool, Medium or Hard counterpart style and practice state stored in two SharePoint lists."
     ],
     "creationDateTime": "2026-08-03",
     "updateDateTime": "2026-09-06",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -84,7 +84,7 @@
     "references": [
       {
         "name": "Overview of SharePoint Copilot Apps",
-        "description": "Extend Microsoft 365 Copilot with interactive experiences built with the SharePoint Framework.",
+        "description": "Extend Microsoft Copilot with interactive experiences built with the SharePoint Framework.",
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
       },
       {

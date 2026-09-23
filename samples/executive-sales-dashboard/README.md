@@ -1,12 +1,12 @@
 # Executive Sales & Revenue Dashboard
 
-> An executive sales & revenue dashboard that lives inside the Microsoft 365 Copilot canvas — store performance and customer satisfaction at a glance.
+> An executive sales & revenue dashboard that lives inside the Microsoft Copilot canvas — store performance and customer satisfaction at a glance.
 
 ![SPFx](https://img.shields.io/badge/version-1.24.0--beta.2-yellow.svg) ![Node](https://img.shields.io/badge/Node.js-22.x-339933.svg) ![React](https://img.shields.io/badge/React-17-61DAFB.svg) ![Fluent](https://img.shields.io/badge/UI-Fluent%20UI%20v9-5B3EE8.svg) ![Data](https://img.shields.io/badge/Data-Microsoft%20Graph-2D9CDB.svg) ![Modes](https://img.shields.io/badge/Modes-inline%20%2B%20fullscreen-5B3EE8.svg)
 
 ## Summary
 
-A **SharePoint Copilot App** that surfaces an **Executive Sales & Revenue Dashboard** directly inside Microsoft 365 Copilot. It renders a compact **inline** card and, on request, expands to a rich **full-screen** dashboard — switching automatically on the host `displayMode`.
+An **SPFx Copilot component** that surfaces an **Executive Sales & Revenue Dashboard** directly inside Microsoft Copilot. It renders a compact **inline** card and, on request, expands to a rich **full-screen** dashboard — switching automatically on the host `displayMode`.
 
 The sample runs **fully offline**: all data is generated locally as Graph-shaped mock data on every render, with dates anchored to the current date/time. A data-service interface plus a `useMock` flag make switching to a real backend a drop-in change with no UI rework.
 
@@ -27,7 +27,7 @@ _Inline (left) + full-screen (right)._
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](http://aka.ms/o365devprogram).
@@ -63,7 +63,7 @@ _Inline (left) + full-screen (right)._
 
 > **Ready-made package included.** Because this is a scenario sample that runs entirely on mock data - with no live customer data or line-of-business integration - the repository ships the fully built solution package so you can deploy and demo it in minutes without building anything. Grab the package here: [/sharepoint/solution/executive-sales-dashboard.sppkg](./sharepoint/solution/executive-sales-dashboard.sppkg).
 >
-> To use it, upload `executive-sales-dashboard.sppkg` to your tenant **App Catalog**, enable solution in all sites (includes Copilot), and invoke the agent in Microsoft 365 Copilot. Prefer to build from source instead? Follow the steps below.
+> To use it, upload `executive-sales-dashboard.sppkg` to your tenant **App Catalog**, enable solution in all sites (includes Copilot), and invoke the agent in Microsoft Copilot. Prefer to build from source instead? Follow the steps below.
 
 - Clone this repository
 - Ensure that you are at the solution folder (`executive-sales-dashboard`)
@@ -83,7 +83,7 @@ Other build commands can be listed using `heft --help`.
 
 ## 60-second demo script
 
-1. **Invoke it** - in Microsoft 365 Copilot, select the **ExecDashboard Agent** and send: _"Show me the sales and revenue dashboard"_ The compact **inline card** renders.
+1. **Invoke it** - in Microsoft Copilot, select the **ExecDashboard Agent** and send: _"Show me the sales and revenue dashboard"_ The compact **inline card** renders.
 2. **Land the inline experience** (~10s) - call out the initial output with brief recap of performance (revenue, win rate, and revenue trend).
 3. **Expand** (~10s) - select the **Expand to full screen** command on the upper right part of the card. The **full-screen dashboard** animates in - revenue, gross margin, win rate, new customers, revenue trend, revenue by region, revenue by product, quarter forecast, and insights.
 4. **The "wow" moment** (~30s) - select **All Regions**, or **All Products**, or **All Segments** to filter data accordingly to your selection. The whole dashboard dynamically updates accordingly to your settings. Explain the audience that all the data is dynamic.
@@ -142,6 +142,6 @@ src/copilotComponents/execDashboard/
 
 ---
 
-_Part of the **SharePoint Copilot Apps** sample gallery — interactive UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
+_Part of the **Copilot UX components** sample gallery — interactive UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/executive-sales-dashboard" />

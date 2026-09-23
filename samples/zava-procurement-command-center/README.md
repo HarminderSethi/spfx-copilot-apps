@@ -53,7 +53,7 @@ also requires final publisher and media-rights approval.
 
 1. Upload [sharepoint/solution/zava-procurement-command-center.sppkg](sharepoint/solution/zava-procurement-command-center.sppkg)
    to a SharePoint app catalog and deploy it tenant-wide.
-2. Enable the packaged **Zava Procurement Command Center** agent in the target Microsoft 365 Copilot
+2. Enable the packaged **Zava Procurement Command Center** agent in the target Microsoft Copilot
    environment.
 3. Start with: **“Compare the final rugged-device bids and show how risk changes the award.”**
 4. Expand to Sourcing Workbench, change the risk weight, inspect the exact table, and open the reviewed

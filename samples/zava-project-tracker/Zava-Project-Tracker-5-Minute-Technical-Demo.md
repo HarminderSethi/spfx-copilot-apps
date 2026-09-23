@@ -14,7 +14,7 @@ The implementation message is that many independently routed components can stil
 
 Open these side by side:
 
-- Microsoft 365 Copilot or the local UX review harness
+- Microsoft Copilot or the local UX review harness
 - VS Code at `samples/zava-project-tracker`
 - A terminal in the sample folder
 

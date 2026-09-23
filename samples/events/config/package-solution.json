@@ -16,7 +16,7 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Find and display accessible SharePoint Events in Microsoft 365 Copilot."
+        "default": "Find and display accessible SharePoint Events in Microsoft Copilot."
       },
       "longDescription": {
         "default": "A Copilot declarative agent that searches SharePoint Events list items by date range, topic, site, and layout."

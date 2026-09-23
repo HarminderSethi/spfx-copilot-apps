@@ -1,6 +1,6 @@
 # Zava Innovation Hub - Copilot Components sample
 
-> **Release candidate:** This offline, mock-data sample demonstrates how Microsoft 365 Copilot can turn
+> **Release candidate:** This offline, mock-data sample demonstrates how Microsoft Copilot can turn
 > natural-language intent into focused, interactive business UX. Inline components complete immediate
 > work; full screen preserves that context while adding application-scale comparison and governance.
 > The implementation follows [agentic-creation-rules.md](agentic-creation-rules.md); current validation
@@ -262,7 +262,7 @@ Every inline component is a compact business application, not an Adaptive Card i
 ## Full-screen model
 
 Full screen is one **shared five-lens application shell**, plus an isolated capability gallery. These
-are durable work areas in one Copilot application, not five separate applications, and Expand never
+are durable work areas in one Copilot UX experience, not five separate experiences, and Expand never
 opens a generic home page merely because a route exists.
 
 - Desktop/keynote uses a restrained vertical rail for **My Innovation**, **Programs & Pilots**,

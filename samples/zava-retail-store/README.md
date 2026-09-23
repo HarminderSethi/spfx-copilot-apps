@@ -1,12 +1,12 @@
-# Zava Retail Store — Retail Performance Copilot App
+# Zava Retail Store — Retail Performance Copilot UX Component
 
-> An executive retail cockpit that lives inside the Microsoft 365 Copilot canvas — store performance and customer satisfaction at a glance.
+> An executive retail cockpit that lives inside the Microsoft Copilot canvas — store performance and customer satisfaction at a glance.
 
 ![SPFx](https://img.shields.io/badge/version-1.24.0--beta.2-yellow.svg) ![Node](https://img.shields.io/badge/Node.js-22.x-339933.svg) ![React](https://img.shields.io/badge/React-17-61DAFB.svg) ![Fluent](https://img.shields.io/badge/UI-Fluent%20UI%20v9-5B3EE8.svg) ![Data](https://img.shields.io/badge/Data-Microsoft%20Graph-2D9CDB.svg) ![Modes](https://img.shields.io/badge/Modes-inline%20%2B%20fullscreen-5B3EE8.svg)
 
 ## Summary
 
-**Zava Retail Store** is a **SharePoint Copilot App** built as an SPFx 1.24 **Copilot Component** (not a classic web part). Copilot opens to a compact performance card — key metrics and a sales trend — then expands to a full executive dashboard covering sales, category mix, customer satisfaction, feedback, top products and store comparisons. Maximum impact for a retail launch demo.
+**Zava Retail Store** is an SPFx 1.24 **Copilot component** (not a classic web part). Copilot opens to a compact performance card — key metrics and a sales trend — then expands to a full executive dashboard covering sales, category mix, customer satisfaction, feedback, top products and store comparisons. Maximum impact for a retail launch demo.
 
 The same React component renders in two modes inside the Copilot canvas:
 
@@ -35,7 +35,7 @@ _Inline (left) + full-screen (right)._
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](http://aka.ms/o365devprogram)
@@ -72,7 +72,7 @@ _Inline (left) + full-screen (right)._
 
 > **Ready-made package included.** Because this is a scenario sample that runs entirely on mock data - with no live customer data or line-of-business integration - the repository ships the fully built solution package so you can deploy and demo it in minutes without building anything. Grab the package here: [/sharepoint/solution/zava-retail-store.sppkg](./sharepoint//solution/zava-retail-store.sppkg).
 >
-> To use it, upload `zava-retail-store.sppkg` to your tenant **App Catalog**, enable solution in all sites (includes Copilot), and invoke the agent in Microsoft 365 Copilot. Prefer to build from source instead? Follow the steps below.
+> To use it, upload `zava-retail-store.sppkg` to your tenant **App Catalog**, enable solution in all sites (includes Copilot), and invoke the agent in Microsoft Copilot. Prefer to build from source instead? Follow the steps below.
 
 - Clone this repository
 - Ensure that you are at the solution folder (`zava-retail-store`)
@@ -94,7 +94,7 @@ Other build commands can be listed using `heft --help`.
 
 A tight, repeatable flow for a live demo. All data is mock, so it works the same every time.
 
-1. **Invoke it** - in Microsoft 365 Copilot, select the **ZavaRetail Agent** agent and send: _"Show me the performance of our store in New York"_ The compact **inline card** renders.
+1. **Invoke it** - in Microsoft Copilot, select the **ZavaRetail Agent** agent and send: _"Show me the performance of our store in New York"_ The compact **inline card** renders.
 2. **Land the inline experience** (~10s) - call out the initial output with brief recap of performance (today's sales, customer satisfaction, sales trend, and top category).
 3. **Expand** (~10s) - click the **Open full dashboard** command on the lower part of the card. The **full-screen dashboard** animates in - sales vs target, transactions, avg basket, CSAT, NPS, conversion rate, sales trend, sales by category, customer satisfaction, top products today, recent customer feedback, and store/region comparison.
 4. **The "wow" moment** (~30s) - click **Filters**. Select the target store, target date, and enabled/disable any of the components/charts rendering in the dashboard. The whole dashboard dynamically updates accordingly to your settings.
@@ -104,7 +104,7 @@ A tight, repeatable flow for a live demo. All data is mock, so it works the same
 
 ## Features
 
-Zava Retail Store demonstrates how to build a rich, theme-aware executive dashboard inside the Microsoft 365 Copilot canvas using an SPFx Copilot Component.
+Zava Retail Store demonstrates how to build a rich, theme-aware executive dashboard inside the Microsoft Copilot canvas using an SPFx Copilot Component.
 
 This sample illustrates the following concepts:
 
@@ -179,6 +179,6 @@ zava-retail-store/
 
 ---
 
-_Part of the **SharePoint Copilot Apps** sample gallery — complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
+_Part of the **Copilot UX components** sample gallery — complex UX in the Copilot canvas, powered by SPFx. See [aka.ms/spfx](https://aka.ms/spfx)._
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/zava-retail-store" />

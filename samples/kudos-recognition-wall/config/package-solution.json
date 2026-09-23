@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Kudos & Recognition Wall — recognise colleagues in Microsoft 365 Copilot."
+        "default": "Kudos & Recognition Wall — recognise colleagues in Microsoft Copilot."
       },
       "longDescription": {
-        "default": "An SPFx Copilot Component that lets colleagues give kudos and browse your organization's recognition wall inside the Microsoft 365 Copilot canvas."
+        "default": "An SPFx Copilot Component that lets colleagues give kudos and browse your organization's recognition wall inside the Microsoft Copilot canvas."
       },
       "screenshotPaths": [],
       "videoUrl": "",

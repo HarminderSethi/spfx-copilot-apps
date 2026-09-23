@@ -7,7 +7,7 @@
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-it-concierge",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/zava-it-concierge",
     "longDescription": [
-      "Zava IT Concierge demonstrates employee device support, manager approvals, and company IT operations directly in Microsoft 365 Copilot. Thirty operational tools and one capability explorer route natural-language requests to purpose-built status, form, decision, journey, and analytical components.",
+      "Zava IT Concierge demonstrates employee device support, manager approvals, and company IT operations directly in Microsoft Copilot. Thirty operational tools and one capability explorer route natural-language requests to purpose-built status, form, decision, journey, and analytical components.",
       "Every component can expand into one shared Personal, Team, or IT Portfolio dashboard. The full-screen shell preserves the originating intent and prompt-derived context while combining device continuity, approval and budget evidence, service health, estate risk, spend, licenses, and refresh capacity.",
       "The sample is deterministic, offline, and safe for demonstrations. Prompt values filter or prefill the experience but never submit, approve, decline, delegate, declare, or apply a plan without visible review and confirmation. Production validation covers the generated 31-function plugin, all catalog entries, local media, gallery evidence, tests, and the final package."
     ],
@@ -65,7 +65,7 @@
     ],
     "references": [
       { "name": "Build your first SharePoint Copilot App", "description": "Build and package an SPFx Copilot Component with inline and full-screen experiences.", "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app" },
-      { "name": "Microsoft 365 Copilot", "description": "Microsoft 365 Copilot combines models with organizational context and extensibility.", "url": "https://www.microsoft.com/microsoft-365/copilot" },
+      { "name": "Microsoft Copilot", "description": "Microsoft Copilot combines models with organizational context and extensibility.", "url": "https://www.microsoft.com/microsoft-365/copilot" },
       { "name": "SharePoint Framework overview", "description": "Overview of SharePoint Framework client-side solutions for Microsoft 365.", "url": "https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview" }
     ]
   }

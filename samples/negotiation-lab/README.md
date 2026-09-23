@@ -4,7 +4,7 @@
 
 ## Summary
 
-This sample demonstrates how to augment an SPFx React component with Microsoft 365 Copilot. Users ask questions, exchange offers and confirm agreements in three fictional scenarios: **SaaS renewal**, **Total job offer** and **Service recovery**.
+This sample demonstrates how to augment an SPFx React component with Microsoft Copilot. Users ask questions, exchange offers and confirm agreements in three fictional scenarios: **SaaS renewal**, **Total job offer** and **Service recovery**.
 
 ## Features
 
@@ -22,19 +22,19 @@ The sample uses the SPFx Copilot bridge and two component tools. No custom backe
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![React 18](https://img.shields.io/badge/React-18-blue.svg)
 ![SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
-SharePoint Copilot Apps and the APIs used here are preview capabilities.
+SPFx Copilot components and the APIs used here are preview capabilities.
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 
 ## Prerequisites
 
 - Node.js `>=22.14.0 <23.0.0`.
-- A SharePoint App Catalog and access to SharePoint Copilot Apps and Microsoft 365 Copilot.
+- A SharePoint App Catalog and access to SPFx Copilot components and Microsoft Copilot.
 - An existing same-tenant SharePoint site with **Manage Lists** permission for setup.
 - Players need View Items on `NegotiationScenarios` and View, Add and Edit Items on `NegotiationSessions`.
 
@@ -51,7 +51,7 @@ SharePoint Copilot Apps and the APIs used here are preview capabilities.
 
 4. Upload `sharepoint/solution/negotiation-lab.sppkg` to the tenant App Catalog and deploy it.
 5. Use **Sync to Teams**, then install or update the **Negotiation Lab** agent.
-6. Open the agent in a new Microsoft 365 Copilot chat and say **Open Negotiation Lab**. Choose **Create the two lists** if prompted.
+6. Open the agent in a new Microsoft Copilot chat and say **Open Negotiation Lab**. Choose **Create the two lists** if prompted.
 
 Setup provisions `NegotiationScenarios` for the three scenarios and `NegotiationSessions` for saved practices. Rebuild if you change the configured site.
 
@@ -66,7 +66,7 @@ For local rendering checks, run `npx heft trust-dev-cert` and `npm run start`. T
 3. Under **Make an offer**, propose **CHF 108,000 / 36 months / 12 support hours** and explain the trade.
 4. Review the response. Choose **Accept and finish** to record the agreement or **Make another offer** to continue.
 
-Questions also work in Microsoft 365 Copilot chat. Say **show my practice** to reopen the board.
+Questions also work in Microsoft Copilot chat. Say **show my practice** to reopen the board.
 
 ## Negotiation Lab in action
 
@@ -118,8 +118,8 @@ For questions or problems, search the [repository issues](https://github.com/pnp
 
 ## References
 
-- [Overview of SharePoint Copilot Apps](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps)
-- [Build your first SharePoint Copilot App](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
+- [Overview of SPFx Copilot components](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps)
+- [Build your first SPFx Copilot component](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp)
 
 <img src="https://m365-visitor-stats.azurewebsites.net/spfx-copilot-components/samples/negotiation-lab" />

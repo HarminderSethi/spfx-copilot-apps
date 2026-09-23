@@ -293,7 +293,7 @@ export const McpToolUI: React.FC<IMcpToolUIProps> = (props) => {
       locale: props.locale,
       platform: props.hostContext.platform,
       deviceCapabilities: props.hostContext.deviceCapabilities,
-      userAgent: 'Microsoft 365 Copilot SPFx Component'
+      userAgent: 'Microsoft Copilot SPFx Component'
     }),
     [props.hostContext, props.locale]
   );
@@ -355,7 +355,7 @@ export const McpToolUI: React.FC<IMcpToolUIProps> = (props) => {
 
     return new AppBridge(
       props.client,
-      { name: 'Microsoft 365 Copilot SPFx Component', version: '1.0.0' },
+      { name: 'Microsoft Copilot SPFx Component', version: '1.0.0' },
       {
         openLinks: {},
         serverTools: serverCapabilities?.tools,

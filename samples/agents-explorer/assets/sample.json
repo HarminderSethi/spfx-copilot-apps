@@ -3,18 +3,18 @@
     "name": "pnp-spfx-copilot-components-agents-explorer",
     "source": "pnp",
     "title": "Agents Explorer - Discover Copilot Agents in Copilot Chat",
-    "shortDescription": "SPFx Copilot Component that brings a tenant-wide, live view of Copilot Agents (Power Platform / Copilot Studio bots) into the Microsoft 365 Copilot canvas.",
+    "shortDescription": "SPFx Copilot Component that brings a tenant-wide, live view of Copilot Agents (Power Platform / Copilot Studio bots) into the Microsoft Copilot canvas.",
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/agents-explorer",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/agents-explorer",
     "longDescription": [
-      "Agents Explorer is an SPFx Copilot Component that brings a tenant-wide view of Copilot Agents (Power Platform / Copilot Studio bots) directly into the Microsoft 365 Copilot canvas. A declarative agent (\"AgentsExplorer Agent\") calls it as a tool, and it renders a live, interactive grid of agents inline in the conversation or as a fullscreen overview, reading real Dataverse data across every Power Platform environment the signed-in user can reach.",
+      "Agents Explorer is an SPFx Copilot Component that brings a tenant-wide view of Copilot Agents (Power Platform / Copilot Studio bots) directly into the Microsoft Copilot canvas. A declarative agent (\"AgentsExplorer Agent\") calls it as a tool, and it renders a live, interactive grid of agents inline in the conversation or as a fullscreen overview, reading real Dataverse data across every Power Platform environment the signed-in user can reach.",
       "From the rendered UI, the signed-in user can see every Copilot Agent published across all Dataverse environments they have access to (with icon, owner, last-modified date, and published/not-published status), filter to agents they own, agents shared with them, or all agents, search by name/owner/schema name (with the search term extracted automatically from their Copilot request), open any agent directly in Copilot Studio, and expand the inline card to a fullscreen view for browsing larger agent lists."
     ],
     "creationDateTime": "2026-09-06",
     "updateDateTime": "2026-09-06",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -35,7 +35,7 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/agents-explorer/assets/3.png",
-        "alt": "Component in Action running in Microsoft 365 Copilot"
+        "alt": "Component in Action running in Microsoft Copilot"
       },
       {
         "type": "image",
@@ -59,8 +59,8 @@
     ],
     "references": [
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

@@ -369,7 +369,7 @@ Copilot frames a messy situation as a small set of choices. The user chooses ins
 
 **Prompt:**
 
-> Are we ready to deploy Microsoft 365 Copilot?
+> Are we ready to deploy Microsoft Copilot?
 
 ### Video 7 story
 

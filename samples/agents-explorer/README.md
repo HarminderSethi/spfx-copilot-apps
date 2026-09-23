@@ -2,7 +2,7 @@
 
 ## Summary
 
-**Agents Explorer** is an SPFx **Copilot Component** that brings a tenant-wide view of Copilot Agents (Power Platform / Copilot Studio bots) directly into the Microsoft 365 Copilot canvas. A declarative agent ("AgentsExplorer Agent") calls it as a tool, and it renders a live, interactive grid of agents inline in the conversation or as a fullscreen overview, reading real Dataverse data across every Power Platform environment the signed-in user can reach.
+**Agents Explorer** is an SPFx **Copilot Component** that brings a tenant-wide view of Copilot Agents (Power Platform / Copilot Studio bots) directly into the Microsoft Copilot canvas. A declarative agent ("AgentsExplorer Agent") calls it as a tool, and it renders a live, interactive grid of agents inline in the conversation or as a fullscreen overview, reading real Dataverse data across every Power Platform environment the signed-in user can reach.
 
 From the rendered UI, the signed-in user can:
 
@@ -25,7 +25,7 @@ From the rendered UI, the signed-in user can:
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment)
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](https://aka.ms/m365/devprogram)
@@ -70,7 +70,7 @@ After deploying the `.sppkg` to the App Catalog, a tenant admin must approve the
   - `npm install`
   - `npm run start`
 - Since SPFx Copilot Components can't be tested in the local workbench, `npm run start` serves against a hosted tenant workbench (see [`.vscode/launch.json`](./.vscode/launch.json) and [`config/serve.json`](./config/serve.json))
-- Package and deploy the solution to your **App Catalog**, grant the API permissions noted under Prerequisites, then invoke the **AgentsExplorer Agent** in Microsoft 365 Copilot
+- Package and deploy the solution to your **App Catalog**, grant the API permissions noted under Prerequisites, then invoke the **AgentsExplorer Agent** in Microsoft Copilot
 
 Other build commands can be listed using `heft --help`.
 
@@ -116,7 +116,7 @@ The compiled JSON Schema is referenced by the component's manifest, which is how
 ## References
 
 - [Getting started with SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Use Microsoft Graph in your solution](https://learn.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://learn.microsoft.com/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development

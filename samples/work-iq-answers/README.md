@@ -19,7 +19,7 @@ Unlike the other samples in this repository, which use mocked data or call Micro
 ![SPFx 1.24.0-beta.2](https://img.shields.io/badge/SPFx-1.24.0--beta.2-green.svg)
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 ![Runs without a tenant](https://img.shields.io/badge/Local%20Workbench-Compatible-green.svg)
 
 > Built and tested against Node.js v22.18.0 and SPFx 1.24.0-beta.2 (the Copilot Components beta).
@@ -27,7 +27,7 @@ Unlike the other samples in this repository, which use mocked data or call Micro
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft Work IQ APIs](https://learn.microsoft.com/microsoft-365/copilot/extensibility/work-iq/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment)
 

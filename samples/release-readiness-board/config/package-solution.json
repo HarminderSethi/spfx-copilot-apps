@@ -16,7 +16,7 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Release readiness board for tracking blockers and release checks in Microsoft 365 Copilot"
+        "default": "Release readiness board for tracking blockers and release checks in Microsoft Copilot"
       },
       "longDescription": {
         "default": "A SharePoint Copilot App that renders inline and full-screen release readiness views with blockers, overdue checks, and owner accountability."

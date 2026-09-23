@@ -188,7 +188,7 @@ if (
     $Assessment = Add-PnPListItem `
         -List $A `
         -Values @{
-            Title            = 'Microsoft 365 Copilot Readiness Assessment'
+            Title            = 'Microsoft Copilot Readiness Assessment'
             TenantName       = 'Archon Gnosis'
             AssessmentDate   = (Get-Date).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
             OverallScore     = 42

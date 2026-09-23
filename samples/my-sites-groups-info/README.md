@@ -2,7 +2,7 @@
 
 ## Summary
 
-**My Sites & Groups Info** is an SPFx **Copilot Component** that helps users discover and manage SharePoint sites and Microsoft 365 Groups without leaving Microsoft 365 Copilot. A declarative agent calls the `MySitesGroupInfoTool`, which renders a live React experience in the Copilot conversation.
+**My Sites & Groups Info** is an SPFx **Copilot Component** that helps users discover and manage SharePoint sites and Microsoft 365 Groups without leaving Microsoft Copilot. A declarative agent calls the `MySitesGroupInfoTool`, which renders a live React experience in the Copilot conversation.
 
 Depending on the request, the component shows followed SharePoint sites, accessible SharePoint sites, or Microsoft 365 Groups the user belongs to. Users can search resources, open sites directly, follow or unfollow sites, explore group owners and members, and manage membership when permitted.
 
@@ -15,12 +15,12 @@ Depending on the request, the component shows followed SharePoint sites, accessi
 ![SPFx 1.24.0-beta.2](https://img.shields.io/badge/SPFx-1.24.0--beta.2-green.svg)
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 Developer Program](https://aka.ms/m365/devprogram).
@@ -74,7 +74,7 @@ To create the production package, run:
 npm run build
 ```
 
-Deploy `sharepoint/solution/my-sites-groups-info.sppkg` to the SharePoint App Catalog, approve the API permissions, and install the solution before invoking the **My Sites and Groups Info Agent** in Microsoft 365 Copilot.
+Deploy `sharepoint/solution/my-sites-groups-info.sppkg` to the SharePoint App Catalog, approve the API permissions, and install the solution before invoking the **My Sites and Groups Info Agent** in Microsoft Copilot.
 
 Other build commands can be listed using `heft --help`.
 

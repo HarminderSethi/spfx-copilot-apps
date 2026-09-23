@@ -15,7 +15,7 @@ The rendered experience owns rich project and task details. The conversational r
 
 ```mermaid
 flowchart TD
-    U[User request in Microsoft 365 Copilot]
+    U[User request in Microsoft Copilot]
     DA[copilot/declarativeAgent.json\nname, instructions, starters]
     AP[copilot/ai-plugin.json\nMyprojectsTool, CreatePlannerProjectTool]
     M[SPFx Copilot manifest\ncomponent ID and schemas]

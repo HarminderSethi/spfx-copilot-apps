@@ -1,10 +1,10 @@
 # Zava IT Concierge
 
-Powered by SPFx Copilot Apps
+Powered by SPFx Copilot components
 
 ## Summary
 
-Zava IT Concierge is an employee IT self-service Copilot App built with SharePoint Framework 1.24 Copilot Components. It turns device support, hardware requests, manager approvals, service health, and fleet operations into interactive work inside the Microsoft 365 Copilot canvas.
+Zava IT Concierge is an employee IT self-service experience built with SPFx 1.24 Copilot components. It turns device support, hardware requests, manager approvals, service health, and fleet operations into interactive work inside the Microsoft Copilot canvas.
 
 The solution contains 30 independently routed operational tools plus one searchable capability explorer. Every tool can expand into one connected Personal, Team, or IT Portfolio dashboard while preserving the initiating intent and safe prompt-derived context.
 
@@ -16,7 +16,7 @@ The solution contains 30 independently routed operational tools plus one searcha
 ## Applies To
 
 - SharePoint Framework 1.24 Copilot Components
-- Microsoft 365 Copilot declarative agents and API plugin v2.4
+- Microsoft Copilot declarative agents and API plugin v2.4
 - React 17 and Fluent UI React v9
 
 ## At a Glance
@@ -159,7 +159,7 @@ The ready-to-deploy package is [sharepoint/solution/zava-it-concierge.sppkg](sha
 ## Minimal Path to Awesome
 
 1. Deploy [sharepoint/solution/zava-it-concierge.sppkg](sharepoint/solution/zava-it-concierge.sppkg) to the tenant app catalog, or build it locally with `npm run build`.
-2. Add the generated Zava IT Concierge agent to Microsoft 365 Copilot.
+2. Add the generated Zava IT Concierge agent to Microsoft Copilot.
 3. Start a fresh conversation and use a prompt from [Zava-IT-Concierge-Prompt-Matrix.md](Zava-IT-Concierge-Prompt-Matrix.md).
 4. Verify that the expected single component renders and prompt-derived values are visible and editable.
 5. Use **Full screen** to verify exact Personal, Team, or IT Portfolio continuation.
@@ -228,9 +228,9 @@ See [assets/README.md](assets/README.md), [assets/sample.json](assets/sample.jso
 
 ## References
 
-- [Build your first SharePoint Copilot App](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
+- [Build your first SPFx Copilot component](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
 - [SharePoint Framework overview](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 
 ## Disclaimer
 

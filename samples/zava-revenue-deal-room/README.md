@@ -41,7 +41,7 @@ different throughout the journey.
 ## Applies to
 
 - SharePoint Framework `1.24.0-beta.3`
-- Microsoft 365 Copilot declarative agents and Copilot Components preview
+- Microsoft Copilot declarative agents and Copilot Components preview
 - React `18.3.1`, Fluent UI v9 `9.74.6`, and Griffel `1.7.7`
 - Node.js `>=22.14.0 <23.0.0`
 
@@ -50,7 +50,7 @@ different throughout the journey.
 1. Download and deploy [zava-revenue-deal-room.sppkg](sharepoint/solution/zava-revenue-deal-room.sppkg)
    to the tenant app catalog.
 2. Approve deployment for all sites when prompted.
-3. Add the packaged **Zava Revenue Deal Room** agent in Microsoft 365 Copilot.
+3. Add the packaged **Zava Revenue Deal Room** agent in Microsoft Copilot.
 4. Start with “Help me get Contoso's global expansion deal to signature this quarter.”
 
 To build locally:

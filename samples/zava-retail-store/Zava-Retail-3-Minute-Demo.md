@@ -5,7 +5,7 @@
 **What if a retail leader could move from a question to an interactive store-performance view without leaving Copilot?**
 
 Zava Retail brings sales, customer sentiment, product performance, and regional comparisons into one
-experience inside Microsoft 365 Copilot.
+experience inside Microsoft Copilot.
 
 > **Copilot understands the store request. The component turns it into a focused business experience.
 > The leader can investigate without assembling another report.**
@@ -15,7 +15,7 @@ when more detail is needed. It uses deterministic sample data so the story is re
 
 ## Before presenting
 
-- Deploy `sharepoint/solution/zava-retail-store.sppkg` and open the ZavaRetail Agent in Microsoft 365 Copilot.
+- Deploy `sharepoint/solution/zava-retail-store.sppkg` and open the ZavaRetail Agent in Microsoft Copilot.
 - Start a new conversation in a desktop-width window.
 - Keep the prompt **Show me the performance of our store in New York** ready to paste.
 - Set the dashboard to mock data and restore all visible sections before starting.

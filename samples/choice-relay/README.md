@@ -35,14 +35,14 @@ A teaching sample: two tools, nothing to provision.
 ![React 17](https://img.shields.io/badge/React-17-blue.svg)
 ![Fluent UI v9](https://img.shields.io/badge/Fluent%20UI-v9-purple.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
-> SharePoint Copilot Apps and the APIs used by this sample are currently preview capabilities.
+> SPFx Copilot components and the APIs used by this sample are currently preview capabilities.
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ Copilot Components
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - A Microsoft 365 tenant with a SharePoint App Catalog
 
 ## Contributors
@@ -131,8 +131,8 @@ We do not support samples, but the community is always willing to help. Search t
 
 ## References
 
-- [Overview of SharePoint Copilot Apps](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps)
-- [Build your first SharePoint Copilot App](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
+- [Overview of SPFx Copilot components](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps)
+- [Build your first SPFx Copilot component](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
 - [Fluent UI React v9](https://react.fluentui.dev/)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp)
 

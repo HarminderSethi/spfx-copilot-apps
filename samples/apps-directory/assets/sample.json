@@ -7,13 +7,13 @@
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/apps-directory",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/apps-directory",
     "longDescription": [
-      "Apps directory brings your organisation's full application catalogue into Microsoft 365 Copilot. Browse apps by category, search by name or keyword, mark your most-used apps as favourites for quick access, and launch any app directly from the Copilot chat. You can also add custom app shortcuts and filter the directory to show only your personal favourites."
+      "Apps directory brings your organisation's full application catalogue into Microsoft Copilot. Browse apps by category, search by name or keyword, mark your most-used apps as favourites for quick access, and launch any app directly from the Copilot chat. You can also add custom app shortcuts and filter the directory to show only your personal favourites."
     ],
     "creationDateTime": "2026-07-16",
     "updateDateTime": "2026-07-16",
     "products": [
       "SharePoint",
-      "Microsoft 365 Copilot"
+      "Microsoft Copilot"
     ],
     "metadata": [
       {
@@ -61,8 +61,8 @@
     ],
     "references": [
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

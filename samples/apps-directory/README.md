@@ -4,7 +4,7 @@
 
 ## Summary
 
-**Apps directory** is a **SharePoint Copilot App** built as an SPFx 1.24 **Copilot Component** (not a classic web part). It brings your organisation's full application catalogue into Microsoft 365 Copilot. Browse apps by category, search by name or keyword, mark your most-used apps as favourites for quick access, and launch any app directly from the Copilot chat. You can also add custom app shortcuts and filter the directory to show only your personal favourites.
+**Apps directory** is an SPFx 1.24 **Copilot component** (not a classic web part). It brings your organisation's full application catalogue into Microsoft Copilot. Browse apps by category, search by name or keyword, mark your most-used apps as favourites for quick access, and launch any app directly from the Copilot chat. You can also add custom app shortcuts and filter the directory to show only your personal favourites.
 
 The same React component renders in two modes inside the Copilot canvas:
 
@@ -30,7 +30,7 @@ The sample ships with **mocked data** so anyone can deploy and demo in minutes. 
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant) with the SharePoint App Catalog
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
@@ -74,7 +74,7 @@ Other build commands can be listed using `heft --help`.
 
 ## Features
 
-- An SPFx **Copilot Component** (`copilotType: "Ux"`) that renders inside the Microsoft 365 Copilot canvas
+- An SPFx **Copilot Component** (`copilotType: "Ux"`) that renders inside the Microsoft Copilot canvas
 - Handles **inline and full-screen display modes** in a single React component
 - Persists user data (favourites, custom apps) to **OneDrive via Microsoft Graph**
 - Passes agent tool inputs (`category`, `searchQuery`, `showFavoritesOnly`) to filter the UI from a natural-language prompt

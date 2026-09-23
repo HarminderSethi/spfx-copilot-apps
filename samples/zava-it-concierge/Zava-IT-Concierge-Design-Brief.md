@@ -1,6 +1,6 @@
-# Zava IT Concierge - SPFx Microsoft 365 Copilot Sample
+# Zava IT Concierge - SPFx Microsoft Copilot Sample
 
-> **Build target for GitHub Copilot (agent mode):** Scaffold a SharePoint Framework (SPFx) based Microsoft 365 Copilot extensibility sample that delivers a rich, Fluent 2–designed employee IT self‑service experience — as compact **inline components inside the Microsoft 365 Copilot canvas**, each able to **expand into an immersive full‑screen Copilot canvas view** for deeper context, without ever leaving Copilot. This document is the complete product + UX + technical spec. Build exactly what is described here; do not substitute generic/default AI-chat UI patterns.
+> **Build target for GitHub Copilot (agent mode):** Scaffold a SharePoint Framework (SPFx) based Microsoft Copilot extensibility sample that delivers a rich, Fluent 2–designed employee IT self‑service experience — as compact **inline components inside the Microsoft Copilot canvas**, each able to **expand into an immersive full‑screen Copilot canvas view** for deeper context, without ever leaving Copilot. This document is the complete product + UX + technical spec. Build exactly what is described here; do not substitute generic/default AI-chat UI patterns.
 
 ---
 

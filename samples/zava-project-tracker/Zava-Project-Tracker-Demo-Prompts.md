@@ -1,6 +1,6 @@
 # Zava AI Project Portfolio Agent demo prompts
 
-Use this catalog to test tool selection, property extraction, inline UX, and full-screen landing in Microsoft 365 Copilot. Start a new conversation for routing-collision tests. Each prompt should select exactly one Copilot Component.
+Use this catalog to test tool selection, property extraction, inline UX, and full-screen landing in Microsoft Copilot. Start a new conversation for routing-collision tests. Each prompt should select exactly one Copilot Component.
 
 > Expected properties are normalized business values, not guaranteed diagnostic formatting. Missing fields remain visible defaults or selectors. By design, this sample uses prompt values to prefill, filter, or open a decision draft, while submission, approval, rejection, assignment, and external writes require separate governed actions. Megan Bowen, Pradeep Gupta, Customer Service Copilot, and the other named people/projects are
 > deterministic fictional sample records. The prompts intentionally use them so routing and screenshots

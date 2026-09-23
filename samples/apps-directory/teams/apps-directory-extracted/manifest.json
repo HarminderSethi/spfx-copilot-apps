@@ -19,7 +19,7 @@
   },
   "description": {
     "short": "Browse and launch workplace apps from Copilot.",
-    "full": "Browse and launch your workplace applications directly from Microsoft 365 Copilot."
+    "full": "Browse and launch your workplace applications directly from Microsoft Copilot."
   },
   "accentColor": "#FFFFFF",
   "copilotAgents": {

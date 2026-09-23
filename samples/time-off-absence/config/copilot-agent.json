@@ -6,7 +6,7 @@
         "default": "My Time Off"
       },
       "description": {
-        "default": "View your time-off balances, upcoming booked leave, and recent request history; request new time off with a live calendar conflict check; and see who's out across your team while managers approve or decline pending requests inline — all inside Microsoft 365 Copilot."
+        "default": "View your time-off balances, upcoming booked leave, and recent request history; request new time off with a live calendar conflict check; and see who's out across your team while managers approve or decline pending requests inline — all inside Microsoft Copilot."
       },
       "components": [
         "292a623e-3892-4783-9ddb-26de6481b3a8",

@@ -4,14 +4,14 @@ Powered by SPFx Copilot Components
 
 ## Summary
 
-Zava Employee Agent is an HR Hub Copilot App built with SharePoint Framework 1.24 Copilot
-Components. It is the HR front door for Zava employees, not another HR chatbot.
+Zava Employee Agent is an HR hub built with SPFx 1.24 Copilot components. It is the HR front door
+for Zava employees, not another HR chatbot.
 
-Instead of returning walls of policy text, the agent renders work directly in the Microsoft 365
-Copilot canvas: balances, forms, cards, comparisons, calendars, timelines, and manager workflows.
+Instead of returning walls of policy text, the agent renders work directly in the Microsoft Copilot
+canvas: balances, forms, cards, comparisons, calendars, timelines, and manager workflows.
 The core design principle is:
 
-> **Chat asks; Copilot Apps render the answer, the action, and the proof in the canvas.**
+> **Chat asks; Copilot UX components render the answer, the action, and the proof in the canvas.**
 
 The solution contains ten component families. Each family has compact inline experiences for
 focused answers and actions, plus a full-screen experience for deeper work. The sample uses realistic
@@ -39,7 +39,7 @@ launch, use the [ten-video global social campaign](Copilot-Apps-Social-Campaign.
 ## Applies To
 
 - SharePoint Framework 1.24 Copilot Components
-- Microsoft 365 Copilot declarative agents
+- Microsoft Copilot declarative agents
 - React 17 and Fluent UI React v9
 
 ## At a Glance
@@ -291,14 +291,14 @@ The package path configured by the project is
 1. Deploy the ready-made
    [`sharepoint/solution/zava-employee-agent.sppkg`](sharepoint/solution/zava-employee-agent.sppkg)
    to the tenant app catalog, or run `npm install` and `npm run build`.
-2. Add the generated Zava Employee Agent to Microsoft 365 Copilot.
+2. Add the generated Zava Employee Agent to Microsoft Copilot.
 3. Start a fresh conversation and use the exact prompts in
    [Zava-Employee-Agent-Demo-Prompts.md](Zava-Employee-Agent-Demo-Prompts.md).
 4. Confirm prompt values are visible and editable before completing any mocked action.
 
 ### Video: test the package in Microsoft 365
 
-Use this walkthrough to deploy and test SharePoint Copilot App `.sppkg` packages in a Microsoft 365
+Use this walkthrough to deploy and test SPFx Copilot component `.sppkg` packages in a Microsoft 365
 tenant:
 
 [![Watch the Microsoft 365 tenant package testing walkthrough](https://img.youtube.com/vi/4asOZi4PNUQ/hqdefault.jpg)](https://www.youtube.com/watch?v=4asOZi4PNUQ)

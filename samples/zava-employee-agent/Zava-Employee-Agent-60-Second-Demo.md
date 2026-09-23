@@ -6,7 +6,7 @@ Show how a natural-language HR request becomes a purpose-built, reviewable Copil
 
 ## Before presenting
 
-- Start a fresh Microsoft 365 Copilot conversation with Zava Employee Agent.
+- Start a fresh Microsoft Copilot conversation with Zava Employee Agent.
 - Use the manager-capable Megan persona.
 - Keep the browser wide enough to show the full-screen family rail.
 - Do not describe the mocked confirmation as a live HR-system transaction.

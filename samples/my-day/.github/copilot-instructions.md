@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-SharePoint Framework (SPFx) **1.24 dev preview Copilot Component** built with TypeScript ~5.8 and the **Heft** build system (not Gulp). This is **not a classic web part** — it is a `CopilotComponent` surfaced in the Microsoft 365 Copilot UX through the new **SharePoint Copilot Apps** model. The component is exposed to Copilot as one or more **tools** that a **declarative agent** can call, and it renders its own UI inside the Copilot host (inline or fullscreen).
+SharePoint Framework (SPFx) **1.24 dev preview Copilot Component** built with TypeScript ~5.8 and the **Heft** build system (not Gulp). This is **not a classic web part** — it is a `CopilotComponent` surfaced in the Microsoft Copilot UX through the new **SharePoint Copilot Apps** model. The component is exposed to Copilot as one or more **tools** that a **declarative agent** can call, and it renders its own UI inside the Copilot host (inline or fullscreen).
 
 Key packages:
 

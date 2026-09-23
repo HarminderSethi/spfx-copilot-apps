@@ -2,7 +2,7 @@
 
 ## Summary
 
-**MyApprovals** is an SPFx **Copilot Component** that brings the signed-in user's Microsoft 365 approval requests — the same ones surfaced by the Teams/Outlook **Approvals** app — directly into the Microsoft 365 Copilot canvas. A declarative agent ("MyApprovals Agent") calls it as a tool, and it renders a live, interactive list of approvals inline in the conversation or as a fullscreen overview, reading and writing real data through the Microsoft Graph Approvals API.
+**MyApprovals** is an SPFx **Copilot Component** that brings the signed-in user's Microsoft 365 approval requests — the same ones surfaced by the Teams/Outlook **Approvals** app — directly into the Microsoft Copilot canvas. A declarative agent ("MyApprovals Agent") calls it as a tool, and it renders a live, interactive list of approvals inline in the conversation or as a fullscreen overview, reading and writing real data through the Microsoft Graph Approvals API.
 
 From the rendered UI, the signed-in user can:
 
@@ -20,12 +20,12 @@ From the rendered UI, the signed-in user can:
 ![SPFx 1.24.0-beta.2](https://img.shields.io/badge/SPFx-1.24.0--beta.2-green.svg)
 ![Node.js v22](https://img.shields.io/badge/Node.js-v22-green.svg)
 ![Compatible with SharePoint Online](https://img.shields.io/badge/SharePoint%20Online-Compatible-green.svg)
-![Compatible with Microsoft 365 Copilot](https://img.shields.io/badge/Microsoft%20365%20Copilot-Compatible-green.svg)
+![Compatible with Microsoft Copilot](https://img.shields.io/badge/Microsoft%20Copilot-Compatible-green.svg)
 
 ## Applies to
 
 - [SharePoint Framework](https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
+- [Microsoft Copilot extensibility](https://learn.microsoft.com/microsoft-365-copilot/extensibility/)
 - [Microsoft 365 tenant](https://learn.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) with the SharePoint App Catalog and the **Approvals** app in use
 
 > Get your own free development tenant by subscribing to the [Microsoft 365 developer program](https://aka.ms/m365/devprogram)
@@ -61,7 +61,7 @@ After deploying the `.sppkg` to the App Catalog, a tenant admin must approve the
   - `npm install`
   - `npm run start`
 - Since SPFx Copilot Components can't be tested in the local workbench, `npm start` serves against the hosted tenant workbench configured in [`config/serve.json`](./config/serve.json)
-- Package and deploy the solution to your **App Catalog**, approve the API permissions above, then invoke the **MyApprovals Agent** in Microsoft 365 Copilot
+- Package and deploy the solution to your **App Catalog**, approve the API permissions above, then invoke the **MyApprovals Agent** in Microsoft Copilot
 
 Production build, test, and package:
 

@@ -7,7 +7,7 @@
     "url": "https://github.com/VesaJuvonen/spfx-copilot-components/tree/main/samples/zava-innovation-portfolio",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/VesaJuvonen/spfx-copilot-components/tree/main/samples/zava-innovation-portfolio",
     "longDescription": [
-      "Zava Innovation Hub demonstrates how Microsoft 365 Copilot can turn natural-language intent into focused innovation work. Seventeen independently routed components cover idea intake, personal progress, business cases, reviews, funding, experiments, portfolio analysis, value realization, global participation, recognition, and capability discovery.",
+      "Zava Innovation Hub demonstrates how Microsoft Copilot can turn natural-language intent into focused innovation work. Seventeen independently routed components cover idea intake, personal progress, business cases, reviews, funding, experiments, portfolio analysis, value realization, global participation, recognition, and capability discovery.",
       "Every operational component can continue into a shared My Innovation, Programs and Pilots, Reviews and Gates, Investment, or Enterprise Insights workspace. The full-screen experience preserves the originating scenario while adding coordinated stage-gate, impact, balance, budget, growth, geography, and realized-value evidence.",
       "The sample is deterministic, offline, and safe for demonstrations. Prompt values prefill or scope the experience, while consequential mock actions require visible review and confirmation. Production validation covers catalog routing, generated plugin alignment, local media, current-source visual evidence, tests, and final SharePoint package contents."
     ],
@@ -37,7 +37,7 @@
     ],
     "references": [
       { "name": "Build your first SharePoint Copilot App", "description": "Build and package an SPFx Copilot Component with inline and full-screen experiences.", "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app" },
-      { "name": "Microsoft 365 Copilot", "description": "Microsoft 365 Copilot extensibility and organizational context.", "url": "https://www.microsoft.com/microsoft-365/copilot" },
+      { "name": "Microsoft Copilot", "description": "Microsoft Copilot extensibility and organizational context.", "url": "https://www.microsoft.com/microsoft-365/copilot" },
       { "name": "SharePoint Framework overview", "description": "Overview of SharePoint Framework client-side solutions.", "url": "https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview" }
     ]
   }

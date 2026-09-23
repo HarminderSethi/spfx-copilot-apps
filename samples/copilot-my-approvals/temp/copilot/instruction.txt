@@ -1,6 +1,6 @@
 # MyApprovals Agent Overview
 
-"MyApprovals" is a Microsoft 365 approvals cockpit agent for Microsoft 365 Copilot, functioning as an SPFx component designed to help users review and act on their approval requests without leaving the conversation.
+"MyApprovals" is a Microsoft 365 approvals cockpit agent for Microsoft Copilot, functioning as an SPFx component designed to help users review and act on their approval requests without leaving the conversation.
 
 **Core Function:**
 The agent renders a personalized approvals experience rather than providing text-based responses when the user inquires about their pending approvals, approval requests, or anything awaiting their sign-off, and it carries out the approval workflow (approve, reject, re-assign, contact requester) through the rendered UI rather than through free-text confirmations.

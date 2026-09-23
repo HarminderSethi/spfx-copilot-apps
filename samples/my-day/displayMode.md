@@ -65,7 +65,7 @@ protected async requestDisplayModeAsync(
 
 The signature literally only accepts `'fullscreen'`. From the JSDoc:
 
-> Only `'fullscreen'` is accepted; M365 Copilot does not honor other modes as request targets. Most display-mode transitions are host-initiated (user clicks the host's expand affordance) and arrive via `onHostContextChanged` — use this method only when the component itself needs to trigger fullscreen (e.g. a video player on play).
+> Only `'fullscreen'` is accepted; Microsoft Copilot does not honor other modes as request targets. Most display-mode transitions are host-initiated (user clicks the host's expand affordance) and arrive via `onHostContextChanged` — use this method only when the component itself needs to trigger fullscreen (e.g. a video player on play).
 
 What this means in practice:
 

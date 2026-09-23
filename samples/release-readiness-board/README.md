@@ -4,7 +4,7 @@
 
 ## Summary
 
-**Release readiness board** is a **SharePoint Copilot App** built as an SPFx 1.24 **Copilot Component**. It helps delivery teams track release status directly inside Microsoft 365 Copilot with:
+**Release readiness board** is an SPFx 1.24 **Copilot component**. It helps delivery teams track release status directly inside Microsoft Copilot with:
 
 - an inline health snapshot (completion, blockers, overdue checks, risk), and
 - a full-screen board for release-level filtering and checklist execution.
@@ -22,7 +22,7 @@ The sample is **mock-first** and self-contained: it ships with realistic release
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx) 1.24+ (Copilot Component)
-- [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
+- [Microsoft Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant) with SharePoint App Catalog
 
 ## Solution
@@ -120,9 +120,9 @@ This keeps the UI component unchanged while letting you plug in real delivery da
 
 ## References
 
-- [Overview of SharePoint Copilot Apps](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps)
-- [Build your first SharePoint Copilot App](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
-- [Microsoft 365 Copilot extensibility overview](https://learn.microsoft.com/microsoft-365/copilot/extensibility/overview)
+- [Overview of SPFx Copilot components](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps)
+- [Build your first SPFx Copilot component](https://learn.microsoft.com/sharepoint/dev/spfx/copilot/get-started/build-your-first-copilot-app)
+- [Microsoft Copilot extensibility overview](https://learn.microsoft.com/microsoft-365/copilot/extensibility/overview)
 - [Heft Documentation](https://heft.rushstack.io/)
 
 ## Disclaimer

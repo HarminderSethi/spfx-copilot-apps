@@ -1,6 +1,6 @@
 # SharePoint Photos Copilot Agent
 
-A Microsoft 365 Copilot declarative agent for finding and exploring photos stored in SharePoint document libraries and, when requested, personal OneDrive. The agent translates natural-language requests into a typed photo search, uses Microsoft Graph Search to find image files, and renders the results through the [`PhotoAlbum`](https://www.npmjs.com/package/@spteck/react-controls-v2) control from `@spteck/react-controls-v2`.
+A Microsoft Copilot declarative agent for finding and exploring photos stored in SharePoint document libraries and, when requested, personal OneDrive. The agent translates natural-language requests into a typed photo search, uses Microsoft Graph Search to find image files, and renders the results through the [`PhotoAlbum`](https://www.npmjs.com/package/@spteck/react-controls-v2) control from `@spteck/react-controls-v2`.
 
 Examples of supported requests:
 
@@ -219,7 +219,7 @@ For production, review whether the tenant can use a narrower permission or a mor
 
 - Node.js `>=22.14.0 <23.0.0`.
 - npm.
-- A Microsoft 365 developer or production tenant with SharePoint and Microsoft 365 Copilot access.
+- A Microsoft 365 developer or production tenant with SharePoint and Microsoft Copilot access.
 - SharePoint Framework `1.24.0-beta.2` tooling installed through the project dependencies.
 - Permission to install SPFx packages in the target tenant.
 - Microsoft Graph API access approved for the deployed solution.
@@ -251,7 +251,7 @@ Typical outputs include:
 - `sharepoint/solution/spfx-copilot-app-photos.sppkg`
 - `teams/sharepoint-photos-agent.zip`, an intermediate package generated from the files in `copilot/`
 
-For an SPFx Copilot App, the supported publishing path is the `.sppkg` through the SharePoint App Catalog. SharePoint synchronizes the declarative agent to the tenant agent catalog and resolves the tenant-specific runtime URL when the app is deployed.
+For an SPFx Copilot component, the supported publishing path is the `.sppkg` through the SharePoint App Catalog. SharePoint synchronizes the declarative agent to the tenant agent catalog and resolves the tenant-specific runtime URL when the component is deployed.
 
 For a clean rebuild:
 
@@ -268,7 +268,7 @@ npm run build
 4. Deploy the solution.
 5. Approve the Graph `Sites.Read.All` permission request.
 6. Select **Add to Teams** from the App Catalog to publish the declarative agent.
-7. Open Microsoft 365 Copilot and load `SharePoint Photos Agent`.
+7. Open Microsoft Copilot and load `SharePoint Photos Agent`.
 8. Test a broad topic search, an exact library search, a date-range search, and a fullscreen gallery.
 9. In fullscreen, scroll near the bottom and confirm that a second Graph `/search/query` request is made with a larger `from` offset while the first photos remain visible.
 10. Confirm that ordinary searches exclude `-my.sharepoint.com` results and that a “my OneDrive photos” request includes them.
@@ -286,9 +286,9 @@ After changing the schema, rebuild and inspect the generated `ai-plugin.json`. B
 
 ### Teams upload reports `url in RemoteMCPServerRuntimeSpec is not a valid absolute URL`
 
-This is expected when the generated `teams/sharepoint-photos-agent.zip` is uploaded directly through the Teams app upload UI. The SPFx Copilot build task adds a `RemoteMCPServer` runtime with the `{{TENANT_MCP_URL}}` token so SharePoint can resolve the tenant-specific runtime during App Catalog deployment. The token is not a public URL and direct ZIP upload is not the supported publishing path for an SPFx Copilot App.
+This is expected when the generated `teams/sharepoint-photos-agent.zip` is uploaded directly through the Teams app upload UI. The SPFx Copilot build task adds a `RemoteMCPServer` runtime with the `{{TENANT_MCP_URL}}` token so SharePoint can resolve the tenant-specific runtime during App Catalog deployment. The token is not a public URL and direct ZIP upload is not the supported publishing path for an SPFx Copilot component.
 
-Deploy `sharepoint/solution/spfx-copilot-app-photos.sppkg` to the SharePoint App Catalog and select **Add to Teams**. Do not replace the token with a guessed URL or edit the generated ZIP. The Microsoft guidance for SharePoint Copilot Apps describes App Catalog deployment as the publishing flow.
+Deploy `sharepoint/solution/spfx-copilot-app-photos.sppkg` to the SharePoint App Catalog and select **Add to Teams**. Do not replace the token with a guessed URL or edit the generated ZIP. The Microsoft guidance for SPFx Copilot components describes App Catalog deployment as the publishing flow.
 
 ### The gallery is empty
 
@@ -341,7 +341,7 @@ To customize the gallery, edit `components/Photos.tsx` while preserving the `Pho
 }
 ```
 
-The shared control is distributed through [`@spteck/react-controls-v2`](https://www.npmjs.com/package/@spteck/react-controls-v2). Keep reusable gallery behavior in that package rather than duplicating it in the Copilot app.
+The shared control is distributed through [`@spteck/react-controls-v2`](https://www.npmjs.com/package/@spteck/react-controls-v2). Keep reusable gallery behavior in that package rather than duplicating it in the Copilot UX component.
 
 ## Important implementation notes
 
@@ -372,8 +372,8 @@ The shared control is distributed through [`@spteck/react-controls-v2`](https://
 - [SPFx Microsoft Graph access](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/use-aadhttpclient)
 - [Teams app manifest schema](https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema)
 - [Validate a Teams app](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teamsfx-preview-and-customize-app-manifest#validate-your-app)
-- [Overview of SharePoint Copilot Apps](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/copilot/overview-copilot-apps)
-- [Microsoft 365 Copilot plugin manifest schema 2.4](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/plugin-manifest-2.4)
+- [Overview of SPFx Copilot components](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/copilot/overview-copilot-apps)
+- [Microsoft Copilot plugin manifest schema 2.4](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/plugin-manifest-2.4)
 - [Heft documentation](https://heft.rushstack.io/)
 
 ## License and disclaimer

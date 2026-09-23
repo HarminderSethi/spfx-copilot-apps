@@ -18,7 +18,7 @@ colors, and 200% zoom validation.
 | Copilot-visible state | Conditionally ready | Case, query, capability selection, and incident threshold publish bounded deduplicated context; workflow stage/draft and full-screen lens changes need complete coverage. |
 | Keyboard and screen reader | Not signed off | Workflow stage focus and polite announcements are implemented; exhaustive keyboard, Narrator/NVDA, iframe focus, and host output require evidence. |
 | Failure and permission states | Not ready | Loading, stale, partial failure, permission, policy conflict, bridge failure, and offline fallback boards remain open. |
-| Tenant integration | Blocked externally | Requires authenticated Microsoft 365 Copilot/Workbench validation. |
+| Tenant integration | Blocked externally | Requires authenticated Microsoft Copilot/Workbench validation. |
 
 ## Findings requiring closure
 

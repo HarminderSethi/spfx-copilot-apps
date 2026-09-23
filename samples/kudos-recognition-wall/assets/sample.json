@@ -2,12 +2,12 @@
   {
     "name": "pnp-spfx-copilot-apps-kudos-recognition-wall",
     "source": "pnp",
-    "title": "Kudos & Recognition Wall - Recognise colleagues from Microsoft 365 Copilot chat",
-    "shortDescription": "Give kudos and browse your organization's recognition wall directly from Microsoft 365 Copilot chat.",
+    "title": "Kudos & Recognition Wall - Recognise colleagues from Microsoft Copilot chat",
+    "shortDescription": "Give kudos and browse your organization's recognition wall directly from Microsoft Copilot chat.",
     "url": "https://github.com/pnp/spfx-copilot-components/tree/main/samples/kudos-recognition-wall",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/spfx-copilot-components/tree/main/samples/kudos-recognition-wall",
     "longDescription": [
-      "Kudos & Recognition Wall brings peer recognition into Microsoft 365 Copilot. Ask the Kudos and Recognition Wall agent to show the wall and it renders an inline card of recent recognitions, or an expanded fullscreen wall with team, value, and time filters plus Most recognised and Top givers leaderboards. Name a colleague and a reason and it opens a pre-filled compose card so you can give kudos without leaving the conversation.",
+      "Kudos & Recognition Wall brings peer recognition into Microsoft Copilot. Ask the Kudos and Recognition Wall agent to show the wall and it renders an inline card of recent recognitions, or an expanded fullscreen wall with team, value, and time filters plus Most recognised and Top givers leaderboards. Name a colleague and a reason and it opens a pre-filled compose card so you can give kudos without leaving the conversation.",
       "Built as a SharePoint Copilot App (SPFx 1.24.0-beta.2, @microsoft/sp-copilot-component), the same component renders both the compact inline card and the expanded wall. It reads and writes a SharePoint Kudos list via RenderListDataAsStream and brokers Microsoft Graph for colleague search and department enrichment, with a built-in mock backend for zero-setup demos and Fluent UI v9 runtime theming that follows the Copilot host."
     ],
     "creationDateTime": "2026-08-12",
@@ -36,7 +36,7 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/spfx-copilot-components/raw/main/samples/kudos-recognition-wall/assets/preview.png",
-        "alt": "Inline Kudos card inside a Microsoft 365 Copilot chat, showing a digest of recent recognitions with Give kudos and Open the wall actions."
+        "alt": "Inline Kudos card inside a Microsoft Copilot chat, showing a digest of recent recognitions with Give kudos and Open the wall actions."
       },
       {
         "name": "kudos-recognition-wall-expanded.png",
@@ -63,12 +63,12 @@
     "references": [
       {
         "name": "Overview of SharePoint Copilot Apps",
-        "description": "Extend Microsoft 365 Copilot with custom, interactive experiences built using the familiar SharePoint Framework (SPFx) tools and client-side development model.",
+        "description": "Extend Microsoft Copilot with custom, interactive experiences built using the familiar SharePoint Framework (SPFx) tools and client-side development model.",
         "url": "https://learn.microsoft.com/sharepoint/dev/spfx/copilot/overview-copilot-apps"
       },
       {
-        "name": "Build agents for Microsoft 365 Copilot",
-        "description": "Extend Microsoft 365 Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
+        "name": "Build agents for Microsoft Copilot",
+        "description": "Extend Microsoft Copilot with declarative agents, plugins, and connectors to tailor Copilot to your organization's needs.",
         "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/"
       },
       {

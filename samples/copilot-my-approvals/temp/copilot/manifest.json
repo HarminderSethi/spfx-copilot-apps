@@ -19,7 +19,7 @@
   },
   "description": {
     "short": "View and act on your Microsoft 365 approvals in Copilot chat.",
-    "full": "MyApprovals brings your Microsoft 365 approval requests into Microsoft 365 Copilot. View pending, completed, canceled, and created approvals with the requester, status, and details for each one, either inline in the conversation or in a fullscreen overview. Approve, reject, or re-assign a request, or email the requester for more information, all without leaving the chat."
+    "full": "MyApprovals brings your Microsoft 365 approval requests into Microsoft Copilot. View pending, completed, canceled, and created approvals with the requester, status, and details for each one, either inline in the conversation or in a fullscreen overview. Approve, reject, or re-assign a request, or email the requester for more information, all without leaving the chat."
   },
   "accentColor": "#FFFFFF",
   "copilotAgents": {

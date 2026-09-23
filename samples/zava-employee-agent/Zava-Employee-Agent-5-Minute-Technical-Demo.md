@@ -10,7 +10,7 @@ Use this walkthrough after the business demo or in a developer session. It pairs
 
 Open these side by side:
 
-- Microsoft 365 Copilot or `npm run start:ux-review`
+- Microsoft Copilot or `npm run start:ux-review`
 - VS Code at `samples/zava-employee-agent`
 - A terminal in the sample folder
 

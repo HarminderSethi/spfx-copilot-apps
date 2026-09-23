@@ -13,7 +13,7 @@ The technical message is:
 
 ## Presenter setup
 
-Open Microsoft 365 Copilot or Copilot Workbench beside VS Code. Pin these files in order:
+Open Microsoft Copilot or Copilot Workbench beside VS Code. Pin these files in order:
 
 1. `copilot/declarativeAgent.json`
 2. `copilot/instruction.txt`
